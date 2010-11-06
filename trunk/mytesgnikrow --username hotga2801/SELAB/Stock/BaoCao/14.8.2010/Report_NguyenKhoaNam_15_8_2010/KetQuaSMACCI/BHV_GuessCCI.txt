@@ -1,0 +1,25 @@
+-Thi truong ngay 11/24/2009 12:00:00 AM di vao vung MUA QUA MUC
+-Tu ngay 11/25/2009 12:00:00 AM den ngay 11/5/2009 12:00:00 AM co xu huong tang
+-Tu ngay 10/28/2009 12:00:00 AM den ngay 10/16/2009 12:00:00 AM co xu huong tang
+-Thi truong ngay 9/23/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Tu ngay 10/15/2009 12:00:00 AM den ngay 9/18/2009 12:00:00 AM co xu huong giam
+-Tu ngay 9/17/2009 12:00:00 AM den ngay 9/8/2009 12:00:00 AM co xu huong tang
+-Thi truong ngay 9/8/2009 12:00:00 AM di vao vung MUA QUA MUC
+-Thi truong ngay 9/7/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Thi truong ngay 9/4/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Tu ngay 9/7/2009 12:00:00 AM den ngay 8/20/2009 12:00:00 AM co xu huong giam
+-Tu ngay 8/5/2009 12:00:00 AM den ngay 7/24/2009 12:00:00 AM co xu huong tang
+-Tu ngay 7/23/2009 12:00:00 AM den ngay 6/29/2009 12:00:00 AM co xu huong giam
+-Thi truong ngay 6/29/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Thi truong ngay 6/23/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Tu ngay 6/15/2009 12:00:00 AM den ngay 6/5/2009 12:00:00 AM co xu huong tang
+-Thi truong ngay 5/21/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Tu ngay 6/4/2009 12:00:00 AM den ngay 5/20/2009 12:00:00 AM co xu huong giam
+-Thi truong ngay 5/20/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Thi truong ngay 5/19/2009 12:00:00 AM di vao vung MUA QUA MUC
+-Tu ngay 5/19/2009 12:00:00 AM den ngay 3/16/2009 12:00:00 AM co xu huong tang
+-Tu ngay 3/3/2009 12:00:00 AM den ngay 2/25/2009 12:00:00 AM co xu huong tang
+-Tu ngay 2/19/2009 12:00:00 AM den ngay 1/23/2009 12:00:00 AM co xu huong tang
+-Tu ngay 1/22/2009 12:00:00 AM den ngay 1/14/2009 12:00:00 AM co xu huong giam
+-Thi truong ngay 1/14/2009 12:00:00 AM di vao vung BAN QUA MUC
+-Thi truong ngay 1/8/2009 12:00:00 AM di vao vung MUA QUA MUC

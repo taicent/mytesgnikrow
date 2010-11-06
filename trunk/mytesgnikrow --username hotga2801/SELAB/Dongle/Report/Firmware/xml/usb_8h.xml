@@ -1,0 +1,1269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="usb_8h" kind="file">
+    <compoundname>usb.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbdesc_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</includedby>
+    <includedby refid="usbhw_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="222">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="220">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</label>
+        <link refid="usbdesc_8c"/>
+      </node>
+      <node id="223">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="221">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</label>
+        <link refid="usbhw_8c"/>
+      </node>
+      <node id="217">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h</label>
+        <link refid="usb.h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+      <node id="218">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="union___r_e_q_u_e_s_t___t_y_p_e" prot="public">_REQUEST_TYPE</innerclass>
+    <innerclass refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" prot="public">_REQUEST_TYPE::_BM</innerclass>
+    <innerclass refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t" prot="public">_USB_SETUP_PACKET</innerclass>
+    <innerclass refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_DEVICE_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_DEVICE_QUALIFIER_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_CONFIGURATION_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_INTERFACE_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_ENDPOINT_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_STRING_DESCRIPTOR</innerclass>
+    <innerclass refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r" prot="public">_USB_COMMON_DESCRIPTOR</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usb_8h_1a8d90abb0515c0c9cd7c80480f1ebe7d3" prot="public" static="no">
+        <name>REQUEST_HOST_TO_DEVICE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="30" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1af8f8eae5ae324d7d3e1344e97e23b20f" prot="public" static="no">
+        <name>REQUEST_DEVICE_TO_HOST</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="31" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a1dd6ef57678e7af95d835049d5b355b9" prot="public" static="no">
+        <name>REQUEST_STANDARD</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="34" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1afd24e03239e2df9e6d9c6cbcd53c1337" prot="public" static="no">
+        <name>REQUEST_CLASS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="35" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a40131e4daec200a7d931c2b26e43d27f" prot="public" static="no">
+        <name>REQUEST_VENDOR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="36" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a63cb1192a7cd205455bddd302f67c915" prot="public" static="no">
+        <name>REQUEST_RESERVED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="37" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1af89871a0b4aa9411e09a9961de76e76f" prot="public" static="no">
+        <name>REQUEST_TO_DEVICE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="40" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a0e5e473281fc9c1ee1ea446823c02623" prot="public" static="no">
+        <name>REQUEST_TO_INTERFACE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="41" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a4c4571ca0bf6b462bd8954a95456561c" prot="public" static="no">
+        <name>REQUEST_TO_ENDPOINT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="42" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ad1f005d9ae04da7324d465a86e489af5" prot="public" static="no">
+        <name>REQUEST_TO_OTHER</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="43" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a062f3147a1bae954b642b915827b3f3f" prot="public" static="no">
+        <name>USB_REQUEST_GET_STATUS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="56" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab9fe860caa1f21c9410984a24bf57c7c" prot="public" static="no">
+        <name>USB_REQUEST_CLEAR_FEATURE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="57" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1aa2b4d305dcd185cc1242e94ee78eea25" prot="public" static="no">
+        <name>USB_REQUEST_SET_FEATURE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="58" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ac87659819bfd6491120c819fae2d46bc" prot="public" static="no">
+        <name>USB_REQUEST_SET_ADDRESS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="59" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a3572226ee2137c7fbf7487a02b0f560f" prot="public" static="no">
+        <name>USB_REQUEST_GET_DESCRIPTOR</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="60" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a3c80fdedd69586ccf2894f5bd4638252" prot="public" static="no">
+        <name>USB_REQUEST_SET_DESCRIPTOR</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="61" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a341ed4aff1f0d5a1a4a4f17cb606d08d" prot="public" static="no">
+        <name>USB_REQUEST_GET_CONFIGURATION</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="62" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1aadef005acc40340955d34d9767ef297c" prot="public" static="no">
+        <name>USB_REQUEST_SET_CONFIGURATION</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="63" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a25550f44898d9c9a3bf0a7814af7fe96" prot="public" static="no">
+        <name>USB_REQUEST_GET_INTERFACE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="64" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1af8d2ea632916bfc2a7628f63d3f643aa" prot="public" static="no">
+        <name>USB_REQUEST_SET_INTERFACE</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="65" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a916e1a4b8f8a5cb369d896ef35c4db34" prot="public" static="no">
+        <name>USB_REQUEST_SYNC_FRAME</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="66" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a1e801ee37e93522f0f38eff9bc7aac02" prot="public" static="no">
+        <name>USB_GETSTATUS_SELF_POWERED</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="69" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1aad5790ebb5c8f5a25ce60140c60c2ec5" prot="public" static="no">
+        <name>USB_GETSTATUS_REMOTE_WAKEUP</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="70" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbhw_8h_1a076f3794dcd3ff5b60ad10ea702424ca" compoundref="usbhw_8c" startline="217" endline="222">USB_WakeUp</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a4ebb10046221004827e4b2a72cdeefa5" prot="public" static="no">
+        <name>USB_GETSTATUS_ENDPOINT_STALL</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="71" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a3ff0518fb298c9c9b556f59c0468ec0d" prot="public" static="no">
+        <name>USB_FEATURE_ENDPOINT_STALL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="74" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a2185a0541f4155470596c9c739c1656b" prot="public" static="no">
+        <name>USB_FEATURE_REMOTE_WAKEUP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="75" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a722f2d6ee2892228b6708e8b9904c645" prot="public" static="no">
+        <name>USB_DEVICE_DESCRIPTOR_TYPE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="88" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a45e81401e4b530280fdd539da1b06c26" prot="public" static="no">
+        <name>USB_CONFIGURATION_DESCRIPTOR_TYPE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="89" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab01c9c74f2eb266b20aecd48bab4b35c" prot="public" static="no">
+        <name>USB_STRING_DESCRIPTOR_TYPE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="90" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ad1699884fa580bba35246a566264c978" prot="public" static="no">
+        <name>USB_INTERFACE_DESCRIPTOR_TYPE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="91" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a4e8d6d81a224f8b511edc92b6cb4e085" prot="public" static="no">
+        <name>USB_ENDPOINT_DESCRIPTOR_TYPE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="92" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a7158946184590ea6cfcb406d7f3c4ce5" prot="public" static="no">
+        <name>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="93" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a0d886bcc28cf10d730106d7be9b661fd" prot="public" static="no">
+        <name>USB_OTHER_SPEED_CONFIG_DESCRIPTOR_TYPE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="94" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a3356db66a2c62f7018f23f9189ba34c9" prot="public" static="no">
+        <name>USB_INTERFACE_POWER_DESCRIPTOR_TYPE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="95" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1aca7ece737f3f37b7a6f458fc24864776" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_RESERVED</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="98" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ade360faee3b601af707b65122a46d446" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_AUDIO</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="99" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab6fd7e18adf5c748a6b56391c1c2b819" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_COMMUNICATIONS</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="100" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a3d9e0560a81b4dfd30bbf829960dbfab" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_HUMAN_INTERFACE</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="101" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a23d001aa49fada2019ff3a4886a9f2a5" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_MONITOR</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="102" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a6053794e5de119b37615ec98f7eceedb" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_PHYSICAL_INTERFACE</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="103" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a88a8b2d45b2950ffd5654e4c3b6741ff" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_POWER</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="104" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ae6181c6bdb18c0e6491dd189983b6bd2" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_PRINTER</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="105" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a053d2a9c3c9856ee01589ebb64d2e09b" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_STORAGE</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="106" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab8167347cb586d3f82a7ad95fa25bc22" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_HUB</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="107" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a89b94b8bc3c5fa2ef7151b5d282f22bb" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_VENDOR_SPECIFIC</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="108" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1afdd4f846b5497985c182a1a090d99729" prot="public" static="no">
+        <name>USB_CONFIG_POWERED_MASK</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="111" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a63c0a08ce70650c3c677ab523a45a0bb" prot="public" static="no">
+        <name>USB_CONFIG_BUS_POWERED</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="112" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a8c322771b797c09e3066a388b46e9ef9" prot="public" static="no">
+        <name>USB_CONFIG_SELF_POWERED</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="113" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a7b28a766a8a916fae421d52fbedd2cba" prot="public" static="no">
+        <name>USB_CONFIG_REMOTE_WAKEUP</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="114" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1adcf08dc7fdb6117608624203612b3104" prot="public" static="no">
+        <name>USB_CONFIG_POWER_MA</name>
+        <param><defname>mA</defname></param>
+        <initializer>((mA)/2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="117" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab7544c5b8cf975839422c1ce29d4c5cb" prot="public" static="no">
+        <name>USB_ENDPOINT_DIRECTION_MASK</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="120" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a81ac2a8c9688d35940a054c4194c278d" prot="public" static="no">
+        <name>USB_ENDPOINT_OUT</name>
+        <param><defname>addr</defname></param>
+        <initializer>((addr) | 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="121" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1abe258bf57244c49874da6d53679e6df8" prot="public" static="no">
+        <name>USB_ENDPOINT_IN</name>
+        <param><defname>addr</defname></param>
+        <initializer>((addr) | 0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="122" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1acd114fdf068aaa69407358ee5ccfd170" prot="public" static="no">
+        <name>USB_ENDPOINT_TYPE_MASK</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="125" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a6a51ed22b06e5ca0f76a35b6bac8d73a" prot="public" static="no">
+        <name>USB_ENDPOINT_TYPE_CONTROL</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="126" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ab05aae4a5d079b8dfb6a9cb1325ea6e5" prot="public" static="no">
+        <name>USB_ENDPOINT_TYPE_ISOCHRONOUS</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="127" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1af4bac84d4576dc8f74f39dc75749e3dc" prot="public" static="no">
+        <name>USB_ENDPOINT_TYPE_BULK</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="128" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a2cb5aa69a03df20aab217b808ad692a6" prot="public" static="no">
+        <name>USB_ENDPOINT_TYPE_INTERRUPT</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="129" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a91301868eb0b52506fc9bc02b131f783" prot="public" static="no">
+        <name>USB_ENDPOINT_SYNC_MASK</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="130" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a7733e58f8c4fbcef1533eb02f375aeb0" prot="public" static="no">
+        <name>USB_ENDPOINT_SYNC_NO_SYNCHRONIZATION</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="131" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ad1bb5cc537ea61634cb61c8c364c9a6f" prot="public" static="no">
+        <name>USB_ENDPOINT_SYNC_ASYNCHRONOUS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="132" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1aa7808914116fe45223462e68d6f8aa5d" prot="public" static="no">
+        <name>USB_ENDPOINT_SYNC_ADAPTIVE</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="133" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a0309c68623fb48fdc621f15dabc579f2" prot="public" static="no">
+        <name>USB_ENDPOINT_SYNC_SYNCHRONOUS</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="134" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a834006343743238a5eb1d273ef3226ae" prot="public" static="no">
+        <name>USB_ENDPOINT_USAGE_MASK</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="135" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1ac852b5e62e4e577b1b43239ae190908a" prot="public" static="no">
+        <name>USB_ENDPOINT_USAGE_DATA</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="136" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1abe8c89e5b624ac6bb5b9cd2919fc06be" prot="public" static="no">
+        <name>USB_ENDPOINT_USAGE_FEEDBACK</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="137" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1abfdb9f73f34907249b8fd1128c25ae1a" prot="public" static="no">
+        <name>USB_ENDPOINT_USAGE_IMPLICIT_FEEDBACK</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="138" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb_8h_1a0ee1319e7242bb61298af850ea64f08a" prot="public" static="no">
+        <name>USB_ENDPOINT_USAGE_RESERVED</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="139" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="usb_8h_1a77276c9590f0da754a35b4cbf309c2c7" prot="public" static="no">
+        <type>__packed union @0</type>
+        <definition>typedef __packed union @0  WORD_BYTE</definition>
+        <argsstring></argsstring>
+        <name>WORD_BYTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a1cf9602c496d0762c0e710c7a1268a69" prot="public" static="no">
+        <type>__packed union <ref refid="union___r_e_q_u_e_s_t___t_y_p_e" kindref="compound">_REQUEST_TYPE</ref></type>
+        <definition>typedef __packed union _REQUEST_TYPE  REQUEST_TYPE</definition>
+        <argsstring></argsstring>
+        <name>REQUEST_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="53"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t" kindref="compound">_USB_SETUP_PACKET</ref></type>
+        <definition>typedef __packed struct _USB_SETUP_PACKET  USB_SETUP_PACKET</definition>
+        <argsstring></argsstring>
+        <name>USB_SETUP_PACKET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="84"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1aaba3306324a8f6fef5052e9fae06f45d" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_DEVICE_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_DEVICE_DESCRIPTOR  USB_DEVICE_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_DEVICE_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="157"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a5f7e9b946c4597b53cfb48b8e718a1f2" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_DEVICE_QUALIFIER_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_DEVICE_QUALIFIER_DESCRIPTOR  USB_DEVICE_QUALIFIER_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_DEVICE_QUALIFIER_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="170"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a36beb2cc858800223e1d7f02aeb28260" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_CONFIGURATION_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_CONFIGURATION_DESCRIPTOR  USB_CONFIGURATION_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_CONFIGURATION_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="182"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a514029a74d63a32b820ce506c0e60857" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_INTERFACE_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_INTERFACE_DESCRIPTOR  USB_INTERFACE_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_INTERFACE_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="195"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1ad257142de6c082632f2ca3e8ab4ca058" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_ENDPOINT_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_ENDPOINT_DESCRIPTOR  USB_ENDPOINT_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_ENDPOINT_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="205"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a3c54c7d04c19170c1ceb1c40c6e50bfc" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_STRING_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_STRING_DESCRIPTOR  USB_STRING_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_STRING_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="212"/>
+      </memberdef>
+      <memberdef kind="typedef" id="usb_8h_1a3754ad5b11ac1f424ca1b6468c9ae181" prot="public" static="no">
+        <type>__packed struct <ref refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_COMMON_DESCRIPTOR</ref></type>
+        <definition>typedef __packed struct _USB_COMMON_DESCRIPTOR  USB_COMMON_DESCRIPTOR</definition>
+        <argsstring></argsstring>
+        <name>USB_COMMON_DESCRIPTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="218"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usb_8h_1a24c45f6de6f03ce6e2e53d0d40d40fb7" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD W</definition>
+        <argsstring></argsstring>
+        <name>W</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="21" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb_8h_1a25194c82e9e85af75c87c700cd7711f9" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="23" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb_8h_1a2e10f434c298d52105493d70433289b5" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="24" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb_8h_1ada0f1ba1d0d8878663ec1938cdd33920" prot="public" static="no" mutable="no">
+        <type>__packed struct @0::@1</type>
+        <definition>__packed struct @0::@1  WB</definition>
+        <argsstring></argsstring>
+        <name>WB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>K<sp/>e<sp/>r<sp/>n<sp/>e<sp/>l</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USB.H</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Definitions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USB_H__</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USB_H__</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="usb_8h_1a24c45f6de6f03ce6e2e53d0d40d40fb7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><ref refid="usb_8h_1a24c45f6de6f03ce6e2e53d0d40d40fb7" kindref="member">W</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="usb_8h_1a25194c82e9e85af75c87c700cd7711f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="usb_8h_1a25194c82e9e85af75c87c700cd7711f9" kindref="member">L</ref>;</highlight></codeline>
+<codeline lineno="24" refid="usb_8h_1a2e10f434c298d52105493d70433289b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="usb_8h_1a2e10f434c298d52105493d70433289b5" kindref="member">H</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="usb_8h_1ada0f1ba1d0d8878663ec1938cdd33920" kindref="member">WB</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="usb_8h_1a77276c9590f0da754a35b4cbf309c2c7" kindref="member">WORD_BYTE</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmRequestType.Dir<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="usb_8h_1a8d90abb0515c0c9cd7c80480f1ebe7d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_HOST_TO_DEVICE<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="31" refid="usb_8h_1af8f8eae5ae324d7d3e1344e97e23b20f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_DEVICE_TO_HOST<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmRequestType.Type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="usb_8h_1a1dd6ef57678e7af95d835049d5b355b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_STANDARD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="35" refid="usb_8h_1afd24e03239e2df9e6d9c6cbcd53c1337" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_CLASS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="36" refid="usb_8h_1a40131e4daec200a7d931c2b26e43d27f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_VENDOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="37" refid="usb_8h_1a63cb1192a7cd205455bddd302f67c915" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmRequestType.Recipient<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="usb_8h_1af89871a0b4aa9411e09a9961de76e76f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_TO_DEVICE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="41" refid="usb_8h_1a0e5e473281fc9c1ee1ea446823c02623" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_TO_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="42" refid="usb_8h_1a4c4571ca0bf6b462bd8954a95456561c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_TO_ENDPOINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="43" refid="usb_8h_1ad1f005d9ae04da7324d465a86e489af5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_TO_OTHER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmRequestType<sp/>Definition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="union___r_e_q_u_e_s_t___t_y_p_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union___r_e_q_u_e_s_t___t_y_p_e" kindref="compound">_REQUEST_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" refkind="compound"><highlight class="normal"><sp/><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" kindref="compound">_BM</ref><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1aef3ec6aa3cef843da4d3125bddf87bcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1aef3ec6aa3cef843da4d3125bddf87bcd" kindref="member">Recipient</ref><sp/>:<sp/>5;</highlight></codeline>
+<codeline lineno="49" refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a18377a6c26b74546712af8fc06de7205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a18377a6c26b74546712af8fc06de7205" kindref="member">Type</ref><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="50" refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a3926b73729006874b8ea62c22a022b13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a3926b73729006874b8ea62c22a022b13" kindref="member">Dir</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="union___r_e_q_u_e_s_t___t_y_p_e_1a896773570e2fb212ad62245fe6e95f94" kindref="member">BM</ref>;</highlight></codeline>
+<codeline lineno="52" refid="union___r_e_q_u_e_s_t___t_y_p_e_1abc9e2377dd2619b51b588323fe9984ea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="union___r_e_q_u_e_s_t___t_y_p_e_1abc9e2377dd2619b51b588323fe9984ea" kindref="member">B</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="usb_8h_1a1cf9602c496d0762c0e710c7a1268a69" kindref="member">REQUEST_TYPE</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Request<sp/>Codes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="usb_8h_1a062f3147a1bae954b642b915827b3f3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_GET_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="57" refid="usb_8h_1ab9fe860caa1f21c9410984a24bf57c7c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_CLEAR_FEATURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="58" refid="usb_8h_1aa2b4d305dcd185cc1242e94ee78eea25" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SET_FEATURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="59" refid="usb_8h_1ac87659819bfd6491120c819fae2d46bc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SET_ADDRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="60" refid="usb_8h_1a3572226ee2137c7fbf7487a02b0f560f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_GET_DESCRIPTOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="61" refid="usb_8h_1a3c80fdedd69586ccf2894f5bd4638252" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SET_DESCRIPTOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="62" refid="usb_8h_1a341ed4aff1f0d5a1a4a4f17cb606d08d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_GET_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="63" refid="usb_8h_1aadef005acc40340955d34d9767ef297c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SET_CONFIGURATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="64" refid="usb_8h_1a25550f44898d9c9a3bf0a7814af7fe96" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_GET_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="65" refid="usb_8h_1af8d2ea632916bfc2a7628f63d3f643aa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SET_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="66" refid="usb_8h_1a916e1a4b8f8a5cb369d896ef35c4db34" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_REQUEST_SYNC_FRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>GET_STATUS<sp/>Bit<sp/>Values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="usb_8h_1a1e801ee37e93522f0f38eff9bc7aac02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_GETSTATUS_SELF_POWERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="70" refid="usb_8h_1aad5790ebb5c8f5a25ce60140c60c2ec5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_GETSTATUS_REMOTE_WAKEUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="71" refid="usb_8h_1a4ebb10046221004827e4b2a72cdeefa5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_GETSTATUS_ENDPOINT_STALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Feature<sp/>selectors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="usb_8h_1a3ff0518fb298c9c9b556f59c0468ec0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_FEATURE_ENDPOINT_STALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="75" refid="usb_8h_1a2185a0541f4155470596c9c739c1656b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_FEATURE_REMOTE_WAKEUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Default<sp/>Control<sp/>Pipe<sp/>Setup<sp/>Packet<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t" kindref="compound">_USB_SETUP_PACKET</ref><sp/>{</highlight></codeline>
+<codeline lineno="79" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a8be0eb8a27686ac4f4831003b5c6f792" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="usb_8h_1a1cf9602c496d0762c0e710c7a1268a69" kindref="member">REQUEST_TYPE</ref><sp/><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a8be0eb8a27686ac4f4831003b5c6f792" kindref="member">bmRequestType</ref>;</highlight></codeline>
+<codeline lineno="80" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a7bab96f30abf205e60392ab8e8339be7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a7bab96f30abf205e60392ab8e8339be7" kindref="member">bRequest</ref>;</highlight></codeline>
+<codeline lineno="81" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a59d9039047a52815cb1981f19634d40d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="usb_8h_1a77276c9590f0da754a35b4cbf309c2c7" kindref="member">WORD_BYTE</ref><sp/><sp/><sp/><sp/><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1a59d9039047a52815cb1981f19634d40d" kindref="member">wValue</ref>;</highlight></codeline>
+<codeline lineno="82" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1aeca4b5d6b50d0b1b2db278cb4efc0436" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="usb_8h_1a77276c9590f0da754a35b4cbf309c2c7" kindref="member">WORD_BYTE</ref><sp/><sp/><sp/><sp/><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1aeca4b5d6b50d0b1b2db278cb4efc0436" kindref="member">wIndex</ref>;</highlight></codeline>
+<codeline lineno="83" refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1ab26bdd09e9c7779cfbd95b4e90b3f178" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t_1ab26bdd09e9c7779cfbd95b4e90b3f178" kindref="member">wLength</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Descriptor<sp/>Types<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="usb_8h_1a722f2d6ee2892228b6708e8b9904c645" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="89" refid="usb_8h_1a45e81401e4b530280fdd539da1b06c26" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIGURATION_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="90" refid="usb_8h_1ab01c9c74f2eb266b20aecd48bab4b35c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_STRING_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="91" refid="usb_8h_1ad1699884fa580bba35246a566264c978" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_INTERFACE_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="92" refid="usb_8h_1a4e8d6d81a224f8b511edc92b6cb4e085" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="93" refid="usb_8h_1a7158946184590ea6cfcb406d7f3c4ce5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE<sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="94" refid="usb_8h_1a0d886bcc28cf10d730106d7be9b661fd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_OTHER_SPEED_CONFIG_DESCRIPTOR_TYPE<sp/>7</highlight></codeline>
+<codeline lineno="95" refid="usb_8h_1a3356db66a2c62f7018f23f9189ba34c9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_INTERFACE_POWER_DESCRIPTOR_TYPE<sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Device<sp/>Classes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="usb_8h_1aca7ece737f3f37b7a6f458fc24864776" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="99" refid="usb_8h_1ade360faee3b601af707b65122a46d446" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_AUDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="100" refid="usb_8h_1ab6fd7e18adf5c748a6b56391c1c2b819" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_COMMUNICATIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="101" refid="usb_8h_1a3d9e0560a81b4dfd30bbf829960dbfab" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_HUMAN_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="102" refid="usb_8h_1a23d001aa49fada2019ff3a4886a9f2a5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_MONITOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight></codeline>
+<codeline lineno="103" refid="usb_8h_1a6053794e5de119b37615ec98f7eceedb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_PHYSICAL_INTERFACE<sp/><sp/><sp/><sp/>0x05</highlight></codeline>
+<codeline lineno="104" refid="usb_8h_1a88a8b2d45b2950ffd5654e4c3b6741ff" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_POWER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight></codeline>
+<codeline lineno="105" refid="usb_8h_1ae6181c6bdb18c0e6491dd189983b6bd2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_PRINTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight></codeline>
+<codeline lineno="106" refid="usb_8h_1a053d2a9c3c9856ee01589ebb64d2e09b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_STORAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="107" refid="usb_8h_1ab8167347cb586d3f82a7ad95fa25bc22" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_HUB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09</highlight></codeline>
+<codeline lineno="108" refid="usb_8h_1a89b94b8bc3c5fa2ef7151b5d282f22bb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_VENDOR_SPECIFIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmAttributes<sp/>in<sp/>Configuration<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="usb_8h_1afdd4f846b5497985c182a1a090d99729" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_POWERED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0</highlight></codeline>
+<codeline lineno="112" refid="usb_8h_1a63c0a08ce70650c3c677ab523a45a0bb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_BUS_POWERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="113" refid="usb_8h_1a8c322771b797c09e3066a388b46e9ef9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_SELF_POWERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0</highlight></codeline>
+<codeline lineno="114" refid="usb_8h_1a7b28a766a8a916fae421d52fbedd2cba" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_REMOTE_WAKEUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bMaxPower<sp/>in<sp/>Configuration<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="usb_8h_1adcf08dc7fdb6117608624203612b3104" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_POWER_MA(mA)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((mA)/2)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bEndpointAddress<sp/>in<sp/>Endpoint<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="usb_8h_1ab7544c5b8cf975839422c1ce29d4c5cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_DIRECTION_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="121" refid="usb_8h_1a81ac2a8c9688d35940a054c4194c278d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_OUT(addr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((addr)<sp/>|<sp/>0x00)</highlight></codeline>
+<codeline lineno="122" refid="usb_8h_1abe258bf57244c49874da6d53679e6df8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_IN(addr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((addr)<sp/>|<sp/>0x80)</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>bmAttributes<sp/>in<sp/>Endpoint<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="usb_8h_1acd114fdf068aaa69407358ee5ccfd170" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_TYPE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="126" refid="usb_8h_1a6a51ed22b06e5ca0f76a35b6bac8d73a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_TYPE_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="127" refid="usb_8h_1ab05aae4a5d079b8dfb6a9cb1325ea6e5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_TYPE_ISOCHRONOUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="128" refid="usb_8h_1af4bac84d4576dc8f74f39dc75749e3dc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_TYPE_BULK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="129" refid="usb_8h_1a2cb5aa69a03df20aab217b808ad692a6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_TYPE_INTERRUPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="130" refid="usb_8h_1a91301868eb0b52506fc9bc02b131f783" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_SYNC_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0C</highlight></codeline>
+<codeline lineno="131" refid="usb_8h_1a7733e58f8c4fbcef1533eb02f375aeb0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_SYNC_NO_SYNCHRONIZATION<sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="132" refid="usb_8h_1ad1bb5cc537ea61634cb61c8c364c9a6f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_SYNC_ASYNCHRONOUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight></codeline>
+<codeline lineno="133" refid="usb_8h_1aa7808914116fe45223462e68d6f8aa5d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_SYNC_ADAPTIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="134" refid="usb_8h_1a0309c68623fb48fdc621f15dabc579f2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_SYNC_SYNCHRONOUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0C</highlight></codeline>
+<codeline lineno="135" refid="usb_8h_1a834006343743238a5eb1d273ef3226ae" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_USAGE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight></codeline>
+<codeline lineno="136" refid="usb_8h_1ac852b5e62e4e577b1b43239ae190908a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_USAGE_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="137" refid="usb_8h_1abe8c89e5b624ac6bb5b9cd2919fc06be" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_USAGE_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight></codeline>
+<codeline lineno="138" refid="usb_8h_1abfdb9f73f34907249b8fd1128c25ae1a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_USAGE_IMPLICIT_FEEDBACK<sp/><sp/><sp/>0x20</highlight></codeline>
+<codeline lineno="139" refid="usb_8h_1a0ee1319e7242bb61298af850ea64f08a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_USAGE_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Device<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_DEVICE_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="143" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="144" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="145" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a813490518a88d421eb8eceaf467eab9b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a813490518a88d421eb8eceaf467eab9b" kindref="member">bcdUSB</ref>;</highlight></codeline>
+<codeline lineno="146" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ab1f7e35fe9a285db2864e8244884c4d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ab1f7e35fe9a285db2864e8244884c4d9" kindref="member">bDeviceClass</ref>;</highlight></codeline>
+<codeline lineno="147" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a1bfedb2dbf987caf616f77707f4e7996" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a1bfedb2dbf987caf616f77707f4e7996" kindref="member">bDeviceSubClass</ref>;</highlight></codeline>
+<codeline lineno="148" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ad38c30dbe1ba3c63a2a24c3e2f988157" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ad38c30dbe1ba3c63a2a24c3e2f988157" kindref="member">bDeviceProtocol</ref>;</highlight></codeline>
+<codeline lineno="149" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1aad07704534145b010921a7ca41a30edf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1aad07704534145b010921a7ca41a30edf" kindref="member">bMaxPacketSize0</ref>;</highlight></codeline>
+<codeline lineno="150" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1aa6705f738420468e35fa0bcc980ef1d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1aa6705f738420468e35fa0bcc980ef1d8" kindref="member">idVendor</ref>;</highlight></codeline>
+<codeline lineno="151" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ac5fdd724b5bba710af6f437f19467636" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1ac5fdd724b5bba710af6f437f19467636" kindref="member">idProduct</ref>;</highlight></codeline>
+<codeline lineno="152" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1af88e09c836d1614d275fc607045e6d7f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1af88e09c836d1614d275fc607045e6d7f" kindref="member">bcdDevice</ref>;</highlight></codeline>
+<codeline lineno="153" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a7ba414cda1ee046efab1b799bddc1547" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a7ba414cda1ee046efab1b799bddc1547" kindref="member">iManufacturer</ref>;</highlight></codeline>
+<codeline lineno="154" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a48e208396415b774014fca5687260a85" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a48e208396415b774014fca5687260a85" kindref="member">iProduct</ref>;</highlight></codeline>
+<codeline lineno="155" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a5b35b5444cd62332c2c66a08658c7b19" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a5b35b5444cd62332c2c66a08658c7b19" kindref="member">iSerialNumber</ref>;</highlight></codeline>
+<codeline lineno="156" refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a6170c2c859a226f8dae80b59903e7ca2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r_1a6170c2c859a226f8dae80b59903e7ca2" kindref="member">bNumConfigurations</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}<sp/><ref refid="usb_8h_1aaba3306324a8f6fef5052e9fae06f45d" kindref="member">USB_DEVICE_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>2.0<sp/>Device<sp/>Qualifier<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_DEVICE_QUALIFIER_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="161" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="162" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="163" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a813490518a88d421eb8eceaf467eab9b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a813490518a88d421eb8eceaf467eab9b" kindref="member">bcdUSB</ref>;</highlight></codeline>
+<codeline lineno="164" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ab1f7e35fe9a285db2864e8244884c4d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ab1f7e35fe9a285db2864e8244884c4d9" kindref="member">bDeviceClass</ref>;</highlight></codeline>
+<codeline lineno="165" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a1bfedb2dbf987caf616f77707f4e7996" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a1bfedb2dbf987caf616f77707f4e7996" kindref="member">bDeviceSubClass</ref>;</highlight></codeline>
+<codeline lineno="166" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ad38c30dbe1ba3c63a2a24c3e2f988157" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1ad38c30dbe1ba3c63a2a24c3e2f988157" kindref="member">bDeviceProtocol</ref>;</highlight></codeline>
+<codeline lineno="167" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1aad07704534145b010921a7ca41a30edf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1aad07704534145b010921a7ca41a30edf" kindref="member">bMaxPacketSize0</ref>;</highlight></codeline>
+<codeline lineno="168" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a6170c2c859a226f8dae80b59903e7ca2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1a6170c2c859a226f8dae80b59903e7ca2" kindref="member">bNumConfigurations</ref>;</highlight></codeline>
+<codeline lineno="169" refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1aaf8f2b73c01880ceea844ddeae5e098e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r_1aaf8f2b73c01880ceea844ddeae5e098e" kindref="member">bReserved</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/><ref refid="usb_8h_1a5f7e9b946c4597b53cfb48b8e718a1f2" kindref="member">USB_DEVICE_QUALIFIER_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Configuration<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_CONFIGURATION_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="174" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="175" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="176" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a7b85867f4bc8a9a8a39791d85ae89fc8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a7b85867f4bc8a9a8a39791d85ae89fc8" kindref="member">wTotalLength</ref>;</highlight></codeline>
+<codeline lineno="177" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a12ba216beafb7194adae869dfaef2a7e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a12ba216beafb7194adae869dfaef2a7e" kindref="member">bNumInterfaces</ref>;</highlight></codeline>
+<codeline lineno="178" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a33c99e7d8c3f8dbabda4dc28898118f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a33c99e7d8c3f8dbabda4dc28898118f8" kindref="member">bConfigurationValue</ref>;</highlight></codeline>
+<codeline lineno="179" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1aa504ab29f030455396dec5b99591de6f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1aa504ab29f030455396dec5b99591de6f" kindref="member">iConfiguration</ref>;</highlight></codeline>
+<codeline lineno="180" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" kindref="member">bmAttributes</ref>;</highlight></codeline>
+<codeline lineno="181" refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5662d2b9b0e5ef2290c7ae87b85b60a2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5662d2b9b0e5ef2290c7ae87b85b60a2" kindref="member">bMaxPower</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}<sp/><ref refid="usb_8h_1a36beb2cc858800223e1d7f02aeb28260" kindref="member">USB_CONFIGURATION_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Interface<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_INTERFACE_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="186" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="187" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="188" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a6b085320481a18a2f60b08e1df8c3fb6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a6b085320481a18a2f60b08e1df8c3fb6" kindref="member">bInterfaceNumber</ref>;</highlight></codeline>
+<codeline lineno="189" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a749103073cc05c78b6d58d8a08b6b0ea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a749103073cc05c78b6d58d8a08b6b0ea" kindref="member">bAlternateSetting</ref>;</highlight></codeline>
+<codeline lineno="190" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1af320b931ec8067dd32e27ba0e23e438a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1af320b931ec8067dd32e27ba0e23e438a" kindref="member">bNumEndpoints</ref>;</highlight></codeline>
+<codeline lineno="191" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a31f821b2cd1261dfad082a80005e39d5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a31f821b2cd1261dfad082a80005e39d5" kindref="member">bInterfaceClass</ref>;</highlight></codeline>
+<codeline lineno="192" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a5ab5e6dcdab46eb97093490433d5325c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a5ab5e6dcdab46eb97093490433d5325c" kindref="member">bInterfaceSubClass</ref>;</highlight></codeline>
+<codeline lineno="193" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a2151ba09c8750aa287e6e58494d9c2d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1a2151ba09c8750aa287e6e58494d9c2d7" kindref="member">bInterfaceProtocol</ref>;</highlight></codeline>
+<codeline lineno="194" refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1ac0fb618c55b8c62548531ed557fa8494" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r_1ac0fb618c55b8c62548531ed557fa8494" kindref="member">iInterface</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/><ref refid="usb_8h_1a514029a74d63a32b820ce506c0e60857" kindref="member">USB_INTERFACE_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Standard<sp/>Endpoint<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_ENDPOINT_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="199" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="200" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="201" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a80a1ec4bf8007a3ee5ff04c08d6f985d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a80a1ec4bf8007a3ee5ff04c08d6f985d" kindref="member">bEndpointAddress</ref>;</highlight></codeline>
+<codeline lineno="202" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" kindref="member">bmAttributes</ref>;</highlight></codeline>
+<codeline lineno="203" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a77f1aab9a5262fe467eb67358cc171fc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1a77f1aab9a5262fe467eb67358cc171fc" kindref="member">wMaxPacketSize</ref>;</highlight></codeline>
+<codeline lineno="204" refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1aee006978adb8e78b3536bc7f5ef79e11" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r_1aee006978adb8e78b3536bc7f5ef79e11" kindref="member">bInterval</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}<sp/><ref refid="usb_8h_1ad257142de6c082632f2ca3e8ab4ca058" kindref="member">USB_ENDPOINT_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>String<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_STRING_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="209" refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="210" refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="211" refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a95218d59dc2cad19d16fa6f721222be9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a95218d59dc2cad19d16fa6f721222be9" kindref="member">bString</ref></highlight><highlight class="comment">/*[]*/</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}<sp/><ref refid="usb_8h_1a3c54c7d04c19170c1ceb1c40c6e50bfc" kindref="member">USB_STRING_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Common<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__packed<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r" kindref="compound">_USB_COMMON_DESCRIPTOR</ref><sp/>{</highlight></codeline>
+<codeline lineno="216" refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" kindref="member">bLength</ref>;</highlight></codeline>
+<codeline lineno="217" refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" kindref="member">bDescriptorType</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}<sp/><ref refid="usb_8h_1a3754ad5b11ac1f424ca1b6468c9ae181" kindref="member">USB_COMMON_DESCRIPTOR</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__USB_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h"/>
+  </compounddef>
+</doxygen>

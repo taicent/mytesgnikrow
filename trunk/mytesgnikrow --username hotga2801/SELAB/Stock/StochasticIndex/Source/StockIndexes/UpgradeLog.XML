@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StockIndexes">
+</Property><Property Name="Solution File" Value="D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes.sln">
+</Property><Property Name="User Options File" Value="D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes.suo">
+</Property><Property Name="Date" Value="Monday, August 09, 2010">
+</Property><Property Name="Time" Value="23:25 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="StockIndexes.sln" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes.sln">
+</Event><Event ErrorLevel="0" Project="" Source="StockIndexes.suo" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes.suo">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\StockIndexes.csproj" Description="Project file successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\StockIndexes.csproj">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Form1.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Form1.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Form1.Designer.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Program.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Program.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Properties\Settings.settings" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Form1.resx" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Form1.resx">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\Properties\Resources.resx" Description="File successfully backed up as D:\Studying\StockGroup\MyCode\StockIndexes\Backup\StockIndexes\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\StockIndexes.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StockIndexes" Source="StockIndexes\StockIndexes.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="StockIndexes.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StockIndexes.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StockIndexes" Source="StockIndexes\StockIndexes.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

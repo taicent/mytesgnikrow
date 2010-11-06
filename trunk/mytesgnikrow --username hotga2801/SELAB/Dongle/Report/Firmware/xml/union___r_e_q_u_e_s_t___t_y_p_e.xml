@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="union___r_e_q_u_e_s_t___t_y_p_e" kind="union" prot="public">
+    <compoundname>_REQUEST_TYPE</compoundname>
+    <includes refid="usb_8h" local="no">usb.h</includes>
+    <innerclass refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" prot="public">_REQUEST_TYPE::_BM</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union___r_e_q_u_e_s_t___t_y_p_e_1a896773570e2fb212ad62245fe6e95f94" prot="public" static="no" mutable="no">
+        <type>__packed struct <ref refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" kindref="compound">_REQUEST_TYPE::_BM</ref></type>
+        <definition>__packed struct _REQUEST_TYPE::_BM  BM</definition>
+        <argsstring></argsstring>
+        <name>BM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="union___r_e_q_u_e_s_t___t_y_p_e_1abc9e2377dd2619b51b588323fe9984ea" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="52" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>_BM</label>
+        <link refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m"/>
+      </node>
+      <node id="30">
+        <label>_REQUEST_TYPE</label>
+        <link refid="union___r_e_q_u_e_s_t___t_y_p_e"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>BM</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="46" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="46" bodyend="53"/>
+    <listofallmembers>
+      <member refid="union___r_e_q_u_e_s_t___t_y_p_e_1abc9e2377dd2619b51b588323fe9984ea" prot="public" virt="non-virtual"><scope>_REQUEST_TYPE</scope><name>B</name></member>
+      <member refid="union___r_e_q_u_e_s_t___t_y_p_e_1a896773570e2fb212ad62245fe6e95f94" prot="public" virt="non-virtual"><scope>_REQUEST_TYPE</scope><name>BM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

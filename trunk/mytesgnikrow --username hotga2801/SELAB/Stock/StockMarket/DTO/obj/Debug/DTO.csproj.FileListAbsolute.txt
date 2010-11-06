@@ -1,0 +1,5 @@
+G:\SELAB\Stock\StockMarket\DTO\bin\Debug\DTO.dll
+G:\SELAB\Stock\StockMarket\DTO\bin\Debug\DTO.pdb
+G:\SELAB\Stock\StockMarket\DTO\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Stock\StockMarket\DTO\obj\Debug\DTO.dll
+G:\SELAB\Stock\StockMarket\DTO\obj\Debug\DTO.pdb

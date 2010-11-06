@@ -1,0 +1,7 @@
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\obj\Debug\ResolveAssemblyReference.cache
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\obj\Debug\libsvmdemo.Properties.Resources.resources
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\obj\Debug\libsvmdemo.csproj.GenerateResource.Cache
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\bin\Debug\libsvmdemo.exe
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\bin\Debug\libsvmdemo.pdb
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\obj\Debug\libsvmdemo.exe
+K:\SELAB\Stock\Source\libsvmdemo\libsvmdemo\obj\Debug\libsvmdemo.pdb

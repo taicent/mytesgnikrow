@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_serial_logger_8h" kind="file">
+    <compoundname>SerialLogger.h</compoundname>
+    <includes local="yes">string.h</includes>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="_serial_logger_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c</includedby>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbhw_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <incdepgraph>
+      <node id="200">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h</label>
+        <link refid="SerialLogger.h"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="207">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="206">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</label>
+        <link refid="usbhw_8c"/>
+      </node>
+      <node id="204">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c</label>
+        <link refid="_serial_logger_8c"/>
+      </node>
+      <node id="202">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h</label>
+        <link refid="SerialLogger.h"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+      <node id="203">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_serial_logger_8h_1aabf4f709c8199e41cf279c77112345fe" prot="public" static="no">
+        <name>MAX_LEN</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="15" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_serial_logger_8h_1a09f479908cbf75429509b76cbd9c3142" compoundref="_serial_logger_8c" startline="243" endline="252">PLogNum</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_logger_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" prot="public" static="no">
+        <name>NULL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="19" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_serial_logger_8h_1a667637823a3816eb31dd8003ff2b5f94" compoundref="_serial_logger_8c" startline="81" endline="89">sendstring</referencedby>
+        <referencedby refid="usbcore_8h_1abd896ba7757ca7b9b9ae8a8d5bdabda5" compoundref="usbcore_8c" startline="125" endline="130">USB_StatusInStage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_serial_logger_8h_1ab11a5d77be2222a37d0b47e6556251f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_serial</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_serial</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="26" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="42" bodyend="54"/>
+        <references refid="_serial_logger_8c_1aec8b4bca263f5745bbd7e4dab428da1e" compoundref="_serial_logger_8c" startline="25">UxDLL</references>
+        <references refid="_serial_logger_8c_1af9170d23776af3747dfcf369cc70b8cf" compoundref="_serial_logger_8c" startline="26">UxDLM</references>
+        <references refid="_serial_logger_8c_1a79a09ac01db645ca57e6e48a9db3874c" compoundref="_serial_logger_8c" startline="23">UxFDR</references>
+        <references refid="_serial_logger_8c_1a0e5b30ed14eea3fc384de755bd59a211" compoundref="_serial_logger_8c" startline="24">UxLCR</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1ae96b42af8a6476ad4053485da5c5bf5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sendchar</definition>
+        <argsstring>(int ch)</argsstring>
+        <name>sendchar</name>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="27" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="58" bodyend="63"/>
+        <references refid="_serial_logger_8c_1a24a8fb74ba7411d68f5f657813f4bf75" compoundref="_serial_logger_8c" startline="27">UxLSR</references>
+        <references refid="_serial_logger_8c_1af6c15d0828096192450cfe8d12f5347b" compoundref="_serial_logger_8c" startline="28">UxTHR</references>
+        <referencedby refid="_serial_logger_8h_1ac57c564379e296f8923156cbfbe36623" compoundref="_serial_logger_8c" startline="161" endline="224">getnumber</referencedby>
+        <referencedby refid="_serial_logger_8h_1a18dec1e1c775ed5b7e5d83f3625431ee" compoundref="_serial_logger_8c" startline="91" endline="125">getstring</referencedby>
+        <referencedby refid="_serial_logger_8h_1ad06e1585ed9e18ecaf35ea5c567127a2" compoundref="_serial_logger_8c" startline="74" endline="78">newline</referencedby>
+        <referencedby refid="_serial_logger_8h_1a667637823a3816eb31dd8003ff2b5f94" compoundref="_serial_logger_8c" startline="81" endline="89">sendstring</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1ab64e30a75b8aec4b68b30dc0f0e6488c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getkey</definition>
+        <argsstring>(void)</argsstring>
+        <name>getkey</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="28" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="66" bodyend="71"/>
+        <references refid="_serial_logger_8c_1a24a8fb74ba7411d68f5f657813f4bf75" compoundref="_serial_logger_8c" startline="27">UxLSR</references>
+        <references refid="_serial_logger_8c_1aea6625ba2250198cd393e257a0aa6575" compoundref="_serial_logger_8c" startline="29">UxRBR</references>
+        <referencedby refid="_serial_logger_8h_1ac57c564379e296f8923156cbfbe36623" compoundref="_serial_logger_8c" startline="161" endline="224">getnumber</referencedby>
+        <referencedby refid="_serial_logger_8h_1a18dec1e1c775ed5b7e5d83f3625431ee" compoundref="_serial_logger_8c" startline="91" endline="125">getstring</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1ad06e1585ed9e18ecaf35ea5c567127a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void newline</definition>
+        <argsstring>(void)</argsstring>
+        <name>newline</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="31" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="74" bodyend="78"/>
+        <references refid="_serial_logger_8c_1ae96b42af8a6476ad4053485da5c5bf5b" compoundref="_serial_logger_8c" startline="58" endline="63">sendchar</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+        <referencedby refid="_serial_logger_8h_1aa273603471b41047bed597fa602d84ff" compoundref="_serial_logger_8c" startline="226" endline="233">PLog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1a667637823a3816eb31dd8003ff2b5f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sendstring</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>sendstring</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="34" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="81" bodyend="89"/>
+        <references refid="_serial_logger_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_serial_logger_8h" startline="19">NULL</references>
+        <references refid="_serial_logger_8c_1ae96b42af8a6476ad4053485da5c5bf5b" compoundref="_serial_logger_8c" startline="58" endline="63">sendchar</references>
+        <referencedby refid="_serial_logger_8h_1aa273603471b41047bed597fa602d84ff" compoundref="_serial_logger_8c" startline="226" endline="233">PLog</referencedby>
+        <referencedby refid="_serial_logger_8h_1a85e13bfe0137723371b75f2b88a1f285" compoundref="_serial_logger_8c" startline="235" endline="241">PLogN</referencedby>
+        <referencedby refid="_serial_logger_8h_1a09f479908cbf75429509b76cbd9c3142" compoundref="_serial_logger_8c" startline="243" endline="252">PLogNum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1a18dec1e1c775ed5b7e5d83f3625431ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getstring</definition>
+        <argsstring>(char *str, int size)</argsstring>
+        <name>getstring</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="37" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="91" bodyend="125"/>
+        <references refid="_serial_logger_8c_1ab64e30a75b8aec4b68b30dc0f0e6488c" compoundref="_serial_logger_8c" startline="66" endline="71">getkey</references>
+        <references refid="_serial_logger_8c_1ae96b42af8a6476ad4053485da5c5bf5b" compoundref="_serial_logger_8c" startline="58" endline="63">sendchar</references>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1ac57c564379e296f8923156cbfbe36623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getnumber</definition>
+        <argsstring>(void)</argsstring>
+        <name>getnumber</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="40" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="161" bodyend="224"/>
+        <references refid="_serial_logger_8c_1ab64e30a75b8aec4b68b30dc0f0e6488c" compoundref="_serial_logger_8c" startline="66" endline="71">getkey</references>
+        <references refid="_serial_logger_8c_1ae96b42af8a6476ad4053485da5c5bf5b" compoundref="_serial_logger_8c" startline="58" endline="63">sendchar</references>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1aa273603471b41047bed597fa602d84ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PLog</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>PLog</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="43" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="226" bodyend="233"/>
+        <references refid="_serial_logger_8c_1ad06e1585ed9e18ecaf35ea5c567127a2" compoundref="_serial_logger_8c" startline="74" endline="78">newline</references>
+        <references refid="_serial_logger_8c_1a667637823a3816eb31dd8003ff2b5f94" compoundref="_serial_logger_8c" startline="81" endline="89">sendstring</references>
+        <references refid="_serial_logger_8c_1a6fc37228d116233c6107a91815114a2f" compoundref="_serial_logger_8c" startline="17">USE_SERIAL_LOGGER</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+        <referencedby refid="usbhw_8h_1a35fe971cbcbfe8813199e869284cb862" compoundref="usbhw_8c" startline="111" endline="150">USB_Init</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1a85e13bfe0137723371b75f2b88a1f285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PLogN</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>PLogN</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="44" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="235" bodyend="241"/>
+        <references refid="_serial_logger_8c_1a667637823a3816eb31dd8003ff2b5f94" compoundref="_serial_logger_8c" startline="81" endline="89">sendstring</references>
+        <references refid="_serial_logger_8c_1a6fc37228d116233c6107a91815114a2f" compoundref="_serial_logger_8c" startline="17">USE_SERIAL_LOGGER</references>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1a09f479908cbf75429509b76cbd9c3142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PLogNum</definition>
+        <argsstring>(int num)</argsstring>
+        <name>PLogNum</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="45" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="243" bodyend="252"/>
+        <references refid="_serial_logger_8c_1af749add1ff19b6ff96a62f35ebb49b7e" compoundref="_serial_logger_8c" startline="141" endline="158">itoa</references>
+        <references refid="_serial_logger_8h_1aabf4f709c8199e41cf279c77112345fe" compoundref="_serial_logger_8h" startline="15">MAX_LEN</references>
+        <references refid="_serial_logger_8c_1a667637823a3816eb31dd8003ff2b5f94" compoundref="_serial_logger_8c" startline="81" endline="89">sendstring</references>
+        <references refid="_serial_logger_8c_1a6fc37228d116233c6107a91815114a2f" compoundref="_serial_logger_8c" startline="17">USE_SERIAL_LOGGER</references>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1aa8a9a8836962d890b4939c112fd29190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reverse</definition>
+        <argsstring>(char s[])</argsstring>
+        <name>reverse</name>
+        <param>
+          <type>char</type>
+          <declname>s</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="48" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="128" bodyend="138"/>
+        <referencedby refid="_serial_logger_8h_1af749add1ff19b6ff96a62f35ebb49b7e" compoundref="_serial_logger_8c" startline="141" endline="158">itoa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_serial_logger_8h_1af749add1ff19b6ff96a62f35ebb49b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void itoa</definition>
+        <argsstring>(int n, char s[])</argsstring>
+        <name>itoa</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>s</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" line="49" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" bodystart="141" bodyend="158"/>
+        <references refid="_serial_logger_8c_1aa8a9a8836962d890b4939c112fd29190" compoundref="_serial_logger_8c" startline="128" endline="138">reverse</references>
+        <referencedby refid="_serial_logger_8h_1a09f479908cbf75429509b76cbd9c3142" compoundref="_serial_logger_8c" startline="243" endline="252">PLogNum</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SerialLogger.h:<sp/>Low<sp/>Level<sp/>Serial<sp/>Routines<sp/>and<sp/>Logger<sp/>for<sp/>Degug<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2005-2006<sp/>Keil<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>this<sp/>software.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Description:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Use<sp/>this<sp/>module<sp/>to<sp/>print<sp/>the<sp/>logger<sp/>string<sp/>to<sp/>HypperTerminal<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MAX_LEN</highlight></codeline>
+<codeline lineno="15" refid="_serial_logger_8h_1aabf4f709c8199e41cf279c77112345fe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_LEN<sp/>32</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NULL</highlight></codeline>
+<codeline lineno="19" refid="_serial_logger_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NULL<sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>String<sp/>Library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;string.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>prototype</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1ab11a5d77be2222a37d0b47e6556251f7" kindref="member">init_serial</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Init<sp/>Serial<sp/>UART0<sp/>Port</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1ae96b42af8a6476ad4053485da5c5bf5b" kindref="member">sendchar</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>char<sp/>&apos;ch&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1ab64e30a75b8aec4b68b30dc0f0e6488c" kindref="member">getkey</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Send<sp/>one<sp/>new<sp/>line<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1ad06e1585ed9e18ecaf35ea5c567127a2" kindref="member">newline</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Send<sp/>string<sp/>&apos;str&apos;<sp/>to<sp/>HyperTerminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1a667637823a3816eb31dd8003ff2b5f94" kindref="member">sendstring</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>string<sp/>to<sp/>&apos;str&apos;,<sp/>specific<sp/>&apos;size&apos;<sp/>from<sp/>HyperTerminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1a18dec1e1c775ed5b7e5d83f3625431ee" kindref="member">getstring</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>number<sp/>from<sp/>HyperTerminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1ac57c564379e296f8923156cbfbe36623" kindref="member">getnumber</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Print<sp/>a<sp/>log<sp/>string<sp/>to<sp/>HyperTerminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" kindref="member">PLog</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1a85e13bfe0137723371b75f2b88a1f285" kindref="member">PLogN</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1a09f479908cbf75429509b76cbd9c3142" kindref="member">PLogNum</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>String<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1aa8a9a8836962d890b4939c112fd29190" kindref="member">reverse</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>s[]);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reverse<sp/>a<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_serial_logger_8c_1af749add1ff19b6ff96a62f35ebb49b7e" kindref="member">itoa</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>s[]);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Chang<sp/>string<sp/>&apos;s&apos;<sp/>to<sp/>number<sp/>&apos;n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h"/>
+  </compounddef>
+</doxygen>

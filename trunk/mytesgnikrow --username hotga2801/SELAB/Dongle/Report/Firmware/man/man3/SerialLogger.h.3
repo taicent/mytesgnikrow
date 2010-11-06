@@ -1,0 +1,110 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'string.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_LEN\fP   32"
+.br
+.ti -1c
+.RI "#define \fBNULL\fP   0"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_serial\fP (void)"
+.br
+.ti -1c
+.RI "int \fBsendchar\fP (int ch)"
+.br
+.ti -1c
+.RI "int \fBgetkey\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnewline\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendstring\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBgetstring\fP (char *str, int size)"
+.br
+.ti -1c
+.RI "int \fBgetnumber\fP (void)"
+.br
+.ti -1c
+.RI "void \fBPLog\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBPLogN\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBPLogNum\fP (int num)"
+.br
+.ti -1c
+.RI "void \fBreverse\fP (char s[])"
+.br
+.ti -1c
+.RI "void \fBitoa\fP (int n, char s[])"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define MAX_LEN   32"
+.PP
+Definition at line 15 of file SerialLogger.h.
+.SS "#define NULL   0"
+.PP
+Definition at line 19 of file SerialLogger.h.
+.SH "Function Documentation"
+.PP 
+.SS "int getkey (void)"
+.PP
+Definition at line 66 of file SerialLogger.c.
+.SS "int getnumber (void)"
+.PP
+Definition at line 161 of file SerialLogger.c.
+.SS "void getstring (char * str, int size)"
+.PP
+Definition at line 91 of file SerialLogger.c.
+.SS "void init_serial (void)"
+.PP
+Definition at line 42 of file SerialLogger.c.
+.SS "void itoa (int n, char s[])"
+.PP
+Definition at line 141 of file SerialLogger.c.
+.SS "void newline (void)"
+.PP
+Definition at line 74 of file SerialLogger.c.
+.SS "void PLog (char * str)"
+.PP
+Definition at line 226 of file SerialLogger.c.
+.SS "void PLogN (char * str)"
+.PP
+Definition at line 235 of file SerialLogger.c.
+.SS "void PLogNum (int num)"
+.PP
+Definition at line 243 of file SerialLogger.c.
+.SS "void reverse (char s[])"
+.PP
+Definition at line 128 of file SerialLogger.c.
+.SS "int sendchar (int ch)"
+.PP
+Definition at line 58 of file SerialLogger.c.
+.SS "void sendstring (char * str)"
+.PP
+Definition at line 81 of file SerialLogger.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

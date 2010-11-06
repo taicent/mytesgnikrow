@@ -1,0 +1,63 @@
+#siteNotice DIV {
+	MARGIN: 0px
+}
+#siteNotice DIV.expanded TABLE.siteNoticeUser {
+	MARGIN-BOTTOM: 1em
+}
+INPUT#wpSummary {
+	WIDTH: 100%
+}
+BODY.page-Main_Page #deleteconfirm {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #t-cite {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #footer-info-lastmod {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #siteSub {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #contentSub {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page H1.firstHeading {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #mp-topbanner {
+	MARGIN-TOP: 0px! important
+}
+#coordinates {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FONT-SIZE: 85%; RIGHT: 0em; FLOAT: right; PADDING-BOTTOM: 0em; MARGIN: 0em; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0em; WHITE-SPACE: nowrap; POSITION: absolute; TOP: 0em; TEXT-ALIGN: right
+}
+DIV.topicon {
+	DISPLAY: block! important; MARGIN-RIGHT: -10px; POSITION: absolute; TOP: -2em
+}
+DIV.flaggedrevs_short {
+	Z-INDEX: 1; RIGHT: 55px; MARGIN-LEFT: 0px; MARGIN-RIGHT: -10px; POSITION: absolute; TOP: -3em
+}
+DIV.vectorMenu DIV {
+	Z-INDEX: 2
+}
+#siteSub {
+	DISPLAY: inline; FONT-WEIGHT: normal; FONT-SIZE: 92%
+}
+#mw-panel DIV.portal DIV.body UL LI.GA {
+	PADDING-LEFT: 10px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/en/4/42/Monobook-bullet-ga.png) no-repeat; MARGIN-LEFT: -10px
+}
+#mw-panel DIV.portal DIV.body UL LI.FA {
+	PADDING-LEFT: 10px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png) no-repeat; MARGIN-LEFT: -10px
+}
+#siteNotice .notice-all {
+	MARGIN-BOTTOM: 1em! important; MARGIN-RIGHT: 2px! important
+}
+#bodyContent A[href^='https://'].external {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/en/0/00/Lock_icon_blue.gif) no-repeat right center
+}
+.link-https {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/en/0/00/Lock_icon_blue.gif) no-repeat right center
+}
+.texhtml {
+	FONT-SIZE: 125%; LINE-HEIGHT: 1.5em
+}

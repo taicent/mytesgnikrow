@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbhw_8c.html#a54a2914070c64801b8d8942b787fffad" title="USB_ConfigEP" alt="" coords="209,5,319,35"/>
+<area shape="rect" id="node7" href="$usbhw_8c.html#a0a603b4670d397ad4c0eff9185fb9544" title="USB_Configure" alt="" coords="209,219,319,248"/>
+<area shape="rect" id="node11" href="$usbhw_8c.html#a799c3767044e65fbd0d4acf68f744b8c" title="USB_DisableEP" alt="" coords="205,59,323,88"/>
+<area shape="rect" id="node15" href="$usbhw_8c.html#a17981e6ecec0686cdc36add27965beba" title="USB_EnableEP" alt="" coords="207,112,321,141"/>
+<area shape="rect" id="node19" href="$usbhw_8c.html#a5aeec24896e63d9133efc8da2cbec8d5" title="USB_ResetEP" alt="" coords="211,165,317,195"/>
+<area shape="rect" id="node5" href="$usbhw_8c.html#ac1d673d6c8125e922cdbd2367cd11bd0" title="EPAdr" alt="" coords="385,85,444,115"/>
+<area shape="rect" id="node9" href="$usbhw_8c.html#ad70e939022ae1ae94bbbf9460413e366" title="WrCmdDat" alt="" coords="372,139,457,168"/>
+</map>

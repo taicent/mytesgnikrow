@@ -1,0 +1,23 @@
+﻿.hide {
+  display: none;
+}
+
+#PrimitiveTabs ul.tabs {
+  height: 1.2em;
+}
+
+#PrimitiveTabs ul.tabs li.tab {
+  float: left;
+}
+
+#PrimitiveTabs ul.tabs li.tab span.label {
+  display: none;
+}
+
+#PrimitiveTabs ul.tabs li.tab.selected a.label {
+  display: none;
+}
+
+#PrimitiveTabs ul.tabs li.tab.selected span.label {
+  display: inline;
+}

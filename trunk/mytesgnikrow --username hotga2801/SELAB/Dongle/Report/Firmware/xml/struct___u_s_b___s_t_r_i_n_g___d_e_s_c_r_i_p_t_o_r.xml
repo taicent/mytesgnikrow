@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r" kind="struct" prot="public">
+    <compoundname>_USB_STRING_DESCRIPTOR</compoundname>
+    <includes refid="usb_8h" local="no">usb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="209" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="210" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a95218d59dc2cad19d16fa6f721222be9" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD bString</definition>
+        <argsstring></argsstring>
+        <name>bString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="211" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="208" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="208" bodyend="212"/>
+    <listofallmembers>
+      <member refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" prot="public" virt="non-virtual"><scope>_USB_STRING_DESCRIPTOR</scope><name>bDescriptorType</name></member>
+      <member refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" prot="public" virt="non-virtual"><scope>_USB_STRING_DESCRIPTOR</scope><name>bLength</name></member>
+      <member refid="struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r_1a95218d59dc2cad19d16fa6f721222be9" prot="public" virt="non-virtual"><scope>_USB_STRING_DESCRIPTOR</scope><name>bString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

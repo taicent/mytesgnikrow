@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="type_8h" kind="file">
+    <compoundname>type.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbdesc_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</includedby>
+    <includedby refid="usbhw_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="214">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="212">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</label>
+        <link refid="usbdesc_8c"/>
+      </node>
+      <node id="215">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="213">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</label>
+        <link refid="usbhw_8c"/>
+      </node>
+      <node id="211">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+      <node id="210">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+      <node id="209">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h</label>
+        <link refid="type.h"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" prot="public" static="no">
+        <name>NULL</name>
+        <initializer>((void *)0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="6" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="type_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="10" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="14" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char BYTE</definition>
+        <argsstring></argsstring>
+        <name>BYTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="17" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="type_8h_1a197942eefa7db30960ae396d68339b97" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short WORD</definition>
+        <argsstring></argsstring>
+        <name>WORD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="18" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="type_8h_1ad342ac907eb044443153a22f964bf0af" prot="public" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long DWORD</definition>
+        <argsstring></argsstring>
+        <name>DWORD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="19" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="type_8h_1ac3247c51e4e3de674affb32998e133e2" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int BOOL</definition>
+        <argsstring></argsstring>
+        <name>BOOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" line="20" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__TYPE_H__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__TYPE_H__</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NULL</highlight></codeline>
+<codeline lineno="6" refid="type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NULL<sp/><sp/><sp/><sp/>((void<sp/>*)0)</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FALSE</highlight></codeline>
+<codeline lineno="10" refid="type_8h_1aa93f0eb578d23995850d61f7d61c55c1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/><sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRUE</highlight></codeline>
+<codeline lineno="14" refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRUE<sp/><sp/><sp/><sp/>(1)</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref>;</highlight></codeline>
+<codeline lineno="18" refid="type_8h_1a197942eefa7db30960ae396d68339b97" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref>;</highlight></codeline>
+<codeline lineno="19" refid="type_8h_1ad342ac907eb044443153a22f964bf0af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref>;</highlight></codeline>
+<codeline lineno="20" refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__TYPE_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/type.h"/>
+  </compounddef>
+</doxygen>

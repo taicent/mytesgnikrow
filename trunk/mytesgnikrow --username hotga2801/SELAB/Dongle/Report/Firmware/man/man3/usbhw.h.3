@@ -1,0 +1,346 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fB_USB_DMA_DESCRIPTOR\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUSB_RAM_ADR\fP   0x7FD00000"
+.br
+.ti -1c
+.RI "#define \fBUSB_RAM_SZ\fP   0x00002000"
+.br
+.ti -1c
+.RI "#define \fBDD_NISO_CNT\fP   16"
+.br
+.ti -1c
+.RI "#define \fBDD_ISO_CNT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBDD_NISO_SZ\fP   (DD_NISO_CNT * 16)"
+.br
+.ti -1c
+.RI "#define \fBDD_ISO_SZ\fP   (DD_ISO_CNT  * 20)"
+.br
+.ti -1c
+.RI "#define \fBDD_NISO_ADR\fP   (USB_RAM_ADR + 128)"
+.br
+.ti -1c
+.RI "#define \fBDD_ISO_ADR\fP   (DD_NISO_ADR + DD_NISO_SZ)"
+.br
+.ti -1c
+.RI "#define \fBDD_SZ\fP   (128 + DD_NISO_SZ + DD_ISO_SZ)"
+.br
+.ti -1c
+.RI "#define \fBDMA_BUF_ADR\fP   (USB_RAM_ADR + DD_SZ)"
+.br
+.ti -1c
+.RI "#define \fBDMA_BUF_SZ\fP   (USB_RAM_SZ  - DD_SZ)"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_PID\fP   0x0001"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_UEPKT\fP   0x0002"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_DCRC\fP   0x0004"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_TIMOUT\fP   0x0008"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_EOP\fP   0x0010"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_B_OVRN\fP   0x0020"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_BTSTF\fP   0x0040"
+.br
+.ti -1c
+.RI "#define \fBUSB_ERR_TGL\fP   0x0080"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_INVALID\fP   0x0000"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_IDLE\fP   0x0001"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_BUSY\fP   0x0002"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_DONE\fP   0x0003"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_OVER_RUN\fP   0x0004"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_UNDER_RUN\fP   0x0005"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_ERROR\fP   0x0006"
+.br
+.ti -1c
+.RI "#define \fBUSB_DMA_UNKNOWN\fP   0xFFFF"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB_USB_DMA_DESCRIPTOR\fP \fBUSB_DMA_DESCRIPTOR\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUSB_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Connect\fP (\fBBOOL\fP con)"
+.br
+.ti -1c
+.RI "void \fBUSB_Reset\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Suspend\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Resume\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_WakeUp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_WakeUpCfg\fP (\fBBOOL\fP cfg)"
+.br
+.ti -1c
+.RI "void \fBUSB_SetAddress\fP (\fBDWORD\fP adr)"
+.br
+.ti -1c
+.RI "void \fBUSB_Configure\fP (\fBBOOL\fP cfg)"
+.br
+.ti -1c
+.RI "void \fBUSB_ConfigEP\fP (\fBUSB_ENDPOINT_DESCRIPTOR\fP *pEPD)"
+.br
+.ti -1c
+.RI "void \fBUSB_DirCtrlEP\fP (\fBDWORD\fP dir)"
+.br
+.ti -1c
+.RI "void \fBUSB_EnableEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_DisableEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_ResetEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_SetStallEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_ClrStallEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_ReadEP\fP (\fBDWORD\fP EPNum, \fBBYTE\fP *pData)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_WriteEP\fP (\fBDWORD\fP EPNum, \fBBYTE\fP *pData, \fBDWORD\fP cnt)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBUSB_DMA_Setup\fP (\fBDWORD\fP EPNum, \fBUSB_DMA_DESCRIPTOR\fP *pDD)"
+.br
+.ti -1c
+.RI "void \fBUSB_DMA_Enable\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_DMA_Disable\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_DMA_Status\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_DMA_BufAdr\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_DMA_BufCnt\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_GetFrame\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_ISR\fP (void) __irq"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define DD_ISO_ADR   (DD_NISO_ADR + DD_NISO_SZ)"
+.PP
+Definition at line 30 of file usbhw.h.
+.SS "#define DD_ISO_CNT   8"
+.PP
+Definition at line 26 of file usbhw.h.
+.SS "#define DD_ISO_SZ   (DD_ISO_CNT  * 20)"
+.PP
+Definition at line 28 of file usbhw.h.
+.SS "#define DD_NISO_ADR   (USB_RAM_ADR + 128)"
+.PP
+Definition at line 29 of file usbhw.h.
+.SS "#define DD_NISO_CNT   16"
+.PP
+Definition at line 25 of file usbhw.h.
+.SS "#define DD_NISO_SZ   (DD_NISO_CNT * 16)"
+.PP
+Definition at line 27 of file usbhw.h.
+.SS "#define DD_SZ   (128 + DD_NISO_SZ + DD_ISO_SZ)"
+.PP
+Definition at line 31 of file usbhw.h.
+.SS "#define DMA_BUF_ADR   (USB_RAM_ADR + DD_SZ)"
+.PP
+Definition at line 34 of file usbhw.h.
+.SS "#define DMA_BUF_SZ   (USB_RAM_SZ  - DD_SZ)"
+.PP
+Definition at line 35 of file usbhw.h.
+.SS "#define USB_DMA_BUSY   0x0002"
+.PP
+Definition at line 50 of file usbhw.h.
+.SS "#define USB_DMA_DONE   0x0003"
+.PP
+Definition at line 51 of file usbhw.h.
+.SS "#define USB_DMA_ERROR   0x0006"
+.PP
+Definition at line 54 of file usbhw.h.
+.SS "#define USB_DMA_IDLE   0x0001"
+.PP
+Definition at line 49 of file usbhw.h.
+.SS "#define USB_DMA_INVALID   0x0000"
+.PP
+Definition at line 48 of file usbhw.h.
+.SS "#define USB_DMA_OVER_RUN   0x0004"
+.PP
+Definition at line 52 of file usbhw.h.
+.SS "#define USB_DMA_UNDER_RUN   0x0005"
+.PP
+Definition at line 53 of file usbhw.h.
+.SS "#define USB_DMA_UNKNOWN   0xFFFF"
+.PP
+Definition at line 55 of file usbhw.h.
+.SS "#define USB_ERR_B_OVRN   0x0020"
+.PP
+Definition at line 43 of file usbhw.h.
+.SS "#define USB_ERR_BTSTF   0x0040"
+.PP
+Definition at line 44 of file usbhw.h.
+.SS "#define USB_ERR_DCRC   0x0004"
+.PP
+Definition at line 40 of file usbhw.h.
+.SS "#define USB_ERR_EOP   0x0010"
+.PP
+Definition at line 42 of file usbhw.h.
+.SS "#define USB_ERR_PID   0x0001"
+.PP
+Definition at line 38 of file usbhw.h.
+.SS "#define USB_ERR_TGL   0x0080"
+.PP
+Definition at line 45 of file usbhw.h.
+.SS "#define USB_ERR_TIMOUT   0x0008"
+.PP
+Definition at line 41 of file usbhw.h.
+.SS "#define USB_ERR_UEPKT   0x0002"
+.PP
+Definition at line 39 of file usbhw.h.
+.SS "#define USB_RAM_ADR   0x7FD00000"
+.PP
+Definition at line 21 of file usbhw.h.
+.SS "#define USB_RAM_SZ   0x00002000"
+.PP
+Definition at line 22 of file usbhw.h.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fB_USB_DMA_DESCRIPTOR\fP  \fBUSB_DMA_DESCRIPTOR\fP"
+.SH "Function Documentation"
+.PP 
+.SS "void USB_ClrStallEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 353 of file usbhw.c.
+.SS "void USB_ConfigEP (\fBUSB_ENDPOINT_DESCRIPTOR\fP * pEPD)"
+.PP
+Definition at line 270 of file usbhw.c.
+.SS "void USB_Configure (\fBBOOL\fP cfg)"
+.PP
+Definition at line 254 of file usbhw.c.
+.SS "void USB_Connect (\fBBOOL\fP con)"
+.PP
+Definition at line 160 of file usbhw.c.
+.SS "void USB_DirCtrlEP (\fBDWORD\fP dir)"
+.PP
+Definition at line 288 of file usbhw.c.
+.SS "void USB_DisableEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 314 of file usbhw.c.
+.SS "\fBDWORD\fP USB_DMA_BufAdr (\fBDWORD\fP EPNum)"
+.SS "\fBDWORD\fP USB_DMA_BufCnt (\fBDWORD\fP EPNum)"
+.SS "void USB_DMA_Disable (\fBDWORD\fP EPNum)"
+.SS "void USB_DMA_Enable (\fBDWORD\fP EPNum)"
+.SS "\fBBOOL\fP USB_DMA_Setup (\fBDWORD\fP EPNum, \fBUSB_DMA_DESCRIPTOR\fP * pDD)"
+.SS "\fBDWORD\fP USB_DMA_Status (\fBDWORD\fP EPNum)"
+.SS "void USB_EnableEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 301 of file usbhw.c.
+.SS "\fBDWORD\fP USB_GetFrame (void)"
+.PP
+Definition at line 431 of file usbhw.c.
+.SS "void USB_Init (void)"
+.PP
+Definition at line 111 of file usbhw.c.
+.SS "void USB_ISR (void)"
+.PP
+Definition at line 446 of file usbhw.c.
+.SS "\fBDWORD\fP USB_ReadEP (\fBDWORD\fP EPNum, \fBBYTE\fP * pData)"
+.PP
+Definition at line 367 of file usbhw.c.
+.SS "void USB_Reset (void)"
+.PP
+Definition at line 171 of file usbhw.c.
+.SS "void USB_ResetEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 327 of file usbhw.c.
+.SS "void USB_Resume (void)"
+.PP
+Definition at line 206 of file usbhw.c.
+.SS "void USB_SetAddress (\fBDWORD\fP adr)"
+.PP
+Definition at line 242 of file usbhw.c.
+.SS "void USB_SetStallEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 340 of file usbhw.c.
+.SS "void USB_Suspend (void)"
+.PP
+Definition at line 195 of file usbhw.c.
+.SS "void USB_WakeUp (void)"
+.PP
+Definition at line 217 of file usbhw.c.
+.SS "void USB_WakeUpCfg (\fBBOOL\fP cfg)"
+.PP
+Definition at line 231 of file usbhw.c.
+.SS "\fBDWORD\fP USB_WriteEP (\fBDWORD\fP EPNum, \fBBYTE\fP * pData, \fBDWORD\fP cnt)"
+.PP
+Definition at line 403 of file usbhw.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

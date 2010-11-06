@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="memory_8c" kind="file">
+    <compoundname>memory.c</compoundname>
+    <includes local="no">LPC23xx.H</includes>
+    <includes refid="type_8h" local="yes">type.h</includes>
+    <includes refid="usb_8h" local="yes">usb.h</includes>
+    <includes refid="usbcfg_8h" local="yes">usbcfg.h</includes>
+    <includes refid="usbhw_8h" local="yes">usbhw.h</includes>
+    <includes refid="usbcore_8h" local="yes">usbcore.h</includes>
+    <includes refid="memory_8h" local="yes">memory.h</includes>
+    <includes refid="_l_c_d_8h" local="yes">LCD.h</includes>
+    <includes refid="_serial_logger_8h" local="yes">SerialLogger.h</includes>
+    <includes refid="_nhac_8h" local="yes">Nhac.h</includes>
+    <incdepgraph>
+      <node id="173">
+        <label>usbhw.h</label>
+        <link refid="usbhw_8h"/>
+      </node>
+      <node id="176">
+        <label>LCD.h</label>
+        <link refid="_l_c_d_8h"/>
+      </node>
+      <node id="177">
+        <label>SerialLogger.h</label>
+        <link refid="_serial_logger_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>usb.h</label>
+        <link refid="usb_8h"/>
+      </node>
+      <node id="174">
+        <label>usbcore.h</label>
+        <link refid="usbcore_8h"/>
+      </node>
+      <node id="178">
+        <label>string.h</label>
+      </node>
+      <node id="168">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory.c"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>memory.h</label>
+        <link refid="memory_8h"/>
+      </node>
+      <node id="172">
+        <label>usbcfg.h</label>
+        <link refid="usbcfg_8h"/>
+      </node>
+      <node id="169">
+        <label>LPC23xx.H</label>
+      </node>
+      <node id="170">
+        <label>type.h</label>
+        <link refid="type_8h"/>
+      </node>
+      <node id="179">
+        <label>Nhac.h</label>
+        <link refid="_nhac_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="memory_8c_1ab3570a8c9e1266519ad1c7e00093812b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>LED_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" line="29" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" bodystart="29" bodyend="33"/>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="memory_8c_1abedf2682108674aaa9649d4d2a1ce3db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_On</definition>
+        <argsstring>(unsigned int num)</argsstring>
+        <name>LED_On</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" line="36" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="memory_8c_1af20fc163324a460b1cc79865272004fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_Off</definition>
+        <argsstring>(unsigned int num)</argsstring>
+        <name>LED_Off</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" line="41" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="memory_8c_1a303dc6010934ea6b11eb21f3be0e6837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_Out</definition>
+        <argsstring>(unsigned int value)</argsstring>
+        <name>LED_Out</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" line="46" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" line="53" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c" bodystart="53" bodyend="75"/>
+        <references refid="_serial_logger_8c_1ab11a5d77be2222a37d0b47e6556251f7" compoundref="_serial_logger_8c" startline="42" endline="54">init_serial</references>
+        <references refid="_nhac_8c_1a805bb5aac1bdfced0062a19e17f65a84" compoundref="_nhac_8c" startline="99" endline="116">InitSong</references>
+        <references refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</references>
+        <references refid="_l_c_d_8h_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</references>
+        <references refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" compoundref="_l_c_d__4bit_8c" startline="293" endline="298">lcd_print</references>
+        <references refid="memory_8c_1ab3570a8c9e1266519ad1c7e00093812b" compoundref="memory_8c" startline="29" endline="33">LED_Init</references>
+        <references refid="_serial_logger_8c_1ad06e1585ed9e18ecaf35ea5c567127a2" compoundref="_serial_logger_8c" startline="74" endline="78">newline</references>
+        <references refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" compoundref="_serial_logger_8c" startline="226" endline="233">PLog</references>
+        <references refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" compoundref="_l_c_d__4bit_8c" startline="265" endline="272">set_cursor</references>
+        <references refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="type_8h" startline="14">TRUE</references>
+        <references refid="usbhw_8c_1a06ddd62c3767d37c143233cd854c9031" compoundref="usbhw_8c" startline="160" endline="162">USB_Connect</references>
+        <references refid="usbhw_8c_1a35fe971cbcbfe8813199e869284cb862" compoundref="usbhw_8c" startline="111" endline="150">USB_Init</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>MEMORY.C</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Mass<sp/>Storage<sp/>Demo</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LPC23xx.H&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LPC23xx<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="type_8h" kindref="compound">type.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usb_8h" kindref="compound">usb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcfg_8h" kindref="compound">usbcfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbhw_8h" kindref="compound">usbhw.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcore_8h" kindref="compound">usbcore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memory_8h" kindref="compound">memory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_c_d_8h" kindref="compound">LCD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_serial_logger_8h" kindref="compound">SerialLogger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_nhac_8h" kindref="compound">Nhac.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Function<sp/>that<sp/>initializes<sp/>LEDs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="memory_8c_1ab3570a8c9e1266519ad1c7e00093812b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memory_8c_1ab3570a8c9e1266519ad1c7e00093812b" kindref="member">LED_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>PINSEL10<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>ETM<sp/>interface,<sp/>enable<sp/>LEDs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>FIO2DIR<sp/><sp/>=<sp/>0x000000FF;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.0..7<sp/>defined<sp/>as<sp/>Outputs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>FIO2MASK<sp/>=<sp/>0x00000000;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Function<sp/>that<sp/>turns<sp/>on<sp/>requested<sp/>LED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="memory_8c_1abedf2682108674aaa9649d4d2a1ce3db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memory_8c_1abedf2682108674aaa9649d4d2a1ce3db" kindref="member">LED_On</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>FIO2SET<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>num);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Function<sp/>that<sp/>turns<sp/>off<sp/>requested<sp/>LED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="memory_8c_1af20fc163324a460b1cc79865272004fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memory_8c_1af20fc163324a460b1cc79865272004fe" kindref="member">LED_Off</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>FIO2CLR<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>num);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Function<sp/>that<sp/>outputs<sp/>value<sp/>to<sp/>LEDs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="memory_8c_1a303dc6010934ea6b11eb21f3be0e6837" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memory_8c_1a303dc6010934ea6b11eb21f3be0e6837" kindref="member">LED_Out</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>FIO2CLR<sp/>=<sp/>0xFF;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>all<sp/>LEDs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>FIO2SET<sp/>=<sp/>(value<sp/>&amp;<sp/>0xFF);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>on<sp/>requested<sp/>LEDs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Main<sp/>Program<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="_serial_logger_8c_1ab11a5d77be2222a37d0b47e6556251f7" kindref="member">init_serial</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="memory_8c_1ab3570a8c9e1266519ad1c7e00093812b" kindref="member">LED_Init</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="_nhac_8c_1a805bb5aac1bdfced0062a19e17f65a84" kindref="member">InitSong</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" kindref="member">PLog</ref>(</highlight><highlight class="stringliteral">&quot;Start<sp/>log...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="_serial_logger_8c_1ad06e1585ed9e18ecaf35ea5c567127a2" kindref="member">newline</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="_serial_logger_8c_1ad06e1585ed9e18ecaf35ea5c567127a2" kindref="member">newline</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>PINSEL10<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>ETM<sp/>interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>LED<sp/>Setup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1a6842775ba83d166f02b8fef8bb63b1e6" kindref="member">lcd_init</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref><sp/>(</highlight><highlight class="stringliteral">&quot;MCB2300<sp/>MSD<sp/>Demo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" kindref="member">set_cursor</ref><sp/>(0,<sp/>1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref><sp/>(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>www.keil.com<sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="usbhw_8c_1a35fe971cbcbfe8813199e869284cb862" kindref="member">USB_Init</ref>();<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>USB_EndPoint0(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>USB<sp/>Initialization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="usbhw_8c_1a06ddd62c3767d37c143233cd854c9031" kindref="member">USB_Connect</ref>(<ref refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USB<sp/>Connect<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Loop<sp/>forever<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c"/>
+  </compounddef>
+</doxygen>

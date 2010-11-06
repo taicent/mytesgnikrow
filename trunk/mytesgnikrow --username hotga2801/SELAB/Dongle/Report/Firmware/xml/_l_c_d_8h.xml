@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_l_c_d_8h" kind="file">
+    <compoundname>LCD.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="164">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="162">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h</label>
+        <link refid="LCD.h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_l_c_d_8h_1a6842775ba83d166f02b8fef8bb63b1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lcd_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h" line="14" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="226" bodyend="254"/>
+        <references refid="_l_c_d__4bit_8c_1a6e75612a156cbc41e396ee975e58e17b" compoundref="_l_c_d__4bit_8c" startline="72">LCD_ALL_DIR_OUT</references>
+        <references refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" compoundref="_l_c_d__4bit_8c" startline="214" endline="217">lcd_putchar</references>
+        <references refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" compoundref="_l_c_d__4bit_8c" startline="63">LCD_RS</references>
+        <references refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</references>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <references refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" compoundref="_l_c_d__4bit_8c" startline="84">UserFont</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>lcd_clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h" line="15" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="280" bodyend="284"/>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <references refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" compoundref="_l_c_d__4bit_8c" startline="265" endline="272">set_cursor</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>lcd_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h" line="16" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="214" bodyend="217"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1a84f10088d2e5eed82b9719912c688a80" compoundref="_l_c_d__4bit_8c" startline="293" endline="298">lcd_print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_cursor</definition>
+        <argsstring>(unsigned char column, unsigned char line)</argsstring>
+        <name>set_cursor</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h" line="17" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="265" bodyend="272"/>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <referencedby refid="_l_c_d__4bit_8c_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</referencedby>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_print</definition>
+        <argsstring>(unsigned char const *string)</argsstring>
+        <name>lcd_print</name>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h" line="18" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="293" bodyend="298"/>
+        <references refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" compoundref="_l_c_d__4bit_8c" startline="214" endline="217">lcd_putchar</references>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>LCD.H</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>LCD<sp/>function<sp/>prototypes</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1a6842775ba83d166f02b8fef8bb63b1e6" kindref="member">lcd_init</ref><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" kindref="member">lcd_putchar</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" kindref="member">set_cursor</ref><sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>column,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD.h"/>
+  </compounddef>
+</doxygen>

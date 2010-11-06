@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_vendor_process_8c" kind="file">
+    <compoundname>VendorProcess.c</compoundname>
+    <includes local="no">LPC23xx.H</includes>
+    <includes refid="type_8h" local="yes">type.h</includes>
+    <includes refid="usb_8h" local="yes">usb.h</includes>
+    <includes refid="usbcfg_8h" local="yes">usbcfg.h</includes>
+    <includes refid="usbhw_8h" local="yes">usbhw.h</includes>
+    <includes refid="usbcore_8h" local="yes">usbcore.h</includes>
+    <includes refid="usbdesc_8h" local="yes">usbdesc.h</includes>
+    <includes refid="usbuser_8h" local="yes">usbuser.h</includes>
+    <includes refid="_serial_logger_8h" local="yes">SerialLogger.h</includes>
+    <includes refid="_vendor_process_8h" local="yes">VendorProcess.h</includes>
+    <includes refid="_l_c_d_8h" local="yes">LCD.h</includes>
+    <includes refid="_nhac_8h" local="yes">Nhac.h</includes>
+    <incdepgraph>
+      <node id="310">
+        <label>usbuser.h</label>
+        <link refid="usbuser_8h"/>
+      </node>
+      <node id="309">
+        <label>usbdesc.h</label>
+        <link refid="usbdesc_8h"/>
+      </node>
+      <node id="302">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="VendorProcess.c"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>VendorProcess.h</label>
+        <link refid="_vendor_process_8h"/>
+      </node>
+      <node id="307">
+        <label>usbhw.h</label>
+        <link refid="usbhw_8h"/>
+      </node>
+      <node id="314">
+        <label>LCD.h</label>
+        <link refid="_l_c_d_8h"/>
+      </node>
+      <node id="311">
+        <label>SerialLogger.h</label>
+        <link refid="_serial_logger_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>usb.h</label>
+        <link refid="usb_8h"/>
+      </node>
+      <node id="308">
+        <label>usbcore.h</label>
+        <link refid="usbcore_8h"/>
+      </node>
+      <node id="312">
+        <label>string.h</label>
+      </node>
+      <node id="306">
+        <label>usbcfg.h</label>
+        <link refid="usbcfg_8h"/>
+      </node>
+      <node id="303">
+        <label>LPC23xx.H</label>
+      </node>
+      <node id="304">
+        <label>type.h</label>
+        <link refid="type_8h"/>
+      </node>
+      <node id="315">
+        <label>Nhac.h</label>
+        <link refid="_nhac_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE BulkBuf[MAX_PACKET]</definition>
+        <argsstring>[MAX_PACKET]</argsstring>
+        <name>BulkBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="23" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="23" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1ace51331de08ae3277df50967a88a2074" compoundref="_vendor_process_8c" startline="51" endline="58">Bulk2In</referencedby>
+        <referencedby refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE BulkLen</definition>
+        <argsstring></argsstring>
+        <name>BulkLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="24" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="24" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1ace51331de08ae3277df50967a88a2074" compoundref="_vendor_process_8c" startline="51" endline="58">Bulk2In</referencedby>
+        <referencedby refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE BufferMemory[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>BufferMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="25" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="25" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</referencedby>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE MemoryLen</definition>
+        <argsstring></argsstring>
+        <name>MemoryLen</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="26" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="26" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char LCD_Buffer[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>LCD_Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="29" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="29" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE LED_status</definition>
+        <argsstring></argsstring>
+        <name>LED_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="32" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="32" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1a0ba6fe5c23a92e92be4232143448a4bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int iSongSize[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>iSongSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="35" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1a2333a2e9b49f877934d301d0f32176d4" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char song_custom[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>song_custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="36" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="61" bodyend="-1"/>
+        <referencedby refid="_nhac_8h_1aea0ea691cc36610b05b6a39ef04a7f88" compoundref="_nhac_8c" startline="133" endline="138">NhacCustom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_vendor_process_8c_1aed48ca0bcd2162fd4fd495873e2631f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="39" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="63" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vendor_process_8c_1a5766b84280d44ddbcb14eb100073c787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bulk2Out</definition>
+        <argsstring>(void)</argsstring>
+        <name>Bulk2Out</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="42" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="41" bodyend="48"/>
+        <references refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" compoundref="_vendor_process_8c" startline="25">BufferMemory</references>
+        <references refid="_vendor_process_8h_1a3d723b63edcb6928cc4ed353a1dfe1f6" compoundref="_vendor_process_8h" startline="10">BULK_EP_OUT</references>
+        <references refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" compoundref="_vendor_process_8c" startline="23">BulkBuf</references>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" compoundref="_vendor_process_8c" startline="26">MemoryLen</references>
+        <references refid="usbhw_8c_1a2ca65c3e8ac1bd48abf2f47b120d829e" compoundref="usbhw_8c" startline="367" endline="390">USB_ReadEP</references>
+        <referencedby refid="usbuser_8h_1a4b4aa50a6df5e5d071c5237fe4e36887" compoundref="usbuser_8c" startline="192" endline="207">USB_EndPoint2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8c_1ace51331de08ae3277df50967a88a2074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bulk2In</definition>
+        <argsstring>(void)</argsstring>
+        <name>Bulk2In</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="52" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="51" bodyend="58"/>
+        <references refid="_vendor_process_8h_1ab38d3a21da45656bc1c229b1686ddae5" compoundref="_vendor_process_8h" startline="9">BULK_EP_IN</references>
+        <references refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" compoundref="_vendor_process_8c" startline="23">BulkBuf</references>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="usbhw_8c_1af89c6611adcf552f28f8fa6d598cac4e" compoundref="usbhw_8c" startline="403" endline="421">USB_WriteEP</references>
+        <referencedby refid="usbuser_8h_1a4b4aa50a6df5e5d071c5237fe4e36887" compoundref="usbuser_8c" startline="192" endline="207">USB_EndPoint2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LCD_print</definition>
+        <argsstring>()</argsstring>
+        <name>LCD_print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="61" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="60" bodyend="72"/>
+        <references refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" compoundref="_vendor_process_8c" startline="25">BufferMemory</references>
+        <references refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" compoundref="_vendor_process_8c" startline="29">LCD_Buffer</references>
+        <references refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" compoundref="_l_c_d__4bit_8c" startline="293" endline="298">lcd_print</references>
+        <references refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" compoundref="_l_c_d__4bit_8c" startline="265" endline="272">set_cursor</references>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8c_1a37fc332c09d1bf492be4af4570ec7c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref></type>
+        <definition>BOOL VendorSetupStage</definition>
+        <argsstring>(USB_SETUP_PACKET *p)</argsstring>
+        <name>VendorSetupStage</name>
+        <param>
+          <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="81" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="80" bodyend="141"/>
+        <references refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" compoundref="_vendor_process_8c" startline="25">BufferMemory</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" compoundref="usbcore_8h" startline="23">_USB_EP_DATA::Count</references>
+        <references refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" compoundref="usbcore_8c" startline="42">EP0Data</references>
+        <references refid="type_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="type_8h" startline="10">FALSE</references>
+        <references refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</references>
+        <references refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</references>
+        <references refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" compoundref="_vendor_process_8c" startline="26">MemoryLen</references>
+        <references refid="_nhac_8c_1aea0ea691cc36610b05b6a39ef04a7f88" compoundref="_nhac_8c" startline="133" endline="138">NhacCustom</references>
+        <references refid="_nhac_8c_1a5b00dad3126cd573e82ea3f7ccdd0a8c" compoundref="_nhac_8c" startline="126" endline="131">NhacOff</references>
+        <references refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" compoundref="_nhac_8c" startline="118" endline="124">NhacOn</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="type_8h" startline="14">TRUE</references>
+        <references refid="usbcore_8c_1af77737c9a9cf487c2d21bdb77904d5b4" compoundref="usbcore_8c" startline="83" endline="97">USB_DataInStage</references>
+        <references refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" compoundref="usbcore_8c" startline="125" endline="130">USB_StatusInStage</references>
+        <references refid="_vendor_process_8h_1a306292d73a3f9061479fa813202e5b41" compoundref="_vendor_process_8h" startline="15">VC_DAC_MUSIC1</references>
+        <references refid="_vendor_process_8h_1a385631a1cdf15793eb3aab6aba05af6a" compoundref="_vendor_process_8h" startline="16">VC_DAC_MUSIC2</references>
+        <references refid="_vendor_process_8h_1abb6d7234f11ee0272657f22e81758f14" compoundref="_vendor_process_8h" startline="17">VC_DAC_MUSIC_BY_DATA</references>
+        <references refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" compoundref="_vendor_process_8h" startline="25">VC_DAC_SET_VOLUME</references>
+        <references refid="_vendor_process_8h_1a3fea0ea64f7e37ec177df2e87d6ee6f1" compoundref="_vendor_process_8h" startline="24">VC_DAC_STOP_MUSIC</references>
+        <references refid="_vendor_process_8h_1a221c6d6161b502c6f2f7a11db3f15529" compoundref="_vendor_process_8h" startline="21">VC_GET_LIGHT_BAR</references>
+        <references refid="_vendor_process_8h_1a29283c0ea9ab711ff8ab3b4112fdfc10" compoundref="_vendor_process_8h" startline="12">VC_LCD_CLEAR</references>
+        <references refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" compoundref="_vendor_process_8h" startline="13">VC_LCD_SET_TEXT</references>
+        <references refid="_vendor_process_8h_1a69131917e2bf78f9891280a18315b62f" compoundref="_vendor_process_8h" startline="19">VC_LCD_SET_TEXT_NO_DATA</references>
+        <references refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" compoundref="_vendor_process_8h" startline="22">VC_SET_LIGHT_BAR</references>
+        <references refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" compoundref="_nhac_8c" startline="63">volume</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8c_1a64197d1e830bdafa1ea2ca821189e45b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VendorDataStage</definition>
+        <argsstring>(USB_SETUP_PACKET *p)</argsstring>
+        <name>VendorDataStage</name>
+        <param>
+          <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" line="144" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="143" bodyend="175"/>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" compoundref="usbcore_8c" startline="42">EP0Data</references>
+        <references refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</references>
+        <references refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" compoundref="_vendor_process_8c" startline="32">LED_status</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" compoundref="_serial_logger_8c" startline="226" endline="233">PLog</references>
+        <references refid="_serial_logger_8c_1a85e13bfe0137723371b75f2b88a1f285" compoundref="_serial_logger_8c" startline="235" endline="241">PLogN</references>
+        <references refid="_serial_logger_8c_1a09f479908cbf75429509b76cbd9c3142" compoundref="_serial_logger_8c" startline="243" endline="252">PLogNum</references>
+        <references refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" compoundref="usbcore_8c" startline="125" endline="130">USB_StatusInStage</references>
+        <references refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" compoundref="_vendor_process_8h" startline="25">VC_DAC_SET_VOLUME</references>
+        <references refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" compoundref="_vendor_process_8h" startline="13">VC_LCD_SET_TEXT</references>
+        <references refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" compoundref="_vendor_process_8h" startline="22">VC_SET_LIGHT_BAR</references>
+        <references refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" compoundref="_nhac_8c" startline="63">volume</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/></highlight><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>Neo</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USBCFG.H</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>Xu<sp/>ly<sp/>I/O<sp/>tren<sp/>endpoint<sp/>bulk(2)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.0</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LPC23xx.H&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="type_8h" kindref="compound">type.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usb_8h" kindref="compound">usb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcfg_8h" kindref="compound">usbcfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbhw_8h" kindref="compound">usbhw.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcore_8h" kindref="compound">usbcore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbdesc_8h" kindref="compound">usbdesc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbuser_8h" kindref="compound">usbuser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_serial_logger_8h" kindref="compound">SerialLogger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vendor_process_8h" kindref="compound">VendorProcess.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_c_d_8h" kindref="compound">LCD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_nhac_8h" kindref="compound">Nhac.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Bulk<sp/>In/Out<sp/>Buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" refkind="member"><highlight class="normal"><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>[<ref refid="_vendor_process_8h_1ac0622da4c10cb51a289339edcd13fce2" kindref="member">MAX_PACKET</ref>];</highlight></codeline>
+<codeline lineno="24" refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" refkind="member"><highlight class="normal"><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref>;</highlight></codeline>
+<codeline lineno="25" refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" refkind="member"><highlight class="normal"><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" kindref="member">BufferMemory</ref>[512];</highlight></codeline>
+<codeline lineno="26" refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" refkind="member"><highlight class="normal"><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LCD<sp/>Buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>[17];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LED<sp/>Array<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" refkind="member"><highlight class="normal"><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" kindref="member">LED_status</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Song<sp/>Data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a0ba6fe5c23a92e92be4232143448a4bf" kindref="member">iSongSize</ref>[3];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" kindref="member">song_custom</ref>[256];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DAC<sp/>Volume<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" kindref="member">volume</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1a5766b84280d44ddbcb14eb100073c787" kindref="member">Bulk2Out</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref><sp/>=<sp/><ref refid="usbhw_8c_1a2ca65c3e8ac1bd48abf2f47b120d829e" kindref="member">USB_ReadEP</ref>(<ref refid="_vendor_process_8h_1a3d723b63edcb6928cc4ed353a1dfe1f6" kindref="member">BULK_EP_OUT</ref>,<sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(<ref refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" kindref="member">BufferMemory</ref><sp/>+<sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref>,<sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>,<sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref><sp/>+=<sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//Successful<sp/>transfer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_vendor_process_8h_1ace51331de08ae3277df50967a88a2074" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1ace51331de08ae3277df50967a88a2074" kindref="member">Bulk2In</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>[0]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>[1]<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>[2]<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbhw_8c_1af89c6611adcf552f28f8fa6d598cac4e" kindref="member">USB_WriteEP</ref>(<ref refid="_vendor_process_8h_1ab38d3a21da45656bc1c229b1686ddae5" kindref="member">BULK_EP_IN</ref>,<sp/><ref refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" kindref="member">BulkBuf</ref>,<sp/>3);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" kindref="member">LCD_print</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>,<sp/>0,<sp/>17);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>,<sp/><ref refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" kindref="member">BufferMemory</ref>,<sp/>16);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>[16]=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref>(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>,<sp/>0,<sp/>17);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>,<sp/><ref refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" kindref="member">BufferMemory</ref><sp/>+<sp/>16,<sp/>16);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>[16]=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" kindref="member">set_cursor</ref>(0,<sp/>1);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref>(<ref refid="_vendor_process_8c_1abfe404bc03ce4ac3378e308a7f8c4db4" kindref="member">LCD_Buffer</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>Processing<sp/>Vendor<sp/>control<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>Input:<sp/>USB_SETUP_PACKET<sp/>pointer</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>Output:<sp/>FALSE:<sp/>fail<sp/>transfer</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE:<sp/>success<sp/>transfer<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" refkind="member"><highlight class="normal"><ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref><sp/><ref refid="_vendor_process_8c_1a37fc332c09d1bf492be4af4570ec7c56" kindref="member">VendorSetupStage</ref>(<ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/>*p)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/><sp/>PLog(&quot;Vendor<sp/>Setup<sp/>Stage&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(p-&gt;bRequest)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" kindref="member">VC_SET_LIGHT_BAR</ref>:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a221c6d6161b502c6f2f7a11db3f15529" kindref="member">VC_GET_LIGHT_BAR</ref>:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" kindref="member">EP0Data</ref>.<ref refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" kindref="member">pData</ref>[0]<sp/>=<sp/>FIO2PIN;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" kindref="member">EP0Data</ref>.<ref refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" kindref="member">Count</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1af77737c9a9cf487c2d21bdb77904d5b4" kindref="member">USB_DataInStage</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a29283c0ea9ab711ff8ab3b4112fdfc10" kindref="member">VC_LCD_CLEAR</ref>:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" kindref="member">VC_LCD_SET_TEXT</ref>:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a69131917e2bf78f9891280a18315b62f" kindref="member">VC_LCD_SET_TEXT_NO_DATA</ref>:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" kindref="member">LCD_print</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a306292d73a3f9061479fa813202e5b41" kindref="member">VC_DAC_MUSIC1</ref>:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" kindref="member">NhacOn</ref>(0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a385631a1cdf15793eb3aab6aba05af6a" kindref="member">VC_DAC_MUSIC2</ref>:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" kindref="member">NhacOn</ref>(1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1abb6d7234f11ee0272657f22e81758f14" kindref="member">VC_DAC_MUSIC_BY_DATA</ref>:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1aea0ea691cc36610b05b6a39ef04a7f88" kindref="member">NhacCustom</ref>(<ref refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" kindref="member">BufferMemory</ref>,<sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" kindref="member">MemoryLen</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a3fea0ea64f7e37ec177df2e87d6ee6f1" kindref="member">VC_DAC_STOP_MUSIC</ref>:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1a5b00dad3126cd573e82ea3f7ccdd0a8c" kindref="member">NhacOff</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" kindref="member">VC_DAC_SET_VOLUME</ref>:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" kindref="member">volume</ref><sp/>=<sp/>p-&gt;wValue.WB.L;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="type_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1a64197d1e830bdafa1ea2ca821189e45b" kindref="member">VendorDataStage</ref>(<ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/>*p)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(p-&gt;bRequest)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" kindref="member">VC_SET_LIGHT_BAR</ref>:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" kindref="member">LED_status</ref><sp/>=<sp/>p-&gt;wValue.WB.L;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LED_status<sp/>=<sp/>EP0Data.pData[0];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PLog(&quot;Set<sp/>LED<sp/>Datastage&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIO2CLR<sp/>=<sp/>0xFF;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIO2SET<sp/>=<sp/><ref refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" kindref="member">LED_status</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" kindref="member">VC_LCD_SET_TEXT</ref>:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" kindref="member">BulkLen</ref><sp/>=<sp/>p-&gt;wLength;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" kindref="member">LCD_print</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" kindref="member">VC_DAC_SET_VOLUME</ref>:</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_serial_logger_8c_1a85e13bfe0137723371b75f2b88a1f285" kindref="member">PLogN</ref>(</highlight><highlight class="stringliteral">&quot;EP0Data.pData[0]:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_serial_logger_8c_1a09f479908cbf75429509b76cbd9c3142" kindref="member">PLogNum</ref>(<ref refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" kindref="member">EP0Data</ref>.<ref refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" kindref="member">pData</ref>[0]);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" kindref="member">PLog</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_serial_logger_8c_1a85e13bfe0137723371b75f2b88a1f285" kindref="member">PLogN</ref>(</highlight><highlight class="stringliteral">&quot;volume:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_serial_logger_8c_1a09f479908cbf75429509b76cbd9c3142" kindref="member">PLogNum</ref>(<ref refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" kindref="member">volume</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c"/>
+  </compounddef>
+</doxygen>

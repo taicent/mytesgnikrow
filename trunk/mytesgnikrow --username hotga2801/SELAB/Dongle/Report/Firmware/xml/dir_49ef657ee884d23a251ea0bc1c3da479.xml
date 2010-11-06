@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="dir_49ef657ee884d23a251ea0bc1c3da479" kind="dir">
+    <compoundname>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/</compoundname>
+    <innerfile refid="_l_c_d_8h">LCD.h</innerfile>
+    <innerfile refid="_l_c_d__4bit_8c">LCD_4bit.c</innerfile>
+    <innerfile refid="memory_8c">memory.c</innerfile>
+    <innerfile refid="memory_8h">memory.h</innerfile>
+    <innerfile refid="_nhac_8c">Nhac.c</innerfile>
+    <innerfile refid="_nhac_8h">Nhac.h</innerfile>
+    <innerfile refid="_serial_logger_8c">SerialLogger.c</innerfile>
+    <innerfile refid="_serial_logger_8h">SerialLogger.h</innerfile>
+    <innerfile refid="type_8h">type.h</innerfile>
+    <innerfile refid="usb_8h">usb.h</innerfile>
+    <innerfile refid="usbcfg_8h">usbcfg.h</innerfile>
+    <innerfile refid="usbcore_8c">usbcore.c</innerfile>
+    <innerfile refid="usbcore_8h">usbcore.h</innerfile>
+    <innerfile refid="usbdesc_8c">usbdesc.c</innerfile>
+    <innerfile refid="usbdesc_8h">usbdesc.h</innerfile>
+    <innerfile refid="usbhw_8c">usbhw.c</innerfile>
+    <innerfile refid="usbhw_8h">usbhw.h</innerfile>
+    <innerfile refid="usbreg_8h">usbreg.h</innerfile>
+    <innerfile refid="usbuser_8c">usbuser.c</innerfile>
+    <innerfile refid="usbuser_8h">usbuser.h</innerfile>
+    <innerfile refid="_vendor_process_8c">VendorProcess.c</innerfile>
+    <innerfile refid="_vendor_process_8h">VendorProcess.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/"/>
+  </compounddef>
+</doxygen>

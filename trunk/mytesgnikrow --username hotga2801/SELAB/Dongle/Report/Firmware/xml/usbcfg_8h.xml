@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="usbcfg_8h" kind="file">
+    <compoundname>usbcfg.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbdesc_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</includedby>
+    <includedby refid="usbhw_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="230">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="228">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</label>
+        <link refid="usbdesc_8c"/>
+      </node>
+      <node id="231">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="229">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</label>
+        <link refid="usbhw_8c"/>
+      </node>
+      <node id="227">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+      <node id="226">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+      <node id="225">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h</label>
+        <link refid="usbcfg.h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usbcfg_8h_1aef1a9dc21299c653d5abf0dc1a27a502" prot="public" static="no">
+        <name>USB_POWER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="71" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1acb05ef967c3751cd3912039e6005d6db" prot="public" static="no">
+        <name>USB_IF_NUM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="72" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a14e0f34e4d2669f2f2b9025bed2c791c" prot="public" static="no">
+        <name>USB_EP_NUM</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="73" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="usbhw_8h_1a3bbafaece7a3586b87f2e8201127f09b" compoundref="usbhw_8c" startline="446" endline="546">USB_ISR</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a4659143950f825db983fadc9a1b1df4e" prot="public" static="no">
+        <name>USB_MAX_PACKET0</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="74" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="usbcore_8h_1af77737c9a9cf487c2d21bdb77904d5b4" compoundref="usbcore_8c" startline="83" endline="97">USB_DataInStage</referencedby>
+        <referencedby refid="usbhw_8h_1abfc0896707a9437a0c3b0ac611da59aa" compoundref="usbhw_8c" startline="171" endline="186">USB_Reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a2dc274a14199f2cf87830ce0a4c9c4cc" prot="public" static="no">
+        <name>USB_DMA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="75" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1ac16ed2a4344d3faa340bd08713b6c5a8" prot="public" static="no">
+        <name>USB_DMA_EP</name>
+        <initializer>0x00000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="76" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a15ad1798d3bad0ba4b242f6c45430cbe" prot="public" static="no">
+        <name>USB_POWER_EVENT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="116" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1aa4b4bad346022966fdf587d48f5053b7" prot="public" static="no">
+        <name>USB_RESET_EVENT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="117" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a94725d7f13c37ede5279edbd8a7e4e00" prot="public" static="no">
+        <name>USB_SUSPEND_EVENT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="118" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1ac38006e81464524c8927a8efde52efd3" prot="public" static="no">
+        <name>USB_RESUME_EVENT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="119" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a987f88de2acd83972d376be9a9baf888" prot="public" static="no">
+        <name>USB_WAKEUP_EVENT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="120" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a1a66c59314a44e9f962de45866d105ea" prot="public" static="no">
+        <name>USB_SOF_EVENT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="121" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="usbhw_8h_1abfc0896707a9437a0c3b0ac611da59aa" compoundref="usbhw_8c" startline="171" endline="186">USB_Reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1ab989757af7f7e2a035ed38e592f481a6" prot="public" static="no">
+        <name>USB_ERROR_EVENT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="122" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="usbhw_8h_1abfc0896707a9437a0c3b0ac611da59aa" compoundref="usbhw_8c" startline="171" endline="186">USB_Reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a881b4647055acd8655da866edb37ad16" prot="public" static="no">
+        <name>USB_EP_EVENT</name>
+        <initializer>0x0005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="123" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a62b9595d919b7a3150fd863233077a8f" prot="public" static="no">
+        <name>USB_CONFIGURE_EVENT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="124" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a1390b3fe560136b65f6f62c146a2ddd8" prot="public" static="no">
+        <name>USB_INTERFACE_EVENT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="125" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a59d27cdec316e0ba94b939dca43f0521" prot="public" static="no">
+        <name>USB_FEATURE_EVENT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="126" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a1e0073f633fa828440e2f3c576cfbc62" prot="public" static="no">
+        <name>USB_CLASS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="145" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a5b1b3b524cfd577bd40476f78230e043" prot="public" static="no">
+        <name>USB_HID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="146" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1ab6bd6a12db91d80b60d434ea071f2653" prot="public" static="no">
+        <name>USB_HID_IF_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="147" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a0e7ca10bee822e5f008dbec582511d4d" prot="public" static="no">
+        <name>USB_MSC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="148" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1acf6591d419521cb40c9041c8e835b2ea" prot="public" static="no">
+        <name>USB_MSC_IF_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="149" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a2cbbc54cd0de11b953020f1a18471dc5" prot="public" static="no">
+        <name>USB_AUDIO</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="150" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1af7a2bda3a151036b2e75054ddd15e56a" prot="public" static="no">
+        <name>USB_ADC_CIF_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="151" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a9125ab231987446680f51ea878290680" prot="public" static="no">
+        <name>USB_ADC_SIF1_NUM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="152" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbcfg_8h_1a0c270156c7f82f38a4936a016a82eabc" prot="public" static="no">
+        <name>USB_ADC_SIF2_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" line="153" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>K<sp/>e<sp/>r<sp/>n<sp/>e<sp/>l</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USBCFG.H</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Custom<sp/>Configuration</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USBCFG_H__</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USBCFG_H__</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//***<sp/>&lt;&lt;&lt;<sp/>Use<sp/>Configuration<sp/>Wizard<sp/>in<sp/>Context<sp/>Menu<sp/>&gt;&gt;&gt;<sp/>***</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//<sp/>&lt;h&gt;<sp/>USB<sp/>Configuration</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//<sp/><sp/><sp/>&lt;o0&gt;<sp/>USB<sp/>Power</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;i&gt;<sp/>Default<sp/>Power<sp/>Setting</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;0=&gt;<sp/>Bus-powered</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;1=&gt;<sp/>Self-powered</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">//<sp/><sp/><sp/>&lt;o1&gt;<sp/>Max<sp/>Number<sp/>of<sp/>Interfaces<sp/>&lt;1-256&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//<sp/><sp/><sp/>&lt;o2&gt;<sp/>Max<sp/>Number<sp/>of<sp/>Endpoints<sp/><sp/>&lt;1-32&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//<sp/><sp/><sp/>&lt;o3&gt;<sp/>Max<sp/>Endpoint<sp/>0<sp/>Packet<sp/>Size</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;8=&gt;<sp/>8<sp/>Bytes<sp/>&lt;16=&gt;<sp/>16<sp/>Bytes<sp/>&lt;32=&gt;<sp/>32<sp/>Bytes<sp/>&lt;64=&gt;<sp/>64<sp/>Bytes</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">//<sp/><sp/><sp/>&lt;e4&gt;<sp/>DMA<sp/>Transfer</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;i&gt;<sp/>Use<sp/>DMA<sp/>for<sp/>selected<sp/>Endpoints</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.0&gt;<sp/><sp/>Endpoint<sp/>0<sp/>Out</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.1&gt;<sp/><sp/>Endpoint<sp/>0<sp/>In</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.2&gt;<sp/><sp/>Endpoint<sp/>1<sp/>Out</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.3&gt;<sp/><sp/>Endpoint<sp/>1<sp/>In</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.4&gt;<sp/><sp/>Endpoint<sp/>2<sp/>Out</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.5&gt;<sp/><sp/>Endpoint<sp/>2<sp/>In</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.6&gt;<sp/><sp/>Endpoint<sp/>3<sp/>Out</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.7&gt;<sp/><sp/>Endpoint<sp/>3<sp/>In</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.8&gt;<sp/><sp/>Endpoint<sp/>4<sp/>Out</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.9&gt;<sp/><sp/>Endpoint<sp/>4<sp/>In</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.10&gt;<sp/>Endpoint<sp/>5<sp/>Out</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.11&gt;<sp/>Endpoint<sp/>5<sp/>In</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.12&gt;<sp/>Endpoint<sp/>6<sp/>Out</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.13&gt;<sp/>Endpoint<sp/>6<sp/>In</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.14&gt;<sp/>Endpoint<sp/>7<sp/>Out</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.15&gt;<sp/>Endpoint<sp/>7<sp/>In</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.16&gt;<sp/>Endpoint<sp/>8<sp/>Out</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.17&gt;<sp/>Endpoint<sp/>8<sp/>In</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.18&gt;<sp/>Endpoint<sp/>9<sp/>Out</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.19&gt;<sp/>Endpoint<sp/>9<sp/>In</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.20&gt;<sp/>Endpoint<sp/>10<sp/>Out</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.21&gt;<sp/>Endpoint<sp/>10<sp/>In</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.22&gt;<sp/>Endpoint<sp/>11<sp/>Out</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.23&gt;<sp/>Endpoint<sp/>11<sp/>In</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.24&gt;<sp/>Endpoint<sp/>12<sp/>Out</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.25&gt;<sp/>Endpoint<sp/>12<sp/>In</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.26&gt;<sp/>Endpoint<sp/>13<sp/>Out</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.27&gt;<sp/>Endpoint<sp/>13<sp/>In</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.28&gt;<sp/>Endpoint<sp/>14<sp/>Out</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.29&gt;<sp/>Endpoint<sp/>14<sp/>In</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.30&gt;<sp/>Endpoint<sp/>15<sp/>Out</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.31&gt;<sp/>Endpoint<sp/>15<sp/>In</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">//<sp/><sp/><sp/>&lt;/e&gt;</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">//<sp/>&lt;/h&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="usbcfg_8h_1aef1a9dc21299c653d5abf0dc1a27a502" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_POWER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="72" refid="usbcfg_8h_1acb05ef967c3751cd3912039e6005d6db" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_IF_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="73" refid="usbcfg_8h_1a14e0f34e4d2669f2f2b9025bed2c791c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_EP_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="74" refid="usbcfg_8h_1a4659143950f825db983fadc9a1b1df4e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_MAX_PACKET0<sp/><sp/><sp/><sp/><sp/>64</highlight></codeline>
+<codeline lineno="75" refid="usbcfg_8h_1a2dc274a14199f2cf87830ce0a4c9c4cc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="76" refid="usbcfg_8h_1ac16ed2a4344d3faa340bd08713b6c5a8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DMA_EP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">//<sp/>&lt;h&gt;<sp/>USB<sp/>Event<sp/>Handlers</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">//<sp/><sp/><sp/>&lt;h&gt;<sp/>Device<sp/>Events</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o0.0&gt;<sp/>Power<sp/>Event</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o1.0&gt;<sp/>Reset<sp/>Event</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o2.0&gt;<sp/>Suspend<sp/>Event</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o3.0&gt;<sp/>Resume<sp/>Event</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o4.0&gt;<sp/>Remote<sp/>Wakeup<sp/>Event</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o5.0&gt;<sp/>Start<sp/>of<sp/>Frame<sp/>Event</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o6.0&gt;<sp/>Error<sp/>Event</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">//<sp/><sp/><sp/>&lt;/h&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">//<sp/><sp/><sp/>&lt;h&gt;<sp/>Endpoint<sp/>Events</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.0&gt;<sp/><sp/>Endpoint<sp/>0<sp/>Event</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.1&gt;<sp/><sp/>Endpoint<sp/>1<sp/>Event</highlight></codeline>
+<codeline lineno="93"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.2&gt;<sp/><sp/>Endpoint<sp/>2<sp/>Event</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.3&gt;<sp/><sp/>Endpoint<sp/>3<sp/>Event</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.4&gt;<sp/><sp/>Endpoint<sp/>4<sp/>Event</highlight></codeline>
+<codeline lineno="96"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.5&gt;<sp/><sp/>Endpoint<sp/>5<sp/>Event</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.6&gt;<sp/><sp/>Endpoint<sp/>6<sp/>Event</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.7&gt;<sp/><sp/>Endpoint<sp/>7<sp/>Event</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.8&gt;<sp/><sp/>Endpoint<sp/>8<sp/>Event</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.9&gt;<sp/><sp/>Endpoint<sp/>9<sp/>Event</highlight></codeline>
+<codeline lineno="101"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.10&gt;<sp/>Endpoint<sp/>10<sp/>Event</highlight></codeline>
+<codeline lineno="102"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.11&gt;<sp/>Endpoint<sp/>11<sp/>Event</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.12&gt;<sp/>Endpoint<sp/>12<sp/>Event</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.13&gt;<sp/>Endpoint<sp/>13<sp/>Event</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.14&gt;<sp/>Endpoint<sp/>14<sp/>Event</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7.15&gt;<sp/>Endpoint<sp/>15<sp/>Event</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">//<sp/><sp/><sp/>&lt;/h&gt;</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">//<sp/><sp/><sp/>&lt;h&gt;<sp/>USB<sp/>Core<sp/>Events</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o8.0&gt;<sp/><sp/>Set<sp/>Configuration<sp/>Event</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o9.0&gt;<sp/><sp/>Set<sp/>Interface<sp/>Event</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o10.0&gt;<sp/>Set/Clear<sp/>Feature<sp/>Event</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">//<sp/><sp/><sp/>&lt;/h&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">//<sp/>&lt;/h&gt;</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="usbcfg_8h_1a15ad1798d3bad0ba4b242f6c45430cbe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_POWER_EVENT<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="117" refid="usbcfg_8h_1aa4b4bad346022966fdf587d48f5053b7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_RESET_EVENT<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="118" refid="usbcfg_8h_1a94725d7f13c37ede5279edbd8a7e4e00" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_SUSPEND_EVENT<sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="119" refid="usbcfg_8h_1ac38006e81464524c8927a8efde52efd3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_RESUME_EVENT<sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="120" refid="usbcfg_8h_1a987f88de2acd83972d376be9a9baf888" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_WAKEUP_EVENT<sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="121" refid="usbcfg_8h_1a1a66c59314a44e9f962de45866d105ea" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_SOF_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="122" refid="usbcfg_8h_1ab989757af7f7e2a035ed38e592f481a6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ERROR_EVENT<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="123" refid="usbcfg_8h_1a881b4647055acd8655da866edb37ad16" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_EP_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0005</highlight></codeline>
+<codeline lineno="124" refid="usbcfg_8h_1a62b9595d919b7a3150fd863233077a8f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIGURE_EVENT<sp/>1</highlight></codeline>
+<codeline lineno="125" refid="usbcfg_8h_1a1390b3fe560136b65f6f62c146a2ddd8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_INTERFACE_EVENT<sp/>1</highlight></codeline>
+<codeline lineno="126" refid="usbcfg_8h_1a59d27cdec316e0ba94b939dca43f0521" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_FEATURE_EVENT<sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">//<sp/>&lt;e0&gt;<sp/>USB<sp/>Class<sp/>Support</highlight></codeline>
+<codeline lineno="131"><highlight class="comment">//<sp/><sp/><sp/>&lt;e1&gt;<sp/>Human<sp/>Interface<sp/>Device<sp/>(HID)</highlight></codeline>
+<codeline lineno="132"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o2&gt;<sp/>Interface<sp/>Number<sp/>&lt;0-255&gt;</highlight></codeline>
+<codeline lineno="133"><highlight class="comment">//<sp/><sp/><sp/>&lt;/e&gt;</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">//<sp/><sp/><sp/>&lt;e3&gt;<sp/>Mass<sp/>Storage</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o4&gt;<sp/>Interface<sp/>Number<sp/>&lt;0-255&gt;</highlight></codeline>
+<codeline lineno="136"><highlight class="comment">//<sp/><sp/><sp/>&lt;/e&gt;</highlight></codeline>
+<codeline lineno="137"><highlight class="comment">//<sp/><sp/><sp/>&lt;e5&gt;<sp/>Audio<sp/>Device</highlight></codeline>
+<codeline lineno="138"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o6&gt;<sp/>Control<sp/>Interface<sp/>Number<sp/>&lt;0-255&gt;</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o7&gt;<sp/>Streaming<sp/>Interface<sp/>1<sp/>Number<sp/>&lt;0-255&gt;</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;o8&gt;<sp/>Streaming<sp/>Interface<sp/>2<sp/>Number<sp/>&lt;0-255&gt;</highlight></codeline>
+<codeline lineno="141"><highlight class="comment">//<sp/><sp/><sp/>&lt;/e&gt;</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">//<sp/>&lt;/e&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="usbcfg_8h_1a1e0073f633fa828440e2f3c576cfbc62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_CLASS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="146" refid="usbcfg_8h_1a5b1b3b524cfd577bd40476f78230e043" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_HID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="147" refid="usbcfg_8h_1ab6bd6a12db91d80b60d434ea071f2653" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_HID_IF_NUM<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="148" refid="usbcfg_8h_1a0e7ca10bee822e5f008dbec582511d4d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_MSC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="149" refid="usbcfg_8h_1acf6591d419521cb40c9041c8e835b2ea" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_MSC_IF_NUM<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="150" refid="usbcfg_8h_1a2cbbc54cd0de11b953020f1a18471dc5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_AUDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="151" refid="usbcfg_8h_1af7a2bda3a151036b2e75054ddd15e56a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ADC_CIF_NUM<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="152" refid="usbcfg_8h_1a9125ab231987446680f51ea878290680" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ADC_SIF1_NUM<sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="153" refid="usbcfg_8h_1a0c270156c7f82f38a4936a016a82eabc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ADC_SIF2_NUM<sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__USBCFG_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcfg.h"/>
+  </compounddef>
+</doxygen>

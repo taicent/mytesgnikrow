@@ -1,0 +1,74 @@
+\hypertarget{usbdesc_8c}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c File Reference}
+\label{usbdesc_8c}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c}}
+}
+{\ttfamily \#include \char`\"{}type.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usb.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbcfg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbdesc.h\char`\"{}}\par
+Include dependency graph for usbdesc.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbdesc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbdesc_8c_a0b2d6f1133aae00dc41cfa0e99c448f7}{USB\_\-DeviceDescriptor} \mbox{[}$\,$\mbox{]}
+\item 
+const \hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbdesc_8c_a7874737317d6033082b7bc2eb536641a}{USB\_\-ConfigDescriptor} \mbox{[}$\,$\mbox{]}
+\item 
+const \hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbdesc_8c_a3eab2dcdb66d33d814e88494f004e1df}{USB\_\-StringDescriptor} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{usbdesc_8c_a7874737317d6033082b7bc2eb536641a}{
+\index{usbdesc.c@{usbdesc.c}!USB\_\-ConfigDescriptor@{USB\_\-ConfigDescriptor}}
+\index{USB\_\-ConfigDescriptor@{USB\_\-ConfigDescriptor}!usbdesc.c@{usbdesc.c}}
+\subsubsection[{USB\_\-ConfigDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BYTE} {\bf USB\_\-ConfigDescriptor}\mbox{[}$\,$\mbox{]}}}
+\label{usbdesc_8c_a7874737317d6033082b7bc2eb536641a}
+
+
+Definition at line 58 of file usbdesc.c.
+
+\hypertarget{usbdesc_8c_a0b2d6f1133aae00dc41cfa0e99c448f7}{
+\index{usbdesc.c@{usbdesc.c}!USB\_\-DeviceDescriptor@{USB\_\-DeviceDescriptor}}
+\index{USB\_\-DeviceDescriptor@{USB\_\-DeviceDescriptor}!usbdesc.c@{usbdesc.c}}
+\subsubsection[{USB\_\-DeviceDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BYTE} {\bf USB\_\-DeviceDescriptor}\mbox{[}$\,$\mbox{]}}}
+\label{usbdesc_8c_a0b2d6f1133aae00dc41cfa0e99c448f7}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+ {
+  USB_DEVICE_DESC_SIZE,              
+  USB_DEVICE_DESCRIPTOR_TYPE,        
+  WBVAL(0x0110),           
+  0x00,                              
+  0x00,                              
+  0x00,                              
+  USB_MAX_PACKET0,                   
+  WBVAL(0xC251),                                                
+  WBVAL(0x1703),                                        
+  WBVAL(0x0100),           
+  0x04,                              
+  0x30,                              
+  0x6A,                              
+  0x01                               
+}
+\end{DoxyCode}
+
+
+Definition at line 39 of file usbdesc.c.
+
+\hypertarget{usbdesc_8c_a3eab2dcdb66d33d814e88494f004e1df}{
+\index{usbdesc.c@{usbdesc.c}!USB\_\-StringDescriptor@{USB\_\-StringDescriptor}}
+\index{USB\_\-StringDescriptor@{USB\_\-StringDescriptor}!usbdesc.c@{usbdesc.c}}
+\subsubsection[{USB\_\-StringDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf BYTE} {\bf USB\_\-StringDescriptor}\mbox{[}$\,$\mbox{]}}}
+\label{usbdesc_8c_a3eab2dcdb66d33d814e88494f004e1df}
+
+
+Definition at line 117 of file usbdesc.c.
+

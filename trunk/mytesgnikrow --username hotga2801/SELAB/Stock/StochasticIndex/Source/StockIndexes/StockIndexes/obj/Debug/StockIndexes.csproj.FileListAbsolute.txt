@@ -1,0 +1,10 @@
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\StockIndexes.exe
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\StockIndexes.pdb
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\bin\Debug\StockIndexes.exe
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\bin\Debug\StockIndexes.pdb
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\StockIndexes.Form1.resources
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\StockIndexes.Properties.Resources.resources
+D:\Studying\StockGroup\MyCode\StockIndexes\StockIndexes\obj\Debug\StockIndexes.csproj.GenerateResource.Cache
+K:\SELAB\Stock\StochasticIndex\Source\StockIndexes\StockIndexes\obj\Debug\StockIndexes.exe
+K:\SELAB\Stock\StochasticIndex\Source\StockIndexes\StockIndexes\obj\Debug\StockIndexes.pdb

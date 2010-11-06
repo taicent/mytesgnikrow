@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>abalone_scale.txt -s 3 -t 2 training_set_file.txt</StartArguments>
+  </PropertyGroup>
+</Project>

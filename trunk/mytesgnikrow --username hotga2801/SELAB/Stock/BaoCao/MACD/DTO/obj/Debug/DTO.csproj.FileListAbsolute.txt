@@ -1,0 +1,20 @@
+G:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Project\Momentum Oscilator\DTO\bin\Debug\DTO.dll
+G:\SELAB\Project\Momentum Oscilator\DTO\bin\Debug\DTO.pdb
+G:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\DTO.dll
+G:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\DTO.pdb
+K:\SELAB\Project\Momentum Oscilator\DTO\bin\Debug\DTO.dll
+K:\SELAB\Project\Momentum Oscilator\DTO\bin\Debug\DTO.pdb
+K:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\ResolveAssemblyReference.cache
+K:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\DTO.dll
+K:\SELAB\Project\Momentum Oscilator\DTO\obj\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\DTO\bin\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\DTO\bin\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\DTO\obj\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\DTO\obj\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\DTO\bin\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\DTO\bin\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\DTO\obj\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\DTO\obj\Debug\DTO.pdb

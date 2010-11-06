@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r" kind="struct" prot="public">
+    <compoundname>_USB_CONFIGURATION_DESCRIPTOR</compoundname>
+    <includes refid="usb_8h" local="no">usb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="174" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="175" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a7b85867f4bc8a9a8a39791d85ae89fc8" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD wTotalLength</definition>
+        <argsstring></argsstring>
+        <name>wTotalLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="176" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a12ba216beafb7194adae869dfaef2a7e" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bNumInterfaces</definition>
+        <argsstring></argsstring>
+        <name>bNumInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="177" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a33c99e7d8c3f8dbabda4dc28898118f8" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bConfigurationValue</definition>
+        <argsstring></argsstring>
+        <name>bConfigurationValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="178" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1aa504ab29f030455396dec5b99591de6f" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE iConfiguration</definition>
+        <argsstring></argsstring>
+        <name>iConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="179" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bmAttributes</definition>
+        <argsstring></argsstring>
+        <name>bmAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="180" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5662d2b9b0e5ef2290c7ae87b85b60a2" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE bMaxPower</definition>
+        <argsstring></argsstring>
+        <name>bMaxPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="181" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="173" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="173" bodyend="182"/>
+    <listofallmembers>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a33c99e7d8c3f8dbabda4dc28898118f8" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bConfigurationValue</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1ac1d02ce6fe165032044fb81602a9b07c" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bDescriptorType</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a8e443464272fdf3bd5148df0b7f5dcaf" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bLength</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5ca38633eddd8c1c055694e5c2c5e566" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bmAttributes</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a5662d2b9b0e5ef2290c7ae87b85b60a2" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bMaxPower</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a12ba216beafb7194adae869dfaef2a7e" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>bNumInterfaces</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1aa504ab29f030455396dec5b99591de6f" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>iConfiguration</name></member>
+      <member refid="struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r_1a7b85867f4bc8a9a8a39791d85ae89fc8" prot="public" virt="non-virtual"><scope>_USB_CONFIGURATION_DESCRIPTOR</scope><name>wTotalLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

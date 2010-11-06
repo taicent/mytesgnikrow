@@ -1,0 +1,14 @@
+G:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DAO.dll
+G:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DAO.pdb
+G:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DTO.dll
+G:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DTO.pdb
+G:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\DAO.dll
+G:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\DAO.pdb
+K:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DAO.dll
+K:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DAO.pdb
+K:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DTO.dll
+K:\SELAB\Project\Momentum Oscilator\DAO\bin\Debug\DTO.pdb
+K:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\ResolveAssemblyReference.cache
+K:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\DAO.dll
+K:\SELAB\Project\Momentum Oscilator\DAO\obj\Debug\DAO.pdb

@@ -1,0 +1,303 @@
+\hypertarget{class_support_class_1_1_tokenizer}{
+\section{SupportClass.Tokenizer Class Reference}
+\label{class_support_class_1_1_tokenizer}\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+}
+
+
+The class performs token processing in strings.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_support_class_1_1_tokenizer_a3c422c6eda6d1fca237779192c714457}{Tokenizer} (System.String source)
+\begin{DoxyCompactList}\small\item\em Initializes a new class instance with a specified string to process. \item\end{DoxyCompactList}\item 
+\hyperlink{class_support_class_1_1_tokenizer_a6322ebacf4bd423c704d2ea3bd1adad7}{Tokenizer} (System.String source, System.String delimiters)
+\begin{DoxyCompactList}\small\item\em Initializes a new class instance with a specified string to process and the specified token delimiters to use. \item\end{DoxyCompactList}\item 
+\hyperlink{class_support_class_1_1_tokenizer_aba0d507d83decbe4ed671339622157bf}{Tokenizer} (System.String source, System.String delimiters, bool includeDelims)
+\begin{DoxyCompactList}\small\item\em Initializes a new class instance with a specified string to process, the specified token delimiters to use, and whether the delimiters must be included in the results. \item\end{DoxyCompactList}\item 
+System.String \hyperlink{class_support_class_1_1_tokenizer_aa8b05db74347979775f1f928b2e67fda}{NextToken} ()
+\begin{DoxyCompactList}\small\item\em Returns the next token from the token list. \item\end{DoxyCompactList}\item 
+System.String \hyperlink{class_support_class_1_1_tokenizer_a970155cb6e044edd0d0030af7aeb7965}{NextToken} (System.String delimiters)
+\begin{DoxyCompactList}\small\item\em Returns the next token from the source string, using the provided token delimiters. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_support_class_1_1_tokenizer_ae24726506d60ff6471493f1bf1188303}{HasMoreTokens} ()
+\begin{DoxyCompactList}\small\item\em Determines if there are more tokens to return from the source string. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_support_class_1_1_tokenizer_ae6041388e31dd6cac93061484fd6f5cb}{MoveNext} ()
+\item 
+void \hyperlink{class_support_class_1_1_tokenizer_aa47d0eb3332441841949258b4d568666}{Reset} ()
+\begin{DoxyCompactList}\small\item\em Does nothing. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_support_class_1_1_tokenizer_aaafadcabbcd13d8ceae85eb615f756bd}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Remaining tokens count. \item\end{DoxyCompactList}\item 
+System.Object \hyperlink{class_support_class_1_1_tokenizer_a7e53bf2574e24fcc0fb2dedb98ea2e86}{Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Performs the same action as NextToken. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class performs token processing in strings. 
+
+Definition at line 26 of file SupportClass.cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_support_class_1_1_tokenizer_a3c422c6eda6d1fca237779192c714457}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Tokenizer@{Tokenizer}}
+\index{Tokenizer@{Tokenizer}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}SupportClass.Tokenizer.Tokenizer (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ source}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_a3c422c6eda6d1fca237779192c714457}
+
+
+Initializes a new class instance with a specified string to process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & String to tokenize\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file SupportClass.cs.
+
+\hypertarget{class_support_class_1_1_tokenizer_a6322ebacf4bd423c704d2ea3bd1adad7}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Tokenizer@{Tokenizer}}
+\index{Tokenizer@{Tokenizer}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}SupportClass.Tokenizer.Tokenizer (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ source, }
+\item[{System.String}]{ delimiters}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_a6322ebacf4bd423c704d2ea3bd1adad7}
+
+
+Initializes a new class instance with a specified string to process and the specified token delimiters to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & String to tokenize\\
+\hline
+{\em delimiters} & String containing the delimiters\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file SupportClass.cs.
+
+\hypertarget{class_support_class_1_1_tokenizer_aba0d507d83decbe4ed671339622157bf}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Tokenizer@{Tokenizer}}
+\index{Tokenizer@{Tokenizer}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}SupportClass.Tokenizer.Tokenizer (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ source, }
+\item[{System.String}]{ delimiters, }
+\item[{bool}]{ includeDelims}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_aba0d507d83decbe4ed671339622157bf}
+
+
+Initializes a new class instance with a specified string to process, the specified token delimiters to use, and whether the delimiters must be included in the results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & String to tokenize\\
+\hline
+{\em delimiters} & String containing the delimiters\\
+\hline
+{\em includeDelims} & Determines if delimiters are included in the results.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file SupportClass.cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_support_class_1_1_tokenizer_ae24726506d60ff6471493f1bf1188303}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!HasMoreTokens@{HasMoreTokens}}
+\index{HasMoreTokens@{HasMoreTokens}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{HasMoreTokens}]{\setlength{\rightskip}{0pt plus 5cm}bool SupportClass.Tokenizer.HasMoreTokens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_ae24726506d60ff6471493f1bf1188303}
+
+
+Determines if there are more tokens to return from the source string. 
+
+\begin{DoxyReturn}{Returns}
+True or false, depending if there are more tokens
+\end{DoxyReturn}
+
+
+Definition at line 138 of file SupportClass.cs.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_support_class_1_1_tokenizer_ae24726506d60ff6471493f1bf1188303_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_support_class_1_1_tokenizer_ae24726506d60ff6471493f1bf1188303_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_support_class_1_1_tokenizer_ae6041388e31dd6cac93061484fd6f5cb}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!MoveNext@{MoveNext}}
+\index{MoveNext@{MoveNext}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{MoveNext}]{\setlength{\rightskip}{0pt plus 5cm}bool SupportClass.Tokenizer.MoveNext (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_ae6041388e31dd6cac93061484fd6f5cb}
+\begin{DoxyReturn}{Returns}
+True or false, depending if there are more tokens
+\end{DoxyReturn}
+
+
+Definition at line 200 of file SupportClass.cs.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_support_class_1_1_tokenizer_ae6041388e31dd6cac93061484fd6f5cb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_support_class_1_1_tokenizer_a970155cb6e044edd0d0030af7aeb7965}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!NextToken@{NextToken}}
+\index{NextToken@{NextToken}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{NextToken}]{\setlength{\rightskip}{0pt plus 5cm}System.String SupportClass.Tokenizer.NextToken (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ delimiters}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_a970155cb6e044edd0d0030af7aeb7965}
+
+
+Returns the next token from the source string, using the provided token delimiters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delimiters} & String containing the delimiters to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string value of the token
+\end{DoxyReturn}
+
+
+Definition at line 89 of file SupportClass.cs.
+
+\hypertarget{class_support_class_1_1_tokenizer_aa8b05db74347979775f1f928b2e67fda}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!NextToken@{NextToken}}
+\index{NextToken@{NextToken}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{NextToken}]{\setlength{\rightskip}{0pt plus 5cm}System.String SupportClass.Tokenizer.NextToken (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_aa8b05db74347979775f1f928b2e67fda}
+
+
+Returns the next token from the token list. 
+
+\begin{DoxyReturn}{Returns}
+The string value of the token
+\end{DoxyReturn}
+
+
+Definition at line 78 of file SupportClass.cs.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_support_class_1_1_tokenizer_aa8b05db74347979775f1f928b2e67fda_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_support_class_1_1_tokenizer_aa47d0eb3332441841949258b4d568666}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Reset@{Reset}}
+\index{Reset@{Reset}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void SupportClass.Tokenizer.Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_support_class_1_1_tokenizer_aa47d0eb3332441841949258b4d568666}
+
+
+Does nothing. 
+
+
+
+Definition at line 208 of file SupportClass.cs.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_support_class_1_1_tokenizer_aaafadcabbcd13d8ceae85eb615f756bd}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Count@{Count}}
+\index{Count@{Count}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int SupportClass.Tokenizer.Count\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{class_support_class_1_1_tokenizer_aaafadcabbcd13d8ceae85eb615f756bd}
+
+
+Remaining tokens count. 
+
+
+
+Definition at line 162 of file SupportClass.cs.
+
+\hypertarget{class_support_class_1_1_tokenizer_a7e53bf2574e24fcc0fb2dedb98ea2e86}{
+\index{SupportClass::Tokenizer@{SupportClass::Tokenizer}!Current@{Current}}
+\index{Current@{Current}!SupportClass::Tokenizer@{SupportClass::Tokenizer}}
+\subsubsection[{Current}]{\setlength{\rightskip}{0pt plus 5cm}System.Object SupportClass.Tokenizer.Current\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{class_support_class_1_1_tokenizer_a7e53bf2574e24fcc0fb2dedb98ea2e86}
+
+
+Performs the same action as NextToken. 
+
+
+
+Definition at line 189 of file SupportClass.cs.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+K:/SELAB/Stock/Source/libsvmdemo/libsvmdemo/\hyperlink{_support_class_8cs}{SupportClass.cs}\end{DoxyCompactItemize}

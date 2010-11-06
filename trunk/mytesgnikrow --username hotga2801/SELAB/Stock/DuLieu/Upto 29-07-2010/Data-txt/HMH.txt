@@ -1,0 +1,3 @@
+<Ticker>,<DTYYYYMMDD>,<Open>,<High>,<Low>,<Close>,<Volume>
+HMH,20100729,33,33,31.3,31.3,7700
+HMH,20100728,39,39,29.9,31.3,42000

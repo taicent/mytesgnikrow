@@ -1,0 +1,210 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <LPC23xx.H>\fP
+.br
+\fC#include 'type.h'\fP
+.br
+\fC#include 'usb.h'\fP
+.br
+\fC#include 'usbcfg.h'\fP
+.br
+\fC#include 'usbreg.h'\fP
+.br
+\fC#include 'usbhw.h'\fP
+.br
+\fC#include 'usbcore.h'\fP
+.br
+\fC#include 'usbuser.h'\fP
+.br
+\fC#include 'SerialLogger.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBEP_MSK_CTRL\fP   0x0001"
+.br
+.ti -1c
+.RI "#define \fBEP_MSK_BULK\fP   0xC924"
+.br
+.ti -1c
+.RI "#define \fBEP_MSK_INT\fP   0x4492"
+.br
+.ti -1c
+.RI "#define \fBEP_MSK_ISO\fP   0x1248"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDWORD\fP \fBEPAdr\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBWrCmd\fP (\fBDWORD\fP cmd)"
+.br
+.ti -1c
+.RI "void \fBWrCmdDat\fP (\fBDWORD\fP cmd, \fBDWORD\fP val)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBRdCmdDat\fP (\fBDWORD\fP cmd)"
+.br
+.ti -1c
+.RI "void \fBUSB_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Connect\fP (\fBBOOL\fP con)"
+.br
+.ti -1c
+.RI "void \fBUSB_Reset\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Suspend\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Resume\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_WakeUp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_WakeUpCfg\fP (\fBBOOL\fP cfg)"
+.br
+.ti -1c
+.RI "void \fBUSB_SetAddress\fP (\fBDWORD\fP adr)"
+.br
+.ti -1c
+.RI "void \fBUSB_Configure\fP (\fBBOOL\fP cfg)"
+.br
+.ti -1c
+.RI "void \fBUSB_ConfigEP\fP (\fBUSB_ENDPOINT_DESCRIPTOR\fP *pEPD)"
+.br
+.ti -1c
+.RI "void \fBUSB_DirCtrlEP\fP (\fBDWORD\fP dir)"
+.br
+.ti -1c
+.RI "void \fBUSB_EnableEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_DisableEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_ResetEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_SetStallEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "void \fBUSB_ClrStallEP\fP (\fBDWORD\fP EPNum)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_ReadEP\fP (\fBDWORD\fP EPNum, \fBBYTE\fP *pData)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_WriteEP\fP (\fBDWORD\fP EPNum, \fBBYTE\fP *pData, \fBDWORD\fP cnt)"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_GetFrame\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_ISR\fP (void)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define EP_MSK_BULK   0xC924"
+.PP
+Definition at line 33 of file usbhw.c.
+.SS "#define EP_MSK_CTRL   0x0001"
+.PP
+Definition at line 32 of file usbhw.c.
+.SS "#define EP_MSK_INT   0x4492"
+.PP
+Definition at line 34 of file usbhw.c.
+.SS "#define EP_MSK_ISO   0x1248"
+.PP
+Definition at line 35 of file usbhw.c.
+.SH "Function Documentation"
+.PP 
+.SS "\fBDWORD\fP EPAdr (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 47 of file usbhw.c.
+.SS "\fBDWORD\fP RdCmdDat (\fBDWORD\fP cmd)"
+.PP
+Definition at line 96 of file usbhw.c.
+.SS "void USB_ClrStallEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 353 of file usbhw.c.
+.SS "void USB_ConfigEP (\fBUSB_ENDPOINT_DESCRIPTOR\fP * pEPD)"
+.PP
+Definition at line 270 of file usbhw.c.
+.SS "void USB_Configure (\fBBOOL\fP cfg)"
+.PP
+Definition at line 254 of file usbhw.c.
+.SS "void USB_Connect (\fBBOOL\fP con)"
+.PP
+Definition at line 160 of file usbhw.c.
+.SS "void USB_DirCtrlEP (\fBDWORD\fP dir)"
+.PP
+Definition at line 288 of file usbhw.c.
+.SS "void USB_DisableEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 314 of file usbhw.c.
+.SS "void USB_EnableEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 301 of file usbhw.c.
+.SS "\fBDWORD\fP USB_GetFrame (void)"
+.PP
+Definition at line 431 of file usbhw.c.
+.SS "void USB_Init (void)"
+.PP
+Definition at line 111 of file usbhw.c.
+.SS "void USB_ISR (void)"
+.PP
+Definition at line 446 of file usbhw.c.
+.SS "\fBDWORD\fP USB_ReadEP (\fBDWORD\fP EPNum, \fBBYTE\fP * pData)"
+.PP
+Definition at line 367 of file usbhw.c.
+.SS "void USB_Reset (void)"
+.PP
+Definition at line 171 of file usbhw.c.
+.SS "void USB_ResetEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 327 of file usbhw.c.
+.SS "void USB_Resume (void)"
+.PP
+Definition at line 206 of file usbhw.c.
+.SS "void USB_SetAddress (\fBDWORD\fP adr)"
+.PP
+Definition at line 242 of file usbhw.c.
+.SS "void USB_SetStallEP (\fBDWORD\fP EPNum)"
+.PP
+Definition at line 340 of file usbhw.c.
+.SS "void USB_Suspend (void)"
+.PP
+Definition at line 195 of file usbhw.c.
+.SS "void USB_WakeUp (void)"
+.PP
+Definition at line 217 of file usbhw.c.
+.SS "void USB_WakeUpCfg (\fBBOOL\fP cfg)"
+.PP
+Definition at line 231 of file usbhw.c.
+.SS "\fBDWORD\fP USB_WriteEP (\fBDWORD\fP EPNum, \fBBYTE\fP * pData, \fBDWORD\fP cnt)"
+.PP
+Definition at line 403 of file usbhw.c.
+.SS "void WrCmd (\fBDWORD\fP cmd)"
+.PP
+Definition at line 64 of file usbhw.c.
+.SS "void WrCmdDat (\fBDWORD\fP cmd, \fBDWORD\fP val)"
+.PP
+Definition at line 79 of file usbhw.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

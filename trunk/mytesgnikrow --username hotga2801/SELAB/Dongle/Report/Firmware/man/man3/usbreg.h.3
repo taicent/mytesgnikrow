@@ -1,0 +1,485 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbreg.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbreg.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFRAME_INT\fP   0x00000001"
+.br
+.ti -1c
+.RI "#define \fBEP_FAST_INT\fP   0x00000002"
+.br
+.ti -1c
+.RI "#define \fBEP_SLOW_INT\fP   0x00000004"
+.br
+.ti -1c
+.RI "#define \fBDEV_STAT_INT\fP   0x00000008"
+.br
+.ti -1c
+.RI "#define \fBCCEMTY_INT\fP   0x00000010"
+.br
+.ti -1c
+.RI "#define \fBCDFULL_INT\fP   0x00000020"
+.br
+.ti -1c
+.RI "#define \fBRxENDPKT_INT\fP   0x00000040"
+.br
+.ti -1c
+.RI "#define \fBTxENDPKT_INT\fP   0x00000080"
+.br
+.ti -1c
+.RI "#define \fBEP_RLZED_INT\fP   0x00000100"
+.br
+.ti -1c
+.RI "#define \fBERR_INT\fP   0x00000200"
+.br
+.ti -1c
+.RI "#define \fBPKT_LNGTH_MASK\fP   0x000003FF"
+.br
+.ti -1c
+.RI "#define \fBPKT_DV\fP   0x00000400"
+.br
+.ti -1c
+.RI "#define \fBPKT_RDY\fP   0x00000800"
+.br
+.ti -1c
+.RI "#define \fBCTRL_RD_EN\fP   0x00000001"
+.br
+.ti -1c
+.RI "#define \fBCTRL_WR_EN\fP   0x00000002"
+.br
+.ti -1c
+.RI "#define \fBCMD_SET_ADDR\fP   0x00D00500"
+.br
+.ti -1c
+.RI "#define \fBCMD_CFG_DEV\fP   0x00D80500"
+.br
+.ti -1c
+.RI "#define \fBCMD_SET_MODE\fP   0x00F30500"
+.br
+.ti -1c
+.RI "#define \fBCMD_RD_FRAME\fP   0x00F50500"
+.br
+.ti -1c
+.RI "#define \fBDAT_RD_FRAME\fP   0x00F50200"
+.br
+.ti -1c
+.RI "#define \fBCMD_RD_TEST\fP   0x00FD0500"
+.br
+.ti -1c
+.RI "#define \fBDAT_RD_TEST\fP   0x00FD0200"
+.br
+.ti -1c
+.RI "#define \fBCMD_SET_DEV_STAT\fP   0x00FE0500"
+.br
+.ti -1c
+.RI "#define \fBCMD_GET_DEV_STAT\fP   0x00FE0500"
+.br
+.ti -1c
+.RI "#define \fBDAT_GET_DEV_STAT\fP   0x00FE0200"
+.br
+.ti -1c
+.RI "#define \fBCMD_GET_ERR_CODE\fP   0x00FF0500"
+.br
+.ti -1c
+.RI "#define \fBDAT_GET_ERR_CODE\fP   0x00FF0200"
+.br
+.ti -1c
+.RI "#define \fBCMD_RD_ERR_STAT\fP   0x00FB0500"
+.br
+.ti -1c
+.RI "#define \fBDAT_RD_ERR_STAT\fP   0x00FB0200"
+.br
+.ti -1c
+.RI "#define \fBDAT_WR_BYTE\fP(x)   (0x00000100 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBCMD_SEL_EP\fP(x)   (0x00000500 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBDAT_SEL_EP\fP(x)   (0x00000200 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBCMD_SEL_EP_CLRI\fP(x)   (0x00400500 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBDAT_SEL_EP_CLRI\fP(x)   (0x00400200 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBCMD_SET_EP_STAT\fP(x)   (0x00400500 | ((x) << 16))"
+.br
+.ti -1c
+.RI "#define \fBCMD_CLR_BUF\fP   0x00F20500"
+.br
+.ti -1c
+.RI "#define \fBDAT_CLR_BUF\fP   0x00F20200"
+.br
+.ti -1c
+.RI "#define \fBCMD_VALID_BUF\fP   0x00FA0500"
+.br
+.ti -1c
+.RI "#define \fBDEV_ADDR_MASK\fP   0x7F"
+.br
+.ti -1c
+.RI "#define \fBDEV_EN\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBCONF_DVICE\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBAP_CLK\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBINAK_CI\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBINAK_CO\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBINAK_II\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBINAK_IO\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBINAK_BI\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBINAK_BO\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBDEV_CON\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBDEV_CON_CH\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBDEV_SUS\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBDEV_SUS_CH\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBDEV_RST\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBERR_EC_MASK\fP   0x0F"
+.br
+.ti -1c
+.RI "#define \fBERR_EA\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBERR_PID\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBERR_UEPKT\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBERR_DCRC\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBERR_TIMOUT\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBERR_EOP\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBERR_B_OVRN\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBERR_BTSTF\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBERR_TGL\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_F\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_ST\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_STP\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_PO\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_EPN\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_B_1_FULL\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBEP_SEL_B_2_FULL\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBEP_STAT_ST\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBEP_STAT_DA\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBEP_STAT_RF_MO\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBEP_STAT_CND_ST\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBCLR_BUF_PO\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBEOT_INT\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBNDD_REQ_INT\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBSYS_ERR_INT\fP   0x04"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define AP_CLK   0x01"
+.PP
+Definition at line 73 of file usbreg.h.
+.SS "#define CCEMTY_INT   0x00000010"
+.PP
+Definition at line 24 of file usbreg.h.
+.SS "#define CDFULL_INT   0x00000020"
+.PP
+Definition at line 25 of file usbreg.h.
+.SS "#define CLR_BUF_PO   0x01"
+.PP
+Definition at line 118 of file usbreg.h.
+.SS "#define CMD_CFG_DEV   0x00D80500"
+.PP
+Definition at line 42 of file usbreg.h.
+.SS "#define CMD_CLR_BUF   0x00F20500"
+.PP
+Definition at line 61 of file usbreg.h.
+.SS "#define CMD_GET_DEV_STAT   0x00FE0500"
+.PP
+Definition at line 49 of file usbreg.h.
+.SS "#define CMD_GET_ERR_CODE   0x00FF0500"
+.PP
+Definition at line 51 of file usbreg.h.
+.SS "#define CMD_RD_ERR_STAT   0x00FB0500"
+.PP
+Definition at line 53 of file usbreg.h.
+.SS "#define CMD_RD_FRAME   0x00F50500"
+.PP
+Definition at line 44 of file usbreg.h.
+.SS "#define CMD_RD_TEST   0x00FD0500"
+.PP
+Definition at line 46 of file usbreg.h.
+.SS "#define CMD_SEL_EP(x)   (0x00000500 | ((x) << 16))"
+.PP
+Definition at line 56 of file usbreg.h.
+.SS "#define CMD_SEL_EP_CLRI(x)   (0x00400500 | ((x) << 16))"
+.PP
+Definition at line 58 of file usbreg.h.
+.SS "#define CMD_SET_ADDR   0x00D00500"
+.PP
+Definition at line 41 of file usbreg.h.
+.SS "#define CMD_SET_DEV_STAT   0x00FE0500"
+.PP
+Definition at line 48 of file usbreg.h.
+.SS "#define CMD_SET_EP_STAT(x)   (0x00400500 | ((x) << 16))"
+.PP
+Definition at line 60 of file usbreg.h.
+.SS "#define CMD_SET_MODE   0x00F30500"
+.PP
+Definition at line 43 of file usbreg.h.
+.SS "#define CMD_VALID_BUF   0x00FA0500"
+.PP
+Definition at line 63 of file usbreg.h.
+.SS "#define CONF_DVICE   0x01"
+.PP
+Definition at line 70 of file usbreg.h.
+.SS "#define CTRL_RD_EN   0x00000001"
+.PP
+Definition at line 37 of file usbreg.h.
+.SS "#define CTRL_WR_EN   0x00000002"
+.PP
+Definition at line 38 of file usbreg.h.
+.SS "#define DAT_CLR_BUF   0x00F20200"
+.PP
+Definition at line 62 of file usbreg.h.
+.SS "#define DAT_GET_DEV_STAT   0x00FE0200"
+.PP
+Definition at line 50 of file usbreg.h.
+.SS "#define DAT_GET_ERR_CODE   0x00FF0200"
+.PP
+Definition at line 52 of file usbreg.h.
+.SS "#define DAT_RD_ERR_STAT   0x00FB0200"
+.PP
+Definition at line 54 of file usbreg.h.
+.SS "#define DAT_RD_FRAME   0x00F50200"
+.PP
+Definition at line 45 of file usbreg.h.
+.SS "#define DAT_RD_TEST   0x00FD0200"
+.PP
+Definition at line 47 of file usbreg.h.
+.SS "#define DAT_SEL_EP(x)   (0x00000200 | ((x) << 16))"
+.PP
+Definition at line 57 of file usbreg.h.
+.SS "#define DAT_SEL_EP_CLRI(x)   (0x00400200 | ((x) << 16))"
+.PP
+Definition at line 59 of file usbreg.h.
+.SS "#define DAT_WR_BYTE(x)   (0x00000100 | ((x) << 16))"
+.PP
+Definition at line 55 of file usbreg.h.
+.SS "#define DEV_ADDR_MASK   0x7F"
+.PP
+Definition at line 66 of file usbreg.h.
+.SS "#define DEV_CON   0x01"
+.PP
+Definition at line 82 of file usbreg.h.
+.SS "#define DEV_CON_CH   0x02"
+.PP
+Definition at line 83 of file usbreg.h.
+.SS "#define DEV_EN   0x80"
+.PP
+Definition at line 67 of file usbreg.h.
+.SS "#define DEV_RST   0x10"
+.PP
+Definition at line 86 of file usbreg.h.
+.SS "#define DEV_STAT_INT   0x00000008"
+.PP
+Definition at line 23 of file usbreg.h.
+.SS "#define DEV_SUS   0x04"
+.PP
+Definition at line 84 of file usbreg.h.
+.SS "#define DEV_SUS_CH   0x08"
+.PP
+Definition at line 85 of file usbreg.h.
+.SS "#define EOT_INT   0x01"
+.PP
+Definition at line 122 of file usbreg.h.
+.SS "#define EP_FAST_INT   0x00000002"
+.PP
+Definition at line 21 of file usbreg.h.
+.SS "#define EP_RLZED_INT   0x00000100"
+.PP
+Definition at line 28 of file usbreg.h.
+.SS "#define EP_SEL_B_1_FULL   0x20"
+.PP
+Definition at line 108 of file usbreg.h.
+.SS "#define EP_SEL_B_2_FULL   0x40"
+.PP
+Definition at line 109 of file usbreg.h.
+.SS "#define EP_SEL_EPN   0x10"
+.PP
+Definition at line 107 of file usbreg.h.
+.SS "#define EP_SEL_F   0x01"
+.PP
+Definition at line 103 of file usbreg.h.
+.SS "#define EP_SEL_PO   0x08"
+.PP
+Definition at line 106 of file usbreg.h.
+.SS "#define EP_SEL_ST   0x02"
+.PP
+Definition at line 104 of file usbreg.h.
+.SS "#define EP_SEL_STP   0x04"
+.PP
+Definition at line 105 of file usbreg.h.
+.SS "#define EP_SLOW_INT   0x00000004"
+.PP
+Definition at line 22 of file usbreg.h.
+.SS "#define EP_STAT_CND_ST   0x80"
+.PP
+Definition at line 115 of file usbreg.h.
+.SS "#define EP_STAT_DA   0x20"
+.PP
+Definition at line 113 of file usbreg.h.
+.SS "#define EP_STAT_RF_MO   0x40"
+.PP
+Definition at line 114 of file usbreg.h.
+.SS "#define EP_STAT_ST   0x01"
+.PP
+Definition at line 112 of file usbreg.h.
+.SS "#define ERR_B_OVRN   0x20"
+.PP
+Definition at line 98 of file usbreg.h.
+.SS "#define ERR_BTSTF   0x40"
+.PP
+Definition at line 99 of file usbreg.h.
+.SS "#define ERR_DCRC   0x04"
+.PP
+Definition at line 95 of file usbreg.h.
+.SS "#define ERR_EA   0x10"
+.PP
+Definition at line 90 of file usbreg.h.
+.SS "#define ERR_EC_MASK   0x0F"
+.PP
+Definition at line 89 of file usbreg.h.
+.SS "#define ERR_EOP   0x10"
+.PP
+Definition at line 97 of file usbreg.h.
+.SS "#define ERR_INT   0x00000200"
+.PP
+Definition at line 29 of file usbreg.h.
+.SS "#define ERR_PID   0x01"
+.PP
+Definition at line 93 of file usbreg.h.
+.SS "#define ERR_TGL   0x80"
+.PP
+Definition at line 100 of file usbreg.h.
+.SS "#define ERR_TIMOUT   0x08"
+.PP
+Definition at line 96 of file usbreg.h.
+.SS "#define ERR_UEPKT   0x02"
+.PP
+Definition at line 94 of file usbreg.h.
+.SS "#define FRAME_INT   0x00000001"
+.PP
+Definition at line 20 of file usbreg.h.
+.SS "#define INAK_BI   0x20"
+.PP
+Definition at line 78 of file usbreg.h.
+.SS "#define INAK_BO   0x40"
+.PP
+Definition at line 79 of file usbreg.h.
+.SS "#define INAK_CI   0x02"
+.PP
+Definition at line 74 of file usbreg.h.
+.SS "#define INAK_CO   0x04"
+.PP
+Definition at line 75 of file usbreg.h.
+.SS "#define INAK_II   0x08"
+.PP
+Definition at line 76 of file usbreg.h.
+.SS "#define INAK_IO   0x10"
+.PP
+Definition at line 77 of file usbreg.h.
+.SS "#define NDD_REQ_INT   0x02"
+.PP
+Definition at line 123 of file usbreg.h.
+.SS "#define PKT_DV   0x00000400"
+.PP
+Definition at line 33 of file usbreg.h.
+.SS "#define PKT_LNGTH_MASK   0x000003FF"
+.PP
+Definition at line 32 of file usbreg.h.
+.SS "#define PKT_RDY   0x00000800"
+.PP
+Definition at line 34 of file usbreg.h.
+.SS "#define RxENDPKT_INT   0x00000040"
+.PP
+Definition at line 26 of file usbreg.h.
+.SS "#define SYS_ERR_INT   0x04"
+.PP
+Definition at line 124 of file usbreg.h.
+.SS "#define TxENDPKT_INT   0x00000080"
+.PP
+Definition at line 27 of file usbreg.h.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

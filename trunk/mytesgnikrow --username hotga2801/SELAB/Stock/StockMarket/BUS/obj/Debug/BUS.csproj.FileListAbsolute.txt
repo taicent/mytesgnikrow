@@ -1,0 +1,9 @@
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\BUS.dll
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\BUS.pdb
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\DAO.dll
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\DTO.dll
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\DTO.pdb
+G:\SELAB\Stock\StockMarket\BUS\bin\Debug\DAO.pdb
+G:\SELAB\Stock\StockMarket\BUS\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Stock\StockMarket\BUS\obj\Debug\BUS.dll
+G:\SELAB\Stock\StockMarket\BUS\obj\Debug\BUS.pdb

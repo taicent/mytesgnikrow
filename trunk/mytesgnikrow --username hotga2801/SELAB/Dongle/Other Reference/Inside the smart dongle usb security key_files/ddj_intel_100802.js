@@ -1,0 +1,1 @@
+document.write('<sc'+'ript src="http://i.cmpnet.com/ads/graphics/as5/pagepeel/ddj_intel_100802_x.js?'+Math.floor(Math.random()*10000)+'"><\/sc'+'ript>');

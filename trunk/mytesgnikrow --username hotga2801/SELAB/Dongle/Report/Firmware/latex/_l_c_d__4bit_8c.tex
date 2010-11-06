@@ -1,0 +1,497 @@
+\hypertarget{_l_c_d__4bit_8c}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD\_\-4bit.c File Reference}
+\label{_l_c_d__4bit_8c}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD\_\-4bit.c@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD\_\-4bit.c}}
+}
+{\ttfamily \#include $<$LPC23xx.H$>$}\par
+Include dependency graph for LCD\_\-4bit.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_af5e65acc80f6b8396102a4dacaf3abe5}{DELAY\_\-2N}~0
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a24ff0c20cb5da95e10a82caafdda96dd}{LineLen}~16
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_af55adedb0d16ae8ce809b57f2535aeec}{NumLines}~2
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_af2266b30f789dce3014ba7290ba0c693}{PIN\_\-E}~0x80000000
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a2121001f100dc94b4292542ca9093874}{PIN\_\-RW}~0x20000000
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a130b402933587698ca0687321614642d}{PIN\_\-RS}~0x10000000
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_ae9e59840d2c459ece6e089c2917ba566}{PINS\_\-CTRL}~0xB0000000
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a781f0d84c97daef15c9d048c3433e18b}{PINS\_\-DATA}~0x0F000000
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_afb4b88fbcc5475a30c22c3e37103ca21}{LCD\_\-E}(x)~((x) ? (IOSET1 = PIN\_\-E)  : (IOCLR1 = PIN\_\-E) );
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_afad61cf19676c037d943d94d031b3519}{LCD\_\-RW}(x)~((x) ? (IOSET1 = PIN\_\-RW) : (IOCLR1 = PIN\_\-RW));
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_af2d555e89facdbbcba96c0c00fd8f462}{LCD\_\-RS}(x)~((x) ? (IOSET1 = PIN\_\-RS) : (IOCLR1 = PIN\_\-RS));
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_aaf469a71c776564ce543a8e73e257068}{LCD\_\-DATA\_\-IN}~((IOPIN1 $>$$>$ 24) \& 0xF)
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a948ba57c018dde9ef6cee665a33a4e15}{LCD\_\-DATA\_\-OUT}(x)~IOCLR1 = PINS\_\-DATA; IOSET1 = (x \& 0xF) $<$$<$ 24;
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_a6e75612a156cbc41e396ee975e58e17b}{LCD\_\-ALL\_\-DIR\_\-OUT}~IODIR1  $|$=  PINS\_\-CTRL $|$ PINS\_\-DATA;
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_ae78258bd73e6d8c58b39c32e944d2f04}{LCD\_\-DATA\_\-DIR\_\-IN}~IODIR1 \&= $\sim$PINS\_\-DATA;
+\item 
+\#define \hyperlink{_l_c_d__4bit_8c_ae0bcc7ab4b0954da80577012f5ded4e1}{LCD\_\-DATA\_\-DIR\_\-OUT}~IODIR1 $|$=  PINS\_\-DATA;
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_l_c_d__4bit_8c_a1d8c72850294f96183ba414c1a80881b}{lcd\_\-write\_\-4bit} (unsigned char c)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_a194afe6c54659ebfe85e470bf4b69410}{lcd\_\-write\_\-cmd} (unsigned char c)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_ae2a729b8b952ad11f8520479931673c8}{lcd\_\-putchar} (char c)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_a6842775ba83d166f02b8fef8bb63b1e6}{lcd\_\-init} (void)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_aa86b689e0750aefe528ba3feae05b717}{set\_\-cursor} (unsigned char column, unsigned char line)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_ad235a86241458b1e7b8771688bfdaf9a}{lcd\_\-clear} (void)
+\item 
+void \hyperlink{_l_c_d__4bit_8c_a84f10088d2e5eed82b9719912c688a80}{lcd\_\-print} (unsigned char const $\ast$string)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned char \hyperlink{_l_c_d__4bit_8c_a85c4d36ff6dcfaeb3ac4973a3a8a4399}{UserFont} \mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_l_c_d__4bit_8c_af5e65acc80f6b8396102a4dacaf3abe5}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!DELAY\_\-2N@{DELAY\_\-2N}}
+\index{DELAY\_\-2N@{DELAY\_\-2N}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{DELAY\_\-2N}]{\setlength{\rightskip}{0pt plus 5cm}\#define DELAY\_\-2N~0}}
+\label{_l_c_d__4bit_8c_af5e65acc80f6b8396102a4dacaf3abe5}
+
+
+Definition at line 22 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a6e75612a156cbc41e396ee975e58e17b}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-ALL\_\-DIR\_\-OUT@{LCD\_\-ALL\_\-DIR\_\-OUT}}
+\index{LCD\_\-ALL\_\-DIR\_\-OUT@{LCD\_\-ALL\_\-DIR\_\-OUT}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-ALL\_\-DIR\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-ALL\_\-DIR\_\-OUT~IODIR1  $|$=  PINS\_\-CTRL $|$ PINS\_\-DATA;}}
+\label{_l_c_d__4bit_8c_a6e75612a156cbc41e396ee975e58e17b}
+
+
+Definition at line 72 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_ae78258bd73e6d8c58b39c32e944d2f04}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-DATA\_\-DIR\_\-IN@{LCD\_\-DATA\_\-DIR\_\-IN}}
+\index{LCD\_\-DATA\_\-DIR\_\-IN@{LCD\_\-DATA\_\-DIR\_\-IN}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-DATA\_\-DIR\_\-IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-DATA\_\-DIR\_\-IN~IODIR1 \&= $\sim$PINS\_\-DATA;}}
+\label{_l_c_d__4bit_8c_ae78258bd73e6d8c58b39c32e944d2f04}
+
+
+Definition at line 75 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_ae0bcc7ab4b0954da80577012f5ded4e1}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-DATA\_\-DIR\_\-OUT@{LCD\_\-DATA\_\-DIR\_\-OUT}}
+\index{LCD\_\-DATA\_\-DIR\_\-OUT@{LCD\_\-DATA\_\-DIR\_\-OUT}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-DATA\_\-DIR\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-DATA\_\-DIR\_\-OUT~IODIR1 $|$=  PINS\_\-DATA;}}
+\label{_l_c_d__4bit_8c_ae0bcc7ab4b0954da80577012f5ded4e1}
+
+
+Definition at line 78 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_aaf469a71c776564ce543a8e73e257068}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-DATA\_\-IN@{LCD\_\-DATA\_\-IN}}
+\index{LCD\_\-DATA\_\-IN@{LCD\_\-DATA\_\-IN}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-DATA\_\-IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-DATA\_\-IN~((IOPIN1 $>$$>$ 24) \& 0xF)}}
+\label{_l_c_d__4bit_8c_aaf469a71c776564ce543a8e73e257068}
+
+
+Definition at line 66 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a948ba57c018dde9ef6cee665a33a4e15}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-DATA\_\-OUT@{LCD\_\-DATA\_\-OUT}}
+\index{LCD\_\-DATA\_\-OUT@{LCD\_\-DATA\_\-OUT}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-DATA\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-DATA\_\-OUT(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~IOCLR1 = PINS\_\-DATA; IOSET1 = (x \& 0xF) $<$$<$ 24;}}
+\label{_l_c_d__4bit_8c_a948ba57c018dde9ef6cee665a33a4e15}
+
+
+Definition at line 69 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_afb4b88fbcc5475a30c22c3e37103ca21}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-E@{LCD\_\-E}}
+\index{LCD\_\-E@{LCD\_\-E}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-E(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~((x) ? (IOSET1 = PIN\_\-E)  : (IOCLR1 = PIN\_\-E) );}}
+\label{_l_c_d__4bit_8c_afb4b88fbcc5475a30c22c3e37103ca21}
+
+
+Definition at line 57 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_af2d555e89facdbbcba96c0c00fd8f462}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-RS@{LCD\_\-RS}}
+\index{LCD\_\-RS@{LCD\_\-RS}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-RS}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-RS(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~((x) ? (IOSET1 = PIN\_\-RS) : (IOCLR1 = PIN\_\-RS));}}
+\label{_l_c_d__4bit_8c_af2d555e89facdbbcba96c0c00fd8f462}
+
+
+Definition at line 63 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_afad61cf19676c037d943d94d031b3519}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LCD\_\-RW@{LCD\_\-RW}}
+\index{LCD\_\-RW@{LCD\_\-RW}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LCD\_\-RW}]{\setlength{\rightskip}{0pt plus 5cm}\#define LCD\_\-RW(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~((x) ? (IOSET1 = PIN\_\-RW) : (IOCLR1 = PIN\_\-RW));}}
+\label{_l_c_d__4bit_8c_afad61cf19676c037d943d94d031b3519}
+
+
+Definition at line 60 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a24ff0c20cb5da95e10a82caafdda96dd}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!LineLen@{LineLen}}
+\index{LineLen@{LineLen}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{LineLen}]{\setlength{\rightskip}{0pt plus 5cm}\#define LineLen~16}}
+\label{_l_c_d__4bit_8c_a24ff0c20cb5da95e10a82caafdda96dd}
+
+
+Definition at line 26 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_af55adedb0d16ae8ce809b57f2535aeec}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!NumLines@{NumLines}}
+\index{NumLines@{NumLines}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{NumLines}]{\setlength{\rightskip}{0pt plus 5cm}\#define NumLines~2}}
+\label{_l_c_d__4bit_8c_af55adedb0d16ae8ce809b57f2535aeec}
+
+
+Definition at line 27 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_af2266b30f789dce3014ba7290ba0c693}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!PIN\_\-E@{PIN\_\-E}}
+\index{PIN\_\-E@{PIN\_\-E}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{PIN\_\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIN\_\-E~0x80000000}}
+\label{_l_c_d__4bit_8c_af2266b30f789dce3014ba7290ba0c693}
+
+
+Definition at line 43 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a130b402933587698ca0687321614642d}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!PIN\_\-RS@{PIN\_\-RS}}
+\index{PIN\_\-RS@{PIN\_\-RS}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{PIN\_\-RS}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIN\_\-RS~0x10000000}}
+\label{_l_c_d__4bit_8c_a130b402933587698ca0687321614642d}
+
+
+Definition at line 45 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a2121001f100dc94b4292542ca9093874}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!PIN\_\-RW@{PIN\_\-RW}}
+\index{PIN\_\-RW@{PIN\_\-RW}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{PIN\_\-RW}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIN\_\-RW~0x20000000}}
+\label{_l_c_d__4bit_8c_a2121001f100dc94b4292542ca9093874}
+
+
+Definition at line 44 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_ae9e59840d2c459ece6e089c2917ba566}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!PINS\_\-CTRL@{PINS\_\-CTRL}}
+\index{PINS\_\-CTRL@{PINS\_\-CTRL}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{PINS\_\-CTRL}]{\setlength{\rightskip}{0pt plus 5cm}\#define PINS\_\-CTRL~0xB0000000}}
+\label{_l_c_d__4bit_8c_ae9e59840d2c459ece6e089c2917ba566}
+
+
+Definition at line 46 of file LCD\_\-4bit.c.
+
+\hypertarget{_l_c_d__4bit_8c_a781f0d84c97daef15c9d048c3433e18b}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!PINS\_\-DATA@{PINS\_\-DATA}}
+\index{PINS\_\-DATA@{PINS\_\-DATA}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{PINS\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define PINS\_\-DATA~0x0F000000}}
+\label{_l_c_d__4bit_8c_a781f0d84c97daef15c9d048c3433e18b}
+
+
+Definition at line 47 of file LCD\_\-4bit.c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_l_c_d__4bit_8c_ad235a86241458b1e7b8771688bfdaf9a}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-clear@{lcd\_\-clear}}
+\index{lcd\_\-clear@{lcd\_\-clear}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_ad235a86241458b1e7b8771688bfdaf9a}
+
+
+Definition at line 280 of file LCD\_\-4bit.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_ad235a86241458b1e7b8771688bfdaf9a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=394pt]{_l_c_d__4bit_8c_ad235a86241458b1e7b8771688bfdaf9a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_a6842775ba83d166f02b8fef8bb63b1e6}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-init@{lcd\_\-init}}
+\index{lcd\_\-init@{lcd\_\-init}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_a6842775ba83d166f02b8fef8bb63b1e6}
+
+
+Definition at line 226 of file LCD\_\-4bit.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=356pt]{_l_c_d__4bit_8c_a6842775ba83d166f02b8fef8bb63b1e6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{_l_c_d__4bit_8c_a6842775ba83d166f02b8fef8bb63b1e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_a84f10088d2e5eed82b9719912c688a80}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-print@{lcd\_\-print}}
+\index{lcd\_\-print@{lcd\_\-print}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-print (
+\begin{DoxyParamCaption}
+\item[{unsigned char const $\ast$}]{ string}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_a84f10088d2e5eed82b9719912c688a80}
+
+
+Definition at line 293 of file LCD\_\-4bit.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{_l_c_d__4bit_8c_a84f10088d2e5eed82b9719912c688a80_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_a84f10088d2e5eed82b9719912c688a80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_ae2a729b8b952ad11f8520479931673c8}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-putchar@{lcd\_\-putchar}}
+\index{lcd\_\-putchar@{lcd\_\-putchar}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-putchar}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-putchar (
+\begin{DoxyParamCaption}
+\item[{char}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_ae2a729b8b952ad11f8520479931673c8}
+
+
+Definition at line 214 of file LCD\_\-4bit.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_ae2a729b8b952ad11f8520479931673c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_a1d8c72850294f96183ba414c1a80881b}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-write\_\-4bit@{lcd\_\-write\_\-4bit}}
+\index{lcd\_\-write\_\-4bit@{lcd\_\-write\_\-4bit}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-write\_\-4bit}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-write\_\-4bit (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_a1d8c72850294f96183ba414c1a80881b}
+
+
+Definition at line 165 of file LCD\_\-4bit.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_a1d8c72850294f96183ba414c1a80881b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_a194afe6c54659ebfe85e470bf4b69410}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!lcd\_\-write\_\-cmd@{lcd\_\-write\_\-cmd}}
+\index{lcd\_\-write\_\-cmd@{lcd\_\-write\_\-cmd}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{lcd\_\-write\_\-cmd}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-write\_\-cmd (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_a194afe6c54659ebfe85e470bf4b69410}
+
+
+Definition at line 182 of file LCD\_\-4bit.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_l_c_d__4bit_8c_a194afe6c54659ebfe85e470bf4b69410_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_a194afe6c54659ebfe85e470bf4b69410_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_l_c_d__4bit_8c_aa86b689e0750aefe528ba3feae05b717}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!set\_\-cursor@{set\_\-cursor}}
+\index{set\_\-cursor@{set\_\-cursor}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{set\_\-cursor}]{\setlength{\rightskip}{0pt plus 5cm}void set\_\-cursor (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ column, }
+\item[{unsigned char}]{ line}
+\end{DoxyParamCaption}
+)}}
+\label{_l_c_d__4bit_8c_aa86b689e0750aefe528ba3feae05b717}
+
+
+Definition at line 265 of file LCD\_\-4bit.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{_l_c_d__4bit_8c_aa86b689e0750aefe528ba3feae05b717_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_c_d__4bit_8c_aa86b689e0750aefe528ba3feae05b717_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_l_c_d__4bit_8c_a85c4d36ff6dcfaeb3ac4973a3a8a4399}{
+\index{LCD\_\-4bit.c@{LCD\_\-4bit.c}!UserFont@{UserFont}}
+\index{UserFont@{UserFont}!LCD_4bit.c@{LCD\_\-4bit.c}}
+\subsubsection[{UserFont}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char {\bf UserFont}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}}}
+\label{_l_c_d__4bit_8c_a85c4d36ff6dcfaeb3ac4973a3a8a4399}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+ {
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10 },
+  { 0x18,0x18,0x18,0x18,0x18,0x18,0x18,0x18 },
+  { 0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C },
+  { 0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E },
+  { 0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 }
+}
+\end{DoxyCode}
+
+
+Definition at line 84 of file LCD\_\-4bit.c.
+

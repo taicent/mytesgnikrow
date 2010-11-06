@@ -1,0 +1,4 @@
+".\obj\lpc2300.o" ".\obj\usbcore.o" ".\obj\usbdesc.o" ".\obj\usbhw.o" ".\obj\usbuser.o" ".\obj\hiduser.o" ".\obj\demo.o" ".\obj\lcd_4bit.o" --device DARMP --strict --scatter ".\Obj\HID.sct" 
+--entry 0x00000000 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\HID.map" -o ".\Obj\HID.axf"

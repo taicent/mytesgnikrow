@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
+
+
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Support Vector Machines for Regression</title>
+<meta name="keywords" content="support vector machines, svm, svms, support vector machine, regression">
+<meta name="description" content="Support vector machines for regression">
+<link rel="stylesheet" type="text/css" href="Support%20Vector%20Machines%20for%20Regression_files/style.css">
+<meta name="author" content="Martin Sewell">
+</head><body>
+<p><a href="http://svms.org/">Home</a></p>
+
+<h1>Support Vector Machines for Regression</h1>
+
+
+<p>
+"The Support Vector method can also be applied to the case of 
+regression, maintaining all the main features that characterise the 
+maximal margin algorithm: a non-linear function is learned by a linear 
+learning machine in a kernel-induced feature space while the capacity of
+ the system is controlled by a parameter that does not depend on the 
+dimensionality of the space."<br>
+Cristianini and Shawe-Taylor (2000)
+</p>
+
+<p>
+"In SVM the basic idea is to map the data x into a high-dimensional 
+feature space F via a nonlinear mapping ?, and to do linear regression 
+in this space (cf. Boser et al. (1992); Vapnik (1995))."<br>
+</p>
+M?uller et al.
+
+
+
+<ul>
+<li><a href="http://scholar.google.com/scholar?q=%22support+vector%22+regression&amp;ie=UTF-8&amp;oe=UTF-8&amp;hl=en&amp;btnG=Search">"support vector" regression - Google Scholar</a></li>
+</ul>
+
+
+
+<h2>Most Cited</h2>
+<!--400-->
+<li>SMOLA, Alex J. and Bernhard SCHÖLKOPF, <a href="http://svms.org/regression/SmSc98.pdf">A Tutorial on Support Vector Regression</a>, 1998. [Cited by 309]
+<!--300-->
+
+<!--200-->
+</li><li>GUNN, S., <a href="http://trevinca.ei.uvigo.es/%7Ecernadas/tc03/mc/SVM.pdf">Support Vector Machines for Classification and Regression</a>, ISIS Technical Report, 1998. [Cited by 164]
+</li><li>COLLOBERT, R and S BENGIO, <a href="">SVMTorch: Support Vector Machines for Large-Scale Regression Problems</a>, Journal of Machine Learning Research, 2001. [Cited by 154]
+<!--100-->
+
+
+
+<h2>Bibliography</h2>
+<ul>
+
+<li>CAO, Lijuan, <a href="http://svms.org/regression/Cao02.pdf">Support vector machines experts for time series forecasting</a><br>"The
+ simulation shows that the SVMs experts achieve significant improvement 
+in the generalization performance in comparison with the single SVMs 
+models. In addition, the SVMs experts also converge faster and use fewer
+ support vectors."<br>Cao (2002)<br><br>
+</li><li>COLLOBERT, R and S BENGIO, <a href="">SVMTorch: Support Vector Machines for Large-Scale Regression Problems</a>, Journal of Machine Learning Research, 2001. [Cited by 154]
+</li><li>DENIS, François and Rémi GILLERON, <a href="http://svms.org/regression/DeGi97.pdf">PAC Learning under Helpful Distributions</a><br>Denis and Gilleron<br><br>
+</li><li>DRUCKER, H., CJC BURGES, L KAUFMAN, AJ SMOLA, V <a href="http://www.cs.cmu.edu/%7Epakyan/compbio/references/Drucker_NIPS_1996.pdf">Support Vector Regression Machines</a>, NIPS, 1996. [Cited by 95]
+</li><li>FERNÁNDEZ, Rodrigo, <a href="http://svms.org/regression/Fern.pdf">Predicting Time Series with a Local Support Vector Regression Machine</a><br><br>
+</li><li>GAO, J.B., S.R. GUNN and C.J. HARRIS, <a href="http://svms.org/regression/GaGH02.pdf">Mean field method for the support vector machine regression</a><br>This
+ paper deals with two subjects. First, we will show how support vector 
+machine (SVM) regression problem can be solved as the maximum a 
+posteriori prediction in the Bayesian framework. The second part 
+describes an approximation technique that is useful in performing 
+calculations for SVMs based on the mean field algorithm which was 
+originally proposed in Statistical Physics of disordered systems. One 
+advantage is that it handle posterior averages for Gaussian process 
+which are not analytically tractable."<br>Gao, Gunn and Harris (2002)<br><br>
+</li><li>GUNN, S., <a href="http://trevinca.ei.uvigo.es/%7Ecernadas/tc03/mc/SVM.pdf">Support Vector Machines for Classification and Regression</a>, ISIS Technical Report, 1998. [Cited by 164]
+</li><li>HARLAND, Zac, <a href="http://svms.org/regression/Harl02.pdf">Using Support Vector Machines to Trade Aluminium on the LME.</a><br>"This
+ paper describes and evaluates the use of support vector regression to 
+trade the three month Aluminium futures contract on the London Metal 
+Exchange, over the period June 1987 to November 1999. The Support Vector
+ Machine is a machine learning method for classification and regression 
+and is fast replacing neural networks as the tool of choice for 
+prediction and pattern recognition tasks, primarily due to their ability
+ to generalise well on unseen data. The algorithm is founded on ideas 
+derived from statistical learning theory and can be understood 
+intuitively within a geometric framework. In this paper we use support 
+vector regression to develop a number of trading submodels that when 
+combined, result in a final model that exhibits above-average returns on
+ out of sample data, thus providing some evidence that the aluminium 
+futures price is less than efficient. Whether these inefficiencies will 
+continue into the future is unknown."<br>Harland<br><br>
+</li><li>HONG, Dug Hun, Changha HWANG, <a href="http://svms.org/regression/HoHw02.pdf">Support vector fuzzy regression machines</a><br>"Support
+ vector machine (SVM) has been very successful in pattern recognition 
+and function estimationproblems. In this paper,we introduce the use of 
+SVM for multivariate fuzzy linear and nonlinear regression models. Using
+ the basic idea underlying SVM for multivariate fuzzy regressions gives 
+computational efficiency of getting solutions."<br>Hong and Hwang<br><br>
+</li><li>MÜLLER, K.-R., et al. <a href="http://svms.org/regression/MSRS00.pdf">Using Support Vector Machines for Time Series Prediction</a><br>"Support
+ Vector Machines are used for time series prediction and compared to 
+radial basis function networks. We make use of two different cost 
+functions for Support Vectors: training with (i) an [epsilon] 
+insensitive loss and (ii) Huber's robust loss function and discuss how 
+to choose the regularization parameters in these models. Two 
+applications are considered: data from (a) a noisy Mackey-Glass system 
+(normal and uniform noise) and (b) the Santa Fe Time Series Competition 
+(set D). In both cases, Support Vector Machines show an excellent 
+performance. In case (b), the Support Vector approach improves the best 
+known result on the benchmark by 29%."Muller et al. (2000)<br><br>
+</li><li>MÜLLER, K.-R., et al. <a href="http://svms.org/regression/MSRS97.pdf">Predicting Time Series with Support Vector Machines</a><br>Muller et al. (1997)<br><br>
+</li><li>MOORE, Andrew W., <a href="http://svms.org/regression/Moor01.pdf">Predicting Real-valued outputs: an introduction to Regression</a><br><br>
+</li><li>MUKHERJEE, Sayan, Edgar OSUNA and Federico GIROSI, <a href="http://svms.org/regression/MuOG97.pdf">Nonlinear Prediction of Chaotic Time Series Using Support Vector Machines</a><br>Mukherjee, Osuna and Girosi (1997)<br><br>
+</li><li>PONTIL, Massimiliano, Ryan RIFKIN and Theodoros EVGENIOU, <a href="http://svms.org/regression/PoRE.pdf">From Regression to Classification in Support Vector Machines</a><br><br>
+</li><li>PONTIL, Massimiliano, Sayan MUKHERJEE and Federico GIROSI, <a href="http://svms.org/regression/PoMG.pdf">On the Noise Model of Support Vector Machines Regression</a><br><br>
+</li><li>PONTIL, Massimiliano, Sayan MUKHERJEE and Federico GIROSI, <a href="http://svms.org/regression/PoMG98.pdf">On the Noise Model of Support Vector Machine Regression</a><br>Pontil, Mukherjee and Girosi (1998)<br><br>
+</li><li>RAKOTOMAMONJY, Alain and Stéphane CANU, <a href="http://svms.org/regression/RaCa.pdf">Frame, Reproducing Kernel, Regularization and Learning</a><br>Rakotomamonjy and Canu<br><br>
+</li><li>SCHÖLKOPF, B., et al., <a href="http://svms.org/regression/SBSW.pdf">Support Vector Regression with Automatic Accuracy Control</a><br>Sch olkopf et al.<br><br>
+</li><li>SMOLA, Alex J. and Bernhard SCHÖLKOPF, <a href="http://svms.org/regression/SmSc98.pdf">A Tutorial on Support Vector Regression</a><br>Smola and Scholkopf (1998) [Cited by 309]<br><br>
+</li><li>TAY, Francis E.H. and L.J. CAO, <a href="http://svms.org/regression/TaCa02.pdf">Modi ed support vector machines in  nancial time series forecasting</a><br>Tay and Cao (2002)<br><br>
+</li><li>TAY, Francis E.H. and Lijuan CAO, <a href="http://svms.org/regression/TaCa01.pdf">Application of support vector machines in financial time series forecasting</a><br>Tay and Cao (2001)<br><br>
+</li><li>TRAFALIS, Theodore B. and Huseyin INCE, <a href="http://svms.org/regression/TrIn00.pdf">Support Vector Machine for Regression and Applications to Financial Forecasting</a><br>Trafalis and Ince (2000)<br>
+</li><li>VERRI, Alessandro, <a href="http://svms.org/regression/class16.pdf">Support Vector Machines for Regression</a><br><br>
+
+</li></ul>
+
+
+
+
+
+
+
+
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=878162;
+var sc_invisible=0;
+var sc_partition=7;
+var sc_security="dd98a97a";
+var sc_remove_link=1;
+</script>
+
+<script type="text/javascript" src="Support%20Vector%20Machines%20for%20Regression_files/counter_xhtml.js"></script><span class="statcounter"><img src="Support%20Vector%20Machines%20for%20Regression_files/t.gif" alt="StatCounter - Free Web Tracker and Counter" border="0"></span>
+<noscript><div class="statcounter"><img class="statcounter" src="http://c8.statcounter.com/878162/0/dd98a97a/0/" alt="website page counter" /></div></noscript>
+<!-- End of StatCounter Code -->
+</li></body></html>

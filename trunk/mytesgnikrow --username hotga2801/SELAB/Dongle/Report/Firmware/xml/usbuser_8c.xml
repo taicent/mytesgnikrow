@@ -1,0 +1,818 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="usbuser_8c" kind="file">
+    <compoundname>usbuser.c</compoundname>
+    <includes local="no">LPC23xx.H</includes>
+    <includes refid="type_8h" local="yes">type.h</includes>
+    <includes refid="usb_8h" local="yes">usb.h</includes>
+    <includes refid="usbcfg_8h" local="yes">usbcfg.h</includes>
+    <includes refid="usbhw_8h" local="yes">usbhw.h</includes>
+    <includes refid="usbcore_8h" local="yes">usbcore.h</includes>
+    <includes refid="usbuser_8h" local="yes">usbuser.h</includes>
+    <includes refid="_vendor_process_8h" local="yes">VendorProcess.h</includes>
+    <includes refid="memory_8h" local="yes">memory.h</includes>
+    <incdepgraph>
+      <node id="285">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser.c"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>usbuser.h</label>
+        <link refid="usbuser_8h"/>
+      </node>
+      <node id="293">
+        <label>VendorProcess.h</label>
+        <link refid="_vendor_process_8h"/>
+      </node>
+      <node id="290">
+        <label>usbhw.h</label>
+        <link refid="usbhw_8h"/>
+      </node>
+      <node id="288">
+        <label>usb.h</label>
+        <link refid="usb_8h"/>
+      </node>
+      <node id="291">
+        <label>usbcore.h</label>
+        <link refid="usbcore_8h"/>
+      </node>
+      <node id="294">
+        <label>memory.h</label>
+        <link refid="memory_8h"/>
+      </node>
+      <node id="289">
+        <label>usbcfg.h</label>
+        <link refid="usbcfg_8h"/>
+      </node>
+      <node id="286">
+        <label>LPC23xx.H</label>
+      </node>
+      <node id="287">
+        <label>type.h</label>
+        <link refid="type_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" prot="public" static="no">
+        <name>P_EP</name>
+        <param><defname>n</defname></param>
+        <initializer>((USB_EP_EVENT &amp; (1 &lt;&lt; (n))) ? USB_EndPoint##n : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="151" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usbuser_8c_1ad12b45bb16055194d9ce35ec70326a7e" prot="public" static="no" mutable="no">
+        <type>void(*const</type>
+        <definition>void(* const USB_P_EP[16])(DWORD event)</definition>
+        <argsstring>[16])(DWORD event)</argsstring>
+        <name>USB_P_EP</name>
+        <initializer> {
+  P_EP(0),
+  P_EP(1),
+  P_EP(2),
+  P_EP(3),
+  P_EP(4),
+  P_EP(5),
+  P_EP(6),
+  P_EP(7),
+  P_EP(8),
+  P_EP(9),
+  P_EP(10),
+  P_EP(11),
+  P_EP(12),
+  P_EP(13),
+  P_EP(14),
+  P_EP(15),
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="171" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="154" bodyend="-1"/>
+        <referencedby refid="usbhw_8h_1a3bbafaece7a3586b87f2e8201127f09b" compoundref="usbhw_8c" startline="446" endline="546">USB_ISR</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usbuser_8c_1a81153c365777cdfe7d9e148c372c45b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_Reset_Event</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_Reset_Event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="47" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="47" bodyend="50"/>
+        <references refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" compoundref="memory_8h" startline="20">LED_CFG</references>
+        <references refid="usbcore_8c_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</references>
+        <referencedby refid="usbhw_8h_1a3bbafaece7a3586b87f2e8201127f09b" compoundref="usbhw_8c" startline="446" endline="546">USB_ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1aebfd6340b5852fa5ff4d00487c6371e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_Suspend_Event</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_Suspend_Event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="60" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="60" bodyend="62"/>
+        <references refid="memory_8h_1accd6b55854afa776c3975dab347ec025" compoundref="memory_8h" startline="21">LED_SUSP</references>
+        <referencedby refid="usbhw_8h_1a3bbafaece7a3586b87f2e8201127f09b" compoundref="usbhw_8c" startline="446" endline="546">USB_ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a1845c45a3015590b54446857bb30805d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_Resume_Event</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_Resume_Event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="72" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="72" bodyend="74"/>
+        <references refid="memory_8h_1accd6b55854afa776c3975dab347ec025" compoundref="memory_8h" startline="21">LED_SUSP</references>
+        <referencedby refid="usbhw_8h_1a3bbafaece7a3586b87f2e8201127f09b" compoundref="usbhw_8c" startline="446" endline="546">USB_ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a166f9155d9fa13d6cf4ecf0e79813fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_Configure_Event</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_Configure_Event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="118" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="118" bodyend="125"/>
+        <references refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" compoundref="memory_8h" startline="20">LED_CFG</references>
+        <references refid="usbcore_8c_1ac86d5d512eb93e8f774d988cde9cd23d" compoundref="usbcore_8c" startline="33">USB_Configuration</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a57a1df89d38c371d71aa8a88da18a40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_Interface_Event</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_Interface_Event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="135" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="135" bodyend="136"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1aae48062677b1667896a1028ca60fa3be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint1</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint1</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="180" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="180" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a4b4aa50a6df5e5d071c5237fe4e36887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint2</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint2</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="192" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="192" bodyend="207"/>
+        <references refid="_vendor_process_8c_1ace51331de08ae3277df50967a88a2074" compoundref="_vendor_process_8c" startline="51" endline="58">Bulk2In</references>
+        <references refid="_vendor_process_8c_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</references>
+        <references refid="usbuser_8h_1a1878b7ac90c901b986cc590e48fe366e" compoundref="usbuser_8h" startline="32">USB_EVT_IN</references>
+        <references refid="usbuser_8h_1ae01491d0798fb37df5ba79e1a9381203" compoundref="usbuser_8h" startline="31">USB_EVT_OUT</references>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a730ace3675884f40da397f0858d8a50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint3</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint3</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="216" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="216" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1afc1e27c8b3679903a7981c16d1ee00fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint4</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint4</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="226" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="226" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1aedec343e5fe1a501fdc8bffb94581366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint5</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint5</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="236" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="236" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a22b39dc9941d3efc85a411d8b8e73493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint6</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint6</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="246" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="246" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a2f0cce6a4a9d973b7b95ed4724430e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint7</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint7</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="256" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="256" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a41bc93dfe2f0d22614f7d5768136f023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint8</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint8</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="266" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="266" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a344fe470ac0e61d978af2afab50d7073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint9</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint9</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="276" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="276" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a489878cbb577bdd8a3f1f14b8ebb6a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint10</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint10</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="286" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="286" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a725190e52f46584a989efe8406b24e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint11</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint11</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="296" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="296" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a4c7d51ec72c6dd10f5687876fd87c726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint12</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint12</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="306" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="306" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a90069c5e57f35f35a166c028000d035b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint13</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint13</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="316" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="316" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1a492c5bebdedd55e044211f4fb5ce6e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint14</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint14</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="326" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="326" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="usbuser_8c_1aa31fe822d154cc3165c9dcdccd477c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_EndPoint15</definition>
+        <argsstring>(DWORD event)</argsstring>
+        <name>USB_EndPoint15</name>
+        <param>
+          <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" line="336" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c" bodystart="336" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>K<sp/>e<sp/>r<sp/>n<sp/>e<sp/>l</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USBUSER.C</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Custom<sp/>User<sp/>Module</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LPC23xx.H&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LPC23xx<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="type_8h" kindref="compound">type.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usb_8h" kindref="compound">usb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcfg_8h" kindref="compound">usbcfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbhw_8h" kindref="compound">usbhw.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbcore_8h" kindref="compound">usbcore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usbuser_8h" kindref="compound">usbuser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vendor_process_8h" kindref="compound">VendorProcess.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memory_8h" kindref="compound">memory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Power<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Power<sp/>Event</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>power:<sp/>On(TRUE)/Off(FALSE)</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_POWER_EVENT</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1a79050c47a525e4772409b74b859f95b4" kindref="member">USB_Power_Event</ref><sp/>(<ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref><sp/><sp/>power)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Reset<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Reset<sp/>Event</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_RESET_EVENT</highlight></codeline>
+<codeline lineno="47" refid="usbuser_8h_1a81153c365777cdfe7d9e148c372c45b1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a81153c365777cdfe7d9e148c372c45b1" kindref="member">USB_Reset_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="usbcore_8c_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" kindref="member">USB_ResetCore</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>FIO2CLR<sp/>=<sp/><ref refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" kindref="member">LED_CFG</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>Off<sp/>Cfg<sp/>LED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Suspend<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Suspend<sp/>Event</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_SUSPEND_EVENT</highlight></codeline>
+<codeline lineno="60" refid="usbuser_8h_1aebfd6340b5852fa5ff4d00487c6371e2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1aebfd6340b5852fa5ff4d00487c6371e2" kindref="member">USB_Suspend_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>FIO2SET<sp/>=<sp/><ref refid="memory_8h_1accd6b55854afa776c3975dab347ec025" kindref="member">LED_SUSP</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>On<sp/>Suspend<sp/>LED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Resume<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Resume<sp/>Event</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_RESUME_EVENT</highlight></codeline>
+<codeline lineno="72" refid="usbuser_8h_1a1845c45a3015590b54446857bb30805d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a1845c45a3015590b54446857bb30805d" kindref="member">USB_Resume_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>FIO2CLR<sp/>=<sp/><ref refid="memory_8h_1accd6b55854afa776c3975dab347ec025" kindref="member">LED_SUSP</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>Off<sp/>Suspend<sp/>LED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Remote<sp/>Wakeup<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Remote<sp/>Wakeup<sp/>Event</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_WAKEUP_EVENT</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1ab88ce72caa322efb74dcbd2740aa1488" kindref="member">USB_WakeUp_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Start<sp/>of<sp/>Frame<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Start<sp/>of<sp/>Frame<sp/>Event</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_SOF_EVENT</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1a43ab0480e52c19825f3f4fac2bee5e95" kindref="member">USB_SOF_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Error<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Error<sp/>Event</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>error:<sp/>Error<sp/>Code</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_ERROR_EVENT</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1aaf2760d7c5c1a00c5bc8aa8f809e562a" kindref="member">USB_Error_Event</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>error)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Set<sp/>Configuration<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Set<sp/>Configuration<sp/>Request</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_CONFIGURE_EVENT</highlight></codeline>
+<codeline lineno="118" refid="usbuser_8h_1a166f9155d9fa13d6cf4ecf0e79813fb8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a166f9155d9fa13d6cf4ecf0e79813fb8" kindref="member">USB_Configure_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="usbcore_8c_1ac86d5d512eb93e8f774d988cde9cd23d" kindref="member">USB_Configuration</ref>)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>if<sp/>USB<sp/>is<sp/>configured<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>FIO2SET<sp/>=<sp/><ref refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" kindref="member">LED_CFG</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>On<sp/>Cfg<sp/>LED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>FIO2CLR<sp/>=<sp/><ref refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" kindref="member">LED_CFG</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>Off<sp/>Cfg<sp/>LED<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Set<sp/>Interface<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Set<sp/>Interface<sp/>Request</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_INTERFACE_EVENT</highlight></codeline>
+<codeline lineno="135" refid="usbuser_8h_1a57a1df89d38c371d71aa8a88da18a40f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a57a1df89d38c371d71aa8a88da18a40f" kindref="member">USB_Interface_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Set/Clear<sp/>Feature<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Set/Clear<sp/>Feature<sp/>Request</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USB_FEATURE_EVENT</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1a30f3231c9a90bd734fb79502f424b574" kindref="member">USB_Feature_Event</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P_EP(n)<sp/>((USB_EP_EVENT<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>(n)))<sp/>?<sp/>USB_EndPoint##n<sp/>:<sp/>NULL)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Endpoint<sp/>Events<sp/>Callback<sp/>Pointers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="usbuser_8h_1ad12b45bb16055194d9ce35ec70326a7e" refkind="member"><highlight class="normal">void<sp/>(*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1ad12b45bb16055194d9ce35ec70326a7e" kindref="member">USB_P_EP</ref>[16])<sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(0),</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(1),</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(2),</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(3),</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(4),</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(5),</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(6),</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(7),</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(8),</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(9),</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(10),</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(11),</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(12),</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(13),</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(14),</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><ref refid="usbuser_8c_1af6bed0886f2615fdcea8a79c90cfb092" kindref="member">P_EP</ref>(15),</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>1<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>1<sp/>Event</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="usbuser_8h_1aae48062677b1667896a1028ca60fa3be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1aae48062677b1667896a1028ca60fa3be" kindref="member">USB_EndPoint1</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>2<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>2<sp/>Event</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//Neo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="usbuser_8h_1a4b4aa50a6df5e5d071c5237fe4e36887" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a4b4aa50a6df5e5d071c5237fe4e36887" kindref="member">USB_EndPoint2</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1a1878b7ac90c901b986cc590e48fe366e" kindref="member">USB_EVT_IN</ref>:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>USB_SetStallEP(0x82);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1ace51331de08ae3277df50967a88a2074" kindref="member">Bulk2In</ref>();<sp/><sp/></highlight><highlight class="comment">//Xu<sp/>ly<sp/>event<sp/>IN<sp/>Packet<sp/>co<sp/>ACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="usbuser_8h_1ae01491d0798fb37df5ba79e1a9381203" kindref="member">USB_EVT_OUT</ref>:</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vendor_process_8c_1a5766b84280d44ddbcb14eb100073c787" kindref="member">Bulk2Out</ref>();<sp/></highlight><highlight class="comment">//Xu<sp/>ly<sp/>event<sp/>OUT<sp/>Packet<sp/>co<sp/>ACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>3<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>3<sp/>Event</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="usbuser_8h_1a730ace3675884f40da397f0858d8a50a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a730ace3675884f40da397f0858d8a50a" kindref="member">USB_EndPoint3</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>4<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>4<sp/>Event</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="usbuser_8h_1afc1e27c8b3679903a7981c16d1ee00fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1afc1e27c8b3679903a7981c16d1ee00fb" kindref="member">USB_EndPoint4</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>5<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>5<sp/>Event</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="usbuser_8h_1aedec343e5fe1a501fdc8bffb94581366" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1aedec343e5fe1a501fdc8bffb94581366" kindref="member">USB_EndPoint5</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>6<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>6<sp/>Event</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="usbuser_8h_1a22b39dc9941d3efc85a411d8b8e73493" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a22b39dc9941d3efc85a411d8b8e73493" kindref="member">USB_EndPoint6</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>7<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>7<sp/>Event</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="usbuser_8h_1a2f0cce6a4a9d973b7b95ed4724430e93" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a2f0cce6a4a9d973b7b95ed4724430e93" kindref="member">USB_EndPoint7</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>8<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>8<sp/>Event</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="usbuser_8h_1a41bc93dfe2f0d22614f7d5768136f023" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a41bc93dfe2f0d22614f7d5768136f023" kindref="member">USB_EndPoint8</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>9<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>9<sp/>Event</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="usbuser_8h_1a344fe470ac0e61d978af2afab50d7073" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a344fe470ac0e61d978af2afab50d7073" kindref="member">USB_EndPoint9</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>10<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>10<sp/>Event</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="usbuser_8h_1a489878cbb577bdd8a3f1f14b8ebb6a85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a489878cbb577bdd8a3f1f14b8ebb6a85" kindref="member">USB_EndPoint10</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>11<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>11<sp/>Event</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="usbuser_8h_1a725190e52f46584a989efe8406b24e67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a725190e52f46584a989efe8406b24e67" kindref="member">USB_EndPoint11</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>12<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>12<sp/>Event</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="usbuser_8h_1a4c7d51ec72c6dd10f5687876fd87c726" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a4c7d51ec72c6dd10f5687876fd87c726" kindref="member">USB_EndPoint12</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="311"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>13<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="312"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>13<sp/>Event</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="314"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="usbuser_8h_1a90069c5e57f35f35a166c028000d035b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a90069c5e57f35f35a166c028000d035b" kindref="member">USB_EndPoint13</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="321"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>14<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="322"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>14<sp/>Event</highlight></codeline>
+<codeline lineno="323"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="324"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="usbuser_8h_1a492c5bebdedd55e044211f4fb5ce6e38" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1a492c5bebdedd55e044211f4fb5ce6e38" kindref="member">USB_EndPoint14</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="331"><highlight class="comment"><sp/>*<sp/><sp/>USB<sp/>Endpoint<sp/>15<sp/>Event<sp/>Callback</highlight></codeline>
+<codeline lineno="332"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Called<sp/>automatically<sp/>on<sp/>USB<sp/>Endpoint<sp/>15<sp/>Event</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>event</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="usbuser_8h_1aa31fe822d154cc3165c9dcdccd477c57" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbuser_8c_1aa31fe822d154cc3165c9dcdccd477c57" kindref="member">USB_EndPoint15</ref><sp/>(<ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c"/>
+  </compounddef>
+</doxygen>

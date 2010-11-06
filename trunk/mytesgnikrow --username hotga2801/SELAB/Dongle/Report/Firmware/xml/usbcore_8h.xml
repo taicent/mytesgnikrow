@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="usbcore_8h" kind="file">
+    <compoundname>usbcore.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbhw_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="250">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="251">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="249">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c</label>
+        <link refid="usbhw_8c"/>
+      </node>
+      <node id="248">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+      <node id="246">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h</label>
+        <link refid="usbcore.h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct___u_s_b___e_p___d_a_t_a" prot="public">_USB_EP_DATA</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="usbcore_8h_1a7657ad5abb5362e6a101b07103f97d96" prot="public" static="no">
+        <type>struct <ref refid="struct___u_s_b___e_p___d_a_t_a" kindref="compound">_USB_EP_DATA</ref></type>
+        <definition>typedef struct _USB_EP_DATA  USB_EP_DATA</definition>
+        <argsstring></argsstring>
+        <name>USB_EP_DATA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usbcore_8h_1a31297056d3b39a4ecf6eba9b5625aaa8" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD USB_DeviceStatus</definition>
+        <argsstring></argsstring>
+        <name>USB_DeviceStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="27" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="31" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbhw_8h_1a076f3794dcd3ff5b60ad10ea702424ca" compoundref="usbhw_8c" startline="217" endline="222">USB_WakeUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1afcfe5243560af24fedef6dc64ce105bc" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE USB_DeviceAddress</definition>
+        <argsstring></argsstring>
+        <name>USB_DeviceAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="28" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="32" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1ac86d5d512eb93e8f774d988cde9cd23d" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE USB_Configuration</definition>
+        <argsstring></argsstring>
+        <name>USB_Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="29" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="33" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a166f9155d9fa13d6cf4ecf0e79813fb8" compoundref="usbuser_8c" startline="118" endline="125">USB_Configure_Event</referencedby>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1a9af3300fdd2389532c50d1ac555d9a5b" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD USB_EndPointMask</definition>
+        <argsstring></argsstring>
+        <name>USB_EndPointMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="30" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="34" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1a3c6c1761235e58b6400dc7130dbaeba0" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD USB_EndPointHalt</definition>
+        <argsstring></argsstring>
+        <name>USB_EndPointHalt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="31" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="35" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" compoundref="usbcore_8c" startline="53" endline="60">USB_ResetCore</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1a3b4c0e58143f7f24817f3764cbc8c9a9" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE USB_AltSetting[USB_IF_NUM]</definition>
+        <argsstring>[USB_IF_NUM]</argsstring>
+        <name>USB_AltSetting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="32" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="37" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1a337e10b1083208f8243eeca21e50e975" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE EP0Buf[USB_MAX_PACKET0]</definition>
+        <argsstring>[USB_MAX_PACKET0]</argsstring>
+        <name>EP0Buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="35" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="39" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8h_1a860cd794341aff47dd390c4cadcec3e7" compoundref="usbcore_8c" startline="139" endline="144">USB_StatusOutStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1ae48f7fef62babbd6888b920a0d7238a6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct___u_s_b___e_p___d_a_t_a" kindref="compound">USB_EP_DATA</ref></type>
+        <definition>USB_EP_DATA EP0Data</definition>
+        <argsstring></argsstring>
+        <name>EP0Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="38" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="42" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbcore_8h_1a7bea2e4379aa4e7c1d0029761123625f" prot="public" static="no" mutable="no">
+        <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref></type>
+        <definition>USB_SETUP_PACKET SetupPacket</definition>
+        <argsstring></argsstring>
+        <name>SetupPacket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="41" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="44" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="usbcore_8c_1aa6a4eb8cb65fe43fd8628667b6ea94b1" compoundref="usbcore_8c" startline="195" endline="237">USB_SetClrFeature</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+        <referencedby refid="usbcore_8c_1ac0076a5289eba0843bf484db9a6b44c3" compoundref="usbcore_8c" startline="69" endline="74">USB_SetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usbcore_8h_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_ResetCore</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_ResetCore</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="44" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="53" bodyend="60"/>
+        <references refid="usbcore_8c_1ac86d5d512eb93e8f774d988cde9cd23d" compoundref="usbcore_8c" startline="33">USB_Configuration</references>
+        <references refid="usbcore_8c_1afcfe5243560af24fedef6dc64ce105bc" compoundref="usbcore_8c" startline="32">USB_DeviceAddress</references>
+        <references refid="usbcore_8c_1a31297056d3b39a4ecf6eba9b5625aaa8" compoundref="usbcore_8c" startline="31">USB_DeviceStatus</references>
+        <references refid="usbcore_8c_1a3c6c1761235e58b6400dc7130dbaeba0" compoundref="usbcore_8c" startline="35">USB_EndPointHalt</references>
+        <references refid="usbcore_8c_1a9af3300fdd2389532c50d1ac555d9a5b" compoundref="usbcore_8c" startline="34">USB_EndPointMask</references>
+        <references refid="usbcfg_8h_1aef1a9dc21299c653d5abf0dc1a27a502" compoundref="usbcfg_8h" startline="71">USB_POWER</references>
+        <referencedby refid="usbuser_8h_1a81153c365777cdfe7d9e148c372c45b1" compoundref="usbuser_8c" startline="47" endline="50">USB_Reset_Event</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbcore_8h_1abd896ba7757ca7b9b9ae8a8d5bdabda5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_StatusInStage</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_StatusInStage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="46" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="125" bodyend="130"/>
+        <references refid="_serial_logger_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_serial_logger_8h" startline="19">NULL</references>
+        <references refid="usbhw_8c_1af89c6611adcf552f28f8fa6d598cac4e" compoundref="usbhw_8c" startline="403" endline="421">USB_WriteEP</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbcore_8h_1a860cd794341aff47dd390c4cadcec3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_StatusOutStage</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_StatusOutStage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="47" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="139" bodyend="144"/>
+        <references refid="usbcore_8c_1a337e10b1083208f8243eeca21e50e975" compoundref="usbcore_8c" startline="39">EP0Buf</references>
+        <references refid="usbhw_8c_1a2ca65c3e8ac1bd48abf2f47b120d829e" compoundref="usbhw_8c" startline="367" endline="390">USB_ReadEP</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbcore_8h_1af77737c9a9cf487c2d21bdb77904d5b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_DataInStage</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_DataInStage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="48" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="83" bodyend="97"/>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" compoundref="usbcore_8h" startline="23">_USB_EP_DATA::Count</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="usbcfg_8h_1a4659143950f825db983fadc9a1b1df4e" compoundref="usbcfg_8h" startline="74">USB_MAX_PACKET0</references>
+        <references refid="usbhw_8c_1af89c6611adcf552f28f8fa6d598cac4e" compoundref="usbhw_8c" startline="403" endline="421">USB_WriteEP</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="usbcore_8h_1a147ac40813dde8a168086e312a8aeff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USB_DataOutStage</definition>
+        <argsstring>(void)</argsstring>
+        <name>USB_DataOutStage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="49" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c" bodystart="106" bodyend="115"/>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" compoundref="usbcore_8h" startline="23">_USB_EP_DATA::Count</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="usbhw_8c_1a2ca65c3e8ac1bd48abf2f47b120d829e" compoundref="usbhw_8c" startline="367" endline="390">USB_ReadEP</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>K<sp/>e<sp/>r<sp/>n<sp/>e<sp/>l</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USBCORE.H</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Core<sp/>Definitions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USBCORE_H__</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USBCORE_H__</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Endpoint<sp/>Data<sp/>Structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="struct___u_s_b___e_p___d_a_t_a" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___u_s_b___e_p___d_a_t_a" kindref="compound">_USB_EP_DATA</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/>*<ref refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" kindref="member">pData</ref>;</highlight></codeline>
+<codeline lineno="23" refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><sp/><ref refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" kindref="member">Count</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="usbcore_8h_1a7657ad5abb5362e6a101b07103f97d96" kindref="member">USB_EP_DATA</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Core<sp/>Global<sp/>Variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref><sp/><sp/><ref refid="usbcore_8c_1a31297056d3b39a4ecf6eba9b5625aaa8" kindref="member">USB_DeviceStatus</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="usbcore_8c_1afcfe5243560af24fedef6dc64ce105bc" kindref="member">USB_DeviceAddress</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="usbcore_8c_1ac86d5d512eb93e8f774d988cde9cd23d" kindref="member">USB_Configuration</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/><ref refid="usbcore_8c_1a9af3300fdd2389532c50d1ac555d9a5b" kindref="member">USB_EndPointMask</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/><ref refid="usbcore_8c_1a3c6c1761235e58b6400dc7130dbaeba0" kindref="member">USB_EndPointHalt</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="usbcore_8c_1a3b4c0e58143f7f24817f3764cbc8c9a9" kindref="member">USB_AltSetting</ref>[<ref refid="usbcfg_8h_1acb05ef967c3751cd3912039e6005d6db" kindref="member">USB_IF_NUM</ref>];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Endpoint<sp/>0<sp/>Buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><sp/><ref refid="usbcore_8c_1a337e10b1083208f8243eeca21e50e975" kindref="member">EP0Buf</ref>[<ref refid="usbcfg_8h_1a4659143950f825db983fadc9a1b1df4e" kindref="member">USB_MAX_PACKET0</ref>];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Endpoint<sp/>0<sp/>Data<sp/>Info<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___u_s_b___e_p___d_a_t_a" kindref="compound">USB_EP_DATA</ref><sp/><ref refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" kindref="member">EP0Data</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Setup<sp/>Packet<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/><ref refid="usbcore_8c_1a7bea2e4379aa4e7c1d0029761123625f" kindref="member">SetupPacket</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USB<sp/>Core<sp/>Functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="usbcore_8c_1a1d9fbf88b2b74a3e2d1d936d4a3059c3" kindref="member">USB_ResetCore</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" kindref="member">USB_StatusInStage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbcore_8c_1a860cd794341aff47dd390c4cadcec3e7" kindref="member">USB_StatusOutStage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbcore_8c_1af77737c9a9cf487c2d21bdb77904d5b4" kindref="member">USB_DataInStage</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usbcore_8c_1a147ac40813dde8a168086e312a8aeff7" kindref="member">USB_DataOutStage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__USBCORE_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h"/>
+  </compounddef>
+</doxygen>

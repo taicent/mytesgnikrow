@@ -1,0 +1,1 @@
+To start using BPMN stencil, just click on BPMN_template.vst!

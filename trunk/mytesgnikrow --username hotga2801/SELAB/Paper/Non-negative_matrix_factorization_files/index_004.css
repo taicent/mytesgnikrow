@@ -1,0 +1,23 @@
+/* <source lang="css"> */
+/* Support for Template:IPA, Template:Unicode and Template:Polytonic.
+   Please copy any changes to [[Template:IPA fonts]] and [[Template:Unicode fonts]].
+*/
+.IPA {
+    font-family: "Charis SIL", "Doulos SIL", Gentium, GentiumAlt,
+                 "DejaVu Sans", Code2000, "TITUS Cyberbit Basic",
+                 "Arial Unicode MS", "Lucida Sans Unicode",
+                 "Chrysanthi Unicode";
+}
+.Unicode {
+    font-family: Code2000, Code2001, "Free Serif", "TITUS Cyberbit Basic",
+                 "Doulos SIL", "Chrysanthi Unicode", "Bitstream Cyberbit",
+                 "Bitstream CyberBase", Thryomanes, Gentium, GentiumAlt,
+                 "Lucida Grande", "Free Sans", "Arial Unicode MS",
+                 "Microsoft Sans Serif", "Lucida Sans Unicode";
+}
+.polytonic {
+    font-family: "Athena Unicode", Gentium, "Palatino Linotype",
+                 "Arial Unicode MS", "Lucida Sans Unicode",
+                 "Lucida Grande", Code2000; 
+}
+/* </source> */

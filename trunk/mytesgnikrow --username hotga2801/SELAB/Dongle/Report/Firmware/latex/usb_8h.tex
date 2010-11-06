@@ -1,0 +1,921 @@
+\hypertarget{usb_8h}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h File Reference}
+\label{usb_8h}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usb_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union___r_e_q_u_e_s_t___t_y_p_e}{\_\-REQUEST\_\-TYPE}
+\item 
+struct \hyperlink{struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m}{\_\-REQUEST\_\-TYPE::\_\-BM}
+\item 
+struct \hyperlink{struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t}{\_\-USB\_\-SETUP\_\-PACKET}
+\item 
+struct \hyperlink{struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-DEVICE\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-CONFIGURATION\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-INTERFACE\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-ENDPOINT\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-STRING\_\-DESCRIPTOR}
+\item 
+struct \hyperlink{struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-COMMON\_\-DESCRIPTOR}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usb_8h_a8d90abb0515c0c9cd7c80480f1ebe7d3}{REQUEST\_\-HOST\_\-TO\_\-DEVICE}~0
+\item 
+\#define \hyperlink{usb_8h_af8f8eae5ae324d7d3e1344e97e23b20f}{REQUEST\_\-DEVICE\_\-TO\_\-HOST}~1
+\item 
+\#define \hyperlink{usb_8h_a1dd6ef57678e7af95d835049d5b355b9}{REQUEST\_\-STANDARD}~0
+\item 
+\#define \hyperlink{usb_8h_afd24e03239e2df9e6d9c6cbcd53c1337}{REQUEST\_\-CLASS}~1
+\item 
+\#define \hyperlink{usb_8h_a40131e4daec200a7d931c2b26e43d27f}{REQUEST\_\-VENDOR}~2
+\item 
+\#define \hyperlink{usb_8h_a63cb1192a7cd205455bddd302f67c915}{REQUEST\_\-RESERVED}~3
+\item 
+\#define \hyperlink{usb_8h_af89871a0b4aa9411e09a9961de76e76f}{REQUEST\_\-TO\_\-DEVICE}~0
+\item 
+\#define \hyperlink{usb_8h_a0e5e473281fc9c1ee1ea446823c02623}{REQUEST\_\-TO\_\-INTERFACE}~1
+\item 
+\#define \hyperlink{usb_8h_a4c4571ca0bf6b462bd8954a95456561c}{REQUEST\_\-TO\_\-ENDPOINT}~2
+\item 
+\#define \hyperlink{usb_8h_ad1f005d9ae04da7324d465a86e489af5}{REQUEST\_\-TO\_\-OTHER}~3
+\item 
+\#define \hyperlink{usb_8h_a062f3147a1bae954b642b915827b3f3f}{USB\_\-REQUEST\_\-GET\_\-STATUS}~0
+\item 
+\#define \hyperlink{usb_8h_ab9fe860caa1f21c9410984a24bf57c7c}{USB\_\-REQUEST\_\-CLEAR\_\-FEATURE}~1
+\item 
+\#define \hyperlink{usb_8h_aa2b4d305dcd185cc1242e94ee78eea25}{USB\_\-REQUEST\_\-SET\_\-FEATURE}~3
+\item 
+\#define \hyperlink{usb_8h_ac87659819bfd6491120c819fae2d46bc}{USB\_\-REQUEST\_\-SET\_\-ADDRESS}~5
+\item 
+\#define \hyperlink{usb_8h_a3572226ee2137c7fbf7487a02b0f560f}{USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR}~6
+\item 
+\#define \hyperlink{usb_8h_a3c80fdedd69586ccf2894f5bd4638252}{USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR}~7
+\item 
+\#define \hyperlink{usb_8h_a341ed4aff1f0d5a1a4a4f17cb606d08d}{USB\_\-REQUEST\_\-GET\_\-CONFIGURATION}~8
+\item 
+\#define \hyperlink{usb_8h_aadef005acc40340955d34d9767ef297c}{USB\_\-REQUEST\_\-SET\_\-CONFIGURATION}~9
+\item 
+\#define \hyperlink{usb_8h_a25550f44898d9c9a3bf0a7814af7fe96}{USB\_\-REQUEST\_\-GET\_\-INTERFACE}~10
+\item 
+\#define \hyperlink{usb_8h_af8d2ea632916bfc2a7628f63d3f643aa}{USB\_\-REQUEST\_\-SET\_\-INTERFACE}~11
+\item 
+\#define \hyperlink{usb_8h_a916e1a4b8f8a5cb369d896ef35c4db34}{USB\_\-REQUEST\_\-SYNC\_\-FRAME}~12
+\item 
+\#define \hyperlink{usb_8h_a1e801ee37e93522f0f38eff9bc7aac02}{USB\_\-GETSTATUS\_\-SELF\_\-POWERED}~0x01
+\item 
+\#define \hyperlink{usb_8h_aad5790ebb5c8f5a25ce60140c60c2ec5}{USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP}~0x02
+\item 
+\#define \hyperlink{usb_8h_a4ebb10046221004827e4b2a72cdeefa5}{USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL}~0x01
+\item 
+\#define \hyperlink{usb_8h_a3ff0518fb298c9c9b556f59c0468ec0d}{USB\_\-FEATURE\_\-ENDPOINT\_\-STALL}~0
+\item 
+\#define \hyperlink{usb_8h_a2185a0541f4155470596c9c739c1656b}{USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP}~1
+\item 
+\#define \hyperlink{usb_8h_a722f2d6ee2892228b6708e8b9904c645}{USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE}~1
+\item 
+\#define \hyperlink{usb_8h_a45e81401e4b530280fdd539da1b06c26}{USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE}~2
+\item 
+\#define \hyperlink{usb_8h_ab01c9c74f2eb266b20aecd48bab4b35c}{USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE}~3
+\item 
+\#define \hyperlink{usb_8h_ad1699884fa580bba35246a566264c978}{USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE}~4
+\item 
+\#define \hyperlink{usb_8h_a4e8d6d81a224f8b511edc92b6cb4e085}{USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE}~5
+\item 
+\#define \hyperlink{usb_8h_a7158946184590ea6cfcb406d7f3c4ce5}{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE}~6
+\item 
+\#define \hyperlink{usb_8h_a0d886bcc28cf10d730106d7be9b661fd}{USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE}~7
+\item 
+\#define \hyperlink{usb_8h_a3356db66a2c62f7018f23f9189ba34c9}{USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE}~8
+\item 
+\#define \hyperlink{usb_8h_aca7ece737f3f37b7a6f458fc24864776}{USB\_\-DEVICE\_\-CLASS\_\-RESERVED}~0x00
+\item 
+\#define \hyperlink{usb_8h_ade360faee3b601af707b65122a46d446}{USB\_\-DEVICE\_\-CLASS\_\-AUDIO}~0x01
+\item 
+\#define \hyperlink{usb_8h_ab6fd7e18adf5c748a6b56391c1c2b819}{USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS}~0x02
+\item 
+\#define \hyperlink{usb_8h_a3d9e0560a81b4dfd30bbf829960dbfab}{USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE}~0x03
+\item 
+\#define \hyperlink{usb_8h_a23d001aa49fada2019ff3a4886a9f2a5}{USB\_\-DEVICE\_\-CLASS\_\-MONITOR}~0x04
+\item 
+\#define \hyperlink{usb_8h_a6053794e5de119b37615ec98f7eceedb}{USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE}~0x05
+\item 
+\#define \hyperlink{usb_8h_a88a8b2d45b2950ffd5654e4c3b6741ff}{USB\_\-DEVICE\_\-CLASS\_\-POWER}~0x06
+\item 
+\#define \hyperlink{usb_8h_ae6181c6bdb18c0e6491dd189983b6bd2}{USB\_\-DEVICE\_\-CLASS\_\-PRINTER}~0x07
+\item 
+\#define \hyperlink{usb_8h_a053d2a9c3c9856ee01589ebb64d2e09b}{USB\_\-DEVICE\_\-CLASS\_\-STORAGE}~0x08
+\item 
+\#define \hyperlink{usb_8h_ab8167347cb586d3f82a7ad95fa25bc22}{USB\_\-DEVICE\_\-CLASS\_\-HUB}~0x09
+\item 
+\#define \hyperlink{usb_8h_a89b94b8bc3c5fa2ef7151b5d282f22bb}{USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC}~0xFF
+\item 
+\#define \hyperlink{usb_8h_afdd4f846b5497985c182a1a090d99729}{USB\_\-CONFIG\_\-POWERED\_\-MASK}~0xC0
+\item 
+\#define \hyperlink{usb_8h_a63c0a08ce70650c3c677ab523a45a0bb}{USB\_\-CONFIG\_\-BUS\_\-POWERED}~0x80
+\item 
+\#define \hyperlink{usb_8h_a8c322771b797c09e3066a388b46e9ef9}{USB\_\-CONFIG\_\-SELF\_\-POWERED}~0xC0
+\item 
+\#define \hyperlink{usb_8h_a7b28a766a8a916fae421d52fbedd2cba}{USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP}~0x20
+\item 
+\#define \hyperlink{usb_8h_adcf08dc7fdb6117608624203612b3104}{USB\_\-CONFIG\_\-POWER\_\-MA}(mA)~((mA)/2)
+\item 
+\#define \hyperlink{usb_8h_ab7544c5b8cf975839422c1ce29d4c5cb}{USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK}~0x80
+\item 
+\#define \hyperlink{usb_8h_a81ac2a8c9688d35940a054c4194c278d}{USB\_\-ENDPOINT\_\-OUT}(addr)~((addr) $|$ 0x00)
+\item 
+\#define \hyperlink{usb_8h_abe258bf57244c49874da6d53679e6df8}{USB\_\-ENDPOINT\_\-IN}(addr)~((addr) $|$ 0x80)
+\item 
+\#define \hyperlink{usb_8h_acd114fdf068aaa69407358ee5ccfd170}{USB\_\-ENDPOINT\_\-TYPE\_\-MASK}~0x03
+\item 
+\#define \hyperlink{usb_8h_a6a51ed22b06e5ca0f76a35b6bac8d73a}{USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL}~0x00
+\item 
+\#define \hyperlink{usb_8h_ab05aae4a5d079b8dfb6a9cb1325ea6e5}{USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS}~0x01
+\item 
+\#define \hyperlink{usb_8h_af4bac84d4576dc8f74f39dc75749e3dc}{USB\_\-ENDPOINT\_\-TYPE\_\-BULK}~0x02
+\item 
+\#define \hyperlink{usb_8h_a2cb5aa69a03df20aab217b808ad692a6}{USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT}~0x03
+\item 
+\#define \hyperlink{usb_8h_a91301868eb0b52506fc9bc02b131f783}{USB\_\-ENDPOINT\_\-SYNC\_\-MASK}~0x0C
+\item 
+\#define \hyperlink{usb_8h_a7733e58f8c4fbcef1533eb02f375aeb0}{USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION}~0x00
+\item 
+\#define \hyperlink{usb_8h_ad1bb5cc537ea61634cb61c8c364c9a6f}{USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS}~0x04
+\item 
+\#define \hyperlink{usb_8h_aa7808914116fe45223462e68d6f8aa5d}{USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE}~0x08
+\item 
+\#define \hyperlink{usb_8h_a0309c68623fb48fdc621f15dabc579f2}{USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS}~0x0C
+\item 
+\#define \hyperlink{usb_8h_a834006343743238a5eb1d273ef3226ae}{USB\_\-ENDPOINT\_\-USAGE\_\-MASK}~0x30
+\item 
+\#define \hyperlink{usb_8h_ac852b5e62e4e577b1b43239ae190908a}{USB\_\-ENDPOINT\_\-USAGE\_\-DATA}~0x00
+\item 
+\#define \hyperlink{usb_8h_abe8c89e5b624ac6bb5b9cd2919fc06be}{USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK}~0x10
+\item 
+\#define \hyperlink{usb_8h_abfdb9f73f34907249b8fd1128c25ae1a}{USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK}~0x20
+\item 
+\#define \hyperlink{usb_8h_a0ee1319e7242bb61298af850ea64f08a}{USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED}~0x30
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{type_8h_a197942eefa7db30960ae396d68339b97}{WORD} \hyperlink{usb_8h_a24c45f6de6f03ce6e2e53d0d40d40fb7}{W}\\
+\>struct \{\\
+\>\>\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usb_8h_a25194c82e9e85af75c87c700cd7711f9}{L}\\
+\>\>\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usb_8h_a2e10f434c298d52105493d70433289b5}{H}\\
+\>\} \hyperlink{usb_8h_ada0f1ba1d0d8878663ec1938cdd33920}{WB}\\
+\} \hyperlink{usb_8h_a77276c9590f0da754a35b4cbf309c2c7}{WORD\_BYTE}\\
+
+\end{tabbing}\item 
+typedef \_\-\_\-packed union \hyperlink{union___r_e_q_u_e_s_t___t_y_p_e}{\_\-REQUEST\_\-TYPE} \hyperlink{usb_8h_a1cf9602c496d0762c0e710c7a1268a69}{REQUEST\_\-TYPE}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___s_e_t_u_p___p_a_c_k_e_t}{\_\-USB\_\-SETUP\_\-PACKET} \hyperlink{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{USB\_\-SETUP\_\-PACKET}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___d_e_v_i_c_e___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-DEVICE\_\-DESCRIPTOR} \hyperlink{usb_8h_aaba3306324a8f6fef5052e9fae06f45d}{USB\_\-DEVICE\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___d_e_v_i_c_e___q_u_a_l_i_f_i_e_r___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR} \hyperlink{usb_8h_a5f7e9b946c4597b53cfb48b8e718a1f2}{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___c_o_n_f_i_g_u_r_a_t_i_o_n___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-CONFIGURATION\_\-DESCRIPTOR} \hyperlink{usb_8h_a36beb2cc858800223e1d7f02aeb28260}{USB\_\-CONFIGURATION\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___i_n_t_e_r_f_a_c_e___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-INTERFACE\_\-DESCRIPTOR} \hyperlink{usb_8h_a514029a74d63a32b820ce506c0e60857}{USB\_\-INTERFACE\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___e_n_d_p_o_i_n_t___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-ENDPOINT\_\-DESCRIPTOR} \hyperlink{usb_8h_ad257142de6c082632f2ca3e8ab4ca058}{USB\_\-ENDPOINT\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___s_t_r_i_n_g___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-STRING\_\-DESCRIPTOR} \hyperlink{usb_8h_a3c54c7d04c19170c1ceb1c40c6e50bfc}{USB\_\-STRING\_\-DESCRIPTOR}
+\item 
+typedef \_\-\_\-packed struct \hyperlink{struct___u_s_b___c_o_m_m_o_n___d_e_s_c_r_i_p_t_o_r}{\_\-USB\_\-COMMON\_\-DESCRIPTOR} \hyperlink{usb_8h_a3754ad5b11ac1f424ca1b6468c9ae181}{USB\_\-COMMON\_\-DESCRIPTOR}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{usb_8h_afd24e03239e2df9e6d9c6cbcd53c1337}{
+\index{usb.h@{usb.h}!REQUEST\_\-CLASS@{REQUEST\_\-CLASS}}
+\index{REQUEST\_\-CLASS@{REQUEST\_\-CLASS}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-CLASS}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-CLASS~1}}
+\label{usb_8h_afd24e03239e2df9e6d9c6cbcd53c1337}
+
+
+Definition at line 35 of file usb.h.
+
+\hypertarget{usb_8h_af8f8eae5ae324d7d3e1344e97e23b20f}{
+\index{usb.h@{usb.h}!REQUEST\_\-DEVICE\_\-TO\_\-HOST@{REQUEST\_\-DEVICE\_\-TO\_\-HOST}}
+\index{REQUEST\_\-DEVICE\_\-TO\_\-HOST@{REQUEST\_\-DEVICE\_\-TO\_\-HOST}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-DEVICE\_\-TO\_\-HOST}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-DEVICE\_\-TO\_\-HOST~1}}
+\label{usb_8h_af8f8eae5ae324d7d3e1344e97e23b20f}
+
+
+Definition at line 31 of file usb.h.
+
+\hypertarget{usb_8h_a8d90abb0515c0c9cd7c80480f1ebe7d3}{
+\index{usb.h@{usb.h}!REQUEST\_\-HOST\_\-TO\_\-DEVICE@{REQUEST\_\-HOST\_\-TO\_\-DEVICE}}
+\index{REQUEST\_\-HOST\_\-TO\_\-DEVICE@{REQUEST\_\-HOST\_\-TO\_\-DEVICE}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-HOST\_\-TO\_\-DEVICE}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-HOST\_\-TO\_\-DEVICE~0}}
+\label{usb_8h_a8d90abb0515c0c9cd7c80480f1ebe7d3}
+
+
+Definition at line 30 of file usb.h.
+
+\hypertarget{usb_8h_a63cb1192a7cd205455bddd302f67c915}{
+\index{usb.h@{usb.h}!REQUEST\_\-RESERVED@{REQUEST\_\-RESERVED}}
+\index{REQUEST\_\-RESERVED@{REQUEST\_\-RESERVED}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-RESERVED}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-RESERVED~3}}
+\label{usb_8h_a63cb1192a7cd205455bddd302f67c915}
+
+
+Definition at line 37 of file usb.h.
+
+\hypertarget{usb_8h_a1dd6ef57678e7af95d835049d5b355b9}{
+\index{usb.h@{usb.h}!REQUEST\_\-STANDARD@{REQUEST\_\-STANDARD}}
+\index{REQUEST\_\-STANDARD@{REQUEST\_\-STANDARD}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-STANDARD}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-STANDARD~0}}
+\label{usb_8h_a1dd6ef57678e7af95d835049d5b355b9}
+
+
+Definition at line 34 of file usb.h.
+
+\hypertarget{usb_8h_af89871a0b4aa9411e09a9961de76e76f}{
+\index{usb.h@{usb.h}!REQUEST\_\-TO\_\-DEVICE@{REQUEST\_\-TO\_\-DEVICE}}
+\index{REQUEST\_\-TO\_\-DEVICE@{REQUEST\_\-TO\_\-DEVICE}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-TO\_\-DEVICE}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-TO\_\-DEVICE~0}}
+\label{usb_8h_af89871a0b4aa9411e09a9961de76e76f}
+
+
+Definition at line 40 of file usb.h.
+
+\hypertarget{usb_8h_a4c4571ca0bf6b462bd8954a95456561c}{
+\index{usb.h@{usb.h}!REQUEST\_\-TO\_\-ENDPOINT@{REQUEST\_\-TO\_\-ENDPOINT}}
+\index{REQUEST\_\-TO\_\-ENDPOINT@{REQUEST\_\-TO\_\-ENDPOINT}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-TO\_\-ENDPOINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-TO\_\-ENDPOINT~2}}
+\label{usb_8h_a4c4571ca0bf6b462bd8954a95456561c}
+
+
+Definition at line 42 of file usb.h.
+
+\hypertarget{usb_8h_a0e5e473281fc9c1ee1ea446823c02623}{
+\index{usb.h@{usb.h}!REQUEST\_\-TO\_\-INTERFACE@{REQUEST\_\-TO\_\-INTERFACE}}
+\index{REQUEST\_\-TO\_\-INTERFACE@{REQUEST\_\-TO\_\-INTERFACE}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-TO\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-TO\_\-INTERFACE~1}}
+\label{usb_8h_a0e5e473281fc9c1ee1ea446823c02623}
+
+
+Definition at line 41 of file usb.h.
+
+\hypertarget{usb_8h_ad1f005d9ae04da7324d465a86e489af5}{
+\index{usb.h@{usb.h}!REQUEST\_\-TO\_\-OTHER@{REQUEST\_\-TO\_\-OTHER}}
+\index{REQUEST\_\-TO\_\-OTHER@{REQUEST\_\-TO\_\-OTHER}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-TO\_\-OTHER}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-TO\_\-OTHER~3}}
+\label{usb_8h_ad1f005d9ae04da7324d465a86e489af5}
+
+
+Definition at line 43 of file usb.h.
+
+\hypertarget{usb_8h_a40131e4daec200a7d931c2b26e43d27f}{
+\index{usb.h@{usb.h}!REQUEST\_\-VENDOR@{REQUEST\_\-VENDOR}}
+\index{REQUEST\_\-VENDOR@{REQUEST\_\-VENDOR}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-VENDOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define REQUEST\_\-VENDOR~2}}
+\label{usb_8h_a40131e4daec200a7d931c2b26e43d27f}
+
+
+Definition at line 36 of file usb.h.
+
+\hypertarget{usb_8h_a63c0a08ce70650c3c677ab523a45a0bb}{
+\index{usb.h@{usb.h}!USB\_\-CONFIG\_\-BUS\_\-POWERED@{USB\_\-CONFIG\_\-BUS\_\-POWERED}}
+\index{USB\_\-CONFIG\_\-BUS\_\-POWERED@{USB\_\-CONFIG\_\-BUS\_\-POWERED}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIG\_\-BUS\_\-POWERED}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIG\_\-BUS\_\-POWERED~0x80}}
+\label{usb_8h_a63c0a08ce70650c3c677ab523a45a0bb}
+
+
+Definition at line 112 of file usb.h.
+
+\hypertarget{usb_8h_adcf08dc7fdb6117608624203612b3104}{
+\index{usb.h@{usb.h}!USB\_\-CONFIG\_\-POWER\_\-MA@{USB\_\-CONFIG\_\-POWER\_\-MA}}
+\index{USB\_\-CONFIG\_\-POWER\_\-MA@{USB\_\-CONFIG\_\-POWER\_\-MA}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIG\_\-POWER\_\-MA}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIG\_\-POWER\_\-MA(
+\begin{DoxyParamCaption}
+\item[{}]{mA}
+\end{DoxyParamCaption}
+)~((mA)/2)}}
+\label{usb_8h_adcf08dc7fdb6117608624203612b3104}
+
+
+Definition at line 117 of file usb.h.
+
+\hypertarget{usb_8h_afdd4f846b5497985c182a1a090d99729}{
+\index{usb.h@{usb.h}!USB\_\-CONFIG\_\-POWERED\_\-MASK@{USB\_\-CONFIG\_\-POWERED\_\-MASK}}
+\index{USB\_\-CONFIG\_\-POWERED\_\-MASK@{USB\_\-CONFIG\_\-POWERED\_\-MASK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIG\_\-POWERED\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIG\_\-POWERED\_\-MASK~0xC0}}
+\label{usb_8h_afdd4f846b5497985c182a1a090d99729}
+
+
+Definition at line 111 of file usb.h.
+
+\hypertarget{usb_8h_a7b28a766a8a916fae421d52fbedd2cba}{
+\index{usb.h@{usb.h}!USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP@{USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP}}
+\index{USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP@{USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIG\_\-REMOTE\_\-WAKEUP~0x20}}
+\label{usb_8h_a7b28a766a8a916fae421d52fbedd2cba}
+
+
+Definition at line 114 of file usb.h.
+
+\hypertarget{usb_8h_a8c322771b797c09e3066a388b46e9ef9}{
+\index{usb.h@{usb.h}!USB\_\-CONFIG\_\-SELF\_\-POWERED@{USB\_\-CONFIG\_\-SELF\_\-POWERED}}
+\index{USB\_\-CONFIG\_\-SELF\_\-POWERED@{USB\_\-CONFIG\_\-SELF\_\-POWERED}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIG\_\-SELF\_\-POWERED}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIG\_\-SELF\_\-POWERED~0xC0}}
+\label{usb_8h_a8c322771b797c09e3066a388b46e9ef9}
+
+
+Definition at line 113 of file usb.h.
+
+\hypertarget{usb_8h_a45e81401e4b530280fdd539da1b06c26}{
+\index{usb.h@{usb.h}!USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE@{USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE@{USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-CONFIGURATION\_\-DESCRIPTOR\_\-TYPE~2}}
+\label{usb_8h_a45e81401e4b530280fdd539da1b06c26}
+
+
+Definition at line 89 of file usb.h.
+
+\hypertarget{usb_8h_ade360faee3b601af707b65122a46d446}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-AUDIO@{USB\_\-DEVICE\_\-CLASS\_\-AUDIO}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-AUDIO@{USB\_\-DEVICE\_\-CLASS\_\-AUDIO}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-AUDIO}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-AUDIO~0x01}}
+\label{usb_8h_ade360faee3b601af707b65122a46d446}
+
+
+Definition at line 99 of file usb.h.
+
+\hypertarget{usb_8h_ab6fd7e18adf5c748a6b56391c1c2b819}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS@{USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS@{USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-COMMUNICATIONS~0x02}}
+\label{usb_8h_ab6fd7e18adf5c748a6b56391c1c2b819}
+
+
+Definition at line 100 of file usb.h.
+
+\hypertarget{usb_8h_ab8167347cb586d3f82a7ad95fa25bc22}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-HUB@{USB\_\-DEVICE\_\-CLASS\_\-HUB}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-HUB@{USB\_\-DEVICE\_\-CLASS\_\-HUB}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-HUB}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-HUB~0x09}}
+\label{usb_8h_ab8167347cb586d3f82a7ad95fa25bc22}
+
+
+Definition at line 107 of file usb.h.
+
+\hypertarget{usb_8h_a3d9e0560a81b4dfd30bbf829960dbfab}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE@{USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE@{USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-HUMAN\_\-INTERFACE~0x03}}
+\label{usb_8h_a3d9e0560a81b4dfd30bbf829960dbfab}
+
+
+Definition at line 101 of file usb.h.
+
+\hypertarget{usb_8h_a23d001aa49fada2019ff3a4886a9f2a5}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-MONITOR@{USB\_\-DEVICE\_\-CLASS\_\-MONITOR}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-MONITOR@{USB\_\-DEVICE\_\-CLASS\_\-MONITOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-MONITOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-MONITOR~0x04}}
+\label{usb_8h_a23d001aa49fada2019ff3a4886a9f2a5}
+
+
+Definition at line 102 of file usb.h.
+
+\hypertarget{usb_8h_a6053794e5de119b37615ec98f7eceedb}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE@{USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE@{USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-PHYSICAL\_\-INTERFACE~0x05}}
+\label{usb_8h_a6053794e5de119b37615ec98f7eceedb}
+
+
+Definition at line 103 of file usb.h.
+
+\hypertarget{usb_8h_a88a8b2d45b2950ffd5654e4c3b6741ff}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-POWER@{USB\_\-DEVICE\_\-CLASS\_\-POWER}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-POWER@{USB\_\-DEVICE\_\-CLASS\_\-POWER}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-POWER}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-POWER~0x06}}
+\label{usb_8h_a88a8b2d45b2950ffd5654e4c3b6741ff}
+
+
+Definition at line 104 of file usb.h.
+
+\hypertarget{usb_8h_ae6181c6bdb18c0e6491dd189983b6bd2}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-PRINTER@{USB\_\-DEVICE\_\-CLASS\_\-PRINTER}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-PRINTER@{USB\_\-DEVICE\_\-CLASS\_\-PRINTER}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-PRINTER}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-PRINTER~0x07}}
+\label{usb_8h_ae6181c6bdb18c0e6491dd189983b6bd2}
+
+
+Definition at line 105 of file usb.h.
+
+\hypertarget{usb_8h_aca7ece737f3f37b7a6f458fc24864776}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-RESERVED@{USB\_\-DEVICE\_\-CLASS\_\-RESERVED}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-RESERVED@{USB\_\-DEVICE\_\-CLASS\_\-RESERVED}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-RESERVED}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-RESERVED~0x00}}
+\label{usb_8h_aca7ece737f3f37b7a6f458fc24864776}
+
+
+Definition at line 98 of file usb.h.
+
+\hypertarget{usb_8h_a053d2a9c3c9856ee01589ebb64d2e09b}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-STORAGE@{USB\_\-DEVICE\_\-CLASS\_\-STORAGE}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-STORAGE@{USB\_\-DEVICE\_\-CLASS\_\-STORAGE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-STORAGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-STORAGE~0x08}}
+\label{usb_8h_a053d2a9c3c9856ee01589ebb64d2e09b}
+
+
+Definition at line 106 of file usb.h.
+
+\hypertarget{usb_8h_a89b94b8bc3c5fa2ef7151b5d282f22bb}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC@{USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC}}
+\index{USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC@{USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-CLASS\_\-VENDOR\_\-SPECIFIC~0xFF}}
+\label{usb_8h_a89b94b8bc3c5fa2ef7151b5d282f22bb}
+
+
+Definition at line 108 of file usb.h.
+
+\hypertarget{usb_8h_a722f2d6ee2892228b6708e8b9904c645}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE@{USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE@{USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-DESCRIPTOR\_\-TYPE~1}}
+\label{usb_8h_a722f2d6ee2892228b6708e8b9904c645}
+
+
+Definition at line 88 of file usb.h.
+
+\hypertarget{usb_8h_a7158946184590ea6cfcb406d7f3c4ce5}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE@{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE@{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR\_\-TYPE~6}}
+\label{usb_8h_a7158946184590ea6cfcb406d7f3c4ce5}
+
+
+Definition at line 93 of file usb.h.
+
+\hypertarget{usb_8h_a4e8d6d81a224f8b511edc92b6cb4e085}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE@{USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE@{USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-DESCRIPTOR\_\-TYPE~5}}
+\label{usb_8h_a4e8d6d81a224f8b511edc92b6cb4e085}
+
+
+Definition at line 92 of file usb.h.
+
+\hypertarget{usb_8h_ab7544c5b8cf975839422c1ce29d4c5cb}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK@{USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK}}
+\index{USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK@{USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-DIRECTION\_\-MASK~0x80}}
+\label{usb_8h_ab7544c5b8cf975839422c1ce29d4c5cb}
+
+
+Definition at line 120 of file usb.h.
+
+\hypertarget{usb_8h_abe258bf57244c49874da6d53679e6df8}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-IN@{USB\_\-ENDPOINT\_\-IN}}
+\index{USB\_\-ENDPOINT\_\-IN@{USB\_\-ENDPOINT\_\-IN}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-IN(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)~((addr) $|$ 0x80)}}
+\label{usb_8h_abe258bf57244c49874da6d53679e6df8}
+
+
+Definition at line 122 of file usb.h.
+
+\hypertarget{usb_8h_a81ac2a8c9688d35940a054c4194c278d}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-OUT@{USB\_\-ENDPOINT\_\-OUT}}
+\index{USB\_\-ENDPOINT\_\-OUT@{USB\_\-ENDPOINT\_\-OUT}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-OUT(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)~((addr) $|$ 0x00)}}
+\label{usb_8h_a81ac2a8c9688d35940a054c4194c278d}
+
+
+Definition at line 121 of file usb.h.
+
+\hypertarget{usb_8h_aa7808914116fe45223462e68d6f8aa5d}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE@{USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE}}
+\index{USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE@{USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-SYNC\_\-ADAPTIVE~0x08}}
+\label{usb_8h_aa7808914116fe45223462e68d6f8aa5d}
+
+
+Definition at line 133 of file usb.h.
+
+\hypertarget{usb_8h_ad1bb5cc537ea61634cb61c8c364c9a6f}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS@{USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS}}
+\index{USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS@{USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-SYNC\_\-ASYNCHRONOUS~0x04}}
+\label{usb_8h_ad1bb5cc537ea61634cb61c8c364c9a6f}
+
+
+Definition at line 132 of file usb.h.
+
+\hypertarget{usb_8h_a91301868eb0b52506fc9bc02b131f783}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-SYNC\_\-MASK@{USB\_\-ENDPOINT\_\-SYNC\_\-MASK}}
+\index{USB\_\-ENDPOINT\_\-SYNC\_\-MASK@{USB\_\-ENDPOINT\_\-SYNC\_\-MASK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-SYNC\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-SYNC\_\-MASK~0x0C}}
+\label{usb_8h_a91301868eb0b52506fc9bc02b131f783}
+
+
+Definition at line 130 of file usb.h.
+
+\hypertarget{usb_8h_a7733e58f8c4fbcef1533eb02f375aeb0}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION@{USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION}}
+\index{USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION@{USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-SYNC\_\-NO\_\-SYNCHRONIZATION~0x00}}
+\label{usb_8h_a7733e58f8c4fbcef1533eb02f375aeb0}
+
+
+Definition at line 131 of file usb.h.
+
+\hypertarget{usb_8h_a0309c68623fb48fdc621f15dabc579f2}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS@{USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS}}
+\index{USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS@{USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-SYNC\_\-SYNCHRONOUS~0x0C}}
+\label{usb_8h_a0309c68623fb48fdc621f15dabc579f2}
+
+
+Definition at line 134 of file usb.h.
+
+\hypertarget{usb_8h_af4bac84d4576dc8f74f39dc75749e3dc}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-TYPE\_\-BULK@{USB\_\-ENDPOINT\_\-TYPE\_\-BULK}}
+\index{USB\_\-ENDPOINT\_\-TYPE\_\-BULK@{USB\_\-ENDPOINT\_\-TYPE\_\-BULK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-TYPE\_\-BULK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-TYPE\_\-BULK~0x02}}
+\label{usb_8h_af4bac84d4576dc8f74f39dc75749e3dc}
+
+
+Definition at line 128 of file usb.h.
+
+\hypertarget{usb_8h_a6a51ed22b06e5ca0f76a35b6bac8d73a}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL@{USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL}}
+\index{USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL@{USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-TYPE\_\-CONTROL~0x00}}
+\label{usb_8h_a6a51ed22b06e5ca0f76a35b6bac8d73a}
+
+
+Definition at line 126 of file usb.h.
+
+\hypertarget{usb_8h_a2cb5aa69a03df20aab217b808ad692a6}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT@{USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT}}
+\index{USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT@{USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-TYPE\_\-INTERRUPT~0x03}}
+\label{usb_8h_a2cb5aa69a03df20aab217b808ad692a6}
+
+
+Definition at line 129 of file usb.h.
+
+\hypertarget{usb_8h_ab05aae4a5d079b8dfb6a9cb1325ea6e5}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS@{USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS}}
+\index{USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS@{USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-TYPE\_\-ISOCHRONOUS~0x01}}
+\label{usb_8h_ab05aae4a5d079b8dfb6a9cb1325ea6e5}
+
+
+Definition at line 127 of file usb.h.
+
+\hypertarget{usb_8h_acd114fdf068aaa69407358ee5ccfd170}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-TYPE\_\-MASK@{USB\_\-ENDPOINT\_\-TYPE\_\-MASK}}
+\index{USB\_\-ENDPOINT\_\-TYPE\_\-MASK@{USB\_\-ENDPOINT\_\-TYPE\_\-MASK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-TYPE\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-TYPE\_\-MASK~0x03}}
+\label{usb_8h_acd114fdf068aaa69407358ee5ccfd170}
+
+
+Definition at line 125 of file usb.h.
+
+\hypertarget{usb_8h_ac852b5e62e4e577b1b43239ae190908a}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-USAGE\_\-DATA@{USB\_\-ENDPOINT\_\-USAGE\_\-DATA}}
+\index{USB\_\-ENDPOINT\_\-USAGE\_\-DATA@{USB\_\-ENDPOINT\_\-USAGE\_\-DATA}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-USAGE\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-USAGE\_\-DATA~0x00}}
+\label{usb_8h_ac852b5e62e4e577b1b43239ae190908a}
+
+
+Definition at line 136 of file usb.h.
+
+\hypertarget{usb_8h_abe8c89e5b624ac6bb5b9cd2919fc06be}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK@{USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK}}
+\index{USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK@{USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-USAGE\_\-FEEDBACK~0x10}}
+\label{usb_8h_abe8c89e5b624ac6bb5b9cd2919fc06be}
+
+
+Definition at line 137 of file usb.h.
+
+\hypertarget{usb_8h_abfdb9f73f34907249b8fd1128c25ae1a}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK@{USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK}}
+\index{USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK@{USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-USAGE\_\-IMPLICIT\_\-FEEDBACK~0x20}}
+\label{usb_8h_abfdb9f73f34907249b8fd1128c25ae1a}
+
+
+Definition at line 138 of file usb.h.
+
+\hypertarget{usb_8h_a834006343743238a5eb1d273ef3226ae}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-USAGE\_\-MASK@{USB\_\-ENDPOINT\_\-USAGE\_\-MASK}}
+\index{USB\_\-ENDPOINT\_\-USAGE\_\-MASK@{USB\_\-ENDPOINT\_\-USAGE\_\-MASK}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-USAGE\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-USAGE\_\-MASK~0x30}}
+\label{usb_8h_a834006343743238a5eb1d273ef3226ae}
+
+
+Definition at line 135 of file usb.h.
+
+\hypertarget{usb_8h_a0ee1319e7242bb61298af850ea64f08a}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED@{USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED}}
+\index{USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED@{USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-ENDPOINT\_\-USAGE\_\-RESERVED~0x30}}
+\label{usb_8h_a0ee1319e7242bb61298af850ea64f08a}
+
+
+Definition at line 139 of file usb.h.
+
+\hypertarget{usb_8h_a3ff0518fb298c9c9b556f59c0468ec0d}{
+\index{usb.h@{usb.h}!USB\_\-FEATURE\_\-ENDPOINT\_\-STALL@{USB\_\-FEATURE\_\-ENDPOINT\_\-STALL}}
+\index{USB\_\-FEATURE\_\-ENDPOINT\_\-STALL@{USB\_\-FEATURE\_\-ENDPOINT\_\-STALL}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-FEATURE\_\-ENDPOINT\_\-STALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-FEATURE\_\-ENDPOINT\_\-STALL~0}}
+\label{usb_8h_a3ff0518fb298c9c9b556f59c0468ec0d}
+
+
+Definition at line 74 of file usb.h.
+
+\hypertarget{usb_8h_a2185a0541f4155470596c9c739c1656b}{
+\index{usb.h@{usb.h}!USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP@{USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP}}
+\index{USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP@{USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-FEATURE\_\-REMOTE\_\-WAKEUP~1}}
+\label{usb_8h_a2185a0541f4155470596c9c739c1656b}
+
+
+Definition at line 75 of file usb.h.
+
+\hypertarget{usb_8h_a4ebb10046221004827e4b2a72cdeefa5}{
+\index{usb.h@{usb.h}!USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL@{USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL}}
+\index{USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL@{USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-GETSTATUS\_\-ENDPOINT\_\-STALL~0x01}}
+\label{usb_8h_a4ebb10046221004827e4b2a72cdeefa5}
+
+
+Definition at line 71 of file usb.h.
+
+\hypertarget{usb_8h_aad5790ebb5c8f5a25ce60140c60c2ec5}{
+\index{usb.h@{usb.h}!USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP@{USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP}}
+\index{USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP@{USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-GETSTATUS\_\-REMOTE\_\-WAKEUP~0x02}}
+\label{usb_8h_aad5790ebb5c8f5a25ce60140c60c2ec5}
+
+
+Definition at line 70 of file usb.h.
+
+\hypertarget{usb_8h_a1e801ee37e93522f0f38eff9bc7aac02}{
+\index{usb.h@{usb.h}!USB\_\-GETSTATUS\_\-SELF\_\-POWERED@{USB\_\-GETSTATUS\_\-SELF\_\-POWERED}}
+\index{USB\_\-GETSTATUS\_\-SELF\_\-POWERED@{USB\_\-GETSTATUS\_\-SELF\_\-POWERED}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-GETSTATUS\_\-SELF\_\-POWERED}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-GETSTATUS\_\-SELF\_\-POWERED~0x01}}
+\label{usb_8h_a1e801ee37e93522f0f38eff9bc7aac02}
+
+
+Definition at line 69 of file usb.h.
+
+\hypertarget{usb_8h_ad1699884fa580bba35246a566264c978}{
+\index{usb.h@{usb.h}!USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE@{USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE@{USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-INTERFACE\_\-DESCRIPTOR\_\-TYPE~4}}
+\label{usb_8h_ad1699884fa580bba35246a566264c978}
+
+
+Definition at line 91 of file usb.h.
+
+\hypertarget{usb_8h_a3356db66a2c62f7018f23f9189ba34c9}{
+\index{usb.h@{usb.h}!USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE@{USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE@{USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-INTERFACE\_\-POWER\_\-DESCRIPTOR\_\-TYPE~8}}
+\label{usb_8h_a3356db66a2c62f7018f23f9189ba34c9}
+
+
+Definition at line 95 of file usb.h.
+
+\hypertarget{usb_8h_a0d886bcc28cf10d730106d7be9b661fd}{
+\index{usb.h@{usb.h}!USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE@{USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE@{USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-OTHER\_\-SPEED\_\-CONFIG\_\-DESCRIPTOR\_\-TYPE~7}}
+\label{usb_8h_a0d886bcc28cf10d730106d7be9b661fd}
+
+
+Definition at line 94 of file usb.h.
+
+\hypertarget{usb_8h_ab9fe860caa1f21c9410984a24bf57c7c}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-CLEAR\_\-FEATURE@{USB\_\-REQUEST\_\-CLEAR\_\-FEATURE}}
+\index{USB\_\-REQUEST\_\-CLEAR\_\-FEATURE@{USB\_\-REQUEST\_\-CLEAR\_\-FEATURE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-CLEAR\_\-FEATURE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-CLEAR\_\-FEATURE~1}}
+\label{usb_8h_ab9fe860caa1f21c9410984a24bf57c7c}
+
+
+Definition at line 57 of file usb.h.
+
+\hypertarget{usb_8h_a341ed4aff1f0d5a1a4a4f17cb606d08d}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-GET\_\-CONFIGURATION@{USB\_\-REQUEST\_\-GET\_\-CONFIGURATION}}
+\index{USB\_\-REQUEST\_\-GET\_\-CONFIGURATION@{USB\_\-REQUEST\_\-GET\_\-CONFIGURATION}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-GET\_\-CONFIGURATION}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-GET\_\-CONFIGURATION~8}}
+\label{usb_8h_a341ed4aff1f0d5a1a4a4f17cb606d08d}
+
+
+Definition at line 62 of file usb.h.
+
+\hypertarget{usb_8h_a3572226ee2137c7fbf7487a02b0f560f}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR@{USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR}}
+\index{USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR@{USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-GET\_\-DESCRIPTOR~6}}
+\label{usb_8h_a3572226ee2137c7fbf7487a02b0f560f}
+
+
+Definition at line 60 of file usb.h.
+
+\hypertarget{usb_8h_a25550f44898d9c9a3bf0a7814af7fe96}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-GET\_\-INTERFACE@{USB\_\-REQUEST\_\-GET\_\-INTERFACE}}
+\index{USB\_\-REQUEST\_\-GET\_\-INTERFACE@{USB\_\-REQUEST\_\-GET\_\-INTERFACE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-GET\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-GET\_\-INTERFACE~10}}
+\label{usb_8h_a25550f44898d9c9a3bf0a7814af7fe96}
+
+
+Definition at line 64 of file usb.h.
+
+\hypertarget{usb_8h_a062f3147a1bae954b642b915827b3f3f}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-GET\_\-STATUS@{USB\_\-REQUEST\_\-GET\_\-STATUS}}
+\index{USB\_\-REQUEST\_\-GET\_\-STATUS@{USB\_\-REQUEST\_\-GET\_\-STATUS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-GET\_\-STATUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-GET\_\-STATUS~0}}
+\label{usb_8h_a062f3147a1bae954b642b915827b3f3f}
+
+
+Definition at line 56 of file usb.h.
+
+\hypertarget{usb_8h_ac87659819bfd6491120c819fae2d46bc}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SET\_\-ADDRESS@{USB\_\-REQUEST\_\-SET\_\-ADDRESS}}
+\index{USB\_\-REQUEST\_\-SET\_\-ADDRESS@{USB\_\-REQUEST\_\-SET\_\-ADDRESS}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SET\_\-ADDRESS}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SET\_\-ADDRESS~5}}
+\label{usb_8h_ac87659819bfd6491120c819fae2d46bc}
+
+
+Definition at line 59 of file usb.h.
+
+\hypertarget{usb_8h_aadef005acc40340955d34d9767ef297c}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SET\_\-CONFIGURATION@{USB\_\-REQUEST\_\-SET\_\-CONFIGURATION}}
+\index{USB\_\-REQUEST\_\-SET\_\-CONFIGURATION@{USB\_\-REQUEST\_\-SET\_\-CONFIGURATION}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SET\_\-CONFIGURATION}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SET\_\-CONFIGURATION~9}}
+\label{usb_8h_aadef005acc40340955d34d9767ef297c}
+
+
+Definition at line 63 of file usb.h.
+
+\hypertarget{usb_8h_a3c80fdedd69586ccf2894f5bd4638252}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR@{USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR}}
+\index{USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR@{USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SET\_\-DESCRIPTOR~7}}
+\label{usb_8h_a3c80fdedd69586ccf2894f5bd4638252}
+
+
+Definition at line 61 of file usb.h.
+
+\hypertarget{usb_8h_aa2b4d305dcd185cc1242e94ee78eea25}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SET\_\-FEATURE@{USB\_\-REQUEST\_\-SET\_\-FEATURE}}
+\index{USB\_\-REQUEST\_\-SET\_\-FEATURE@{USB\_\-REQUEST\_\-SET\_\-FEATURE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SET\_\-FEATURE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SET\_\-FEATURE~3}}
+\label{usb_8h_aa2b4d305dcd185cc1242e94ee78eea25}
+
+
+Definition at line 58 of file usb.h.
+
+\hypertarget{usb_8h_af8d2ea632916bfc2a7628f63d3f643aa}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SET\_\-INTERFACE@{USB\_\-REQUEST\_\-SET\_\-INTERFACE}}
+\index{USB\_\-REQUEST\_\-SET\_\-INTERFACE@{USB\_\-REQUEST\_\-SET\_\-INTERFACE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SET\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SET\_\-INTERFACE~11}}
+\label{usb_8h_af8d2ea632916bfc2a7628f63d3f643aa}
+
+
+Definition at line 65 of file usb.h.
+
+\hypertarget{usb_8h_a916e1a4b8f8a5cb369d896ef35c4db34}{
+\index{usb.h@{usb.h}!USB\_\-REQUEST\_\-SYNC\_\-FRAME@{USB\_\-REQUEST\_\-SYNC\_\-FRAME}}
+\index{USB\_\-REQUEST\_\-SYNC\_\-FRAME@{USB\_\-REQUEST\_\-SYNC\_\-FRAME}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-REQUEST\_\-SYNC\_\-FRAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-REQUEST\_\-SYNC\_\-FRAME~12}}
+\label{usb_8h_a916e1a4b8f8a5cb369d896ef35c4db34}
+
+
+Definition at line 66 of file usb.h.
+
+\hypertarget{usb_8h_ab01c9c74f2eb266b20aecd48bab4b35c}{
+\index{usb.h@{usb.h}!USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE@{USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE}}
+\index{USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE@{USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-STRING\_\-DESCRIPTOR\_\-TYPE~3}}
+\label{usb_8h_ab01c9c74f2eb266b20aecd48bab4b35c}
+
+
+Definition at line 90 of file usb.h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{usb_8h_a1cf9602c496d0762c0e710c7a1268a69}{
+\index{usb.h@{usb.h}!REQUEST\_\-TYPE@{REQUEST\_\-TYPE}}
+\index{REQUEST\_\-TYPE@{REQUEST\_\-TYPE}!usb.h@{usb.h}}
+\subsubsection[{REQUEST\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed union {\bf \_\-REQUEST\_\-TYPE}  {\bf REQUEST\_\-TYPE}}}
+\label{usb_8h_a1cf9602c496d0762c0e710c7a1268a69}
+\hypertarget{usb_8h_a3754ad5b11ac1f424ca1b6468c9ae181}{
+\index{usb.h@{usb.h}!USB\_\-COMMON\_\-DESCRIPTOR@{USB\_\-COMMON\_\-DESCRIPTOR}}
+\index{USB\_\-COMMON\_\-DESCRIPTOR@{USB\_\-COMMON\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-COMMON\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-COMMON\_\-DESCRIPTOR}  {\bf USB\_\-COMMON\_\-DESCRIPTOR}}}
+\label{usb_8h_a3754ad5b11ac1f424ca1b6468c9ae181}
+\hypertarget{usb_8h_a36beb2cc858800223e1d7f02aeb28260}{
+\index{usb.h@{usb.h}!USB\_\-CONFIGURATION\_\-DESCRIPTOR@{USB\_\-CONFIGURATION\_\-DESCRIPTOR}}
+\index{USB\_\-CONFIGURATION\_\-DESCRIPTOR@{USB\_\-CONFIGURATION\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-CONFIGURATION\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-CONFIGURATION\_\-DESCRIPTOR}  {\bf USB\_\-CONFIGURATION\_\-DESCRIPTOR}}}
+\label{usb_8h_a36beb2cc858800223e1d7f02aeb28260}
+\hypertarget{usb_8h_aaba3306324a8f6fef5052e9fae06f45d}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-DESCRIPTOR@{USB\_\-DEVICE\_\-DESCRIPTOR}}
+\index{USB\_\-DEVICE\_\-DESCRIPTOR@{USB\_\-DEVICE\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-DEVICE\_\-DESCRIPTOR}  {\bf USB\_\-DEVICE\_\-DESCRIPTOR}}}
+\label{usb_8h_aaba3306324a8f6fef5052e9fae06f45d}
+\hypertarget{usb_8h_a5f7e9b946c4597b53cfb48b8e718a1f2}{
+\index{usb.h@{usb.h}!USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR@{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}}
+\index{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR@{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}  {\bf USB\_\-DEVICE\_\-QUALIFIER\_\-DESCRIPTOR}}}
+\label{usb_8h_a5f7e9b946c4597b53cfb48b8e718a1f2}
+\hypertarget{usb_8h_ad257142de6c082632f2ca3e8ab4ca058}{
+\index{usb.h@{usb.h}!USB\_\-ENDPOINT\_\-DESCRIPTOR@{USB\_\-ENDPOINT\_\-DESCRIPTOR}}
+\index{USB\_\-ENDPOINT\_\-DESCRIPTOR@{USB\_\-ENDPOINT\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-ENDPOINT\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-ENDPOINT\_\-DESCRIPTOR}  {\bf USB\_\-ENDPOINT\_\-DESCRIPTOR}}}
+\label{usb_8h_ad257142de6c082632f2ca3e8ab4ca058}
+\hypertarget{usb_8h_a514029a74d63a32b820ce506c0e60857}{
+\index{usb.h@{usb.h}!USB\_\-INTERFACE\_\-DESCRIPTOR@{USB\_\-INTERFACE\_\-DESCRIPTOR}}
+\index{USB\_\-INTERFACE\_\-DESCRIPTOR@{USB\_\-INTERFACE\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-INTERFACE\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-INTERFACE\_\-DESCRIPTOR}  {\bf USB\_\-INTERFACE\_\-DESCRIPTOR}}}
+\label{usb_8h_a514029a74d63a32b820ce506c0e60857}
+\hypertarget{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{
+\index{usb.h@{usb.h}!USB\_\-SETUP\_\-PACKET@{USB\_\-SETUP\_\-PACKET}}
+\index{USB\_\-SETUP\_\-PACKET@{USB\_\-SETUP\_\-PACKET}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-SETUP\_\-PACKET}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-SETUP\_\-PACKET}  {\bf USB\_\-SETUP\_\-PACKET}}}
+\label{usb_8h_a09baf2b5283af3e8a60df63264e1c351}
+\hypertarget{usb_8h_a3c54c7d04c19170c1ceb1c40c6e50bfc}{
+\index{usb.h@{usb.h}!USB\_\-STRING\_\-DESCRIPTOR@{USB\_\-STRING\_\-DESCRIPTOR}}
+\index{USB\_\-STRING\_\-DESCRIPTOR@{USB\_\-STRING\_\-DESCRIPTOR}!usb.h@{usb.h}}
+\subsubsection[{USB\_\-STRING\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}typedef \_\-\_\-packed struct {\bf \_\-USB\_\-STRING\_\-DESCRIPTOR}  {\bf USB\_\-STRING\_\-DESCRIPTOR}}}
+\label{usb_8h_a3c54c7d04c19170c1ceb1c40c6e50bfc}
+\hypertarget{usb_8h_a77276c9590f0da754a35b4cbf309c2c7}{
+\index{usb.h@{usb.h}!WORD\_\-BYTE@{WORD\_\-BYTE}}
+\index{WORD\_\-BYTE@{WORD\_\-BYTE}!usb.h@{usb.h}}
+\subsubsection[{WORD\_\-BYTE}]{\setlength{\rightskip}{0pt plus 5cm}typedef \{ ... \}   {\bf WORD\_\-BYTE}}}
+\label{usb_8h_a77276c9590f0da754a35b4cbf309c2c7}
+
+
+\subsection{Variable Documentation}
+\hypertarget{usb_8h_a2e10f434c298d52105493d70433289b5}{
+\index{usb.h@{usb.h}!H@{H}}
+\index{H@{H}!usb.h@{usb.h}}
+\subsubsection[{H}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf H}}}
+\label{usb_8h_a2e10f434c298d52105493d70433289b5}
+
+
+Definition at line 24 of file usb.h.
+
+\hypertarget{usb_8h_a25194c82e9e85af75c87c700cd7711f9}{
+\index{usb.h@{usb.h}!L@{L}}
+\index{L@{L}!usb.h@{usb.h}}
+\subsubsection[{L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf L}}}
+\label{usb_8h_a25194c82e9e85af75c87c700cd7711f9}
+
+
+Definition at line 23 of file usb.h.
+
+\hypertarget{usb_8h_a24c45f6de6f03ce6e2e53d0d40d40fb7}{
+\index{usb.h@{usb.h}!W@{W}}
+\index{W@{W}!usb.h@{usb.h}}
+\subsubsection[{W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WORD} {\bf W}}}
+\label{usb_8h_a24c45f6de6f03ce6e2e53d0d40d40fb7}
+
+
+Definition at line 21 of file usb.h.
+
+\hypertarget{usb_8h_ada0f1ba1d0d8878663ec1938cdd33920}{
+\index{usb.h@{usb.h}!WB@{WB}}
+\index{WB@{WB}!usb.h@{usb.h}}
+\subsubsection[{WB}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-packed \{ ... \}   {\bf WB}}}
+\label{usb_8h_ada0f1ba1d0d8878663ec1938cdd33920}

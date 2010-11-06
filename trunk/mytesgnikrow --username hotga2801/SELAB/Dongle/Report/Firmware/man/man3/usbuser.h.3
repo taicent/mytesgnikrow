@@ -1,0 +1,259 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUSB_EVT_SETUP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN\fP   3"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT_NAK\fP   4"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN_NAK\fP   5"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT_STALL\fP   6"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN_STALL\fP   7"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT_DMA_EOT\fP   8"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN_DMA_EOT\fP   9"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT_DMA_NDR\fP   10"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN_DMA_NDR\fP   11"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_OUT_DMA_ERR\fP   12"
+.br
+.ti -1c
+.RI "#define \fBUSB_EVT_IN_DMA_ERR\fP   13"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUSB_Power_Event\fP (\fBBOOL\fP power)"
+.br
+.ti -1c
+.RI "void \fBUSB_Reset_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Suspend_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Resume_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_WakeUp_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_SOF_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Error_Event\fP (\fBDWORD\fP error)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint0\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint1\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint2\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint3\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint4\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint5\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint6\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint7\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint8\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint9\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint10\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint11\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint12\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint13\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint14\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_EndPoint15\fP (\fBDWORD\fP event)"
+.br
+.ti -1c
+.RI "void \fBUSB_Configure_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Interface_Event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_Feature_Event\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "void(*const \fBUSB_P_EP\fP [16])(\fBDWORD\fP event)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define USB_EVT_IN   3"
+.PP
+Definition at line 32 of file usbuser.h.
+.SS "#define USB_EVT_IN_DMA_EOT   9"
+.PP
+Definition at line 38 of file usbuser.h.
+.SS "#define USB_EVT_IN_DMA_ERR   13"
+.PP
+Definition at line 42 of file usbuser.h.
+.SS "#define USB_EVT_IN_DMA_NDR   11"
+.PP
+Definition at line 40 of file usbuser.h.
+.SS "#define USB_EVT_IN_NAK   5"
+.PP
+Definition at line 34 of file usbuser.h.
+.SS "#define USB_EVT_IN_STALL   7"
+.PP
+Definition at line 36 of file usbuser.h.
+.SS "#define USB_EVT_OUT   2"
+.PP
+Definition at line 31 of file usbuser.h.
+.SS "#define USB_EVT_OUT_DMA_EOT   8"
+.PP
+Definition at line 37 of file usbuser.h.
+.SS "#define USB_EVT_OUT_DMA_ERR   12"
+.PP
+Definition at line 41 of file usbuser.h.
+.SS "#define USB_EVT_OUT_DMA_NDR   10"
+.PP
+Definition at line 39 of file usbuser.h.
+.SS "#define USB_EVT_OUT_NAK   4"
+.PP
+Definition at line 33 of file usbuser.h.
+.SS "#define USB_EVT_OUT_STALL   6"
+.PP
+Definition at line 35 of file usbuser.h.
+.SS "#define USB_EVT_SETUP   1"
+.PP
+Definition at line 30 of file usbuser.h.
+.SH "Function Documentation"
+.PP 
+.SS "void USB_Configure_Event (void)"
+.PP
+Definition at line 118 of file usbuser.c.
+.SS "void USB_EndPoint0 (\fBDWORD\fP event)"
+.PP
+Definition at line 463 of file usbcore.c.
+.SS "void USB_EndPoint1 (\fBDWORD\fP event)"
+.PP
+Definition at line 180 of file usbuser.c.
+.SS "void USB_EndPoint10 (\fBDWORD\fP event)"
+.PP
+Definition at line 286 of file usbuser.c.
+.SS "void USB_EndPoint11 (\fBDWORD\fP event)"
+.PP
+Definition at line 296 of file usbuser.c.
+.SS "void USB_EndPoint12 (\fBDWORD\fP event)"
+.PP
+Definition at line 306 of file usbuser.c.
+.SS "void USB_EndPoint13 (\fBDWORD\fP event)"
+.PP
+Definition at line 316 of file usbuser.c.
+.SS "void USB_EndPoint14 (\fBDWORD\fP event)"
+.PP
+Definition at line 326 of file usbuser.c.
+.SS "void USB_EndPoint15 (\fBDWORD\fP event)"
+.PP
+Definition at line 336 of file usbuser.c.
+.SS "void USB_EndPoint2 (\fBDWORD\fP event)"
+.PP
+Definition at line 192 of file usbuser.c.
+.SS "void USB_EndPoint3 (\fBDWORD\fP event)"
+.PP
+Definition at line 216 of file usbuser.c.
+.SS "void USB_EndPoint4 (\fBDWORD\fP event)"
+.PP
+Definition at line 226 of file usbuser.c.
+.SS "void USB_EndPoint5 (\fBDWORD\fP event)"
+.PP
+Definition at line 236 of file usbuser.c.
+.SS "void USB_EndPoint6 (\fBDWORD\fP event)"
+.PP
+Definition at line 246 of file usbuser.c.
+.SS "void USB_EndPoint7 (\fBDWORD\fP event)"
+.PP
+Definition at line 256 of file usbuser.c.
+.SS "void USB_EndPoint8 (\fBDWORD\fP event)"
+.PP
+Definition at line 266 of file usbuser.c.
+.SS "void USB_EndPoint9 (\fBDWORD\fP event)"
+.PP
+Definition at line 276 of file usbuser.c.
+.SS "void USB_Error_Event (\fBDWORD\fP error)"
+.SS "void USB_Feature_Event (void)"
+.SS "void USB_Interface_Event (void)"
+.PP
+Definition at line 135 of file usbuser.c.
+.SS "void USB_Power_Event (\fBBOOL\fP power)"
+.SS "void USB_Reset_Event (void)"
+.PP
+Definition at line 47 of file usbuser.c.
+.SS "void USB_Resume_Event (void)"
+.PP
+Definition at line 72 of file usbuser.c.
+.SS "void USB_SOF_Event (void)"
+.SS "void USB_Suspend_Event (void)"
+.PP
+Definition at line 60 of file usbuser.c.
+.SS "void USB_WakeUp_Event (void)"
+.SH "Variable Documentation"
+.PP 
+.SS "void(* const \fBUSB_P_EP\fP[16])(\fBDWORD\fP event)"
+.PP
+Definition at line 154 of file usbuser.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

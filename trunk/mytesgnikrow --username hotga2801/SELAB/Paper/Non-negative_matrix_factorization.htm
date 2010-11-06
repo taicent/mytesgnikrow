@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="win firefox firefox3 gecko gecko1" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<title>Non-negative matrix factorization - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.16wmf4">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit">
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://en.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/main-ltr.css" type="text/css" media="screen">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/shared.css" type="text/css" media="screen">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/commonPrint.css" type="text/css" media="print">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/combined.css" type="text/css" media="all">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/jquery-ui-1.css" type="text/css" media="all">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/index_005.css" type="text/css" media="all">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/index_006.css" type="text/css" media="print">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/index_002.css" type="text/css" media="handheld">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/index_003.css" type="text/css" media="all">
+<link rel="stylesheet" href="Non-negative_matrix_factorization_files/index.css" type="text/css" media="all">
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Non-negative_matrix_factorization",
+wgTitle="Non-negative matrix factorization",
+wgAction="view",
+wgArticleId=3681279,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=373671840,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["All articles with dead external links", "Articles with dead external links from May 2009", "Linear algebra", "Matrix theory", "Machine learning", "Multivariate statistics"],
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=0,
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgNotice="",
+wgNoticeLocal="";
+</script><script src="Non-negative_matrix_factorization_files/wikibits.js" type="text/javascript"></script>
+<script type="text/javascript" src="Non-negative_matrix_factorization_files/jquery.js"></script>
+<script src="Non-negative_matrix_factorization_files/ajax.js" type="text/javascript"></script>
+<script src="Non-negative_matrix_factorization_files/mwsuggest.js" type="text/javascript"></script>
+<script src="Non-negative_matrix_factorization_files/MobileRedirect.js" type="text/javascript"></script>
+<script src="Non-negative_matrix_factorization_files/plugins.js" type="text/javascript"></script>
+<script src="Non-negative_matrix_factorization_files/Vector.js" type="text/javascript"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<script type="text/javascript" src="Non-negative_matrix_factorization_files/centralnotice.js"></script><style type="text/css">
+#centralNotice .siteNoticeSmall{display:none;}
+#centralNotice .siteNoticeSmallAnon{display:none;}
+#centralNotice .siteNoticeSmallUser{display:none;}
+#centralNotice.collapsed .siteNoticeBig{display:none;}
+#centralNotice.collapsed .siteNoticeSmall{display:block;}
+#centralNotice.collapsed .siteNoticeSmallUser{display:block;}
+#centralNotice.collapsed .siteNoticeSmallAnon{display:block;}
+#centralNotice.anonnotice .siteNoticeSmallUser{display:none !important;}
+#centralNotice.usernotice .siteNoticeSmallAnon{display:none !important;}
+</style>
+
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="Non-negative_matrix_factorization_files/index_002.js" type="text/javascript"></script><script type="text/javascript" src="Non-negative_matrix_factorization_files/index.js"></script><link href="Non-negative_matrix_factorization_files/index_004.css" rel="stylesheet" type="text/css">
+
+</head><body class="mediawiki ltr ns-0 ns-subject page-Non-negative_matrix_factorization skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content"><div style="visibility: hidden; display: none; width: 602px; height: 402px; margin: 0px; padding: 0px; background-color: white; position: absolute; right: 2em; top: 1em; border: 1px solid gray; z-index: 13;"><iframe style="z-index: 14; position: absolute; right: 1px; top: 1px; width: 600px; height: 400px; margin: 0px; padding: 0px;" scrolling="no" frameborder="0"></iframe><img style="z-index: 15; position: absolute; right: 11px; top: 9px; width: 18px; cursor: pointer;" src="Non-negative_matrix_factorization_files/Button_hide.png" title="close"></div>
+			<a id="top"></a>
+			<div id="mw-js-message" style="display: none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><script type="text/javascript">if (wgNotice != '') document.writeln(wgNotice);</script><div id="centralNotice" class="expanded anonnotice"><!-- empty --></div>
+</div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Non-negative matrix factorization</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<dl>
+<dd><i>NMF redirects here. For the <a href="http://en.wikipedia.org/wiki/Contract_bridge" title="Contract bridge">bridge</a> convention, see <a href="http://en.wikipedia.org/wiki/New_minor_forcing" title="New minor forcing">new minor forcing</a>.</i></dd>
+</dl>
+<p><b>Non-negative matrix factorization (NMF)</b> is a group of <a href="http://en.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a> in <a href="http://en.wikipedia.org/wiki/Multivariate_analysis" title="Multivariate analysis">multivariate analysis</a> and <a href="http://en.wikipedia.org/wiki/Linear_algebra" title="Linear algebra">linear algebra</a> where a <a href="http://en.wikipedia.org/wiki/Matrix_%28mathematics%29" title="Matrix (mathematics)">matrix</a>, <img class="tex" alt="\mathbf{X}" src="Non-negative_matrix_factorization_files/598f6444904755dda4a859a1e377468e.png">, is factorized into (usually) two matrices, <img class="tex" alt="\mathbf{W}" src="Non-negative_matrix_factorization_files/1990b12fd270f7d985212dc61cf337af.png"> and <img class="tex" alt="\mathbf{H}" src="Non-negative_matrix_factorization_files/da3623c683c463e210845c6d757af4dd.png">&nbsp;: <img class="tex" alt="\operatorname{nmf}(\mathbf{X}) \rightarrow \mathbf{WH} " src="Non-negative_matrix_factorization_files/fc7a95aa9cc4eeae5abc20b1330dad8a.png"></p>
+<p>Factorization of matrices is generally non-unique, and a number of different methods of doing so have been developed (e.g. <a href="http://en.wikipedia.org/wiki/Principal_component_analysis" title="Principal component analysis">principal component analysis</a> and <a href="http://en.wikipedia.org/wiki/Singular_value_decomposition" title="Singular value decomposition">singular value decomposition</a>)
+ by incorporating different constraints; non-negative matrix 
+factorization differs from these methods in that it enforces the 
+constraint that the factors <b>W</b> and <b>H</b> must be <a href="http://en.wikipedia.org/wiki/Non-negative_matrix" title="Non-negative matrix" class="mw-redirect">non-negative</a>, i.e., all elements must be equal to or greater than zero.</p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+ <span class="toctoggle">[<a href="#" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Types"><span class="tocnumber">2</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Approximative_non-negative_matrix_factorization"><span class="tocnumber">2.1</span> <span class="toctext">Approximative non-negative matrix factorization</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Different_cost_functions_and_regularizations"><span class="tocnumber">2.2</span> <span class="toctext">Different cost functions and regularizations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Algorithms"><span class="tocnumber">3</span> <span class="toctext">Algorithms</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Relation_to_other_techniques"><span class="tocnumber">4</span> <span class="toctext">Relation to other techniques</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Uniqueness"><span class="tocnumber">5</span> <span class="toctext">Uniqueness</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Applications"><span class="tocnumber">6</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Text_mining"><span class="tocnumber">6.1</span> <span class="toctext">Text mining</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Spectral_data_analysis"><span class="tocnumber">6.2</span> <span class="toctext">Spectral data analysis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Current_research"><span class="tocnumber">7</span> <span class="toctext">Current research</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Sources_and_external_links"><span class="tocnumber">9</span> <span class="toctext">Sources and external links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Notes"><span class="tocnumber">9.1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Others"><span class="tocnumber">9.2</span> <span class="toctext">Others</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Software"><span class="tocnumber">9.3</span> <span class="toctext">Software</span></a></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=1" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History">History</span></h2>
+<p>In <a href="http://en.wikipedia.org/wiki/Chemometrics" title="Chemometrics">chemometrics</a> non-negative matrix factorization has a long history under the name "<a href="http://en.wikipedia.org/wiki/Self_modeling_curve_resolution" title="Self modeling curve resolution" class="mw-redirect">self modeling curve resolution</a>".<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup>
+ In this framework the vectors in the right matrix are continuous curves
+ rather than discrete vectors. Also early work on non-negative matrix 
+factorizations was performed by a Finnish group of researchers in the 
+middle of the 1990s under the name <i>positive matrix factorization</i>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup> It became more widely known as <i>non-negative matrix factorization</i>
+ after Lee and Seung investigated the properties of the algorithm and 
+published some simple and useful algorithms for two types of 
+factorizations.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=2" title="Edit section: Types">edit</a>]</span> <span class="mw-headline" id="Types">Types</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=3" title="Edit section: Approximative non-negative matrix factorization">edit</a>]</span> <span class="mw-headline" id="Approximative_non-negative_matrix_factorization">Approximative non-negative matrix factorization</span></h3>
+<p>Usually the number of columns of <b>W</b> and the number of rows of <b>H</b> in NMF are selected so the product <b>WH</b> will become an approximation to <b>X</b> (it has been suggested that the NMF model should be called <i>nonnegative matrix approximation</i> instead). The full decomposition of <b>X</b> then amounts to the two non-negative matrices <b>W</b> and <b>H</b> as well as a residual <b>U</b>, such that: <b>X</b> = <b>WH</b> + <b>U</b>. The elements of the residual matrix can either be negative or positive.</p>
+<p>When <b>W</b> and <b>H</b> are smaller than <b>X</b> they become easier to store and manipulate.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=4" title="Edit section: Different cost functions and regularizations">edit</a>]</span> <span class="mw-headline" id="Different_cost_functions_and_regularizations">Different cost functions and regularizations</span></h3>
+<p>There are different types of non-negative matrix factorizations. The different types arise from using different <a href="http://en.wikipedia.org/wiki/Cost_function" title="Cost function" class="mw-redirect">cost functions</a> for measuring the divergence between <b>X</b> and <b>WH</b> and possibly by <a href="http://en.wikipedia.org/wiki/Regularization_%28mathematics%29" title="Regularization (mathematics)">regularization</a> of the <b>W</b> and/or <b>H</b> matrices.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<p>Two simple divergence functions studied by Lee and Seung are the squared error (or <a href="http://en.wikipedia.org/wiki/Frobenius_norm" title="Frobenius norm" class="mw-redirect">Frobenius norm</a>) and an extension of the Kullback-Leibler divergence to positive matrices (the original <a href="http://en.wikipedia.org/wiki/Kullback-Leibler_divergence" title="Kullback-Leibler divergence" class="mw-redirect">Kullback-Leibler divergence</a>
+ is defined on probability distributions). Each divergence leads to a 
+different NMF algorithm, usually minimizing the divergence using 
+iterative update rules.</p>
+<p>The factorization problem in the squared error version of NMF may be stated as: Given a nonnegative matrix <img class="tex" alt="\mathbf{X}" src="Non-negative_matrix_factorization_files/598f6444904755dda4a859a1e377468e.png"> find nonnegative matrices W and H that minimize the function</p>
+<dl>
+<dd><img class="tex" alt="F(\mathbf{W},\mathbf{H}) = \|\mathbf{X} - \mathbf{WH}\|^2_F" src="Non-negative_matrix_factorization_files/a0cdc28f4329f7bbb87f79da2ef74a20.png"></dd>
+</dl>
+<p>Another type of NMF for images is based on the <a href="http://en.wikipedia.org/wiki/Total_variation_norm" title="Total variation norm" class="mw-redirect">total variation norm</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=5" title="Edit section: Algorithms">edit</a>]</span> <span class="mw-headline" id="Algorithms">Algorithms</span></h2>
+<p>There are several ways in which the <b>W</b> and <b>H</b> may be found: Lee and Seung's updates are usually referred to as the multiplicative update method, while others have suggested <a href="http://en.wikipedia.org/wiki/Gradient_descent" title="Gradient descent">gradient descent</a> algorithms and so-called <a href="http://en.wikipedia.org/w/index.php?title=Alternating_non-negative_least_squares&amp;action=edit&amp;redlink=1" class="new" title="Alternating non-negative least squares (page does not exist)">alternating non-negative least squares</a> and "projected gradient".<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup></p>
+<p>The algorithms may be less than ideal, however, as they typically can
+ only be guaranteed to find local minima, rather than a global minimum 
+of the cost function but in many data mining applications a local 
+minimum may still be enough to be useful.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=6" title="Edit section: Relation to other techniques">edit</a>]</span> <span class="mw-headline" id="Relation_to_other_techniques">Relation to other techniques</span></h2>
+<p>The initial paper by Lee &amp; Seung proposed NMF mainly for parts-based decomposition of images. It compares NMF to <a href="http://en.wikipedia.org/wiki/Vector_quantization" title="Vector quantization">vector quantization</a> and <a href="http://en.wikipedia.org/wiki/Principal_component_analysis" title="Principal component analysis">principal component analysis</a>,
+ and shows that although the three techniques may be written as 
+factorizations, they implement different constraints and therefore 
+produce different results.</p>
+<p>It was later shown that some types of NMF are an instance of a more general probabilistic model called "multinomial PCA".<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup> When NMF is obtained by minimizing the <a href="http://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence" title="Kullback–Leibler divergence">Kullback–Leibler divergence</a>, it is in fact equivalent to another instance of multinomial PCA, <a href="http://en.wikipedia.org/wiki/Probabilistic_latent_semantic_analysis" title="Probabilistic latent semantic analysis">probabilistic latent semantic analysis</a>,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>11<span>]</span></a></sup> trained by <a href="http://en.wikipedia.org/wiki/Maximum_likelihood" title="Maximum likelihood">maximum likelihood</a> estimation. That method is commonly used for analyzing and clustering textual data and is also related to the <a href="http://en.wikipedia.org/wiki/Latent_class_model" title="Latent class model">latent class model</a>.</p>
+<p>It was also shown<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>13<span>]</span></a></sup> that when the Frobenius norm is used as a divergence, NMF is equivalent to a relaxed form of <a href="http://en.wikipedia.org/wiki/K-means_clustering" title="K-means clustering">K-means clustering</a>: matrix factor <b>W</b> contains cluster centroids and <b>H</b> contains cluster membership indicators. This also justifies the use of NMF for data clustering.</p>
+<p>NMF extends beyond matrices to tensors of arbitrary order.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup> This extension may be viewed as a non-negative version of, e.g., the <a href="http://en.wikipedia.org/wiki/PARAFAC" title="PARAFAC">PARAFAC</a> model.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=7" title="Edit section: Uniqueness">edit</a>]</span> <span class="mw-headline" id="Uniqueness">Uniqueness</span></h2>
+<p>The factorization is not unique: A matrix and its <a href="http://en.wikipedia.org/wiki/Inverse_matrix" title="Inverse matrix" class="mw-redirect">inverse</a> can be used to transform the two factorization matrices by, e.g.,<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="\mathbf{WH} = \mathbf{WBB}^{-1}\mathbf{H}" src="Non-negative_matrix_factorization_files/c4197f16a1cd0aa6bf60ad85e5fabbf5.png"></dd>
+</dl>
+<p>If the two new matrices <img class="tex" alt="\mathbf{\tilde{W} = WB}" src="Non-negative_matrix_factorization_files/1037155cb666d0c709c06f881587f896.png"> and <img class="tex" alt="\mathbf{\tilde{H}}=\mathbf{B}^{-1}\mathbf{H}" src="Non-negative_matrix_factorization_files/97060a7367800886627d79f2eeef6023.png"> are <a href="http://en.wikipedia.org/wiki/Non-negative_matrix" title="Non-negative matrix" class="mw-redirect">non-negative</a> they form another parametrization of the factorization.</p>
+<p>The non-negativity of <img class="tex" alt="\mathbf{\tilde{W}}" src="Non-negative_matrix_factorization_files/c8e35685fd471fe2d6cb6aae104d4deb.png"> and <img class="tex" alt="\mathbf{\tilde{H}}" src="Non-negative_matrix_factorization_files/54b7019ce59c4a84528d6bbf9a69a514.png"> applies at least if <b>B</b> is a non-negative <a href="http://en.wikipedia.org/wiki/Monomial_matrix" title="Monomial matrix" class="mw-redirect">monomial matrix</a>. In this simple case it will just correspond to a scaling and a <a href="http://en.wikipedia.org/wiki/Permutation" title="Permutation">permutation</a>.</p>
+<p>More control over the non-uniqueness of NMF is obtained with sparsity constraints.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>17<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=8" title="Edit section: Applications">edit</a>]</span> <span class="mw-headline" id="Applications">Applications</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=9" title="Edit section: Text mining">edit</a>]</span> <span class="mw-headline" id="Text_mining">Text mining</span></h3>
+<p>NMF can be used for <a href="http://en.wikipedia.org/wiki/Text_mining" title="Text mining">text mining</a> applications. In this process, a <a href="http://en.wikipedia.org/wiki/Document-term_matrix" title="Document-term matrix"><i>document-term</i> matrix</a>
+ is constructed with the weights of various terms (typically weighted 
+word frequency information) from a set of documents. This matrix is 
+factored into a <i>term-feature</i> and a <i>feature-document</i> matrix. The features are derived from the contents of the documents, and the feature-document matrix describes <a href="http://en.wikipedia.org/wiki/Data_clustering" title="Data clustering" class="mw-redirect">data clusters</a> of related documents.</p>
+<p>One specific application used hierarchical NMF on a small subset of scientific abstracts from <a href="http://en.wikipedia.org/wiki/PubMed" title="PubMed">PubMed</a>.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>18<span>]</span></a></sup> Another research group clustered parts of the <a href="http://en.wikipedia.org/wiki/Enron" title="Enron">Enron</a> email dataset<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>19<span>]</span></a></sup> with 65,033 messages and 91,133 terms into 50 clusters.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>20<span>]</span></a></sup> NMF has also been applied to citations data, with one example clustering <a href="http://en.wikipedia.org/wiki/Wikipedia" title="Wikipedia">Wikipedia</a> articles and <a href="http://en.wikipedia.org/wiki/Scientific_journal" title="Scientific journal">scientific journals</a> based on the outbound scientific citations in Wikipedia.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>21<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=10" title="Edit section: Spectral data analysis">edit</a>]</span> <span class="mw-headline" id="Spectral_data_analysis">Spectral data analysis</span></h3>
+<p>NMF is also used to analyze spectral data; one such use is in the classification of space objects and debris.<sup id="cite_ref-BerryM2006Algorithm_21-0" class="reference"><a href="#cite_note-BerryM2006Algorithm-21"><span>[</span>22<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=11" title="Edit section: Current research">edit</a>]</span> <span class="mw-headline" id="Current_research">Current research</span></h2>
+<p>Current research in nonnegative matrix factorization includes, but not limited to,</p>
+<p>(1) Algorithmic: searching for global minima of the factors and factor initialization.</p>
+<p>(2) Scalability: how to factorize million-by-billion matrices, which 
+are commonplace in Web-scale data mining, e.g., see Distributed 
+Nonnegative Matrix Factorization (DNMF)<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>23<span>]</span></a></sup></p>
+<p>(3) Online: how to update the factorization when new data comes in without recomputing from scratch.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Online_NMF" title="Online NMF">Online NMF</a> (Online non-negative matrix factorization)</li>
+</ul>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=13" title="Edit section: Sources and external links">edit</a>]</span> <span class="mw-headline" id="Sources_and_external_links">Sources and external links</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=14" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<div class="references-small">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <span class="citation Journal"><a href="http://en.wikipedia.org/w/index.php?title=William_H._Lawton&amp;action=edit&amp;redlink=1" class="new" title="William H. Lawton (page does not exist)">William H. Lawton</a>; <a href="http://en.wikipedia.org/w/index.php?title=Edward_A._Sylvestre&amp;action=edit&amp;redlink=1" class="new" title="Edward A. Sylvestre (page does not exist)">Edward A. Sylvestre</a> (August 1971). "Self modeling curve resolution". <i><a href="http://en.wikipedia.org/wiki/Technometrics" title="Technometrics">Technometrics</a></i> <b>13</b> (3): 617+.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Self+modeling+curve+resolution&amp;rft.jtitle=%5B%5BTechnometrics%5D%5D&amp;rft.aulast=William+H.+Lawton&amp;rft.au=William+H.+Lawton&amp;rft.au=Edward+A.+Sylvestre&amp;rft.date=August+1971&amp;rft.volume=13&amp;rft.issue=3&amp;rft.pages=617%2B&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span class="citation Journal">P.
+ Paatero, U. Tapper (1994). "Positive matrix factorization: A 
+non-negative factor model with optimal utilization of error estimates of
+ data values". <i><a href="http://en.wikipedia.org/w/index.php?title=Environmetrics&amp;action=edit&amp;redlink=1" class="new" title="Environmetrics (page does not exist)">Environmetrics</a></i> <b>5</b>: 111–126. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1002%2Fenv.3170050203" class="external text" rel="nofollow">10.1002/env.3170050203</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Positive+matrix+factorization%3A+A+non-negative+factor+model+with+optimal+utilization+of+error+estimates+of+data+values&amp;rft.jtitle=%5B%5BEnvironmetrics%5D%5D&amp;rft.aulast=P.+Paatero%2C+U.+Tapper&amp;rft.au=P.+Paatero%2C+U.+Tapper&amp;rft.date=1994&amp;rft.volume=5&amp;rft.pages=111%E2%80%93126&amp;rft_id=info:doi/10.1002%2Fenv.3170050203&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation Journal"><a href="http://en.wikipedia.org/w/index.php?title=Pia_Anttila&amp;action=edit&amp;redlink=1" class="new" title="Pia Anttila (page does not exist)">Pia Anttila</a>, <a href="http://en.wikipedia.org/w/index.php?title=Pentti_Paatero&amp;action=edit&amp;redlink=1" class="new" title="Pentti Paatero (page does not exist)">Pentti Paatero</a>,
+ Unto Tapper, Olli Järvinen (1995). "Source identification of bulk wet 
+deposition in Finland by positive matrix factorization". <i><a href="http://en.wikipedia.org/w/index.php?title=Atmospheric_Environment_%28journal%29&amp;action=edit&amp;redlink=1" class="new" title="Atmospheric Environment (journal) (page does not exist)">Atmospheric Environment</a></i> <b>29</b> (14): 1705–1718. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2F1352-2310%2894%2900367-T" class="external text" rel="nofollow">10.1016/1352-2310(94)00367-T</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Source+identification+of+bulk+wet+deposition+in+Finland+by+positive+matrix+factorization&amp;rft.jtitle=%5B%5BAtmospheric+Environment+%28journal%29%7CAtmospheric+Environment%5D%5D&amp;rft.aulast=%5B%5BPia+Anttila%5D%5D%2C+%5B%5BPentti+Paatero%5D%5D%2C+Unto+Tapper%2C+Olli+J%C3%A4rvinen&amp;rft.au=%5B%5BPia+Anttila%5D%5D%2C+%5B%5BPentti+Paatero%5D%5D%2C+Unto+Tapper%2C+Olli+J%C3%A4rvinen&amp;rft.date=1995&amp;rft.volume=29&amp;rft.issue=14&amp;rft.pages=1705%26ndash%3B1718&amp;rft_id=info:doi/10.1016%2F1352-2310%2894%2900367-T&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="citation Journal">Daniel D. Lee and <a href="http://en.wikipedia.org/wiki/Sebastian_Seung" title="Sebastian Seung">H. Sebastian Seung</a> (1999). "Learning the parts of objects by non-negative matrix factorization". <i><a href="http://en.wikipedia.org/wiki/Nature_%28journal%29" title="Nature (journal)">Nature</a></i> <b>401</b> (6755): 788–791. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1038%2F44565" class="external text" rel="nofollow">10.1038/44565</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/10548103" class="external text" rel="nofollow">10548103</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Learning+the+parts+of+objects+by+non-negative+matrix+factorization&amp;rft.jtitle=%5B%5BNature+%28journal%29%7C+Nature%5D%5D&amp;rft.aulast=Daniel+D.+Lee+and+%5B%5BSebastian+Seung%7CH.+Sebastian+Seung%5D%5D&amp;rft.au=Daniel+D.+Lee+and+%5B%5BSebastian+Seung%7CH.+Sebastian+Seung%5D%5D&amp;rft.date=1999&amp;rft.volume=401&amp;rft.issue=6755&amp;rft.pages=788%26ndash%3B791&amp;rft_id=info:doi/10.1038%2F44565&amp;rft_id=info:pmid/10548103&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span class="citation book">Daniel D. Lee and H. Sebastian Seung (2001). <a href="http://www.nips.cc/Web/Groups/NIPS/NIPS2000/00papers-pub-on-web/LeeSeung.ps.gz" class="external text" rel="nofollow">"Algorithms for Non-negative Matrix Factorization"</a>. <a href="http://www.nips.cc/Web/Groups/NIPS/NIPS2000/00papers-pub-on-web/LeeSeung.ps.gz" class="external text" rel="nofollow"></a><a href="http://en.wikipedia.org/wiki/NIPS" title="NIPS" class="mw-redirect">Advances in Neural Information Processing Systems 13: Proceedings of the 2000 Conference</a></span>. <a href="http://en.wikipedia.org/wiki/MIT_Press" title="MIT Press">MIT Press</a>. pp.&nbsp;556–562<span class="printonly">. <a href="http://www.nips.cc/Web/Groups/NIPS/NIPS2000/00papers-pub-on-web/LeeSeung.ps.gz" class="external free" rel="nofollow">http://www.nips.cc/Web/Groups/NIPS/NIPS2000/00papers-pub-on-web/LeeSeung.ps.gz</a></span>.<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Algorithms+for+Non-negative+Matrix+Factorization&amp;rft.atitle=%5B%5BNIPS%7CAdvances+in+Neural+Information+Processing+Systems+13%3A+Proceedings+of+the+2000+Conference%5D%5D&amp;rft.aulast=Daniel+D.+Lee+and+H.+Sebastian+Seung&amp;rft.au=Daniel+D.+Lee+and+H.+Sebastian+Seung&amp;rft.date=2001&amp;rft.pages=pp.%26nbsp%3B556%26ndash%3B562&amp;rft.pub=%5B%5BMIT+Press%5D%5D&amp;rft_id=http%3A%2F%2Fwww.nips.cc%2FWeb%2FGroups%2FNIPS%2FNIPS2000%2F00papers-pub-on-web%2FLeeSeung.ps.gz&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <span class="citation book"><a href="http://en.wikipedia.org/w/index.php?title=Inderjit_S._Dhillon&amp;action=edit&amp;redlink=1" class="new" title="Inderjit S. Dhillon (page does not exist)">Inderjit S. Dhillon</a>, <a href="http://en.wikipedia.org/w/index.php?title=Suvrit_Sra&amp;action=edit&amp;redlink=1" class="new" title="Suvrit Sra (page does not exist)">Suvrit Sra</a> (2005). <a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0203.pdf" class="external text" rel="nofollow">"Generalized Nonnegative Matrix Approximations with Bregman Divergences"</a> (PDF). <a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0203.pdf" class="external text" rel="nofollow"></a><a href="http://en.wikipedia.org/wiki/NIPS" title="NIPS" class="mw-redirect">NIPS</a></span><span class="printonly">. <a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0203.pdf" class="external free" rel="nofollow">http://books.nips.cc/papers/files/nips18/NIPS2005_0203.pdf</a></span>.<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Generalized+Nonnegative+Matrix+Approximations+with+Bregman+Divergences&amp;rft.atitle=%5B%5BNIPS%5D%5D&amp;rft.aulast=%5B%5BInderjit+S.+Dhillon%5D%5D%2C+%5B%5BSuvrit+Sra%5D%5D&amp;rft.au=%5B%5BInderjit+S.+Dhillon%5D%5D%2C+%5B%5BSuvrit+Sra%5D%5D&amp;rft.date=2005&amp;rft_id=http%3A%2F%2Fbooks.nips.cc%2Fpapers%2Ffiles%2Fnips18%2FNIPS2005_0203.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <span class="citation Journal">Taiping
+ Zhanga, Bin Fang, Weining Liu, Yuan Yan Tang, Guanghui He and Jing Wen 
+(June 2008). "Total variation norm-based nonnegative matrix 
+factorization for identifying discriminant representation of image 
+patterns". <i><a href="http://en.wikipedia.org/wiki/Neurocomputing_%28journal%29" title="Neurocomputing (journal)">Neurocomputing</a></i> <b>71</b> (10–12): 1824–1831. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2Fj.neucom.2008.01.022" class="external text" rel="nofollow">10.1016/j.neucom.2008.01.022</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Total+variation+norm-based+nonnegative+matrix+factorization+for+identifying+discriminant+representation+of+image+patterns&amp;rft.jtitle=%5B%5BNeurocomputing+%28journal%29%7CNeurocomputing%5D%5D&amp;rft.aulast=Taiping+Zhanga%2C+Bin+Fang%2C+Weining+Liu%2C+Yuan+Yan+Tang%2C+Guanghui+He+and+Jing+Wen&amp;rft.au=Taiping+Zhanga%2C+Bin+Fang%2C+Weining+Liu%2C+Yuan+Yan+Tang%2C+Guanghui+He+and+Jing+Wen&amp;rft.date=June+2008&amp;rft.volume=71&amp;rft.issue=10%26ndash%3B12&amp;rft.pages=1824%26ndash%3B1831&amp;rft_id=info:doi/10.1016%2Fj.neucom.2008.01.022&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <span class="citation Journal">Chih-Jen Lin (October 2007). <a href="http://www.csie.ntu.edu.tw/%7Ecjlin/papers/pgradnmf.pdf" class="external text" rel="nofollow">"Projected Gradient Methods for Non-negative Matrix Factorization"</a> (PDF). <i><a href="http://en.wikipedia.org/wiki/Neural_Computation" title="Neural Computation">Neural Computation</a></i> <b>19</b> (10)<span class="printonly">. <a href="http://www.csie.ntu.edu.tw/%7Ecjlin/papers/pgradnmf.pdf" class="external free" rel="nofollow">http://www.csie.ntu.edu.tw/~cjlin/papers/pgradnmf.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Projected+Gradient+Methods+for+Non-negative+Matrix+Factorization&amp;rft.jtitle=%5B%5BNeural+Computation%5D%5D&amp;rft.aulast=Chih-Jen+Lin&amp;rft.au=Chih-Jen+Lin&amp;rft.date=October+2007&amp;rft.volume=19&amp;rft.issue=10&amp;rft_id=http%3A%2F%2Fwww.csie.ntu.edu.tw%2F%7Ecjlin%2Fpapers%2Fpgradnmf.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> <span class="citation Journal">Chih-Jen Lin (November 2007). "On the Convergence of Multiplicative Update Algorithms for Nonnegative Matrix Factorization". <i><a href="http://en.wikipedia.org/w/index.php?title=IEEE_Transactions_on_Neural_Networks&amp;action=edit&amp;redlink=1" class="new" title="IEEE Transactions on Neural Networks (page does not exist)">IEEE Transactions on Neural Networks</a></i> <b>18</b> (6): 1589–1596. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1109%2FTNN.2007.895831" class="external text" rel="nofollow">10.1109/TNN.2007.895831</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=On+the+Convergence+of+Multiplicative+Update+Algorithms+for+Nonnegative+Matrix+Factorization&amp;rft.jtitle=%5B%5BIEEE+Transactions+on+Neural+Networks%5D%5D&amp;rft.aulast=Chih-Jen+Lin&amp;rft.au=Chih-Jen+Lin&amp;rft.date=November+2007&amp;rft.volume=18&amp;rft.issue=6&amp;rft.pages=1589%26ndash%3B1596&amp;rft_id=info:doi/10.1109%2FTNN.2007.895831&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation book">Wray Buntine (2002). <a href="http://cosco.hiit.fi/Articles/ecml02.pdf" class="external text" rel="nofollow">"Extensions to EM and Multinomial PCA"</a> (PDF). <a href="http://cosco.hiit.fi/Articles/ecml02.pdf" class="external text" rel="nofollow"><i>Proc. European Conference on Machine Learning (ECML-02)</i></a>. LNAI. <b>2430</b>. pp.&nbsp;23–34<span class="printonly">. <a href="http://cosco.hiit.fi/Articles/ecml02.pdf" class="external free" rel="nofollow">http://cosco.hiit.fi/Articles/ecml02.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Extensions+to+EM+and+Multinomial+PCA&amp;rft.atitle=Proc.+European+Conference+on+Machine+Learning+%28ECML-02%29&amp;rft.aulast=Wray+Buntine&amp;rft.au=Wray+Buntine&amp;rft.date=2002&amp;rft.series=LNAI&amp;rft.volume=2430&amp;rft.pages=pp.%26nbsp%3B23%E2%80%9334&amp;rft_id=http%3A%2F%2Fcosco.hiit.fi%2FArticles%2Fecml02.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-10"><b><a href="#cite_ref-10">^</a></b> <span class="citation book">Eric Gaussier and Cyril Goutte (2005). <a href="http://eprints.pascal-network.org/archive/00000971/01/39-gaussier.pdf" class="external text" rel="nofollow">"Relation between PLSA and NMF and Implications"</a> (PDF). <a href="http://eprints.pascal-network.org/archive/00000971/01/39-gaussier.pdf" class="external text" rel="nofollow"><i>Proc. 28th international ACM SIGIR conference on Research and development in information retrieval (SIGIR-05)</i></a>. pp.&nbsp;601–602<span class="printonly">. <a href="http://eprints.pascal-network.org/archive/00000971/01/39-gaussier.pdf" class="external free" rel="nofollow">http://eprints.pascal-network.org/archive/00000971/01/39-gaussier.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Relation+between+PLSA+and+NMF+and+Implications&amp;rft.atitle=Proc.+28th+international+ACM+SIGIR+conference+on+Research+and+development+in+information+retrieval+%28SIGIR-05%29&amp;rft.aulast=Eric+Gaussier+and+Cyril+Goutte&amp;rft.au=Eric+Gaussier+and+Cyril+Goutte&amp;rft.date=2005&amp;rft.pages=pp.%26nbsp%3B601%E2%80%93602&amp;rft_id=http%3A%2F%2Feprints.pascal-network.org%2Farchive%2F00000971%2F01%2F39-gaussier.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> Ron Zass and Amnon Shashua (2005). "<a href="http://www.cs.huji.ac.il/%7Ezass/papers/cp-iccv05.pdf" class="external text" rel="nofollow">A Unifying Approach to Hard and Probabilistic Clustering</a>". International Conference on Computer Vision (ICCV) Beijing, China, Oct., 2005.</li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> Chris Ding, Xiaofeng He, and Horst D. Simon (2005). "<a href="http://ranger.uta.edu/%7Echqding/papers/nmfSIAM1.pdf" class="external text" rel="nofollow">On the Equivalence of Nonnegative Matrix Factorization and Spectral Clustering</a>". Proc. SIAM Int'l Conf. Data Mining, pp. 606-610.</li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation Journal"><a href="http://en.wikipedia.org/w/index.php?title=Pentti_Paatero&amp;action=edit&amp;redlink=1" class="new" title="Pentti Paatero (page does not exist)">Pentti Paatero</a> (1999). <a href="http://jstor.org/stable/1390831" class="external text" rel="nofollow">"The
+ Multilinear Engine: A Table-Driven, Least Squares Program for Solving 
+Multilinear Problems, including the n-Way Parallel Factor Analysis 
+Model"</a>. <i><a href="http://en.wikipedia.org/w/index.php?title=Journal_of_Computational_and_Graphical_Statistics&amp;action=edit&amp;redlink=1" class="new" title="Journal of Computational and Graphical Statistics (page does not exist)">Journal of Computational and Graphical Statistics</a></i> <b>8</b> (4): 854–888. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.2307%2F1390831" class="external text" rel="nofollow">10.2307/1390831</a><span class="printonly">. <a href="http://jstor.org/stable/1390831" class="external free" rel="nofollow">http://jstor.org/stable/1390831</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+Multilinear+Engine%3A+A+Table-Driven%2C+Least+Squares+Program+for+Solving+Multilinear+Problems%2C+including+the+n-Way+Parallel+Factor+Analysis+Model&amp;rft.jtitle=%5B%5BJournal+of+Computational+and+Graphical+Statistics%5D%5D&amp;rft.aulast=%5B%5BPentti+Paatero%5D%5D&amp;rft.au=%5B%5BPentti+Paatero%5D%5D&amp;rft.date=1999&amp;rft.volume=8&amp;rft.issue=4&amp;rft.pages=854%26ndash%3B888&amp;rft_id=info:doi/10.2307%2F1390831&amp;rft_id=http%3A%2F%2Fjstor.org%2Fstable%2F1390831&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <span class="citation Journal">Max Welling and Markus Weber (2001). "Positive Tensor Factorization". <i><a href="http://en.wikipedia.org/w/index.php?title=Pattern_Recognition_Letters&amp;action=edit&amp;redlink=1" class="new" title="Pattern Recognition Letters (page does not exist)">Pattern Recognition Letters</a></i> <b>22</b> (12): 1255–1261. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2FS0167-8655%2801%2900070-8" class="external text" rel="nofollow">10.1016/S0167-8655(01)00070-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Positive+Tensor+Factorization&amp;rft.jtitle=%5B%5BPattern+Recognition+Letters%5D%5D&amp;rft.aulast=Max+Welling+and+Markus+Weber&amp;rft.au=Max+Welling+and+Markus+Weber&amp;rft.date=2001&amp;rft.volume=22&amp;rft.issue=12&amp;rft.pages=1255%26ndash%3B1261&amp;rft_id=info:doi/10.1016%2FS0167-8655%2801%2900070-8&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation book">Wei Xu, Xin Liu &amp; Yihong Gong (2003). <a href="http://portal.acm.org/citation.cfm?id=860485" class="external text" rel="nofollow">"Document clustering based on non-negative matrix factorization"</a>. <a href="http://portal.acm.org/citation.cfm?id=860485" class="external text" rel="nofollow"><i>Proceedings of the 26th annual international ACM SIGIR conference on Research and development in informaion retrieval</i></a>. New York: <a href="http://en.wikipedia.org/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a>. pp.&nbsp;267–273<span class="printonly">. <a href="http://portal.acm.org/citation.cfm?id=860485" class="external free" rel="nofollow">http://portal.acm.org/citation.cfm?id=860485</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Document+clustering+based+on+non-negative+matrix+factorization&amp;rft.atitle=Proceedings+of+the+26th+annual+international+ACM+SIGIR+conference+on+Research+and+development+in+informaion+retrieval&amp;rft.aulast=Wei+Xu%2C++Xin+Liu+%26+Yihong+Gong&amp;rft.au=Wei+Xu%2C++Xin+Liu+%26+Yihong+Gong&amp;rft.date=2003&amp;rft.pages=pp.%26nbsp%3B267%26ndash%3B273&amp;rft.place=New+York&amp;rft.pub=%5B%5BAssociation+for+Computing+Machinery%5D%5D&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D860485&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-16"><b><a href="#cite_ref-16">^</a></b> Julian Eggert, Edgar Körner, "<a href="http://dx.doi.org/10.1109/IJCNN.2004.1381036" class="external text" rel="nofollow">Sparse coding and NMF</a>", <i>Proceedings. 2004 IEEE International Joint Conference on Neural Networks, 2004., pp. 2529-2533, 2004.</i></li>
+<li id="cite_note-17"><b><a href="#cite_ref-17">^</a></b> <span class="citation Journal">Finn Årup Nielsen, Daniela Balslev &amp; <a href="http://en.wikipedia.org/w/index.php?title=Lars_Kai_Hansen&amp;action=edit&amp;redlink=1" class="new" title="Lars Kai Hansen (page does not exist)">Lars Kai Hansen</a> (September 2005). "Mining the posterior cingulate: segregation between memory and pain components". <i><a href="http://en.wikipedia.org/wiki/NeuroImage" title="NeuroImage">NeuroImage</a></i> <b>27</b> (3): 520–522. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2Fj.neuroimage.2005.04.034" class="external text" rel="nofollow">10.1016/j.neuroimage.2005.04.034</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/15946864" class="external text" rel="nofollow">15946864</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Mining+the+posterior+cingulate%3A+segregation+between+memory+and+pain+components&amp;rft.jtitle=%5B%5BNeuroImage%5D%5D&amp;rft.aulast=Finn+%C3%85rup+Nielsen%2C+Daniela+Balslev+%26+%5B%5BLars+Kai+Hansen%5D%5D&amp;rft.au=Finn+%C3%85rup+Nielsen%2C+Daniela+Balslev+%26+%5B%5BLars+Kai+Hansen%5D%5D&amp;rft.date=September+2005&amp;rft.volume=27&amp;rft.issue=3&amp;rft.pages=520%E2%80%93522&amp;rft_id=info:doi/10.1016%2Fj.neuroimage.2005.04.034&amp;rft_id=info:pmid/15946864&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-18"><b><a href="#cite_ref-18">^</a></b> <span class="citation web"><a href="http://en.wikipedia.org/wiki/William_Cohen_%28disambiguation%29" title="William Cohen (disambiguation)">William W. Cohen</a> (2005-04-04). <a href="http://www.cs.cmu.edu/%7Eenron/" class="external text" rel="nofollow">"Enron Email Dataset"</a><span class="printonly">. <a href="http://www.cs.cmu.edu/%7Eenron/" class="external free" rel="nofollow">http://www.cs.cmu.edu/~enron/</a></span><span class="reference-accessdate">. Retrieved 2008-08-26</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Enron+Email+Dataset&amp;rft.atitle=&amp;rft.aulast=%5B%5BWilliam+Cohen+%28disambiguation%29%7CWilliam+W.+Cohen%5D%5D&amp;rft.au=%5B%5BWilliam+Cohen+%28disambiguation%29%7CWilliam+W.+Cohen%5D%5D&amp;rft.date=2005-04-04&amp;rft_id=http%3A%2F%2Fwww.cs.cmu.edu%2F%7Eenron%2F&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-19"><b><a href="#cite_ref-19">^</a></b> <span class="citation Journal">Michael W. Berry &amp; Murray Browne (October 2005). "Email Surveillance Using Non-negative Matrix Factorization". <i><a href="http://en.wikipedia.org/w/index.php?title=Computational_%26_Mathematical_Organization_Theory&amp;action=edit&amp;redlink=1" class="new" title="Computational &amp; Mathematical Organization Theory (page does not exist)">Computational &amp; Mathematical Organization Theory</a></i> <b>11</b> (3): 249–264. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2Fs10588-005-5380-5" class="external text" rel="nofollow">10.1007/s10588-005-5380-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Email+Surveillance+Using+Non-negative+Matrix+Factorization&amp;rft.jtitle=%5B%5BComputational+%26+Mathematical+Organization+Theory%5D%5D&amp;rft.aulast=Michael+W.+Berry+%26+Murray+Browne&amp;rft.au=Michael+W.+Berry+%26+Murray+Browne&amp;rft.date=October+2005&amp;rft.volume=11&amp;rft.issue=3&amp;rft.pages=249%26ndash%3B264&amp;rft_id=info:doi/10.1007%2Fs10588-005-5380-5&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-20"><b><a href="#cite_ref-20">^</a></b> <span class="citation book">Finn Årup Nielsen (2008). <a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=5666" class="external text" rel="nofollow">"Clustering of scientific citations in Wikipedia"</a>. <a href="http://en.wikipedia.org/wiki/Wikimania" title="Wikimania">Wikimania</a><span class="printonly">. <a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=5666" class="external free" rel="nofollow">http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=5666</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clustering+of+scientific+citations+in+Wikipedia&amp;rft.atitle=&amp;rft.aulast=Finn+%C3%85rup+Nielsen&amp;rft.au=Finn+%C3%85rup+Nielsen&amp;rft.date=2008&amp;rft_id=http%3A%2F%2Fwww2.imm.dtu.dk%2Fpubdb%2Fviews%2Fpublication_details.php%3Fid%3D5666&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-BerryM2006Algorithm-21"><b><a href="#cite_ref-BerryM2006Algorithm_21-0">^</a></b> <span class="citation Journal">Michael W. Berry, et al. (June 2006). <i>Algorithms and Applications for Approximate Nonnegative Matrix Factorization</i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithms+and+Applications+for+Approximate+Nonnegative+Matrix+Factorization&amp;rft.aulast=Michael+W.+Berry%2C+et+al.&amp;rft.au=Michael+W.+Berry%2C+et+al.&amp;rft.date=June+2006&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-22"><b><a href="#cite_ref-22">^</a></b> <span class="citation Journal">Chao Liu, Hung-chih Yang, Jinliang Fan, Li-Wei He, and Yi-Min Wang (April 2010). <a href="http://research.microsoft.com/pubs/119077/DNMF.pdf" class="external text" rel="nofollow">"Distributed Nonnegative Matrix Factorization for Web-Scale Dyadic Data Analysis on MapReduce"</a>. <i>Proceedings of the 19th International World Wide Web Conference</i><span class="printonly">. <a href="http://research.microsoft.com/pubs/119077/DNMF.pdf" class="external free" rel="nofollow">http://research.microsoft.com/pubs/119077/DNMF.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Distributed+Nonnegative+Matrix+Factorization+for+Web-Scale+Dyadic+Data+Analysis+on+MapReduce&amp;rft.jtitle=Proceedings+of+the+19th+International+World+Wide+Web+Conference&amp;rft.aulast=Chao+Liu%2C+Hung-chih+Yang%2C+Jinliang+Fan%2C+Li-Wei+He%2C+and+Yi-Min+Wang&amp;rft.au=Chao+Liu%2C+Hung-chih+Yang%2C+Jinliang+Fan%2C+Li-Wei+He%2C+and+Yi-Min+Wang&amp;rft.date=April+2010&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F119077%2FDNMF.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+</ol>
+</div>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=15" title="Edit section: Others">edit</a>]</span> <span class="mw-headline" id="Others">Others</span></h3>
+<div class="references-small">
+<ul>
+<li><span class="citation Journal">J. Shen, G. W. Israël (1989). "A receptor model using a specific non-negative transformation technique for ambient aerosol". <i><a href="http://en.wikipedia.org/w/index.php?title=Atmospheric_Environment_%28journal%29&amp;action=edit&amp;redlink=1" class="new" title="Atmospheric Environment (journal) (page does not exist)">Atmospheric Environment</a></i> <b>23</b> (10): 2289–2298. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2F0004-6981%2889%2990190-X" class="external text" rel="nofollow">10.1016/0004-6981(89)90190-X</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+receptor+model+using+a+specific+non-negative+transformation+technique+for+ambient+aerosol&amp;rft.jtitle=%5B%5BAtmospheric+Environment+%28journal%29%7CAtmospheric+Environment%5D%5D&amp;rft.aulast=J.+Shen%2C+G.+W.+Isra%C3%ABl&amp;rft.au=J.+Shen%2C+G.+W.+Isra%C3%ABl&amp;rft.date=1989&amp;rft.volume=23&amp;rft.issue=10&amp;rft.pages=2289%26ndash%3B2298&amp;rft_id=info:doi/10.1016%2F0004-6981%2889%2990190-X&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal"><a href="http://en.wikipedia.org/w/index.php?title=Pentti_Paatero&amp;action=edit&amp;redlink=1" class="new" title="Pentti Paatero (page does not exist)">Pentti Paatero</a> (May 1997). "Least squares formulation of robust non-negative factor analysis". <i><a href="http://en.wikipedia.org/wiki/Chemometrics_and_Intelligent_Laboratory_Systems" title="Chemometrics and Intelligent Laboratory Systems" class="mw-redirect">Chemometrics and Intelligent Laboratory Systems</a></i> <b>37</b> (1): 23–35. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1016%2FS0169-7439%2896%2900044-5" class="external text" rel="nofollow">10.1016/S0169-7439(96)00044-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Least+squares+formulation+of+robust+non-negative+factor+analysis&amp;rft.jtitle=%5B%5BChemometrics+and+Intelligent+Laboratory+Systems%5D%5D&amp;rft.aulast=%5B%5BPentti+Paatero%5D%5D&amp;rft.au=%5B%5BPentti+Paatero%5D%5D&amp;rft.date=May+1997&amp;rft.volume=37&amp;rft.issue=1&amp;rft.pages=23%26ndash%3B35&amp;rft_id=info:doi/10.1016%2FS0169-7439%2896%2900044-5&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">Raul Kompass (March 2007). <a href="http://neco.mitpress.org/cgi/content/abstract/19/3/780" class="external text" rel="nofollow">"A Generalized Divergence Measure for Nonnegative Matrix Factorization"</a> (<sup class="noprint Inline-Template"><span title="&nbsp;since May 2009" style="white-space: nowrap;">[<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Linkrot" title="Wikipedia:Linkrot">dead link</a></i>]</span></sup>). <i><a href="http://en.wikipedia.org/wiki/Neural_Computation" title="Neural Computation">Neural Computation</a></i> <b>19</b> (3): 780–791. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1162%2Fneco.2007.19.3.780" class="external text" rel="nofollow">10.1162/neco.2007.19.3.780</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/17298233" class="external text" rel="nofollow">17298233</a><span class="printonly">. <a href="http://neco.mitpress.org/cgi/content/abstract/19/3/780" class="external free" rel="nofollow">http://neco.mitpress.org/cgi/content/abstract/19/3/780</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Generalized+Divergence+Measure+for+Nonnegative+Matrix+Factorization&amp;rft.jtitle=%5B%5BNeural+Computation%5D%5D&amp;rft.aulast=Raul+Kompass&amp;rft.au=Raul+Kompass&amp;rft.date=March+2007&amp;rft.volume=19&amp;rft.issue=3&amp;rft.pages=780%26ndash%3B791&amp;rft_id=info:doi/10.1162%2Fneco.2007.19.3.780&amp;rft_id=info:pmid/17298233&amp;rft_id=http%3A%2F%2Fneco.mitpress.org%2Fcgi%2Fcontent%2Fabstract%2F19%2F3%2F780&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li>Amy N. Langville, Michael W. Berry, Murray Browne, V. Paul Pauca, and Robert J. Plemmons. <a href="http://www.cofc.edu/%7Elangvillea/CSDA.pdf" class="external text" rel="nofollow">A Survey of Algorithms and Applications for the Nonnegative Matrix Factorization</a>. Computational Statistics and Data Analysis. Elsevier. Submitted Jan. 2006.</li>
+<li><span class="citation Journal">Liu, W.X. and Zheng, N.N. and You, Q.B. (2006). <a href="http://www.springerlink.com/index/7285V70531634264.pdf" class="external text" rel="nofollow">"Nonnegative Matrix Factorization and its applications in pattern recognition"</a> (PDF). <i><a href="http://en.wikipedia.org/wiki/Chinese_Science_Bulletin" title="Chinese Science Bulletin">Chinese Science Bulletin</a></i> <b>51</b> (17–18): 7–18. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1007%2Fs11434-005-1109-6" class="external text" rel="nofollow">10.1007/s11434-005-1109-6</a><span class="printonly">. <a href="http://www.springerlink.com/index/7285V70531634264.pdf" class="external free" rel="nofollow">http://www.springerlink.com/index/7285V70531634264.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Nonnegative+Matrix+Factorization+and+its+applications+in+pattern+recognition&amp;rft.jtitle=%5B%5BChinese+Science+Bulletin%5D%5D&amp;rft.aulast=Liu%2C+W.X.+and+Zheng%2C+N.N.+and+You%2C+Q.B.&amp;rft.au=Liu%2C+W.X.+and+Zheng%2C+N.N.+and+You%2C+Q.B.&amp;rft.date=2006&amp;rft.volume=51&amp;rft.issue=17%26ndash%3B18&amp;rft.pages=7%26ndash%3B18&amp;rft_id=info:doi/10.1007%2Fs11434-005-1109-6&amp;rft_id=http%3A%2F%2Fwww.springerlink.com%2Findex%2F7285V70531634264.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">Ngoc-Diep Ho, Paul Van Dooren and Vincent Blondel (2007) (subscription required). <a href="http://arxiv.org/abs/0801.3199" class="external text" rel="nofollow"><i>Descent Methods for Nonnegative Matrix Factorization</i></a><span class="printonly">. <a href="http://arxiv.org/abs/0801.3199" class="external free" rel="nofollow">http://arxiv.org/abs/0801.3199</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Descent+Methods+for+Nonnegative+Matrix+Factorization&amp;rft.aulast=Ngoc-Diep+Ho%2C+Paul+Van+Dooren+and+Vincent+Blondel&amp;rft.au=Ngoc-Diep+Ho%2C+Paul+Van+Dooren+and+Vincent+Blondel&amp;rft.date=2007&amp;rft_id=http%3A%2F%2Farxiv.org%2Fabs%2F0801.3199&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">Andrzej Cichocki, Rafal Zdunek and Shun-ichi Amari (January 2008). "Nonnegative Matrix and Tensor Factorization". <i><a href="http://en.wikipedia.org/w/index.php?title=IEEE_Signal_Processing_Magazine&amp;action=edit&amp;redlink=1" class="new" title="IEEE Signal Processing Magazine (page does not exist)">IEEE Signal Processing Magazine</a></i> <b>25</b> (1): 142–145. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1109%2FMSP.2008.4408452" class="external text" rel="nofollow">10.1109/MSP.2008.4408452</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Nonnegative+Matrix+and+Tensor+Factorization&amp;rft.jtitle=%5B%5BIEEE+Signal+Processing+Magazine%5D%5D&amp;rft.aulast=Andrzej+Cichocki%2C+Rafal+Zdunek+and+Shun-ichi+Amari&amp;rft.au=Andrzej+Cichocki%2C+Rafal+Zdunek+and+Shun-ichi+Amari&amp;rft.date=January+2008&amp;rft.volume=25&amp;rft.issue=1&amp;rft.pages=142%26ndash%3B145&amp;rft_id=info:doi/10.1109%2FMSP.2008.4408452&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">H. Kim and H. Park (2008). 
+"Nonnegative matrix factorization based on alternating nonnegativity 
+constrained least squares and active set method". <i><a href="http://en.wikipedia.org/wiki/SIAM_Journal_on_Matrix_Analysis_and_Applications" title="SIAM Journal on Matrix Analysis and Applications">SIAM Journal on Matrix Analysis and Applications</a></i> <b>30</b> (2): 713–730. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1137%2F07069239X" class="external text" rel="nofollow">10.1137/07069239X</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Nonnegative+matrix+factorization+based+on+alternating+nonnegativity+constrained+least+squares+and+active+set+method&amp;rft.jtitle=%5B%5BSIAM+Journal+on+Matrix+Analysis+and+Applications%5D%5D&amp;rft.aulast=H.+Kim+and+H.+Park&amp;rft.au=H.+Kim+and+H.+Park&amp;rft.date=2008&amp;rft.volume=30&amp;rft.issue=2&amp;rft.pages=713%26ndash%3B730&amp;rft_id=info:doi/10.1137%2F07069239X&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">H. Kim and H. Park (2007). <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/23/12/1495" class="external text" rel="nofollow">"Sparse
+ non-negative matrix factorizations via alternating 
+non-negativity-constrained least squares for microarray data analysis"</a>. <i><a href="http://en.wikipedia.org/wiki/Bioinformatics_%28journal%29" title="Bioinformatics (journal)">Bioinformatics</a></i> <b>23</b> (12): 1495–1502. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1093%2Fbioinformatics%2Fbtm134" class="external text" rel="nofollow">10.1093/bioinformatics/btm134</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/17483501" class="external text" rel="nofollow">17483501</a><span class="printonly">. <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/23/12/1495" class="external free" rel="nofollow">http://bioinformatics.oxfordjournals.org/cgi/content/abstract/23/12/1495</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Sparse+non-negative+matrix+factorizations+via+alternating+non-negativity-constrained+least+squares+for+microarray+data+analysis&amp;rft.jtitle=%5B%5BBioinformatics+%28journal%29%7CBioinformatics%5D%5D&amp;rft.aulast=H.+Kim+and+H.+Park&amp;rft.au=H.+Kim+and+H.+Park&amp;rft.date=2007&amp;rft.volume=23&amp;rft.issue=12&amp;rft.pages=1495%26ndash%3B1502&amp;rft_id=info:doi/10.1093%2Fbioinformatics%2Fbtm134&amp;rft_id=info:pmid/17483501&amp;rft_id=http%3A%2F%2Fbioinformatics.oxfordjournals.org%2Fcgi%2Fcontent%2Fabstract%2F23%2F12%2F1495&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">Cedric Fevotte, Nancy Bertin, and 
+Jean-Louis Durrieu (March 2009). "Nonnegative Matrix Factorization with 
+the Itakura-Saito Divergence. With Application to Music Analysis". <i><a href="http://en.wikipedia.org/wiki/Neural_Computation" title="Neural Computation">Neural Computation</a></i> <b>21</b> (3).</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Nonnegative+Matrix+Factorization+with+the+Itakura-Saito+Divergence.+With+Application+to+Music+Analysis&amp;rft.jtitle=%5B%5BNeural+Computation%5D%5D&amp;rft.aulast=Cedric+Fevotte%2C+Nancy+Bertin%2C+and+Jean-Louis+Durrieu&amp;rft.au=Cedric+Fevotte%2C+Nancy+Bertin%2C+and+Jean-Louis+Durrieu&amp;rft.date=March+2009&amp;rft.volume=21&amp;rft.issue=3&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation Journal">Ali Taylan Cemgil (2009). <a href="http://www.hindawi.com/journals/cin/2009/785152.abs.html" class="external text" rel="nofollow">"Bayesian Inference for Nonnegative Matrix Factorisation Models"</a>. <i><a href="http://en.wikipedia.org/w/index.php?title=Computational_Intelligence_and_Neuroscience&amp;action=edit&amp;redlink=1" class="new" title="Computational Intelligence and Neuroscience (page does not exist)">Computational Intelligence and Neuroscience</a></i> <b>2009</b> (2): 1. <a href="http://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a href="http://dx.doi.org/10.1155%2F2009%2F785152" class="external text" rel="nofollow">10.1155/2009/785152</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/19536273" class="external text" rel="nofollow">19536273</a>. <a href="http://en.wikipedia.org/wiki/PubMed_Central" title="PubMed Central">PMC</a>&nbsp;<a href="http://www.pubmedcentral.gov/articlerender.fcgi?tool=pmcentrez&amp;artid=2688815" class="external text" rel="nofollow">2688815</a><span class="printonly">. <a href="http://www.hindawi.com/journals/cin/2009/785152.abs.html" class="external free" rel="nofollow">http://www.hindawi.com/journals/cin/2009/785152.abs.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Bayesian+Inference+for+Nonnegative+Matrix+Factorisation+Models&amp;rft.jtitle=%5B%5BComputational+Intelligence+and+Neuroscience%5D%5D&amp;rft.aulast=Ali+Taylan+Cemgil&amp;rft.au=Ali+Taylan+Cemgil&amp;rft.date=2009&amp;rft.volume=2009&amp;rft.issue=2&amp;rft.pages=1&amp;rft_id=info:doi/10.1155%2F2009%2F785152&amp;rft_id=info:pmid/19536273&amp;rft_id=http%3A%2F%2Fwww.hindawi.com%2Fjournals%2Fcin%2F2009%2F785152.abs.html&amp;rfr_id=info:sid/en.wikipedia.org:Non-negative_matrix_factorization"><span style="display: none;">&nbsp;</span></span></li>
+</ul>
+</div>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit&amp;section=16" title="Edit section: Software">edit</a>]</span> <span class="mw-headline" id="Software">Software</span></h3>
+<ul>
+<li><a href="http://cran.r-project.org/web/packages/NMFN/index.html" class="external text" rel="nofollow">Non-negative Matrix Factorization</a> <a href="http://en.wikipedia.org/wiki/R_%28programming_language%29" title="R (programming language)">R_(programming_language)</a> implementation by Suhai (Timothy) Liu.</li>
+<li><a href="http://cran.r-project.org/web/packages/NMF/index.html" class="external text" rel="nofollow">Non-negative Matrix Factorization: algorithms and development framework</a> <a href="http://en.wikipedia.org/wiki/R_%28programming_language%29" title="R (programming language)">R_(programming_language)</a>: R-package published on <a href="http://en.wikipedia.org/wiki/CRAN" title="CRAN" class="mw-redirect">CRAN</a>
+ that implements a number of NMF algorithms and provides a framework to 
+test, develop and benchmark new/custom algorithms. [by Renaud Gaujoux].</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 18105/1000000
+Post-expand include size: 154264/2048000 bytes
+Template argument size: 56213/2048000 bytes
+Expensive parser function count: 1/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3681279-0!1!0!default!!en!4 and timestamp 20100726221004 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Non-negative_matrix_factorization">http://en.wikipedia.org/wiki/Non-negative_matrix_factorization</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Linear_algebra" title="Category:Linear algebra">Linear algebra</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Matrix_theory" title="Category:Matrix theory">Matrix theory</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Machine_learning" title="Category:Machine learning">Machine learning</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Multivariate_statistics" title="Category:Multivariate statistics">Multivariate statistics</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Articles_with_dead_external_links_from_May_2009" title="Category:Articles with dead external links from May 2009">Articles with dead external links from May 2009</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li id="pt-prefswitch-link-anon"><a href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativePrefSwitch&amp;from=Non-negative_matrix_factorization" title="Learn about new features" class="no-text-transform">New features</a></li>
+					<li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Non-negative_matrix_factorization" title="You are encouraged to log in; however, it is not mandatory. [alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><a href="http://en.wikipedia.org/wiki/Non-negative_matrix_factorization" title="View the content page [alt-shift-c]" accesskey="c"><span>Article</span></a></li>
+					<li id="ca-talk"><a href="http://en.wikipedia.org/wiki/Talk:Non-negative_matrix_factorization" title="Discussion about the content page [alt-shift-t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="http://en.wikipedia.org/wiki/Non-negative_matrix_factorization"><span>Read</span></a></li>
+					<li id="ca-edit"><a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=edit" title="You can edit this page. 
+Please use the preview button before saving. [alt-shift-e]" accesskey="e"><span>Edit</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;action=history" title="Past versions of this page [alt-shift-h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input name="title" value="Special:Search" type="hidden">
+				<div id="simpleSearch">
+			<input autocomplete="off" class="placeholder" tabindex="1" id="searchInput" name="search" title="Search Wikipedia [alt-shift-f]" accesskey="f" value="Search" type="text">
+			<button id="searchButton" type="submit" name="button" title="Search Wikipedia for this text"><img src="Non-negative_matrix_factorization_files/search-ltr.png" alt="Search"></button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(&quot;http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png&quot;);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal first persistent" id="p-navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+					<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+					<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+					<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+					<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [alt-shift-x]" accesskey="x">Random article</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal expanded" id="p-interaction">
+	<h5 tabindex="2">Interaction</h5>
+	<div style="display: block;" class="body">
+				<ul>
+					<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+					<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+					<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+					<li id="n-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en" title="Support us">Donate to Wikipedia</a></li>
+					<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal collapsed" id="p-tb">
+	<h5 tabindex="3">Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Non-negative_matrix_factorization" title="List of all English Wikipedia pages containing links to this page [alt-shift-j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Non-negative_matrix_factorization" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+																																					<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:Upload" title="Upload files [alt-shift-u]" accesskey="u">Upload file</a></li>
+											<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="List of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+											<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;oldid=373671840" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Non-negative_matrix_factorization&amp;id=373671840" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal collapsed" id="p-coll-print_export">
+	<h5 tabindex="4">Print/export</h5>
+	<div class="body">
+				<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Non-negative+matrix+factorization" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Non-negative+matrix+factorization&amp;oldid=373671840&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Non-negative_matrix_factorization&amp;printable=yes" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li></ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 15 July 2010 at 18:44.<br></li>
+																							<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br></li><li class="noprint"><a class="internal" href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+																							<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="Non-negative_matrix_factorization_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a></li>
+												<li id="footer-icon-copyright"><a href="http://wikimediafoundation.org/"><img src="Non-negative_matrix_factorization_files/wikimedia-button.png" alt="Wikimedia Foundation" height="31" width="88"></a></li>
+							</ul>
+			<div style="clear: both;"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+		<!-- Served by srv175 in 0.061 secs. -->			<div class="suggestions" style="top: 72px; width: 188px; display: none; left: auto; right: 40.9px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

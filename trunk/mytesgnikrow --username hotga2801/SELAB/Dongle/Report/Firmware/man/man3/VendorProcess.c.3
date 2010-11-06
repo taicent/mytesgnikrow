@@ -1,0 +1,132 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <LPC23xx.H>\fP
+.br
+\fC#include 'type.h'\fP
+.br
+\fC#include 'usb.h'\fP
+.br
+\fC#include 'usbcfg.h'\fP
+.br
+\fC#include 'usbhw.h'\fP
+.br
+\fC#include 'usbcore.h'\fP
+.br
+\fC#include 'usbdesc.h'\fP
+.br
+\fC#include 'usbuser.h'\fP
+.br
+\fC#include 'SerialLogger.h'\fP
+.br
+\fC#include 'VendorProcess.h'\fP
+.br
+\fC#include 'LCD.h'\fP
+.br
+\fC#include 'Nhac.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBulk2Out\fP (void)"
+.br
+.ti -1c
+.RI "void \fBBulk2In\fP (void)"
+.br
+.ti -1c
+.RI "void \fBLCD_print\fP ()"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBVendorSetupStage\fP (\fBUSB_SETUP_PACKET\fP *p)"
+.br
+.ti -1c
+.RI "void \fBVendorDataStage\fP (\fBUSB_SETUP_PACKET\fP *p)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBBYTE\fP \fBBulkBuf\fP [MAX_PACKET]"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBBulkLen\fP"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBBufferMemory\fP [512]"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBMemoryLen\fP = 0"
+.br
+.ti -1c
+.RI "unsigned char \fBLCD_Buffer\fP [17]"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBLED_status\fP"
+.br
+.ti -1c
+.RI "int \fBiSongSize\fP [3]"
+.br
+.ti -1c
+.RI "unsigned char \fBsong_custom\fP [256]"
+.br
+.ti -1c
+.RI "int \fBvolume\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void Bulk2In (void)"
+.PP
+Definition at line 51 of file VendorProcess.c.
+.SS "void Bulk2Out (void)"
+.PP
+Definition at line 41 of file VendorProcess.c.
+.SS "void LCD_print ()"
+.PP
+Definition at line 60 of file VendorProcess.c.
+.SS "void VendorDataStage (\fBUSB_SETUP_PACKET\fP * p)"
+.PP
+Definition at line 143 of file VendorProcess.c.
+.SS "\fBBOOL\fP VendorSetupStage (\fBUSB_SETUP_PACKET\fP * p)"
+.PP
+Definition at line 80 of file VendorProcess.c.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBBYTE\fP \fBBufferMemory\fP[512]"
+.PP
+Definition at line 25 of file VendorProcess.c.
+.SS "\fBBYTE\fP \fBBulkBuf\fP[MAX_PACKET]"
+.PP
+Definition at line 23 of file VendorProcess.c.
+.SS "\fBBYTE\fP \fBBulkLen\fP"
+.PP
+Definition at line 24 of file VendorProcess.c.
+.SS "int \fBiSongSize\fP[3]"
+.PP
+Definition at line 71 of file Nhac.c.
+.SS "unsigned char \fBLCD_Buffer\fP[17]"
+.PP
+Definition at line 29 of file VendorProcess.c.
+.SS "\fBBYTE\fP \fBLED_status\fP"
+.PP
+Definition at line 32 of file VendorProcess.c.
+.SS "\fBBYTE\fP \fBMemoryLen\fP = 0"
+.PP
+Definition at line 26 of file VendorProcess.c.
+.SS "unsigned char \fBsong_custom\fP[256]"
+.PP
+Definition at line 61 of file Nhac.c.
+.SS "int \fBvolume\fP"
+.PP
+Definition at line 63 of file Nhac.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

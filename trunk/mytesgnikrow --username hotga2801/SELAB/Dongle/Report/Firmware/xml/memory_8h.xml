@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="memory_8h" kind="file">
+    <compoundname>memory.h</compoundname>
+    <includedby refid="memory_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <invincdepgraph>
+      <node id="184">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="183">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.c</label>
+        <link refid="memory_8c"/>
+      </node>
+      <node id="182">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h</label>
+        <link refid="memory.h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="memory_8h_1addec7d88e04ddfe6ac90caf602636c51" prot="public" static="no">
+        <name>CCLK</name>
+        <initializer>60000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="14" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1a466949ed75d82db02a8369a345ee5d37" prot="public" static="no">
+        <name>LED_MSK</name>
+        <initializer>0x000000FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="17" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1aff25609e29048b82284a1558bbe48736" prot="public" static="no">
+        <name>LED_RD</name>
+        <initializer>0x00000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="18" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1a629b0ce7bab33dededd275dfe713bc10" prot="public" static="no">
+        <name>LED_WR</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="19" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" prot="public" static="no">
+        <name>LED_CFG</name>
+        <initializer>0x00000010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="20" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a166f9155d9fa13d6cf4ecf0e79813fb8" compoundref="usbuser_8c" startline="118" endline="125">USB_Configure_Event</referencedby>
+        <referencedby refid="usbuser_8h_1a81153c365777cdfe7d9e148c372c45b1" compoundref="usbuser_8c" startline="47" endline="50">USB_Reset_Event</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1accd6b55854afa776c3975dab347ec025" prot="public" static="no">
+        <name>LED_SUSP</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="21" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="usbuser_8h_1a1845c45a3015590b54446857bb30805d" compoundref="usbuser_8c" startline="72" endline="74">USB_Resume_Event</referencedby>
+        <referencedby refid="usbuser_8h_1aebfd6340b5852fa5ff4d00487c6371e2" compoundref="usbuser_8c" startline="60" endline="62">USB_Suspend_Event</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="memory_8h_1ab829ac6bf1e7970ae2cfb82b8a3137f8" prot="public" static="no">
+        <name>MSC_ImageSize</name>
+        <initializer>0x00001000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="24" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="memory_8h_1ac95cf7746132dd892d0a183e4796fee3" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char DiskImage[MSC_ImageSize]</definition>
+        <argsstring>[MSC_ImageSize]</argsstring>
+        <name>DiskImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h" line="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>MEMORY.H</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Memory<sp/>Storage<sp/>Demo<sp/>Definitions</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="memory_8h_1addec7d88e04ddfe6ac90caf602636c51" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CCLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60000000<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CPU<sp/>Clock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LED<sp/>Definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="memory_8h_1a466949ed75d82db02a8369a345ee5d37" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_MSK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000000FF<sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.0..7<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="memory_8h_1aff25609e29048b82284a1558bbe48736" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_RD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001<sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="memory_8h_1a629b0ce7bab33dededd275dfe713bc10" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_WR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002<sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="memory_8h_1a7e43552d113811c8d942d78e5f3f595f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_CFG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010<sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="memory_8h_1accd6b55854afa776c3975dab347ec025" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SUSP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000020<sp/><sp/></highlight><highlight class="comment">/*<sp/>P2.5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MSC<sp/>Disk<sp/>Image<sp/>Definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="memory_8h_1ab829ac6bf1e7970ae2cfb82b8a3137f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSC_ImageSize<sp/><sp/><sp/>0x00001000</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="memory_8h_1ac95cf7746132dd892d0a183e4796fee3" kindref="member">DiskImage</ref>[<ref refid="memory_8h_1ab829ac6bf1e7970ae2cfb82b8a3137f8" kindref="member">MSC_ImageSize</ref>];<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disk<sp/>Image<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/memory.h"/>
+  </compounddef>
+</doxygen>

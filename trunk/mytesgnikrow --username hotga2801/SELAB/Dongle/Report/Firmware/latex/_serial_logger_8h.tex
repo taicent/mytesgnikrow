@@ -1,0 +1,453 @@
+\hypertarget{_serial_logger_8h}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h File Reference}
+\label{_serial_logger_8h}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.h}}
+}
+{\ttfamily \#include \char`\"{}string.h\char`\"{}}\par
+Include dependency graph for SerialLogger.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_serial_logger_8h_aabf4f709c8199e41cf279c77112345fe}{MAX\_\-LEN}~32
+\item 
+\#define \hyperlink{_serial_logger_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}~0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_serial_logger_8h_ab11a5d77be2222a37d0b47e6556251f7}{init\_\-serial} (void)
+\item 
+int \hyperlink{_serial_logger_8h_ae96b42af8a6476ad4053485da5c5bf5b}{sendchar} (int ch)
+\item 
+int \hyperlink{_serial_logger_8h_ab64e30a75b8aec4b68b30dc0f0e6488c}{getkey} (void)
+\item 
+void \hyperlink{_serial_logger_8h_ad06e1585ed9e18ecaf35ea5c567127a2}{newline} (void)
+\item 
+void \hyperlink{_serial_logger_8h_a667637823a3816eb31dd8003ff2b5f94}{sendstring} (char $\ast$str)
+\item 
+void \hyperlink{_serial_logger_8h_a18dec1e1c775ed5b7e5d83f3625431ee}{getstring} (char $\ast$str, int size)
+\item 
+int \hyperlink{_serial_logger_8h_ac57c564379e296f8923156cbfbe36623}{getnumber} (void)
+\item 
+void \hyperlink{_serial_logger_8h_aa273603471b41047bed597fa602d84ff}{PLog} (char $\ast$str)
+\item 
+void \hyperlink{_serial_logger_8h_a85e13bfe0137723371b75f2b88a1f285}{PLogN} (char $\ast$str)
+\item 
+void \hyperlink{_serial_logger_8h_a09f479908cbf75429509b76cbd9c3142}{PLogNum} (int num)
+\item 
+void \hyperlink{_serial_logger_8h_aa8a9a8836962d890b4939c112fd29190}{reverse} (char s\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_serial_logger_8h_af749add1ff19b6ff96a62f35ebb49b7e}{itoa} (int n, char s\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_serial_logger_8h_aabf4f709c8199e41cf279c77112345fe}{
+\index{SerialLogger.h@{SerialLogger.h}!MAX\_\-LEN@{MAX\_\-LEN}}
+\index{MAX\_\-LEN@{MAX\_\-LEN}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{MAX\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-LEN~32}}
+\label{_serial_logger_8h_aabf4f709c8199e41cf279c77112345fe}
+
+
+Definition at line 15 of file SerialLogger.h.
+
+\hypertarget{_serial_logger_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{
+\index{SerialLogger.h@{SerialLogger.h}!NULL@{NULL}}
+\index{NULL@{NULL}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{NULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define NULL~0}}
+\label{_serial_logger_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}
+
+
+Definition at line 19 of file SerialLogger.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_serial_logger_8h_ab64e30a75b8aec4b68b30dc0f0e6488c}{
+\index{SerialLogger.h@{SerialLogger.h}!getkey@{getkey}}
+\index{getkey@{getkey}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{getkey}]{\setlength{\rightskip}{0pt plus 5cm}int getkey (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_ab64e30a75b8aec4b68b30dc0f0e6488c}
+
+
+Definition at line 66 of file SerialLogger.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_serial_logger_8h_ab64e30a75b8aec4b68b30dc0f0e6488c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_ac57c564379e296f8923156cbfbe36623}{
+\index{SerialLogger.h@{SerialLogger.h}!getnumber@{getnumber}}
+\index{getnumber@{getnumber}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{getnumber}]{\setlength{\rightskip}{0pt plus 5cm}int getnumber (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_ac57c564379e296f8923156cbfbe36623}
+
+
+Definition at line 161 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{_serial_logger_8h_ac57c564379e296f8923156cbfbe36623_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_a18dec1e1c775ed5b7e5d83f3625431ee}{
+\index{SerialLogger.h@{SerialLogger.h}!getstring@{getstring}}
+\index{getstring@{getstring}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{getstring}]{\setlength{\rightskip}{0pt plus 5cm}void getstring (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str, }
+\item[{int}]{ size}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_a18dec1e1c775ed5b7e5d83f3625431ee}
+
+
+Definition at line 91 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_serial_logger_8h_a18dec1e1c775ed5b7e5d83f3625431ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_ab11a5d77be2222a37d0b47e6556251f7}{
+\index{SerialLogger.h@{SerialLogger.h}!init\_\-serial@{init\_\-serial}}
+\index{init\_\-serial@{init\_\-serial}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{init\_\-serial}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-serial (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_ab11a5d77be2222a37d0b47e6556251f7}
+
+
+Definition at line 42 of file SerialLogger.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{_serial_logger_8h_ab11a5d77be2222a37d0b47e6556251f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_af749add1ff19b6ff96a62f35ebb49b7e}{
+\index{SerialLogger.h@{SerialLogger.h}!itoa@{itoa}}
+\index{itoa@{itoa}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{itoa}]{\setlength{\rightskip}{0pt plus 5cm}void itoa (
+\begin{DoxyParamCaption}
+\item[{int}]{ n, }
+\item[{char}]{ s\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_af749add1ff19b6ff96a62f35ebb49b7e}
+
+
+Definition at line 141 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_serial_logger_8h_af749add1ff19b6ff96a62f35ebb49b7e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h_af749add1ff19b6ff96a62f35ebb49b7e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_ad06e1585ed9e18ecaf35ea5c567127a2}{
+\index{SerialLogger.h@{SerialLogger.h}!newline@{newline}}
+\index{newline@{newline}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{newline}]{\setlength{\rightskip}{0pt plus 5cm}void newline (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_ad06e1585ed9e18ecaf35ea5c567127a2}
+
+
+Definition at line 74 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{_serial_logger_8h_ad06e1585ed9e18ecaf35ea5c567127a2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h_ad06e1585ed9e18ecaf35ea5c567127a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_aa273603471b41047bed597fa602d84ff}{
+\index{SerialLogger.h@{SerialLogger.h}!PLog@{PLog}}
+\index{PLog@{PLog}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{PLog}]{\setlength{\rightskip}{0pt plus 5cm}void PLog (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_aa273603471b41047bed597fa602d84ff}
+
+
+Definition at line 226 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_serial_logger_8h_aa273603471b41047bed597fa602d84ff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=374pt]{_serial_logger_8h_aa273603471b41047bed597fa602d84ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_a85e13bfe0137723371b75f2b88a1f285}{
+\index{SerialLogger.h@{SerialLogger.h}!PLogN@{PLogN}}
+\index{PLogN@{PLogN}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{PLogN}]{\setlength{\rightskip}{0pt plus 5cm}void PLogN (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_a85e13bfe0137723371b75f2b88a1f285}
+
+
+Definition at line 235 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_serial_logger_8h_a85e13bfe0137723371b75f2b88a1f285_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=380pt]{_serial_logger_8h_a85e13bfe0137723371b75f2b88a1f285_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_a09f479908cbf75429509b76cbd9c3142}{
+\index{SerialLogger.h@{SerialLogger.h}!PLogNum@{PLogNum}}
+\index{PLogNum@{PLogNum}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{PLogNum}]{\setlength{\rightskip}{0pt plus 5cm}void PLogNum (
+\begin{DoxyParamCaption}
+\item[{int}]{ num}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_a09f479908cbf75429509b76cbd9c3142}
+
+
+Definition at line 243 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{_serial_logger_8h_a09f479908cbf75429509b76cbd9c3142_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=394pt]{_serial_logger_8h_a09f479908cbf75429509b76cbd9c3142_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_aa8a9a8836962d890b4939c112fd29190}{
+\index{SerialLogger.h@{SerialLogger.h}!reverse@{reverse}}
+\index{reverse@{reverse}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}void reverse (
+\begin{DoxyParamCaption}
+\item[{char}]{ s\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_aa8a9a8836962d890b4939c112fd29190}
+
+
+Definition at line 128 of file SerialLogger.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h_aa8a9a8836962d890b4939c112fd29190_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_ae96b42af8a6476ad4053485da5c5bf5b}{
+\index{SerialLogger.h@{SerialLogger.h}!sendchar@{sendchar}}
+\index{sendchar@{sendchar}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{sendchar}]{\setlength{\rightskip}{0pt plus 5cm}int sendchar (
+\begin{DoxyParamCaption}
+\item[{int}]{ ch}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_ae96b42af8a6476ad4053485da5c5bf5b}
+
+
+Definition at line 58 of file SerialLogger.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h_ae96b42af8a6476ad4053485da5c5bf5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_serial_logger_8h_a667637823a3816eb31dd8003ff2b5f94}{
+\index{SerialLogger.h@{SerialLogger.h}!sendstring@{sendstring}}
+\index{sendstring@{sendstring}!SerialLogger.h@{SerialLogger.h}}
+\subsubsection[{sendstring}]{\setlength{\rightskip}{0pt plus 5cm}void sendstring (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str}
+\end{DoxyParamCaption}
+)}}
+\label{_serial_logger_8h_a667637823a3816eb31dd8003ff2b5f94}
+
+
+Definition at line 81 of file SerialLogger.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{_serial_logger_8h_a667637823a3816eb31dd8003ff2b5f94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_serial_logger_8h_a667637823a3816eb31dd8003ff2b5f94_icgraph}
+\end{center}
+\end{figure}
+
+

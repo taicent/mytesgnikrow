@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classlibsvm_1_1svm.html#ac4e700b829a54dd7288e6941d7ade418" title="libsvm.svm.svm_predict" alt="" coords="257,5,415,35"/>
+<area shape="rect" id="node7" href="$classlibsvm_1_1svm.html#a50d9c958840931560989a657514da889" title="libsvm.svm.svm_predict_probability" alt="" coords="464,57,688,87"/>
+<area shape="rect" id="node5" href="$classlibsvm_1_1svm.html#a4f11227fa986302b335f5b66ff757d14" title="libsvm.svm.svm_cross_validation" alt="" coords="736,32,947,61"/>
+</map>

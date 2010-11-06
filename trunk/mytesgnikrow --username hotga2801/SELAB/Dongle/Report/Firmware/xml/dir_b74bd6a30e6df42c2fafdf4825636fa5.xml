@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="dir_b74bd6a30e6df42c2fafdf4825636fa5" kind="dir">
+    <compoundname>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/</compoundname>
+    <innerdir refid="dir_49ef657ee884d23a251ea0bc1c3da479">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/"/>
+  </compounddef>
+</doxygen>

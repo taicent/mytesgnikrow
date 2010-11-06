@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StockMarket">
+</Property><Property Name="Solution File" Value="G:\SELAB\Stock\StockMarket\StockMarket.sln">
+</Property><Property Name="User Options File" Value="G:\SELAB\Stock\StockMarket\StockMarket.suo">
+</Property><Property Name="Date" Value="Friday, August 13, 2010">
+</Property><Property Name="Time" Value="8:28 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="StockMarket.sln" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket.sln">
+</Event><Event ErrorLevel="0" Project="" Source="StockMarket.suo" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket.suo">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\StockMarket.csproj" Description="Project file successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\StockMarket.csproj">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\DuongXuTheGui.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\DuongXuTheGui.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\DuongXuTheGui.Designer.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\DuongXuTheGui.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\MainGui.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\MainGui.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\MainGui.Designer.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\MainGui.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Program.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Program.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Properties\Resources.Designer.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Properties\Settings.Designer.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\XuLyDuLieuVao.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\XuLyDuLieuVao.cs">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Properties\Settings.settings" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\DuongXuTheGui.resx" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\DuongXuTheGui.resx">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\MainGui.resx" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\MainGui.resx">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\Properties\Resources.resx" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\StockMarket\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\StockMarket.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StockMarket" Source="StockMarket\StockMarket.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BUS" Source="BUS\BUS.csproj" Description="Project file successfully backed up as G:\SELAB\Stock\StockMarket\Backup\BUS\BUS.csproj">
+</Event><Event ErrorLevel="0" Project="BUS" Source="BUS\DuongXuThe.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\BUS\DuongXuThe.cs">
+</Event><Event ErrorLevel="0" Project="BUS" Source="BUS\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\BUS\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="BUS" Source="BUS\BUS.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BUS" Source="BUS\BUS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\DTO.csproj" Description="Project file successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DTO\DTO.csproj">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\DuLieuMaCK.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DTO\DuLieuMaCK.cs">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\DuLieuNgay.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DTO\DuLieuNgay.cs">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DTO\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\DTO.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DTO" Source="DTO\DTO.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\DAO.csproj" Description="Project file successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DAO\DAO.csproj">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\Class1.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DAO\Class1.cs">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\SELAB\Stock\StockMarket\Backup\DAO\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\DAO.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DAO" Source="DAO\DAO.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="StockMarket.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StockMarket.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StockMarket" Source="StockMarket\StockMarket.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="BUS" Source="BUS\BUS.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DTO" Source="DTO\DTO.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\DAO.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

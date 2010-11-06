@@ -1,0 +1,189 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <LPC23xx.H>\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDELAY_2N\fP   0"
+.br
+.ti -1c
+.RI "#define \fBLineLen\fP   16"
+.br
+.ti -1c
+.RI "#define \fBNumLines\fP   2"
+.br
+.ti -1c
+.RI "#define \fBPIN_E\fP   0x80000000"
+.br
+.ti -1c
+.RI "#define \fBPIN_RW\fP   0x20000000"
+.br
+.ti -1c
+.RI "#define \fBPIN_RS\fP   0x10000000"
+.br
+.ti -1c
+.RI "#define \fBPINS_CTRL\fP   0xB0000000"
+.br
+.ti -1c
+.RI "#define \fBPINS_DATA\fP   0x0F000000"
+.br
+.ti -1c
+.RI "#define \fBLCD_E\fP(x)   ((x) ? (IOSET1 = PIN_E)  : (IOCLR1 = PIN_E) );"
+.br
+.ti -1c
+.RI "#define \fBLCD_RW\fP(x)   ((x) ? (IOSET1 = PIN_RW) : (IOCLR1 = PIN_RW));"
+.br
+.ti -1c
+.RI "#define \fBLCD_RS\fP(x)   ((x) ? (IOSET1 = PIN_RS) : (IOCLR1 = PIN_RS));"
+.br
+.ti -1c
+.RI "#define \fBLCD_DATA_IN\fP   ((IOPIN1 >> 24) & 0xF)"
+.br
+.ti -1c
+.RI "#define \fBLCD_DATA_OUT\fP(x)   IOCLR1 = PINS_DATA; IOSET1 = (x & 0xF) << 24;"
+.br
+.ti -1c
+.RI "#define \fBLCD_ALL_DIR_OUT\fP   IODIR1  |=  PINS_CTRL | PINS_DATA;"
+.br
+.ti -1c
+.RI "#define \fBLCD_DATA_DIR_IN\fP   IODIR1 &= ~PINS_DATA;"
+.br
+.ti -1c
+.RI "#define \fBLCD_DATA_DIR_OUT\fP   IODIR1 |=  PINS_DATA;"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlcd_write_4bit\fP (unsigned char c)"
+.br
+.ti -1c
+.RI "void \fBlcd_write_cmd\fP (unsigned char c)"
+.br
+.ti -1c
+.RI "void \fBlcd_putchar\fP (char c)"
+.br
+.ti -1c
+.RI "void \fBlcd_init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBset_cursor\fP (unsigned char column, unsigned char line)"
+.br
+.ti -1c
+.RI "void \fBlcd_clear\fP (void)"
+.br
+.ti -1c
+.RI "void \fBlcd_print\fP (unsigned char const *string)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const unsigned char \fBUserFont\fP [8][8]"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define DELAY_2N   0"
+.PP
+Definition at line 22 of file LCD_4bit.c.
+.SS "#define LCD_ALL_DIR_OUT   IODIR1  |=  PINS_CTRL | PINS_DATA;"
+.PP
+Definition at line 72 of file LCD_4bit.c.
+.SS "#define LCD_DATA_DIR_IN   IODIR1 &= ~PINS_DATA;"
+.PP
+Definition at line 75 of file LCD_4bit.c.
+.SS "#define LCD_DATA_DIR_OUT   IODIR1 |=  PINS_DATA;"
+.PP
+Definition at line 78 of file LCD_4bit.c.
+.SS "#define LCD_DATA_IN   ((IOPIN1 >> 24) & 0xF)"
+.PP
+Definition at line 66 of file LCD_4bit.c.
+.SS "#define LCD_DATA_OUT(x)   IOCLR1 = PINS_DATA; IOSET1 = (x & 0xF) << 24;"
+.PP
+Definition at line 69 of file LCD_4bit.c.
+.SS "#define LCD_E(x)   ((x) ? (IOSET1 = PIN_E)  : (IOCLR1 = PIN_E) );"
+.PP
+Definition at line 57 of file LCD_4bit.c.
+.SS "#define LCD_RS(x)   ((x) ? (IOSET1 = PIN_RS) : (IOCLR1 = PIN_RS));"
+.PP
+Definition at line 63 of file LCD_4bit.c.
+.SS "#define LCD_RW(x)   ((x) ? (IOSET1 = PIN_RW) : (IOCLR1 = PIN_RW));"
+.PP
+Definition at line 60 of file LCD_4bit.c.
+.SS "#define LineLen   16"
+.PP
+Definition at line 26 of file LCD_4bit.c.
+.SS "#define NumLines   2"
+.PP
+Definition at line 27 of file LCD_4bit.c.
+.SS "#define PIN_E   0x80000000"
+.PP
+Definition at line 43 of file LCD_4bit.c.
+.SS "#define PIN_RS   0x10000000"
+.PP
+Definition at line 45 of file LCD_4bit.c.
+.SS "#define PIN_RW   0x20000000"
+.PP
+Definition at line 44 of file LCD_4bit.c.
+.SS "#define PINS_CTRL   0xB0000000"
+.PP
+Definition at line 46 of file LCD_4bit.c.
+.SS "#define PINS_DATA   0x0F000000"
+.PP
+Definition at line 47 of file LCD_4bit.c.
+.SH "Function Documentation"
+.PP 
+.SS "void lcd_clear (void)"
+.PP
+Definition at line 280 of file LCD_4bit.c.
+.SS "void lcd_init (void)"
+.PP
+Definition at line 226 of file LCD_4bit.c.
+.SS "void lcd_print (unsigned char const * string)"
+.PP
+Definition at line 293 of file LCD_4bit.c.
+.SS "void lcd_putchar (char c)"
+.PP
+Definition at line 214 of file LCD_4bit.c.
+.SS "void lcd_write_4bit (unsigned char c)"
+.PP
+Definition at line 165 of file LCD_4bit.c.
+.SS "void lcd_write_cmd (unsigned char c)"
+.PP
+Definition at line 182 of file LCD_4bit.c.
+.SS "void set_cursor (unsigned char column, unsigned char line)"
+.PP
+Definition at line 265 of file LCD_4bit.c.
+.SH "Variable Documentation"
+.PP 
+.SS "const unsigned char \fBUserFont\fP[8][8]"\fBInitial value:\fP
+.PP
+.nf
+ {
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10 },
+  { 0x18,0x18,0x18,0x18,0x18,0x18,0x18,0x18 },
+  { 0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C },
+  { 0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E },
+  { 0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 }
+}
+.fi
+.PP
+Definition at line 84 of file LCD_4bit.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

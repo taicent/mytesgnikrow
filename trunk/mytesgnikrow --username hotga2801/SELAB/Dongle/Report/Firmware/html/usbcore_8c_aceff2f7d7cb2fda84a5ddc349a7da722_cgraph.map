@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbcore_8c.html#af77737c9a9cf487c2d21bdb77904d5b4" title="USB_DataInStage" alt="" coords="191,32,316,61"/>
+<area shape="rect" id="node5" href="$usbhw_8c.html#af89c6611adcf552f28f8fa6d598cac4e" title="USB_WriteEP" alt="" coords="367,32,471,61"/>
+<area shape="rect" id="node7" href="$usbhw_8c.html#ac1d673d6c8125e922cdbd2367cd11bd0" title="EPAdr" alt="" coords="524,5,583,35"/>
+<area shape="rect" id="node9" href="$usbhw_8c.html#aabfdde22bba3e76cac496cd1b719ab61" title="WrCmd" alt="" coords="520,59,587,88"/>
+</map>
