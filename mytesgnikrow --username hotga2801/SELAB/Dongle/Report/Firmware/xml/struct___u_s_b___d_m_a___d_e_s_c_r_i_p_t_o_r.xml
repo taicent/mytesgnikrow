@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r" kind="struct" prot="public">
+    <compoundname>_USB_DMA_DESCRIPTOR</compoundname>
+    <includes refid="usbhw_8h" local="no">usbhw.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a057b0f9ba2a9d4251d7e5a41db249f31" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD BufAdr</definition>
+        <argsstring></argsstring>
+        <name>BufAdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="59" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ac463cf64df0fba444245360ab3391063" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD BufLen</definition>
+        <argsstring></argsstring>
+        <name>BufLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="60" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1aa53121f397d5b937dcee535b938634fa" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD MaxSize</definition>
+        <argsstring></argsstring>
+        <name>MaxSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="61" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a151d903bfb9136dc83f3ecdcbddcf31f" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD InfoAdr</definition>
+        <argsstring></argsstring>
+        <name>InfoAdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="62" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a2bbfd9b40166a3222981f37e2031110d" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD Link</definition>
+        <argsstring></argsstring>
+        <name>Link</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="65" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a2367169731085616ca27edbf975bf4eb" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD IsoEP</definition>
+        <argsstring></argsstring>
+        <name>IsoEP</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="66" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ac2bacb61775d42b4f06bdf9432d30c9d" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD ATLE</definition>
+        <argsstring></argsstring>
+        <name>ATLE</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="67" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ae37ab54b2bf6ea4f9462f8d70f101465" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD Rsrvd</definition>
+        <argsstring></argsstring>
+        <name>Rsrvd</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="68" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a96cf4769c94aabe17db9bf199e5dddd1" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD LenPos</definition>
+        <argsstring></argsstring>
+        <name>LenPos</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="69" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a05d670c70cee2df071e2593f20a5397c" prot="public" static="no" mutable="no">
+        <type>struct _USB_DMA_DESCRIPTOR::@2::@3</type>
+        <definition>struct _USB_DMA_DESCRIPTOR::@2::@3  Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="70"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a1a2aefd22f32fe19c7a40fd62958b591" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></type>
+        <definition>DWORD Val</definition>
+        <argsstring></argsstring>
+        <name>Val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="71" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a86e1a345ecd66bb8f2c014dba75301fe" prot="public" static="no" mutable="no">
+        <type>union _USB_DMA_DESCRIPTOR::@2</type>
+        <definition>union _USB_DMA_DESCRIPTOR::@2  Cfg</definition>
+        <argsstring></argsstring>
+        <name>Cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" line="58" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.h" bodystart="58" bodyend="73"/>
+    <listofallmembers>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ac2bacb61775d42b4f06bdf9432d30c9d" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>ATLE</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a057b0f9ba2a9d4251d7e5a41db249f31" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>BufAdr</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ac463cf64df0fba444245360ab3391063" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>BufLen</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a86e1a345ecd66bb8f2c014dba75301fe" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>Cfg</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a151d903bfb9136dc83f3ecdcbddcf31f" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>InfoAdr</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a2367169731085616ca27edbf975bf4eb" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>IsoEP</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a96cf4769c94aabe17db9bf199e5dddd1" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>LenPos</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a2bbfd9b40166a3222981f37e2031110d" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>Link</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1aa53121f397d5b937dcee535b938634fa" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>MaxSize</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1ae37ab54b2bf6ea4f9462f8d70f101465" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>Rsrvd</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a05d670c70cee2df071e2593f20a5397c" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>Type</name></member>
+      <member refid="struct___u_s_b___d_m_a___d_e_s_c_r_i_p_t_o_r_1a1a2aefd22f32fe19c7a40fd62958b591" prot="public" virt="non-virtual"><scope>_USB_DMA_DESCRIPTOR</scope><name>Val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbhw_8h.html#a4a495bb8aad00e53d6ccc260914728a7" title="USB_ClrStallEP" alt="" coords="299,7,413,36"/>
+<area shape="rect" id="node10" href="$usbhw_8h.html#a54a2914070c64801b8d8942b787fffad" title="USB_ConfigEP" alt="" coords="119,163,228,192"/>
+<area shape="rect" id="node18" href="$usbhw_8h.html#a799c3767044e65fbd0d4acf68f744b8c" title="USB_DisableEP" alt="" coords="115,216,232,246"/>
+<area shape="rect" id="node22" href="$usbhw_8h.html#a17981e6ecec0686cdc36add27965beba" title="USB_EnableEP" alt="" coords="116,270,231,299"/>
+<area shape="rect" id="node26" href="$usbhw_8h.html#a2ca65c3e8ac1bd48abf2f47b120d829e" title="USB_ReadEP" alt="" coords="304,322,408,351"/>
+<area shape="rect" id="node41" href="$usbhw_8h.html#a5aeec24896e63d9133efc8da2cbec8d5" title="USB_ResetEP" alt="" coords="120,110,227,139"/>
+<area shape="rect" id="node45" href="$usbhw_8h.html#a4f1e92236582cabc967b1ff489c100b6" title="USB_SetStallEP" alt="" coords="296,60,416,90"/>
+<area shape="rect" id="node49" href="$usbhw_8h.html#af89c6611adcf552f28f8fa6d598cac4e" title="USB_WriteEP" alt="" coords="121,608,225,638"/>
+<area shape="rect" id="node5" href="$usbuser_8h.html#a9c3a7f8c05ae502486199cde17caceff" title="USB_EndPoint0" alt="" coords="679,344,793,374"/>
+<area shape="rect" id="node7" href="$usbcore_8c.html#aa6a4eb8cb65fe43fd8628667b6ea94b1" title="USB_SetClrFeature" alt="" coords="487,59,623,88"/>
+<area shape="rect" id="node12" href="$usbcore_8c.html#a1240609e800f022746bbb3d38e3aa76b" title="USB_SetConfiguration" alt="" coords="281,162,431,191"/>
+<area shape="rect" id="node15" href="$usbcore_8c.html#a6cc0e4fa0f86d3b9e66dd6055f9dfa77" title="USB_SetInterface" alt="" coords="293,215,419,244"/>
+<area shape="rect" id="node28" href="$_vendor_process_8h.html#a5766b84280d44ddbcb14eb100073c787" title="Bulk2Out" alt="" coords="517,478,592,507"/>
+<area shape="rect" id="node32" href="$usbcore_8h.html#a147ac40813dde8a168086e312a8aeff7" title="USB_DataOutStage" alt="" coords="485,264,624,294"/>
+<area shape="rect" id="node35" href="$usbcore_8c.html#ac0076a5289eba0843bf484db9a6b44c3" title="USB_SetupStage" alt="" coords="493,318,616,347"/>
+<area shape="rect" id="node38" href="$usbcore_8h.html#a860cd794341aff47dd390c4cadcec3e7" title="USB_StatusOutStage" alt="" coords="480,371,629,400"/>
+<area shape="rect" id="node30" href="$usbuser_8h.html#a4b4aa50a6df5e5d071c5237fe4e36887" title="USB_EndPoint2" alt="" coords="679,634,793,663"/>
+<area shape="rect" id="node51" href="$_vendor_process_8h.html#ace51331de08ae3277df50967a88a2074" title="Bulk2In" alt="" coords="324,764,388,794"/>
+<area shape="rect" id="node54" href="$usbcore_8h.html#af77737c9a9cf487c2d21bdb77904d5b4" title="USB_DataInStage" alt="" coords="293,582,419,611"/>
+<area shape="rect" id="node66" href="$usbcore_8h.html#abd896ba7757ca7b9b9ae8a8d5bdabda5" title="USB_StatusInStage" alt="" coords="287,660,425,690"/>
+<area shape="rect" id="node57" href="$usbcore_8c.html#aceff2f7d7cb2fda84a5ddc349a7da722" title="USB_GetDescriptor" alt="" coords="487,582,623,611"/>
+<area shape="rect" id="node60" href="$usbcore_8c.html#a95369438fa761f9c7ba0ac9b646fe8c2" title="USB_GetStatus" alt="" coords="497,424,612,454"/>
+<area shape="rect" id="node63" href="$_vendor_process_8h.html#a37fc332c09d1bf492be4af4570ec7c56" title="VendorSetupStage" alt="" coords="489,635,620,664"/>
+<area shape="rect" id="node69" href="$_vendor_process_8h.html#a64197d1e830bdafa1ea2ca821189e45b" title="VendorDataStage" alt="" coords="493,688,616,718"/>
+</map>

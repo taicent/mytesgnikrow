@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_vendor_process_8h" kind="file">
+    <compoundname>VendorProcess.h</compoundname>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbuser_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="320">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.c</label>
+        <link refid="usbuser_8c"/>
+      </node>
+      <node id="321">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="318">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h</label>
+        <link refid="VendorProcess.h"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_vendor_process_8h_1ac0622da4c10cb51a289339edcd13fce2" prot="public" static="no">
+        <name>MAX_PACKET</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="5" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1acc1bf838f5ab3b32d1e6317e739be601" prot="public" static="no">
+        <name>MAX_BULK_BUFFER</name>
+        <initializer>8 * 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="6" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1ab38d3a21da45656bc1c229b1686ddae5" prot="public" static="no">
+        <name>BULK_EP_IN</name>
+        <initializer>0x82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="9" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1ace51331de08ae3277df50967a88a2074" compoundref="_vendor_process_8c" startline="51" endline="58">Bulk2In</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a3d723b63edcb6928cc4ed353a1dfe1f6" prot="public" static="no">
+        <name>BULK_EP_OUT</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="10" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" compoundref="_vendor_process_8c" startline="41" endline="48">Bulk2Out</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a29283c0ea9ab711ff8ab3b4112fdfc10" prot="public" static="no">
+        <name>VC_LCD_CLEAR</name>
+        <initializer>0xD1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="12" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" prot="public" static="no">
+        <name>VC_LCD_SET_TEXT</name>
+        <initializer>0xD2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="13" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a306292d73a3f9061479fa813202e5b41" prot="public" static="no">
+        <name>VC_DAC_MUSIC1</name>
+        <initializer>0xD3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="15" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a385631a1cdf15793eb3aab6aba05af6a" prot="public" static="no">
+        <name>VC_DAC_MUSIC2</name>
+        <initializer>0xD4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="16" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1abb6d7234f11ee0272657f22e81758f14" prot="public" static="no">
+        <name>VC_DAC_MUSIC_BY_DATA</name>
+        <initializer>0xD5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="17" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a69131917e2bf78f9891280a18315b62f" prot="public" static="no">
+        <name>VC_LCD_SET_TEXT_NO_DATA</name>
+        <initializer>0xD6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="19" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a221c6d6161b502c6f2f7a11db3f15529" prot="public" static="no">
+        <name>VC_GET_LIGHT_BAR</name>
+        <initializer>0xD7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="21" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" prot="public" static="no">
+        <name>VC_SET_LIGHT_BAR</name>
+        <initializer>0xD8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="22" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a3fea0ea64f7e37ec177df2e87d6ee6f1" prot="public" static="no">
+        <name>VC_DAC_STOP_MUSIC</name>
+        <initializer>0xD9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="24" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" prot="public" static="no">
+        <name>VC_DAC_SET_VOLUME</name>
+        <initializer>0xDA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="25" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vendor_process_8h_1a53ecc21d0b6f1b63b4f944963f76d33f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReplyStatusLed</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReplyStatusLed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1a13dbdaf4cf10c069d02afbefa1887b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetStatusLed</definition>
+        <argsstring>(void)</argsstring>
+        <name>SetStatusLed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1a5766b84280d44ddbcb14eb100073c787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bulk2Out</definition>
+        <argsstring>(void)</argsstring>
+        <name>Bulk2Out</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="30" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="41" bodyend="48"/>
+        <references refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" compoundref="_vendor_process_8c" startline="25">BufferMemory</references>
+        <references refid="_vendor_process_8h_1a3d723b63edcb6928cc4ed353a1dfe1f6" compoundref="_vendor_process_8h" startline="10">BULK_EP_OUT</references>
+        <references refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" compoundref="_vendor_process_8c" startline="23">BulkBuf</references>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" compoundref="_vendor_process_8c" startline="26">MemoryLen</references>
+        <references refid="usbhw_8c_1a2ca65c3e8ac1bd48abf2f47b120d829e" compoundref="usbhw_8c" startline="367" endline="390">USB_ReadEP</references>
+        <referencedby refid="usbuser_8h_1a4b4aa50a6df5e5d071c5237fe4e36887" compoundref="usbuser_8c" startline="192" endline="207">USB_EndPoint2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1ace51331de08ae3277df50967a88a2074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bulk2In</definition>
+        <argsstring>(void)</argsstring>
+        <name>Bulk2In</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="32" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="51" bodyend="58"/>
+        <references refid="_vendor_process_8h_1ab38d3a21da45656bc1c229b1686ddae5" compoundref="_vendor_process_8h" startline="9">BULK_EP_IN</references>
+        <references refid="_vendor_process_8c_1ac536922987dbd612a5d185975007d929" compoundref="_vendor_process_8c" startline="23">BulkBuf</references>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="usbhw_8c_1af89c6611adcf552f28f8fa6d598cac4e" compoundref="usbhw_8c" startline="403" endline="421">USB_WriteEP</references>
+        <referencedby refid="usbuser_8h_1a4b4aa50a6df5e5d071c5237fe4e36887" compoundref="usbuser_8c" startline="192" endline="207">USB_EndPoint2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref></type>
+        <definition>BOOL VendorSetupStage</definition>
+        <argsstring>(USB_SETUP_PACKET *p)</argsstring>
+        <name>VendorSetupStage</name>
+        <param>
+          <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="34" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="80" bodyend="141"/>
+        <references refid="_vendor_process_8c_1ab5307562601a4db4b13ac311118589f8" compoundref="_vendor_process_8c" startline="25">BufferMemory</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" compoundref="usbcore_8h" startline="23">_USB_EP_DATA::Count</references>
+        <references refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" compoundref="usbcore_8c" startline="42">EP0Data</references>
+        <references refid="type_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="type_8h" startline="10">FALSE</references>
+        <references refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</references>
+        <references refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</references>
+        <references refid="_vendor_process_8c_1a2e9ce8ec17c7461f1476559214a9ad88" compoundref="_vendor_process_8c" startline="26">MemoryLen</references>
+        <references refid="_nhac_8c_1aea0ea691cc36610b05b6a39ef04a7f88" compoundref="_nhac_8c" startline="133" endline="138">NhacCustom</references>
+        <references refid="_nhac_8c_1a5b00dad3126cd573e82ea3f7ccdd0a8c" compoundref="_nhac_8c" startline="126" endline="131">NhacOff</references>
+        <references refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" compoundref="_nhac_8c" startline="118" endline="124">NhacOn</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="type_8h" startline="14">TRUE</references>
+        <references refid="usbcore_8c_1af77737c9a9cf487c2d21bdb77904d5b4" compoundref="usbcore_8c" startline="83" endline="97">USB_DataInStage</references>
+        <references refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" compoundref="usbcore_8c" startline="125" endline="130">USB_StatusInStage</references>
+        <references refid="_vendor_process_8h_1a306292d73a3f9061479fa813202e5b41" compoundref="_vendor_process_8h" startline="15">VC_DAC_MUSIC1</references>
+        <references refid="_vendor_process_8h_1a385631a1cdf15793eb3aab6aba05af6a" compoundref="_vendor_process_8h" startline="16">VC_DAC_MUSIC2</references>
+        <references refid="_vendor_process_8h_1abb6d7234f11ee0272657f22e81758f14" compoundref="_vendor_process_8h" startline="17">VC_DAC_MUSIC_BY_DATA</references>
+        <references refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" compoundref="_vendor_process_8h" startline="25">VC_DAC_SET_VOLUME</references>
+        <references refid="_vendor_process_8h_1a3fea0ea64f7e37ec177df2e87d6ee6f1" compoundref="_vendor_process_8h" startline="24">VC_DAC_STOP_MUSIC</references>
+        <references refid="_vendor_process_8h_1a221c6d6161b502c6f2f7a11db3f15529" compoundref="_vendor_process_8h" startline="21">VC_GET_LIGHT_BAR</references>
+        <references refid="_vendor_process_8h_1a29283c0ea9ab711ff8ab3b4112fdfc10" compoundref="_vendor_process_8h" startline="12">VC_LCD_CLEAR</references>
+        <references refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" compoundref="_vendor_process_8h" startline="13">VC_LCD_SET_TEXT</references>
+        <references refid="_vendor_process_8h_1a69131917e2bf78f9891280a18315b62f" compoundref="_vendor_process_8h" startline="19">VC_LCD_SET_TEXT_NO_DATA</references>
+        <references refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" compoundref="_vendor_process_8h" startline="22">VC_SET_LIGHT_BAR</references>
+        <references refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" compoundref="_nhac_8c" startline="63">volume</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VendorDataStage</definition>
+        <argsstring>(USB_SETUP_PACKET *p)</argsstring>
+        <name>VendorDataStage</name>
+        <param>
+          <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="35" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c" bodystart="143" bodyend="175"/>
+        <references refid="_vendor_process_8c_1a1a890886e85b733ff2e22dc66597f426" compoundref="_vendor_process_8c" startline="24">BulkLen</references>
+        <references refid="usbcore_8c_1ae48f7fef62babbd6888b920a0d7238a6" compoundref="usbcore_8c" startline="42">EP0Data</references>
+        <references refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</references>
+        <references refid="_vendor_process_8c_1aeccdaf93a26fd8e86aecd5b2ab24971a" compoundref="_vendor_process_8c" startline="32">LED_status</references>
+        <references refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" compoundref="usbcore_8h" startline="22">_USB_EP_DATA::pData</references>
+        <references refid="_serial_logger_8c_1aa273603471b41047bed597fa602d84ff" compoundref="_serial_logger_8c" startline="226" endline="233">PLog</references>
+        <references refid="_serial_logger_8c_1a85e13bfe0137723371b75f2b88a1f285" compoundref="_serial_logger_8c" startline="235" endline="241">PLogN</references>
+        <references refid="_serial_logger_8c_1a09f479908cbf75429509b76cbd9c3142" compoundref="_serial_logger_8c" startline="243" endline="252">PLogNum</references>
+        <references refid="usbcore_8c_1abd896ba7757ca7b9b9ae8a8d5bdabda5" compoundref="usbcore_8c" startline="125" endline="130">USB_StatusInStage</references>
+        <references refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" compoundref="_vendor_process_8h" startline="25">VC_DAC_SET_VOLUME</references>
+        <references refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" compoundref="_vendor_process_8h" startline="13">VC_LCD_SET_TEXT</references>
+        <references refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" compoundref="_vendor_process_8h" startline="22">VC_SET_LIGHT_BAR</references>
+        <references refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" compoundref="_nhac_8c" startline="63">volume</references>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_process_8h_1aa2eaea21b607f166bac9256b1214ae6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VendorStatusInStage</definition>
+        <argsstring>(USB_SETUP_PACKET *p)</argsstring>
+        <name>VendorStatusInStage</name>
+        <param>
+          <type><ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" line="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__BULK_PROCESS__</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__BULK_PROCESS__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Max<sp/>In/Out<sp/>Packet<sp/>Size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_vendor_process_8h_1ac0622da4c10cb51a289339edcd13fce2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_PACKET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight></codeline>
+<codeline lineno="6" refid="_vendor_process_8h_1acc1bf838f5ab3b32d1e6317e739be601" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_BULK_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8<sp/>*<sp/>1024</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MSC<sp/>In/Out<sp/>Endpoint<sp/>Address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_vendor_process_8h_1ab38d3a21da45656bc1c229b1686ddae5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BULK_EP_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x82</highlight></codeline>
+<codeline lineno="10" refid="_vendor_process_8h_1a3d723b63edcb6928cc4ed353a1dfe1f6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BULK_EP_OUT<sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_vendor_process_8h_1a29283c0ea9ab711ff8ab3b4112fdfc10" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VC_LCD_CLEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD1</highlight></codeline>
+<codeline lineno="13" refid="_vendor_process_8h_1a2300603b28859c55065a83068be98edf" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VC_LCD_SET_TEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>LCD<sp/>Co<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_vendor_process_8h_1a306292d73a3f9061479fa813202e5b41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VC_DAC_MUSIC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD3</highlight></codeline>
+<codeline lineno="16" refid="_vendor_process_8h_1a385631a1cdf15793eb3aab6aba05af6a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VC_DAC_MUSIC2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD4</highlight></codeline>
+<codeline lineno="17" refid="_vendor_process_8h_1abb6d7234f11ee0272657f22e81758f14" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VC_DAC_MUSIC_BY_DATA<sp/><sp/>0xD5</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_vendor_process_8h_1a69131917e2bf78f9891280a18315b62f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VC_LCD_SET_TEXT_NO_DATA<sp/>0xD6</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_vendor_process_8h_1a221c6d6161b502c6f2f7a11db3f15529" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VC_GET_LIGHT_BAR<sp/><sp/><sp/><sp/><sp/><sp/>0xD7</highlight></codeline>
+<codeline lineno="22" refid="_vendor_process_8h_1a979d9f6415b2f3f057e988aa9a123b3b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VC_SET_LIGHT_BAR<sp/><sp/><sp/><sp/><sp/><sp/>0xD8</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_vendor_process_8h_1a3fea0ea64f7e37ec177df2e87d6ee6f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VC_DAC_STOP_MUSIC<sp/><sp/><sp/><sp/><sp/><sp/>0xD9</highlight></codeline>
+<codeline lineno="25" refid="_vendor_process_8h_1a71164e5b3d95524a36d3cdc118eba8f4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VC_DAC_SET_VOLUME<sp/><sp/><sp/><sp/><sp/><sp/>0xDA</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a53ecc21d0b6f1b63b4f944963f76d33f" kindref="member">ReplyStatusLed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1a13dbdaf4cf10c069d02afbefa1887b16" kindref="member">SetStatusLed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1a5766b84280d44ddbcb14eb100073c787" kindref="member">Bulk2Out</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1ace51331de08ae3277df50967a88a2074" kindref="member">Bulk2In</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="type_8h_1ac3247c51e4e3de674affb32998e133e2" kindref="member">BOOL</ref><sp/><ref refid="_vendor_process_8c_1a37fc332c09d1bf492be4af4570ec7c56" kindref="member">VendorSetupStage</ref>(<ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8c_1a64197d1e830bdafa1ea2ca821189e45b" kindref="member">VendorDataStage</ref>(<ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_vendor_process_8h_1aa2eaea21b607f166bac9256b1214ae6f" kindref="member">VendorStatusInStage</ref>(<ref refid="usb_8h_1a09baf2b5283af3e8a60df63264e1c351" kindref="member">USB_SETUP_PACKET</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="comment">/*<sp/>__BULK_PROCESS__*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h"/>
+  </compounddef>
+</doxygen>

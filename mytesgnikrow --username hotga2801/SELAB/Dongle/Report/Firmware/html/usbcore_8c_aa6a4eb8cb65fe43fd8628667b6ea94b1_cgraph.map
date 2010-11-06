@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbhw_8c.html#a4a495bb8aad00e53d6ccc260914728a7" title="USB_ClrStallEP" alt="" coords="195,59,309,88"/>
+<area shape="rect" id="node9" href="$usbhw_8c.html#a4f1e92236582cabc967b1ff489c100b6" title="USB_SetStallEP" alt="" coords="192,5,312,35"/>
+<area shape="rect" id="node13" href="$usbhw_8c.html#aa418ebef4fceb6e3f0ad86b424bd6c5d" title="USB_WakeUpCfg" alt="" coords="189,112,315,141"/>
+<area shape="rect" id="node5" href="$usbhw_8c.html#ac1d673d6c8125e922cdbd2367cd11bd0" title="EPAdr" alt="" coords="377,5,436,35"/>
+<area shape="rect" id="node7" href="$usbhw_8c.html#ad70e939022ae1ae94bbbf9460413e366" title="WrCmdDat" alt="" coords="364,59,449,88"/>
+</map>

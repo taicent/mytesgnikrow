@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: usbhidioc - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/usbhidioc.res" /d "NDEBUG" /d "_AFXDLL" "C:\Keil\ARM\Utilities\HID_Client2\usbhidioc.rc"" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSPE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\98ddk\src\hid\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/usbhidioc.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Keil\ARM\Utilities\HID_Client2\usbhidioc.cpp"
+"C:\Keil\ARM\Utilities\HID_Client2\usbhidiocDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSPE.tmp" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSPF.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\98ddk\src\hid\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/usbhidioc.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Keil\ARM\Utilities\HID_Client2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSPF.tmp" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+hid.lib setupapi.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/usbhidioc.pdb" /machine:I386 /out:"Release/usbhidioc.exe" /libpath:"\98ddk\lib\i386\free" 
+.\Release\StdAfx.obj
+.\Release\usbhidioc.obj
+.\Release\usbhidiocDlg.obj
+.\Release\usbhidioc.res
+]
+Creating command line "link.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP10.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+usbhidioc.cpp
+usbhidiocDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+usbhidioc.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: usbhidioc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/usbhidioc.res" /d "_DEBUG" /d "_AFXDLL" "C:\Keil\ARM\Utilities\HID_Client2\usbhidioc.rc"" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "\98ddk\src\hid\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/usbhidioc.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Keil\ARM\Utilities\HID_Client2\usbhidioc.cpp"
+"C:\Keil\ARM\Utilities\HID_Client2\usbhidiocDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP12.tmp" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "\98ddk\src\hid\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/usbhidioc.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Keil\ARM\Utilities\HID_Client2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP13.tmp" 
+Creating temporary file "C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP14.tmp" with contents
+[
+hid.lib setupapi.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/usbhidioc.pdb" /debug /machine:I386 /out:"Debug/usbhidioc.exe" /pdbtype:sept /libpath:"\98ddk\lib\i386\free" 
+.\Debug\StdAfx.obj
+.\Debug\usbhidioc.obj
+.\Debug\usbhidiocDlg.obj
+.\Debug\usbhidioc.res
+]
+Creating command line "link.exe @C:\DOCUME~1\mh_\LOCALS~1\Temp\RSP14.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+usbhidioc.cpp
+usbhidiocDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+usbhidioc.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

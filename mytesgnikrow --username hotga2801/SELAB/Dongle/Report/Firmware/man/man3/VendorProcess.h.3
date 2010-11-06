@@ -1,0 +1,143 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_PACKET\fP   64"
+.br
+.ti -1c
+.RI "#define \fBMAX_BULK_BUFFER\fP   8 * 1024"
+.br
+.ti -1c
+.RI "#define \fBBULK_EP_IN\fP   0x82"
+.br
+.ti -1c
+.RI "#define \fBBULK_EP_OUT\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBVC_LCD_CLEAR\fP   0xD1"
+.br
+.ti -1c
+.RI "#define \fBVC_LCD_SET_TEXT\fP   0xD2"
+.br
+.ti -1c
+.RI "#define \fBVC_DAC_MUSIC1\fP   0xD3"
+.br
+.ti -1c
+.RI "#define \fBVC_DAC_MUSIC2\fP   0xD4"
+.br
+.ti -1c
+.RI "#define \fBVC_DAC_MUSIC_BY_DATA\fP   0xD5"
+.br
+.ti -1c
+.RI "#define \fBVC_LCD_SET_TEXT_NO_DATA\fP   0xD6"
+.br
+.ti -1c
+.RI "#define \fBVC_GET_LIGHT_BAR\fP   0xD7"
+.br
+.ti -1c
+.RI "#define \fBVC_SET_LIGHT_BAR\fP   0xD8"
+.br
+.ti -1c
+.RI "#define \fBVC_DAC_STOP_MUSIC\fP   0xD9"
+.br
+.ti -1c
+.RI "#define \fBVC_DAC_SET_VOLUME\fP   0xDA"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBReplyStatusLed\fP (void)"
+.br
+.ti -1c
+.RI "void \fBSetStatusLed\fP (void)"
+.br
+.ti -1c
+.RI "void \fBBulk2Out\fP (void)"
+.br
+.ti -1c
+.RI "void \fBBulk2In\fP (void)"
+.br
+.ti -1c
+.RI "\fBBOOL\fP \fBVendorSetupStage\fP (\fBUSB_SETUP_PACKET\fP *p)"
+.br
+.ti -1c
+.RI "void \fBVendorDataStage\fP (\fBUSB_SETUP_PACKET\fP *p)"
+.br
+.ti -1c
+.RI "void \fBVendorStatusInStage\fP (\fBUSB_SETUP_PACKET\fP *p)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define BULK_EP_IN   0x82"
+.PP
+Definition at line 9 of file VendorProcess.h.
+.SS "#define BULK_EP_OUT   0x02"
+.PP
+Definition at line 10 of file VendorProcess.h.
+.SS "#define MAX_BULK_BUFFER   8 * 1024"
+.PP
+Definition at line 6 of file VendorProcess.h.
+.SS "#define MAX_PACKET   64"
+.PP
+Definition at line 5 of file VendorProcess.h.
+.SS "#define VC_DAC_MUSIC1   0xD3"
+.PP
+Definition at line 15 of file VendorProcess.h.
+.SS "#define VC_DAC_MUSIC2   0xD4"
+.PP
+Definition at line 16 of file VendorProcess.h.
+.SS "#define VC_DAC_MUSIC_BY_DATA   0xD5"
+.PP
+Definition at line 17 of file VendorProcess.h.
+.SS "#define VC_DAC_SET_VOLUME   0xDA"
+.PP
+Definition at line 25 of file VendorProcess.h.
+.SS "#define VC_DAC_STOP_MUSIC   0xD9"
+.PP
+Definition at line 24 of file VendorProcess.h.
+.SS "#define VC_GET_LIGHT_BAR   0xD7"
+.PP
+Definition at line 21 of file VendorProcess.h.
+.SS "#define VC_LCD_CLEAR   0xD1"
+.PP
+Definition at line 12 of file VendorProcess.h.
+.SS "#define VC_LCD_SET_TEXT   0xD2"
+.PP
+Definition at line 13 of file VendorProcess.h.
+.SS "#define VC_LCD_SET_TEXT_NO_DATA   0xD6"
+.PP
+Definition at line 19 of file VendorProcess.h.
+.SS "#define VC_SET_LIGHT_BAR   0xD8"
+.PP
+Definition at line 22 of file VendorProcess.h.
+.SH "Function Documentation"
+.PP 
+.SS "void Bulk2In (void)"
+.PP
+Definition at line 51 of file VendorProcess.c.
+.SS "void Bulk2Out (void)"
+.PP
+Definition at line 41 of file VendorProcess.c.
+.SS "void ReplyStatusLed (void)"
+.SS "void SetStatusLed (void)"
+.SS "void VendorDataStage (\fBUSB_SETUP_PACKET\fP * p)"
+.PP
+Definition at line 143 of file VendorProcess.c.
+.SS "\fBBOOL\fP VendorSetupStage (\fBUSB_SETUP_PACKET\fP * p)"
+.PP
+Definition at line 80 of file VendorProcess.c.
+.SS "void VendorStatusInStage (\fBUSB_SETUP_PACKET\fP * p)"
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

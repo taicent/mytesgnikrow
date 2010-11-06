@@ -1,0 +1,141 @@
+/*
+	print.css
+	---------
+	defines rules for printer-friendly CSS version of site
+*/
+ 
+* { background: none !important; }
+
+A { color: #333 !important; text-decoration: none !important; }
+
+#LayoutWrapper { min-width: 0; }
+#ToolBarWrapper { display: none; }
+#Header,
+#Body,
+#FooterWrapper { width: auto; padding-right: 0; padding-left: 0; }
+
+.column-side { display: none !important; }
+.column-main { width: auto !important; margin: 0 !important; float: none; }
+
+.InnerLayout-Col-3-bdr { margin: 0; } /*firefox*/
+.InnerLayout-Col-3-bdr .column { width: 30%; padding: 0 2%; border-right: 1px dotted #C2C2C2; }
+* HTML .InnerLayout-Col-3-bdr .column { border-right: 1px solid #E1E1E1; }
+.InnerLayout-Col-3-bdr .column-1 { padding-left: 0; }
+.InnerLayout-Col-3-bdr .column-3 { padding-right: 0; border: 0; }
+
+
+UL.bullet { margin-left: 0.9em; padding-left: 0.9em; list-style: square; }
+UL.bullet LI { padding: 0; }
+
+LI.PDF,
+LI.print,
+LI.download { padding-top: 0; padding-left: 0; min-height: 0; height: auto !important; }
+
+.box { border: 1px solid #509BC2; }
+
+.page-tools,
+IMG.button,
+.results-actions,
+.results-controls,
+.results-pagination,
+.more,
+P.links,
+.support,
+#popup-search-preferences,
+#access-full-txt { display: none !important; }
+
+#Header #search-field,
+#search-field FIELDSET * { display: none; }
+.Home .column-main #search-field FIELDSET.search-field { padding: 0; }
+#search-field FIELDSET P.lead { display: block; }
+#search-field FIELDSET P.lead STRONG { display: inline; }
+
+
+UL.tab-menu { margin: 0; }
+.MainContent UL.tab-menu { border-bottom: 1px solid #CDE2EE; }
+UL.tab-menu LI A { display: none; }
+UL.tab-menu LI.selected A { display: block; }
+UL.tab-menu LI.selected A SPAN { border: 1px solid #CDE2EE; border-bottom: 0; padding: 6px 15px 3px; }
+UL.tab-menu-style-2 LI.selected A SPAN { border-color: #FDD28E; }
+.MainContent .contentheader-tabbed { border: 0; }
+
+UL.listview LI { padding: 10px 15px 5px !important; }
+UL.listview .content { width: auto !important; float: none !important; }
+UL.listview .select,
+UL.listview .tools { display: none; }
+
+#results-hdr { border: 1px solid #509BC2; }
+
+UL.Results .select,
+UL.Results .tools { display: none; }
+UL.Results .detail { width: auto; float: none; }
+UL.Results .abstract { padding: 0; }
+
+
+#browse-title-hdr,
+#browse-subject-hdr,
+.browse-results-bar P.links { display: none; }
+#browse-society-hdr .column { width: 45%; }
+UL.Browsing .header,
+UL.Browsing .summary { padding-right: 15px; padding-left: 15px; }
+UL.Browsing .detail { width: auto; float: none; }
+UL.Browsing .tools { display: none; }
+
+
+#adv-search-nav { margin: 0; }
+#AdvancedSearchPage .contentheader H2 { padding-left: 0; }
+.advanced-search .primary-fields P.field-group { white-space: nowrap; }
+.advanced-search FIELDSET.primary-fields,
+.advanced-search FIELDSET.refine-search { width: auto; } 
+.expert-search .column-1 { float: none; width: auto; }
+.expert-search .column-2 { display: none; }
+.crossref-search .section .column { float: none; width: auto; }
+
+
+#RegisterPage .column { float: none; width: auto; }
+
+
+#favorite-titles .column { width: 44%; padding-left: 3%; padding-right: 3%; }
+.Home .column-main .box-wrap { margin-left: 0; }
+.Home .column-main .box-wrap .box { width: 29%; margin: 0 2%; }
+* HTML .Home .column-main .box-wrap { width: auto; }
+
+
+#file-cabinet-hdr .content,
+#project-hdr .content { width: 64%; padding-right: 3%; border-right: 1px dotted #C2C2C2; }
+* HTML #file-cabinet-hdr .content,
+* HTML #project-hdr .content { border-right: 1px solid #E1E1E1; }
+#file-cabinet-hdr .auxcontent,
+#project-hdr .auxcontent { width: 30%; }
+#project-hdr .auxcontent A { display: none; }
+
+
+.featured-profile { padding-left: 4%; padding-right: 4%; border: 0; }
+.featured-profile .column-1 { width: 56%; }
+.featured-profile .column-2 { width: 31%; }
+
+
+.ContributorsArea .section .header { border-bottom: 1px dotted #C2C2C2; }
+* HTML .ContributorsArea .section .header { border-bottom: 1px solid #E1E1E1; }
+.ContributorsArea TR { border-bottom: 1px solid #F0F0F0; }
+.ContributorsArea #help-with-project { display: none; }
+
+
+#alertsfeeds-hdr A,
+#alertsfeeds-hdr IMG.icon,
+UL.AlertsFeeds UL,
+UL.AlertsFeeds .select { display: none; }
+
+UL.Searches UL,
+UL.Searches .select { display: none; }
+
+#browse-home-hdr { padding-left: 3%; padding-right: 3%; }
+
+#browse-home-hdr .content { width: 63%; padding-right: 2%; border-right: 1px dotted #C2C2C2; }
+#browse-home-hdr .auxcontent { width: 31%; }
+#browse-home-hdr .content UL.list-1 { width: 55%; }
+#browse-home-hdr .content UL.list-2 { width: 31%; }
+
+#BrowseHomePage .col-3-wrap .column { width: 29%; margin: 0 2%; }
+
+.listview-col-hdr { border: 0; }

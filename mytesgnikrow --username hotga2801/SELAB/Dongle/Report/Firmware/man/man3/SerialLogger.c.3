@@ -1,0 +1,160 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/SerialLogger.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <LPC23xx.H>\fP
+.br
+\fC#include 'SerialLogger.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART0\fP"
+.br
+.ti -1c
+.RI "#define \fBUxFDR\fP   U0FDR"
+.br
+.ti -1c
+.RI "#define \fBUxLCR\fP   U0LCR"
+.br
+.ti -1c
+.RI "#define \fBUxDLL\fP   U0DLL"
+.br
+.ti -1c
+.RI "#define \fBUxDLM\fP   U0DLM"
+.br
+.ti -1c
+.RI "#define \fBUxLSR\fP   U0LSR"
+.br
+.ti -1c
+.RI "#define \fBUxTHR\fP   U0THR"
+.br
+.ti -1c
+.RI "#define \fBUxRBR\fP   U0RBR"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_serial\fP (void)"
+.br
+.ti -1c
+.RI "int \fBsendchar\fP (int ch)"
+.br
+.ti -1c
+.RI "int \fBgetkey\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnewline\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsendstring\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBgetstring\fP (char *str, int size)"
+.br
+.ti -1c
+.RI "void \fBreverse\fP (char s[])"
+.br
+.ti -1c
+.RI "void \fBitoa\fP (int n, char s[])"
+.br
+.ti -1c
+.RI "int \fBgetnumber\fP (void)"
+.br
+.ti -1c
+.RI "void \fBPLog\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBPLogN\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBPLogNum\fP (int num)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBUSE_SERIAL_LOGGER\fP = 1"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define UART0"
+.PP
+Definition at line 19 of file SerialLogger.c.
+.SS "#define UxDLL   U0DLL"
+.PP
+Definition at line 25 of file SerialLogger.c.
+.SS "#define UxDLM   U0DLM"
+.PP
+Definition at line 26 of file SerialLogger.c.
+.SS "#define UxFDR   U0FDR"
+.PP
+Definition at line 23 of file SerialLogger.c.
+.SS "#define UxLCR   U0LCR"
+.PP
+Definition at line 24 of file SerialLogger.c.
+.SS "#define UxLSR   U0LSR"
+.PP
+Definition at line 27 of file SerialLogger.c.
+.SS "#define UxRBR   U0RBR"
+.PP
+Definition at line 29 of file SerialLogger.c.
+.SS "#define UxTHR   U0THR"
+.PP
+Definition at line 28 of file SerialLogger.c.
+.SH "Function Documentation"
+.PP 
+.SS "int getkey (void)"
+.PP
+Definition at line 66 of file SerialLogger.c.
+.SS "int getnumber (void)"
+.PP
+Definition at line 161 of file SerialLogger.c.
+.SS "void getstring (char * str, int size)"
+.PP
+Definition at line 91 of file SerialLogger.c.
+.SS "void init_serial (void)"
+.PP
+Definition at line 42 of file SerialLogger.c.
+.SS "void itoa (int n, char s[])"
+.PP
+Definition at line 141 of file SerialLogger.c.
+.SS "void newline (void)"
+.PP
+Definition at line 74 of file SerialLogger.c.
+.SS "void PLog (char * str)"
+.PP
+Definition at line 226 of file SerialLogger.c.
+.SS "void PLogN (char * str)"
+.PP
+Definition at line 235 of file SerialLogger.c.
+.SS "void PLogNum (int num)"
+.PP
+Definition at line 243 of file SerialLogger.c.
+.SS "void reverse (char s[])"
+.PP
+Definition at line 128 of file SerialLogger.c.
+.SS "int sendchar (int ch)"
+.PP
+Definition at line 58 of file SerialLogger.c.
+.SS "void sendstring (char * str)"
+.PP
+Definition at line 81 of file SerialLogger.c.
+.SH "Variable Documentation"
+.PP 
+.SS "int \fBUSE_SERIAL_LOGGER\fP = 1"
+.PP
+Definition at line 17 of file SerialLogger.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

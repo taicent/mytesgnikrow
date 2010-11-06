@@ -1,0 +1,13 @@
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.exe
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.pdb
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\StockMarket.exe
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\StockMarket.pdb
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\BUS.dll
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\DTO.dll
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\BUS.pdb
+G:\SELAB\Stock\StockMarket\StockMarket\bin\x86\Debug\DTO.pdb
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.DuongXuTheGui.resources
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.MainGui.resources
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.Properties.Resources.resources
+G:\SELAB\Stock\StockMarket\StockMarket\obj\x86\Debug\StockMarket.csproj.GenerateResource.Cache

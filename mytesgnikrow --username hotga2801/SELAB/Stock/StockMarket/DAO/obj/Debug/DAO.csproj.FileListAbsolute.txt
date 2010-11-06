@@ -1,0 +1,7 @@
+G:\SELAB\Stock\StockMarket\DAO\bin\Debug\DAO.dll
+G:\SELAB\Stock\StockMarket\DAO\bin\Debug\DAO.pdb
+G:\SELAB\Stock\StockMarket\DAO\bin\Debug\DTO.dll
+G:\SELAB\Stock\StockMarket\DAO\bin\Debug\DTO.pdb
+G:\SELAB\Stock\StockMarket\DAO\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Stock\StockMarket\DAO\obj\Debug\DAO.dll
+G:\SELAB\Stock\StockMarket\DAO\obj\Debug\DAO.pdb

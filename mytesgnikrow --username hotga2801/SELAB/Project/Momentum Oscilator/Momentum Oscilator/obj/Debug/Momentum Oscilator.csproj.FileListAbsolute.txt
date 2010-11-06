@@ -1,0 +1,28 @@
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Form1.resources
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Properties.Resources.resources
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.csproj.GenerateResource.Cache
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\Momentum Oscilator.exe
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\Momentum Oscilator.pdb
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\BUS.dll
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DTO.dll
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\BUS.pdb
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DTO.pdb
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.exe
+G:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.pdb
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.exe
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.pdb
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\Momentum Oscilator.exe
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\Momentum Oscilator.pdb
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\BUS.dll
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DTO.dll
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\BUS.pdb
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DTO.pdb
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\ResolveAssemblyReference.cache
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Form1.resources
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Properties.Resources.resources
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.csproj.GenerateResource.Cache
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DAO.dll
+K:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\bin\Debug\DAO.pdb
+J:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.exe
+J:\SELAB\Project\Momentum Oscilator\Momentum Oscilator\obj\Debug\Momentum Oscilator.pdb

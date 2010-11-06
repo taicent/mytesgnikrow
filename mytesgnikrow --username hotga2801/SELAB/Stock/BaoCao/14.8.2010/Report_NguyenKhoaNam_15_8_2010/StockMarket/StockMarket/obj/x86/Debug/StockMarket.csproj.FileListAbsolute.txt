@@ -1,0 +1,2 @@
+G:\SELAB\Stock\BaoCao\14.8.2010\Report_NguyenKhoaNam_15_8_2010\StockMarket\StockMarket\obj\x86\Debug\StockMarket.exe
+G:\SELAB\Stock\BaoCao\14.8.2010\Report_NguyenKhoaNam_15_8_2010\StockMarket\StockMarket\obj\x86\Debug\StockMarket.pdb

@@ -1,0 +1,340 @@
+\hypertarget{classlibsvm_1_1svm}{
+\section{libsvm.svm Class Reference}
+\label{classlibsvm_1_1svm}\index{libsvm::svm@{libsvm::svm}}
+}
+
+
+Collaboration diagram for libsvm.svm:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classlibsvm_1_1svm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries decision\_\-function}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} \hyperlink{classlibsvm_1_1svm_a004fbb315b52331b29bb808f4e8dc5f6}{svm\_\-train} (\hyperlink{classlibsvm_1_1svm__problem}{svm\_\-problem} prob, \hyperlink{classlibsvm_1_1svm__parameter}{svm\_\-parameter} param)
+\item 
+static void \hyperlink{classlibsvm_1_1svm_a4f11227fa986302b335f5b66ff757d14}{svm\_\-cross\_\-validation} (\hyperlink{classlibsvm_1_1svm__problem}{svm\_\-problem} prob, \hyperlink{classlibsvm_1_1svm__parameter}{svm\_\-parameter} param, int nr\_\-fold, double\mbox{[}$\,$\mbox{]} target)
+\item 
+static int \hyperlink{classlibsvm_1_1svm_ace8ea715955f48726ead1f0f51afef7d}{svm\_\-get\_\-svm\_\-type} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model)
+\item 
+static int \hyperlink{classlibsvm_1_1svm_a7a0dc6c66db65ac709a632f20dd50380}{svm\_\-get\_\-nr\_\-class} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model)
+\item 
+static void \hyperlink{classlibsvm_1_1svm_a3746bd2011ab0a72b2d4c4db942a5e73}{svm\_\-get\_\-labels} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model, int\mbox{[}$\,$\mbox{]} label)
+\item 
+static double \hyperlink{classlibsvm_1_1svm_a3e758cf127a712b376423ef402f8f1ee}{svm\_\-get\_\-svr\_\-probability} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model)
+\item 
+static void \hyperlink{classlibsvm_1_1svm_abb85911e9d78059beba225553498afc5}{svm\_\-predict\_\-values} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model, \hyperlink{classlibsvm_1_1svm__node}{svm\_\-node}\mbox{[}$\,$\mbox{]} x, double\mbox{[}$\,$\mbox{]} dec\_\-values)
+\item 
+static double \hyperlink{classlibsvm_1_1svm_ac4e700b829a54dd7288e6941d7ade418}{svm\_\-predict} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model, \hyperlink{classlibsvm_1_1svm__node}{svm\_\-node}\mbox{[}$\,$\mbox{]} x)
+\item 
+static double \hyperlink{classlibsvm_1_1svm_a50d9c958840931560989a657514da889}{svm\_\-predict\_\-probability} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model, \hyperlink{classlibsvm_1_1svm__node}{svm\_\-node}\mbox{[}$\,$\mbox{]} x, double\mbox{[}$\,$\mbox{]} prob\_\-estimates)
+\item 
+static void \hyperlink{classlibsvm_1_1svm_a932f7dd49e9c2fd8c5348d0c2c92405d}{svm\_\-save\_\-model} (System.String model\_\-file\_\-name, \hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model)
+\item 
+static \hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} \hyperlink{classlibsvm_1_1svm_aafb2d457c405abeaf55be67c0f8acb47}{svm\_\-load\_\-model} (System.String model\_\-file\_\-name)
+\item 
+static System.String \hyperlink{classlibsvm_1_1svm_a750b84dadaa480160f626f2228d41885}{svm\_\-check\_\-parameter} (\hyperlink{classlibsvm_1_1svm__problem}{svm\_\-problem} prob, \hyperlink{classlibsvm_1_1svm__parameter}{svm\_\-parameter} param)
+\item 
+static int \hyperlink{classlibsvm_1_1svm_a5a4e5a0463c895189de63a9641b34435}{svm\_\-check\_\-probability\_\-model} (\hyperlink{classlibsvm_1_1svm__model}{svm\_\-model} model)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1331 of file svm.cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlibsvm_1_1svm_a750b84dadaa480160f626f2228d41885}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-check\_\-parameter@{svm\_\-check\_\-parameter}}
+\index{svm\_\-check\_\-parameter@{svm\_\-check\_\-parameter}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-check\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}static System.String libsvm.svm.svm\_\-check\_\-parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-problem}}]{ prob, }
+\item[{{\bf svm\_\-parameter}}]{ param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a750b84dadaa480160f626f2228d41885}
+
+
+Definition at line 2610 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_a5a4e5a0463c895189de63a9641b34435}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-check\_\-probability\_\-model@{svm\_\-check\_\-probability\_\-model}}
+\index{svm\_\-check\_\-probability\_\-model@{svm\_\-check\_\-probability\_\-model}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-check\_\-probability\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}static int libsvm.svm.svm\_\-check\_\-probability\_\-model (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a5a4e5a0463c895189de63a9641b34435}
+
+
+Definition at line 2710 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_a4f11227fa986302b335f5b66ff757d14}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-cross\_\-validation@{svm\_\-cross\_\-validation}}
+\index{svm\_\-cross\_\-validation@{svm\_\-cross\_\-validation}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-cross\_\-validation}]{\setlength{\rightskip}{0pt plus 5cm}static void libsvm.svm.svm\_\-cross\_\-validation (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-problem}}]{ prob, }
+\item[{{\bf svm\_\-parameter}}]{ param, }
+\item[{int}]{ nr\_\-fold, }
+\item[{double\mbox{[}$\,$\mbox{]}}]{ target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a4f11227fa986302b335f5b66ff757d14}
+
+
+Definition at line 2150 of file svm.cs.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_a4f11227fa986302b335f5b66ff757d14_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibsvm_1_1svm_a3746bd2011ab0a72b2d4c4db942a5e73}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-get\_\-labels@{svm\_\-get\_\-labels}}
+\index{svm\_\-get\_\-labels@{svm\_\-get\_\-labels}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-get\_\-labels}]{\setlength{\rightskip}{0pt plus 5cm}static void libsvm.svm.svm\_\-get\_\-labels (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model, }
+\item[{int\mbox{[}$\,$\mbox{]}}]{ label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a3746bd2011ab0a72b2d4c4db942a5e73}
+
+
+Definition at line 2215 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_a7a0dc6c66db65ac709a632f20dd50380}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-get\_\-nr\_\-class@{svm\_\-get\_\-nr\_\-class}}
+\index{svm\_\-get\_\-nr\_\-class@{svm\_\-get\_\-nr\_\-class}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-get\_\-nr\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}static int libsvm.svm.svm\_\-get\_\-nr\_\-class (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a7a0dc6c66db65ac709a632f20dd50380}
+
+
+Definition at line 2210 of file svm.cs.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_a7a0dc6c66db65ac709a632f20dd50380_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibsvm_1_1svm_ace8ea715955f48726ead1f0f51afef7d}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-get\_\-svm\_\-type@{svm\_\-get\_\-svm\_\-type}}
+\index{svm\_\-get\_\-svm\_\-type@{svm\_\-get\_\-svm\_\-type}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-get\_\-svm\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}static int libsvm.svm.svm\_\-get\_\-svm\_\-type (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_ace8ea715955f48726ead1f0f51afef7d}
+
+
+Definition at line 2205 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_a3e758cf127a712b376423ef402f8f1ee}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-get\_\-svr\_\-probability@{svm\_\-get\_\-svr\_\-probability}}
+\index{svm\_\-get\_\-svr\_\-probability@{svm\_\-get\_\-svr\_\-probability}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-get\_\-svr\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}static double libsvm.svm.svm\_\-get\_\-svr\_\-probability (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a3e758cf127a712b376423ef402f8f1ee}
+
+
+Definition at line 2222 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_aafb2d457c405abeaf55be67c0f8acb47}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-load\_\-model@{svm\_\-load\_\-model}}
+\index{svm\_\-load\_\-model@{svm\_\-load\_\-model}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-load\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf svm\_\-model} libsvm.svm.svm\_\-load\_\-model (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ model\_\-file\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_aafb2d457c405abeaf55be67c0f8acb47}
+
+
+Definition at line 2459 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_ac4e700b829a54dd7288e6941d7ade418}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-predict@{svm\_\-predict}}
+\index{svm\_\-predict@{svm\_\-predict}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}static double libsvm.svm.svm\_\-predict (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model, }
+\item[{{\bf svm\_\-node}\mbox{[}$\,$\mbox{]}}]{ x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_ac4e700b829a54dd7288e6941d7ade418}
+
+
+Definition at line 2283 of file svm.cs.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=388pt]{classlibsvm_1_1svm_ac4e700b829a54dd7288e6941d7ade418_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_ac4e700b829a54dd7288e6941d7ade418_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibsvm_1_1svm_a50d9c958840931560989a657514da889}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-predict\_\-probability@{svm\_\-predict\_\-probability}}
+\index{svm\_\-predict\_\-probability@{svm\_\-predict\_\-probability}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-predict\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}static double libsvm.svm.svm\_\-predict\_\-probability (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model, }
+\item[{{\bf svm\_\-node}\mbox{[}$\,$\mbox{]}}]{ x, }
+\item[{double\mbox{[}$\,$\mbox{]}}]{ prob\_\-estimates}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a50d9c958840931560989a657514da889}
+
+
+Definition at line 2323 of file svm.cs.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_a50d9c958840931560989a657514da889_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_a50d9c958840931560989a657514da889_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibsvm_1_1svm_abb85911e9d78059beba225553498afc5}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-predict\_\-values@{svm\_\-predict\_\-values}}
+\index{svm\_\-predict\_\-values@{svm\_\-predict\_\-values}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-predict\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}static void libsvm.svm.svm\_\-predict\_\-values (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-model}}]{ model, }
+\item[{{\bf svm\_\-node}\mbox{[}$\,$\mbox{]}}]{ x, }
+\item[{double\mbox{[}$\,$\mbox{]}}]{ dec\_\-values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_abb85911e9d78059beba225553498afc5}
+
+
+Definition at line 2233 of file svm.cs.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibsvm_1_1svm_abb85911e9d78059beba225553498afc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibsvm_1_1svm_a932f7dd49e9c2fd8c5348d0c2c92405d}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-save\_\-model@{svm\_\-save\_\-model}}
+\index{svm\_\-save\_\-model@{svm\_\-save\_\-model}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-save\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}static void libsvm.svm.svm\_\-save\_\-model (
+\begin{DoxyParamCaption}
+\item[{System.String}]{ model\_\-file\_\-name, }
+\item[{{\bf svm\_\-model}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a932f7dd49e9c2fd8c5348d0c2c92405d}
+
+
+Definition at line 2366 of file svm.cs.
+
+\hypertarget{classlibsvm_1_1svm_a004fbb315b52331b29bb808f4e8dc5f6}{
+\index{libsvm::svm@{libsvm::svm}!svm\_\-train@{svm\_\-train}}
+\index{svm\_\-train@{svm\_\-train}!libsvm::svm@{libsvm::svm}}
+\subsubsection[{svm\_\-train}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf svm\_\-model} libsvm.svm.svm\_\-train (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\_\-problem}}]{ prob, }
+\item[{{\bf svm\_\-parameter}}]{ param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classlibsvm_1_1svm_a004fbb315b52331b29bb808f4e8dc5f6}
+
+
+Definition at line 1886 of file svm.cs.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=382pt]{classlibsvm_1_1svm_a004fbb315b52331b29bb808f4e8dc5f6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+K:/SELAB/Stock/Source/libsvmdemo/libsvmdemo/\hyperlink{svm_8cs}{svm.cs}\end{DoxyCompactItemize}

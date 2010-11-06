@@ -1,0 +1,900 @@
+\hypertarget{usbreg_8h}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbreg.h File Reference}
+\label{usbreg_8h}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbreg.h@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbreg.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbreg_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usbreg_8h_acd810cb2c578feb523e4457a3ecc5c1f}{FRAME\_\-INT}~0x00000001
+\item 
+\#define \hyperlink{usbreg_8h_a0f0c5afaf73055db35f5d68afc0d0ede}{EP\_\-FAST\_\-INT}~0x00000002
+\item 
+\#define \hyperlink{usbreg_8h_a525aa5f17d8eef8bcc680f818718c35f}{EP\_\-SLOW\_\-INT}~0x00000004
+\item 
+\#define \hyperlink{usbreg_8h_af275198989acad4e8a4e2b7e59a09c8a}{DEV\_\-STAT\_\-INT}~0x00000008
+\item 
+\#define \hyperlink{usbreg_8h_a137c7c5f6c2b0421f42b62f9d6e7168b}{CCEMTY\_\-INT}~0x00000010
+\item 
+\#define \hyperlink{usbreg_8h_a406c6e1ace2c70ee7f264957ce417a45}{CDFULL\_\-INT}~0x00000020
+\item 
+\#define \hyperlink{usbreg_8h_a50d5bc9f5a5c29375180bc9c7fa959a0}{RxENDPKT\_\-INT}~0x00000040
+\item 
+\#define \hyperlink{usbreg_8h_aac7a58c35c70d08ba832d617c0d60fea}{TxENDPKT\_\-INT}~0x00000080
+\item 
+\#define \hyperlink{usbreg_8h_a9c9b23320dbc3649f4eed4e91d190ad7}{EP\_\-RLZED\_\-INT}~0x00000100
+\item 
+\#define \hyperlink{usbreg_8h_ad008a7e4bb0e20f144f938e9bd1735ed}{ERR\_\-INT}~0x00000200
+\item 
+\#define \hyperlink{usbreg_8h_a7fb06bbe3370f59d8ab6a744d431f1f6}{PKT\_\-LNGTH\_\-MASK}~0x000003FF
+\item 
+\#define \hyperlink{usbreg_8h_a0be0ec7ef9b6461def096d38a6bb5dc1}{PKT\_\-DV}~0x00000400
+\item 
+\#define \hyperlink{usbreg_8h_ab6390abfb762b0c8a5c5f14e535a8931}{PKT\_\-RDY}~0x00000800
+\item 
+\#define \hyperlink{usbreg_8h_a59d5f3760f8edf52f2e18584b72ff58f}{CTRL\_\-RD\_\-EN}~0x00000001
+\item 
+\#define \hyperlink{usbreg_8h_aeaa5968e571aa7d90329728836d4c498}{CTRL\_\-WR\_\-EN}~0x00000002
+\item 
+\#define \hyperlink{usbreg_8h_a476471f02bd7f90ee2855990f76efada}{CMD\_\-SET\_\-ADDR}~0x00D00500
+\item 
+\#define \hyperlink{usbreg_8h_aa4e27b27ac428813be32594783f30e72}{CMD\_\-CFG\_\-DEV}~0x00D80500
+\item 
+\#define \hyperlink{usbreg_8h_ab08c18e4b6ea58665d8743bd47182946}{CMD\_\-SET\_\-MODE}~0x00F30500
+\item 
+\#define \hyperlink{usbreg_8h_a864767d642af234c8b755e33ee885d5f}{CMD\_\-RD\_\-FRAME}~0x00F50500
+\item 
+\#define \hyperlink{usbreg_8h_aa29ff436c20c2fd7b40672c61331d751}{DAT\_\-RD\_\-FRAME}~0x00F50200
+\item 
+\#define \hyperlink{usbreg_8h_a7ca44123f32cb7196d3bba8b34aabe1a}{CMD\_\-RD\_\-TEST}~0x00FD0500
+\item 
+\#define \hyperlink{usbreg_8h_a9855fd712b4a47852dda92e8e307a74d}{DAT\_\-RD\_\-TEST}~0x00FD0200
+\item 
+\#define \hyperlink{usbreg_8h_a53990f82aee1e3b7d0e10456f265229c}{CMD\_\-SET\_\-DEV\_\-STAT}~0x00FE0500
+\item 
+\#define \hyperlink{usbreg_8h_a42d3284a06de777ac4224b73401962a0}{CMD\_\-GET\_\-DEV\_\-STAT}~0x00FE0500
+\item 
+\#define \hyperlink{usbreg_8h_a220874da8f06a7285a4358e05799f7cb}{DAT\_\-GET\_\-DEV\_\-STAT}~0x00FE0200
+\item 
+\#define \hyperlink{usbreg_8h_a38d19df706fd75d34b863cfd678e9fd5}{CMD\_\-GET\_\-ERR\_\-CODE}~0x00FF0500
+\item 
+\#define \hyperlink{usbreg_8h_a85951c5fa9f668f6e0bf5782f31fc386}{DAT\_\-GET\_\-ERR\_\-CODE}~0x00FF0200
+\item 
+\#define \hyperlink{usbreg_8h_a23c3adf7c197c85471213061caee8d96}{CMD\_\-RD\_\-ERR\_\-STAT}~0x00FB0500
+\item 
+\#define \hyperlink{usbreg_8h_a7c4e0b734d257f5ed77f6c1aca3043e1}{DAT\_\-RD\_\-ERR\_\-STAT}~0x00FB0200
+\item 
+\#define \hyperlink{usbreg_8h_a3bdce5cc0b05eaaebe27f3b9e7db47e6}{DAT\_\-WR\_\-BYTE}(x)~(0x00000100 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_a080b7d4b7fbb1eb8fb66ddbc31ac0335}{CMD\_\-SEL\_\-EP}(x)~(0x00000500 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_add06b18c986b802cd30817f231a325a3}{DAT\_\-SEL\_\-EP}(x)~(0x00000200 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_a8c23c1b17c508749be6b87e24ff795dd}{CMD\_\-SEL\_\-EP\_\-CLRI}(x)~(0x00400500 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_a0623e4b4754784a8e2f756ca152de5e2}{DAT\_\-SEL\_\-EP\_\-CLRI}(x)~(0x00400200 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_afb02e2bfca8f4b61a54a2aff9ae5c2f6}{CMD\_\-SET\_\-EP\_\-STAT}(x)~(0x00400500 $|$ ((x) $<$$<$ 16))
+\item 
+\#define \hyperlink{usbreg_8h_ae950d5b63a14f2f608d988beaf2290a2}{CMD\_\-CLR\_\-BUF}~0x00F20500
+\item 
+\#define \hyperlink{usbreg_8h_af3105d771147abb3750edad858d9c52b}{DAT\_\-CLR\_\-BUF}~0x00F20200
+\item 
+\#define \hyperlink{usbreg_8h_a555e6af6ea28f6963702de43e37df49f}{CMD\_\-VALID\_\-BUF}~0x00FA0500
+\item 
+\#define \hyperlink{usbreg_8h_afaa35ef822f5e9b18f9f5391335caf58}{DEV\_\-ADDR\_\-MASK}~0x7F
+\item 
+\#define \hyperlink{usbreg_8h_acbd2d57f1c7a43cf4e92e924dbdc99bd}{DEV\_\-EN}~0x80
+\item 
+\#define \hyperlink{usbreg_8h_a82ac0c8908b3c85689d9b4f773403296}{CONF\_\-DVICE}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_abf06189f1b10f49536b6c0e3657433c2}{AP\_\-CLK}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_ac5480c9fa425b592925f9990972882cb}{INAK\_\-CI}~0x02
+\item 
+\#define \hyperlink{usbreg_8h_abf5f5b64e80b6838c2235c53682aa8ab}{INAK\_\-CO}~0x04
+\item 
+\#define \hyperlink{usbreg_8h_ae8c91344bec270ec24fcd9fe83b80ffb}{INAK\_\-II}~0x08
+\item 
+\#define \hyperlink{usbreg_8h_a43990b36599ba2785c94457d9614b30b}{INAK\_\-IO}~0x10
+\item 
+\#define \hyperlink{usbreg_8h_a2b238f964f6f40cb04bcd1cf8a4280a7}{INAK\_\-BI}~0x20
+\item 
+\#define \hyperlink{usbreg_8h_a71a115808198c546f187de9a2a147efb}{INAK\_\-BO}~0x40
+\item 
+\#define \hyperlink{usbreg_8h_a5b6f5830c79daef183553eba90a74563}{DEV\_\-CON}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_a10e1a4e669ad2b4c70c64630ba1d5ded}{DEV\_\-CON\_\-CH}~0x02
+\item 
+\#define \hyperlink{usbreg_8h_acd7dfb56a185c8f760e5e57777295ed2}{DEV\_\-SUS}~0x04
+\item 
+\#define \hyperlink{usbreg_8h_a08a297cb7ed647f49fb15ee8a1c2e7db}{DEV\_\-SUS\_\-CH}~0x08
+\item 
+\#define \hyperlink{usbreg_8h_a956447cbe75fec470a14f7bf19700b21}{DEV\_\-RST}~0x10
+\item 
+\#define \hyperlink{usbreg_8h_a380fc72b0990f55afb4a71250ac8e341}{ERR\_\-EC\_\-MASK}~0x0F
+\item 
+\#define \hyperlink{usbreg_8h_a8ca8a96f375a2ee9d8ca5b13a55f3149}{ERR\_\-EA}~0x10
+\item 
+\#define \hyperlink{usbreg_8h_a31c59b43829ae3cdb82aa878729ddec1}{ERR\_\-PID}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_aa63aa99cd50816158e96645c1f590589}{ERR\_\-UEPKT}~0x02
+\item 
+\#define \hyperlink{usbreg_8h_a18ff3fed953fe8ed9cba141cf94cf830}{ERR\_\-DCRC}~0x04
+\item 
+\#define \hyperlink{usbreg_8h_a22425e6087f22b5e5abb512416bd0eb8}{ERR\_\-TIMOUT}~0x08
+\item 
+\#define \hyperlink{usbreg_8h_ac08be1bac4e620a0602d5208f620121c}{ERR\_\-EOP}~0x10
+\item 
+\#define \hyperlink{usbreg_8h_a4bc2cfbee98f14fb043c05251d473e4d}{ERR\_\-B\_\-OVRN}~0x20
+\item 
+\#define \hyperlink{usbreg_8h_a3c48959c15538b8bd1e529a9afbc9d11}{ERR\_\-BTSTF}~0x40
+\item 
+\#define \hyperlink{usbreg_8h_a69e276e3681167501f068b8404613f6a}{ERR\_\-TGL}~0x80
+\item 
+\#define \hyperlink{usbreg_8h_a5299812e307f61660449b5f7224b4aef}{EP\_\-SEL\_\-F}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_ad59a067332d65a088fe5ad864cfe2e9b}{EP\_\-SEL\_\-ST}~0x02
+\item 
+\#define \hyperlink{usbreg_8h_af5788ac50a0c00bc086f68eeb076add7}{EP\_\-SEL\_\-STP}~0x04
+\item 
+\#define \hyperlink{usbreg_8h_a563e2fd19c40eb157bc42d6d808d9e49}{EP\_\-SEL\_\-PO}~0x08
+\item 
+\#define \hyperlink{usbreg_8h_af1c71c8e5af6dab974106d0e621b3530}{EP\_\-SEL\_\-EPN}~0x10
+\item 
+\#define \hyperlink{usbreg_8h_a0f9faaf9240bda5e440f795f3f141389}{EP\_\-SEL\_\-B\_\-1\_\-FULL}~0x20
+\item 
+\#define \hyperlink{usbreg_8h_a6d88d84c806ab0cf1a34da0dd47ace72}{EP\_\-SEL\_\-B\_\-2\_\-FULL}~0x40
+\item 
+\#define \hyperlink{usbreg_8h_a39c8c109f3bcfc197aeb6512e807c378}{EP\_\-STAT\_\-ST}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_ac2c74d5169ac4c23bb42f9bc5ad520bf}{EP\_\-STAT\_\-DA}~0x20
+\item 
+\#define \hyperlink{usbreg_8h_aee9927c981e0fcfb6c2e95dfd60e2d6a}{EP\_\-STAT\_\-RF\_\-MO}~0x40
+\item 
+\#define \hyperlink{usbreg_8h_a083a207cf5434a5e43782ae08aa9ac88}{EP\_\-STAT\_\-CND\_\-ST}~0x80
+\item 
+\#define \hyperlink{usbreg_8h_a1421cbd804d57765272e6763e58de09a}{CLR\_\-BUF\_\-PO}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_a9cac1332b7d3c0b840e52a4c5ed026a3}{EOT\_\-INT}~0x01
+\item 
+\#define \hyperlink{usbreg_8h_ae76d2431c2776239aca8590ed27ca0b9}{NDD\_\-REQ\_\-INT}~0x02
+\item 
+\#define \hyperlink{usbreg_8h_a6c1cc9421991f2575bc1249d3f7397e4}{SYS\_\-ERR\_\-INT}~0x04
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{usbreg_8h_abf06189f1b10f49536b6c0e3657433c2}{
+\index{usbreg.h@{usbreg.h}!AP\_\-CLK@{AP\_\-CLK}}
+\index{AP\_\-CLK@{AP\_\-CLK}!usbreg.h@{usbreg.h}}
+\subsubsection[{AP\_\-CLK}]{\setlength{\rightskip}{0pt plus 5cm}\#define AP\_\-CLK~0x01}}
+\label{usbreg_8h_abf06189f1b10f49536b6c0e3657433c2}
+
+
+Definition at line 73 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a137c7c5f6c2b0421f42b62f9d6e7168b}{
+\index{usbreg.h@{usbreg.h}!CCEMTY\_\-INT@{CCEMTY\_\-INT}}
+\index{CCEMTY\_\-INT@{CCEMTY\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CCEMTY\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CCEMTY\_\-INT~0x00000010}}
+\label{usbreg_8h_a137c7c5f6c2b0421f42b62f9d6e7168b}
+
+
+Definition at line 24 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a406c6e1ace2c70ee7f264957ce417a45}{
+\index{usbreg.h@{usbreg.h}!CDFULL\_\-INT@{CDFULL\_\-INT}}
+\index{CDFULL\_\-INT@{CDFULL\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CDFULL\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CDFULL\_\-INT~0x00000020}}
+\label{usbreg_8h_a406c6e1ace2c70ee7f264957ce417a45}
+
+
+Definition at line 25 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a1421cbd804d57765272e6763e58de09a}{
+\index{usbreg.h@{usbreg.h}!CLR\_\-BUF\_\-PO@{CLR\_\-BUF\_\-PO}}
+\index{CLR\_\-BUF\_\-PO@{CLR\_\-BUF\_\-PO}!usbreg.h@{usbreg.h}}
+\subsubsection[{CLR\_\-BUF\_\-PO}]{\setlength{\rightskip}{0pt plus 5cm}\#define CLR\_\-BUF\_\-PO~0x01}}
+\label{usbreg_8h_a1421cbd804d57765272e6763e58de09a}
+
+
+Definition at line 118 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aa4e27b27ac428813be32594783f30e72}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-CFG\_\-DEV@{CMD\_\-CFG\_\-DEV}}
+\index{CMD\_\-CFG\_\-DEV@{CMD\_\-CFG\_\-DEV}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-CFG\_\-DEV}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-CFG\_\-DEV~0x00D80500}}
+\label{usbreg_8h_aa4e27b27ac428813be32594783f30e72}
+
+
+Definition at line 42 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ae950d5b63a14f2f608d988beaf2290a2}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-CLR\_\-BUF@{CMD\_\-CLR\_\-BUF}}
+\index{CMD\_\-CLR\_\-BUF@{CMD\_\-CLR\_\-BUF}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-CLR\_\-BUF}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-CLR\_\-BUF~0x00F20500}}
+\label{usbreg_8h_ae950d5b63a14f2f608d988beaf2290a2}
+
+
+Definition at line 61 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a42d3284a06de777ac4224b73401962a0}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-GET\_\-DEV\_\-STAT@{CMD\_\-GET\_\-DEV\_\-STAT}}
+\index{CMD\_\-GET\_\-DEV\_\-STAT@{CMD\_\-GET\_\-DEV\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-GET\_\-DEV\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-GET\_\-DEV\_\-STAT~0x00FE0500}}
+\label{usbreg_8h_a42d3284a06de777ac4224b73401962a0}
+
+
+Definition at line 49 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a38d19df706fd75d34b863cfd678e9fd5}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-GET\_\-ERR\_\-CODE@{CMD\_\-GET\_\-ERR\_\-CODE}}
+\index{CMD\_\-GET\_\-ERR\_\-CODE@{CMD\_\-GET\_\-ERR\_\-CODE}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-GET\_\-ERR\_\-CODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-GET\_\-ERR\_\-CODE~0x00FF0500}}
+\label{usbreg_8h_a38d19df706fd75d34b863cfd678e9fd5}
+
+
+Definition at line 51 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a23c3adf7c197c85471213061caee8d96}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-RD\_\-ERR\_\-STAT@{CMD\_\-RD\_\-ERR\_\-STAT}}
+\index{CMD\_\-RD\_\-ERR\_\-STAT@{CMD\_\-RD\_\-ERR\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-RD\_\-ERR\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-RD\_\-ERR\_\-STAT~0x00FB0500}}
+\label{usbreg_8h_a23c3adf7c197c85471213061caee8d96}
+
+
+Definition at line 53 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a864767d642af234c8b755e33ee885d5f}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-RD\_\-FRAME@{CMD\_\-RD\_\-FRAME}}
+\index{CMD\_\-RD\_\-FRAME@{CMD\_\-RD\_\-FRAME}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-RD\_\-FRAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-RD\_\-FRAME~0x00F50500}}
+\label{usbreg_8h_a864767d642af234c8b755e33ee885d5f}
+
+
+Definition at line 44 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a7ca44123f32cb7196d3bba8b34aabe1a}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-RD\_\-TEST@{CMD\_\-RD\_\-TEST}}
+\index{CMD\_\-RD\_\-TEST@{CMD\_\-RD\_\-TEST}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-RD\_\-TEST}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-RD\_\-TEST~0x00FD0500}}
+\label{usbreg_8h_a7ca44123f32cb7196d3bba8b34aabe1a}
+
+
+Definition at line 46 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a080b7d4b7fbb1eb8fb66ddbc31ac0335}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SEL\_\-EP@{CMD\_\-SEL\_\-EP}}
+\index{CMD\_\-SEL\_\-EP@{CMD\_\-SEL\_\-EP}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SEL\_\-EP}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SEL\_\-EP(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00000500 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_a080b7d4b7fbb1eb8fb66ddbc31ac0335}
+
+
+Definition at line 56 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a8c23c1b17c508749be6b87e24ff795dd}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SEL\_\-EP\_\-CLRI@{CMD\_\-SEL\_\-EP\_\-CLRI}}
+\index{CMD\_\-SEL\_\-EP\_\-CLRI@{CMD\_\-SEL\_\-EP\_\-CLRI}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SEL\_\-EP\_\-CLRI}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SEL\_\-EP\_\-CLRI(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00400500 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_a8c23c1b17c508749be6b87e24ff795dd}
+
+
+Definition at line 58 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a476471f02bd7f90ee2855990f76efada}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SET\_\-ADDR@{CMD\_\-SET\_\-ADDR}}
+\index{CMD\_\-SET\_\-ADDR@{CMD\_\-SET\_\-ADDR}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SET\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SET\_\-ADDR~0x00D00500}}
+\label{usbreg_8h_a476471f02bd7f90ee2855990f76efada}
+
+
+Definition at line 41 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a53990f82aee1e3b7d0e10456f265229c}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SET\_\-DEV\_\-STAT@{CMD\_\-SET\_\-DEV\_\-STAT}}
+\index{CMD\_\-SET\_\-DEV\_\-STAT@{CMD\_\-SET\_\-DEV\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SET\_\-DEV\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SET\_\-DEV\_\-STAT~0x00FE0500}}
+\label{usbreg_8h_a53990f82aee1e3b7d0e10456f265229c}
+
+
+Definition at line 48 of file usbreg.h.
+
+\hypertarget{usbreg_8h_afb02e2bfca8f4b61a54a2aff9ae5c2f6}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SET\_\-EP\_\-STAT@{CMD\_\-SET\_\-EP\_\-STAT}}
+\index{CMD\_\-SET\_\-EP\_\-STAT@{CMD\_\-SET\_\-EP\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SET\_\-EP\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SET\_\-EP\_\-STAT(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00400500 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_afb02e2bfca8f4b61a54a2aff9ae5c2f6}
+
+
+Definition at line 60 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ab08c18e4b6ea58665d8743bd47182946}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-SET\_\-MODE@{CMD\_\-SET\_\-MODE}}
+\index{CMD\_\-SET\_\-MODE@{CMD\_\-SET\_\-MODE}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-SET\_\-MODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-SET\_\-MODE~0x00F30500}}
+\label{usbreg_8h_ab08c18e4b6ea58665d8743bd47182946}
+
+
+Definition at line 43 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a555e6af6ea28f6963702de43e37df49f}{
+\index{usbreg.h@{usbreg.h}!CMD\_\-VALID\_\-BUF@{CMD\_\-VALID\_\-BUF}}
+\index{CMD\_\-VALID\_\-BUF@{CMD\_\-VALID\_\-BUF}!usbreg.h@{usbreg.h}}
+\subsubsection[{CMD\_\-VALID\_\-BUF}]{\setlength{\rightskip}{0pt plus 5cm}\#define CMD\_\-VALID\_\-BUF~0x00FA0500}}
+\label{usbreg_8h_a555e6af6ea28f6963702de43e37df49f}
+
+
+Definition at line 63 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a82ac0c8908b3c85689d9b4f773403296}{
+\index{usbreg.h@{usbreg.h}!CONF\_\-DVICE@{CONF\_\-DVICE}}
+\index{CONF\_\-DVICE@{CONF\_\-DVICE}!usbreg.h@{usbreg.h}}
+\subsubsection[{CONF\_\-DVICE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CONF\_\-DVICE~0x01}}
+\label{usbreg_8h_a82ac0c8908b3c85689d9b4f773403296}
+
+
+Definition at line 70 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a59d5f3760f8edf52f2e18584b72ff58f}{
+\index{usbreg.h@{usbreg.h}!CTRL\_\-RD\_\-EN@{CTRL\_\-RD\_\-EN}}
+\index{CTRL\_\-RD\_\-EN@{CTRL\_\-RD\_\-EN}!usbreg.h@{usbreg.h}}
+\subsubsection[{CTRL\_\-RD\_\-EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CTRL\_\-RD\_\-EN~0x00000001}}
+\label{usbreg_8h_a59d5f3760f8edf52f2e18584b72ff58f}
+
+
+Definition at line 37 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aeaa5968e571aa7d90329728836d4c498}{
+\index{usbreg.h@{usbreg.h}!CTRL\_\-WR\_\-EN@{CTRL\_\-WR\_\-EN}}
+\index{CTRL\_\-WR\_\-EN@{CTRL\_\-WR\_\-EN}!usbreg.h@{usbreg.h}}
+\subsubsection[{CTRL\_\-WR\_\-EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CTRL\_\-WR\_\-EN~0x00000002}}
+\label{usbreg_8h_aeaa5968e571aa7d90329728836d4c498}
+
+
+Definition at line 38 of file usbreg.h.
+
+\hypertarget{usbreg_8h_af3105d771147abb3750edad858d9c52b}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-CLR\_\-BUF@{DAT\_\-CLR\_\-BUF}}
+\index{DAT\_\-CLR\_\-BUF@{DAT\_\-CLR\_\-BUF}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-CLR\_\-BUF}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-CLR\_\-BUF~0x00F20200}}
+\label{usbreg_8h_af3105d771147abb3750edad858d9c52b}
+
+
+Definition at line 62 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a220874da8f06a7285a4358e05799f7cb}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-GET\_\-DEV\_\-STAT@{DAT\_\-GET\_\-DEV\_\-STAT}}
+\index{DAT\_\-GET\_\-DEV\_\-STAT@{DAT\_\-GET\_\-DEV\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-GET\_\-DEV\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-GET\_\-DEV\_\-STAT~0x00FE0200}}
+\label{usbreg_8h_a220874da8f06a7285a4358e05799f7cb}
+
+
+Definition at line 50 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a85951c5fa9f668f6e0bf5782f31fc386}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-GET\_\-ERR\_\-CODE@{DAT\_\-GET\_\-ERR\_\-CODE}}
+\index{DAT\_\-GET\_\-ERR\_\-CODE@{DAT\_\-GET\_\-ERR\_\-CODE}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-GET\_\-ERR\_\-CODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-GET\_\-ERR\_\-CODE~0x00FF0200}}
+\label{usbreg_8h_a85951c5fa9f668f6e0bf5782f31fc386}
+
+
+Definition at line 52 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a7c4e0b734d257f5ed77f6c1aca3043e1}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-RD\_\-ERR\_\-STAT@{DAT\_\-RD\_\-ERR\_\-STAT}}
+\index{DAT\_\-RD\_\-ERR\_\-STAT@{DAT\_\-RD\_\-ERR\_\-STAT}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-RD\_\-ERR\_\-STAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-RD\_\-ERR\_\-STAT~0x00FB0200}}
+\label{usbreg_8h_a7c4e0b734d257f5ed77f6c1aca3043e1}
+
+
+Definition at line 54 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aa29ff436c20c2fd7b40672c61331d751}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-RD\_\-FRAME@{DAT\_\-RD\_\-FRAME}}
+\index{DAT\_\-RD\_\-FRAME@{DAT\_\-RD\_\-FRAME}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-RD\_\-FRAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-RD\_\-FRAME~0x00F50200}}
+\label{usbreg_8h_aa29ff436c20c2fd7b40672c61331d751}
+
+
+Definition at line 45 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a9855fd712b4a47852dda92e8e307a74d}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-RD\_\-TEST@{DAT\_\-RD\_\-TEST}}
+\index{DAT\_\-RD\_\-TEST@{DAT\_\-RD\_\-TEST}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-RD\_\-TEST}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-RD\_\-TEST~0x00FD0200}}
+\label{usbreg_8h_a9855fd712b4a47852dda92e8e307a74d}
+
+
+Definition at line 47 of file usbreg.h.
+
+\hypertarget{usbreg_8h_add06b18c986b802cd30817f231a325a3}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-SEL\_\-EP@{DAT\_\-SEL\_\-EP}}
+\index{DAT\_\-SEL\_\-EP@{DAT\_\-SEL\_\-EP}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-SEL\_\-EP}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-SEL\_\-EP(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00000200 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_add06b18c986b802cd30817f231a325a3}
+
+
+Definition at line 57 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a0623e4b4754784a8e2f756ca152de5e2}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-SEL\_\-EP\_\-CLRI@{DAT\_\-SEL\_\-EP\_\-CLRI}}
+\index{DAT\_\-SEL\_\-EP\_\-CLRI@{DAT\_\-SEL\_\-EP\_\-CLRI}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-SEL\_\-EP\_\-CLRI}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-SEL\_\-EP\_\-CLRI(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00400200 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_a0623e4b4754784a8e2f756ca152de5e2}
+
+
+Definition at line 59 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a3bdce5cc0b05eaaebe27f3b9e7db47e6}{
+\index{usbreg.h@{usbreg.h}!DAT\_\-WR\_\-BYTE@{DAT\_\-WR\_\-BYTE}}
+\index{DAT\_\-WR\_\-BYTE@{DAT\_\-WR\_\-BYTE}!usbreg.h@{usbreg.h}}
+\subsubsection[{DAT\_\-WR\_\-BYTE}]{\setlength{\rightskip}{0pt plus 5cm}\#define DAT\_\-WR\_\-BYTE(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(0x00000100 $|$ ((x) $<$$<$ 16))}}
+\label{usbreg_8h_a3bdce5cc0b05eaaebe27f3b9e7db47e6}
+
+
+Definition at line 55 of file usbreg.h.
+
+\hypertarget{usbreg_8h_afaa35ef822f5e9b18f9f5391335caf58}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-ADDR\_\-MASK@{DEV\_\-ADDR\_\-MASK}}
+\index{DEV\_\-ADDR\_\-MASK@{DEV\_\-ADDR\_\-MASK}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-ADDR\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-ADDR\_\-MASK~0x7F}}
+\label{usbreg_8h_afaa35ef822f5e9b18f9f5391335caf58}
+
+
+Definition at line 66 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a5b6f5830c79daef183553eba90a74563}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-CON@{DEV\_\-CON}}
+\index{DEV\_\-CON@{DEV\_\-CON}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-CON}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-CON~0x01}}
+\label{usbreg_8h_a5b6f5830c79daef183553eba90a74563}
+
+
+Definition at line 82 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a10e1a4e669ad2b4c70c64630ba1d5ded}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-CON\_\-CH@{DEV\_\-CON\_\-CH}}
+\index{DEV\_\-CON\_\-CH@{DEV\_\-CON\_\-CH}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-CON\_\-CH}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-CON\_\-CH~0x02}}
+\label{usbreg_8h_a10e1a4e669ad2b4c70c64630ba1d5ded}
+
+
+Definition at line 83 of file usbreg.h.
+
+\hypertarget{usbreg_8h_acbd2d57f1c7a43cf4e92e924dbdc99bd}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-EN@{DEV\_\-EN}}
+\index{DEV\_\-EN@{DEV\_\-EN}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-EN~0x80}}
+\label{usbreg_8h_acbd2d57f1c7a43cf4e92e924dbdc99bd}
+
+
+Definition at line 67 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a956447cbe75fec470a14f7bf19700b21}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-RST@{DEV\_\-RST}}
+\index{DEV\_\-RST@{DEV\_\-RST}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-RST}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-RST~0x10}}
+\label{usbreg_8h_a956447cbe75fec470a14f7bf19700b21}
+
+
+Definition at line 86 of file usbreg.h.
+
+\hypertarget{usbreg_8h_af275198989acad4e8a4e2b7e59a09c8a}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-STAT\_\-INT@{DEV\_\-STAT\_\-INT}}
+\index{DEV\_\-STAT\_\-INT@{DEV\_\-STAT\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-STAT\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-STAT\_\-INT~0x00000008}}
+\label{usbreg_8h_af275198989acad4e8a4e2b7e59a09c8a}
+
+
+Definition at line 23 of file usbreg.h.
+
+\hypertarget{usbreg_8h_acd7dfb56a185c8f760e5e57777295ed2}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-SUS@{DEV\_\-SUS}}
+\index{DEV\_\-SUS@{DEV\_\-SUS}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-SUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-SUS~0x04}}
+\label{usbreg_8h_acd7dfb56a185c8f760e5e57777295ed2}
+
+
+Definition at line 84 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a08a297cb7ed647f49fb15ee8a1c2e7db}{
+\index{usbreg.h@{usbreg.h}!DEV\_\-SUS\_\-CH@{DEV\_\-SUS\_\-CH}}
+\index{DEV\_\-SUS\_\-CH@{DEV\_\-SUS\_\-CH}!usbreg.h@{usbreg.h}}
+\subsubsection[{DEV\_\-SUS\_\-CH}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEV\_\-SUS\_\-CH~0x08}}
+\label{usbreg_8h_a08a297cb7ed647f49fb15ee8a1c2e7db}
+
+
+Definition at line 85 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a9cac1332b7d3c0b840e52a4c5ed026a3}{
+\index{usbreg.h@{usbreg.h}!EOT\_\-INT@{EOT\_\-INT}}
+\index{EOT\_\-INT@{EOT\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{EOT\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOT\_\-INT~0x01}}
+\label{usbreg_8h_a9cac1332b7d3c0b840e52a4c5ed026a3}
+
+
+Definition at line 122 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a0f0c5afaf73055db35f5d68afc0d0ede}{
+\index{usbreg.h@{usbreg.h}!EP\_\-FAST\_\-INT@{EP\_\-FAST\_\-INT}}
+\index{EP\_\-FAST\_\-INT@{EP\_\-FAST\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-FAST\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-FAST\_\-INT~0x00000002}}
+\label{usbreg_8h_a0f0c5afaf73055db35f5d68afc0d0ede}
+
+
+Definition at line 21 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a9c9b23320dbc3649f4eed4e91d190ad7}{
+\index{usbreg.h@{usbreg.h}!EP\_\-RLZED\_\-INT@{EP\_\-RLZED\_\-INT}}
+\index{EP\_\-RLZED\_\-INT@{EP\_\-RLZED\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-RLZED\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-RLZED\_\-INT~0x00000100}}
+\label{usbreg_8h_a9c9b23320dbc3649f4eed4e91d190ad7}
+
+
+Definition at line 28 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a0f9faaf9240bda5e440f795f3f141389}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-B\_\-1\_\-FULL@{EP\_\-SEL\_\-B\_\-1\_\-FULL}}
+\index{EP\_\-SEL\_\-B\_\-1\_\-FULL@{EP\_\-SEL\_\-B\_\-1\_\-FULL}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-B\_\-1\_\-FULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-B\_\-1\_\-FULL~0x20}}
+\label{usbreg_8h_a0f9faaf9240bda5e440f795f3f141389}
+
+
+Definition at line 108 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a6d88d84c806ab0cf1a34da0dd47ace72}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-B\_\-2\_\-FULL@{EP\_\-SEL\_\-B\_\-2\_\-FULL}}
+\index{EP\_\-SEL\_\-B\_\-2\_\-FULL@{EP\_\-SEL\_\-B\_\-2\_\-FULL}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-B\_\-2\_\-FULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-B\_\-2\_\-FULL~0x40}}
+\label{usbreg_8h_a6d88d84c806ab0cf1a34da0dd47ace72}
+
+
+Definition at line 109 of file usbreg.h.
+
+\hypertarget{usbreg_8h_af1c71c8e5af6dab974106d0e621b3530}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-EPN@{EP\_\-SEL\_\-EPN}}
+\index{EP\_\-SEL\_\-EPN@{EP\_\-SEL\_\-EPN}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-EPN}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-EPN~0x10}}
+\label{usbreg_8h_af1c71c8e5af6dab974106d0e621b3530}
+
+
+Definition at line 107 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a5299812e307f61660449b5f7224b4aef}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-F@{EP\_\-SEL\_\-F}}
+\index{EP\_\-SEL\_\-F@{EP\_\-SEL\_\-F}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-F~0x01}}
+\label{usbreg_8h_a5299812e307f61660449b5f7224b4aef}
+
+
+Definition at line 103 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a563e2fd19c40eb157bc42d6d808d9e49}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-PO@{EP\_\-SEL\_\-PO}}
+\index{EP\_\-SEL\_\-PO@{EP\_\-SEL\_\-PO}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-PO}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-PO~0x08}}
+\label{usbreg_8h_a563e2fd19c40eb157bc42d6d808d9e49}
+
+
+Definition at line 106 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ad59a067332d65a088fe5ad864cfe2e9b}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-ST@{EP\_\-SEL\_\-ST}}
+\index{EP\_\-SEL\_\-ST@{EP\_\-SEL\_\-ST}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-ST}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-ST~0x02}}
+\label{usbreg_8h_ad59a067332d65a088fe5ad864cfe2e9b}
+
+
+Definition at line 104 of file usbreg.h.
+
+\hypertarget{usbreg_8h_af5788ac50a0c00bc086f68eeb076add7}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SEL\_\-STP@{EP\_\-SEL\_\-STP}}
+\index{EP\_\-SEL\_\-STP@{EP\_\-SEL\_\-STP}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SEL\_\-STP}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SEL\_\-STP~0x04}}
+\label{usbreg_8h_af5788ac50a0c00bc086f68eeb076add7}
+
+
+Definition at line 105 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a525aa5f17d8eef8bcc680f818718c35f}{
+\index{usbreg.h@{usbreg.h}!EP\_\-SLOW\_\-INT@{EP\_\-SLOW\_\-INT}}
+\index{EP\_\-SLOW\_\-INT@{EP\_\-SLOW\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-SLOW\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-SLOW\_\-INT~0x00000004}}
+\label{usbreg_8h_a525aa5f17d8eef8bcc680f818718c35f}
+
+
+Definition at line 22 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a083a207cf5434a5e43782ae08aa9ac88}{
+\index{usbreg.h@{usbreg.h}!EP\_\-STAT\_\-CND\_\-ST@{EP\_\-STAT\_\-CND\_\-ST}}
+\index{EP\_\-STAT\_\-CND\_\-ST@{EP\_\-STAT\_\-CND\_\-ST}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-STAT\_\-CND\_\-ST}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-STAT\_\-CND\_\-ST~0x80}}
+\label{usbreg_8h_a083a207cf5434a5e43782ae08aa9ac88}
+
+
+Definition at line 115 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ac2c74d5169ac4c23bb42f9bc5ad520bf}{
+\index{usbreg.h@{usbreg.h}!EP\_\-STAT\_\-DA@{EP\_\-STAT\_\-DA}}
+\index{EP\_\-STAT\_\-DA@{EP\_\-STAT\_\-DA}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-STAT\_\-DA}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-STAT\_\-DA~0x20}}
+\label{usbreg_8h_ac2c74d5169ac4c23bb42f9bc5ad520bf}
+
+
+Definition at line 113 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aee9927c981e0fcfb6c2e95dfd60e2d6a}{
+\index{usbreg.h@{usbreg.h}!EP\_\-STAT\_\-RF\_\-MO@{EP\_\-STAT\_\-RF\_\-MO}}
+\index{EP\_\-STAT\_\-RF\_\-MO@{EP\_\-STAT\_\-RF\_\-MO}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-STAT\_\-RF\_\-MO}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-STAT\_\-RF\_\-MO~0x40}}
+\label{usbreg_8h_aee9927c981e0fcfb6c2e95dfd60e2d6a}
+
+
+Definition at line 114 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a39c8c109f3bcfc197aeb6512e807c378}{
+\index{usbreg.h@{usbreg.h}!EP\_\-STAT\_\-ST@{EP\_\-STAT\_\-ST}}
+\index{EP\_\-STAT\_\-ST@{EP\_\-STAT\_\-ST}!usbreg.h@{usbreg.h}}
+\subsubsection[{EP\_\-STAT\_\-ST}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-STAT\_\-ST~0x01}}
+\label{usbreg_8h_a39c8c109f3bcfc197aeb6512e807c378}
+
+
+Definition at line 112 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a4bc2cfbee98f14fb043c05251d473e4d}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-B\_\-OVRN@{ERR\_\-B\_\-OVRN}}
+\index{ERR\_\-B\_\-OVRN@{ERR\_\-B\_\-OVRN}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-B\_\-OVRN}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-B\_\-OVRN~0x20}}
+\label{usbreg_8h_a4bc2cfbee98f14fb043c05251d473e4d}
+
+
+Definition at line 98 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a3c48959c15538b8bd1e529a9afbc9d11}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-BTSTF@{ERR\_\-BTSTF}}
+\index{ERR\_\-BTSTF@{ERR\_\-BTSTF}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-BTSTF}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-BTSTF~0x40}}
+\label{usbreg_8h_a3c48959c15538b8bd1e529a9afbc9d11}
+
+
+Definition at line 99 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a18ff3fed953fe8ed9cba141cf94cf830}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-DCRC@{ERR\_\-DCRC}}
+\index{ERR\_\-DCRC@{ERR\_\-DCRC}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-DCRC}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-DCRC~0x04}}
+\label{usbreg_8h_a18ff3fed953fe8ed9cba141cf94cf830}
+
+
+Definition at line 95 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a8ca8a96f375a2ee9d8ca5b13a55f3149}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-EA@{ERR\_\-EA}}
+\index{ERR\_\-EA@{ERR\_\-EA}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-EA}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-EA~0x10}}
+\label{usbreg_8h_a8ca8a96f375a2ee9d8ca5b13a55f3149}
+
+
+Definition at line 90 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a380fc72b0990f55afb4a71250ac8e341}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-EC\_\-MASK@{ERR\_\-EC\_\-MASK}}
+\index{ERR\_\-EC\_\-MASK@{ERR\_\-EC\_\-MASK}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-EC\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-EC\_\-MASK~0x0F}}
+\label{usbreg_8h_a380fc72b0990f55afb4a71250ac8e341}
+
+
+Definition at line 89 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ac08be1bac4e620a0602d5208f620121c}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-EOP@{ERR\_\-EOP}}
+\index{ERR\_\-EOP@{ERR\_\-EOP}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-EOP}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-EOP~0x10}}
+\label{usbreg_8h_ac08be1bac4e620a0602d5208f620121c}
+
+
+Definition at line 97 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ad008a7e4bb0e20f144f938e9bd1735ed}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-INT@{ERR\_\-INT}}
+\index{ERR\_\-INT@{ERR\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-INT~0x00000200}}
+\label{usbreg_8h_ad008a7e4bb0e20f144f938e9bd1735ed}
+
+
+Definition at line 29 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a31c59b43829ae3cdb82aa878729ddec1}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-PID@{ERR\_\-PID}}
+\index{ERR\_\-PID@{ERR\_\-PID}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-PID}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-PID~0x01}}
+\label{usbreg_8h_a31c59b43829ae3cdb82aa878729ddec1}
+
+
+Definition at line 93 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a69e276e3681167501f068b8404613f6a}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-TGL@{ERR\_\-TGL}}
+\index{ERR\_\-TGL@{ERR\_\-TGL}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-TGL}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-TGL~0x80}}
+\label{usbreg_8h_a69e276e3681167501f068b8404613f6a}
+
+
+Definition at line 100 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a22425e6087f22b5e5abb512416bd0eb8}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-TIMOUT@{ERR\_\-TIMOUT}}
+\index{ERR\_\-TIMOUT@{ERR\_\-TIMOUT}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-TIMOUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-TIMOUT~0x08}}
+\label{usbreg_8h_a22425e6087f22b5e5abb512416bd0eb8}
+
+
+Definition at line 96 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aa63aa99cd50816158e96645c1f590589}{
+\index{usbreg.h@{usbreg.h}!ERR\_\-UEPKT@{ERR\_\-UEPKT}}
+\index{ERR\_\-UEPKT@{ERR\_\-UEPKT}!usbreg.h@{usbreg.h}}
+\subsubsection[{ERR\_\-UEPKT}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR\_\-UEPKT~0x02}}
+\label{usbreg_8h_aa63aa99cd50816158e96645c1f590589}
+
+
+Definition at line 94 of file usbreg.h.
+
+\hypertarget{usbreg_8h_acd810cb2c578feb523e4457a3ecc5c1f}{
+\index{usbreg.h@{usbreg.h}!FRAME\_\-INT@{FRAME\_\-INT}}
+\index{FRAME\_\-INT@{FRAME\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{FRAME\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define FRAME\_\-INT~0x00000001}}
+\label{usbreg_8h_acd810cb2c578feb523e4457a3ecc5c1f}
+
+
+Definition at line 20 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a2b238f964f6f40cb04bcd1cf8a4280a7}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-BI@{INAK\_\-BI}}
+\index{INAK\_\-BI@{INAK\_\-BI}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-BI}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-BI~0x20}}
+\label{usbreg_8h_a2b238f964f6f40cb04bcd1cf8a4280a7}
+
+
+Definition at line 78 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a71a115808198c546f187de9a2a147efb}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-BO@{INAK\_\-BO}}
+\index{INAK\_\-BO@{INAK\_\-BO}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-BO}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-BO~0x40}}
+\label{usbreg_8h_a71a115808198c546f187de9a2a147efb}
+
+
+Definition at line 79 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ac5480c9fa425b592925f9990972882cb}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-CI@{INAK\_\-CI}}
+\index{INAK\_\-CI@{INAK\_\-CI}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-CI}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-CI~0x02}}
+\label{usbreg_8h_ac5480c9fa425b592925f9990972882cb}
+
+
+Definition at line 74 of file usbreg.h.
+
+\hypertarget{usbreg_8h_abf5f5b64e80b6838c2235c53682aa8ab}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-CO@{INAK\_\-CO}}
+\index{INAK\_\-CO@{INAK\_\-CO}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-CO}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-CO~0x04}}
+\label{usbreg_8h_abf5f5b64e80b6838c2235c53682aa8ab}
+
+
+Definition at line 75 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ae8c91344bec270ec24fcd9fe83b80ffb}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-II@{INAK\_\-II}}
+\index{INAK\_\-II@{INAK\_\-II}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-II}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-II~0x08}}
+\label{usbreg_8h_ae8c91344bec270ec24fcd9fe83b80ffb}
+
+
+Definition at line 76 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a43990b36599ba2785c94457d9614b30b}{
+\index{usbreg.h@{usbreg.h}!INAK\_\-IO@{INAK\_\-IO}}
+\index{INAK\_\-IO@{INAK\_\-IO}!usbreg.h@{usbreg.h}}
+\subsubsection[{INAK\_\-IO}]{\setlength{\rightskip}{0pt plus 5cm}\#define INAK\_\-IO~0x10}}
+\label{usbreg_8h_a43990b36599ba2785c94457d9614b30b}
+
+
+Definition at line 77 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ae76d2431c2776239aca8590ed27ca0b9}{
+\index{usbreg.h@{usbreg.h}!NDD\_\-REQ\_\-INT@{NDD\_\-REQ\_\-INT}}
+\index{NDD\_\-REQ\_\-INT@{NDD\_\-REQ\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{NDD\_\-REQ\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define NDD\_\-REQ\_\-INT~0x02}}
+\label{usbreg_8h_ae76d2431c2776239aca8590ed27ca0b9}
+
+
+Definition at line 123 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a0be0ec7ef9b6461def096d38a6bb5dc1}{
+\index{usbreg.h@{usbreg.h}!PKT\_\-DV@{PKT\_\-DV}}
+\index{PKT\_\-DV@{PKT\_\-DV}!usbreg.h@{usbreg.h}}
+\subsubsection[{PKT\_\-DV}]{\setlength{\rightskip}{0pt plus 5cm}\#define PKT\_\-DV~0x00000400}}
+\label{usbreg_8h_a0be0ec7ef9b6461def096d38a6bb5dc1}
+
+
+Definition at line 33 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a7fb06bbe3370f59d8ab6a744d431f1f6}{
+\index{usbreg.h@{usbreg.h}!PKT\_\-LNGTH\_\-MASK@{PKT\_\-LNGTH\_\-MASK}}
+\index{PKT\_\-LNGTH\_\-MASK@{PKT\_\-LNGTH\_\-MASK}!usbreg.h@{usbreg.h}}
+\subsubsection[{PKT\_\-LNGTH\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define PKT\_\-LNGTH\_\-MASK~0x000003FF}}
+\label{usbreg_8h_a7fb06bbe3370f59d8ab6a744d431f1f6}
+
+
+Definition at line 32 of file usbreg.h.
+
+\hypertarget{usbreg_8h_ab6390abfb762b0c8a5c5f14e535a8931}{
+\index{usbreg.h@{usbreg.h}!PKT\_\-RDY@{PKT\_\-RDY}}
+\index{PKT\_\-RDY@{PKT\_\-RDY}!usbreg.h@{usbreg.h}}
+\subsubsection[{PKT\_\-RDY}]{\setlength{\rightskip}{0pt plus 5cm}\#define PKT\_\-RDY~0x00000800}}
+\label{usbreg_8h_ab6390abfb762b0c8a5c5f14e535a8931}
+
+
+Definition at line 34 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a50d5bc9f5a5c29375180bc9c7fa959a0}{
+\index{usbreg.h@{usbreg.h}!RxENDPKT\_\-INT@{RxENDPKT\_\-INT}}
+\index{RxENDPKT\_\-INT@{RxENDPKT\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{RxENDPKT\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define RxENDPKT\_\-INT~0x00000040}}
+\label{usbreg_8h_a50d5bc9f5a5c29375180bc9c7fa959a0}
+
+
+Definition at line 26 of file usbreg.h.
+
+\hypertarget{usbreg_8h_a6c1cc9421991f2575bc1249d3f7397e4}{
+\index{usbreg.h@{usbreg.h}!SYS\_\-ERR\_\-INT@{SYS\_\-ERR\_\-INT}}
+\index{SYS\_\-ERR\_\-INT@{SYS\_\-ERR\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{SYS\_\-ERR\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define SYS\_\-ERR\_\-INT~0x04}}
+\label{usbreg_8h_a6c1cc9421991f2575bc1249d3f7397e4}
+
+
+Definition at line 124 of file usbreg.h.
+
+\hypertarget{usbreg_8h_aac7a58c35c70d08ba832d617c0d60fea}{
+\index{usbreg.h@{usbreg.h}!TxENDPKT\_\-INT@{TxENDPKT\_\-INT}}
+\index{TxENDPKT\_\-INT@{TxENDPKT\_\-INT}!usbreg.h@{usbreg.h}}
+\subsubsection[{TxENDPKT\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define TxENDPKT\_\-INT~0x00000080}}
+\label{usbreg_8h_aac7a58c35c70d08ba832d617c0d60fea}
+
+
+Definition at line 27 of file usbreg.h.
+

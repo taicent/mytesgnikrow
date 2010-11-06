@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_nhac_8c" kind="file">
+    <compoundname>Nhac.c</compoundname>
+    <includes local="no">LPC23xx.H</includes>
+    <includes refid="_nhac_8h" local="yes">Nhac.h</includes>
+    <includes local="yes">string.h</includes>
+    <incdepgraph>
+      <node id="188">
+        <label>string.h</label>
+      </node>
+      <node id="186">
+        <label>LPC23xx.H</label>
+      </node>
+      <node id="185">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c</label>
+        <link refid="Nhac.c"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>Nhac.h</label>
+        <link refid="_nhac_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_nhac_8c_1a916bb50caf839dd34b9cdf0108facecd" prot="public" static="no">
+        <name>freq_mult</name>
+        <initializer>42950</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="6" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="6" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_nhac_8c_1ac263c2c68c72f6827dc42134e0cc1912" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short sine_table256[]</definition>
+        <argsstring>[]</argsstring>
+        <name>sine_table256</name>
+        <initializer>
+{
+0x0200,0x020c,0x0219,0x0225,0x0232,0x023e,0x024b,0x0257,0x0264,0x0270,0x027c,0x0289,0x0295,0x02a1,0x02ad,0x02b8,
+0x02c4,0x02d0,0x02db,0x02e7,0x02f2,0x02fd,0x0308,0x0312,0x031d,0x0327,0x0332,0x033c,0x0345,0x034f,0x0358,0x0362,
+0x036b,0x0373,0x037c,0x0384,0x038c,0x0394,0x039c,0x03a3,0x03aa,0x03b1,0x03b8,0x03be,0x03c4,0x03ca,0x03cf,0x03d5,
+0x03d9,0x03de,0x03e2,0x03e6,0x03ea,0x03ee,0x03f1,0x03f4,0x03f6,0x03f8,0x03fa,0x03fc,0x03fd,0x03fe,0x03ff,0x03ff,
+0x03ff,0x03ff,0x03ff,0x03fe,0x03fd,0x03fb,0x03f9,0x03f7,0x03f5,0x03f2,0x03ef,0x03ec,0x03e8,0x03e4,0x03e0,0x03dc,
+0x03d7,0x03d2,0x03cd,0x03c7,0x03c1,0x03bb,0x03b4,0x03ae,0x03a7,0x03a0,0x0398,0x0390,0x0388,0x0380,0x0378,0x036f,
+0x0366,0x035d,0x0354,0x034a,0x0340,0x0337,0x032c,0x0322,0x0318,0x030d,0x0302,0x02f7,0x02ec,0x02e1,0x02d5,0x02ca,
+0x02be,0x02b3,0x02a7,0x029b,0x028f,0x0282,0x0276,0x026a,0x025e,0x0251,0x0245,0x0238,0x022c,0x021f,0x0212,0x0206,
+0x01f9,0x01ed,0x01e0,0x01d3,0x01c7,0x01ba,0x01ae,0x01a1,0x0195,0x0189,0x017d,0x0170,0x0164,0x0158,0x014c,0x0141,
+0x0135,0x012a,0x011e,0x0113,0x0108,0x00fd,0x00f2,0x00e7,0x00dd,0x00d3,0x00c8,0x00bf,0x00b5,0x00ab,0x00a2,0x0099,
+0x0090,0x0087,0x007f,0x0077,0x006f,0x0067,0x005f,0x0058,0x0051,0x004b,0x0044,0x003e,0x0038,0x0032,0x002d,0x0028,
+0x0023,0x001f,0x001b,0x0017,0x0013,0x0010,0x000d,0x000a,0x0008,0x0006,0x0004,0x0002,0x0001,0x0000,0x0000,0x0000,
+0x0000,0x0000,0x0001,0x0002,0x0003,0x0005,0x0007,0x0009,0x000b,0x000e,0x0011,0x0015,0x0019,0x001d,0x0021,0x0026,
+0x002a,0x0030,0x0035,0x003b,0x0041,0x0047,0x004e,0x0055,0x005c,0x0063,0x006b,0x0073,0x007b,0x0083,0x008c,0x0094,
+0x009d,0x00a7,0x00b0,0x00ba,0x00c3,0x00cd,0x00d8,0x00e2,0x00ed,0x00f7,0x0102,0x010d,0x0118,0x0124,0x012f,0x013b,
+0x0147,0x0152,0x015e,0x016a,0x0176,0x0183,0x018f,0x019b,0x01a8,0x01b4,0x01c1,0x01cd,0x01da,0x01e6,0x01f3,0x0200
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="26" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="8" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long piano_Keys[]</definition>
+        <argsstring>[]</argsstring>
+        <name>piano_Keys</name>
+        <initializer>   
+{
+  27,   29,   31,   33,   35,   37,   39,   41,   44,   46,   49,   52, 0,0,0,0,
+  55,   58,   62,   65,   69,   73,   78,   82,   87,   92,   98,  104, 0,0,0,0, 
+ 110,  117,  123,  131,  139,  147,  156,  165,  175,  185,  196,  208, 0,0,0,0, 
+ 220,  233,  247,  262,  277,  294,  311,  330,  349,  370,  392,  415, 0,0,0,0, 
+ 440,  466,  494,  523,  554,  587,  622,  659,  698,  740,  784,  831, 0,0,0,0, 
+ 880,  932,  988, 1046, 1109, 1175, 1244, 1318, 1397, 1480, 1568, 1661, 0,0,0,0, 
+1760, 1865, 1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 0,0,0,0, 
+3520, 3729, 3951, 4186
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="38" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="28" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char song_lamb[]</definition>
+        <argsstring>[]</argsstring>
+        <name>song_lamb</name>
+        <initializer> 
+{
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,0x45,
+0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x4f
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="50" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="40" bodyend="-1"/>
+        <referencedby refid="_nhac_8h_1a3916502f0893306111830b80a8dfe463" compoundref="_nhac_8c" startline="99" endline="116">InitSong</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char song_joy[]</definition>
+        <argsstring>[]</argsstring>
+        <name>song_joy</name>
+        <initializer> 
+{
+0x37,0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x37,0x35,0x35,
+0x37,0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x35,0x33,0x33,
+0x35,0x35,0x37,0x33,0x35,0x37,0x38,0x37,0x33,0x35,0x37,0x38,0x37,0x35,0x33,0x35,0x2a,0x37,
+0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x35,0x33,0x33,0x3f
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="58" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="52" bodyend="-1"/>
+        <referencedby refid="_nhac_8h_1a3916502f0893306111830b80a8dfe463" compoundref="_nhac_8c" startline="99" endline="116">InitSong</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char song_custom[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>song_custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="61" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="61" bodyend="-1"/>
+        <referencedby refid="_nhac_8h_1aea0ea691cc36610b05b6a39ef04a7f88" compoundref="_nhac_8c" startline="133" endline="138">NhacCustom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <initializer> 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="63" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="63" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int accum</definition>
+        <argsstring></argsstring>
+        <name>accum</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="64" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="64" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="65" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="65" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="66" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="66" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int iPiano</definition>
+        <argsstring></argsstring>
+        <name>iPiano</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="67" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="67" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+        <referencedby refid="_nhac_8h_1a5b00dad3126cd573e82ea3f7ccdd0a8c" compoundref="_nhac_8c" startline="126" endline="131">NhacOff</referencedby>
+        <referencedby refid="_nhac_8h_1aa7c6ef70af8d6a223d867d87fde4980e" compoundref="_nhac_8c" startline="118" endline="124">NhacOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1accb25237ae393a9f2e9c1271b953e78c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int iSizePiano</definition>
+        <argsstring></argsstring>
+        <name>iSizePiano</name>
+        <initializer> sizeof(<ref refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" kindref="member">piano_Keys</ref>)/sizeof(unsigned long)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="68" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1ad43c3812e6d13e0518d9f8b8f463ffcf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="69" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1a2336afd6eab5e5a75b4adb1a5042bc0c" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* song[]</definition>
+        <argsstring>[]</argsstring>
+        <name>song</name>
+        <initializer> {<ref refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" kindref="member">song_joy</ref>, <ref refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" kindref="member">song_lamb</ref>, <ref refid="_vendor_process_8c_1a2333a2e9b49f877934d301d0f32176d4" kindref="member">song_custom</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="70" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1a0ba6fe5c23a92e92be4232143448a4bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int iSongSize[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>iSongSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="71" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_nhac_8c_1a2517d4bd37afe8bdd3e97bb27bfcf4a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int iBaiHatA</definition>
+        <argsstring></argsstring>
+        <name>iBaiHatA</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="73" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="73" bodyend="-1"/>
+        <referencedby refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__irq void</type>
+        <definition>__irq void ChayNhac</definition>
+        <argsstring>()</argsstring>
+        <name>ChayNhac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="76" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="75" bodyend="97"/>
+        <references refid="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" compoundref="_nhac_8c" startline="64">accum</references>
+        <references refid="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" compoundref="_nhac_8c" startline="66">freq</references>
+        <references refid="_nhac_8c_1a916bb50caf839dd34b9cdf0108facecd" compoundref="_nhac_8c" startline="6">freq_mult</references>
+        <references refid="_nhac_8c_1a2517d4bd37afe8bdd3e97bb27bfcf4a5" compoundref="_nhac_8c" startline="73">iBaiHatA</references>
+        <references refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" compoundref="_nhac_8c" startline="67">iPiano</references>
+        <references refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" compoundref="_nhac_8c" startline="28">piano_Keys</references>
+        <references refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" compoundref="_nhac_8c" startline="65">sample</references>
+        <references refid="_nhac_8c_1ac263c2c68c72f6827dc42134e0cc1912" compoundref="_nhac_8c" startline="8">sine_table256</references>
+        <references refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" compoundref="_nhac_8c" startline="63">volume</references>
+        <referencedby refid="_nhac_8h_1a3916502f0893306111830b80a8dfe463" compoundref="_nhac_8c" startline="99" endline="116">InitSong</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_nhac_8c_1a805bb5aac1bdfced0062a19e17f65a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InitSong</definition>
+        <argsstring>()</argsstring>
+        <name>InitSong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="100" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="99" bodyend="116"/>
+        <references refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" compoundref="_nhac_8c" startline="75" endline="97">ChayNhac</references>
+        <references refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" compoundref="_nhac_8c" startline="52">song_joy</references>
+        <references refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" compoundref="_nhac_8c" startline="40">song_lamb</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NhacOn</definition>
+        <argsstring>(int iBaiHat)</argsstring>
+        <name>NhacOn</name>
+        <param>
+          <type>int</type>
+          <declname>iBaiHat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="119" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="118" bodyend="124"/>
+        <references refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" compoundref="_nhac_8c" startline="67">iPiano</references>
+        <referencedby refid="_nhac_8h_1aea0ea691cc36610b05b6a39ef04a7f88" compoundref="_nhac_8c" startline="133" endline="138">NhacCustom</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_nhac_8c_1a5b00dad3126cd573e82ea3f7ccdd0a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NhacOff</definition>
+        <argsstring>(void)</argsstring>
+        <name>NhacOff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="127" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="126" bodyend="131"/>
+        <references refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" compoundref="_nhac_8c" startline="67">iPiano</references>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_nhac_8c_1aea0ea691cc36610b05b6a39ef04a7f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NhacCustom</definition>
+        <argsstring>(void *p, int iLen)</argsstring>
+        <name>NhacCustom</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" line="134" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c" bodystart="133" bodyend="138"/>
+        <references refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" compoundref="_nhac_8c" startline="118" endline="124">NhacOn</references>
+        <references refid="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" compoundref="_nhac_8c" startline="61">song_custom</references>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;LPC23xx.H&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_nhac_8h" kindref="compound">Nhac.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;string.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_nhac_8c_1a916bb50caf839dd34b9cdf0108facecd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>freq_mult<sp/>42950</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_nhac_8c_1ac263c2c68c72f6827dc42134e0cc1912" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1ac263c2c68c72f6827dc42134e0cc1912" kindref="member">sine_table256</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">0x0200,0x020c,0x0219,0x0225,0x0232,0x023e,0x024b,0x0257,0x0264,0x0270,0x027c,0x0289,0x0295,0x02a1,0x02ad,0x02b8,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">0x02c4,0x02d0,0x02db,0x02e7,0x02f2,0x02fd,0x0308,0x0312,0x031d,0x0327,0x0332,0x033c,0x0345,0x034f,0x0358,0x0362,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">0x036b,0x0373,0x037c,0x0384,0x038c,0x0394,0x039c,0x03a3,0x03aa,0x03b1,0x03b8,0x03be,0x03c4,0x03ca,0x03cf,0x03d5,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">0x03d9,0x03de,0x03e2,0x03e6,0x03ea,0x03ee,0x03f1,0x03f4,0x03f6,0x03f8,0x03fa,0x03fc,0x03fd,0x03fe,0x03ff,0x03ff,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">0x03ff,0x03ff,0x03ff,0x03fe,0x03fd,0x03fb,0x03f9,0x03f7,0x03f5,0x03f2,0x03ef,0x03ec,0x03e8,0x03e4,0x03e0,0x03dc,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">0x03d7,0x03d2,0x03cd,0x03c7,0x03c1,0x03bb,0x03b4,0x03ae,0x03a7,0x03a0,0x0398,0x0390,0x0388,0x0380,0x0378,0x036f,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">0x0366,0x035d,0x0354,0x034a,0x0340,0x0337,0x032c,0x0322,0x0318,0x030d,0x0302,0x02f7,0x02ec,0x02e1,0x02d5,0x02ca,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">0x02be,0x02b3,0x02a7,0x029b,0x028f,0x0282,0x0276,0x026a,0x025e,0x0251,0x0245,0x0238,0x022c,0x021f,0x0212,0x0206,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">0x01f9,0x01ed,0x01e0,0x01d3,0x01c7,0x01ba,0x01ae,0x01a1,0x0195,0x0189,0x017d,0x0170,0x0164,0x0158,0x014c,0x0141,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">0x0135,0x012a,0x011e,0x0113,0x0108,0x00fd,0x00f2,0x00e7,0x00dd,0x00d3,0x00c8,0x00bf,0x00b5,0x00ab,0x00a2,0x0099,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">0x0090,0x0087,0x007f,0x0077,0x006f,0x0067,0x005f,0x0058,0x0051,0x004b,0x0044,0x003e,0x0038,0x0032,0x002d,0x0028,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">0x0023,0x001f,0x001b,0x0017,0x0013,0x0010,0x000d,0x000a,0x0008,0x0006,0x0004,0x0002,0x0001,0x0000,0x0000,0x0000,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">0x0000,0x0000,0x0001,0x0002,0x0003,0x0005,0x0007,0x0009,0x000b,0x000e,0x0011,0x0015,0x0019,0x001d,0x0021,0x0026,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">0x002a,0x0030,0x0035,0x003b,0x0041,0x0047,0x004e,0x0055,0x005c,0x0063,0x006b,0x0073,0x007b,0x0083,0x008c,0x0094,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">0x009d,0x00a7,0x00b0,0x00ba,0x00c3,0x00cd,0x00d8,0x00e2,0x00ed,0x00f7,0x0102,0x010d,0x0118,0x0124,0x012f,0x013b,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">0x0147,0x0152,0x015e,0x016a,0x0176,0x0183,0x018f,0x019b,0x01a8,0x01b4,0x01c1,0x01cd,0x01da,0x01e6,0x01f3,0x0200</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" kindref="member">piano_Keys</ref>[]<sp/>=<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>27,<sp/><sp/><sp/>29,<sp/><sp/><sp/>31,<sp/><sp/><sp/>33,<sp/><sp/><sp/>35,<sp/><sp/><sp/>37,<sp/><sp/><sp/>39,<sp/><sp/><sp/>41,<sp/><sp/><sp/>44,<sp/><sp/><sp/>46,<sp/><sp/><sp/>49,<sp/><sp/><sp/>52,<sp/>0,0,0,0,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>55,<sp/><sp/><sp/>58,<sp/><sp/><sp/>62,<sp/><sp/><sp/>65,<sp/><sp/><sp/>69,<sp/><sp/><sp/>73,<sp/><sp/><sp/>78,<sp/><sp/><sp/>82,<sp/><sp/><sp/>87,<sp/><sp/><sp/>92,<sp/><sp/><sp/>98,<sp/><sp/>104,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/>110,<sp/><sp/>117,<sp/><sp/>123,<sp/><sp/>131,<sp/><sp/>139,<sp/><sp/>147,<sp/><sp/>156,<sp/><sp/>165,<sp/><sp/>175,<sp/><sp/>185,<sp/><sp/>196,<sp/><sp/>208,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/>220,<sp/><sp/>233,<sp/><sp/>247,<sp/><sp/>262,<sp/><sp/>277,<sp/><sp/>294,<sp/><sp/>311,<sp/><sp/>330,<sp/><sp/>349,<sp/><sp/>370,<sp/><sp/>392,<sp/><sp/>415,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/>440,<sp/><sp/>466,<sp/><sp/>494,<sp/><sp/>523,<sp/><sp/>554,<sp/><sp/>587,<sp/><sp/>622,<sp/><sp/>659,<sp/><sp/>698,<sp/><sp/>740,<sp/><sp/>784,<sp/><sp/>831,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/>880,<sp/><sp/>932,<sp/><sp/>988,<sp/>1046,<sp/>1109,<sp/>1175,<sp/>1244,<sp/>1318,<sp/>1397,<sp/>1480,<sp/>1568,<sp/>1661,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">1760,<sp/>1865,<sp/>1976,<sp/>2093,<sp/>2217,<sp/>2349,<sp/>2489,<sp/>2637,<sp/>2794,<sp/>2960,<sp/>3136,<sp/>3322,<sp/>0,0,0,0,<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">3520,<sp/>3729,<sp/>3951,<sp/>4186</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" kindref="member">song_lamb</ref>[]<sp/>=<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x45,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,0x45,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x45,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x40,0x40,0x40,0x42,0x45,0x45,0x45,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">0x42,0x40,0x3a,0x40,0x42,0x42,0x42,0x42,0x40,0x40,0x42,0x40,0x3a,0x4f</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" kindref="member">song_joy</ref>[]<sp/>=<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">0x37,0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x37,0x35,0x35,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">0x37,0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x35,0x33,0x33,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">0x35,0x35,0x37,0x33,0x35,0x37,0x38,0x37,0x33,0x35,0x37,0x38,0x37,0x35,0x33,0x35,0x2a,0x37,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">0x37,0x38,0x3a,0x3a,0x38,0x37,0x35,0x33,0x33,0x35,0x37,0x35,0x33,0x33,0x3f</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_vendor_process_8c_1a2333a2e9b49f877934d301d0f32176d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" kindref="member">song_custom</ref>[512];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_vendor_process_8c_1aed48ca0bcd2162fd4fd495873e2631f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" kindref="member">volume</ref><sp/>=<sp/>64;</highlight></codeline>
+<codeline lineno="64" refid="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" kindref="member">accum</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65" refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" kindref="member">sample</ref>;</highlight></codeline>
+<codeline lineno="66" refid="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" kindref="member">freq</ref>;</highlight></codeline>
+<codeline lineno="67" refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68" refid="_nhac_8c_1accb25237ae393a9f2e9c1271b953e78c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1accb25237ae393a9f2e9c1271b953e78c" kindref="member">iSizePiano</ref><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" kindref="member">piano_Keys</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69" refid="_nhac_8c_1ad43c3812e6d13e0518d9f8b8f463ffcf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1ad43c3812e6d13e0518d9f8b8f463ffcf" kindref="member">count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70" refid="_nhac_8c_1a2336afd6eab5e5a75b4adb1a5042bc0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="_nhac_8c_1a2336afd6eab5e5a75b4adb1a5042bc0c" kindref="member">song</ref>[]<sp/>=<sp/>{<ref refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" kindref="member">song_joy</ref>,<sp/><ref refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" kindref="member">song_lamb</ref>,<sp/><ref refid="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" kindref="member">song_custom</ref>};</highlight></codeline>
+<codeline lineno="71" refid="_vendor_process_8c_1a0ba6fe5c23a92e92be4232143448a4bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a0ba6fe5c23a92e92be4232143448a4bf" kindref="member">iSongSize</ref>[3];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="73" refid="_nhac_8c_1a2517d4bd37afe8bdd3e97bb27bfcf4a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a2517d4bd37afe8bdd3e97bb27bfcf4a5" kindref="member">iBaiHatA</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" refkind="member"><highlight class="normal">__irq<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" kindref="member">ChayNhac</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count<sp/>==<sp/>25000)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref>++;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref><sp/>==<sp/>iSongSize[iBaiHatA])</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" kindref="member">freq</ref><sp/>=<sp/><ref refid="_nhac_8c_1a421a3455dc17037fe316bbc9d6a013c4" kindref="member">piano_Keys</ref>[song[<ref refid="_nhac_8c_1a2517d4bd37afe8bdd3e97bb27bfcf4a5" kindref="member">iBaiHatA</ref>][<ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref>]<sp/>+<sp/>16];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" kindref="member">accum</ref><sp/>+=<sp/><ref refid="_nhac_8c_1a916bb50caf839dd34b9cdf0108facecd" kindref="member">freq_mult</ref><sp/>*<sp/><ref refid="_nhac_8c_1ae0d22272b68e75d19ac0b80c01f806b6" kindref="member">freq</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" kindref="member">sample</ref><sp/>=<sp/><ref refid="_nhac_8c_1ac263c2c68c72f6827dc42134e0cc1912" kindref="member">sine_table256</ref>[<ref refid="_nhac_8c_1a22d803e39cdb6deaf45491adb399c50e" kindref="member">accum</ref><sp/>&gt;&gt;<sp/>24];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" kindref="member">sample</ref><sp/>*=<sp/><ref refid="_nhac_8c_1aed48ca0bcd2162fd4fd495873e2631f5" kindref="member">volume</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>DACR<sp/>=<sp/>(<ref refid="_nhac_8c_1aaaebd885ac2fc0f51ac1a470c2946056" kindref="member">sample</ref><sp/>&amp;<sp/>0xFFC0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>T0IR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>interrupt<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>VICVectAddr<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Acknowledge<sp/>Interrupt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_nhac_8h_1a3916502f0893306111830b80a8dfe463" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a805bb5aac1bdfced0062a19e17f65a84" kindref="member">InitSong</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>DAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PINSEL1<sp/>&amp;=<sp/>(0x03&lt;&lt;20);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PINSEL1<sp/>|=<sp/>(0x02&lt;&lt;20);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>and<sp/>setup<sp/>timer<sp/>interrupt,<sp/>start<sp/>timer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T0MR0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11999<sp/>/<sp/>100;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1msec<sp/>=<sp/>12000-1<sp/>at<sp/>12.0<sp/>MHz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T0MCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Interrupt<sp/>and<sp/>Reset<sp/>on<sp/>MR0<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T0TCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Timer0<sp/>disable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VICVectAddr4<sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>long)<ref refid="_nhac_8c_1a345ca6d3595f154e9330eace753b0614" kindref="member">ChayNhac</ref>;</highlight><highlight class="comment">/*<sp/>Set<sp/>Interrupt<sp/>Vector<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VICVectCntl4<sp/><sp/>=<sp/>15;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>use<sp/>it<sp/>for<sp/>Timer0<sp/>Interrupt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VICIntEnable<sp/><sp/>=<sp/>(1<sp/><sp/>&lt;&lt;<sp/>4);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>Timer0<sp/>Interrupt<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iSongSize[0]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="_nhac_8c_1aadcab15d009d8f7995d29df4cd74691d" kindref="member">song_joy</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iSongSize[1]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="_nhac_8c_1abed34c441df8e252d2412ddd57cd26f1" kindref="member">song_lamb</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iSongSize[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_nhac_8h_1aa7c6ef70af8d6a223d867d87fde4980e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" kindref="member">NhacOn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBaiHat)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iBaiHatA<sp/>=<sp/>iBaiHat;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T0TCR<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_nhac_8h_1a5b00dad3126cd573e82ea3f7ccdd0a8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1a5b00dad3126cd573e82ea3f7ccdd0a8c" kindref="member">NhacOff</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T0TCR<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1abedc797afde9589dbd813f82dd6fe286" kindref="member">iPiano</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="_nhac_8h_1aea0ea691cc36610b05b6a39ef04a7f88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_nhac_8c_1aea0ea691cc36610b05b6a39ef04a7f88" kindref="member">NhacCustom</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(<ref refid="_nhac_8c_1ae239b130ee1b865fb9eaa897ae0592a1" kindref="member">song_custom</ref>,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)p,<sp/>iLen);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iSongSize[2]<sp/>=<sp/>iLen;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_nhac_8c_1aa7c6ef70af8d6a223d867d87fde4980e" kindref="member">NhacOn</ref>(2);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/Nhac.c"/>
+  </compounddef>
+</doxygen>

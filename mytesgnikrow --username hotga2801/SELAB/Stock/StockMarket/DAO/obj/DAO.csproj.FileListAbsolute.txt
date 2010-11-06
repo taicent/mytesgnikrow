@@ -1,0 +1,7 @@
+D:\StockMarket\AppStockMarket\StockMarket\DAO\bin\Debug\DAO.dll
+D:\StockMarket\AppStockMarket\StockMarket\DAO\bin\Debug\DAO.pdb
+D:\StockMarket\AppStockMarket\StockMarket\DAO\bin\Debug\DTO.dll
+D:\StockMarket\AppStockMarket\StockMarket\DAO\bin\Debug\DTO.pdb
+D:\StockMarket\AppStockMarket\StockMarket\DAO\obj\Debug\ResolveAssemblyReference.cache
+D:\StockMarket\AppStockMarket\StockMarket\DAO\obj\Debug\DAO.dll
+D:\StockMarket\AppStockMarket\StockMarket\DAO\obj\Debug\DAO.pdb

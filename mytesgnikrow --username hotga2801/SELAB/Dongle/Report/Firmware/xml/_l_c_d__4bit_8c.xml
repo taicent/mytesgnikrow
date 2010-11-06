@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_l_c_d__4bit_8c" kind="file">
+    <compoundname>LCD_4bit.c</compoundname>
+    <includes local="no">LPC23xx.H</includes>
+    <incdepgraph>
+      <node id="165">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c</label>
+        <link refid="LCD_4bit.c"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>LPC23xx.H</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1af5e65acc80f6b8396102a4dacaf3abe5" prot="public" static="no">
+        <name>DELAY_2N</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="22" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a24ff0c20cb5da95e10a82caafdda96dd" prot="public" static="no">
+        <name>LineLen</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="26" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1af55adedb0d16ae8ce809b57f2535aeec" prot="public" static="no">
+        <name>NumLines</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="27" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1af2266b30f789dce3014ba7290ba0c693" prot="public" static="no">
+        <name>PIN_E</name>
+        <initializer>0x80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="43" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a2121001f100dc94b4292542ca9093874" prot="public" static="no">
+        <name>PIN_RW</name>
+        <initializer>0x20000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="44" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a130b402933587698ca0687321614642d" prot="public" static="no">
+        <name>PIN_RS</name>
+        <initializer>0x10000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="45" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1ae9e59840d2c459ece6e089c2917ba566" prot="public" static="no">
+        <name>PINS_CTRL</name>
+        <initializer>0xB0000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="46" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a781f0d84c97daef15c9d048c3433e18b" prot="public" static="no">
+        <name>PINS_DATA</name>
+        <initializer>0x0F000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="47" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" prot="public" static="no">
+        <name>LCD_E</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) ? (IOSET1 = PIN_E)  : (IOCLR1 = PIN_E) );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="57" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="57" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1afad61cf19676c037d943d94d031b3519" prot="public" static="no">
+        <name>LCD_RW</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) ? (IOSET1 = PIN_RW) : (IOCLR1 = PIN_RW));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="60" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="60" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" prot="public" static="no">
+        <name>LCD_RS</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) ? (IOSET1 = PIN_RS) : (IOCLR1 = PIN_RS));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="63" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="63" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1aaf469a71c776564ce543a8e73e257068" prot="public" static="no">
+        <name>LCD_DATA_IN</name>
+        <initializer>((IOPIN1 &gt;&gt; 24) &amp; 0xF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="66" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a948ba57c018dde9ef6cee665a33a4e15" prot="public" static="no">
+        <name>LCD_DATA_OUT</name>
+        <param><defname>x</defname></param>
+        <initializer>IOCLR1 = PINS_DATA; IOSET1 = (x &amp; 0xF) &lt;&lt; 24;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="69" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="69" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1a6e75612a156cbc41e396ee975e58e17b" prot="public" static="no">
+        <name>LCD_ALL_DIR_OUT</name>
+        <initializer>IODIR1  |=  PINS_CTRL | PINS_DATA;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="72" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="72" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1ae78258bd73e6d8c58b39c32e944d2f04" prot="public" static="no">
+        <name>LCD_DATA_DIR_IN</name>
+        <initializer>IODIR1 &amp;= ~PINS_DATA;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="75" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_c_d__4bit_8c_1ae0bcc7ab4b0954da80577012f5ded4e1" prot="public" static="no">
+        <name>LCD_DATA_DIR_OUT</name>
+        <initializer>IODIR1 |=  PINS_DATA;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="78" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char UserFont[8][8]</definition>
+        <argsstring>[8][8]</argsstring>
+        <name>UserFont</name>
+        <initializer> {
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10 },
+  { 0x18,0x18,0x18,0x18,0x18,0x18,0x18,0x18 },
+  { 0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C },
+  { 0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E },
+  { 0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 },
+  { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 }
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="93" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="84" bodyend="-1"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a2a91e4ff2a34c5e12af7f39483a94f57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void delay</definition>
+        <argsstring>(int cnt)</argsstring>
+        <name>delay</name>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="106" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a728aed087c20fe4cb32dfe722bb42229" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>static unsigned char lcd_read_status</definition>
+        <argsstring>(void)</argsstring>
+        <name>lcd_read_status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="120" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="119" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a7a93a121a228d76c5f8845d73172425e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>static unsigned char wait_while_busy</definition>
+        <argsstring>(void)</argsstring>
+        <name>wait_while_busy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="148" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="147" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_write_4bit</definition>
+        <argsstring>(unsigned char c)</argsstring>
+        <name>lcd_write_4bit</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="166" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="165" bodyend="173"/>
+        <references refid="_l_c_d__4bit_8c_1a948ba57c018dde9ef6cee665a33a4e15" compoundref="_l_c_d__4bit_8c" startline="69">LCD_DATA_OUT</references>
+        <references refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" compoundref="_l_c_d__4bit_8c" startline="57">LCD_E</references>
+        <references refid="_l_c_d__4bit_8c_1afad61cf19676c037d943d94d031b3519" compoundref="_l_c_d__4bit_8c" startline="60">LCD_RW</references>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_write_cmd</definition>
+        <argsstring>(unsigned char c)</argsstring>
+        <name>lcd_write_cmd</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="183" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="182" bodyend="189"/>
+        <references refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" compoundref="_l_c_d__4bit_8c" startline="63">LCD_RS</references>
+        <references refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</references>
+        <referencedby refid="_l_c_d__4bit_8c_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1aa86b689e0750aefe528ba3feae05b717" compoundref="_l_c_d__4bit_8c" startline="265" endline="272">set_cursor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1ac296514bb31d139e7e54fea81046f25e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void lcd_write_data</definition>
+        <argsstring>(unsigned char c)</argsstring>
+        <name>lcd_write_data</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="199" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="198" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1ae2a729b8b952ad11f8520479931673c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>lcd_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="215" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="214" bodyend="217"/>
+        <referencedby refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" compoundref="_l_c_d__4bit_8c" startline="226" endline="254">lcd_init</referencedby>
+        <referencedby refid="_l_c_d__4bit_8c_1a84f10088d2e5eed82b9719912c688a80" compoundref="_l_c_d__4bit_8c" startline="293" endline="298">lcd_print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>lcd_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="227" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="226" bodyend="254"/>
+        <references refid="_l_c_d__4bit_8c_1a6e75612a156cbc41e396ee975e58e17b" compoundref="_l_c_d__4bit_8c" startline="72">LCD_ALL_DIR_OUT</references>
+        <references refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" compoundref="_l_c_d__4bit_8c" startline="214" endline="217">lcd_putchar</references>
+        <references refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" compoundref="_l_c_d__4bit_8c" startline="63">LCD_RS</references>
+        <references refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" compoundref="_l_c_d__4bit_8c" startline="165" endline="173">lcd_write_4bit</references>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <references refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" compoundref="_l_c_d__4bit_8c" startline="84">UserFont</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1aa86b689e0750aefe528ba3feae05b717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_cursor</definition>
+        <argsstring>(unsigned char column, unsigned char line)</argsstring>
+        <name>set_cursor</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="266" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="265" bodyend="272"/>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <referencedby refid="_l_c_d__4bit_8c_1ad235a86241458b1e7b8771688bfdaf9a" compoundref="_l_c_d__4bit_8c" startline="280" endline="284">lcd_clear</referencedby>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1ad235a86241458b1e7b8771688bfdaf9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>lcd_clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="281" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="280" bodyend="284"/>
+        <references refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" compoundref="_l_c_d__4bit_8c" startline="182" endline="189">lcd_write_cmd</references>
+        <references refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" compoundref="_l_c_d__4bit_8c" startline="265" endline="272">set_cursor</references>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_l_c_d__4bit_8c_1a84f10088d2e5eed82b9719912c688a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_print</definition>
+        <argsstring>(unsigned char const *string)</argsstring>
+        <name>lcd_print</name>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" line="294" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c" bodystart="293" bodyend="298"/>
+        <references refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" compoundref="_l_c_d__4bit_8c" startline="214" endline="217">lcd_putchar</references>
+        <referencedby refid="_vendor_process_8c_1a15aa0509e42e38ea6974d43cafe918ba" compoundref="_vendor_process_8c" startline="60" endline="72">LCD_print</referencedby>
+        <referencedby refid="memory_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="memory_8c" startline="53" endline="75">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>LCD_4bit.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>LCD<sp/>Functions<sp/>for<sp/>2<sp/>line<sp/>16<sp/>character<sp/>Text<sp/>LCD,<sp/>with<sp/>4-bit<sp/>interface</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LPC23xx.H&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LPC23xx<sp/>definitions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/***********************<sp/>Hardware<sp/>specific<sp/>configuration<sp/>**********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------<sp/>Speed<sp/>dependant<sp/>settings<sp/>-------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>If<sp/>processor<sp/>works<sp/>on<sp/>high<sp/>frequency<sp/>delay<sp/>has<sp/>to<sp/>be<sp/>increased,<sp/>it<sp/>can<sp/>be<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/>increased<sp/>by<sp/>factor<sp/>2^N<sp/>by<sp/>this<sp/>constant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_l_c_d__4bit_8c_1af5e65acc80f6b8396102a4dacaf3abe5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DELAY_2N<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------<sp/>Text<sp/>LCD<sp/>size<sp/>definitions<sp/>------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_l_c_d__4bit_8c_1a24ff0c20cb5da95e10a82caafdda96dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LineLen<sp/><sp/><sp/><sp/><sp/>16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Width<sp/>(in<sp/>characters)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_l_c_d__4bit_8c_1af55adedb0d16ae8ce809b57f2535aeec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NumLines<sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Hight<sp/>(in<sp/>lines)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*--------------------<sp/>LCD<sp/>interface<sp/>hardware<sp/>definitions<sp/>--------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>PINS:<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>-<sp/>DB4<sp/>=<sp/>P1.24</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/>-<sp/>DB5<sp/>=<sp/>P1.25</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/>-<sp/>DB6<sp/>=<sp/>P1.26</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/>-<sp/>DB7<sp/>=<sp/>P1.27</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/>-<sp/>E<sp/><sp/><sp/>=<sp/>P1.31<sp/>(for<sp/>V1<sp/>P1.30)</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/>-<sp/>RW<sp/><sp/>=<sp/>P1.29</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/>-<sp/>RS<sp/><sp/>=<sp/>P1.28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>MCB2300_V1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>First<sp/>version<sp/>of<sp/>MCB2300<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_l_c_d__4bit_8c_1af2266b30f789dce3014ba7290ba0c693" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_E<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000000</highlight></codeline>
+<codeline lineno="44" refid="_l_c_d__4bit_8c_1a2121001f100dc94b4292542ca9093874" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PIN_RW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20000000</highlight></codeline>
+<codeline lineno="45" refid="_l_c_d__4bit_8c_1a130b402933587698ca0687321614642d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PIN_RS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10000000</highlight></codeline>
+<codeline lineno="46" refid="_l_c_d__4bit_8c_1ae9e59840d2c459ece6e089c2917ba566" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PINS_CTRL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xB0000000</highlight></codeline>
+<codeline lineno="47" refid="_l_c_d__4bit_8c_1a781f0d84c97daef15c9d048c3433e18b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PINS_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0F000000</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>MCB2300_V1</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/><sp/>PIN_E</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>PIN_E<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0000000</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#undef<sp/><sp/>PINS_CTRL</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>PINS_CTRL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF0000000</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>pin<sp/>E<sp/><sp/>setting<sp/>to<sp/>0<sp/>or<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_E(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>?<sp/>(IOSET1<sp/>=<sp/>PIN_E)<sp/><sp/>:<sp/>(IOCLR1<sp/>=<sp/>PIN_E)<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>pin<sp/>RW<sp/>setting<sp/>to<sp/>0<sp/>or<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_l_c_d__4bit_8c_1afad61cf19676c037d943d94d031b3519" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_RW(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>?<sp/>(IOSET1<sp/>=<sp/>PIN_RW)<sp/>:<sp/>(IOCLR1<sp/>=<sp/>PIN_RW));</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>pin<sp/>RS<sp/>setting<sp/>to<sp/>0<sp/>or<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_RS(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>?<sp/>(IOSET1<sp/>=<sp/>PIN_RS)<sp/>:<sp/>(IOCLR1<sp/>=<sp/>PIN_RS));</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Reading<sp/>DATA<sp/>pins<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_l_c_d__4bit_8c_1aaf469a71c776564ce543a8e73e257068" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DATA_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((IOPIN1<sp/>&gt;&gt;<sp/>24)<sp/>&amp;<sp/>0xF)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Writing<sp/>value<sp/>to<sp/>DATA<sp/>pins<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_l_c_d__4bit_8c_1a948ba57c018dde9ef6cee665a33a4e15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DATA_OUT(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOCLR1<sp/>=<sp/>PINS_DATA;<sp/>IOSET1<sp/>=<sp/>(x<sp/>&amp;<sp/>0xF)<sp/>&lt;&lt;<sp/>24;</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Setting<sp/>all<sp/>pins<sp/>to<sp/>output<sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_l_c_d__4bit_8c_1a6e75612a156cbc41e396ee975e58e17b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_ALL_DIR_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>IODIR1<sp/><sp/>|=<sp/><sp/>PINS_CTRL<sp/>|<sp/>PINS_DATA;</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Setting<sp/>DATA<sp/>pins<sp/>to<sp/>input<sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_l_c_d__4bit_8c_1ae78258bd73e6d8c58b39c32e944d2f04" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DATA_DIR_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>IODIR1<sp/>&amp;=<sp/>~PINS_DATA;</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Setting<sp/>DATA<sp/>pins<sp/>to<sp/>output<sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_l_c_d__4bit_8c_1ae0bcc7ab4b0954da80577012f5ded4e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DATA_DIR_OUT<sp/><sp/><sp/><sp/><sp/><sp/>IODIR1<sp/>|=<sp/><sp/>PINS_DATA;</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>8<sp/>user<sp/>defined<sp/>characters<sp/>to<sp/>be<sp/>loaded<sp/>into<sp/>CGRAM<sp/>(used<sp/>for<sp/>bargraph)<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" kindref="member">UserFont</ref>[8][8]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>{<sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00<sp/>},</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>{<sp/>0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10<sp/>},</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>{<sp/>0x18,0x18,0x18,0x18,0x18,0x18,0x18,0x18<sp/>},</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>{<sp/>0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C,0x1C<sp/>},</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>{<sp/>0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E<sp/>},</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>{<sp/>0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F<sp/>},</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>{<sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00<sp/>},</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>{<sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/************************<sp/>Global<sp/>function<sp/>definitions<sp/>*************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">*<sp/>Delay<sp/>in<sp/>while<sp/>loop<sp/>cycles<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>cnt:<sp/><sp/><sp/><sp/>number<sp/>of<sp/>while<sp/>cycles<sp/>to<sp/>delay<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>delay<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>cnt<sp/>&lt;&lt;=<sp/><ref refid="_l_c_d__4bit_8c_1af5e65acc80f6b8396102a4dacaf3abe5" kindref="member">DELAY_2N</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cnt--);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">*<sp/>Read<sp/>status<sp/>of<sp/>LCD<sp/>controller<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>none<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Status<sp/>byte<sp/>contains<sp/>busy<sp/>flag<sp/>and<sp/>address<sp/>pointer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>lcd_read_status<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1ae78258bd73e6d8c58b39c32e944d2f04" kindref="member">LCD_DATA_DIR_IN</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" kindref="member">LCD_RS</ref>(0)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afad61cf19676c037d943d94d031b3519" kindref="member">LCD_RW</ref>(1)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(1)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>status<sp/><sp/>=<sp/><ref refid="_l_c_d__4bit_8c_1aaf469a71c776564ce543a8e73e257068" kindref="member">LCD_DATA_IN</ref><sp/>&lt;&lt;<sp/>4;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(0)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(1)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>status<sp/>|=<sp/>LCD_DATA_IN;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(0)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1ae0bcc7ab4b0954da80577012f5ded4e1" kindref="member">LCD_DATA_DIR_OUT</ref></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>return<sp/>(status);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">*<sp/>Wait<sp/>until<sp/>LCD<sp/>controller<sp/>busy<sp/>flag<sp/>is<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Status<sp/>byte<sp/>of<sp/>LCD<sp/>controller<sp/>(busy<sp/>+<sp/>address)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">static<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>wait_while_busy<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>lcd_read_status();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>&amp;<sp/>0x80);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>busy<sp/>flag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(status);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">*<sp/>Write<sp/>4-bits<sp/>to<sp/>LCD<sp/>controller<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="161"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>c:<sp/><sp/><sp/><sp/><sp/><sp/>command<sp/>to<sp/>be<sp/>written<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="162"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afad61cf19676c037d943d94d031b3519" kindref="member">LCD_RW</ref>(0)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(1)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a948ba57c018dde9ef6cee665a33a4e15" kindref="member">LCD_DATA_OUT</ref>(c&amp;0x0F)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1afb4b88fbcc5475a30c22c3e37103ca21" kindref="member">LCD_E</ref>(0)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="177"><highlight class="comment">*<sp/>Write<sp/>command<sp/>to<sp/>LCD<sp/>controller<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>c:<sp/><sp/><sp/><sp/><sp/><sp/>command<sp/>to<sp/>be<sp/>written<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="179"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>wait_while_busy();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" kindref="member">LCD_RS</ref>(0)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(c&gt;&gt;4);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(c);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">*<sp/>Write<sp/>data<sp/>to<sp/>LCD<sp/>controller<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>c:<sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>to<sp/>be<sp/>written<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lcd_write_data<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>wait_while_busy();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" kindref="member">LCD_RS</ref>(1)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(c&gt;&gt;4);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(c);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="209"><highlight class="comment">*<sp/>Print<sp/>Character<sp/>to<sp/>current<sp/>cursor<sp/>position<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>c:<sp/><sp/><sp/><sp/><sp/><sp/>character<sp/>to<sp/>be<sp/>printed<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="211"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="212"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="_l_c_d__4bit_8c_1ae2a729b8b952ad11f8520479931673c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" kindref="member">lcd_putchar</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>lcd_write_data<sp/>(c);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">*<sp/>Initialize<sp/>the<sp/>LCD<sp/>controller<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="223"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="224"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="_l_c_d__4bit_8c_1a6842775ba83d166f02b8fef8bb63b1e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1a6842775ba83d166f02b8fef8bb63b1e6" kindref="member">lcd_init</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*p;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>all<sp/>pins<sp/>for<sp/>LCD<sp/>as<sp/>outputs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a6e75612a156cbc41e396ee975e58e17b" kindref="member">LCD_ALL_DIR_OUT</ref></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>delay<sp/>(15000);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1af2d555e89facdbbcba96c0c00fd8f462" kindref="member">LCD_RS</ref>(0)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(0x3);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Select<sp/>4-bit<sp/>interface<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>delay<sp/>(4100);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(0x3);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>delay<sp/>(100);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(0x3);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a1d8c72850294f96183ba414c1a80881b" kindref="member">lcd_write_4bit</ref><sp/>(0x2);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref><sp/>(0x28);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>2<sp/>lines,<sp/>5x8<sp/>character<sp/>matrix<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref><sp/>(0x0C);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Display<sp/>ctrl:Disp=ON,Curs/Blnk=OFF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref><sp/>(0x06);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Entry<sp/>mode:<sp/>Move<sp/>right,<sp/>no<sp/>shift<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>user-specific<sp/>characters<sp/>into<sp/>CGRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref>(0x40);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>CGRAM<sp/>address<sp/>counter<sp/>to<sp/>0<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>p<sp/>=<sp/>&amp;<ref refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" kindref="member">UserFont</ref>[0][0];</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="_l_c_d__4bit_8c_1a85c4d36ff6dcfaeb3ac4973a3a8a4399" kindref="member">UserFont</ref>);<sp/>i++,<sp/>p++)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" kindref="member">lcd_putchar</ref><sp/>(*p);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref>(0x80);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>DDRAM<sp/>address<sp/>counter<sp/>to<sp/>0<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="259"><highlight class="comment">*<sp/>Set<sp/>cursor<sp/>position<sp/>on<sp/>LCD<sp/>display<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="260"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>column:<sp/>column<sp/>position<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="261"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line:<sp/><sp/><sp/>line<sp/>position<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="263"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="_l_c_d__4bit_8c_1aa86b689e0750aefe528ba3feae05b717" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" kindref="member">set_cursor</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>column,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>line)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>address;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>address<sp/>=<sp/>(line<sp/>*<sp/>40)<sp/>+<sp/>column;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>address<sp/>=<sp/>0x80<sp/>+<sp/>(address<sp/>&amp;<sp/>0x7F);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref>(address);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>DDRAM<sp/>address<sp/>counter<sp/>to<sp/>0<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="275"><highlight class="comment">*<sp/>Clear<sp/>the<sp/>LCD<sp/>display<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="276"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="277"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="278"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="_l_c_d__4bit_8c_1ad235a86241458b1e7b8771688bfdaf9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1ad235a86241458b1e7b8771688bfdaf9a" kindref="member">lcd_clear</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d__4bit_8c_1a194afe6c54659ebfe85e470bf4b69410" kindref="member">lcd_write_cmd</ref>(0x01);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Display<sp/>clear<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><ref refid="_l_c_d_8h_1aa86b689e0750aefe528ba3feae05b717" kindref="member">set_cursor</ref><sp/>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="288"><highlight class="comment">*<sp/>Print<sp/>sting<sp/>to<sp/>LCD<sp/>display<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="289"><highlight class="comment">*<sp/><sp/><sp/>Parameter:<sp/><sp/><sp/><sp/>string:<sp/>pointer<sp/>to<sp/>output<sp/>string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="290"><highlight class="comment">*<sp/><sp/><sp/>Return:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="291"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="_l_c_d__4bit_8c_1a84f10088d2e5eed82b9719912c688a80" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_c_d_8h_1a84f10088d2e5eed82b9719912c688a80" kindref="member">lcd_print</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_c_d_8h_1ae2a729b8b952ad11f8520479931673c8" kindref="member">lcd_putchar</ref><sp/>(*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">++);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/LCD_4bit.c"/>
+  </compounddef>
+</doxygen>

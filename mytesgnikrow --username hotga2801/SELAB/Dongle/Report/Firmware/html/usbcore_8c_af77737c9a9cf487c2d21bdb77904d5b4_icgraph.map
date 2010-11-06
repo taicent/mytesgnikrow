@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbuser_8h.html#a9c3a7f8c05ae502486199cde17caceff" title="USB_EndPoint0" alt="" coords="367,54,481,84"/>
+<area shape="rect" id="node5" href="$usbcore_8c.html#aceff2f7d7cb2fda84a5ddc349a7da722" title="USB_GetDescriptor" alt="" coords="181,28,317,57"/>
+<area shape="rect" id="node8" href="$usbcore_8c.html#a95369438fa761f9c7ba0ac9b646fe8c2" title="USB_GetStatus" alt="" coords="192,81,307,110"/>
+<area shape="rect" id="node11" href="$_vendor_process_8h.html#a37fc332c09d1bf492be4af4570ec7c56" title="VendorSetupStage" alt="" coords="184,134,315,164"/>
+</map>

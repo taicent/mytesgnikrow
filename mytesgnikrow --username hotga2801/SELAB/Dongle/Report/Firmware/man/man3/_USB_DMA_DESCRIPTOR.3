@@ -1,0 +1,97 @@
+.TH "_USB_DMA_DESCRIPTOR" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+_USB_DMA_DESCRIPTOR \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <usbhw.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBDWORD\fP \fBBufAdr\fP"
+.br
+.ti -1c
+.RI "\fBWORD\fP \fBBufLen\fP"
+.br
+.ti -1c
+.RI "\fBWORD\fP \fBMaxSize\fP"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBInfoAdr\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBDWORD\fP \fBLink\fP: 1"
+.br
+.ti -1c
+.RI "      \fBDWORD\fP \fBIsoEP\fP: 1"
+.br
+.ti -1c
+.RI "      \fBDWORD\fP \fBATLE\fP: 1"
+.br
+.ti -1c
+.RI "      \fBDWORD\fP \fBRsrvd\fP: 5"
+.br
+.ti -1c
+.RI "      \fBDWORD\fP \fBLenPos\fP: 8"
+.br
+.ti -1c
+.RI "   } \fBType\fP"
+.br
+.ti -1c
+.RI "   \fBDWORD\fP \fBVal\fP"
+.br
+.ti -1c
+.RI "} \fBCfg\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 58 of file usbhw.h.
+.SH "Field Documentation"
+.PP 
+.SS "\fBDWORD\fP \fBATLE\fP"
+.PP
+Definition at line 67 of file usbhw.h.
+.SS "\fBDWORD\fP \fBBufAdr\fP"
+.PP
+Definition at line 59 of file usbhw.h.
+.SS "\fBWORD\fP \fBBufLen\fP"
+.PP
+Definition at line 60 of file usbhw.h.
+.SS "union { ... }   \fBCfg\fP"
+.SS "\fBDWORD\fP \fBInfoAdr\fP"
+.PP
+Definition at line 62 of file usbhw.h.
+.SS "\fBDWORD\fP \fBIsoEP\fP"
+.PP
+Definition at line 66 of file usbhw.h.
+.SS "\fBDWORD\fP \fBLenPos\fP"
+.PP
+Definition at line 69 of file usbhw.h.
+.SS "\fBDWORD\fP \fBLink\fP"
+.PP
+Definition at line 65 of file usbhw.h.
+.SS "\fBWORD\fP \fBMaxSize\fP"
+.PP
+Definition at line 61 of file usbhw.h.
+.SS "\fBDWORD\fP \fBRsrvd\fP"
+.PP
+Definition at line 68 of file usbhw.h.
+.SS "struct { ... }   \fBType\fP"
+.SS "\fBDWORD\fP \fBVal\fP"
+.PP
+Definition at line 71 of file usbhw.h.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

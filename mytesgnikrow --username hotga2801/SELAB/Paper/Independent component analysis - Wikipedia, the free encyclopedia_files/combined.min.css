@@ -1,0 +1,675 @@
+.suggestions {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 99; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: -1px 0px 0px; OVERFLOW: hidden; WIDTH: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 0px; BORDER-BOTTOM-STYLE: none
+}
+.suggestions-special {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.25em; BORDER-TOP: #aaaaaa 1px solid; DISPLAY: none; PADDING-LEFT: 0.25em; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0.25em; MARGIN: -2px 0px 0px; BORDER-LEFT: #aaaaaa 1px solid; CURSOR: pointer; LINE-HEIGHT: 1.25em; PADDING-TOP: 0.25em; BORDER-BOTTOM: #aaaaaa 1px solid; POSITION: relative; BACKGROUND-COLOR: window
+}
+.suggestions-results {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #aaaaaa 1px solid; CURSOR: pointer; PADDING-TOP: 0px; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: window
+}
+.suggestions-result {
+	PADDING-RIGHT: 0.25em; PADDING-LEFT: 0.25em; PADDING-BOTTOM: 0.01em; MARGIN: 0px; WIDTH: 100%; COLOR: windowtext; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.01em
+}
+.suggestions-result-current {
+	COLOR: highlighttext; BACKGROUND-COLOR: highlight
+}
+.suggestions-special .special-label {
+	FONT-SIZE: 0.8em; COLOR: gray
+}
+.suggestions-special .special-query {
+	COLOR: black; FONT-STYLE: italic
+}
+.suggestions-special .special-hover {
+	BACKGROUND-COLOR: silver
+}
+.suggestions-result-current .special-label {
+	COLOR: highlighttext
+}
+.suggestions-result-current .special-query {
+	COLOR: highlighttext
+}
+.autoellipsis-matched {
+	FONT-WEIGHT: bold
+}
+.collapsible-nav#mw-panel DIV.portal {
+	PADDING-RIGHT: 0px! important; BACKGROUND-POSITION: left top; PADDING-LEFT: 0px! important; BACKGROUND-IMAGE: url(../images/vector/collapsibleNav/portal-break.png?1); PADDING-BOTTOM: 0.25em! important; MARGIN: -11px 9px 10px 11px; PADDING-TOP: 0.25em! important; BACKGROUND-REPEAT: no-repeat
+}
+BODY.rtl .collapsible-nav#mw-panel DIV.portal {
+	BACKGROUND-POSITION: right top; MARGIN: -11px 11px 10px 9px
+}
+.collapsible-nav#mw-panel DIV.portal H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 1.5em; FONT-WEIGHT: normal; BACKGROUND: url(../images/vector/collapsibleNav/arrow-down.png?1) no-repeat 0px 50%; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 3px; COLOR: #4d4d4d; PADDING-TOP: 4px
+}
+BODY.rtl .collapsible-nav#mw-panel DIV.portal H5 {
+	PADDING-RIGHT: 1.5em; PADDING-LEFT: 0px; BACKGROUND: url(../images/vector/collapsibleNav/arrow-down.png?1) no-repeat 100% 50%; PADDING-BOTTOM: 3px; PADDING-TOP: 4px
+}
+.collapsible-nav#mw-panel DIV.collapsed H5 {
+	BACKGROUND: url(../images/vector/collapsibleNav/arrow-right.png?1) no-repeat 0px 50%; MARGIN-BOTTOM: 0px; COLOR: #0645ad
+}
+BODY.rtl .collapsible-nav#mw-panel DIV.collapsed H5 {
+	BACKGROUND: url(../images/vector/collapsibleNav/arrow-left.png?1) no-repeat 100% 50%
+}
+.collapsible-nav#mw-panel DIV H5:hover {
+	CURSOR: pointer; TEXT-DECORATION: none
+}
+.collapsible-nav#mw-panel DIV.collapsed H5:hover {
+	TEXT-DECORATION: underline
+}
+.collapsible-nav#mw-panel DIV.portal DIV.body {
+	DISPLAY: none; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px
+}
+.collapsible-nav#mw-panel DIV.persistent DIV.body {
+	DISPLAY: block
+}
+.collapsible-nav#mw-panel DIV.first H5 {
+	DISPLAY: none
+}
+.collapsible-nav#mw-panel DIV.persistent H5 {
+	PADDING-LEFT: 0.7em; BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: default
+}
+.collapsible-nav#mw-panel DIV.portal DIV.body UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em
+}
+.collapsible-nav#mw-panel DIV.first {
+	MARGIN-TOP: 0px; BACKGROUND-IMAGE: none
+}
+.collapsible-nav#mw-panel DIV.persistent DIV.body {
+	MARGIN-LEFT: 0.5em
+}
+BODY.rtl .collapsible-nav#mw-panel DIV.persistent DIV.body {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0.5em
+}
+FORM#editform {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#wpSummary {
+	MARGIN-BOTTOM: 1em
+}
+#wpSummaryLabel {
+	MARGIN-BOTTOM: 1em
+}
+.wikiEditor-ui TEXTAREA#wpTextbox1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: -1px; BORDER-TOP-STYLE: none; LINE-HEIGHT: 1.5em; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.wikiEditor-ui .wikiEditor-ui-text > TEXTAREA#wpTextbox1 {
+	MARGIN: 0px
+}
+.wikiEditor-ui {
+	CLEAR: both; BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FLOAT: left; BORDER-LEFT: silver 1px solid; WIDTH: 100%; BORDER-BOTTOM: silver 1px solid; POSITION: relative; BACKGROUND-COLOR: #e0eef7
+}
+BODY.rtl .wikiEditor-ui {
+	FLOAT: right
+}
+.wikiEditor-ui .wikiEditor-ui-bottom {
+	
+}
+.wikiEditor-ui .wikiEditor-ui-text {
+	LINE-HEIGHT: 0
+}
+.wikiEditor-ui .wikiEditor-ui-top {
+	BORDER-BOTTOM: silver 1px solid; POSITION: relative
+}
+.wikiEditor-ui .wikiEditor-ui-left {
+	FLOAT: left; WIDTH: 100%
+}
+BODY.rtl .wikiEditor-ui .wikiEditor-ui-left {
+	FLOAT: right
+}
+.wikiEditor-ui .wikiEditor-ui-right {
+	BACKGROUND: #f3f3f3; FLOAT: right; OVERFLOW: hidden
+}
+BODY.rtl .wikiEditor-ui .wikiEditor-ui-right {
+	FLOAT: left
+}
+.wikiEditor-wikitext {
+	FLOAT: left; WIDTH: 100%
+}
+.wikiEditor-ui-controls {
+	MARGIN-TOP: -1px; FLOAT: left; WIDTH: 100%; BORDER-BOTTOM: silver 1px solid; BACKGROUND-COLOR: white
+}
+.wikiEditor-ui-tabs {
+	BORDER-TOP: silver 1px solid; FLOAT: left; MARGIN-LEFT: -1px; BORDER-LEFT: silver 1px solid; HEIGHT: 2.5em; BACKGROUND-COLOR: white
+}
+.wikiEditor-ui-buttons {
+	BORDER-TOP: white 1px solid; PADDING-LEFT: 1em; FLOAT: right; MARGIN-RIGHT: -1px; HEIGHT: 2.5em; BACKGROUND-COLOR: white
+}
+.wikiEditor-ui-buttons BUTTON {
+	MARGIN-LEFT: 0.5em
+}
+.wikiEditor-ui-tabs DIV {
+	BORDER-RIGHT: silver 1px solid; FLOAT: left; BORDER-BOTTOM: silver 1px solid; HEIGHT: 2.5em; BACKGROUND-COLOR: #f3f3f3
+}
+.wikiEditor-ui-tabs DIV.current {
+	BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: white
+}
+.wikiEditor-ui-tabs DIV A {
+	PADDING-RIGHT: 0.75em; DISPLAY: inline-block; PADDING-LEFT: 0.75em; PADDING-BOTTOM: 0px; COLOR: #0645ad; LINE-HEIGHT: 2.5em; PADDING-TOP: 0px
+}
+.wikiEditor-ui-tabs DIV.current A {
+	COLOR: #333333
+}
+.wikiEditor-ui-tabs DIV.current A:hover {
+	TEXT-DECORATION: none
+}
+.wikiEditor-view-wikitext {
+	LINE-HEIGHT: 1em
+}
+.wikiEditor-ui-loading {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; Z-INDEX: 10; BACKGROUND: #f3f3f3; LEFT: 0px; MARGIN: -1px; BORDER-LEFT: silver 1px solid; WIDTH: 100%; BORDER-BOTTOM: silver 1px solid; POSITION: absolute; TOP: 0px; HEIGHT: 100%; TEXT-ALIGN: center
+}
+.wikiEditor-ui-loading SPAN {
+	DISPLAY: block; BACKGROUND: url(../images/wikiEditor/toolbar/loading.gif) no-repeat 0px 0px; MARGIN: 0px auto; WIDTH: 24px; TEXT-INDENT: -9999px; HEIGHT: 24px
+}
+.wikiEditor-toolbar-dialog TABLE {
+	MARGIN-TOP: 0.75em
+}
+.wikiEditor-toolbar-dialog TABLE TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; OVERFLOW: visible; PADDING-TOP: 0.5em; HEIGHT: 3em
+}
+DIV.suggestions {
+	Z-INDEX: 1099
+}
+.wikiEditor-toolbar-dialog .ui-dialog-titlebar-close:hover {
+	TEXT-DECORATION: none
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content .status-invalid INPUT {
+	BORDER-RIGHT: red 2px solid; PADDING-RIGHT: 1px; BORDER-TOP: red 2px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 2px; BORDER-LEFT: red 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: red 2px solid
+}
+.wikiEditor-toolbar-dialog .ui-dialog-titlebar {
+	PADDING-RIGHT: 1.4em! important; PADDING-LEFT: 1.4em! important; PADDING-BOTTOM: 0.6em! important; PADDING-TOP: 0.9em! important
+}
+.wikiEditor-toolbar-dialog TABLE TD {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 0.6em! important; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 0.6em! important; BACKGROUND: url(../images/wikiEditor/dialogs/button_off.png?1) #f2f2f2 repeat-x 50% 100%; PADDING-BOTTOM: 0.15em! important; MARGIN: 0.5em 0px 0.5em 0.4em; BORDER-LEFT: #a6a6a6 1px solid; PADDING-TOP: 0.2em! important; BORDER-BOTTOM: #a6a6a6 1px solid; -moz-border-radius: 4px; -webkit-border-radius: 4px
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON:hover {
+	BORDER-LEFT-COLOR: #6e7273; BACKGROUND: url(../images/wikiEditor/dialogs/button_over.png?1) #e1e1e1 repeat-x 50% 100%; BORDER-BOTTOM-COLOR: #6e7273; BORDER-TOP-COLOR: #6e7273; BORDER-RIGHT-COLOR: #6e7273
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON:active {
+	BORDER-LEFT-COLOR: #707271; BACKGROUND: url(../images/wikiEditor/dialogs/button_down.png?1) #bfbfbf repeat-x 50% 100%; BORDER-BOTTOM-COLOR: #707271; BORDER-TOP-COLOR: #707271; BORDER-RIGHT-COLOR: #707271
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON:focus {
+	BORDER-LEFT-COLOR: #707271; BACKGROUND: url(../images/wikiEditor/dialogs/button_down.png?1) #bfbfbf repeat-x 50% 100%; BORDER-BOTTOM-COLOR: #707271; BORDER-TOP-COLOR: #707271; BORDER-RIGHT-COLOR: #707271
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON.disabled {
+	BORDER-LEFT-COLOR: #cccccc; BACKGROUND: url(../images/wikiEditor/dialogs/button_disabled.png?1) #f2f2f2 repeat-x 50% 100%; BORDER-BOTTOM-COLOR: #cccccc; COLOR: #7f7f7f; BORDER-TOP-COLOR: #cccccc; BORDER-RIGHT-COLOR: #cccccc
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON:unknown {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.wikiEditor-toolbar-dialog .ui-widget-header {
+	BACKGROUND: url(../images/wikiEditor/dialogs/titlebar_fade.png?1) #f0f0f0 repeat-x 50% 100%
+}
+.wikiEditor-toolbar-dialog .ui-icon-closethick {
+	BACKGROUND: url(../images/wikiEditor/dialogs/close_x.png?1) no-repeat 50% 50%
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+	PADDING-RIGHT: 1.4em! important; MARGIN-TOP: 0px! important; PADDING-LEFT: 1.4em! important; PADDING-BOTTOM: 0.5em! important; PADDING-TOP: 0.3em! important
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content FIELDSET {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.wikiEditor-toolbar-dialog .ui-widget-header {
+	BORDER-BOTTOM: #6bc8f3 1px solid
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content INPUT[type=text] {
+	-moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -khtml-box-sizing: border-box
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content INPUT[type='radio'] {
+	MARGIN-LEFT: 0px
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content INPUT[type='checkbox'] {
+	MARGIN-LEFT: 0px
+}
+.wikiEditor-toolbar-dialog .ui-dialog-titlebar-close {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+BODY.ltr .wikiEditor-toolbar-dialog .ui-dialog-titlebar-close {
+	RIGHT: 0.9em
+}
+.wikieditor-toolbar-field-wrapper {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 25px; PADDING-TOP: 0px
+}
+.wikieditor-toolbar-floated-field-wrapper {
+	FLOAT: left; MARGIN-RIGHT: 2em
+}
+.wikieditor-toolbar-dialog-hint {
+	COLOR: #999999
+}
+.wikiEditor-toolbar-dialog {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.wikiEditor-toolbar-dialog .ui-widget-content {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+#wikieditor-toolbar-table-dialog FIELDSET {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 218px; PADDING-TOP: 0px
+}
+BODY.rtl #wikieditor-toolbar-table-dialog FIELDSET {
+	FLOAT: right
+}
+#wikieditor-toolbar-table-dialog .wikieditor-toolbar-table-preview-wrapper {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; WIDTH: 330px; PADDING-TOP: 0px
+}
+BODY.rtl #wikieditor-toolbar-table-dialog .wikieditor-toolbar-table-preview-wrapper {
+	FLOAT: left
+}
+BODY.rtl .wikiEditor-toolbar-dialog .wikieditor-toolbar-table-preview-wrapper TABLE {
+	MARGIN-LEFT: 1em; MARGIN-RIGHT: 0px
+}
+.wikieditor-toolbar-table-preview-content * {
+	CURSOR: default
+}
+.wikiEditor-toolbar-dialog .wikieditor-toolbar-table-preview-wrapper TABLE {
+	WIDTH: 100%! important
+}
+.wikiEditor-toolbar-dialog .wikieditor-toolbar-table-preview-content TABLE TD {
+	PADDING-RIGHT: 4px! important; PADDING-LEFT: 4px! important; PADDING-BOTTOM: 10px! important; PADDING-TOP: 10px! important; HEIGHT: auto! important
+}
+.wikiEditor-toolbar-dialog .wikieditor-toolbar-table-preview-content TABLE TH {
+	PADDING-RIGHT: 3px! important; PADDING-LEFT: 3px! important; PADDING-BOTTOM: 7px! important; PADDING-TOP: 7px! important
+}
+.wikieditor-toolbar-table-dimension-fields .wikieditor-toolbar-field-wrapper {
+	FLOAT: left; VERTICAL-ALIGN: bottom; MARGIN-RIGHT: 20px
+}
+BODY.rtl .wikieditor-toolbar-table-dimension-fields .wikieditor-toolbar-field-wrapper {
+	FLOAT: right; MARGIN-LEFT: 20px; MARGIN-RIGHT: 0px
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content {
+	PADDING-RIGHT: 20px! important; PADDING-LEFT: 20px! important; PADDING-BOTTOM: 0px! important; PADDING-TOP: 30px! important
+}
+.wikieditor-toolbar-dialog-wrapper {
+	WIDTH: 100%
+}
+#wikieditor-toolbar-link-int-target-status {
+	FLOAT: right
+}
+#wikieditor-toolbar-link-int-target {
+	WIDTH: 100%
+}
+#wikieditor-toolbar-link-int-text {
+	WIDTH: 100%
+}
+#wikieditor-toolbar-tool-link-int-target-label {
+	FLOAT: left; LINE-HEIGHT: 1.7em
+}
+#wikieditor-toolbar-link-int-target-status-loading {
+	LINE-HEIGHT: 1.7em
+}
+#wikieditor-toolbar-link-int-target-status-exists {
+	BACKGROUND-POSITION: 0px 50%; PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat
+}
+#wikieditor-toolbar-link-int-target-status-notexists {
+	BACKGROUND-POSITION: 0px 50%; PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat
+}
+#wikieditor-toolbar-link-int-target-status-invalid {
+	BACKGROUND-POSITION: 0px 50%; PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat
+}
+#wikieditor-toolbar-link-int-target-status-external {
+	BACKGROUND-POSITION: 0px 50%; PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat
+}
+#wikieditor-toolbar-link-int-target-status-exists {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/dialogs/insert-link-exists.png?1)
+}
+#wikieditor-toolbar-link-int-target-status-notexists {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/dialogs/insert-link-notexists.png?1)
+}
+#wikieditor-toolbar-link-int-target-status-invalid {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/dialogs/insert-link-invalid.png?1)
+}
+#wikieditor-toolbar-link-int-target-status-external {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/dialogs/insert-link-external.png?1)
+}
+#wikieditor-toolbar-reference-dialog LABEL {
+	FLOAT: left; LINE-HEIGHT: 1.7em
+}
+#wikieditor-toolbar-reference-text {
+	WIDTH: 100%
+}
+BODY.rtl .wikiEditor-toolbar-dialog .ui-dialog-buttonpane BUTTON {
+	FLOAT: left; MARGIN: 0.5em 0.4em 0.5em 0px
+}
+BODY.rtl .wikiEditor-toolbar-dialog .ui-dialog-titlebar-close {
+	RIGHT: auto; LEFT: 0.9em
+}
+BODY.rtl .wikiEditor-toolbar-dialog .ui-dialog-title {
+	FLOAT: right
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status {
+	FLOAT: left
+}
+BODY.rtl #wikieditor-toolbar-tool-link-int-target-label {
+	FLOAT: right
+}
+BODY.rtl .wikieditor-toolbar-floated-field-wrapper {
+	FLOAT: right; MARGIN-LEFT: 2em; MARGIN-RIGHT: 0px
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status-exists {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: 100% 50%; PADDING-LEFT: 0px
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status-notexists {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: 100% 50%; PADDING-LEFT: 0px
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status-invalid {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: 100% 50%; PADDING-LEFT: 0px
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status-external {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: 100% 50%; PADDING-LEFT: 0px
+}
+BODY.rtl #wikieditor-toolbar-link-int-target-status-external {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/dialogs/insert-link-external-rtl.png?1)
+}
+.wikiEditor-template-dialog-fields LABEL {
+	FLOAT: left; TEXT-TRANSFORM: capitalize; WIDTH: 25%; LINE-HEIGHT: 2.25em
+}
+.wikiEditor-template-dialog-fields TEXTAREA {
+	FLOAT: right; WIDTH: 70%; LINE-HEIGHT: 1.5em; HEIGHT: 1.5em
+}
+.wikiEditor-template-dialog-fields .wikiEditor-template-dialog-field-wrapper {
+	CLEAR: both; PADDING-RIGHT: 0.33em; PADDING-LEFT: 0.33em; PADDING-BOTTOM: 0.75em; PADDING-TOP: 0.75em; BORDER-BOTTOM: silver 1px dashed
+}
+.wikiEditor-template-dialog-fields .wikiEditor-template-dialog-field-wrapper:first-child {
+	PADDING-TOP: 0px
+}
+.wikiEditor-template-dialog-fields .wikiEditor-template-dialog-field-wrapper:unknown {
+	BORDER-BOTTOM-STYLE: none
+}
+.wikieditor-toolbar-table-dimension-fields:unknown {
+	CLEAR: both; DISPLAY: block; FONT-SIZE: 0px; VISIBILITY: hidden; HEIGHT: 0px; content: " "
+}
+.wikieditor-toolbar-dialog-wrapper:unknown {
+	CLEAR: both; DISPLAY: block; FONT-SIZE: 0px; VISIBILITY: hidden; HEIGHT: 0px; content: " "
+}
+.wikieditor-toolbar-table-dimension-fields {
+	
+}
+.wikieditor-toolbar-dialog-wrapper {
+	
+}
+* HTML .wikieditor-toolbar-table-dimension-fields {
+	HEIGHT: 1%
+}
+* HTML .wikieditor-toolbar-dialog-wrapper {
+	HEIGHT: 1%
+}
+.wikieditor-toolbar-table-dimension-fields {
+	DISPLAY: block
+}
+.wikieditor-toolbar-dialog-wrapper {
+	DISPLAY: block
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+	BORDER-TOP: #cccccc 1px solid
+}
+.wikiEditor-toolbar-dialog .ui-dialog-content {
+	PADDING-BOTTOM: 1em! important
+}
+.wikiEditor-dialog-editoptions {
+	MARGIN-TOP: 15px
+}
+.wikiEditor-publish-dialog-copywarn {
+	MARGIN-TOP: 0.5em
+}
+.wikiEditor-publish-dialog-summary {
+	MARGIN-TOP: 1.5em
+}
+.wikiEditor-publish-dialog-options {
+	MARGIN-TOP: 1.5em
+}
+.wikiEditor-ui-toolbar {
+	WIDTH: 100%; POSITION: relative
+}
+.wikiEditor-ui-toolbar .sections {
+	CLEAR: both; FLOAT: left; WIDTH: 100%; HEIGHT: 0px
+}
+BODY.rtl .wikiEditor-ui-toolbar .sections {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .sections .section {
+	BORDER-TOP: #dddddd 1px solid; DISPLAY: none; FLOAT: left; WIDTH: 100%; BACKGROUND-COLOR: #e0eef7
+}
+.wikiEditor-ui-toolbar {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/base.png?1); BACKGROUND-REPEAT: repeat-x
+}
+BODY.rtl .wikiEditor-ui-toolbar .sections .section {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .sections DIV .spinner {
+	DISPLAY: none
+}
+.wikiEditor-ui-toolbar .sections .loading .spinner {
+	BACKGROUND-POSITION: left center; DISPLAY: block; PADDING-LEFT: 32px; FLOAT: left; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/loading.gif?2); MARGIN-LEFT: 0.5em; COLOR: #666666; BACKGROUND-REPEAT: no-repeat; HEIGHT: 32px
+}
+BODY.rtl .wikiEditor-ui-toolbar .sections .loading .spinner {
+	PADDING-RIGHT: 32px; BACKGROUND-POSITION: right center; PADDING-LEFT: 0px; FLOAT: right; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0.5em
+}
+.wikiEditor-ui-toolbar .tabs {
+	FLOAT: left; POSITION: relative; HEIGHT: 26px
+}
+.wikiEditor-ui-toolbar .section-main {
+	FLOAT: left; POSITION: relative; HEIGHT: 26px
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs {
+	FLOAT: right
+}
+BODY.rtl .wikiEditor-ui-toolbar .section-main {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .group {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 6px; FLOAT: left; MARGIN: 3px; HEIGHT: 26px
+}
+BODY.rtl .wikiEditor-ui-toolbar .group {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; FLOAT: right; BORDER-LEFT: #dddddd 1px solid; BORDER-RIGHT-STYLE: none
+}
+.wikiEditor-ui-toolbar .group-search {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; FLOAT: right; PADDING-BOTTOM: 0px; BORDER-LEFT: #dddddd 1px solid; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none
+}
+.wikiEditor-ui-toolbar .group-insert {
+	BORDER-RIGHT-STYLE: none
+}
+BODY.rtl .wikiEditor-ui-toolbar .group-search {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-LEFT-STYLE: none
+}
+BODY.rtl .wikiEditor-ui-toolbar .group-insert {
+	BORDER-LEFT-STYLE: none
+}
+.wikiEditor-toolbar-spritedButton {
+	PADDING-RIGHT: 2px; DISPLAY: block; PADDING-LEFT: 2px; BACKGROUND: url(../images/wikiEditor/toolbar/button-sprite.png?1) no-repeat 0px 0px; FLOAT: left; PADDING-BOTTOM: 2px; OVERFLOW: hidden; WIDTH: 22px; CURSOR: pointer; TEXT-INDENT: -9999px; PADDING-TOP: 2px; HEIGHT: 22px
+}
+.wikiEditor-ui-toolbar .tabs {
+	MARGIN: 3px; LIST-STYLE-TYPE: none
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab {
+	DISPLAY: inline-block; FLOAT: left; LINE-HEIGHT: 26px
+}
+.wikiEditor-ui-toolbar .tabs > SPAN.tab {
+	DISPLAY: block
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs > SPAN.tab {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A {
+	PADDING-RIGHT: 12px; BACKGROUND-POSITION: left center; DISPLAY: inline-block; PADDING-LEFT: 18px; FLOAT: left; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-right.png?1); CURSOR: pointer; COLOR: #0645ad; BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A:visited {
+	PADDING-RIGHT: 12px; BACKGROUND-POSITION: left center; DISPLAY: inline-block; PADDING-LEFT: 18px; FLOAT: left; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-right.png?1); CURSOR: pointer; COLOR: #0645ad; BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs SPAN.tab A {
+	PADDING-RIGHT: 18px; BACKGROUND-POSITION: right center; PADDING-LEFT: 12px; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-left.png?1)
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs SPAN.tab A:visited {
+	PADDING-RIGHT: 18px; BACKGROUND-POSITION: right center; PADDING-LEFT: 12px; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-left.png?1)
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs > SPAN.tab > A {
+	FLOAT: right
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs > pan.tab > A:visited {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A.current {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-down.png?1); COLOR: #333333
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A.current:visited {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-down.png?1); COLOR: #333333
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs SPAN.tab A.current {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-down.png?1)
+}
+BODY.rtl .wikiEditor-ui-toolbar .tabs SPAN.tab A.current:visited {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-down.png?1)
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A.current:hover {
+	TEXT-DECORATION: none
+}
+.wikiEditor-ui-toolbar .tabs SPAN.tab A.loading {
+	BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/loading-small.gif?1)! important
+}
+.wikiEditor-ui-toolbar .group .label {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 2px 8px 2px 5px; CURSOR: default; COLOR: #777777; LINE-HEIGHT: 22px; HEIGHT: 22px; BORDER-RIGHT-WIDTH: 0px
+}
+BODY.rtl .wikiEditor-ui-toolbar .group > .label {
+	FLOAT: right; MARGIN-LEFT: 8px; MARGIN-RIGHT: 5px
+}
+.wikiEditor-ui-toolbar .group IMG.tool {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BORDER-LEFT-WIDTH: 0px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 2px; WIDTH: 22px; CURSOR: pointer; PADDING-TOP: 2px; HEIGHT: 22px; BORDER-RIGHT-WIDTH: 0px
+}
+BODY.rtl .wikiEditor-ui-toolbar .group > IMG.tool {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .group .tool-select {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: silver 1px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 2px 0px 2px 2px; BORDER-LEFT: silver 1px solid; CURSOR: pointer; PADDING-TOP: 0px; BORDER-BOTTOM: silver 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+BODY.rtl .wikiEditor-ui-toolbar .group > .tool-select {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .group .tool-select .label {
+	PADDING-RIGHT: 22px; BACKGROUND-POSITION: right center; PADDING-LEFT: 4px; BACKGROUND-IMAGE: url(../images/wikiEditor/toolbar/arrow-down.png?1); PADDING-BOTTOM: 0px; MARGIN: 0px 4px 0px 0px; CURSOR: pointer; COLOR: #333333; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+BODY.rtl .wikiEditor-ui-toolbar .group .tool-select .label {
+	PADDING-RIGHT: 4px; BACKGROUND-POSITION: left center; PADDING-LEFT: 22px; MARGIN-LEFT: 4px; MARGIN-RIGHT: 0px
+}
+BODY.rtl .wikiEditor-ui-toolbar .group .tool-select .menu {
+	CLEAR: both
+}
+.wikiEditor-ui-toolbar .group .tool-select .menu .options {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; DISPLAY: none; MARGIN-LEFT: -1px; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+BODY.rtl .wikiEditor-ui-toolbar .group .tool-select .menu {
+	MARGIN-LEFT: -1px; MARGIN-RIGHT: -1px
+}
+.wikiEditor-ui-toolbar .group .tool-select .options {
+	MARGIN-TOP: 22px
+}
+.wikiEditor-ui-toolbar .group .tool-select .options .option {
+	PADDING-RIGHT: 0.5em; DISPLAY: block; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; COLOR: black; PADDING-TOP: 0.5em; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+.wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+	BACKGROUND-COLOR: #e0eef7
+}
+.wikiEditor-ui-toolbar .group .tool-select .options [rel=heading-2].option {
+	FONT-WEIGHT: normal; FONT-SIZE: 150%
+}
+.wikiEditor-ui-toolbar .group .tool-select .options [rel=heading-3].option {
+	FONT-WEIGHT: normal; FONT-SIZE: 132%
+}
+.wikiEditor-ui-toolbar .group .tool-select .options [rel=heading-4].option {
+	FONT-WEIGHT: normal; FONT-SIZE: 116%
+}
+.wikiEditor-ui-toolbar .group .tool-select .options [rel=heading-5].option {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.wikiEditor-ui-toolbar .booklet .index {
+	FLOAT: left; OVERFLOW: auto; WIDTH: 20%; HEIGHT: 125px
+}
+BODY.rtl .wikiEditor-ui-toolbar .booklet .index {
+	FLOAT: right
+}
+.wikiEditor-ui-toolbar .booklet .index DIV {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 6px; PADDING-BOTTOM: 4px; CURSOR: pointer; COLOR: #0645ad; PADDING-TOP: 4px
+}
+BODY.rtl .wikiEditor-ui-toolbar .booklet .index DIV {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 4px
+}
+.wikiEditor-ui-toolbar .booklet .index .current {
+	CURSOR: default; COLOR: #333333; BACKGROUND-COLOR: #fafafa
+}
+.wikiEditor-ui-toolbar .booklet .pages {
+	FLOAT: right; OVERFLOW: auto; WIDTH: 80%; HEIGHT: 125px; BACKGROUND-COLOR: #fafafa
+}
+BODY.rtl .wikiEditor-ui-toolbar .booklet .pages {
+	FLOAT: left
+}
+.wikiEditor-ui-toolbar .page-table TABLE {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.wikiEditor-ui-toolbar .page-table TH {
+	COLOR: #999999
+}
+.wikiEditor-ui-toolbar .page-table TD {
+	BORDER-TOP: #eeeeee 1px solid; COLOR: black
+}
+.wikiEditor-ui-toolbar .page-table TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+.wikiEditor-ui-toolbar .page-table TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+BODY.rtl .wikiEditor-ui-toolbar .page-table TH {
+	TEXT-ALIGN: right
+}
+BODY.rtl .wikiEditor-ui-toolbar .page-table TD {
+	TEXT-ALIGN: right
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.cell-syntax {
+	FONT-FAMILY: monospace
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.syntax {
+	FONT-FAMILY: monospace
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.syntax {
+	WIDTH: 40%
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.cell-syntax {
+	WIDTH: 40%
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.cell-result {
+	WIDTH: 40%
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.result {
+	WIDTH: 40%
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.description {
+	WIDTH: 20%
+}
+.wikiEditor-ui-toolbar .section-help .page-table TD.description {
+	WIDTH: 20%
+}
+.wikiEditor-ui-toolbar .page-characters DIV SPAN {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #dddddd 1px solid; MARGIN-TOP: 5px; DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 1.25em; FLOAT: left; PADDING-BOTTOM: 5px; MARGIN-LEFT: 5px; BORDER-LEFT: #dddddd 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: #dddddd 1px solid; FONT-FAMILY: monospace; HEIGHT: 1em; TEXT-DECORATION: none
+}
+BODY.rtl .wikiEditor-ui-toolbar .page-characters > DIV > SPAN {
+	FLOAT: right; MARGIN-LEFT: 0px; DIRECTION: rtl; MARGIN-RIGHT: 5px
+}
+.wikiEditor-ui-toolbar .page-characters DIV[dir=rtl] SPAN {
+	FLOAT: right; MARGIN-LEFT: 0px; DIRECTION: rtl; MARGIN-RIGHT: 5px
+}
+.wikiEditor-ui-toolbar .page-characters DIV SPAN:hover {
+	BORDER-LEFT-COLOR: #a8d7f9; BORDER-BOTTOM-COLOR: #a8d7f9; BORDER-TOP-COLOR: #a8d7f9; BACKGROUND-COLOR: white; TEXT-DECORATION: none; BORDER-RIGHT-COLOR: #a8d7f9
+}
+.ui-widget TABLE TD.wikieditor-toolbar-table-preview-wrapper SPAN {
+	PADDING-RIGHT: 6px; DISPLAY: block; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+.ui-widget TABLE .wikieditor-toolbar-table-preview-frame {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; OVERFLOW: hidden; WIDTH: 340px; PADDING-TOP: 10px; POSITION: relative
+}
+.ui-widget TABLE .wikieditor-toolbar-table-preview-content {
+	DISPLAY: block; WIDTH: 375px
+}
+.ui-widget TABLE .wikieditor-toolbar-table-preview {
+	WIDTH: 340px
+}
+.ui-widget TABLE TD.wikieditor-toolbar-table-preview-wrapper {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #e5e5e5; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}

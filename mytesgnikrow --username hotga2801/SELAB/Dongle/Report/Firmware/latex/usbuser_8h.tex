@@ -1,0 +1,698 @@
+\hypertarget{usbuser_8h}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.h File Reference}
+\label{usbuser_8h}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.h@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbuser.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usbuser_8h_a0dd490d0af4c7851990f5d684677624c}{USB\_\-EVT\_\-SETUP}~1
+\item 
+\#define \hyperlink{usbuser_8h_ae01491d0798fb37df5ba79e1a9381203}{USB\_\-EVT\_\-OUT}~2
+\item 
+\#define \hyperlink{usbuser_8h_a1878b7ac90c901b986cc590e48fe366e}{USB\_\-EVT\_\-IN}~3
+\item 
+\#define \hyperlink{usbuser_8h_a5d092d48e8bd9a0ccc65e2db3c9ddc77}{USB\_\-EVT\_\-OUT\_\-NAK}~4
+\item 
+\#define \hyperlink{usbuser_8h_abb31df5818c4bf9f119d5d36b7594824}{USB\_\-EVT\_\-IN\_\-NAK}~5
+\item 
+\#define \hyperlink{usbuser_8h_abbb31835d7f2d39554842e435e3ea8af}{USB\_\-EVT\_\-OUT\_\-STALL}~6
+\item 
+\#define \hyperlink{usbuser_8h_a92f7e3ab8011aaedc394907c136f933a}{USB\_\-EVT\_\-IN\_\-STALL}~7
+\item 
+\#define \hyperlink{usbuser_8h_a2fc49c02289cebbe77b11b6faa14c0c1}{USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT}~8
+\item 
+\#define \hyperlink{usbuser_8h_a230262bc3612075435eb980044809eba}{USB\_\-EVT\_\-IN\_\-DMA\_\-EOT}~9
+\item 
+\#define \hyperlink{usbuser_8h_a012521919a767bf708ef283ccce327c5}{USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR}~10
+\item 
+\#define \hyperlink{usbuser_8h_a981b3c0a9db4a739cb5c077197b87c35}{USB\_\-EVT\_\-IN\_\-DMA\_\-NDR}~11
+\item 
+\#define \hyperlink{usbuser_8h_a2316d00d1b8566fba285b546d014110e}{USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR}~12
+\item 
+\#define \hyperlink{usbuser_8h_adc56456257e7b49e49af96e3cf169110}{USB\_\-EVT\_\-IN\_\-DMA\_\-ERR}~13
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{usbuser_8h_a79050c47a525e4772409b74b859f95b4}{USB\_\-Power\_\-Event} (\hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} power)
+\item 
+void \hyperlink{usbuser_8h_a81153c365777cdfe7d9e148c372c45b1}{USB\_\-Reset\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_aebfd6340b5852fa5ff4d00487c6371e2}{USB\_\-Suspend\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_a1845c45a3015590b54446857bb30805d}{USB\_\-Resume\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_ab88ce72caa322efb74dcbd2740aa1488}{USB\_\-WakeUp\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_a43ab0480e52c19825f3f4fac2bee5e95}{USB\_\-SOF\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_aaf2760d7c5c1a00c5bc8aa8f809e562a}{USB\_\-Error\_\-Event} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} error)
+\item 
+void \hyperlink{usbuser_8h_a9c3a7f8c05ae502486199cde17caceff}{USB\_\-EndPoint0} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_aae48062677b1667896a1028ca60fa3be}{USB\_\-EndPoint1} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a4b4aa50a6df5e5d071c5237fe4e36887}{USB\_\-EndPoint2} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a730ace3675884f40da397f0858d8a50a}{USB\_\-EndPoint3} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_afc1e27c8b3679903a7981c16d1ee00fb}{USB\_\-EndPoint4} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_aedec343e5fe1a501fdc8bffb94581366}{USB\_\-EndPoint5} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a22b39dc9941d3efc85a411d8b8e73493}{USB\_\-EndPoint6} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a2f0cce6a4a9d973b7b95ed4724430e93}{USB\_\-EndPoint7} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a41bc93dfe2f0d22614f7d5768136f023}{USB\_\-EndPoint8} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a344fe470ac0e61d978af2afab50d7073}{USB\_\-EndPoint9} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a489878cbb577bdd8a3f1f14b8ebb6a85}{USB\_\-EndPoint10} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a725190e52f46584a989efe8406b24e67}{USB\_\-EndPoint11} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a4c7d51ec72c6dd10f5687876fd87c726}{USB\_\-EndPoint12} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a90069c5e57f35f35a166c028000d035b}{USB\_\-EndPoint13} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a492c5bebdedd55e044211f4fb5ce6e38}{USB\_\-EndPoint14} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_aa31fe822d154cc3165c9dcdccd477c57}{USB\_\-EndPoint15} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\item 
+void \hyperlink{usbuser_8h_a166f9155d9fa13d6cf4ecf0e79813fb8}{USB\_\-Configure\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_a57a1df89d38c371d71aa8a88da18a40f}{USB\_\-Interface\_\-Event} (void)
+\item 
+void \hyperlink{usbuser_8h_a30f3231c9a90bd734fb79502f424b574}{USB\_\-Feature\_\-Event} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$const \hyperlink{usbuser_8h_ad12b45bb16055194d9ce35ec70326a7e}{USB\_\-P\_\-EP} \mbox{[}16\mbox{]})(\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{usbuser_8h_a1878b7ac90c901b986cc590e48fe366e}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN@{USB\_\-EVT\_\-IN}}
+\index{USB\_\-EVT\_\-IN@{USB\_\-EVT\_\-IN}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN~3}}
+\label{usbuser_8h_a1878b7ac90c901b986cc590e48fe366e}
+
+
+Definition at line 32 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a230262bc3612075435eb980044809eba}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN\_\-DMA\_\-EOT@{USB\_\-EVT\_\-IN\_\-DMA\_\-EOT}}
+\index{USB\_\-EVT\_\-IN\_\-DMA\_\-EOT@{USB\_\-EVT\_\-IN\_\-DMA\_\-EOT}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN\_\-DMA\_\-EOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN\_\-DMA\_\-EOT~9}}
+\label{usbuser_8h_a230262bc3612075435eb980044809eba}
+
+
+Definition at line 38 of file usbuser.h.
+
+\hypertarget{usbuser_8h_adc56456257e7b49e49af96e3cf169110}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN\_\-DMA\_\-ERR@{USB\_\-EVT\_\-IN\_\-DMA\_\-ERR}}
+\index{USB\_\-EVT\_\-IN\_\-DMA\_\-ERR@{USB\_\-EVT\_\-IN\_\-DMA\_\-ERR}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN\_\-DMA\_\-ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN\_\-DMA\_\-ERR~13}}
+\label{usbuser_8h_adc56456257e7b49e49af96e3cf169110}
+
+
+Definition at line 42 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a981b3c0a9db4a739cb5c077197b87c35}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN\_\-DMA\_\-NDR@{USB\_\-EVT\_\-IN\_\-DMA\_\-NDR}}
+\index{USB\_\-EVT\_\-IN\_\-DMA\_\-NDR@{USB\_\-EVT\_\-IN\_\-DMA\_\-NDR}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN\_\-DMA\_\-NDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN\_\-DMA\_\-NDR~11}}
+\label{usbuser_8h_a981b3c0a9db4a739cb5c077197b87c35}
+
+
+Definition at line 40 of file usbuser.h.
+
+\hypertarget{usbuser_8h_abb31df5818c4bf9f119d5d36b7594824}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN\_\-NAK@{USB\_\-EVT\_\-IN\_\-NAK}}
+\index{USB\_\-EVT\_\-IN\_\-NAK@{USB\_\-EVT\_\-IN\_\-NAK}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN\_\-NAK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN\_\-NAK~5}}
+\label{usbuser_8h_abb31df5818c4bf9f119d5d36b7594824}
+
+
+Definition at line 34 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a92f7e3ab8011aaedc394907c136f933a}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-IN\_\-STALL@{USB\_\-EVT\_\-IN\_\-STALL}}
+\index{USB\_\-EVT\_\-IN\_\-STALL@{USB\_\-EVT\_\-IN\_\-STALL}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-IN\_\-STALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-IN\_\-STALL~7}}
+\label{usbuser_8h_a92f7e3ab8011aaedc394907c136f933a}
+
+
+Definition at line 36 of file usbuser.h.
+
+\hypertarget{usbuser_8h_ae01491d0798fb37df5ba79e1a9381203}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT@{USB\_\-EVT\_\-OUT}}
+\index{USB\_\-EVT\_\-OUT@{USB\_\-EVT\_\-OUT}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT~2}}
+\label{usbuser_8h_ae01491d0798fb37df5ba79e1a9381203}
+
+
+Definition at line 31 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a2fc49c02289cebbe77b11b6faa14c0c1}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT@{USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT}}
+\index{USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT@{USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT\_\-DMA\_\-EOT~8}}
+\label{usbuser_8h_a2fc49c02289cebbe77b11b6faa14c0c1}
+
+
+Definition at line 37 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a2316d00d1b8566fba285b546d014110e}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR@{USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR}}
+\index{USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR@{USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT\_\-DMA\_\-ERR~12}}
+\label{usbuser_8h_a2316d00d1b8566fba285b546d014110e}
+
+
+Definition at line 41 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a012521919a767bf708ef283ccce327c5}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR@{USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR}}
+\index{USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR@{USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT\_\-DMA\_\-NDR~10}}
+\label{usbuser_8h_a012521919a767bf708ef283ccce327c5}
+
+
+Definition at line 39 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a5d092d48e8bd9a0ccc65e2db3c9ddc77}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT\_\-NAK@{USB\_\-EVT\_\-OUT\_\-NAK}}
+\index{USB\_\-EVT\_\-OUT\_\-NAK@{USB\_\-EVT\_\-OUT\_\-NAK}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT\_\-NAK}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT\_\-NAK~4}}
+\label{usbuser_8h_a5d092d48e8bd9a0ccc65e2db3c9ddc77}
+
+
+Definition at line 33 of file usbuser.h.
+
+\hypertarget{usbuser_8h_abbb31835d7f2d39554842e435e3ea8af}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-OUT\_\-STALL@{USB\_\-EVT\_\-OUT\_\-STALL}}
+\index{USB\_\-EVT\_\-OUT\_\-STALL@{USB\_\-EVT\_\-OUT\_\-STALL}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-OUT\_\-STALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-OUT\_\-STALL~6}}
+\label{usbuser_8h_abbb31835d7f2d39554842e435e3ea8af}
+
+
+Definition at line 35 of file usbuser.h.
+
+\hypertarget{usbuser_8h_a0dd490d0af4c7851990f5d684677624c}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EVT\_\-SETUP@{USB\_\-EVT\_\-SETUP}}
+\index{USB\_\-EVT\_\-SETUP@{USB\_\-EVT\_\-SETUP}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EVT\_\-SETUP}]{\setlength{\rightskip}{0pt plus 5cm}\#define USB\_\-EVT\_\-SETUP~1}}
+\label{usbuser_8h_a0dd490d0af4c7851990f5d684677624c}
+
+
+Definition at line 30 of file usbuser.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{usbuser_8h_a166f9155d9fa13d6cf4ecf0e79813fb8}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Configure\_\-Event@{USB\_\-Configure\_\-Event}}
+\index{USB\_\-Configure\_\-Event@{USB\_\-Configure\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Configure\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Configure\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a166f9155d9fa13d6cf4ecf0e79813fb8}
+
+
+Definition at line 118 of file usbuser.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{usbuser_8h_a166f9155d9fa13d6cf4ecf0e79813fb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a9c3a7f8c05ae502486199cde17caceff}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint0@{USB\_\-EndPoint0}}
+\index{USB\_\-EndPoint0@{USB\_\-EndPoint0}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint0}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint0 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a9c3a7f8c05ae502486199cde17caceff}
+
+
+Definition at line 463 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a9c3a7f8c05ae502486199cde17caceff_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_aae48062677b1667896a1028ca60fa3be}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint1@{USB\_\-EndPoint1}}
+\index{USB\_\-EndPoint1@{USB\_\-EndPoint1}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint1}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint1 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_aae48062677b1667896a1028ca60fa3be}
+
+
+Definition at line 180 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a489878cbb577bdd8a3f1f14b8ebb6a85}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint10@{USB\_\-EndPoint10}}
+\index{USB\_\-EndPoint10@{USB\_\-EndPoint10}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint10}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint10 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a489878cbb577bdd8a3f1f14b8ebb6a85}
+
+
+Definition at line 286 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a725190e52f46584a989efe8406b24e67}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint11@{USB\_\-EndPoint11}}
+\index{USB\_\-EndPoint11@{USB\_\-EndPoint11}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint11}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint11 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a725190e52f46584a989efe8406b24e67}
+
+
+Definition at line 296 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a4c7d51ec72c6dd10f5687876fd87c726}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint12@{USB\_\-EndPoint12}}
+\index{USB\_\-EndPoint12@{USB\_\-EndPoint12}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint12}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint12 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a4c7d51ec72c6dd10f5687876fd87c726}
+
+
+Definition at line 306 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a90069c5e57f35f35a166c028000d035b}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint13@{USB\_\-EndPoint13}}
+\index{USB\_\-EndPoint13@{USB\_\-EndPoint13}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint13}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint13 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a90069c5e57f35f35a166c028000d035b}
+
+
+Definition at line 316 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a492c5bebdedd55e044211f4fb5ce6e38}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint14@{USB\_\-EndPoint14}}
+\index{USB\_\-EndPoint14@{USB\_\-EndPoint14}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint14}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint14 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a492c5bebdedd55e044211f4fb5ce6e38}
+
+
+Definition at line 326 of file usbuser.c.
+
+\hypertarget{usbuser_8h_aa31fe822d154cc3165c9dcdccd477c57}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint15@{USB\_\-EndPoint15}}
+\index{USB\_\-EndPoint15@{USB\_\-EndPoint15}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint15}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint15 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_aa31fe822d154cc3165c9dcdccd477c57}
+
+
+Definition at line 336 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a4b4aa50a6df5e5d071c5237fe4e36887}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint2@{USB\_\-EndPoint2}}
+\index{USB\_\-EndPoint2@{USB\_\-EndPoint2}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint2}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint2 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a4b4aa50a6df5e5d071c5237fe4e36887}
+
+
+Definition at line 192 of file usbuser.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a4b4aa50a6df5e5d071c5237fe4e36887_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a730ace3675884f40da397f0858d8a50a}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint3@{USB\_\-EndPoint3}}
+\index{USB\_\-EndPoint3@{USB\_\-EndPoint3}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint3}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint3 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a730ace3675884f40da397f0858d8a50a}
+
+
+Definition at line 216 of file usbuser.c.
+
+\hypertarget{usbuser_8h_afc1e27c8b3679903a7981c16d1ee00fb}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint4@{USB\_\-EndPoint4}}
+\index{USB\_\-EndPoint4@{USB\_\-EndPoint4}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint4}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint4 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_afc1e27c8b3679903a7981c16d1ee00fb}
+
+
+Definition at line 226 of file usbuser.c.
+
+\hypertarget{usbuser_8h_aedec343e5fe1a501fdc8bffb94581366}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint5@{USB\_\-EndPoint5}}
+\index{USB\_\-EndPoint5@{USB\_\-EndPoint5}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint5}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint5 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_aedec343e5fe1a501fdc8bffb94581366}
+
+
+Definition at line 236 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a22b39dc9941d3efc85a411d8b8e73493}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint6@{USB\_\-EndPoint6}}
+\index{USB\_\-EndPoint6@{USB\_\-EndPoint6}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint6}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint6 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a22b39dc9941d3efc85a411d8b8e73493}
+
+
+Definition at line 246 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a2f0cce6a4a9d973b7b95ed4724430e93}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint7@{USB\_\-EndPoint7}}
+\index{USB\_\-EndPoint7@{USB\_\-EndPoint7}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint7}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint7 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a2f0cce6a4a9d973b7b95ed4724430e93}
+
+
+Definition at line 256 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a41bc93dfe2f0d22614f7d5768136f023}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint8@{USB\_\-EndPoint8}}
+\index{USB\_\-EndPoint8@{USB\_\-EndPoint8}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint8}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint8 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a41bc93dfe2f0d22614f7d5768136f023}
+
+
+Definition at line 266 of file usbuser.c.
+
+\hypertarget{usbuser_8h_a344fe470ac0e61d978af2afab50d7073}{
+\index{usbuser.h@{usbuser.h}!USB\_\-EndPoint9@{USB\_\-EndPoint9}}
+\index{USB\_\-EndPoint9@{USB\_\-EndPoint9}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-EndPoint9}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint9 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a344fe470ac0e61d978af2afab50d7073}
+
+
+Definition at line 276 of file usbuser.c.
+
+\hypertarget{usbuser_8h_aaf2760d7c5c1a00c5bc8aa8f809e562a}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Error\_\-Event@{USB\_\-Error\_\-Event}}
+\index{USB\_\-Error\_\-Event@{USB\_\-Error\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Error\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Error\_\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ error}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_aaf2760d7c5c1a00c5bc8aa8f809e562a}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_aaf2760d7c5c1a00c5bc8aa8f809e562a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a30f3231c9a90bd734fb79502f424b574}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Feature\_\-Event@{USB\_\-Feature\_\-Event}}
+\index{USB\_\-Feature\_\-Event@{USB\_\-Feature\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Feature\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Feature\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a30f3231c9a90bd734fb79502f424b574}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{usbuser_8h_a30f3231c9a90bd734fb79502f424b574_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a57a1df89d38c371d71aa8a88da18a40f}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Interface\_\-Event@{USB\_\-Interface\_\-Event}}
+\index{USB\_\-Interface\_\-Event@{USB\_\-Interface\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Interface\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Interface\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a57a1df89d38c371d71aa8a88da18a40f}
+
+
+Definition at line 135 of file usbuser.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{usbuser_8h_a57a1df89d38c371d71aa8a88da18a40f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a79050c47a525e4772409b74b859f95b4}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Power\_\-Event@{USB\_\-Power\_\-Event}}
+\index{USB\_\-Power\_\-Event@{USB\_\-Power\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Power\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Power\_\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf BOOL}}]{ power}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a79050c47a525e4772409b74b859f95b4}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a79050c47a525e4772409b74b859f95b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a81153c365777cdfe7d9e148c372c45b1}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Reset\_\-Event@{USB\_\-Reset\_\-Event}}
+\index{USB\_\-Reset\_\-Event@{USB\_\-Reset\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Reset\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Reset\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a81153c365777cdfe7d9e148c372c45b1}
+
+
+Definition at line 47 of file usbuser.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{usbuser_8h_a81153c365777cdfe7d9e148c372c45b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a81153c365777cdfe7d9e148c372c45b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a1845c45a3015590b54446857bb30805d}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Resume\_\-Event@{USB\_\-Resume\_\-Event}}
+\index{USB\_\-Resume\_\-Event@{USB\_\-Resume\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Resume\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Resume\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a1845c45a3015590b54446857bb30805d}
+
+
+Definition at line 72 of file usbuser.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a1845c45a3015590b54446857bb30805d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_a43ab0480e52c19825f3f4fac2bee5e95}{
+\index{usbuser.h@{usbuser.h}!USB\_\-SOF\_\-Event@{USB\_\-SOF\_\-Event}}
+\index{USB\_\-SOF\_\-Event@{USB\_\-SOF\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-SOF\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-SOF\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_a43ab0480e52c19825f3f4fac2bee5e95}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_a43ab0480e52c19825f3f4fac2bee5e95_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_aebfd6340b5852fa5ff4d00487c6371e2}{
+\index{usbuser.h@{usbuser.h}!USB\_\-Suspend\_\-Event@{USB\_\-Suspend\_\-Event}}
+\index{USB\_\-Suspend\_\-Event@{USB\_\-Suspend\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-Suspend\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Suspend\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_aebfd6340b5852fa5ff4d00487c6371e2}
+
+
+Definition at line 60 of file usbuser.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbuser_8h_aebfd6340b5852fa5ff4d00487c6371e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbuser_8h_ab88ce72caa322efb74dcbd2740aa1488}{
+\index{usbuser.h@{usbuser.h}!USB\_\-WakeUp\_\-Event@{USB\_\-WakeUp\_\-Event}}
+\index{USB\_\-WakeUp\_\-Event@{USB\_\-WakeUp\_\-Event}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-WakeUp\_\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-WakeUp\_\-Event (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbuser_8h_ab88ce72caa322efb74dcbd2740aa1488}
+
+
+\subsection{Variable Documentation}
+\hypertarget{usbuser_8h_ad12b45bb16055194d9ce35ec70326a7e}{
+\index{usbuser.h@{usbuser.h}!USB\_\-P\_\-EP@{USB\_\-P\_\-EP}}
+\index{USB\_\-P\_\-EP@{USB\_\-P\_\-EP}!usbuser.h@{usbuser.h}}
+\subsubsection[{USB\_\-P\_\-EP}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ const {\bf USB\_\-P\_\-EP}\mbox{[}16\mbox{]})({\bf DWORD} event)}}
+\label{usbuser_8h_ad12b45bb16055194d9ce35ec70326a7e}
+
+
+Definition at line 154 of file usbuser.c.
+

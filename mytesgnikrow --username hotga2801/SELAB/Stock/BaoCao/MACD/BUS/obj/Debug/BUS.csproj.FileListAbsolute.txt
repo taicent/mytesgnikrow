@@ -1,0 +1,36 @@
+G:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\ResolveAssemblyReference.cache
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\BUS.dll
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\BUS.pdb
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DAO.dll
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DTO.dll
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DAO.pdb
+G:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DTO.pdb
+G:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\BUS.dll
+G:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\BUS.pdb
+K:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\ResolveAssemblyReference.cache
+K:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\BUS.dll
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\BUS.dll
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\BUS.pdb
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DAO.dll
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DTO.dll
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DAO.pdb
+K:\SELAB\Project\Momentum Oscilator\BUS\bin\Debug\DTO.pdb
+K:\SELAB\Project\Momentum Oscilator\BUS\obj\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\DAO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\DAO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\bin\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\obj\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\Project\20100817ChungKhoan\Momentum Oscilator\BUS\obj\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\DAO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\DAO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\bin\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\obj\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\Project\20100818ChungKhoan\MACD\BUS\obj\Debug\BUS.pdb

@@ -1,0 +1,63 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'type.h'\fP
+.br
+\fC#include 'usb.h'\fP
+.br
+\fC#include 'usbcfg.h'\fP
+.br
+\fC#include 'usbdesc.h'\fP
+.br
+
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBBYTE\fP \fBUSB_DeviceDescriptor\fP []"
+.br
+.ti -1c
+.RI "const \fBBYTE\fP \fBUSB_ConfigDescriptor\fP []"
+.br
+.ti -1c
+.RI "const \fBBYTE\fP \fBUSB_StringDescriptor\fP []"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "const \fBBYTE\fP \fBUSB_ConfigDescriptor\fP[]"
+.PP
+Definition at line 58 of file usbdesc.c.
+.SS "const \fBBYTE\fP \fBUSB_DeviceDescriptor\fP[]"\fBInitial value:\fP
+.PP
+.nf
+ {
+  USB_DEVICE_DESC_SIZE,              
+  USB_DEVICE_DESCRIPTOR_TYPE,        
+  WBVAL(0x0110),           
+  0x00,                              
+  0x00,                              
+  0x00,                              
+  USB_MAX_PACKET0,                   
+  WBVAL(0xC251),                                                
+  WBVAL(0x1703),                                        
+  WBVAL(0x0100),           
+  0x04,                              
+  0x30,                              
+  0x6A,                              
+  0x01                               
+}
+.fi
+.PP
+Definition at line 39 of file usbdesc.c.
+.SS "const \fBBYTE\fP \fBUSB_StringDescriptor\fP[]"
+.PP
+Definition at line 117 of file usbdesc.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

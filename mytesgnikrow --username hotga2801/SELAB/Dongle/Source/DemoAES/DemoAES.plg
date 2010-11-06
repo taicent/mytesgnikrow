@@ -1,0 +1,24 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+H:\SELAB\Dongle\Source\DemoAES\DemoAES.uv2
+Project File Date:  10/04/2010
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling LPC2300.s...
+compiling main.c...
+main.c(156): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+main.c(164): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+main.c(173): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+compiling aes.c...
+linking...
+Program Size: Code=12484 RO-data=2096 RW-data=1020 ZI-data=1644  
+"DemoAES.axf" - 0 Error(s), 3 Warning(s).
+Load "H:\\SELAB\\Dongle\\Source\\DemoAES\\DemoAES.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m" kind="struct" prot="public">
+    <compoundname>_REQUEST_TYPE::_BM</compoundname>
+    <includes refid="usb_8h" local="no">usb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1aef3ec6aa3cef843da4d3125bddf87bcd" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE Recipient</definition>
+        <argsstring></argsstring>
+        <name>Recipient</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="48" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a18377a6c26b74546712af8fc06de7205" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="49" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a3926b73729006874b8ea62c22a022b13" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>BYTE Dir</definition>
+        <argsstring></argsstring>
+        <name>Dir</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="50" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" line="47" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" bodystart="47" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a3926b73729006874b8ea62c22a022b13" prot="public" virt="non-virtual"><scope>_REQUEST_TYPE::_BM</scope><name>Dir</name></member>
+      <member refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1aef3ec6aa3cef843da4d3125bddf87bcd" prot="public" virt="non-virtual"><scope>_REQUEST_TYPE::_BM</scope><name>Recipient</name></member>
+      <member refid="struct___r_e_q_u_e_s_t___t_y_p_e_1_1___b_m_1a18377a6c26b74546712af8fc06de7205" prot="public" virt="non-virtual"><scope>_REQUEST_TYPE::_BM</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

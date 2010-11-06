@@ -1,0 +1,10 @@
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DTO\bin\Debug\DTO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DTO\bin\Debug\DTO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DTO\obj\Debug\DTO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DTO\obj\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DTO\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DTO\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Debug\DTO.pdb

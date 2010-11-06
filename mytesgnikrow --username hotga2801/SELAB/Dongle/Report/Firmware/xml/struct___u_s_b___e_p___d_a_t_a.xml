@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="struct___u_s_b___e_p___d_a_t_a" kind="struct" prot="public">
+    <compoundname>_USB_EP_DATA</compoundname>
+    <includes refid="usbcore_8h" local="no">usbcore.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref> *</type>
+        <definition>BYTE* pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="22" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="usbcore_8h_1af77737c9a9cf487c2d21bdb77904d5b4" compoundref="usbcore_8c" startline="83" endline="97">USB_DataInStage</referencedby>
+        <referencedby refid="usbcore_8h_1a147ac40813dde8a168086e312a8aeff7" compoundref="usbcore_8c" startline="106" endline="115">USB_DataOutStage</referencedby>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a95369438fa761f9c7ba0ac9b646fe8c2" compoundref="usbcore_8c" startline="153" endline="185">USB_GetStatus</referencedby>
+        <referencedby refid="_vendor_process_8h_1a64197d1e830bdafa1ea2ca821189e45b" compoundref="_vendor_process_8c" startline="143" endline="175">VendorDataStage</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" prot="public" static="no" mutable="no">
+        <type><ref refid="type_8h_1a197942eefa7db30960ae396d68339b97" kindref="member">WORD</ref></type>
+        <definition>WORD Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="23" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="usbcore_8h_1af77737c9a9cf487c2d21bdb77904d5b4" compoundref="usbcore_8c" startline="83" endline="97">USB_DataInStage</referencedby>
+        <referencedby refid="usbcore_8h_1a147ac40813dde8a168086e312a8aeff7" compoundref="usbcore_8c" startline="106" endline="115">USB_DataOutStage</referencedby>
+        <referencedby refid="usbuser_8h_1a9c3a7f8c05ae502486199cde17caceff" compoundref="usbcore_8c" startline="463" endline="683">USB_EndPoint0</referencedby>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="_vendor_process_8h_1a37fc332c09d1bf492be4af4570ec7c56" compoundref="_vendor_process_8c" startline="80" endline="141">VendorSetupStage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" line="21" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" bodystart="21" bodyend="24"/>
+    <listofallmembers>
+      <member refid="struct___u_s_b___e_p___d_a_t_a_1a9dee27dcb07b57baae1d24c47eebbe86" prot="public" virt="non-virtual"><scope>_USB_EP_DATA</scope><name>Count</name></member>
+      <member refid="struct___u_s_b___e_p___d_a_t_a_1a118c6325e791463d77b2058f12173633" prot="public" virt="non-virtual"><scope>_USB_EP_DATA</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

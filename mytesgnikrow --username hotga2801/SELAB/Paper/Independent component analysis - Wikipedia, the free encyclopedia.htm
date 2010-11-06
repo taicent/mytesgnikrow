@@ -1,0 +1,791 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0059)http://en.wikipedia.org/wiki/Independent_component_analysis -->
+<HTML lang=en dir=ltr xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Independent component analysis - Wikipedia, the free encyclopedia</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META http-equiv=Content-Style-Type content=text/css>
+<META content="MSHTML 6.00.6000.20710" name=GENERATOR><LINK 
+title="Edit this page" 
+href="/w/index.php?title=Independent_component_analysis&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK title="Edit this page" 
+href="/w/index.php?title=Independent_component_analysis&amp;action=edit" 
+rel=edit><LINK href="http://en.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK href="/favicon.ico" rel="shortcut icon"><LINK 
+title="Wikipedia (en)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://creativecommons.org/licenses/by-sa/3.0/" rel=copyright><LINK 
+title="Wikipedia Atom feed" 
+href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" 
+type=application/atom+xml rel=alternate><LINK media=screen 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/main-ltr.css" 
+type=text/css rel=stylesheet><LINK media=screen 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/shared.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/commonPrint.css" 
+type=text/css rel=stylesheet><LINK media=all 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/combined.min.css" 
+type=text/css rel=stylesheet><LINK media=all 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/jquery-ui-1.7.2.css" 
+type=text/css rel=stylesheet><LINK media=all 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index(1).css" 
+type=text/css rel=stylesheet><LINK media=handheld 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index(2).css" 
+type=text/css rel=stylesheet><LINK media=all 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index(3).css" 
+type=text/css rel=stylesheet><LINK media=all 
+href="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index(4).css" 
+type=text/css rel=stylesheet>
+<SCRIPT type=text/javascript>
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Independent_component_analysis",
+wgTitle="Independent component analysis",
+wgAction="view",
+wgArticleId=598031,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=362587051,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Statistics articles needing expert attention", "Articles needing expert attention from November 2008", "All articles needing expert attention", "Signal processing", "Data analysis", "Time series analysis", "Statistical models", "Multivariate statistics"],
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgFlaggedRevsParams={"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}},
+wgStableRevisionId=0,
+wgWikimediaMobileUrl="http://en.m.wikipedia.org/wiki",
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+wgNotice="",
+wgNoticeLocal="";
+</SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/wikibits.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/jquery.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/MobileRedirect.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/plugins.combined.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/Vector.combined.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>mw.usability.addMessages({'vector-collapsiblenav-more':'More languages','vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</SCRIPT>
+
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/centralnotice.js" 
+type=text/javascript></SCRIPT>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<SCRIPT 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/index.php" 
+type=text/javascript></SCRIPT>
+</HEAD>
+<BODY 
+class="mediawiki ltr ns-0 ns-subject page-Independent_component_analysis skin-vector">
+<DIV class=noprint id=mw-page-base></DIV>
+<DIV class=noprint id=mw-head-base></DIV><!-- content -->
+<DIV id=content><A id=top></A>
+<DIV id=mw-js-message style="DISPLAY: none"></DIV><!-- sitenotice -->
+<DIV id=siteNotice>
+<SCRIPT 
+type=text/javascript>if (wgNotice != '') document.writeln(wgNotice);</SCRIPT>
+</DIV><!-- /sitenotice --><!-- firstHeading -->
+<H1 class=firstHeading id=firstHeading>Independent component analysis</H1><!-- /firstHeading --><!-- bodyContent -->
+<DIV id=bodyContent><!-- tagline -->
+<H3 id=siteSub>From Wikipedia, the free encyclopedia</H3><!-- /tagline --><!-- subtitle -->
+<DIV id=contentSub></DIV><!-- /subtitle --><!-- jumpto -->
+<DIV id=jump-to-nav>Jump to: <A 
+href="http://en.wikipedia.org/wiki/Independent_component_analysis#mw-head">navigation</A>, 
+<A 
+href="http://en.wikipedia.org/wiki/Independent_component_analysis#p-search">search</A> 
+</DIV><!-- /jumpto --><!-- bodytext -->
+<TABLE class="metadata plainlinks ambox ambox-content">
+  <TBODY>
+  <TR>
+    <TD class=mbox-image>
+      <DIV style="WIDTH: 52px"><IMG height=40 alt="" 
+      src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/Ambox_content.png" 
+      width=40></DIV></TD>
+    <TD class=mbox-text>This article <B>needs attention from an expert on the 
+      subject</B>. See the <A title="Talk:Independent component analysis" 
+      href="http://en.wikipedia.org/wiki/Talk:Independent_component_analysis">talk 
+      page</A> for details. <A title="Wikipedia:WikiProject Statistics" 
+      href="http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Statistics">WikiProject 
+      Statistics</A> or the <A title=Portal:Statistics 
+      href="http://en.wikipedia.org/wiki/Portal:Statistics">Statistics 
+      Portal</A> may be able to help recruit an expert. <SMALL><I>(November 
+      2008)</I></SMALL></TD></TR></TBODY></TABLE>
+<P><B>Independent component analysis</B> (<B>ICA</B>) is a computational method 
+for separating a <A title=Multivariate 
+href="http://en.wikipedia.org/wiki/Multivariate">multivariate</A> signal into 
+additive subcomponents supposing the mutual <A class=mw-redirect 
+title="Statistical independence" 
+href="http://en.wikipedia.org/wiki/Statistical_independence">statistical 
+independence</A> of the non-Gaussian source signals. It is a special case of <A 
+class=mw-redirect title="Blind source separation" 
+href="http://en.wikipedia.org/wiki/Blind_source_separation">blind source 
+separation</A>.</P>
+<TABLE class=toc id=toc>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id=toctitle>
+      <H2>Contents</H2></DIV>
+      <UL>
+        <LI class="toclevel-1 tocsection-1"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#Introduction"><SPAN 
+        class=tocnumber>1</SPAN> <SPAN class=toctext>Introduction</SPAN></A> 
+        <LI class="toclevel-1 tocsection-2"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#Defining_Component_Independence"><SPAN 
+        class=tocnumber>2</SPAN> <SPAN class=toctext>Defining Component 
+        Independence</SPAN></A> 
+        <LI class="toclevel-1 tocsection-3"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#Mathematical_definitions"><SPAN 
+        class=tocnumber>3</SPAN> <SPAN class=toctext>Mathematical 
+        definitions</SPAN></A> 
+        <UL>
+          <LI class="toclevel-2 tocsection-4"><A 
+          href="http://en.wikipedia.org/wiki/Independent_component_analysis#General_definition"><SPAN 
+          class=tocnumber>3.1</SPAN> <SPAN class=toctext>General 
+          definition</SPAN></A> 
+          <LI class="toclevel-2 tocsection-5"><A 
+          href="http://en.wikipedia.org/wiki/Independent_component_analysis#Generative_model"><SPAN 
+          class=tocnumber>3.2</SPAN> <SPAN class=toctext>Generative 
+          model</SPAN></A> 
+          <UL>
+            <LI class="toclevel-3 tocsection-6"><A 
+            href="http://en.wikipedia.org/wiki/Independent_component_analysis#Linear_noiseless_ICA"><SPAN 
+            class=tocnumber>3.2.1</SPAN> <SPAN class=toctext>Linear noiseless 
+            ICA</SPAN></A> 
+            <LI class="toclevel-3 tocsection-7"><A 
+            href="http://en.wikipedia.org/wiki/Independent_component_analysis#Linear_noisy_ICA"><SPAN 
+            class=tocnumber>3.2.2</SPAN> <SPAN class=toctext>Linear noisy 
+            ICA</SPAN></A> 
+            <LI class="toclevel-3 tocsection-8"><A 
+            href="http://en.wikipedia.org/wiki/Independent_component_analysis#Nonlinear_ICA"><SPAN 
+            class=tocnumber>3.2.3</SPAN> <SPAN class=toctext>Nonlinear 
+            ICA</SPAN></A> </LI></UL>
+          <LI class="toclevel-2 tocsection-9"><A 
+          href="http://en.wikipedia.org/wiki/Independent_component_analysis#Identifiability"><SPAN 
+          class=tocnumber>3.3</SPAN> <SPAN 
+          class=toctext>Identifiability</SPAN></A> </LI></UL>
+        <LI class="toclevel-1 tocsection-10"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#See_also"><SPAN 
+        class=tocnumber>4</SPAN> <SPAN class=toctext>See also</SPAN></A> 
+        <LI class="toclevel-1 tocsection-11"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#References"><SPAN 
+        class=tocnumber>5</SPAN> <SPAN class=toctext>References</SPAN></A> 
+        <LI class="toclevel-1 tocsection-12"><A 
+        href="http://en.wikipedia.org/wiki/Independent_component_analysis#External_links"><SPAN 
+        class=tocnumber>6</SPAN> <SPAN class=toctext>External links</SPAN></A> 
+        </LI></UL></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</SCRIPT>
+
+<H2><SPAN class=editsection>[<A title="Edit section: Introduction" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=1">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Introduction>Introduction</SPAN></H2>
+<P>When the independence assumption is correct, blind ICA separation of a mixed 
+signal gives very good results. It is also used for signals that are not 
+supposed to be generated by a mixing for analysis purposes. A simple application 
+of ICA is the “<A class=mw-redirect title="Cocktail party problem" 
+href="http://en.wikipedia.org/wiki/Cocktail_party_problem">cocktail party 
+problem</A>”, where the underlying speech signals are separated from a sample 
+data consisting of people talking simultaneously in a room. Usually the problem 
+is simplified by assuming no time delays or echoes. An important note to 
+consider is that if <I>N</I> sources are present, at least <I>N</I> observations 
+(e.g. microphones) are needed to get the original signals. This constitutes the 
+square (<I>J</I>&nbsp;=&nbsp;<I>D</I>, where <I>D</I> is the input dimension of 
+the data and <I>J</I> is the dimension of the model). Other cases of 
+underdetermined (<I>J</I>&nbsp;&lt;&nbsp;<I>D</I>) and overdetermined 
+(<I>J</I>&nbsp;&gt;&nbsp;<I>D</I>) have been investigated.</P>
+<H2><SPAN class=editsection>[<A 
+title="Edit section: Defining Component Independence" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=2">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Defining_Component_Independence>Defining Component 
+Independence</SPAN></H2>
+<P>ICA finds the independent components (aka factors, latent variables or 
+sources) by maximizing the statistical independence of the estimated components. 
+We may choose one of many ways to define independence, and this choice governs 
+the form of the ICA algorithms. The two broadest definitions of independence for 
+ICA are</P>
+<P>1) Minimization of Mutual Information<BR>2) Maximization of 
+non-Gaussianity</P>
+<P>The Non-Gaussianity family of ICA algorithms, motivated by the <A 
+title="Central limit theorem" 
+href="http://en.wikipedia.org/wiki/Central_limit_theorem">central limit 
+theorem</A>, uses <A title=Kurtosis 
+href="http://en.wikipedia.org/wiki/Kurtosis">kurtosis</A> and <A 
+title=Negentropy href="http://en.wikipedia.org/wiki/Negentropy">negentropy</A>. 
+The Minimization-of-<A title="Mutual information" 
+href="http://en.wikipedia.org/wiki/Mutual_information">Mutual information</A> 
+(MMI) family of ICA algorithms uses measures like <A 
+title="Kullback–Leibler divergence" 
+href="http://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence">Kullback-Leibler 
+Divergence</A> and maximum-entropy.</P>
+<P>Typical algorithms for ICA use centering, <A title="White noise" 
+href="http://en.wikipedia.org/wiki/White_noise">whitening</A> (usually with the 
+<A class=mw-redirect title="Eigenvalue decomposition" 
+href="http://en.wikipedia.org/wiki/Eigenvalue_decomposition">eigenvalue 
+decomposition</A>), and <A class=mw-redirect title="Dimensionality reduction" 
+href="http://en.wikipedia.org/wiki/Dimensionality_reduction">dimensionality 
+reduction</A> as preprocessing steps in order to simplify and reduce the 
+complexity of the problem for the actual iterative algorithm. Whitening and <A 
+title="Dimension reduction" 
+href="http://en.wikipedia.org/wiki/Dimension_reduction">dimension reduction</A> 
+can be achieved with <A title="Principal component analysis" 
+href="http://en.wikipedia.org/wiki/Principal_component_analysis">principal 
+component analysis</A> or <A title="Singular value decomposition" 
+href="http://en.wikipedia.org/wiki/Singular_value_decomposition">singular value 
+decomposition</A>. Whitening ensures that all dimensions are treated equally 
+<I>a priori</I> before the algorithm is run. Algorithms for ICA include <A 
+title=Infomax href="http://en.wikipedia.org/wiki/Infomax">infomax</A>, <A 
+title=FastICA href="http://en.wikipedia.org/wiki/FastICA">FastICA</A>, and <A 
+class=new title="JADE (ICA) (page does not exist)" 
+href="http://en.wikipedia.org/w/index.php?title=JADE_(ICA)&amp;action=edit&amp;redlink=1">JADE</A>, 
+but there are many others also.</P>
+<P>In general, ICA cannot identify the actual number of source signals, a 
+uniquely correct ordering of the source signals, nor the proper scaling 
+(including sign) of the source signals.</P>
+<P>ICA is important to <A title="Blind signal separation" 
+href="http://en.wikipedia.org/wiki/Blind_signal_separation">blind signal 
+separation</A> and has many practical applications. It is closely related to (or 
+even a special case of) the search for a <A title="Factorial code" 
+href="http://en.wikipedia.org/wiki/Factorial_code">factorial code</A> of the 
+data, i.e., a new vector-valued representation of each data vector such that it 
+gets uniquely encoded by the resulting code vector (loss-free coding), but the 
+code components are statistically independent.</P>
+<H2><SPAN class=editsection>[<A title="Edit section: Mathematical definitions" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=3">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Mathematical_definitions>Mathematical 
+definitions</SPAN></H2>
+<P>Linear independent component analysis can be divided into noiseless and noisy 
+cases, where noiseless ICA is a special case of noisy ICA. Nonlinear ICA should 
+be considered as a separate case.</P>
+<H3><SPAN class=editsection>[<A title="Edit section: General definition" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=4">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=General_definition>General definition</SPAN></H3>
+<P>The data is represented by the <A class=mw-redirect title="Random vector" 
+href="http://en.wikipedia.org/wiki/Random_vector">random vector</A> <IMG 
+class=tex alt=x=(x_1,\ldots,x_m) 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/6b4f05d6da5a7f2e1aa17ca6b8dac7a8.png"> 
+and the components as the random vector <IMG class=tex alt=s=(s_1,\ldots,s_n) 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/b63f84fc4369e5224eea2a65f74b69f6.png">. 
+The task is to transform the observed data <SPAN class=texhtml><I>x</I></SPAN>, 
+using a linear static transformation <I>W</I> as</P>
+<DL>
+  <DD><IMG class=tex alt=" &#10;s = W x&#10; \," 
+  src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/73ddf6c114563e70940943cb53236bd8.png">, 
+  </DD></DL>
+<P>into maximally independent components <SPAN class=texhtml><I>s</I></SPAN> 
+measured by some function <IMG class=tex alt=F(s_1,\ldots,s_n) 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/a151df88cf58a266be9b43bd31550aa6.png"> 
+of independence.</P>
+<H3><SPAN class=editsection>[<A title="Edit section: Generative model" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=5">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Generative_model>Generative model</SPAN></H3>
+<H4><SPAN class=editsection>[<A title="Edit section: Linear noiseless ICA" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=6">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Linear_noiseless_ICA>Linear noiseless ICA</SPAN></H4>
+<P>The components <SPAN class=texhtml><I>x</I><SUB><I>i</I></SUB></SPAN> of the 
+observed random vector <IMG class=tex alt=x=(x_1,\ldots,x_m)^T 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/adee8e0ceaa699cf2b72ef2c327bc43b.png"> 
+are generated as a sum of the independent components <SPAN 
+class=texhtml><I>s</I><SUB><I>k</I></SUB></SPAN>, <IMG class=tex 
+alt=k=1,\ldots,n 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e5a4ccb14c0ab3f4c4f7cecb3f4b0686.png">:</P>
+<P><IMG class=tex 
+alt="x_i = a_{i,1} s_1 + \ldots + a_{i,k} s_k + \cdots + a_{i,n} s_n" 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/c840425546e5912e8f425d283defe155.png"></P>
+<P>weighted by the mixing weights <SPAN 
+class=texhtml><I>a</I><SUB><I>i</I>,<I>k</I></SUB></SPAN>.</P>
+<P>The same generative model can be written in vectorial form as <IMG class=tex 
+alt="x=\sum_{k=1}^{n} s_k a_k" 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4d299a2051c93b89b240a6b9235b24af.png">, 
+where the observed random vector <SPAN class=texhtml><I>x</I></SPAN> is 
+represented by the basis vectors <IMG class=tex 
+alt=a_k=(a_{1,k},\ldots,a_{m,k})^T 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/26dc8f2ab92313830e9674bfdee3d545.png">. 
+The basis vectors <SPAN class=texhtml><I>a</I><SUB><I>k</I></SUB></SPAN> form 
+the columns of the mixing matrix <IMG class=tex alt=A=(a_1,\ldots,a_n) 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/ca53dc0216fa94def7318569b669bbcd.png"> 
+and the generative formula can be written as <SPAN class=texhtml><I>x</I> = 
+<I>A</I><I>s</I></SPAN>, where <IMG class=tex alt=s=(s_1,\ldots,s_n)^T 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8894421896ef919449d72261675fdee7.png">.</P>
+<P>Given the model and realizations (samples) <IMG class=tex alt=x_1,\ldots,x_N 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/8107ca14998cf5e82e8ba9e6e2a8a2f5.png"> 
+of the random vector <SPAN class=texhtml><I>x</I></SPAN>, the task is to 
+estimate both the mixing matrix <SPAN class=texhtml><I>A</I></SPAN> and the 
+sources <SPAN class=texhtml><I>s</I></SPAN>. This is done by adaptively 
+calculating the <SPAN class=texhtml><I>w</I></SPAN> vectors and setting up a 
+cost function which either maximizes the nongaussianity of the calculated <SPAN 
+class=texhtml><I>s</I><SUB><I>k</I></SUB> = (<I>w</I><SUP><I>T</I></SUP> * 
+<I>x</I>)</SPAN> or minimizes the mutual information. In some cases, a priori 
+knowledge of the probability distributions of the sources can be used in the 
+cost function.</P>
+<P>The original sources <SPAN class=texhtml><I>s</I></SPAN> can be recovered by 
+multiplying the observed signals <SPAN class=texhtml><I>x</I></SPAN> with the 
+inverse of the mixing matrix <SPAN class=texhtml><I>W</I> = <I>A</I> <SUP>− 
+1</SUP></SPAN>, also known as the unmixing matrix. Here it is assumed that the 
+mixing matrix is square (<SPAN class=texhtml><I>n</I> = <I>m</I></SPAN>). If the 
+number of basis vectors is greater than the dimensionality of the observed 
+vectors, <SPAN class=texhtml><I>n</I> &gt; <I>m</I></SPAN>, the task is 
+overcomplete but is still solvable.</P>
+<H4><SPAN class=editsection>[<A title="Edit section: Linear noisy ICA" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=7">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Linear_noisy_ICA>Linear noisy ICA</SPAN></H4>
+<P>With the added assumption of zero-mean and uncorrelated Gaussian noise <IMG 
+class=tex alt="n\sim N(0,\operatorname{diag}(\Sigma))" 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/e3a7bc45662f6e75a97efb16e922ab63.png">, 
+the ICA model takes the form <SPAN class=texhtml><I>x</I> = <I>A</I><I>s</I> + 
+<I>n</I></SPAN>.</P>
+<H4><SPAN class=editsection>[<A title="Edit section: Nonlinear ICA" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=8">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Nonlinear_ICA>Nonlinear ICA</SPAN></H4>
+<P>The mixing of the sources does not need to be linear. Using a nonlinear 
+mixing function <IMG class=tex alt=f(\cdot|\theta) 
+src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/5b0d9d5cfec57a202cafe16e162d8b6a.png"> 
+with parameters <SPAN class=texhtml>θ</SPAN> the <A class=new 
+title="Nonlinear ICA (page does not exist)" 
+href="http://en.wikipedia.org/w/index.php?title=Nonlinear_ICA&amp;action=edit&amp;redlink=1">nonlinear 
+ICA</A> model is <SPAN class=texhtml><I>x</I> = <I>f</I>(<I>s</I> | θ) + 
+<I>n</I></SPAN>.</P>
+<H3><SPAN class=editsection>[<A title="Edit section: Identifiability" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=9">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=Identifiability>Identifiability</SPAN></H3>
+<P>The independent components are identifiable up to a permutation and scaling 
+of the sources. This identifiability requires that:</P>
+<UL>
+  <LI>At most one of the sources <SPAN 
+  class=texhtml><I>s</I><SUB><I>k</I></SUB></SPAN> is Gaussian, 
+  <LI>The number of observed mixtures, <SPAN class=texhtml><I>m</I></SPAN>, must 
+  be at least as large as the number of estimated components <SPAN 
+  class=texhtml><I>n</I></SPAN>: <IMG class=tex alt="m \ge n" 
+  src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/4b07f15d629017e1d4b04a725d9547ef.png">. 
+  It is equivalent to say that the mixing matrix <SPAN 
+  class=texhtml><I>A</I></SPAN> must be of full <A title="Rank (linear algebra)" 
+  href="http://en.wikipedia.org/wiki/Rank_(linear_algebra)">rank</A> for its 
+  inverse to exist. </LI></UL>
+<H2><SPAN class=editsection>[<A title="Edit section: See also" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=10">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=See_also>See also</SPAN></H2>
+<UL>
+  <LI><A title="Blind deconvolution" 
+  href="http://en.wikipedia.org/wiki/Blind_deconvolution">Blind 
+  deconvolution</A> 
+  <LI><A title="Blind signal separation" 
+  href="http://en.wikipedia.org/wiki/Blind_signal_separation">Blind signal 
+  separation (BSS)</A> 
+  <LI><A title="Factor analysis" 
+  href="http://en.wikipedia.org/wiki/Factor_analysis">Factor analysis</A> 
+  <LI><A title="Factorial code" 
+  href="http://en.wikipedia.org/wiki/Factorial_code">Factorial codes</A> 
+  <LI><A title="Hilbert spectrum" 
+  href="http://en.wikipedia.org/wiki/Hilbert_spectrum">Hilbert spectrum</A> 
+  <LI><A title="Image processing" 
+  href="http://en.wikipedia.org/wiki/Image_processing">Image processing</A> 
+  <LI><A title="Non-negative matrix factorization" 
+  href="http://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Non-negative 
+  matrix factorization (NMF)</A> 
+  <LI><A title="Nonlinear dimensionality reduction" 
+  href="http://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction">Nonlinear 
+  dimensionality reduction</A> 
+  <LI><A title="Principal component analysis" 
+  href="http://en.wikipedia.org/wiki/Principal_component_analysis">Principal 
+  component analysis (PCA)</A> 
+  <LI><A title="Projection pursuit" 
+  href="http://en.wikipedia.org/wiki/Projection_pursuit">Projection pursuit</A> 
+  <LI><A class=new title="Redundancy reduction (page does not exist)" 
+  href="http://en.wikipedia.org/w/index.php?title=Redundancy_reduction&amp;action=edit&amp;redlink=1">Redundancy 
+  reduction</A> 
+  <LI><A title="Signal processing" 
+  href="http://en.wikipedia.org/wiki/Signal_processing">Signal processing</A> 
+  <LI><A title="Singular value decomposition" 
+  href="http://en.wikipedia.org/wiki/Singular_value_decomposition">Singular 
+  value decomposition (SVD)</A> 
+  <LI><A title="Varimax rotation" 
+  href="http://en.wikipedia.org/wiki/Varimax_rotation">Varimax rotation</A> 
+</LI></UL>
+<H2><SPAN class=editsection>[<A title="Edit section: References" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=11">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=References>References</SPAN></H2>
+<UL>
+  <LI>Pierre Comon (1994): <I><A class="external text" 
+  href="http://www.i3s.unice.fr/~pcomon/SP94.html" rel=nofollow>Independent 
+  Component Analysis: a new concept?</A></I>, Signal Processing, Elsevier, 
+  36(3):287--314 (The original paper describing the concept of ICA) 
+  <LI>A. Hyvärinen, J. Karhunen, E. Oja (2001): <I><A class="external text" 
+  href="http://www.cis.hut.fi/projects/ica/book/" rel=nofollow>Independent 
+  Component Analysis</A></I>, New York: Wiley, <A 
+  class="internal mw-magiclink-isbn" 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/9780471405405">ISBN 
+  978-0-471-40540-5</A> 
+  <UL>
+    <LI><A class="external text" 
+    href="http://www.cis.hut.fi/projects/ica/book/intro.pdf" 
+    rel=nofollow>Introductory chapter</A> </LI></UL>
+  <LI>A. Hyvärinen, E. Oja (2000): <I><A class="external text" 
+  href="http://www.cs.helsinki.fi/u/ahyvarin/papers/NN00new.pdf" 
+  rel=nofollow>Independent Component Analysis: Algorithms and 
+  Application</A></I>, Neural Networks, 13(4-5):411-430, 2000. (Technical but 
+  pedagogical introduction). </LI></UL>
+<UL>
+  <LI>J.V. Stone, (2004): <I><A class="external text" 
+  href="http://jim-stone.staff.shef.ac.uk/bookica.html" rel=nofollow>Independent 
+  Component Analysis: A Tutorial Introduction</A></I> </LI></UL>
+<UL>
+  <LI>J.V. Stone, (2005): <I><A class="external text" 
+  href="http://jim-stone.staff.shef.ac.uk/papers/ica_encyc_jvs4everrit2005.pdf" 
+  rel=nofollow>A Brief Introduction to Independent Component Analysis</A></I> in 
+  Encyclopedia of Statistics in Behavioral Science, Volume 2, pp. 907–912, 
+  Editors Brian S. Everitt &amp; David C. Howell, John Wiley &amp; Sons, Ltd, 
+  Chichester, 2005 <A class="internal mw-magiclink-isbn" 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/9780470860809">ISBN 
+  978-0-470-86080-9</A> 
+  <LI>T.-W. Lee (1998): <I>Independent component analysis: Theory and 
+  applications</I>, Boston, Mass: Kluwer Academic Publishers, <A 
+  class="internal mw-magiclink-isbn" 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/0792382617">ISBN 0 7923 
+  8261 7</A> 
+  <LI><A class=new title="Ranjan Acharyya (page does not exist)" 
+  href="http://en.wikipedia.org/w/index.php?title=Ranjan_Acharyya&amp;action=edit&amp;redlink=1">Ranjan 
+  Acharyya</A> (editors) (2008): <I>A New Approach for Blind Source Separation 
+  of Convolutive Sources</I> <A class="internal mw-magiclink-isbn" 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/3639077970">ISBN 
+  3639077970</A> <A class="internal mw-magiclink-isbn" 
+  href="http://en.wikipedia.org/wiki/Special:BookSources/9783639077971">ISBN 
+  978-3639077971</A> (this book focuses on unsupervised learning with Blind 
+  Source Separation) </LI></UL>
+<H2><SPAN class=editsection>[<A title="Edit section: External links" 
+href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit&amp;section=12">edit</A>]</SPAN> 
+<SPAN class=mw-headline id=External_links>External links</SPAN></H2>
+<UL>
+  <LI><A class="external text" 
+  href="http://www.cs.helsinki.fi/u/ahyvarin/whatisica.shtml" rel=nofollow>What 
+  is independent component analysis?</A> by Aapo Hyvärinen 
+  <LI><A class="external text" 
+  href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html" 
+  rel=nofollow>Independent Component Analysis: A Tutorial</A> by Aapo Hyvärinen 
+  <LI><A class="external text" href="http://www.idsia.ch/~juergen/ica.html" 
+  rel=nofollow>Nonlinear ICA, Unsupervised Learning, Redundancy Reduction</A> by 
+  <A title="Jürgen Schmidhuber" 
+  href="http://en.wikipedia.org/wiki/J%C3%BCrgen_Schmidhuber">Jürgen 
+  Schmidhuber</A>, with links to papers 
+  <LI><A class="external text" 
+  href="http://www.cis.hut.fi/projects/ica/fastica/" rel=nofollow>FastICA as a 
+  package for Matlab, in R language, C++</A> 
+  <LI><A class="external text" href="http://www.bsp.brain.riken.go.jp/ICALAB/" 
+  rel=nofollow>ICALAB Toolboxes</A> for Matlab, developed at <A title=RIKEN 
+  href="http://en.wikipedia.org/wiki/RIKEN">RIKEN</A> 
+  <LI><A class="external text" 
+  href="http://www.nic.uoregon.edu/hipersat/index.php" rel=nofollow>High 
+  Performance Signal Analysis Toolkit</A> provides C++ implementations of 
+  FastICA and Infomax 
+  <LI><A class="external text" href="http://jim-stone.staff.shef.ac.uk/" 
+  rel=nofollow>Free software for ICA</A> by JV Stone. 
+  <LI><A class="external text" href="http://mole.imm.dtu.dk/toolbox/" 
+  rel=nofollow>ICA toolbox</A> Matlab tools for ICA with Bell-Sejnowski, 
+  Molgedey-Schuster and mean field ICA. Developed at DTU. 
+  <LI><A class="external text" 
+  href="http://www.cis.hut.fi/projects/ica/cocktail/cocktail_en.cgi" 
+  rel=nofollow>Demonstration of the cocktail party problem</A> 
+  <LI><A class="external text" href="http://sccn.ucsd.edu/eeglab/" 
+  rel=nofollow>EEGLAB Toolbox</A> ICA of <A class=mw-redirect 
+  title=Electroencephalogram 
+  href="http://en.wikipedia.org/wiki/Electroencephalogram">EEG</A> for Matlab, 
+  developed at UCSD. 
+  <LI><A class="external text" href="http://sccn.ucsd.edu/fmrlab/" 
+  rel=nofollow>FMRLAB Toolbox</A> ICA of <A class=mw-redirect title=FMRI 
+  href="http://en.wikipedia.org/wiki/FMRI">fMRI</A> for Matlab, developed at 
+  UCSD 
+  <LI><A class="external text" 
+  href="http://brandon-merkl.blogspot.com/2005/12/independent-component-analysis.html" 
+  rel=nofollow>Discussion of ICA used in a biomedical shape-representation 
+  context</A> 
+  <LI><A class="external text" href="http://mdp-toolkit.sourceforge.net/" 
+  rel=nofollow>FastICA, CuBICA, JADE and TDSEP algorithm for Python and 
+  more...</A> 
+  <LI><A class="external text" href="http://icatb.sourceforge.net/" 
+  rel=nofollow>Group ICA Toolbox and Fusion ICA Toolbox</A> </LI></UL><!-- 
+NewPP limit report
+Preprocessor node count: 623/1000000
+Post-expand include size: 3525/2048000 bytes
+Template argument size: 1058/2048000 bytes
+Expensive parser function count: 3/500
+--><!-- Saved in parser cache with key enwiki:pcache:idhash:598031-0!1!0!default!!en!4 and timestamp 20100710055414 -->
+<DIV class=printfooter>Retrieved from "<A 
+href="http://en.wikipedia.org/wiki/Independent_component_analysis">http://en.wikipedia.org/wiki/Independent_component_analysis</A>"</DIV><!-- /bodytext --><!-- catlinks -->
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Special:Categories 
+href="http://en.wikipedia.org/wiki/Special:Categories">Categories</A>: <SPAN 
+dir=ltr><A title="Category:Signal processing" 
+href="http://en.wikipedia.org/wiki/Category:Signal_processing">Signal 
+processing</A></SPAN> | <SPAN dir=ltr><A title="Category:Data analysis" 
+href="http://en.wikipedia.org/wiki/Category:Data_analysis">Data 
+analysis</A></SPAN> | <SPAN dir=ltr><A title="Category:Time series analysis" 
+href="http://en.wikipedia.org/wiki/Category:Time_series_analysis">Time series 
+analysis</A></SPAN> | <SPAN dir=ltr><A title="Category:Statistical models" 
+href="http://en.wikipedia.org/wiki/Category:Statistical_models">Statistical 
+models</A></SPAN> | <SPAN dir=ltr><A title="Category:Multivariate statistics" 
+href="http://en.wikipedia.org/wiki/Category:Multivariate_statistics">Multivariate 
+statistics</A></SPAN></DIV>
+<DIV class=mw-hidden-cats-hidden id=mw-hidden-catlinks>Hidden categories: <SPAN 
+dir=ltr><A title="Category:Statistics articles needing expert attention" 
+href="http://en.wikipedia.org/wiki/Category:Statistics_articles_needing_expert_attention">Statistics 
+articles needing expert attention</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:Articles needing expert attention from November 2008" 
+href="http://en.wikipedia.org/wiki/Category:Articles_needing_expert_attention_from_November_2008">Articles 
+needing expert attention from November 2008</A></SPAN> | <SPAN dir=ltr><A 
+title="Category:All articles needing expert attention" 
+href="http://en.wikipedia.org/wiki/Category:All_articles_needing_expert_attention">All 
+articles needing expert attention</A></SPAN></DIV></DIV><!-- /catlinks -->
+<DIV class=visualClear></DIV></DIV><!-- /bodyContent --></DIV><!-- /content --><!-- header -->
+<DIV class=noprint id=mw-head><!-- 0 -->
+<DIV class="" id=p-personal>
+<H5>Personal tools</H5>
+<UL>
+  <LI id=pt-prefswitch-link-anon><A class=no-text-transform 
+  title="Learn about new features" 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativePrefSwitch&amp;from=Independent_component_analysis">New 
+  features</A> </LI>
+  <LI id=pt-login><A 
+  title="You are encouraged to log in; however, it is not mandatory. [o]" 
+  accessKey=o 
+  href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Independent_component_analysis">Log 
+  in / create account</A> </LI></UL></DIV><!-- /0 -->
+<DIV id=left-navigation><!-- 0 -->
+<DIV class=vectorTabs id=p-namespaces>
+<H5>Namespaces</H5>
+<UL>
+  <LI class=selected id=ca-nstab-main><A title="View the content page [c]" 
+  accessKey=c 
+  href="http://en.wikipedia.org/wiki/Independent_component_analysis"><SPAN>Article</SPAN></A> 
+  </LI>
+  <LI id=ca-talk><A title="Discussion about the content page [t]" accessKey=t 
+  href="http://en.wikipedia.org/wiki/Talk:Independent_component_analysis"><SPAN>Discussion</SPAN></A> 
+  </LI></UL></DIV><!-- /0 --><!-- 1 -->
+<DIV class="vectorMenu emptyPortlet" id=p-variants>
+<H5><SPAN>Variants</SPAN><A 
+href="http://en.wikipedia.org/wiki/Independent_component_analysis#"></A></H5>
+<DIV class=menu>
+<UL></UL></DIV></DIV><!-- /1 --></DIV>
+<DIV id=right-navigation><!-- 0 -->
+<DIV class=vectorTabs id=p-views>
+<H5>Views</H5>
+<UL>
+  <LI class=selected id=ca-view><A 
+  href="http://en.wikipedia.org/wiki/Independent_component_analysis"><SPAN>Read</SPAN></A> 
+  </LI>
+  <LI id=ca-edit><A 
+  title="You can edit this page. &#10;Please use the preview button before saving. [e]" 
+  accessKey=e 
+  href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=edit"><SPAN>Edit</SPAN></A> 
+  </LI>
+  <LI class="collapsible " id=ca-history><A 
+  title="Past versions of this page [h]" accessKey=h 
+  href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;action=history"><SPAN>View 
+  history</SPAN></A> </LI></UL></DIV><!-- /0 --><!-- 1 -->
+<DIV class="vectorMenu emptyPortlet" id=p-cactions>
+<H5><SPAN>Actions</SPAN><A 
+href="http://en.wikipedia.org/wiki/Independent_component_analysis#"></A></H5>
+<DIV class=menu>
+<UL></UL></DIV></DIV><!-- /1 --><!-- 2 -->
+<DIV id=p-search>
+<H5><LABEL for=searchInput>Search</LABEL></H5>
+<FORM id=searchform action=/w/index.php><INPUT type=hidden value=Special:Search 
+name=title> 
+<DIV id=simpleSearch><INPUT id=searchInput title="Search Wikipedia [f]" 
+accessKey=f name=search><BUTTON id=searchButton 
+title="Search Wikipedia for this text" name=button type=submit>&nbsp;</BUTTON> 
+</DIV></FORM></DIV><!-- /2 --></DIV></DIV><!-- /header --><!-- panel -->
+<DIV class=noprint id=mw-panel><!-- logo -->
+<DIV id=p-logo><A title="Visit the main page" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/commons/d/d6/Wikipedia-logo-v2-en.png)" 
+href="http://en.wikipedia.org/wiki/Main_Page"></A></DIV><!-- /logo --><!-- navigation -->
+<DIV class=portal id=p-navigation>
+<H5>Navigation</H5>
+<DIV class=body>
+<UL>
+  <LI id=n-mainpage-description><A title="Visit the main page [z]" accessKey=z 
+  href="http://en.wikipedia.org/wiki/Main_Page">Main page</A> </LI>
+  <LI id=n-contents><A title="Guides to browsing Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</A> </LI>
+  <LI id=n-featuredcontent><A title="Featured content — the best of Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured 
+  content</A> </LI>
+  <LI id=n-currentevents><A 
+  title="Find background information on current events" 
+  href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</A> 
+  </LI>
+  <LI id=n-randompage><A title="Load a random article [x]" accessKey=x 
+  href="http://en.wikipedia.org/wiki/Special:Random">Random article</A> 
+</LI></UL></DIV></DIV><!-- /navigation --><!-- SEARCH --><!-- /SEARCH --><!-- interaction -->
+<DIV class=portal id=p-interaction>
+<H5>Interaction</H5>
+<DIV class=body>
+<UL>
+  <LI id=n-aboutsite><A title="Find out about Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> </LI>
+  <LI id=n-portal><A 
+  title="About the project, what you can do, where to find things" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal">Community 
+  portal</A> </LI>
+  <LI id=n-recentchanges><A title="The list of recent changes in the wiki [r]" 
+  accessKey=r href="http://en.wikipedia.org/wiki/Special:RecentChanges">Recent 
+  changes</A> </LI>
+  <LI id=n-contact><A title="How to contact Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</A> 
+  </LI>
+  <LI id=n-sitesupport><A title="Support us" 
+  href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en">Donate to 
+  Wikipedia</A> </LI>
+  <LI id=n-help><A title="Guidance on how to use and edit Wikipedia" 
+  href="http://en.wikipedia.org/wiki/Help:Contents">Help</A> 
+</LI></UL></DIV></DIV><!-- /interaction --><!-- TOOLBOX -->
+<DIV class=portal id=p-tb>
+<H5>Toolbox</H5>
+<DIV class=body>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="List of all English Wikipedia pages containing links to this page [j]" 
+  accessKey=j 
+  href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Independent_component_analysis">What 
+  links here</A> </LI>
+  <LI id=t-recentchangeslinked><A 
+  title="Recent changes in pages linked from this page [k]" accessKey=k 
+  href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Independent_component_analysis">Related 
+  changes</A> </LI>
+  <LI id=t-upload><A title="Upload files [u]" accessKey=u 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Upload">Upload file</A> </LI>
+  <LI id=t-specialpages><A title="List of all special pages [q]" accessKey=q 
+  href="http://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</A> 
+  </LI>
+  <LI id=t-permalink><A title="Permanent link to this revision of the page" 
+  href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;oldid=362587051">Permanent 
+  link</A> </LI>
+  <LI id=t-cite><A title="Information on how to cite this page" 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Independent_component_analysis&amp;id=362587051">Cite 
+  this page</A> </LI></UL></DIV></DIV><!-- /TOOLBOX --><!-- coll-print_export -->
+<DIV class=portal id=p-coll-print_export>
+<H5>Print/export</H5>
+<DIV class=body>
+<UL id=collectionPortletList>
+  <LI id=coll-create_a_book><A title="Create a book or page collection" 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Independent+component+analysis" 
+  rel=nofollow>Create a book</A></LI>
+  <LI id=coll-download-as-rl><A title="Download a PDF version of this wiki page" 
+  href="http://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Independent+component+analysis&amp;oldid=362587051&amp;writer=rl" 
+  rel=nofollow>Download as PDF</A></LI>
+  <LI id=t-print><A title="Printable version of this page [p]" accessKey=p 
+  href="http://en.wikipedia.org/w/index.php?title=Independent_component_analysis&amp;printable=yes">Printable 
+  version</A></LI></UL></DIV></DIV><!-- /coll-print_export --><!-- LANGUAGES -->
+<DIV class=portal id=p-lang>
+<H5>Languages</H5>
+<DIV class=body>
+<UL>
+  <LI class=interwiki-de><A title=Unabhängigkeitsanalyse 
+  href="http://de.wikipedia.org/wiki/Unabh%C3%A4ngigkeitsanalyse">Deutsch</A> 
+  </LI>
+  <LI class=interwiki-es><A title="Análisis de componentes independientes" 
+  href="http://es.wikipedia.org/wiki/An%C3%A1lisis_de_componentes_independientes">Español</A> 
+  </LI>
+  <LI class=interwiki-fr><A title="Analyse en composantes indépendantes" 
+  href="http://fr.wikipedia.org/wiki/Analyse_en_composantes_ind%C3%A9pendantes">Français</A> 
+  </LI>
+  <LI class=interwiki-it><A title="Analisi delle componenti indipendenti" 
+  href="http://it.wikipedia.org/wiki/Analisi_delle_componenti_indipendenti">Italiano</A> 
+  </LI>
+  <LI class=interwiki-ja><A title=独立成分分析 
+  href="http://ja.wikipedia.org/wiki/%E7%8B%AC%E7%AB%8B%E6%88%90%E5%88%86%E5%88%86%E6%9E%90">日本語</A> 
+  </LI>
+  <LI class=interwiki-zh><A title=独立成分分析 
+  href="http://zh.wikipedia.org/wiki/%E7%8B%AC%E7%AB%8B%E6%88%90%E5%88%86%E5%88%86%E6%9E%90">中文</A> 
+  </LI></UL></DIV></DIV><!-- /LANGUAGES --></DIV><!-- /panel --><!-- footer -->
+<DIV id=footer>
+<UL id=footer-info>
+  <LI id=footer-info-lastmod>This page was last modified on 17 May 2010 at 
+  09:41.<BR>
+  <LI id=footer-info-copyright>Text is available under the <A 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" 
+  rel=license>Creative Commons Attribution-ShareAlike License</A><A 
+  style="DISPLAY: none" href="http://creativecommons.org/licenses/by-sa/3.0/" 
+  rel=license></A>; additional terms may apply. See <A 
+  href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</A> for 
+  details.<BR>Wikipedia® is a registered trademark of the <A 
+  href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</A>, a 
+  non-profit organization.<BR>
+  <LI class=noprint><A class=internal 
+  href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</A> 
+</LI></UL>
+<UL id=footer-places>
+  <LI id=footer-places-privacy><A title="wikimedia:Privacy policy" 
+  href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy policy</A> 
+  </LI>
+  <LI id=footer-places-about><A title=Wikipedia:About 
+  href="http://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> </LI>
+  <LI id=footer-places-disclaimer><A title="Wikipedia:General disclaimer" 
+  href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</A> 
+  </LI></UL>
+<UL class=noprint id=footer-icons>
+  <LI id=footer-icon-poweredby><A href="http://www.mediawiki.org/"><IMG 
+  height=31 alt="Powered by MediaWiki" 
+  src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/poweredby_mediawiki_88x31.png" 
+  width=88></A> </LI>
+  <LI id=footer-icon-copyright><A href="http://wikimediafoundation.org/"><IMG 
+  height=31 alt="Wikimedia Foundation" 
+  src="Independent%20component%20analysis%20-%20Wikipedia,%20the%20free%20encyclopedia_files/wikimedia-button.png" 
+  width=88></A> </LI></UL>
+<DIV style="CLEAR: both"></DIV></DIV><!-- /footer --><!-- fixalpha -->
+<SCRIPT type=text/javascript> if ( window.isMSIE55 ) fixalpha(); </SCRIPT>
+<!-- /fixalpha -->
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv212 in 0.043 secs. --></BODY></HTML>

@@ -1,0 +1,9 @@
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\BUS.dll
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\BUS.pdb
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\DTO.dll
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\DTO.pdb
+D:\StockMarket\AppStockMarket\StockMarket\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\StockMarket\AppStockMarket\StockMarket\BUS\obj\Debug\BUS.dll
+D:\StockMarket\AppStockMarket\StockMarket\BUS\obj\Debug\BUS.pdb
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\DAO.dll
+D:\StockMarket\AppStockMarket\StockMarket\BUS\bin\Debug\DAO.pdb

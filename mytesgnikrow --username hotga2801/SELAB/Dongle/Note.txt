@@ -1,0 +1,3 @@
+32KB of flash mem: information program
+4KB
+AES 128 encryption

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <HTA:APPLICATION 
+            WINDOWSTATE="minimize"
+            NAVIGABLE="yes"/>
+
+        <script language="JavaScript" type="text/javascript">
+            
+            var abstractURL = "http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V03-5103WW7-7&_user=1478924&_coverDate=09%2F09%2F2010&_fmt=abstract&_orig=search&_origin=search&_cdi=5635&_sort=d&view=c&_acct=C000053028&_version=1&_urlVersion=0&_userid=1478924&md5=7cdd40026135567ea14aeba9b61ceadf";
+            var testImgURL = "http://72.233.40.18/sd_ddm_prod/images/btn_begin_download.gif";
+
+            function errorHandler (evt)
+            {
+                document.getElementById("main_div").style.display='';
+                document.title = "Abstract"
+            }
+            
+            function loadHandler (evt)
+            {
+                document.location = abstractURL;
+            }
+
+            function testConnection(x)
+            {
+                var img = new Image();
+                img.onload = loadHandler;
+                img.onerror = errorHandler;
+                img.src = x;
+            }
+            
+            function onLoad()
+            {
+                // adding timestamp to url to get around caching
+                testConnection(testImgURL + '?' + (new Date()).valueOf());
+                this.window.focus();
+            }
+
+        </script>
+    </head>
+    
+    <body onload="onLoad()">
+        <div id="main_div" style="display:none">
+            
+        </div>  
+    </body>
+</html>

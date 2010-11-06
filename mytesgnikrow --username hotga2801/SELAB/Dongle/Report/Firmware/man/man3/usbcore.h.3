@@ -1,0 +1,124 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fB_USB_EP_DATA\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB_USB_EP_DATA\fP \fBUSB_EP_DATA\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUSB_ResetCore\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_StatusInStage\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_StatusOutStage\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_DataInStage\fP (void)"
+.br
+.ti -1c
+.RI "void \fBUSB_DataOutStage\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBWORD\fP \fBUSB_DeviceStatus\fP"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBUSB_DeviceAddress\fP"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBUSB_Configuration\fP"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_EndPointMask\fP"
+.br
+.ti -1c
+.RI "\fBDWORD\fP \fBUSB_EndPointHalt\fP"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBUSB_AltSetting\fP [USB_IF_NUM]"
+.br
+.ti -1c
+.RI "\fBBYTE\fP \fBEP0Buf\fP [USB_MAX_PACKET0]"
+.br
+.ti -1c
+.RI "\fBUSB_EP_DATA\fP \fBEP0Data\fP"
+.br
+.ti -1c
+.RI "\fBUSB_SETUP_PACKET\fP \fBSetupPacket\fP"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fB_USB_EP_DATA\fP  \fBUSB_EP_DATA\fP"
+.SH "Function Documentation"
+.PP 
+.SS "void USB_DataInStage (void)"
+.PP
+Definition at line 83 of file usbcore.c.
+.SS "void USB_DataOutStage (void)"
+.PP
+Definition at line 106 of file usbcore.c.
+.SS "void USB_ResetCore (void)"
+.PP
+Definition at line 53 of file usbcore.c.
+.SS "void USB_StatusInStage (void)"
+.PP
+Definition at line 125 of file usbcore.c.
+.SS "void USB_StatusOutStage (void)"
+.PP
+Definition at line 139 of file usbcore.c.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBBYTE\fP \fBEP0Buf\fP[USB_MAX_PACKET0]"
+.PP
+Definition at line 39 of file usbcore.c.
+.SS "\fBUSB_EP_DATA\fP \fBEP0Data\fP"
+.PP
+Definition at line 42 of file usbcore.c.
+.SS "\fBUSB_SETUP_PACKET\fP \fBSetupPacket\fP"
+.PP
+Definition at line 44 of file usbcore.c.
+.SS "\fBBYTE\fP \fBUSB_AltSetting\fP[USB_IF_NUM]"
+.PP
+Definition at line 37 of file usbcore.c.
+.SS "\fBBYTE\fP \fBUSB_Configuration\fP"
+.PP
+Definition at line 33 of file usbcore.c.
+.SS "\fBBYTE\fP \fBUSB_DeviceAddress\fP"
+.PP
+Definition at line 32 of file usbcore.c.
+.SS "\fBWORD\fP \fBUSB_DeviceStatus\fP"
+.PP
+Definition at line 31 of file usbcore.c.
+.SS "\fBDWORD\fP \fBUSB_EndPointHalt\fP"
+.PP
+Definition at line 35 of file usbcore.c.
+.SS "\fBDWORD\fP \fBUSB_EndPointMask\fP"
+.PP
+Definition at line 34 of file usbcore.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

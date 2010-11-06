@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="usbdesc_8h" kind="file">
+    <compoundname>usbdesc.h</compoundname>
+    <includedby refid="usbcore_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</includedby>
+    <includedby refid="usbdesc_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</includedby>
+    <includedby refid="_vendor_process_8c" local="yes">F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</includedby>
+    <invincdepgraph>
+      <node id="261">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c</label>
+        <link refid="usbdesc_8c"/>
+      </node>
+      <node id="259">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h</label>
+        <link refid="usbdesc.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.c</label>
+        <link refid="_vendor_process_8c"/>
+      </node>
+      <node id="260">
+        <label>F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c</label>
+        <link refid="usbcore_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usbdesc_8h_1a018fc058eba40cffd92be1756a5d2b40" prot="public" static="no">
+        <name>WBVAL</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &amp; 0xFF),((x &gt;&gt; 8) &amp; 0xFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="20" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbdesc_8h_1acd04660262562260957b6df8d5e482b3" prot="public" static="no">
+        <name>USB_DEVICE_DESC_SIZE</name>
+        <initializer>(sizeof(<ref refid="usb_8h_1aaba3306324a8f6fef5052e9fae06f45d" kindref="member">USB_DEVICE_DESCRIPTOR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="22" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="usbdesc_8h_1a6ce7e811f8523649e7eaa158dd06b8c6" prot="public" static="no">
+        <name>USB_CONFIGUARTION_DESC_SIZE</name>
+        <initializer>(sizeof(<ref refid="usb_8h_1a36beb2cc858800223e1d7f02aeb28260" kindref="member">USB_CONFIGURATION_DESCRIPTOR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="23" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbdesc_8h_1ac7fd274cdd131f4c0addec7a139bc9b7" prot="public" static="no">
+        <name>USB_INTERFACE_DESC_SIZE</name>
+        <initializer>(sizeof(<ref refid="usb_8h_1a514029a74d63a32b820ce506c0e60857" kindref="member">USB_INTERFACE_DESCRIPTOR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="24" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usbdesc_8h_1a317f2697db907bff3f818a644d231c08" prot="public" static="no">
+        <name>USB_ENDPOINT_DESC_SIZE</name>
+        <initializer>(sizeof(<ref refid="usb_8h_1ad257142de6c082632f2ca3e8ab4ca058" kindref="member">USB_ENDPOINT_DESCRIPTOR</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="25" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usbdesc_8h_1a0b2d6f1133aae00dc41cfa0e99c448f7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>const BYTE USB_DeviceDescriptor[]</definition>
+        <argsstring>[]</argsstring>
+        <name>USB_DeviceDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="27" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c" bodystart="39" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbdesc_8h_1a7874737317d6033082b7bc2eb536641a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>const BYTE USB_ConfigDescriptor[]</definition>
+        <argsstring>[]</argsstring>
+        <name>USB_ConfigDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="28" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c" bodystart="58" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+        <referencedby refid="usbcore_8c_1a1240609e800f022746bbb3d38e3aa76b" compoundref="usbcore_8c" startline="321" endline="394">USB_SetConfiguration</referencedby>
+        <referencedby refid="usbcore_8c_1a6cc0e4fa0f86d3b9e66dd6055f9dfa77" compoundref="usbcore_8c" startline="405" endline="455">USB_SetInterface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="usbdesc_8h_1a3eab2dcdb66d33d814e88494f004e1df" prot="public" static="no" mutable="no">
+        <type>const <ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref></type>
+        <definition>const BYTE USB_StringDescriptor[]</definition>
+        <argsstring>[]</argsstring>
+        <name>USB_StringDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h" line="29" bodyfile="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.c" bodystart="117" bodyend="-1"/>
+        <referencedby refid="usbcore_8c_1aceff2f7d7cb2fda84a5ddc349a7da722" compoundref="usbcore_8c" startline="246" endline="312">USB_GetDescriptor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>S<sp/>B<sp/><sp/>-<sp/><sp/>K<sp/>e<sp/>r<sp/>n<sp/>e<sp/>l</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Name:<sp/><sp/><sp/><sp/>USBDESC.H</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Purpose:<sp/>USB<sp/>Descriptors<sp/>Definitions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Version:<sp/>V1.10</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>uVision/ARM<sp/>development<sp/>tools.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>software<sp/>may<sp/>only<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>a<sp/>valid,<sp/>current,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>user<sp/>licence<sp/>from<sp/>KEIL<sp/>for<sp/>a<sp/>compatible<sp/>version<sp/>of<sp/>KEIL<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>development<sp/>tools.<sp/>Nothing<sp/>else<sp/>gives<sp/>you<sp/>the<sp/>right<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2005-2007<sp/>Keil<sp/>Software.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USBDESC_H__</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USBDESC_H__</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="usbdesc_8h_1a018fc058eba40cffd92be1756a5d2b40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WBVAL(x)<sp/>(x<sp/>&amp;<sp/>0xFF),((x<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xFF)</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="usbdesc_8h_1acd04660262562260957b6df8d5e482b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_DESC_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(sizeof(USB_DEVICE_DESCRIPTOR))</highlight></codeline>
+<codeline lineno="23" refid="usbdesc_8h_1a6ce7e811f8523649e7eaa158dd06b8c6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIGUARTION_DESC_SIZE<sp/>(sizeof(USB_CONFIGURATION_DESCRIPTOR))</highlight></codeline>
+<codeline lineno="24" refid="usbdesc_8h_1ac7fd274cdd131f4c0addec7a139bc9b7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_INTERFACE_DESC_SIZE<sp/><sp/><sp/><sp/><sp/>(sizeof(USB_INTERFACE_DESCRIPTOR))</highlight></codeline>
+<codeline lineno="25" refid="usbdesc_8h_1a317f2697db907bff3f818a644d231c08" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_ENDPOINT_DESC_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(sizeof(USB_ENDPOINT_DESCRIPTOR))</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="usbdesc_8c_1a0b2d6f1133aae00dc41cfa0e99c448f7" kindref="member">USB_DeviceDescriptor</ref>[];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="usbdesc_8c_1a7874737317d6033082b7bc2eb536641a" kindref="member">USB_ConfigDescriptor</ref>[];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="type_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref><sp/><ref refid="usbdesc_8c_1a3eab2dcdb66d33d814e88494f004e1df" kindref="member">USB_StringDescriptor</ref>[];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__USBDESC_H__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbdesc.h"/>
+  </compounddef>
+</doxygen>

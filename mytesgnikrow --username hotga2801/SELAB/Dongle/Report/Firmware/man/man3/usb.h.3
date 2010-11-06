@@ -1,0 +1,535 @@
+.TH "F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h" 3 "Sun Oct 17 2010" "Version 01" "Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usb.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "union \fB_REQUEST_TYPE\fP"
+.br
+.ti -1c
+.RI "struct \fB_REQUEST_TYPE::_BM\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_SETUP_PACKET\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_DEVICE_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_DEVICE_QUALIFIER_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_CONFIGURATION_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_INTERFACE_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_ENDPOINT_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_STRING_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "struct \fB_USB_COMMON_DESCRIPTOR\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBREQUEST_HOST_TO_DEVICE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_DEVICE_TO_HOST\fP   1"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_STANDARD\fP   0"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_CLASS\fP   1"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_VENDOR\fP   2"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_RESERVED\fP   3"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_TO_DEVICE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_TO_INTERFACE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_TO_ENDPOINT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBREQUEST_TO_OTHER\fP   3"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_GET_STATUS\fP   0"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_CLEAR_FEATURE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SET_FEATURE\fP   3"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SET_ADDRESS\fP   5"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_GET_DESCRIPTOR\fP   6"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SET_DESCRIPTOR\fP   7"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_GET_CONFIGURATION\fP   8"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SET_CONFIGURATION\fP   9"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_GET_INTERFACE\fP   10"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SET_INTERFACE\fP   11"
+.br
+.ti -1c
+.RI "#define \fBUSB_REQUEST_SYNC_FRAME\fP   12"
+.br
+.ti -1c
+.RI "#define \fBUSB_GETSTATUS_SELF_POWERED\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBUSB_GETSTATUS_REMOTE_WAKEUP\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBUSB_GETSTATUS_ENDPOINT_STALL\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBUSB_FEATURE_ENDPOINT_STALL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBUSB_FEATURE_REMOTE_WAKEUP\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_DESCRIPTOR_TYPE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIGURATION_DESCRIPTOR_TYPE\fP   2"
+.br
+.ti -1c
+.RI "#define \fBUSB_STRING_DESCRIPTOR_TYPE\fP   3"
+.br
+.ti -1c
+.RI "#define \fBUSB_INTERFACE_DESCRIPTOR_TYPE\fP   4"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_DESCRIPTOR_TYPE\fP   5"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE\fP   6"
+.br
+.ti -1c
+.RI "#define \fBUSB_OTHER_SPEED_CONFIG_DESCRIPTOR_TYPE\fP   7"
+.br
+.ti -1c
+.RI "#define \fBUSB_INTERFACE_POWER_DESCRIPTOR_TYPE\fP   8"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_RESERVED\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_AUDIO\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_COMMUNICATIONS\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_HUMAN_INTERFACE\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_MONITOR\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_PHYSICAL_INTERFACE\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_POWER\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_PRINTER\fP   0x07"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_STORAGE\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_HUB\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBUSB_DEVICE_CLASS_VENDOR_SPECIFIC\fP   0xFF"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIG_POWERED_MASK\fP   0xC0"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIG_BUS_POWERED\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIG_SELF_POWERED\fP   0xC0"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIG_REMOTE_WAKEUP\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBUSB_CONFIG_POWER_MA\fP(mA)   ((mA)/2)"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_DIRECTION_MASK\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_OUT\fP(addr)   ((addr) | 0x00)"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_IN\fP(addr)   ((addr) | 0x80)"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_TYPE_MASK\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_TYPE_CONTROL\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_TYPE_ISOCHRONOUS\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_TYPE_BULK\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_TYPE_INTERRUPT\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_SYNC_MASK\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_SYNC_NO_SYNCHRONIZATION\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_SYNC_ASYNCHRONOUS\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_SYNC_ADAPTIVE\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_SYNC_SYNCHRONOUS\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_USAGE_MASK\fP   0x30"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_USAGE_DATA\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_USAGE_FEEDBACK\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_USAGE_IMPLICIT_FEEDBACK\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBUSB_ENDPOINT_USAGE_RESERVED\fP   0x30"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   \fBWORD\fP \fBW\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBBYTE\fP \fBL\fP"
+.br
+.ti -1c
+.RI "      \fBBYTE\fP \fBH\fP"
+.br
+.ti -1c
+.RI "   } \fBWB\fP"
+.br
+.ti -1c
+.RI "} \fBWORD_BYTE\fP"
+.br
+.ti -1c
+.RI "typedef __packed union \fB_REQUEST_TYPE\fP \fBREQUEST_TYPE\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_SETUP_PACKET\fP \fBUSB_SETUP_PACKET\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_DEVICE_DESCRIPTOR\fP \fBUSB_DEVICE_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_DEVICE_QUALIFIER_DESCRIPTOR\fP \fBUSB_DEVICE_QUALIFIER_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_CONFIGURATION_DESCRIPTOR\fP \fBUSB_CONFIGURATION_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_INTERFACE_DESCRIPTOR\fP \fBUSB_INTERFACE_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_ENDPOINT_DESCRIPTOR\fP \fBUSB_ENDPOINT_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_STRING_DESCRIPTOR\fP \fBUSB_STRING_DESCRIPTOR\fP"
+.br
+.ti -1c
+.RI "typedef __packed struct \fB_USB_COMMON_DESCRIPTOR\fP \fBUSB_COMMON_DESCRIPTOR\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define REQUEST_CLASS   1"
+.PP
+Definition at line 35 of file usb.h.
+.SS "#define REQUEST_DEVICE_TO_HOST   1"
+.PP
+Definition at line 31 of file usb.h.
+.SS "#define REQUEST_HOST_TO_DEVICE   0"
+.PP
+Definition at line 30 of file usb.h.
+.SS "#define REQUEST_RESERVED   3"
+.PP
+Definition at line 37 of file usb.h.
+.SS "#define REQUEST_STANDARD   0"
+.PP
+Definition at line 34 of file usb.h.
+.SS "#define REQUEST_TO_DEVICE   0"
+.PP
+Definition at line 40 of file usb.h.
+.SS "#define REQUEST_TO_ENDPOINT   2"
+.PP
+Definition at line 42 of file usb.h.
+.SS "#define REQUEST_TO_INTERFACE   1"
+.PP
+Definition at line 41 of file usb.h.
+.SS "#define REQUEST_TO_OTHER   3"
+.PP
+Definition at line 43 of file usb.h.
+.SS "#define REQUEST_VENDOR   2"
+.PP
+Definition at line 36 of file usb.h.
+.SS "#define USB_CONFIG_BUS_POWERED   0x80"
+.PP
+Definition at line 112 of file usb.h.
+.SS "#define USB_CONFIG_POWER_MA(mA)   ((mA)/2)"
+.PP
+Definition at line 117 of file usb.h.
+.SS "#define USB_CONFIG_POWERED_MASK   0xC0"
+.PP
+Definition at line 111 of file usb.h.
+.SS "#define USB_CONFIG_REMOTE_WAKEUP   0x20"
+.PP
+Definition at line 114 of file usb.h.
+.SS "#define USB_CONFIG_SELF_POWERED   0xC0"
+.PP
+Definition at line 113 of file usb.h.
+.SS "#define USB_CONFIGURATION_DESCRIPTOR_TYPE   2"
+.PP
+Definition at line 89 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_AUDIO   0x01"
+.PP
+Definition at line 99 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_COMMUNICATIONS   0x02"
+.PP
+Definition at line 100 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_HUB   0x09"
+.PP
+Definition at line 107 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_HUMAN_INTERFACE   0x03"
+.PP
+Definition at line 101 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_MONITOR   0x04"
+.PP
+Definition at line 102 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_PHYSICAL_INTERFACE   0x05"
+.PP
+Definition at line 103 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_POWER   0x06"
+.PP
+Definition at line 104 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_PRINTER   0x07"
+.PP
+Definition at line 105 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_RESERVED   0x00"
+.PP
+Definition at line 98 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_STORAGE   0x08"
+.PP
+Definition at line 106 of file usb.h.
+.SS "#define USB_DEVICE_CLASS_VENDOR_SPECIFIC   0xFF"
+.PP
+Definition at line 108 of file usb.h.
+.SS "#define USB_DEVICE_DESCRIPTOR_TYPE   1"
+.PP
+Definition at line 88 of file usb.h.
+.SS "#define USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE   6"
+.PP
+Definition at line 93 of file usb.h.
+.SS "#define USB_ENDPOINT_DESCRIPTOR_TYPE   5"
+.PP
+Definition at line 92 of file usb.h.
+.SS "#define USB_ENDPOINT_DIRECTION_MASK   0x80"
+.PP
+Definition at line 120 of file usb.h.
+.SS "#define USB_ENDPOINT_IN(addr)   ((addr) | 0x80)"
+.PP
+Definition at line 122 of file usb.h.
+.SS "#define USB_ENDPOINT_OUT(addr)   ((addr) | 0x00)"
+.PP
+Definition at line 121 of file usb.h.
+.SS "#define USB_ENDPOINT_SYNC_ADAPTIVE   0x08"
+.PP
+Definition at line 133 of file usb.h.
+.SS "#define USB_ENDPOINT_SYNC_ASYNCHRONOUS   0x04"
+.PP
+Definition at line 132 of file usb.h.
+.SS "#define USB_ENDPOINT_SYNC_MASK   0x0C"
+.PP
+Definition at line 130 of file usb.h.
+.SS "#define USB_ENDPOINT_SYNC_NO_SYNCHRONIZATION   0x00"
+.PP
+Definition at line 131 of file usb.h.
+.SS "#define USB_ENDPOINT_SYNC_SYNCHRONOUS   0x0C"
+.PP
+Definition at line 134 of file usb.h.
+.SS "#define USB_ENDPOINT_TYPE_BULK   0x02"
+.PP
+Definition at line 128 of file usb.h.
+.SS "#define USB_ENDPOINT_TYPE_CONTROL   0x00"
+.PP
+Definition at line 126 of file usb.h.
+.SS "#define USB_ENDPOINT_TYPE_INTERRUPT   0x03"
+.PP
+Definition at line 129 of file usb.h.
+.SS "#define USB_ENDPOINT_TYPE_ISOCHRONOUS   0x01"
+.PP
+Definition at line 127 of file usb.h.
+.SS "#define USB_ENDPOINT_TYPE_MASK   0x03"
+.PP
+Definition at line 125 of file usb.h.
+.SS "#define USB_ENDPOINT_USAGE_DATA   0x00"
+.PP
+Definition at line 136 of file usb.h.
+.SS "#define USB_ENDPOINT_USAGE_FEEDBACK   0x10"
+.PP
+Definition at line 137 of file usb.h.
+.SS "#define USB_ENDPOINT_USAGE_IMPLICIT_FEEDBACK   0x20"
+.PP
+Definition at line 138 of file usb.h.
+.SS "#define USB_ENDPOINT_USAGE_MASK   0x30"
+.PP
+Definition at line 135 of file usb.h.
+.SS "#define USB_ENDPOINT_USAGE_RESERVED   0x30"
+.PP
+Definition at line 139 of file usb.h.
+.SS "#define USB_FEATURE_ENDPOINT_STALL   0"
+.PP
+Definition at line 74 of file usb.h.
+.SS "#define USB_FEATURE_REMOTE_WAKEUP   1"
+.PP
+Definition at line 75 of file usb.h.
+.SS "#define USB_GETSTATUS_ENDPOINT_STALL   0x01"
+.PP
+Definition at line 71 of file usb.h.
+.SS "#define USB_GETSTATUS_REMOTE_WAKEUP   0x02"
+.PP
+Definition at line 70 of file usb.h.
+.SS "#define USB_GETSTATUS_SELF_POWERED   0x01"
+.PP
+Definition at line 69 of file usb.h.
+.SS "#define USB_INTERFACE_DESCRIPTOR_TYPE   4"
+.PP
+Definition at line 91 of file usb.h.
+.SS "#define USB_INTERFACE_POWER_DESCRIPTOR_TYPE   8"
+.PP
+Definition at line 95 of file usb.h.
+.SS "#define USB_OTHER_SPEED_CONFIG_DESCRIPTOR_TYPE   7"
+.PP
+Definition at line 94 of file usb.h.
+.SS "#define USB_REQUEST_CLEAR_FEATURE   1"
+.PP
+Definition at line 57 of file usb.h.
+.SS "#define USB_REQUEST_GET_CONFIGURATION   8"
+.PP
+Definition at line 62 of file usb.h.
+.SS "#define USB_REQUEST_GET_DESCRIPTOR   6"
+.PP
+Definition at line 60 of file usb.h.
+.SS "#define USB_REQUEST_GET_INTERFACE   10"
+.PP
+Definition at line 64 of file usb.h.
+.SS "#define USB_REQUEST_GET_STATUS   0"
+.PP
+Definition at line 56 of file usb.h.
+.SS "#define USB_REQUEST_SET_ADDRESS   5"
+.PP
+Definition at line 59 of file usb.h.
+.SS "#define USB_REQUEST_SET_CONFIGURATION   9"
+.PP
+Definition at line 63 of file usb.h.
+.SS "#define USB_REQUEST_SET_DESCRIPTOR   7"
+.PP
+Definition at line 61 of file usb.h.
+.SS "#define USB_REQUEST_SET_FEATURE   3"
+.PP
+Definition at line 58 of file usb.h.
+.SS "#define USB_REQUEST_SET_INTERFACE   11"
+.PP
+Definition at line 65 of file usb.h.
+.SS "#define USB_REQUEST_SYNC_FRAME   12"
+.PP
+Definition at line 66 of file usb.h.
+.SS "#define USB_STRING_DESCRIPTOR_TYPE   3"
+.PP
+Definition at line 90 of file usb.h.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef __packed union \fB_REQUEST_TYPE\fP  \fBREQUEST_TYPE\fP"
+.SS "typedef __packed struct \fB_USB_COMMON_DESCRIPTOR\fP  \fBUSB_COMMON_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_CONFIGURATION_DESCRIPTOR\fP  \fBUSB_CONFIGURATION_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_DEVICE_DESCRIPTOR\fP  \fBUSB_DEVICE_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_DEVICE_QUALIFIER_DESCRIPTOR\fP  \fBUSB_DEVICE_QUALIFIER_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_ENDPOINT_DESCRIPTOR\fP  \fBUSB_ENDPOINT_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_INTERFACE_DESCRIPTOR\fP  \fBUSB_INTERFACE_DESCRIPTOR\fP"
+.SS "typedef __packed struct \fB_USB_SETUP_PACKET\fP  \fBUSB_SETUP_PACKET\fP"
+.SS "typedef __packed struct \fB_USB_STRING_DESCRIPTOR\fP  \fBUSB_STRING_DESCRIPTOR\fP"
+.SS "typedef { ... }   \fBWORD_BYTE\fP"
+.SH "Variable Documentation"
+.PP 
+.SS "\fBBYTE\fP \fBH\fP"
+.PP
+Definition at line 24 of file usb.h.
+.SS "\fBBYTE\fP \fBL\fP"
+.PP
+Definition at line 23 of file usb.h.
+.SS "\fBWORD\fP \fBW\fP"
+.PP
+Definition at line 21 of file usb.h.
+.SS "__packed { ... }   \fBWB\fP"
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware from the source code.

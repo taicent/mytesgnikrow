@@ -1,0 +1,813 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+
+
+
+
+
+
+ 	
+
+
+
+
+<meta name="citation_publisher" content="IEEE">
+
+<meta name="citation_authors" content="Jozwiak, I.J.">
+<meta name="citation_authors" content="Marczak, K.">
+<meta name="citation_title" content="A Hardware-Based Software Protection Systems - Analysis of Security Dongles with Time Meters">
+<meta name="citation_date" content="2007/20/16">
+<meta name="citation_volume" content="">
+<meta name="citation_issue" content="">
+<meta name="citation_firstpage" content="254">
+<meta name="citation_lastpage" content="261">
+<meta name="citation_doi" content="10.1109/DEPCOS-RELCOMEX.2007.6">
+<meta name="citation_abstract_html_url" content="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4272917">
+<meta name="citation_pdf_url" content="http://ieeexplore.ieee.org/iel5/4272875/4272876/04272917.pdf?arnumber=4272917">
+<meta name="citation_issn" content="">
+<meta name="citation_isbn" content="0-7695-2850-3">
+<meta name="citation_language" content="English">
+<meta name="citation_keywords" content="International Data Corporation;computer crime;copy protection;electronic device safety;hardware protection;hardware-based software protection systems;hypothetical construction;internal real-time clock;public key cryptography;security dongles;security solution provider;software license agreement;software piracy;software security vendor freedom;time meters;">
+
+<meta name="citation_conference" content="Dependability of Computer Systems, 2007. DepCoS-RELCOMEX '07. 2nd International Conference on">
+
+					
+						
+							
+					   
+							
+					   
+						
+<script>
+function writeLink(authorTerm) {
+	var filteredTerm = getFilteredTerms('"' + authorTerm + '"');
+	var link = '<a href="/search/searchresult.jsp?searchWithin=Search Index Terms:'
+	 + filteredTerm + '&newsearch=partialPref">' ;
+	document.writeln(link);
+}
+</script>
+<script>
+function authorLink(authorTerm) {
+	var filteredTerm = getFilteredTerms('"' + authorTerm + '"');
+	var link = '<a href="/search/searchresult.jsp?searchWithin=Authors:'
+	 + filteredTerm + '&newsearch=partialPref">' ;
+	document.writeln(link);
+}
+</script>
+
+<script type="text/javascript">
+	function rightsLinkPopUp()
+	{
+		
+		var pubTitle='Dependability of Computer Systems, 2007. DepCoS-RELCOMEX &#039;07. 2nd International Conference on';
+		var artTitle='A Hardware-Based Software Protection Systems - Analysis of Security Dongles with Time Meters';
+		var date='14-16 June 2007';
+		var author='+Jozwiak, I.J.+Marczak, K.';
+		var arNumber='4272917';
+	    var url = "https://s100.copyright.com/servlet/DispatchServlet?";
+	    
+			pubTitle='IEEE Conference Proceedings';
+	    
+	    var location = url + "PublisherName=IEEE"
+	        +"&Publication=" + escape(pubTitle)
+	        +"&Title=" + escape(artTitle) 
+	        +"&PublicationDate=" + escape(date) 
+	        +"&Author =" + escape( author )
+	        +"&Install=S" 
+	        +"&ContentID="+escape(arNumber);
+	        //alert(location);
+	    PopUp = window.open( location,  'Rightslink', 'location=no,toolbar=no,directories=no,status=no, menubar=no,scrollbars=yes,resizable=yes,width=650,height=550');
+	}
+	function ibmRightsLinkPopUp(){
+		PopUp = window.open( 'http://www.research.ibm.com/journal/rdauth.html',  'Rightslink', 'location=no,toolbar=no,directories=no,status=no, menubar=no,scrollbars=yes,resizable=yes,width=650,height=550');
+	}
+   function checkFormSubmit()
+	{   
+	   
+	   if( (document.forms.loginForm.username.value.length > 0) && (document.forms.loginForm.password.value.length > 0) )
+	   {
+	       return true;
+	   } 
+	   else
+	   {   
+	       alert("Please enter username and password.")
+	       return false;       
+	   }
+	   //return ( (document.forms.frm1.id.value.length > 0) && (document.forms.frm1.password.value.length > 0) );
+	    
+	}
+	
+ </script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+
+
+
+	
+
+	<title>IEEE Xplore - A Hardware-Based Software Protection Systems - Analysis of Security Dongles with Time Meters</title>
+
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/print.css" type="text/css" media="print">
+<style type="text/css" media="screen, print">
+	@import url(/assets/css/master.css);
+	@import url(/assets/css/endeca.css);
+</style>
+<script type="text/javascript">
+	var ASSETS_RELATIVE_PATH = '/assets';
+	var SPECIAL_CHARACTER_MAPS = '&:.AND.,=:.EQ.,+:.PLS.,#:.HSH.,(:.LB.,):.RB.,":.QT.';
+	var SPECIAL_CHARACTERS = new Array();
+	var SPECIAL_CHARACTER_REPLACEMENTS = new Array();
+	var characterMaps = SPECIAL_CHARACTER_MAPS.split(",");
+	for (var i = 0; i < characterMaps.length; i++) {
+		parts = characterMaps[i].split(":");
+		SPECIAL_CHARACTERS[i] = parts[0];
+		SPECIAL_CHARACTER_REPLACEMENTS[i] = parts[1];
+	}
+	
+</script>
+<script type="text/javascript" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/lib.js"></script>
+<script type="text/javascript" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/site.js"></script>
+<script type="text/javascript" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/search.js"></script>
+</head><body>
+	<p class="JumpLink" id="PageTop"><a href="#Body">Skip to Main Content</a></p>
+
+
+	<!-- BEGIN: LayoutWrapper -->
+	<div id="LayoutWrapper">
+
+		<!-- BEGIN: HeaderWrapper -->
+			
+
+
+<div id="UtilityNav">
+	<p class="links">
+	<a href="http://www.ieee.org/" id="u-home" target="_blank">IEEE.org</a> &nbsp;|&nbsp; 
+	<span>IEEE <em>Xplore</em> Digital Library</span> &nbsp;|&nbsp; 
+	<a href="http://standards.ieee.org/" id="u-standards" target="_blank">IEEE Standards Association</a> &nbsp;|&nbsp;
+	<a href="http://spectrum.ieee.org/" id="u-spectrum" target="_blank">Spectrum Online</a> &nbsp;|&nbsp; 
+	<a href="http://www.ieee.org/web/services/general/sitemap.html" id="u-more" target="_blank">More IEEE Sites</a>
+	</p>
+</div>
+
+<div id="HeaderWrapper">
+<!-- BEGIN: HeaderWrapper -->
+<div id="HeaderMetaNavigation">
+	
+</div>
+		<div id="Header">
+				<div id="logo-xplore">
+					<a href="http://ieeexplore.ieee.org/"><img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/logo.gif" alt="IEEE Xplore Digital Library" width="230" height="45"></a>
+				</div>
+
+				<div id="logo-ieee">
+					<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/logo_002.gif" alt="IEEE">
+				</div>
+
+				<div id="search-field">
+						
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/Xplore.js"></script>
+
+
+<script>
+
+  function loginRedirect() {
+	    var url_string = '/Xplore/login.jsp';
+	    window.location = url_string;
+  }
+  function showHideDiv(div,show) {
+	    var url_string = '/Xplore/login.jsp';
+	    window.location = url_string;
+  }  
+  function addFilter(filter,checked) { 
+	  if(checked)
+	  {
+		  document.getElementById("newsearch").value="partialPref"
+	  	  document.getElementById("filter").value=filter;
+		// put a large number so that it would not hit the server
+		  acompleter.options.minChars=3000;
+		  document.getElementById('search_suggestions').style.visibility = 'hidden';
+	  }
+	  else
+	  {
+		  document.getElementById("filter").value="";
+		  acompleter.options.minChars=3;
+		  document.getElementById('search_suggestions').style.visibility = 'visible';
+	  }
+  }
+	function submitForm() {
+		document.forms["search_form"].submit();
+	}  
+</script>
+		
+<form id="search_form" name="search_form" action="/search/searchresult.jsp" method="get" onsubmit="return filterQuery('queryText');">
+
+<fieldset id="search-fieldset">
+<div class="field"><label for="search-query" class="superfluous">Search Term(s)</label> 
+<span class="input-wrap">
+
+<input name="newsearch" id="newsearch" value="true" type="hidden">
+
+	
+<input autocomplete="off" name="queryText" id="queryText" type="text">
+</span>
+
+    <div style="display: none;" id="search_suggestions" class="autocomplete">
+    <script>
+    	var acompleter=new Ajax.Autocompleter('queryText', 'search_suggestions', '/search/typeahead',
+    		{ paramName: 'searchRefinementTerm', frequency: '0.8', minChars: 3, method: 'get',
+					parameters: 'searchRefinementMaxResults=20', 
+					afterUpdateElement: "return filterQuery('queryText')"
+    		});
+    </script>
+    </div>
+
+<input name="" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn.gif" alt="Search" class="form-action" type="image"></div>
+<div class="tools">
+
+
+
+<a href="http://ieeexplore.ieee.org/search/advsearch.jsp">Advanced Search</a> &nbsp;|&nbsp;
+
+
+
+
+
+	
+	
+		<a href="#" onclick="loginRedirect()">Preferences</a>&nbsp;|&nbsp;
+
+
+
+
+ <span id="search-tips-popup">Search Tips</span>
+
+
+&nbsp;
+
+</div></fieldset>
+</form>
+
+				</div>
+	
+		</div>
+
+</div>
+<!-- END: HeaderWrapper -->
+
+		<!-- END: HeaderWrapper -->
+		<!-- BEGIN: ToolBarWrapper -->
+			
+
+
+
+
+
+
+<div id="ToolBarWrapper">
+
+	<div id="ToolBar">
+	
+	<div id="Browse" class="DHTMLMenu">
+	<div id="browse-content">
+	<h3><a href="http://ieeexplore.ieee.org/xpl/browseHome.jsp">Browse</a></h3>
+	<div class="SubMenu">
+		
+<ul class="button" id="browse-revealed-menu">
+	<li><a href="http://ieeexplore.ieee.org/xpl/periodicals.jsp">Journals &amp; Magazines</a></li>
+	<li><a href="http://ieeexplore.ieee.org/xpl/conferences.jsp">Conference Proceedings</a></li>
+	<li><a href="http://ieeexplore.ieee.org/xpl/standards.jsp">Standards</a></li>
+	<li><a href="http://ieeexplore.ieee.org/xpl/bkBrowse.jsp">Books</a></li>
+	<li><a href="http://ieeexplore.ieee.org/xpl/modulebrowse.jsp">Educational Courses</a></li>
+	<li><a href="http://ieeexplore.ieee.org/techsurvey/jsp/ts_browse.jsp">Technology Surveys</a></li>
+</ul>
+
+	</div>
+	</div>
+	</div>
+	
+	
+	
+
+
+
+
+
+	
+
+<ul id="UserTools" class="DHTMLMenu">	
+	<li id="my-account">
+		<span>My Settings</span>
+		<div class="SubMenu">
+			<ul>
+							
+				<li><a href="http://ieeexplore.ieee.org/xpl/tocalerts_list.jsp">Alerts</a></li>			
+				<li><a href="http://ieeexplore.ieee.org/articleSale/purchaseHistory.jsp">Purchase History</a></li>
+				
+				<li><a href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=search/savedsearches">Saved Searches</a></li>
+				
+				
+					
+						
+						
+							<li><a href="http://ieeexplore.ieee.org/Xplore/login.jsp?tp=&amp;fromGateway=true&amp;">Sign In</a></li>
+						
+									
+					
+				<li><a href="http://ieeexplore.ieee.org/Xplore/accessinfo.jsp">What can I access?</a></li>
+				
+			</ul>
+		</div>
+	</li>
+
+	<li id="cart">
+		<a href="http://sbwsweb.ieee.org/ecustomercme_enu/start.swe?SWECmd=InvokeMethod&amp;SWEService=IEEEAddToCartService&amp;SWEMethod=GoToView&amp;mem_type=Customer&amp;Join=y&amp;src=0&amp;HideNew=N&amp;SessionId=l7wpM5bd4vN75jMzQ8VdgKpFCNy31L7hWYL1hqDp605wxvJ1xpQ2%211640774564%211283005437144" target="cartwindow">Cart</a>
+	</li>
+</ul>				
+
+	
+
+
+<div class="support">
+	<a href="http://ieeexplore.ieee.org/xpl/termsOfUse.jsp"><span>Terms of Use</span></a>&nbsp;|	
+	<a href="http://ieeexplore.ieee.org/xpl/feedback.jsp"><span>Feedback</span></a>&nbsp;&nbsp;	
+	<a>
+		<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/icon.gif" alt="" class="icon" width="24" height="20">
+		</a><a href="http://ieeexplore.ieee.org/Xplorehelp/Help_start.html" target="blank"><span>Help</span></a>
+	           
+</div>
+
+			 <table style="float: right; position: relative;" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td>
+		<div id="SignIn" class="DHTMLMenu">
+			<div id="signin-content">
+				<h3>Sign In</h3>			
+				<div class="SubMenu">
+					<div class="content">
+						<p>Here you can sign in to your guest, member or subscriber accounts. </p>
+						<ul class="button">
+							
+							
+								
+								
+									<li><a href="http://ieeexplore.ieee.org/Xplore/login.jsp">Sign In</a></li>
+								
+							
+							<li><a href="http://ieeexplore.ieee.org/Xplore/forgotpassword.jsp">Forgot Password?</a></li>
+						<!-- 	<li><a href="http://sbwsweb.ieee.org/ecustomercme_enu/start.swe?SWECmd=GotoView&src=0&Join=y&SWEView=CUT+Home+Page+View+%28eCustomer%29&mem_type=Customer&ChooseAddr=Y&HideNew=N" target="blank">Register</a></li>-->
+						<li><a href="http://ieeexplore.ieee.org/xpl/jsp/common/redirectToShop.jsp" target="blank">Register for an IEEE Account</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+		</div>
+				
+</td>				
+
+</tr></tbody></table>
+	
+	</div>
+
+</div>
+
+
+		<!-- END: ToolBarWrapper -->
+		<hr>
+				<!-- BEGIN: BodyWrapper -->
+		
+		
+		
+		
+			<div id="BodyWrapper" class="Layout-Column-2">
+		
+		
+			<div id="Body">
+				
+				<div class="column-main">
+					
+					<div class="breadcrumb-wrap">
+						<p class="breadcrumb">
+							<a href="http://ieeexplore.ieee.org/xpl/browseHome.jsp">Browse</a> &gt; 
+							
+							
+								<a href="http://ieeexplore.ieee.org/xpl/conferences.jsp">Conferences</a>&gt;
+								<a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4272875">Dependability of Computer Syst</a> ...
+							
+														
+							
+
+						</p>
+					</div>
+					
+					<div class="MainContent">
+						
+						<div class="contentheader">
+						
+						
+							
+						
+												
+							<h1>
+							A Hardware-Based Software Protection Systems - Analysis of Security Dongles with Time Meters</h1>
+						<div align="right">		
+						
+							</div>
+						</div>
+					
+						<div class="page-tools">
+							<ul>
+								<span id="recordId" style="display: none;">4272917</span>		
+								<span id="fromPage" style="display: none;">abstract</span>	
+								
+								
+								
+									<li><a href="http://ieeexplore.ieee.org/Xplore/login.jsp?tp=&amp;fromGateway=true"><img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_002.gif" alt="Download Citations" class="button" width="80" height="25"></a></li>
+								
+								
+								<li><img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_005.gif" alt="Email" class="button" id="popup-email-document" width="60" height="25"></li>
+								<li><img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_008.gif" alt="Print" class="button" onclick="window.print();return false;" width="60" height="25"></li>
+								
+								<li>
+									<a href="#" onclick="javascript:rightsLinkPopUp();">
+										<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_007.gif" alt="Rights And Permissions" class="button">
+									</a>
+								</li>
+								
+								
+									
+								<li>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="abstract">
+					 		
+								
+
+
+
+<script type="text/javascript">
+    function checkFormSubmit()
+	{   
+	   
+	   if( (document.forms.loginForm.username.value.length > 0) && (document.forms.loginForm.password.value.length > 0) )
+	   {
+	       return true;
+	   } 
+	   else
+	   {   
+	       alert("Please enter username and password.")
+	       return false;       
+	   }
+	   //return ( (document.forms.frm1.id.value.length > 0) && (document.forms.frm1.password.value.length > 0) );
+	    
+	}
+	
+ </script>
+ 
+ 
+	
+	
+		<div id="access-full-txt"> 
+		
+		  
+		     
+			
+				<form name="loginForm" action="https://ieeexplore.ieee.org/servlet/Login" method="post" onsubmit="return checkFormSubmit()">
+				
+			     
+			    
+			     
+			     
+     	 	 		<input name="url" value="/xpls/abs_all.jsp?arnumber=4272917" type="hidden">
+			     
+			      
+				<fieldset>
+					
+						
+						
+								
+							
+						    
+							
+								<h3>Access The Full Text</h3>
+							
+							
+							<p><strong>Sign In:</strong>Full text access may be available with your subscription</p>
+						
+					
+					
+					
+						<div class="field">
+							<label style="display: none;" for="username" class="overlabel">User Name</label>
+							 <input value="User Name" name="username" id="username" size="25" type="text">
+						</div>
+						<div class="field">
+							<label style="display: none;" for="password" class="overlabel">Password</label>
+							<input name="password" id="password" size="25" type="password">
+						</div>
+						<input name="" src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_004.gif" alt="Sign In" type="image">
+						<table width="100%">
+						<tbody><tr><td align="left"><a href="http://ieeexplore.ieee.org/Xplore/forgotpassword.jsp">Forgot Username/Password?</a></td><td align="right"><a href="http://ieeexplore.ieee.org/servlet/wayf.jsp?url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4272917">Athens/Shibboleth Sign In</a></td>
+						</tr></tbody></table>						
+						
+				</fieldset>			
+				<div class="footer">
+					<ul>
+							
+							
+						
+							<li>
+								<a href="http://ieeexplore.ieee.org/articleSale/purchaseHistory.jsp">
+									<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_003.gif" alt="Already Purchased" class="button">
+								</a>
+							</li>
+							<li>	
+							
+							
+						    
+							
+								<a href="http://ieeexplore.ieee.org/articleSale/Sarticle.jsp?arnumber=4272917">
+									<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/btn_006.gif" alt="Purchase Now" class="button">
+								</a>
+							
+							
+							</li>										
+						
+						
+												
+						
+
+					</ul>
+				</div>	
+			</form>
+		</div>
+	
+
+							
+							
+							
+							
+							
+							<p>
+								
+								   <br>
+								  
+								
+									
+										
+											Jozwiak, I.J.;&nbsp;&nbsp;
+										 
+										 
+								   
+										
+											Marczak, K.;&nbsp;&nbsp;
+										 
+										 
+								   
+								
+							   
+								   <br>
+								   
+										Wroclaw Univ. of Technol., Wroclaw&nbsp;  
+								   
+							   
+							   <input value="+Jozwiak, I.J.+Marczak, K." name="authorsDsv" id="authorsDsv" type="hidden">
+							</p>
+
+							<p>
+												
+								
+									<b>This paper appears in:</b> <a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4272875">Dependability of Computer Systems, 2007. DepCoS-RELCOMEX '07. 2nd International Conference on</a> 
+								
+									
+								
+								
+										<br><b>Issue Date: </b>14-16 June 2007
+									
+								
+								
+									
+							
+									
+										<br><b>On page(s): </b>
+										
+											254
+											
+												- 261
+											
+																	
+							
+								
+											
+	
+									
+									<br><b>Location:</b> Szklarska
+																				
+									
+
+									
+								
+								
+								
+	
+									
+								
+																
+									<br><b>Print ISBN:</b> 0-7695-2850-3
+									
+								
+									
+																
+									<br><b>INSPEC Accession Number: </b>9834559
+																						
+										
+								
+									
+								
+									<br><b>Digital Object Identifier:</b> <a href="http://dx.doi.org/10.1109/DEPCOS-RELCOMEX.2007.6" target="_blank">10.1109/DEPCOS-RELCOMEX.2007.6</a>&nbsp;
+								
+								
+								
+										
+										
+										<br><b>Date of Current Version:</b> 	
+									<!-- 	Monday, July 16, 2007-->
+										16 July 2007
+											
+													
+								
+									
+									
+							   
+							<br>
+							 	
+								
+							 
+								</p><div class="body-text">
+							<a name="Abstract"><h2>Abstract</h2></a>
+									<p>Software
+piracy is the illegal duplication or the installation of copyrighted
+software on more computers than authorized under terms of the software
+license agreement. Globally, businesses and consumers will spend $300
+billion on PC software over the next four years, according to
+International Data Corporation (IDC) estimates. Given the current
+market growth by country and current country-level piracy rates, during
+the same four-year period, we can expect almost $200 billion worth of
+PC software to be pirated [1]. Protecting application against not
+authorized copying using program solutions is impossible. If there is a
+possibility to start program, there is also a possibility to crackit.
+Cracking means that application can be used without being registered or
+to the application there is a mechanism added which enables to obviate
+implemented there protections. The device protection of software
+(dongles) has existed on the market for many years and it has
+functioned as devices protecting the software against not authorized
+copying and usage. The dongle significantly increases the level of
+security in a non-linear way, because a hardware key is an external
+device that is controlled and protected by the security solution
+provider and not the end-user. This gives the software security vendor
+freedom to develop specific hardware only for the purposes of enhancing
+security. This is not available in a software-based protection solution
+as it is dependent on the PC controlled by the end-user. The
+dissertation presents tools and techniques used to break devices'
+protection of software with time meters. The dongles with time meters
+contains an internal real-time clock, indicating the exact time and
+date. The dissertation provides information about the applied methods
+and techniques of breaking the hypothetical construction of device's
+protection with time meter. The research is the introduction to
+designing the hardware protection of programmes resistant to well-known
+methods- of breaking through safety of electronic devices' keys.</p>
+								
+								</div>
+							
+							
+							<div class="body-text">
+			
+			
+			</div>
+
+						</div>
+					   	<!-- BEGIN INDEX TERMS -->
+							
+								
+								<div class="section">
+									<div class="header">
+									<a name="Index Terms"><h2>Index Terms</h2></a>
+								</div>
+										<p>Available to subscribers and IEEE members.</p>
+								</div>
+								
+							
+						
+				
+						
+						
+					
+						
+							
+				
+							
+							<div class="section"> <!--BEGIN REFERENCES -->
+							<div class="header">
+								<a name="References"><h2>References</h2></a>
+							</div>
+								<p>Available to subscribers and IEEE members.</p>
+							</div><!-- END REFERENCES -->
+							
+						
+
+					
+						
+							
+							<div class="section"> <!-- BEGIN CITING DOCUMENTS -->
+							<div class="header">
+								<a name="Citing Documents"><h2>Citing Documents</h2></a>
+							</div>
+										<p>Available to subscribers and IEEE members.</p>
+							</div>			<!-- END CITING DOCUMENTS -->	
+							
+								
+					</div> <!-- END MAINCONTENT -->
+					
+					
+					
+				</div><!-- END COLUMN MAIN -->
+				
+				<div class="column-side column-side-right">
+
+						
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+	<a target="blank" href="http://www.ieee.org/xploresubs"><img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/suboptions_freepreview.gif" alt="" class="fullsize"></a>
+	
+
+
+
+
+
+	
+<br>
+	  						
+					
+						
+				</div>
+			</div>
+		
+							
+		</div>
+		<!-- END: BodyWrapper -->
+
+		<hr>
+
+
+
+
+
+		<!-- BEGIN: FooterWrapper -->
+		<div id="FooterWrapper">
+
+			<div id="logo-inspec">
+				<img src="A%20Hardware-Based%20Software%20Protection%20Systems%20-%20Analysis%20of%20Security%20Dongles%20with%20Time%20Meters_files/logo_003.gif" alt="Indexed by Inspec" width="95" height="45">
+			</div>
+			<p class="links"><a href="http://ieeexplore.ieee.org/Xplorehelp/Help_Welcome_to_IEEE_Xplore.html" target="blank">Help</a> | <a href="http://ieeexplore.ieee.org/xpl/techform.jsp">Contact Us</a> | <a href="http://www.ieee.org/portal/site/mainsite/menuitem.818c0c39e85ef176fb2275875bac26c8/index.jsp?&amp;pName=corp_level1&amp;path=about/documentation/copyright&amp;file=privacy.xml&amp;xsl=generic.xsl" target="blank">Privacy &amp; Security</a> | <a href="http://ieeexplore.ieee.org/xpl/sitemap.jsp">Site Map</a> | <a target="blank" href="http://www.ieee.org/">IEEE.org</a> | <a target="blank" href="http://www.ieee.org/web/aboutus/whatis/policies/p9-26.html">Nondiscrimination Policy</a> | <a target="blank" href="http://ieeexplore.ieee.org/xpl/jsp/common/termsOfUse.jsp">Terms of Use</a></p>
+
+			<p>© Copyright 2010 IEEE &#8211; All Rights Reserved</p>
+
+		</div>
+		<!-- END: FooterWrapper -->
+			
+			
+
+
+
+</div><div style="width: 783px;" id="popup_overlay"></div></body></html>

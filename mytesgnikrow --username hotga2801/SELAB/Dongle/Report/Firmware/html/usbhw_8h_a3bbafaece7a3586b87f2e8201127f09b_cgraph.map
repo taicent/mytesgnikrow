@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$usbhw_8c.html#a98ff86950959b80676d6caf15229292e" title="RdCmdDat" alt="" coords="161,5,247,35"/>
+<area shape="rect" id="node5" href="$usbuser_8h.html#aaf2760d7c5c1a00c5bc8aa8f809e562a" title="USB_Error_Event" alt="" coords="143,59,265,88"/>
+<area shape="rect" id="node7" href="$usbuser_8h.html#a79050c47a525e4772409b74b859f95b4" title="USB_Power_Event" alt="" coords="139,112,269,141"/>
+<area shape="rect" id="node9" href="$usbhw_8c.html#abfc0896707a9437a0c3b0ac611da59aa" title="USB_Reset" alt="" coords="159,165,249,195"/>
+<area shape="rect" id="node11" href="$usbuser_8c.html#a81153c365777cdfe7d9e148c372c45b1" title="USB_Reset_Event" alt="" coords="140,219,268,248"/>
+<area shape="rect" id="node15" href="$usbhw_8c.html#a690e53ae70763bf28c20fbf55b28b1c5" title="USB_Resume" alt="" coords="152,272,256,301"/>
+<area shape="rect" id="node17" href="$usbuser_8c.html#a1845c45a3015590b54446857bb30805d" title="USB_Resume_Event" alt="" coords="133,325,275,355"/>
+<area shape="rect" id="node19" href="$usbuser_8h.html#a43ab0480e52c19825f3f4fac2bee5e95" title="USB_SOF_Event" alt="" coords="143,379,265,408"/>
+<area shape="rect" id="node21" href="$usbhw_8c.html#a87b4006411b630cc848d30b3e8a53e34" title="USB_Suspend" alt="" coords="151,432,257,461"/>
+<area shape="rect" id="node23" href="$usbuser_8c.html#aebfd6340b5852fa5ff4d00487c6371e2" title="USB_Suspend_Event" alt="" coords="131,485,277,515"/>
+<area shape="rect" id="node25" href="$usbhw_8c.html#aabfdde22bba3e76cac496cd1b719ab61" title="WrCmd" alt="" coords="171,539,237,568"/>
+<area shape="rect" id="node13" href="$usbcore_8c.html#a1d9fbf88b2b74a3e2d1d936d4a3059c3" title="USB_ResetCore" alt="" coords="325,219,443,248"/>
+</map>

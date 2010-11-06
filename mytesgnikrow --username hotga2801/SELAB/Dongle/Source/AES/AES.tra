@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'AES.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"lpc2300.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"aes.o"'
+### ADS-LD Command completed:
+"lpc2300.o" "main.o" "aes.o" --device DARMP --strict --scatter "AES.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\AES.map" -o "AES.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'AES.axf'
+### ADS-LD Command File: 'AES.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'AES.lnp', Handle=0x00000228
+### Writing '.lnp' file
+### ADS-LD Command file 'AES.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

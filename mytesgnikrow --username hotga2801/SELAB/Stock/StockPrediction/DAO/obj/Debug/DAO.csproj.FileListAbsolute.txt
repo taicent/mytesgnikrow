@@ -1,0 +1,14 @@
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\bin\Debug\DAO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\bin\Debug\DAO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\obj\Debug\DAO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\obj\Debug\DAO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\bin\Debug\DTO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\StockPrediction\DAO\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DAO\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DAO\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DAO\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DAO\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\DAO\obj\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DAO\obj\Debug\DAO.pdb

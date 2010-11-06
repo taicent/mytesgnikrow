@@ -1,0 +1,885 @@
+\hypertarget{usbhw_8c}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c File Reference}
+\label{usbhw_8c}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbhw.c}}
+}
+{\ttfamily \#include $<$LPC23xx.H$>$}\par
+{\ttfamily \#include \char`\"{}type.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usb.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbcfg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbreg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbhw.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbcore.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbuser.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}SerialLogger.h\char`\"{}}\par
+Include dependency graph for usbhw.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usbhw_8c_a5758b262e45f1476b85c72d261bf151f}{EP\_\-MSK\_\-CTRL}~0x0001
+\item 
+\#define \hyperlink{usbhw_8c_a6cb1cd31933803cdf8facab393cb67b5}{EP\_\-MSK\_\-BULK}~0xC924
+\item 
+\#define \hyperlink{usbhw_8c_a53236c5802d284e03c20bbe414999f8a}{EP\_\-MSK\_\-INT}~0x4492
+\item 
+\#define \hyperlink{usbhw_8c_a873b434da89b1922b604ba5730412e19}{EP\_\-MSK\_\-ISO}~0x1248
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbhw_8c_ac1d673d6c8125e922cdbd2367cd11bd0}{EPAdr} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+void \hyperlink{usbhw_8c_aabfdde22bba3e76cac496cd1b719ab61}{WrCmd} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} cmd)
+\item 
+void \hyperlink{usbhw_8c_ad70e939022ae1ae94bbbf9460413e366}{WrCmdDat} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} cmd, \hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} val)
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbhw_8c_a98ff86950959b80676d6caf15229292e}{RdCmdDat} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} cmd)
+\item 
+void \hyperlink{usbhw_8c_a35fe971cbcbfe8813199e869284cb862}{USB\_\-Init} (void)
+\item 
+void \hyperlink{usbhw_8c_a06ddd62c3767d37c143233cd854c9031}{USB\_\-Connect} (\hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} con)
+\item 
+void \hyperlink{usbhw_8c_abfc0896707a9437a0c3b0ac611da59aa}{USB\_\-Reset} (void)
+\item 
+void \hyperlink{usbhw_8c_a87b4006411b630cc848d30b3e8a53e34}{USB\_\-Suspend} (void)
+\item 
+void \hyperlink{usbhw_8c_a690e53ae70763bf28c20fbf55b28b1c5}{USB\_\-Resume} (void)
+\item 
+void \hyperlink{usbhw_8c_a076f3794dcd3ff5b60ad10ea702424ca}{USB\_\-WakeUp} (void)
+\item 
+void \hyperlink{usbhw_8c_aa418ebef4fceb6e3f0ad86b424bd6c5d}{USB\_\-WakeUpCfg} (\hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} cfg)
+\item 
+void \hyperlink{usbhw_8c_a0ae65d4b5fe99d13ea3e2735ff84ac55}{USB\_\-SetAddress} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} adr)
+\item 
+void \hyperlink{usbhw_8c_a0a603b4670d397ad4c0eff9185fb9544}{USB\_\-Configure} (\hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} cfg)
+\item 
+void \hyperlink{usbhw_8c_a54a2914070c64801b8d8942b787fffad}{USB\_\-ConfigEP} (\hyperlink{usb_8h_ad257142de6c082632f2ca3e8ab4ca058}{USB\_\-ENDPOINT\_\-DESCRIPTOR} $\ast$pEPD)
+\item 
+void \hyperlink{usbhw_8c_af270cd32c457319ddcafbc9f0e2ea0c9}{USB\_\-DirCtrlEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} dir)
+\item 
+void \hyperlink{usbhw_8c_a17981e6ecec0686cdc36add27965beba}{USB\_\-EnableEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+void \hyperlink{usbhw_8c_a799c3767044e65fbd0d4acf68f744b8c}{USB\_\-DisableEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+void \hyperlink{usbhw_8c_a5aeec24896e63d9133efc8da2cbec8d5}{USB\_\-ResetEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+void \hyperlink{usbhw_8c_a4f1e92236582cabc967b1ff489c100b6}{USB\_\-SetStallEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+void \hyperlink{usbhw_8c_a4a495bb8aad00e53d6ccc260914728a7}{USB\_\-ClrStallEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum)
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbhw_8c_a2ca65c3e8ac1bd48abf2f47b120d829e}{USB\_\-ReadEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum, \hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} $\ast$pData)
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbhw_8c_af89c6611adcf552f28f8fa6d598cac4e}{USB\_\-WriteEP} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} EPNum, \hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} $\ast$pData, \hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} cnt)
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbhw_8c_aaf22c54ce9e52ef25aec836f9a28b1af}{USB\_\-GetFrame} (void)
+\item 
+void \hyperlink{usbhw_8c_a469228db45737ae217f8a24549b6916c}{USB\_\-ISR} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{usbhw_8c_a6cb1cd31933803cdf8facab393cb67b5}{
+\index{usbhw.c@{usbhw.c}!EP\_\-MSK\_\-BULK@{EP\_\-MSK\_\-BULK}}
+\index{EP\_\-MSK\_\-BULK@{EP\_\-MSK\_\-BULK}!usbhw.c@{usbhw.c}}
+\subsubsection[{EP\_\-MSK\_\-BULK}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-MSK\_\-BULK~0xC924}}
+\label{usbhw_8c_a6cb1cd31933803cdf8facab393cb67b5}
+
+
+Definition at line 33 of file usbhw.c.
+
+\hypertarget{usbhw_8c_a5758b262e45f1476b85c72d261bf151f}{
+\index{usbhw.c@{usbhw.c}!EP\_\-MSK\_\-CTRL@{EP\_\-MSK\_\-CTRL}}
+\index{EP\_\-MSK\_\-CTRL@{EP\_\-MSK\_\-CTRL}!usbhw.c@{usbhw.c}}
+\subsubsection[{EP\_\-MSK\_\-CTRL}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-MSK\_\-CTRL~0x0001}}
+\label{usbhw_8c_a5758b262e45f1476b85c72d261bf151f}
+
+
+Definition at line 32 of file usbhw.c.
+
+\hypertarget{usbhw_8c_a53236c5802d284e03c20bbe414999f8a}{
+\index{usbhw.c@{usbhw.c}!EP\_\-MSK\_\-INT@{EP\_\-MSK\_\-INT}}
+\index{EP\_\-MSK\_\-INT@{EP\_\-MSK\_\-INT}!usbhw.c@{usbhw.c}}
+\subsubsection[{EP\_\-MSK\_\-INT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-MSK\_\-INT~0x4492}}
+\label{usbhw_8c_a53236c5802d284e03c20bbe414999f8a}
+
+
+Definition at line 34 of file usbhw.c.
+
+\hypertarget{usbhw_8c_a873b434da89b1922b604ba5730412e19}{
+\index{usbhw.c@{usbhw.c}!EP\_\-MSK\_\-ISO@{EP\_\-MSK\_\-ISO}}
+\index{EP\_\-MSK\_\-ISO@{EP\_\-MSK\_\-ISO}!usbhw.c@{usbhw.c}}
+\subsubsection[{EP\_\-MSK\_\-ISO}]{\setlength{\rightskip}{0pt plus 5cm}\#define EP\_\-MSK\_\-ISO~0x1248}}
+\label{usbhw_8c_a873b434da89b1922b604ba5730412e19}
+
+
+Definition at line 35 of file usbhw.c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{usbhw_8c_ac1d673d6c8125e922cdbd2367cd11bd0}{
+\index{usbhw.c@{usbhw.c}!EPAdr@{EPAdr}}
+\index{EPAdr@{EPAdr}!usbhw.c@{usbhw.c}}
+\subsubsection[{EPAdr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} EPAdr (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_ac1d673d6c8125e922cdbd2367cd11bd0}
+
+
+Definition at line 47 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_ac1d673d6c8125e922cdbd2367cd11bd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a98ff86950959b80676d6caf15229292e}{
+\index{usbhw.c@{usbhw.c}!RdCmdDat@{RdCmdDat}}
+\index{RdCmdDat@{RdCmdDat}!usbhw.c@{usbhw.c}}
+\subsubsection[{RdCmdDat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} RdCmdDat (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ cmd}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a98ff86950959b80676d6caf15229292e}
+
+
+Definition at line 96 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a98ff86950959b80676d6caf15229292e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a4a495bb8aad00e53d6ccc260914728a7}{
+\index{usbhw.c@{usbhw.c}!USB\_\-ClrStallEP@{USB\_\-ClrStallEP}}
+\index{USB\_\-ClrStallEP@{USB\_\-ClrStallEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-ClrStallEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-ClrStallEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a4a495bb8aad00e53d6ccc260914728a7}
+
+
+Definition at line 353 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{usbhw_8c_a4a495bb8aad00e53d6ccc260914728a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a4a495bb8aad00e53d6ccc260914728a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a54a2914070c64801b8d8942b787fffad}{
+\index{usbhw.c@{usbhw.c}!USB\_\-ConfigEP@{USB\_\-ConfigEP}}
+\index{USB\_\-ConfigEP@{USB\_\-ConfigEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-ConfigEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-ConfigEP (
+\begin{DoxyParamCaption}
+\item[{{\bf USB\_\-ENDPOINT\_\-DESCRIPTOR} $\ast$}]{ pEPD}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a54a2914070c64801b8d8942b787fffad}
+
+
+Definition at line 270 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{usbhw_8c_a54a2914070c64801b8d8942b787fffad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a54a2914070c64801b8d8942b787fffad_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a0a603b4670d397ad4c0eff9185fb9544}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Configure@{USB\_\-Configure}}
+\index{USB\_\-Configure@{USB\_\-Configure}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Configure}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Configure (
+\begin{DoxyParamCaption}
+\item[{{\bf BOOL}}]{ cfg}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a0a603b4670d397ad4c0eff9185fb9544}
+
+
+Definition at line 254 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{usbhw_8c_a0a603b4670d397ad4c0eff9185fb9544_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a0a603b4670d397ad4c0eff9185fb9544_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a06ddd62c3767d37c143233cd854c9031}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Connect@{USB\_\-Connect}}
+\index{USB\_\-Connect@{USB\_\-Connect}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf BOOL}}]{ con}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a06ddd62c3767d37c143233cd854c9031}
+
+
+Definition at line 160 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{usbhw_8c_a06ddd62c3767d37c143233cd854c9031_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{usbhw_8c_a06ddd62c3767d37c143233cd854c9031_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_af270cd32c457319ddcafbc9f0e2ea0c9}{
+\index{usbhw.c@{usbhw.c}!USB\_\-DirCtrlEP@{USB\_\-DirCtrlEP}}
+\index{USB\_\-DirCtrlEP@{USB\_\-DirCtrlEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-DirCtrlEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-DirCtrlEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ dir}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_af270cd32c457319ddcafbc9f0e2ea0c9}
+
+
+Definition at line 288 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{usbhw_8c_af270cd32c457319ddcafbc9f0e2ea0c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a799c3767044e65fbd0d4acf68f744b8c}{
+\index{usbhw.c@{usbhw.c}!USB\_\-DisableEP@{USB\_\-DisableEP}}
+\index{USB\_\-DisableEP@{USB\_\-DisableEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-DisableEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-DisableEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a799c3767044e65fbd0d4acf68f744b8c}
+
+
+Definition at line 314 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{usbhw_8c_a799c3767044e65fbd0d4acf68f744b8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a799c3767044e65fbd0d4acf68f744b8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a17981e6ecec0686cdc36add27965beba}{
+\index{usbhw.c@{usbhw.c}!USB\_\-EnableEP@{USB\_\-EnableEP}}
+\index{USB\_\-EnableEP@{USB\_\-EnableEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-EnableEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EnableEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a17981e6ecec0686cdc36add27965beba}
+
+
+Definition at line 301 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{usbhw_8c_a17981e6ecec0686cdc36add27965beba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a17981e6ecec0686cdc36add27965beba_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_aaf22c54ce9e52ef25aec836f9a28b1af}{
+\index{usbhw.c@{usbhw.c}!USB\_\-GetFrame@{USB\_\-GetFrame}}
+\index{USB\_\-GetFrame@{USB\_\-GetFrame}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-GetFrame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} USB\_\-GetFrame (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_aaf22c54ce9e52ef25aec836f9a28b1af}
+
+
+Definition at line 431 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{usbhw_8c_aaf22c54ce9e52ef25aec836f9a28b1af_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a35fe971cbcbfe8813199e869284cb862}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Init@{USB\_\-Init}}
+\index{USB\_\-Init@{USB\_\-Init}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a35fe971cbcbfe8813199e869284cb862}
+
+
+Definition at line 111 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a35fe971cbcbfe8813199e869284cb862_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{usbhw_8c_a35fe971cbcbfe8813199e869284cb862_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a469228db45737ae217f8a24549b6916c}{
+\index{usbhw.c@{usbhw.c}!USB\_\-ISR@{USB\_\-ISR}}
+\index{USB\_\-ISR@{USB\_\-ISR}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-ISR}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-ISR (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a469228db45737ae217f8a24549b6916c}
+
+
+Definition at line 446 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a469228db45737ae217f8a24549b6916c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{usbhw_8c_a469228db45737ae217f8a24549b6916c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a2ca65c3e8ac1bd48abf2f47b120d829e}{
+\index{usbhw.c@{usbhw.c}!USB\_\-ReadEP@{USB\_\-ReadEP}}
+\index{USB\_\-ReadEP@{USB\_\-ReadEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-ReadEP}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} USB\_\-ReadEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum, }
+\item[{{\bf BYTE} $\ast$}]{ pData}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a2ca65c3e8ac1bd48abf2f47b120d829e}
+
+
+Definition at line 367 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{usbhw_8c_a2ca65c3e8ac1bd48abf2f47b120d829e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a2ca65c3e8ac1bd48abf2f47b120d829e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_abfc0896707a9437a0c3b0ac611da59aa}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Reset@{USB\_\-Reset}}
+\index{USB\_\-Reset@{USB\_\-Reset}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_abfc0896707a9437a0c3b0ac611da59aa}
+
+
+Definition at line 171 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_abfc0896707a9437a0c3b0ac611da59aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a5aeec24896e63d9133efc8da2cbec8d5}{
+\index{usbhw.c@{usbhw.c}!USB\_\-ResetEP@{USB\_\-ResetEP}}
+\index{USB\_\-ResetEP@{USB\_\-ResetEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-ResetEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-ResetEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a5aeec24896e63d9133efc8da2cbec8d5}
+
+
+Definition at line 327 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{usbhw_8c_a5aeec24896e63d9133efc8da2cbec8d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a5aeec24896e63d9133efc8da2cbec8d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a690e53ae70763bf28c20fbf55b28b1c5}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Resume@{USB\_\-Resume}}
+\index{USB\_\-Resume@{USB\_\-Resume}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Resume}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Resume (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a690e53ae70763bf28c20fbf55b28b1c5}
+
+
+Definition at line 206 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a690e53ae70763bf28c20fbf55b28b1c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a0ae65d4b5fe99d13ea3e2735ff84ac55}{
+\index{usbhw.c@{usbhw.c}!USB\_\-SetAddress@{USB\_\-SetAddress}}
+\index{USB\_\-SetAddress@{USB\_\-SetAddress}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-SetAddress}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-SetAddress (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ adr}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a0ae65d4b5fe99d13ea3e2735ff84ac55}
+
+
+Definition at line 242 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{usbhw_8c_a0ae65d4b5fe99d13ea3e2735ff84ac55_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=372pt]{usbhw_8c_a0ae65d4b5fe99d13ea3e2735ff84ac55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a4f1e92236582cabc967b1ff489c100b6}{
+\index{usbhw.c@{usbhw.c}!USB\_\-SetStallEP@{USB\_\-SetStallEP}}
+\index{USB\_\-SetStallEP@{USB\_\-SetStallEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-SetStallEP}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-SetStallEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a4f1e92236582cabc967b1ff489c100b6}
+
+
+Definition at line 340 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{usbhw_8c_a4f1e92236582cabc967b1ff489c100b6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a4f1e92236582cabc967b1ff489c100b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a87b4006411b630cc848d30b3e8a53e34}{
+\index{usbhw.c@{usbhw.c}!USB\_\-Suspend@{USB\_\-Suspend}}
+\index{USB\_\-Suspend@{USB\_\-Suspend}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-Suspend}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-Suspend (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a87b4006411b630cc848d30b3e8a53e34}
+
+
+Definition at line 195 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_a87b4006411b630cc848d30b3e8a53e34_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_a076f3794dcd3ff5b60ad10ea702424ca}{
+\index{usbhw.c@{usbhw.c}!USB\_\-WakeUp@{USB\_\-WakeUp}}
+\index{USB\_\-WakeUp@{USB\_\-WakeUp}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-WakeUp}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-WakeUp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_a076f3794dcd3ff5b60ad10ea702424ca}
+
+
+Definition at line 217 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{usbhw_8c_a076f3794dcd3ff5b60ad10ea702424ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_aa418ebef4fceb6e3f0ad86b424bd6c5d}{
+\index{usbhw.c@{usbhw.c}!USB\_\-WakeUpCfg@{USB\_\-WakeUpCfg}}
+\index{USB\_\-WakeUpCfg@{USB\_\-WakeUpCfg}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-WakeUpCfg}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-WakeUpCfg (
+\begin{DoxyParamCaption}
+\item[{{\bf BOOL}}]{ cfg}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_aa418ebef4fceb6e3f0ad86b424bd6c5d}
+
+
+Definition at line 231 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_aa418ebef4fceb6e3f0ad86b424bd6c5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_af89c6611adcf552f28f8fa6d598cac4e}{
+\index{usbhw.c@{usbhw.c}!USB\_\-WriteEP@{USB\_\-WriteEP}}
+\index{USB\_\-WriteEP@{USB\_\-WriteEP}!usbhw.c@{usbhw.c}}
+\subsubsection[{USB\_\-WriteEP}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} USB\_\-WriteEP (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ EPNum, }
+\item[{{\bf BYTE} $\ast$}]{ pData, }
+\item[{{\bf DWORD}}]{ cnt}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_af89c6611adcf552f28f8fa6d598cac4e}
+
+
+Definition at line 403 of file usbhw.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{usbhw_8c_af89c6611adcf552f28f8fa6d598cac4e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_af89c6611adcf552f28f8fa6d598cac4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_aabfdde22bba3e76cac496cd1b719ab61}{
+\index{usbhw.c@{usbhw.c}!WrCmd@{WrCmd}}
+\index{WrCmd@{WrCmd}!usbhw.c@{usbhw.c}}
+\subsubsection[{WrCmd}]{\setlength{\rightskip}{0pt plus 5cm}void WrCmd (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ cmd}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_aabfdde22bba3e76cac496cd1b719ab61}
+
+
+Definition at line 64 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_aabfdde22bba3e76cac496cd1b719ab61_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbhw_8c_ad70e939022ae1ae94bbbf9460413e366}{
+\index{usbhw.c@{usbhw.c}!WrCmdDat@{WrCmdDat}}
+\index{WrCmdDat@{WrCmdDat}!usbhw.c@{usbhw.c}}
+\subsubsection[{WrCmdDat}]{\setlength{\rightskip}{0pt plus 5cm}void WrCmdDat (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ cmd, }
+\item[{{\bf DWORD}}]{ val}
+\end{DoxyParamCaption}
+)}}
+\label{usbhw_8c_ad70e939022ae1ae94bbbf9460413e366}
+
+
+Definition at line 79 of file usbhw.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbhw_8c_ad70e939022ae1ae94bbbf9460413e366_icgraph}
+\end{center}
+\end{figure}
+
+

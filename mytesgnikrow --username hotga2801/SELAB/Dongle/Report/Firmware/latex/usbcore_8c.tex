@@ -1,0 +1,588 @@
+\hypertarget{usbcore_8c}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c File Reference}
+\label{usbcore_8c}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/usbcore.c}}
+}
+{\ttfamily \#include $<$LPC23xx.H$>$}\par
+{\ttfamily \#include \char`\"{}type.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usb.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbcfg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbhw.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbcore.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbdesc.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}usbuser.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}SerialLogger.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VendorProcess.h\char`\"{}}\par
+Include dependency graph for usbcore.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{usbcore_8c_a1d9fbf88b2b74a3e2d1d936d4a3059c3}{USB\_\-ResetCore} (void)
+\item 
+void \hyperlink{usbcore_8c_ac0076a5289eba0843bf484db9a6b44c3}{USB\_\-SetupStage} (void)
+\item 
+void \hyperlink{usbcore_8c_af77737c9a9cf487c2d21bdb77904d5b4}{USB\_\-DataInStage} (void)
+\item 
+void \hyperlink{usbcore_8c_a147ac40813dde8a168086e312a8aeff7}{USB\_\-DataOutStage} (void)
+\item 
+void \hyperlink{usbcore_8c_abd896ba7757ca7b9b9ae8a8d5bdabda5}{USB\_\-StatusInStage} (void)
+\item 
+void \hyperlink{usbcore_8c_a860cd794341aff47dd390c4cadcec3e7}{USB\_\-StatusOutStage} (void)
+\item 
+\_\-\_\-inline \hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{usbcore_8c_a95369438fa761f9c7ba0ac9b646fe8c2}{USB\_\-GetStatus} (void)
+\item 
+\_\-\_\-inline \hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{usbcore_8c_aa6a4eb8cb65fe43fd8628667b6ea94b1}{USB\_\-SetClrFeature} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} sc)
+\item 
+\_\-\_\-inline \hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{usbcore_8c_aceff2f7d7cb2fda84a5ddc349a7da722}{USB\_\-GetDescriptor} (void)
+\item 
+\_\-\_\-inline \hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{usbcore_8c_a1240609e800f022746bbb3d38e3aa76b}{USB\_\-SetConfiguration} (void)
+\item 
+\_\-\_\-inline \hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{usbcore_8c_a6cc0e4fa0f86d3b9e66dd6055f9dfa77}{USB\_\-SetInterface} (void)
+\item 
+void \hyperlink{usbcore_8c_a9c3a7f8c05ae502486199cde17caceff}{USB\_\-EndPoint0} (\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} event)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{type_8h_a197942eefa7db30960ae396d68339b97}{WORD} \hyperlink{usbcore_8c_a31297056d3b39a4ecf6eba9b5625aaa8}{USB\_\-DeviceStatus}
+\item 
+\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbcore_8c_afcfe5243560af24fedef6dc64ce105bc}{USB\_\-DeviceAddress}
+\item 
+\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbcore_8c_ac86d5d512eb93e8f774d988cde9cd23d}{USB\_\-Configuration}
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbcore_8c_a9af3300fdd2389532c50d1ac555d9a5b}{USB\_\-EndPointMask}
+\item 
+\hyperlink{type_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} \hyperlink{usbcore_8c_a3c6c1761235e58b6400dc7130dbaeba0}{USB\_\-EndPointHalt}
+\item 
+\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbcore_8c_a61e4b2376e8ff52b98ae7da284497d0d}{USB\_\-NumInterfaces}
+\item 
+\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbcore_8c_a3b4c0e58143f7f24817f3764cbc8c9a9}{USB\_\-AltSetting} \mbox{[}USB\_\-IF\_\-NUM\mbox{]}
+\item 
+\hyperlink{type_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE} \hyperlink{usbcore_8c_a337e10b1083208f8243eeca21e50e975}{EP0Buf} \mbox{[}USB\_\-MAX\_\-PACKET0\mbox{]}
+\item 
+\hyperlink{struct___u_s_b___e_p___d_a_t_a}{USB\_\-EP\_\-DATA} \hyperlink{usbcore_8c_ae48f7fef62babbd6888b920a0d7238a6}{EP0Data}
+\item 
+\hyperlink{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{USB\_\-SETUP\_\-PACKET} \hyperlink{usbcore_8c_a7bea2e4379aa4e7c1d0029761123625f}{SetupPacket}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{usbcore_8c_af77737c9a9cf487c2d21bdb77904d5b4}{
+\index{usbcore.c@{usbcore.c}!USB\_\-DataInStage@{USB\_\-DataInStage}}
+\index{USB\_\-DataInStage@{USB\_\-DataInStage}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-DataInStage}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-DataInStage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_af77737c9a9cf487c2d21bdb77904d5b4}
+
+
+Definition at line 83 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=378pt]{usbcore_8c_af77737c9a9cf487c2d21bdb77904d5b4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_af77737c9a9cf487c2d21bdb77904d5b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a147ac40813dde8a168086e312a8aeff7}{
+\index{usbcore.c@{usbcore.c}!USB\_\-DataOutStage@{USB\_\-DataOutStage}}
+\index{USB\_\-DataOutStage@{USB\_\-DataOutStage}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-DataOutStage}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-DataOutStage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a147ac40813dde8a168086e312a8aeff7}
+
+
+Definition at line 106 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=384pt]{usbcore_8c_a147ac40813dde8a168086e312a8aeff7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{usbcore_8c_a147ac40813dde8a168086e312a8aeff7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a9c3a7f8c05ae502486199cde17caceff}{
+\index{usbcore.c@{usbcore.c}!USB\_\-EndPoint0@{USB\_\-EndPoint0}}
+\index{USB\_\-EndPoint0@{USB\_\-EndPoint0}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-EndPoint0}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-EndPoint0 (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ event}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a9c3a7f8c05ae502486199cde17caceff}
+
+
+Definition at line 463 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_a9c3a7f8c05ae502486199cde17caceff_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_aceff2f7d7cb2fda84a5ddc349a7da722}{
+\index{usbcore.c@{usbcore.c}!USB\_\-GetDescriptor@{USB\_\-GetDescriptor}}
+\index{USB\_\-GetDescriptor@{USB\_\-GetDescriptor}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-GetDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-inline {\bf BOOL} USB\_\-GetDescriptor (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_aceff2f7d7cb2fda84a5ddc349a7da722}
+
+
+Definition at line 246 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_aceff2f7d7cb2fda84a5ddc349a7da722_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{usbcore_8c_aceff2f7d7cb2fda84a5ddc349a7da722_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a95369438fa761f9c7ba0ac9b646fe8c2}{
+\index{usbcore.c@{usbcore.c}!USB\_\-GetStatus@{USB\_\-GetStatus}}
+\index{USB\_\-GetStatus@{USB\_\-GetStatus}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-GetStatus}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-inline {\bf BOOL} USB\_\-GetStatus (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a95369438fa761f9c7ba0ac9b646fe8c2}
+
+
+Definition at line 153 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_a95369438fa761f9c7ba0ac9b646fe8c2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{usbcore_8c_a95369438fa761f9c7ba0ac9b646fe8c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a1d9fbf88b2b74a3e2d1d936d4a3059c3}{
+\index{usbcore.c@{usbcore.c}!USB\_\-ResetCore@{USB\_\-ResetCore}}
+\index{USB\_\-ResetCore@{USB\_\-ResetCore}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-ResetCore}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-ResetCore (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a1d9fbf88b2b74a3e2d1d936d4a3059c3}
+
+
+Definition at line 53 of file usbcore.c.
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_a1d9fbf88b2b74a3e2d1d936d4a3059c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_aa6a4eb8cb65fe43fd8628667b6ea94b1}{
+\index{usbcore.c@{usbcore.c}!USB\_\-SetClrFeature@{USB\_\-SetClrFeature}}
+\index{USB\_\-SetClrFeature@{USB\_\-SetClrFeature}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-SetClrFeature}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-inline {\bf BOOL} USB\_\-SetClrFeature (
+\begin{DoxyParamCaption}
+\item[{{\bf DWORD}}]{ sc}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_aa6a4eb8cb65fe43fd8628667b6ea94b1}
+
+
+Definition at line 195 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_aa6a4eb8cb65fe43fd8628667b6ea94b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{usbcore_8c_aa6a4eb8cb65fe43fd8628667b6ea94b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a1240609e800f022746bbb3d38e3aa76b}{
+\index{usbcore.c@{usbcore.c}!USB\_\-SetConfiguration@{USB\_\-SetConfiguration}}
+\index{USB\_\-SetConfiguration@{USB\_\-SetConfiguration}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-SetConfiguration}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-inline {\bf BOOL} USB\_\-SetConfiguration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a1240609e800f022746bbb3d38e3aa76b}
+
+
+Definition at line 321 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_a1240609e800f022746bbb3d38e3aa76b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{usbcore_8c_a1240609e800f022746bbb3d38e3aa76b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a6cc0e4fa0f86d3b9e66dd6055f9dfa77}{
+\index{usbcore.c@{usbcore.c}!USB\_\-SetInterface@{USB\_\-SetInterface}}
+\index{USB\_\-SetInterface@{USB\_\-SetInterface}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-SetInterface}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-inline {\bf BOOL} USB\_\-SetInterface (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a6cc0e4fa0f86d3b9e66dd6055f9dfa77}
+
+
+Definition at line 405 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_a6cc0e4fa0f86d3b9e66dd6055f9dfa77_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{usbcore_8c_a6cc0e4fa0f86d3b9e66dd6055f9dfa77_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_ac0076a5289eba0843bf484db9a6b44c3}{
+\index{usbcore.c@{usbcore.c}!USB\_\-SetupStage@{USB\_\-SetupStage}}
+\index{USB\_\-SetupStage@{USB\_\-SetupStage}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-SetupStage}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-SetupStage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_ac0076a5289eba0843bf484db9a6b44c3}
+
+
+Definition at line 69 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=374pt]{usbcore_8c_ac0076a5289eba0843bf484db9a6b44c3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{usbcore_8c_ac0076a5289eba0843bf484db9a6b44c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_abd896ba7757ca7b9b9ae8a8d5bdabda5}{
+\index{usbcore.c@{usbcore.c}!USB\_\-StatusInStage@{USB\_\-StatusInStage}}
+\index{USB\_\-StatusInStage@{USB\_\-StatusInStage}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-StatusInStage}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-StatusInStage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_abd896ba7757ca7b9b9ae8a8d5bdabda5}
+
+
+Definition at line 125 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=386pt]{usbcore_8c_abd896ba7757ca7b9b9ae8a8d5bdabda5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{usbcore_8c_abd896ba7757ca7b9b9ae8a8d5bdabda5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{usbcore_8c_a860cd794341aff47dd390c4cadcec3e7}{
+\index{usbcore.c@{usbcore.c}!USB\_\-StatusOutStage@{USB\_\-StatusOutStage}}
+\index{USB\_\-StatusOutStage@{USB\_\-StatusOutStage}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-StatusOutStage}]{\setlength{\rightskip}{0pt plus 5cm}void USB\_\-StatusOutStage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{usbcore_8c_a860cd794341aff47dd390c4cadcec3e7}
+
+
+Definition at line 139 of file usbcore.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=392pt]{usbcore_8c_a860cd794341aff47dd390c4cadcec3e7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{usbcore_8c_a860cd794341aff47dd390c4cadcec3e7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{usbcore_8c_a337e10b1083208f8243eeca21e50e975}{
+\index{usbcore.c@{usbcore.c}!EP0Buf@{EP0Buf}}
+\index{EP0Buf@{EP0Buf}!usbcore.c@{usbcore.c}}
+\subsubsection[{EP0Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf EP0Buf}\mbox{[}USB\_\-MAX\_\-PACKET0\mbox{]}}}
+\label{usbcore_8c_a337e10b1083208f8243eeca21e50e975}
+
+
+Definition at line 39 of file usbcore.c.
+
+\hypertarget{usbcore_8c_ae48f7fef62babbd6888b920a0d7238a6}{
+\index{usbcore.c@{usbcore.c}!EP0Data@{EP0Data}}
+\index{EP0Data@{EP0Data}!usbcore.c@{usbcore.c}}
+\subsubsection[{EP0Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf USB\_\-EP\_\-DATA} {\bf EP0Data}}}
+\label{usbcore_8c_ae48f7fef62babbd6888b920a0d7238a6}
+
+
+Definition at line 42 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a7bea2e4379aa4e7c1d0029761123625f}{
+\index{usbcore.c@{usbcore.c}!SetupPacket@{SetupPacket}}
+\index{SetupPacket@{SetupPacket}!usbcore.c@{usbcore.c}}
+\subsubsection[{SetupPacket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf USB\_\-SETUP\_\-PACKET} {\bf SetupPacket}}}
+\label{usbcore_8c_a7bea2e4379aa4e7c1d0029761123625f}
+
+
+Definition at line 44 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a3b4c0e58143f7f24817f3764cbc8c9a9}{
+\index{usbcore.c@{usbcore.c}!USB\_\-AltSetting@{USB\_\-AltSetting}}
+\index{USB\_\-AltSetting@{USB\_\-AltSetting}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-AltSetting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf USB\_\-AltSetting}\mbox{[}USB\_\-IF\_\-NUM\mbox{]}}}
+\label{usbcore_8c_a3b4c0e58143f7f24817f3764cbc8c9a9}
+
+
+Definition at line 37 of file usbcore.c.
+
+\hypertarget{usbcore_8c_ac86d5d512eb93e8f774d988cde9cd23d}{
+\index{usbcore.c@{usbcore.c}!USB\_\-Configuration@{USB\_\-Configuration}}
+\index{USB\_\-Configuration@{USB\_\-Configuration}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-Configuration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf USB\_\-Configuration}}}
+\label{usbcore_8c_ac86d5d512eb93e8f774d988cde9cd23d}
+
+
+Definition at line 33 of file usbcore.c.
+
+\hypertarget{usbcore_8c_afcfe5243560af24fedef6dc64ce105bc}{
+\index{usbcore.c@{usbcore.c}!USB\_\-DeviceAddress@{USB\_\-DeviceAddress}}
+\index{USB\_\-DeviceAddress@{USB\_\-DeviceAddress}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-DeviceAddress}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf USB\_\-DeviceAddress}}}
+\label{usbcore_8c_afcfe5243560af24fedef6dc64ce105bc}
+
+
+Definition at line 32 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a31297056d3b39a4ecf6eba9b5625aaa8}{
+\index{usbcore.c@{usbcore.c}!USB\_\-DeviceStatus@{USB\_\-DeviceStatus}}
+\index{USB\_\-DeviceStatus@{USB\_\-DeviceStatus}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-DeviceStatus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WORD} {\bf USB\_\-DeviceStatus}}}
+\label{usbcore_8c_a31297056d3b39a4ecf6eba9b5625aaa8}
+
+
+Definition at line 31 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a3c6c1761235e58b6400dc7130dbaeba0}{
+\index{usbcore.c@{usbcore.c}!USB\_\-EndPointHalt@{USB\_\-EndPointHalt}}
+\index{USB\_\-EndPointHalt@{USB\_\-EndPointHalt}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-EndPointHalt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} {\bf USB\_\-EndPointHalt}}}
+\label{usbcore_8c_a3c6c1761235e58b6400dc7130dbaeba0}
+
+
+Definition at line 35 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a9af3300fdd2389532c50d1ac555d9a5b}{
+\index{usbcore.c@{usbcore.c}!USB\_\-EndPointMask@{USB\_\-EndPointMask}}
+\index{USB\_\-EndPointMask@{USB\_\-EndPointMask}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-EndPointMask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DWORD} {\bf USB\_\-EndPointMask}}}
+\label{usbcore_8c_a9af3300fdd2389532c50d1ac555d9a5b}
+
+
+Definition at line 34 of file usbcore.c.
+
+\hypertarget{usbcore_8c_a61e4b2376e8ff52b98ae7da284497d0d}{
+\index{usbcore.c@{usbcore.c}!USB\_\-NumInterfaces@{USB\_\-NumInterfaces}}
+\index{USB\_\-NumInterfaces@{USB\_\-NumInterfaces}!usbcore.c@{usbcore.c}}
+\subsubsection[{USB\_\-NumInterfaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BYTE} {\bf USB\_\-NumInterfaces}}}
+\label{usbcore_8c_a61e4b2376e8ff52b98ae7da284497d0d}
+
+
+Definition at line 36 of file usbcore.c.
+

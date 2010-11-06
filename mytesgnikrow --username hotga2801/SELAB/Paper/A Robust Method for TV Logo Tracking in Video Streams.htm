@@ -1,0 +1,950 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="gecko firefox firefox3 win js" dir="ltr" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+	<title>A Robust Method for TV Logo Tracking in Video Streams</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.Creator" content="Jinqiao Wang, Lingyu Duan, Zhenglong 
+Li, Jing Liu, Hanqing Lu, Jesse Jin">
+<meta name="pages" content="1041-1044">
+<meta name="DC.Title" content="A Robust Method for TV Logo Tracking in 
+Video Streams">
+<meta scheme="DOI" name="DC.Identifier" 
+content="10.1109/ICME.2006.262712">
+<meta name="DC.Publisher" content="IEEE">
+<meta name="DC.Date" content="2006-07-09">
+<meta name="description" content="Most broadcast stations rely on TV 
+logos to claim video content ownership or visually distinguish the 
+broadcast from the interrupting commercial block. Detecting and tracking
+ a TV logo is of interest to TV commercial skipping applications and 
+logo-based broadcasting surveillance (abnormal signal is accompanied by 
+logo absence). Pixel-wise difference computing within predetermined logo
+ regions cannot address semi-transparent TV logos well for the blending 
+effects of a logo itself and inconstant background images. Edge-based 
+template matching is weak for semi-transparent ones when incomplete 
+edges appear. In this paper we present a more robust approach to detect 
+and track TV logos in video streams on the basis of multispectral images
+ gradient. Instead of single frame based detection, our approach makes 
+use of the temporal correlation of multiple consecutive frames. Since it
+ is difficult to manually delineate logos of irregular shape, an 
+adaptive threshold is applied to the gradient image in subpixel space to
+ extract the logo mask. TV logo tracking is finally carried out by 
+matching the masked region with a known template. An extensive 
+comparison experiment has shown our proposed algorithm outperforms 
+traditional methods such as frame difference, single frame-based edge 
+matching. Our experimental dataset comes from part of TRECVID2005 news 
+corpus and several Chinese TV channels with challenging TV logos.">
+<meta name="DC.Type" content="text">
+<meta name="DC.Description" content="Most broadcast stations rely on TV 
+logos to claim video content ownership or visually distinguish the 
+broadcast from the interrupting commercial block. Detecting and tracking
+ a TV logo is of interest to TV commercial skipping applications and 
+logo-based broadcasting surveillance (abnormal signal is accompanied by 
+logo absence). Pixel-wise difference computing within predetermined logo
+ regions cannot address semi-transparent TV logos well for the blending 
+effects of a logo itself and inconstant background images. Edge-based 
+template matching is weak for semi-transparent ones when incomplete 
+edges appear. In this paper we present a more robust approach to detect 
+and track TV logos in video streams on the basis of multispectral images
+ gradient. Instead of single frame based detection, our approach makes 
+use of the temporal correlation of multiple consecutive frames. Since it
+ is difficult to manually delineate logos of irregular shape, an 
+adaptive threshold is applied to the gradient image in subpixel space to
+ extract the logo mask. TV logo tracking is finally carried out by 
+matching the masked region with a known template. An extensive 
+comparison experiment has shown our proposed algorithm outperforms 
+traditional methods such as frame difference, single frame-based edge 
+matching. Our experimental dataset comes from part of TRECVID2005 news 
+corpus and several Chinese TV channels with challenging TV logos.">
+<meta scheme="acronym" name="DC.Identifier" content="icme">
+<meta name="DC.Format" content="text/html">
+<meta name="doi" content="10.1109/ICME.2006.262712">
+<meta name="DC.Relation.Ispartof" content="2006 IEEE International 
+Conference on Multimedia and Expo">
+        
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="Shortcut Icon" 
+href="http://www.computer.org/ieeecs-csdl-abstract-theme/images/liferay.ico">
+<link 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/css_002.css"
+ rel="stylesheet" type="text/css">	<link 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/css.css"
+ rel="stylesheet" type="text/css">	<link 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/abstractpage.css"
+ rel="stylesheet" type="text/css">	<link 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/dlHtml.css"
+ rel="stylesheet" type="text/css">	<link 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/tocpage.css"
+ rel="stylesheet" type="text/css">
+<script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return true},getMajorVersion:function(){return 0},getRevision:function(){return""},getVersion:function(){return""},isAir:function(){return false},isChrome:function(){return false},isFirefox:function(){return false},isGecko:function(){return false},isIe:function(){return false},isIphone:function(){return false},isLinux:function(){return false},isMac:function(){return false},isMobile:function(){return false},isMozilla:function(){return false},isOpera:function(){return false},isRtf:function(){return false},isSafari:function(){return false},isSun:function(){return false},isWap:function(){return false},isWapXhtml:function(){return false},isWebKit:function(){return false},isWindows:function(){return false},isWml:function(){return false}},ThemeDisplay:{getCompanyId:function(){return"10092"},getUserId:function(){return"10094"},getDoAsUserIdEncoded:function(){return""},getPlid:function(){return"2137563"},getLayoutId:function(){return"113"},getLayoutURL:function(){return"/portal/web/csdl/doi"},isPrivateLayout:function(){return"false"},getParentLayoutId:function(){return"0"},getScopeGroupId:function(){return"44032"},isSignedIn:function(){return false},getLanguageId:function(){return"en_US"},isFreeformLayout:function(){return false},isStateExclusive:function(){return false},isStateMaximized:function(){return false},isStatePopUp:function(){return false},getPathContext:function(){return"/portal"},getPathImage:function(){return"/portal/image"},getPathMain:function(){return"/portal/c"},getPathThemeImages:function(){return"/ieeecs-csdl-abstract-theme/images"},getPathThemeRoot:function(){return"/ieeecs-csdl-abstract-theme/"},getURLHome:function(){return"http://www.computer.org/portal/web/guest"},getSessionId:function(){return"9e389cd1b12717344a42b9c78276"},getPortletSetupShowBordersDefault:function(){return true}}};var themeDisplay=Liferay.ThemeDisplay;/*]]>*/</script><script src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/barebone.js" type="text/javascript"></script><script type="text/javascript">/*<![CDATA[*/Liferay.currentURL="\u002f\u0070\u006f\u0072\u0074\u0061\u006c\u002f\u0077\u0065\u0062\u002f\u0063\u0073\u0064\u006c\u002f\u0064\u006f\u0069\u003f\u0064\u006f\u0063\u003d\u0064\u006f\u0069\u002f\u0031\u0030\u002e\u0031\u0031\u0030\u0039\u002f\u0049\u0043\u004d\u0045\u002e\u0032\u0030\u0030\u0036\u002e\u0032\u0036\u0032\u0037\u0031\u0032";Liferay.currentURLEncoded="%2Fportal%2Fweb%2Fcsdl%2Fdoi%3Fdoc%3Ddoi%2F10.1109%2FICME.2006.262712";jQuery(function(){Liferay.Util.addInputType();Liferay.Util.addInputFocus()});Liferay.Portlet.ready(function(b,a){Liferay.Util.addInputType(b,a);if(Liferay.Menu){new Liferay.Menu({button:".lfr-actions",context:a[0],trigger:".lfr-trigger"})}});Liferay.Portlet.list=["56_INSTANCE_cUiG","digitallibraryabstract_WAR_plugins_INSTANCE_uxob","56_INSTANCE_T3mf","56_INSTANCE_er5B","contentdisplay_WAR_plugins_INSTANCE_JXZd"];if(jQuery.ui&&jQuery.ui.tabs){jQuery.extend(jQuery.ui.tabs.defaults,{navClass:"ui-tabs tabs",selectedClass:"current"})}jQuery(function(){if(Liferay.Dock){Liferay.Dock.init()}if(Liferay.Menu){new Liferay.Menu()}if(Liferay.Notice){Liferay.Notice.prototype.setClosing()}});/*]]>*/</script><link
+ 
+href="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/main.css"
+ rel="stylesheet" type="text/css">
+<style type="text/css">#banner .logo a{background:url(/portal/image/company_logo?img_id=10226&amp;t=1278876637004) no-repeat;display:block;font-size:0;height:49px;text-indent:-9999em;width:168px;}</style>
+	<script id="mainLiferayThemeJavaScript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/javascript.js" type="text/javascript"></script><script id="" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/milonic_menu_code.js" type="text/javascript"></script><script type="text/javascript">/*<![CDATA[*/var firstName="";var lastName="";var email="";var loggedIn=false;var doi_present=true;var doi="10.1109/ICME.2006.262712";var showMenu=false;jQuery(function(){jQuery(".hover").hover(function(){var a=jQuery(this).next("em");a.css("top",-(40+a.height())+"px");a.animate({opacity:"show",top:-(25+a.height())},"fast")},function(a){var b=jQuery(this).next("em");b.animate({opacity:"hide",top:-(40+b.height())},"fast")});jQuery(".mmenucontainer").css("z-index","199")});try{document.exeCommand("BackgroundImageCache",false,true)}catch(e){};/*]]>*/</script></head><body
+ class=" controls-visible public-page">
+<!-- anchor for html articles -->
+<a name="top"></a> 
+<!-- anchors for tabs -->
+<a name="1"></a><a name="2"></a><a name="3"></a><a name="4"></a><a 
+name="5"></a><a name="6"></a><a name="7"></a><a name="8"></a>
+<div id="wrapper">	<div id="banner">	<div class="logo" 
+onclick="document.location='/portal/web/guest/home'">	&nbsp;	</div><script type="text/javascript">/*<![CDATA[*/function enterSearch(a){if(!a){a=window.event}if(a.type=="keypress"&&a.keyCode!="13"){return}checkSearch()}function checkSearch(){document.getElementById("searchButton").style.display="none";document.getElementById("searching").style.display="block";document.searchForm.submit()}function getSearchFocus(){document.searchForm.queryText1.onkeypress=enterSearch}function looseSearchFocus(){document.searchForm.queryText1.onkeypress=null};/*]]>*/</script><div
+ id="searchbarhead">	<form name="searchForm" method="post" 
+action="/portal/web/search/simple">	<table align="right">	<tbody><tr><td
+ colspan="4" align="left">	<input name="queryText1" size="30" 
+onfocus="getSearchFocus()" onblur="looseSearchFocus()" type="text"></td><td
+ align="right">	<input 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/search_buttonr.jpg"
+ id="searchButton" name="go_search" alt="Search" value="Search" 
+onclick="return checkSearch()" type="image">	<span id="searching" 
+style="display: none;">Searching...</span>	</td><td align="left">	<a 
+href="http://www.computer.org/portal/web/search/advanced">Advanced 
+Search</a></td></tr><!--	<tr><td align="right">	<input name="google" id="googleYes" value="false" checked="checked" type="radio" /></td><td align="left">	<label for="googleYes">CS Search</label></td><td align="right">	<input name="google" id="googleNo" value="true" type="radio" /></td><td align="left">	<label for="googleNo">Google Search</label></td><td colspan="2" align="right" valign="bottom">	</td></tr>-->
+	</tbody></table><input name="action" value="simplesearch" type="hidden">
+	<input name="yearTo" value="2010" type="hidden">	<input name="yearFrom"
+ value="1960" type="hidden">	<input name="monthTo" value="12" 
+type="hidden">	<input name="monthFrom" value="01" type="hidden">	<input 
+name="sortField" value="DocWeight" type="hidden">	<input 
+name="sortOrder" value="descending" type="hidden">	<input 
+name="checkAbstract" value="yes" type="hidden">	<input name="searchPubs"
+ value="3" type="hidden">	<input name="queryOption1" value="fullText" 
+type="hidden">	<input name="resultsPerPage" value="10" type="hidden">	<input
+ name="searchDatabases" value="all" type="hidden">	</form></div><script type="text/javascript">/*<![CDATA[*/var loginImageButton=new ImageButton("searchButton","/ieeecs-csdl-abstract-theme/images/buttons/search_buttonr.jpg","/ieeecs-csdl-abstract-theme/images/buttons/search_button.jpg");/*]]>*/</script><table
+ class="dock-logo" align="right" width="500px">
+    <tbody><tr><td nowrap="true" align="right" width="400">
+<div class="lfr-dock interactive-mode lfr-component">
+            	                    <h2 class="user-greeting"></h2>	</div></td><!--
+    <td align="right" width="100px">
+    	<a href="http://www.ieee.org">
+                <img src="/ieeecs-csdl-abstract-theme/images/banner/ieee-90x26.gif" alt="IEEE"/>
+    	</a>
+    </td>--></tr></tbody></table></div><div id="main-menu">	<script id="" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/classic_login_menu_data2.js" type="text/javascript"></script><div
+ class="mmenucontainer" onmouseout="$I()" onmouseover="$J(0)" 
+onselectstart="return 0" id="menu0" style="padding: 0px; width: 1002px; 
+height: 30px; z-index: 199; visibility: visible; position: absolute; 
+top: 69px; text-align: left;"><table class="milonictable" 
+style="line-height: normal; padding: 0px;" id="tbl0" align="left" 
+border="0" cellpadding="0" cellspacing="0" height="30"><tbody><tr><td 
+id="el0" onmouseover="h$(0,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;);" 
+nowrap="nowrap"><a onclick="return $K(0)" name="mM1" onfocus="_iF0C(0)" 
+href="http://www.computer.org/portal/web/guest/home" id="lnk0" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none;">Home</a></td><td id="sep0" style="padding: 0px; 
+width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el1" 
+onmouseover="h$(1,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;);" 
+nowrap="nowrap"><a onclick="return $K(1)" name="mM1" onfocus="_iF0C(1)" 
+href="http://www.computer.org/portal/web/membership/join" id="lnk1" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none;">Join</a></td><td id="sep1" style="padding: 0px; 
+width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el2" 
+onmouseover="h$(2,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl2" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td2"><td id="itd1202" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(2)" name="mM1" onfocus="_iF0C(2)" 
+href="http://www.computer.org/portal/web/publications" id="lnk2" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none;">Publications</a></td><td style="font-size: 1px;"
+ width="1"><img style="width: 17px;" id="simg2" onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep2" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el3" 
+onmouseover="h$(3,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl3" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td3"><td id="itd1203" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(3)" name="mM1" onfocus="_iF0C(3)" 
+href="http://www.computer.org/portal/web/conferences/home" id="lnk3" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none;">Conferences</a></td><td style="font-size: 1px;" 
+width="1"><img style="width: 17px;" id="simg3" onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep3" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el4" 
+onmouseover="h$(4,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl4" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td4"><td id="itd1204" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(4)" name="mM1" onfocus="_iF0C(4)" 
+href="http://www.computer.org/portal/web/csdl" id="lnk4" style="border: 
+medium none; background: none repeat scroll 0% 0% transparent; display: 
+block; color: rgb(255, 255, 255); font-family: arial,tahoma; 
+font-weight: bold; font-style: normal; font-size: 12px; text-decoration:
+ none; text-align: center;">Digital Library</a></td><td 
+style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg4" 
+onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep4" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el5" 
+onmouseover="h$(5,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl5" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td5"><td id="itd1205" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(5)" name="mM1" onfocus="_iF0C(5)" 
+href="http://www.computer.org/portal/web/buildyourcareer/home" id="lnk5"
+ style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none; text-align: center;">Build Your Career</a></td><td
+ style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg5" 
+onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep5" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el6" 
+onmouseover="h$(6,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl6" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td6"><td id="itd1206" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(6)" name="mM1" onfocus="_iF0C(6)" 
+href="http://www.computer.org/portal/web/e-learning/home" id="lnk6" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none; text-align: center;">e-Learning</a></td><td 
+style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg6" 
+onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep6" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el7" 
+onmouseover="h$(7,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl7" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td7"><td id="itd1207" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(7)" name="mM1" onfocus="_iF0C(7)" 
+href="http://www.computer.org/portal/web/getcertified" id="lnk7" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(255, 255, 255); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; 
+text-decoration: none;">Certification &amp; Training</a></td><td 
+style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg7" 
+onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep7" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el8" 
+onmouseover="h$(8,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;); 
+height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl8" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td8"><td id="itd1208" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a name="mM1" 
+onfocus="_iF0C(8)" href="javascript:void(0);" id="lnk8" style="border: 
+medium none; background: none repeat scroll 0% 0% transparent; display: 
+block; color: rgb(255, 255, 255); font-family: arial,tahoma; 
+font-weight: bold; font-style: normal; font-size: 12px; text-decoration:
+ none;">Communities</a></td><td style="font-size: 1px;" width="1"><img 
+style="width: 17px;" id="simg8" onload="_p2(0,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow_002.gif"></td></tr></tbody></table></td><td
+ id="sep8" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el9" 
+onmouseover="h$(9,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;);" 
+nowrap="nowrap"><a onclick="return $K(9)" name="mM1" onfocus="_iF0C(9)" 
+href="http://www.computer.org/store" id="lnk9" style="border: medium 
+none; background: none repeat scroll 0% 0% transparent; display: block; 
+color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold;
+ font-style: normal; font-size: 12px; text-decoration: none;">Store</a></td><td
+ id="sep9" style="padding: 0px; width: 1px; background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="1"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el10" 
+onmouseover="h$(10,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/ClassicImages/background.png&quot;);" 
+nowrap="nowrap"><a onclick="return $K(10)" name="mM1" 
+onfocus="_iF0C(10)" href="http://www.computer.org/portal/c/portal/login"
+ id="lnk10" style="border: medium none; background: none repeat scroll 
+0% 0% transparent; display: block; color: rgb(255, 255, 255); 
+font-family: arial,tahoma; font-weight: bold; font-style: normal; 
+font-size: 12px; text-decoration: none;">&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;</a></td></tr></tbody></table>
+ <a name="mM1" id="mmlink0" href="#" onclick="return $K(this._itemRef)" 
+onmouseover="_p1(this);_mot=$P(_mot)" style="outline: medium none; 
+line-height: normal; background: none repeat scroll 0% 0% transparent; 
+text-decoration: none; height: 1px; width: 1px; overflow: hidden; 
+position: absolute; visibility: hidden;"></a></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(1)" 
+onselectstart="return 0" id="menu1" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(2)" onselectstart="return 0" id="menu2" style="padding: 
+7px; background: none repeat scroll 0% 0% rgb(248, 247, 240); border: 
+1px solid rgb(136, 136, 136); z-index: 199; visibility: hidden; 
+position: absolute; top: -999px;"></div><div class="mmenucontainer" 
+onmouseout="$I()" onmouseover="$J(3)" onselectstart="return 0" 
+id="menu3" style="padding: 7px; background: none repeat scroll 0% 0% 
+rgb(248, 247, 240); border: 1px solid rgb(136, 136, 136); z-index: 199; 
+visibility: hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(4)" 
+onselectstart="return 0" id="menu4" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(5)" onselectstart="return 0" id="menu5" style="padding: 
+7px; background: none repeat scroll 0% 0% rgb(248, 247, 240); border: 
+1px solid rgb(136, 136, 136); z-index: 199; visibility: hidden; 
+position: absolute; top: -999px;"></div><div class="mmenucontainer" 
+onmouseout="$I()" onmouseover="$J(6)" onselectstart="return 0" 
+id="menu6" style="padding: 7px; background: none repeat scroll 0% 0% 
+rgb(248, 247, 240); border: 1px solid rgb(136, 136, 136); z-index: 199; 
+visibility: hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(7)" 
+onselectstart="return 0" id="menu7" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(8)" onselectstart="return 0" id="menu8" style="padding: 
+7px; background: none repeat scroll 0% 0% rgb(248, 247, 240); border: 
+1px solid rgb(136, 136, 136); z-index: 199; visibility: hidden; 
+position: absolute; top: -999px;"></div><div class="mmenucontainer" 
+onmouseout="$I()" onmouseover="$J(9)" onselectstart="return 0" 
+id="menu9" style="padding: 7px; background: none repeat scroll 0% 0% 
+rgb(248, 247, 240); border: 1px solid rgb(136, 136, 136); z-index: 199; 
+visibility: hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(10)" 
+onselectstart="return 0" id="menu10" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(11)" onselectstart="return 0" id="menu11" 
+style="padding: 7px; background: none repeat scroll 0% 0% rgb(248, 247, 
+240); border: 1px solid rgb(136, 136, 136); z-index: 199; visibility: 
+hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(12)" 
+onselectstart="return 0" id="menu12" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(13)" onselectstart="return 0" id="menu13" 
+style="padding: 7px; background: none repeat scroll 0% 0% rgb(248, 247, 
+240); border: 1px solid rgb(136, 136, 136); z-index: 199; visibility: 
+hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(14)" 
+onselectstart="return 0" id="menu14" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(15)" onselectstart="return 0" id="menu15" 
+style="padding: 7px; background: none repeat scroll 0% 0% rgb(248, 247, 
+240); border: 1px solid rgb(136, 136, 136); z-index: 199; visibility: 
+hidden; position: absolute; top: -999px;"></div></div><div id="header"></div><div
+ id="submenu">	<div id="nav-menu2">	<script id="" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/dl_menu_data.js" type="text/javascript"></script><div
+ class="mmenucontainer" onmouseout="$I()" onmouseover="$J(16)" 
+onselectstart="return 0" id="menu16" style="padding: 0px; width: 1002px;
+ height: 30px; z-index: 199; visibility: visible; position: absolute; 
+top: 216px; text-align: left;"><table class="milonictable" 
+style="line-height: normal; padding: 0px;" id="tbl16" align="left" 
+border="0" cellpadding="0" cellspacing="0" height="30"><tbody><tr><td 
+id="el120" onmouseover="h$(120,0,1)" style="padding: 0px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);
+ height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl120" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td120"><td id="_imgO120" 
+align="right" valign="middle"><img onload="_p2(16,this)" style="display:
+ block; width: 1px;" alt="Homepage of the Digital Library" id="_img120" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/endcap.png"
+ border="0"></td><td id="itd120120" style="padding: 7px;" 
+nowrap="nowrap" width="100%"><a onclick="return $K(120)" name="mM1" 
+onfocus="_iF0C(120)" href="http://www.computer.org/portal/web/csdl/home"
+ id="lnk120" style="border: medium none; background: none repeat scroll 
+0% 0% transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none;">Digital Library Home</a></td></tr></tbody></table></td><td 
+id="sep120" style="padding: 0px; width: 3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el121" 
+onmouseover="h$(121,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);"
+ nowrap="nowrap"><a onclick="return $K(121)" name="mM1" 
+onfocus="_iF0C(121)" 
+href="http://www.computer.org/portal/web/csdl/subscribe" id="lnk121" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none;">Subscribe</a></td><td id="sep121" style="padding: 0px; width: 
+3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el122" 
+onmouseover="h$(122,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);
+ height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl122" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td122"><td id="itd120122" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a onclick="return 
+$K(122)" name="mM1" onfocus="_iF0C(122)" 
+href="http://search3.computer.org/search/advancedSearch.jsp" id="lnk122"
+ style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none; text-align: center;">Search</a></td><td style="font-size: 1px;" 
+width="1"><img style="width: 14px;" id="simg122" onload="_p2(16,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow.gif"></td></tr></tbody></table></td><td
+ id="sep122" style="padding: 0px; width: 3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el123" 
+onmouseover="h$(123,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);
+ height: 16px;"><table class="milonictable" style="line-height: normal; 
+padding: 0px;" id="MTbl123" border="0" cellpadding="0" cellspacing="0" 
+height="100%" width="100%"><tbody><tr id="td123"><td id="itd120123" 
+style="padding: 7px;" nowrap="nowrap" width="100%"><a name="mM1" 
+onfocus="_iF0C(123)" href="javascript:void(0);" id="lnk123" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none; text-align: center;">Resources</a></td><td style="font-size: 1px;"
+ width="1"><img style="width: 14px;" id="simg123" onload="_p2(16,this)" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/arrow.gif"></td></tr></tbody></table></td><td
+ id="sep123" style="padding: 0px; width: 3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el124" 
+onmouseover="h$(124,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);"
+ nowrap="nowrap"><a onclick="return $K(124)" name="mM1" 
+onfocus="_iF0C(124)" 
+href="http://www.computer.org/portal/web/csdl/libsubscription" 
+id="lnk124" style="border: medium none; background: none repeat scroll 
+0% 0% transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none;">Institutional and Library Resources</a></td><td id="sep124" 
+style="padding: 0px; width: 3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el125" 
+onmouseover="h$(125,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);"
+ nowrap="nowrap"><a onclick="return $K(125)" name="mM1" 
+onfocus="_iF0C(125)" 
+href="http://www.computer.org/portal/web/csdl/subscribe/newsletter" 
+id="lnk125" style="border: medium none; background: none repeat scroll 
+0% 0% transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none;">Newsletter</a></td><td id="sep125" style="padding: 0px; width: 
+3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el126" 
+onmouseover="h$(126,0,1)" style="padding: 7px; height: 16px; 
+background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);"
+ nowrap="nowrap"><a onclick="return $K(126)" name="mM1" 
+onfocus="_iF0C(126)" 
+href="http://www.computer.org/portal/web/csdl/about" id="lnk126" 
+style="border: medium none; background: none repeat scroll 0% 0% 
+transparent; display: block; color: rgb(74, 77, 74); font-family: 
+arial,tahoma; font-weight: bold; font-style: normal; text-decoration: 
+none;">About the Digital Library</a></td><td id="sep126" style="padding:
+ 0px; width: 3px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/separator.png&quot;);"><table
+ class="milonictable" style="line-height: normal; padding: 0px;" 
+border="0" cellpadding="0" cellspacing="0" width="3"><tbody><tr><td 
+style="padding: 0px;"></td></tr></tbody></table></td><td id="el127" 
+onmouseover="h$(127,0,1)" style="padding: 0px; background-image: 
+url(&quot;/cms/Computer.org/Menus/DigitalLibraryImages/background.png&quot;);
+ height: 16px;" width="300"><table class="milonictable" 
+style="line-height: normal; padding: 0px;" id="MTbl127" border="0" 
+cellpadding="0" cellspacing="0" height="100%" width="100%"><tbody><tr 
+id="td127"><td id="_imgO127" align="right" valign="middle"><img 
+onload="_p2(16,this)" style="display: block; width: 1px;" id="_img127" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/endcap.png"
+ border="0"></td></tr></tbody></table></td></tr></tbody></table> <a 
+name="mM1" id="mmlink16" href="#" onclick="return $K(this._itemRef)" 
+onmouseover="_p1(this);_mot=$P(_mot)" style="outline: medium none; 
+line-height: normal; background: none repeat scroll 0% 0% transparent; 
+text-decoration: none; height: 1px; width: 1px; overflow: hidden; 
+position: absolute; visibility: hidden;"></a></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(17)" 
+onselectstart="return 0" id="menu17" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div><div class="mmenucontainer" onmouseout="$I()" 
+onmouseover="$J(18)" onselectstart="return 0" id="menu18" 
+style="padding: 7px; background: none repeat scroll 0% 0% rgb(248, 247, 
+240); border: 1px solid rgb(136, 136, 136); z-index: 199; visibility: 
+hidden; position: absolute; top: -999px;"></div><div 
+class="mmenucontainer" onmouseout="$I()" onmouseover="$J(19)" 
+onselectstart="return 0" id="menu19" style="padding: 7px; background: 
+none repeat scroll 0% 0% rgb(248, 247, 240); border: 1px solid rgb(136, 
+136, 136); z-index: 199; visibility: hidden; position: absolute; top: 
+-999px;"></div></div></div><div id="header-divider"></div><div 
+id="loading">	<img 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/loading_animation.gif"
+ alt="loading...">	</div><div id="content-area">	<div id="p_p_id_103_" 
+class="portlet-boundary portlet-boundary_103_  ">	<a id="p_103"></a>	<script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,isStatic:"end",namespacedId:"p_p_id\u005f\u0031\u0030\u0033\u005f",portletId:"\u0031\u0030\u0033"});/*]]>*/</script></div><div
+ class="columns-3" id="content-wrapper">	<table id="layout-grid">	<tbody><tr><td
+ class="lfr-column thirty" id="column-1" valign="top">	<div 
+class="lfr-portlet-column empty" id="layout-column_column-1"></div></td><td
+ class="lfr-column fiftyfour" id="column-2" valign="top">	<div 
+class="lfr-portlet-column empty" id="layout-column_column-2"></div></td><td
+ class="lfr-column sixteen" id="column-6" rowspan="3" valign="top">	<div
+ class="lfr-portlet-column" id="layout-column_column-6">	<div 
+id="p_p_id_56_INSTANCE_er5B_" class="portlet-boundary 
+portlet-boundary_56_  portlet-journal-content">	<a 
+id="p_56_INSTANCE_er5B"></a>	<div class="portlet-borderless-container" 
+style="">	<div>	<div class="journal-content-article" 
+id="article_44032_2464405_1.0">	<script type="text/javascript">/*<![CDATA[*/if(doi_present){var m3_u=(location.protocol=="https:"?"https://jobs.hrkspjbs.com/js.ashx":"http://jobs.hrkspjbs.com/js.ashx");var m3_r=Math.floor(Math.random()*99999999999);document.write("<script type='text/javascript' src='"+m3_u);document.write("?pid=046cec5f89b640978ccafa2ed07d66e3");document.write("&amp;tl="+m3_r);document.write("&amp;did="+doi);document.write("&amp;loc="+escape(window.location));if(document.referrer){document.write("&amp;referer="+escape(document.referrer))}if(document.context){document.write("&context="+escape(document.context))}document.write("'><\/script>")};/*]]>*/</script><script type="text/javascript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/js.js"></script></div></div></div><script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,isStatic:"end",namespacedId:"p_p_id\u005f\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0065\u0072\u0035\u0042\u005f",portletId:"\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0065\u0072\u0035\u0042"});/*]]>*/</script></div><div
+ id="p_p_id_contentdisplay_WAR_plugins_INSTANCE_JXZd_" 
+class="portlet-boundary portlet-boundary_contentdisplay_WAR_plugins_  ">
+	<a id="p_contentdisplay_WAR_plugins_INSTANCE_JXZd"></a>	<div 
+class="portlet-borderless-container" style="">	<div>	<!-- view.jsp version 2 -->
+<div class="content-display">	<!-- BEGIN NetShelter Ad Tag for Computer.org 120x600,160x600 -->
+<script language="JavaScript" type="text/javascript">
+if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000;
+}
+if (!window.netshel_tile) { netshel_tile=1; }
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.computer.org/security;sz=120x600,160x600;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+netshel_tile++;
+</script><script language="JavaScript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/security.js" type="text/javascript"></script><!-- Template ID = 4439 Template Name = Image Banner - Open in New Window -->
+
+<a 
+href="http://ad.doubleclick.net/click%3Bh%3Dv8/39d6/3/0/%2a/p%3B223182254%3B0-0%3B0%3B32642670%3B2321-160/600%3B35923569/35941447/1%3B%3B%7Eokv%3D%3Bsz%3D120x600%2C160x600%3Btile%3D1%3B%7Eaopt%3D2/0/a/0%3B%7Esscs%3D%3fhttp://www.computer.org/portal/web/csdl/about"
+ target="_blank">
+<img 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/160x600banner.jpg"
+ border="0" height="600" width="160">
+</a>
+<!-- END AD TAG -->
+</div></div></div><script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:1,isStatic:"end",namespacedId:"p_p_id\u005f\u0063\u006f\u006e\u0074\u0065\u006e\u0074\u0064\u0069\u0073\u0070\u006c\u0061\u0079\u005f\u0057\u0041\u0052\u005f\u0070\u006c\u0075\u0067\u0069\u006e\u0073\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u004a\u0058\u005a\u0064\u005f",portletId:"\u0063\u006f\u006e\u0074\u0065\u006e\u0074\u0064\u0069\u0073\u0070\u006c\u0061\u0079\u005f\u0057\u0041\u0052\u005f\u0070\u006c\u0075\u0067\u0069\u006e\u0073\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u004a\u0058\u005a\u0064"});/*]]>*/</script></div></div></td></tr><tr><td
+ class="lfr-column eightyfour" id="column-3" colspan="2" valign="top">	<div
+ class="lfr-portlet-column" id="layout-column_column-3">	<div 
+id="p_p_id_56_INSTANCE_cUiG_" class="portlet-boundary 
+portlet-boundary_56_  portlet-journal-content">	<a 
+id="p_56_INSTANCE_cUiG"></a>	<div class="portlet-borderless-container" 
+style="">	<div>	<div class="journal-content-article" 
+id="article_44032_137482_1.0">	<center><!-- BEGIN NetShelter Ad Tag for 728x90--><script language="JavaScript" type="text/javascript">
+if (firstName != "Institution") {
+    if (!window.netshel_ord) { netshel_ord=Math.random()*10000000000000000; }
+    if (!window.netshel_tile) { netshel_tile=1; }
+    document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/ns.computer.org/general;sz=728x90;tile='+netshel_tile+';ord=' + netshel_ord + '?" type="text/javascript"></scr' + 'ipt>');
+    netshel_tile++;
+}
+</script><script language="JavaScript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/general_002.js" type="text/javascript"></script><!-- Template ID = 4439 Template Name = Image Banner - Open in New Window -->
+
+<a 
+href="http://ad.doubleclick.net/click%3Bh%3Dv8/39d6/3/0/%2a/z%3B217312444%3B0-0%3B0%3B27855236%3B3454-728/90%3B32985431/33003308/1%3B%3B%7Eokv%3D%3Bsz%3D728x90%3Btile%3D2%3B%7Eaopt%3D2/0/a/0%3B%7Esscs%3D%3fhttp://www.ieeeinsurance.com/"
+ target="_blank">
+<img 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/IEEE_marsh_728X90.jpg"
+ border="0" height="90" width="728">
+</a>
+<!-- END AD TAG --></center>	</div></div></div><script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,isStatic:"end",namespacedId:"p_p_id\u005f\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0063\u0055\u0069\u0047\u005f",portletId:"\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0063\u0055\u0069\u0047"});/*]]>*/</script></div><div
+ id="p_p_id_digitallibraryabstract_WAR_plugins_INSTANCE_uxob_" 
+class="portlet-boundary 
+portlet-boundary_digitallibraryabstract_WAR_plugins_  ">	<a 
+id="p_digitallibraryabstract_WAR_plugins_INSTANCE_uxob"></a>	<div 
+class="portlet-borderless-container" style="">	<div>	<!-- abstract_view.jsp -->
+<script type="text/javascript">/*<![CDATA[*/var downloadCount=0;function addContextMenu(){jQuery(".abs-pdf").contextMenu("_digitallibraryabstract_WAR_plugins_INSTANCE_uxob__pdfMenu",{bindings:{open:function(a){openPDF("/plugins/dl/pdf/"+a.id,a.title)},download:function(a){downloadPDF("/plugins/dl/pdf/"+a.id,a.title)}}})}function openDoc(c,f,b){try{tabs.clear(b);breadcrumbs.setLastEntry(b);var a=c;if(a.indexOf("?")>-1){a+="&template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}else{a+="?template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}tabs.load(b,f,a,true);breadcrumbs.add(f,c,b)}catch(d){alert("openDoc: "+d.message)}addContextMenu()}function openPdfFromToc(b,c){var a=b;if(a.indexOf("?")>-1){a+="&template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}else{a+="?template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}window.open(a,"Download"+downloadCount,"menubar=no,resizable=1,width=900,height=600");downloadCount++}function openPDF(b,f){try{var a=b;if(a.indexOf("?")>-1){a+="&template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}else{a+="?template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}var d=window.open(a,"Download"+downloadCount,"menubar=no,resizable=1,width=900,height=600");if(!d){alert("A popup blocker has prevented the download of the PDF.  Please click on the PDF link to download the file.")}downloadCount++}catch(c){alert(c.message)}}function downloadPDF(b,c){var a=b;if(a.indexOf("?")>-1){a+="&template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D&download=true"}else{a+="?template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D&download=true"}document.location=a}function openZip(b,f){var a=b;try{if(a.indexOf("?")>-1){a+="&template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}else{a+="?template=1&loginState=1&userData=anonymous-IP%253A%253AAddress%253A%2B113.22.169.184%252C%2B%255B113.22.169.184%252C%2B172.16.161.5%252C%2B127.0.0.1%255D"}if(jQuery.browser.msie&&(parseInt(jQuery.browser.version)==6)){var d=window.open(a,"ZIP","menubar=no,resizable=1,width=900,height=600");if(!d){alert("A popup blocker has prevented the download of the PDF.  Please click on the PDF link to download the file.")}}else{document.location=a}}catch(c){alert("Error "+c.message)}}function showOpenUrlWindow(n,g,d,i,e,k,l,c,f,o,m,b,j,h,a){window.open(n+"rfr_id=info:sid/http://ieeecomputersociety.org&url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&rft.genre="+g+"&rft.jtitle="+d+"&rtf.issn="+i+"&rft.isbn="+e+"&rft.volume="+k+"&rft.date="+l+"&rtf.issue"+c+"&rft.atitle="+f+"&rft.spage="+o+"&rft_id=info:doi/"+m+"&aufirst="+b+"&aulast="+j,h,a)}var autoloadPdf=0;var autoloadZip=0;function _digitallibraryabstract_WAR_plugins_INSTANCE_uxob__init(){if(autoloadPdf){openPdfOnLoad()}if(autoloadZip){openZipOnLoad()}}jQuery(function(){_digitallibraryabstract_WAR_plugins_INSTANCE_uxob__init();addContextMenu()});function openHtml(a,b){document.location=a};/*]]>*/</script><div
+ id="_digitallibraryabstract_WAR_plugins_INSTANCE_uxob__digitalLibrary">
+	<div xmlns:java="java" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+xmlns:ghapi="http://www.google.com/apis/homepage" 
+xmlns:rss="http://backend.userland.com/rss2" 
+xmlns:date="http://exslt.org/dates-and-times" id="dlcontent">
+<div id="abs-ui-tabs">
+<table id="abs-ui-tabs-nav-container">
+<tbody><tr><td><ul class="abs-ui-tabs-nav">
+<li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" 
+onclick='javascript:openLinks("2006 IEEE International Conference on 
+Multimedia and Expo","A Robust Method for TV Logo Tracking in Video 
+Streams","Multimedia and Expo, IEEE International Conference on","1");'><span
+ class="abs-ui-tabs-not-selected">I</span></a>
+</li><li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" 
+onclick='javascript:openLinks("2006 IEEE International Conference on 
+Multimedia and Expo","A Robust Method for TV Logo Tracking in Video 
+Streams","Multimedia and Expo, IEEE International Conference on","2");'><span
+ class="abs-ui-tabs-not-selected">Multimedia and Expo, IEEE 
+International Conference on</span></a>
+</li><li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" 
+onclick='javascript:openLinks("2006 IEEE International Conference on 
+Multimedia and Expo","A Robust Method for TV Logo Tracking in Video 
+Streams","Multimedia and Expo, IEEE International Conference on","3");'><span
+ class="abs-ui-tabs-not-selected">2006</span></a>
+</li><li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" 
+onclick='javascript:openLinks("2006 IEEE International Conference on 
+Multimedia and Expo","A Robust Method for TV Logo Tracking in Video 
+Streams","Multimedia and Expo, IEEE International Conference on","4");'><span
+ class="abs-ui-tabs-not-selected">2006 IEEE International Conference on 
+Multimedia and Expo</span></a>
+</li><li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" 
+onclick='javascript:openLinks("2006 IEEE International Conference on 
+Multimedia and Expo","A Robust Method for TV Logo Tracking in Video 
+Streams","Multimedia and Expo, IEEE International Conference on","5");'><span
+ class="abs-ui-tabs-selected">A Robust Method for TV Logo Tracking in 
+Video Streams</span></a>
+</li></ul></td></tr></tbody></table></div><div id="abs-articleinfo">
+<table>
+<tbody><tr><td class="top-left">&nbsp;</td><td class="top-center">This 
+Article</td><td class="top-right">&nbsp;</td></tr><tr><td 
+class="content-left">&nbsp;</td><td class="content-center">
+<ul>
+<li>
+<div onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';">
+<a class="_blank" href="http://www.computer.org/portal/c/portal/login">	
+ 	 	Subscribers, please Login	 	 </a>
+</div></li><li>
+<div style="cursor: default;" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';" class="abs-purchase">
+<a target="_blank" 
+href="https://newton.computer.org/DocDelivery/Shopping.nsf/AddToCart?OpenAgent&amp;U=http://csdl.computer.org/dl/proceedings/icme/2006/0366/00/04036781.pdf&amp;T=A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams">
+	 	 	 	 	 	 Purchase article: $19</a>
+</div></li><li>
+<div class="abs-pdf-disabled">
+<span class="article-disabled">PDF</span>
+</div></li><li>
+<div style="cursor: default;" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';" class="abs-xplore">
+<a href="http://dx.doi.org/10.1109/ICME.2006.262712">	 	 IEEE <em>Xplore</em>
+ Subscribers	 	</a>
+</div></li><li>
+<div style="cursor: default;" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';">
+<a target="_blank" 
+href="http://csdl.computer.org/rss/proceedingsList.xml">	RSS feed	</a>
+</div></li></ul></td><td class="content-right">&nbsp;</td></tr><tr><td 
+class="sep-left">&nbsp;</td><td class="sep-center">Share</td><td 
+class="sep-right">&nbsp;</td></tr><tr><td class="content-left">&nbsp;</td><td
+ class="content-center">
+<ul>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void();" 
+onclick="javascript:sendLink('http://doi.ieeecomputersociety.org/10.1109/ICME.2006.262712','A
+ Robust Method for TV Logo Tracking in Video Streams')">	Email this 
+Article to a friend	</a>
+</li></ul></td><td class="content-right">&nbsp;</td></tr><tr><td 
+class="sep-left">&nbsp;</td><td class="sep-center">Bibliographic 
+References</td><td class="sep-right">&nbsp;</td></tr><tr><td 
+class="content-left">&nbsp;</td><td class="content-center">
+<div id="abs-ul">
+<ul>
+<li>
+<a 
+href="http://www.computer.org/plugins/dl/citation/abs/asciitext/description/doi/10.1109/ICME.2006.262712.txt">ASCII
+ Text</a>
+</li><li>
+<a 
+href="http://www.computer.org/plugins/dl/citation/abs/bibtex/description/doi/10.1109/ICME.2006.262712.bib">BibTex</a>
+</li><li>
+<a 
+href="http://www.computer.org/plugins/dl/citation/abs/refworks/description/doi/10.1109/ICME.2006.262712.ris">RefWorks
+ Procite/RefMan</a>
+</li></ul></div></td><td class="content-right">&nbsp;</td></tr><tr><td 
+class="sep-left">&nbsp;</td><td onclick="addto(0)" 
+onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='help';" class="sep-center">Add to:</td><td
+ class="sep-right">&nbsp;</td></tr><tr><td class="content-left">&nbsp;</td><td
+ class="content-center">
+<div class="abs-addTo">
+<span onclick="addto(3)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon3.gif">Digg</span>
+<br>
+<span onclick="addto(4)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon4.gif">Furl</span>
+</div><div class="abs-addTo">
+<span onclick="addto(8)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon7.gif">Spurl</span>
+<br>
+<span onclick="addto(1)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon1.gif">Blink</span>
+</div><div class="abs-addTo">
+<span onclick="addto(6)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon6.gif">Simpy</span>
+<br>
+<span onclick="addto(5)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon5.gif">Google</span>
+</div><div class="abs-addTo">
+<span onclick="addto(2)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon2.gif">Del.icio.us</span>
+<br>
+<span onclick="addto(7)" onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';"><img alt="" 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/icon8.gif">Y!MyWeb</span>
+</div></td><td class="content-right">&nbsp;</td></tr><tr><td 
+class="sep-left">&nbsp;</td><td class="sep-center">Search</td><td 
+class="sep-right">&nbsp;</td></tr><tr><td class="content-left">&nbsp;</td><td
+ class="content-center">
+<ul>
+<li>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?operation=morelikethisreference&amp;reference=http://csdl.computer.org/dl/proceedings/icme/2006/0366/00/04036781.pdf&amp;resultsPerPage=10&amp;queryoption1=fulltext&amp;sortField=DocWeight&amp;searchDatabases=dlearning+annals+cise+computer+cga+concurrency+dt+intelligent+internet+itpro+micro+multimedia+software+pc+Security+tc+tkde+tpds+tpami+tse+tvcg+tmc+tcbb+tdsc+dsonline+proceedings+acm+cal+haptics+lt+sc+tac&amp;yearTo=2010&amp;monthTo=12&amp;yearFrom=1870&amp;monthFrom=01&amp;sortOrder=ascending">
+	Similar Articles	</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jinqiao%20Wang">Jinqiao
+ Wang</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Lingyu%20Duan">Lingyu
+ Duan</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Zhenglong%20Li">Zhenglong
+ Li</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jing%20Liu">Jing
+ Liu</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Hanqing%20Lu">Hanqing
+ Lu</a>
+</li><li>Articles by <a rel="nofollow" target="_blank" 
+href="http://www.computer.org/portal/web/search/simple?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jesse%20Jin">Jesse
+ Jin</a>
+</li></ul></td><td class="content-right">&nbsp;</td></tr><tr><td 
+class="bottom-left"></td><td class="bottom-center"></td><td 
+class="bottom-right"></td></tr></tbody></table></div><div 
+id="abs-info-left">
+<div id="abs-proceedingTitle">2006 IEEE International Conference on 
+Multimedia and Expo</div><div id="abs-articleTitle">A Robust Method for 
+TV Logo Tracking in Video Streams<br>
+</div><div id="abs-issue-left-p">
+<div class="abs-conf-location"> Toronto, ON, Canada   </div><div 
+class="abs-conf-location">July 09-July 12</div><div id="abs-issn-left">ISBN:
+ 1-4244-0366-7</div></div></div><div id="asciiText">
+<table>
+<tbody><tr><td class="popup-top-left"></td><td class="popup-top-center">
+<div style="width: 100%;" id="asciiTextTitle">ASCII Text</div></td><td 
+onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';" 
+onclick="javascript:hidePopup('asciiText');" class="popup-top-close">x</td><td
+ class="popup-top-right">&nbsp;</td></tr><tr><td 
+class="popup-content-left">&nbsp;</td><td colspan="2" 
+class="popup-content-center">
+<div id="asciiText-content">Jinqiao Wang, Lingyu Duan, Zhenglong Li, 
+Jing Liu, Hanqing Lu, Jesse Jin, 	"A Robust Method for TV Logo Tracking 
+in Video Streams,"	<em>Multimedia and Expo, IEEE International 
+Conference on</em>, pp. 1041-1044, 2006 IEEE International Conference on
+ Multimedia and Expo, 2006.</div></td><td class="popup-content-right">&nbsp;</td></tr><tr><td
+ class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td
+ class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td></tr></tbody></table></div><div
+ id="BibTex">
+<table>
+<tbody><tr><td class="popup-top-left">&nbsp;</td><td 
+class="popup-top-center">
+<div style="width: 100%;" id="BibTexTitle">BibTex</div></td><td 
+onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';" 
+onclick="javascript:hidePopup('BibTex');" class="popup-top-close">x</td><td
+ class="popup-top-right"></td></tr><tr><td class="popup-content-left">&nbsp;</td><td
+ colspan="2" class="popup-content-center">
+<div id="bibText-content">	@article{	10.1109/ICME.2006.262712,<br>author
+ = {Jinqiao Wang and Lingyu Duan and Zhenglong Li and Jing Liu and 
+Hanqing Lu and Jesse Jin},<br>title = {A Robust Method for TV Logo 
+Tracking in Video Streams},<br>journal ={Multimedia and Expo, IEEE 
+International Conference on},<br>volume = {0},<br>year = {2006},<br>isbn
+ = {1-4244-0366-7},<br>pages = {1041-1044},<br>doi = 
+{http://doi.ieeecomputersociety.org/10.1109/ICME.2006.262712},<br>publisher
+ = {IEEE Computer Society},<br>address = {Los Alamitos, CA, USA},<br>}</div></td><td
+ class="popup-content-right">&nbsp;</td></tr><tr><td 
+class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td 
+class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td></tr></tbody></table></div><div
+ id="RefWorks">
+<table>
+<tbody><tr><td class="popup-top-left">&nbsp;</td><td 
+class="popup-top-center">
+<div style="width: 100%;" id="RefWorksTitle">RefWorks 
+Procite/RefMan/Endnote</div></td><td 
+onmouseout="this.style.cursor='default';" 
+onmouseover="this.style.cursor='pointer';" 
+onclick="javascript:hidePopup('RefWorks');" class="popup-top-close">x</td><td
+ class="popup-top-right">&nbsp;</td></tr><tr><td 
+class="popup-content-left">&nbsp;</td><td colspan="2" 
+class="popup-content-center">
+<div id="refWorksText-content">TY - CONF<br>JO - Multimedia and Expo, 
+IEEE International Conference on<br>TI - A Robust Method for TV Logo 
+Tracking in Video Streams<br>SN - 1-4244-0366-7<br>SP1041<br>EP1044<br>A1
+ - Jinqiao Wang, <br>A1 - Lingyu Duan, <br>A1 - Zhenglong Li, <br>A1 - 
+Jing Liu, <br>A1 - Hanqing Lu, <br>A1 - Jesse Jin, <br>PY - 2006<br>KW -
+ null<br>VL - 0<br>JA - Multimedia and Expo, IEEE International 
+Conference on<br>ER - <br>
+</div></td><td class="popup-content-right">&nbsp;</td></tr><tr><td 
+class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td 
+class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td></tr></tbody></table></div><div
+ id="abs-authors">
+<div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jinqiao%20Wang">Jinqiao
+ Wang</a>, National Lab of Pattern Recognition, Institute of Automation,
+ Chinese Academy of Sciences, Beijing 100080, China; Institute for 
+Infocomm Research, 21 Heng Mui Keng Terrace, Singapore 119613.</div><div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Lingyu%20Duan">Lingyu
+ Duan</a>, Institute for Infocomm Research, 21 Heng Mui Keng Terrace, 
+Singapore 119613; The School of Design, Communication and Information 
+Technology, University of Newcastle, NSW 2308, Australia. lin</div><div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Zhenglong%20Li">Zhenglong
+ Li</a>, National Lab of Pattern Recognition, Institute of Automation, 
+Chinese Academy of Sciences, Beijing 100080, China. zlli@nlpr.ia.ac.cn</div><div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jing%20Liu">Jing
+ Liu</a>, National Lab of Pattern Recognition, Institute of Automation, 
+Chinese Academy of Sciences, Beijing 100080, China. jliu@nlpr.ia.ac.cn</div><div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Hanqing%20Lu">Hanqing
+ Lu</a>, National Lab of Pattern Recognition, Institute of Automation, 
+Chinese Academy of Sciences, Beijing 100080, China. luhq@nlpr.ia.ac.cn</div><div>
+<a rel="nofollow" target="_blank" 
+href="http://www.computer.org/search/results?action=authorsearch&amp;resultsPerPage=50&amp;queryOption1=DC_CREATOR&amp;sortOrder=descending&amp;queryText1=Jesse%20Jin">Jesse
+ Jin</a>, The School of Design, Communication and Information 
+Technology, University of Newcastle, NSW 2308, Australia. 
+Jesse.Jin@newcastle.edu.au</div></div><div id="abs-doi-left">	DOI 
+Bookmark: 	<a target="_blank" 
+href="http://doi.ieeecomputersociety.org/10.1109/ICME.2006.262712">http://doi.ieeecomputersociety.org/10.1109/ICME.2006.262712</a>
+</div><div id="abs-abscontent">
+<div class="abs-tagline"></div><div class="abs-articlesummary">Most 
+broadcast stations rely on TV logos to claim video content ownership or 
+visually distinguish the broadcast from the interrupting commercial 
+block. Detecting and tracking a TV logo is of interest to TV commercial 
+skipping applications and logo-based broadcasting surveillance (abnormal
+ signal is accompanied by logo absence). Pixel-wise difference computing
+ within predetermined logo regions cannot address semi-transparent TV 
+logos well for the blending effects of a logo itself and inconstant 
+background images. Edge-based template matching is weak for 
+semi-transparent ones when incomplete edges appear. In this paper we 
+present a more robust approach to detect and track TV logos in video 
+streams on the basis of multispectral images gradient. Instead of single
+ frame based detection, our approach makes use of the temporal 
+correlation of multiple consecutive frames. Since it is difficult to 
+manually delineate logos of irregular shape, an adaptive threshold is 
+applied to the gradient image in subpixel space to extract the logo 
+mask. TV logo tracking is finally carried out by matching the masked 
+region with a known template. An extensive comparison experiment has 
+shown our proposed algorithm outperforms traditional methods such as 
+frame difference, single frame-based edge matching. Our experimental 
+dataset comes from part of TRECVID2005 news corpus and several Chinese 
+TV channels with challenging TV logos.</div></div><div 
+id="abs-additionalinfo">
+<div class="abs-tagline"></div><div class="abs-index-terms"></div><div 
+class="abs-citation">
+<span class="terms">Citation:</span>
+<div class="abs-citationinfo">Jinqiao Wang, Lingyu Duan, Zhenglong Li, 
+Jing Liu, Hanqing Lu, Jesse Jin,  "A Robust Method for TV Logo Tracking 
+in Video Streams,"  icme, pp.1041-1044, 2006 IEEE International 
+Conference on Multimedia and Expo, 2006</div></div></div></div><div 
+id="abs-separation">
+<div class="abs-tagline"></div></div><div id="review-feedback">
+<a href="http://www.computer.org/portal/web/csdl/peerreview">Peer Review
+ Notice</a> | <a href="http://www.computer.org/portal/web/csdl/feedback">Give
+ Us Feedback</a>
+</div><div id="abs-disclaimer">	 Usage of this product signifies your 
+acceptance of the	<a 
+href="http://www.computer.org/portal/web/csdl/terms">Terms of Use</a>.	</div><script type="text/javascript">/*<![CDATA[*/var addtoMethod=1;/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/var savedIndex=0;function openLinks(v,w,p,i){var r=escape("1139");var j=escape("2006");var u=escape("0");var h=escape("0");var g=escape("2006 IEEE International Conference on Multimedia and Expo");var m=escape("Multimedia and Expo, IEEE International Conference on");var o=escape("ICME");var l=escape("I");var b=escape("p");var c=escape("/plugins/dl/years/1139");var t=escape("/plugins/dl/years/1139?year=2006&vol=0");var d=escape("/plugins/dl/toc/494");var s=escape("/plugins/dl/doi/10.1109/ICME.2006.262712");var k=escape("i");var n=escape("icme");var q=escape("2006");var f="Issue No. "+h+" - "+g;if(b=="m"){var e=new BreadCrumbs("/portal/web/csdl/magazines/"+k)}else{if(b=="t"){var e=new BreadCrumbs("/portal/web/csdl/transactions/"+k)}else{if(b=="l"){var e=new BreadCrumbs("/portal/web/csdl/letters/"+k)}else{var e=new BreadCrumbs("/portal/web/csdl/proceedings/"+k)}}}if(j=="5555"){if(h=="1"){if(n!="cal"){e.add("PrePrints",d,1);e.add("Abstract - "+w,s,2);e.setLastIndex(i-1)}}else{if(h=="2"){e.add("RapidPosts",d,1);e.add("Abstract - "+w,s,2);e.setLastIndex(i-1)}else{}}}else{if(b=="p"){e.add(p,c,1);e.add(q,c+"?year="+j+"&vol="+u,2);e.add(v,d,3);e.add(w,s,4);e.setLastIndex(i-1)}else{e.add(q,c+"?year="+j+"&vol="+u,1);e.add(f,d,2);e.add("Abstract - "+w,s,3);e.setLastIndex(i-1)}}if(b=="m"){var a=location.protocol+"//"+location.host+"/portal/web/csdl/magazines/"+k;setTimeout("window.location.href = '"+a+"'",0)}else{if(b=="t"){var a=location.protocol+"//"+location.host+"/portal/web/csdl/transactions/"+k;setTimeout("window.location.href = '"+a+"'",0)}else{if(b=="l"){var a=location.protocol+"//"+location.host+"/portal/web/csdl/letters/"+k;setTimeout("window.location.href = '"+a+"'",0)}else{var a=location.protocol+"//"+location.host+"/portal/web/csdl/proceedings/"+k;setTimeout("window.location.href = '"+a+"'",0)}}}};/*]]>*/</script></div><!-- Right click menu -->
+<div class="contextMenu" 
+id="_digitallibraryabstract_WAR_plugins_INSTANCE_uxob__pdfMenu" 
+style="display: none;">	<ul>	<li id="open">Open</li><li id="download">Download</li></ul></div></div></div><script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:1,isStatic:"end",namespacedId:"p_p_id\u005f\u0064\u0069\u0067\u0069\u0074\u0061\u006c\u006c\u0069\u0062\u0072\u0061\u0072\u0079\u0061\u0062\u0073\u0074\u0072\u0061\u0063\u0074\u005f\u0057\u0041\u0052\u005f\u0070\u006c\u0075\u0067\u0069\u006e\u0073\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0075\u0078\u006f\u0062\u005f",portletId:"\u0064\u0069\u0067\u0069\u0074\u0061\u006c\u006c\u0069\u0062\u0072\u0061\u0072\u0079\u0061\u0062\u0073\u0074\u0072\u0061\u0063\u0074\u005f\u0057\u0041\u0052\u005f\u0070\u006c\u0075\u0067\u0069\u006e\u0073\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0075\u0078\u006f\u0062"});/*]]>*/</script></div><div
+ id="p_p_id_56_INSTANCE_T3mf_" class="portlet-boundary 
+portlet-boundary_56_  portlet-journal-content">	<a 
+id="p_56_INSTANCE_T3mf"></a>	<div class="portlet-borderless-container" 
+style="">	<div>	<div class="journal-content-article" 
+id="article_44032_1405025_1.0">	<!-- begin ad tag (computer.org/general;300x250,336x280) -->
+<script type="text/javascript">/*<![CDATA[*/ord=window.ord||Math.floor(Math.random()*10000000000000000);document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.computer.org/general;kw=;tile=3;sz=300x250,336x280;ord='+ord+'?"><\/script>');/*]]>*/</script><script type="text/javascript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/general.js"></script><script language="javascript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/ICME.js"></script><script type="text/javascript">document.write('<scr'+'ipt language="javascript" src="http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=,ns-6453934_1278992442,113da22d71836be,Miscellaneous,;;kw=;tile=3;ord1=971957;sz=300x250,336x280;contx=Miscellaneous;btg=;ord=6835897036416361?"></scr'+'ipt>');</script><script language="Javascript">CollectiveMedia.createAndAttachAd("ns-6453934_1278992442","http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=,ns-6453934_1278992442,113da22d71836be,Miscellaneous,;;kw=;tile=3;ord1=971957;sz=300x250,336x280;contx=Miscellaneous;btg=;ord=6835897036416361?","300","250,336",false);</script><script language="javascript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/general_003.js"></script><!-- Template ID = 4439 Template Name = Image Banner - Open in New Window -->
+
+<a 
+href="http://ad.doubleclick.net/click%3Bh%3Dv8/39d6/3/0/%2a/w%3B226528828%3B0-0%3B0%3B27855236%3B4307-300/250%3B37452866/37470743/1%3Bu%3D%2Cns-6453934_1278992442%2C113da22d71836be%2CMiscellaneous%2C%3B%7Eokv%3D%3Bnet%3Dns%3Bu%3D%2Cns-6453934_1278992442%2C113da22d71836be%2CMiscellaneous%2C%3B%3Bkw%3D%3Btile%3D3%3Bord1%3D971957%3Bsz%3D300x250%2C336x280%3Bcontx%3DMiscellaneous%3Bbtg%3D%3B%7Eaopt%3D2/0/a/0%3B%7Esscs%3D%3fhttp://computer.org/webinars/07212010"
+ target="_blank">
+<img 
+src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/mks_webinar1.gif"
+ border="0" height="250" width="300">
+</a>
+<script language="Javascript">CollectiveMedia.addPixel("http://r.nexac.com/e/getdata.xgi?dt=br&pkey=xkeii93kdn349&reppipe=,&edr=off&repequal=_&ru=http%3A%2F%2Fa.collective-media.net%2Fdatapair%3Fnet%3Dna%26pasv%3D0%26id%3D%3Cna_id%3E%26pid%3D%3Cna_mp%3E%26segs%3D%3Cna_da%3E");</script><noscript><a href="http://ad2.netshelter.net/jump/ns.computer.org/general;kw=;tile=3;sz=300x250,336x280;ord=123456789?" target="_blank" ><img src="http://ad2.netshelter.net/ad/ns.computer.org/general;kw=;tile=3;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->	</div></div></div><script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:2,isStatic:"end",namespacedId:"p_p_id\u005f\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0054\u0033\u006d\u0066\u005f",portletId:"\u0035\u0036\u005f\u0049\u004e\u0053\u0054\u0041\u004e\u0043\u0045\u005f\u0054\u0033\u006d\u0066"});/*]]>*/</script></div></div></td></tr><tr><td
+ class="lfr-column thirty" id="column-4" valign="top">	<div 
+class="lfr-portlet-column empty" id="layout-column_column-4"></div></td><td
+ class="lfr-column fiftyfour" id="column-5" valign="top">	<div 
+class="lfr-portlet-column empty" id="layout-column_column-5"></div></td></tr></tbody></table></div><form
+ action="" method="post" name="hrefFm"></form></div><div id="footer">	<div
+ id="copyright">	This site and all contents (unless otherwise noted) are
+	<a 
+href="http://www.computer.org/portal/pages/ieeecs/content/copyright.html">
+                    Copyright</a> © 2010 IEEE.  All rights reserved.	</div><div
+ id="footer-links">	<a 
+href="http://www.computer.org/portal/web/guest/sitemap">Site Map</a> |	<a
+ href="http://www.computer.org/portal/web/guest/privacy">Privacy Policy</a>
+ |	<a 
+href="http://www.computer.org/portal/web/csdl/doi/10.1109/www.ieee.org/web/aboutus/whatis/policies/p9-26.html"
+ target="_blank">Nondiscrimination Policy</a> |	<a 
+href="http://www.computer.org/portal/web/guest/contact">Contact Us</a>	</div></div></div><script src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/urchin.js" type="text/javascript"></script><script type="text/javascript">/*<![CDATA[*/_uacct="UA-381255-5";urchinTracker();/*]]>*/</script><script id="mainLiferayThemeJavaScript" src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/javascript.js" type="text/javascript"></script><script src="A%20Robust%20Method%20for%20TV%20Logo%20Tracking%20in%20Video%20Streams_files/javascript.js" type="text/javascript"></script><script type="text/javascript">/*<![CDATA[*/null;null;null;/*]]>*/</script><div
+ style="display: none; position: absolute; z-index: 500;" 
+id="jqContextMenu"></div><div style="background-color: rgb(0, 0, 0); 
+position: absolute; opacity: 0.2; z-index: 499; display: none;"></div></body></html>

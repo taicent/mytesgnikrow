@@ -1,0 +1,367 @@
+\hypertarget{_vendor_process_8h}{
+\section{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h File Reference}
+\label{_vendor_process_8h}\index{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h@{F:/MDBlue/CQ/NghienCuu/USBDongle/USBLPC/Release/Firmware/VendorProcess.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_vendor_process_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_vendor_process_8h_ac0622da4c10cb51a289339edcd13fce2}{MAX\_\-PACKET}~64
+\item 
+\#define \hyperlink{_vendor_process_8h_acc1bf838f5ab3b32d1e6317e739be601}{MAX\_\-BULK\_\-BUFFER}~8 $\ast$ 1024
+\item 
+\#define \hyperlink{_vendor_process_8h_ab38d3a21da45656bc1c229b1686ddae5}{BULK\_\-EP\_\-IN}~0x82
+\item 
+\#define \hyperlink{_vendor_process_8h_a3d723b63edcb6928cc4ed353a1dfe1f6}{BULK\_\-EP\_\-OUT}~0x02
+\item 
+\#define \hyperlink{_vendor_process_8h_a29283c0ea9ab711ff8ab3b4112fdfc10}{VC\_\-LCD\_\-CLEAR}~0xD1
+\item 
+\#define \hyperlink{_vendor_process_8h_a2300603b28859c55065a83068be98edf}{VC\_\-LCD\_\-SET\_\-TEXT}~0xD2
+\item 
+\#define \hyperlink{_vendor_process_8h_a306292d73a3f9061479fa813202e5b41}{VC\_\-DAC\_\-MUSIC1}~0xD3
+\item 
+\#define \hyperlink{_vendor_process_8h_a385631a1cdf15793eb3aab6aba05af6a}{VC\_\-DAC\_\-MUSIC2}~0xD4
+\item 
+\#define \hyperlink{_vendor_process_8h_abb6d7234f11ee0272657f22e81758f14}{VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA}~0xD5
+\item 
+\#define \hyperlink{_vendor_process_8h_a69131917e2bf78f9891280a18315b62f}{VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA}~0xD6
+\item 
+\#define \hyperlink{_vendor_process_8h_a221c6d6161b502c6f2f7a11db3f15529}{VC\_\-GET\_\-LIGHT\_\-BAR}~0xD7
+\item 
+\#define \hyperlink{_vendor_process_8h_a979d9f6415b2f3f057e988aa9a123b3b}{VC\_\-SET\_\-LIGHT\_\-BAR}~0xD8
+\item 
+\#define \hyperlink{_vendor_process_8h_a3fea0ea64f7e37ec177df2e87d6ee6f1}{VC\_\-DAC\_\-STOP\_\-MUSIC}~0xD9
+\item 
+\#define \hyperlink{_vendor_process_8h_a71164e5b3d95524a36d3cdc118eba8f4}{VC\_\-DAC\_\-SET\_\-VOLUME}~0xDA
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_vendor_process_8h_a53ecc21d0b6f1b63b4f944963f76d33f}{ReplyStatusLed} (void)
+\item 
+void \hyperlink{_vendor_process_8h_a13dbdaf4cf10c069d02afbefa1887b16}{SetStatusLed} (void)
+\item 
+void \hyperlink{_vendor_process_8h_a5766b84280d44ddbcb14eb100073c787}{Bulk2Out} (void)
+\item 
+void \hyperlink{_vendor_process_8h_ace51331de08ae3277df50967a88a2074}{Bulk2In} (void)
+\item 
+\hyperlink{type_8h_ac3247c51e4e3de674affb32998e133e2}{BOOL} \hyperlink{_vendor_process_8h_a37fc332c09d1bf492be4af4570ec7c56}{VendorSetupStage} (\hyperlink{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{USB\_\-SETUP\_\-PACKET} $\ast$p)
+\item 
+void \hyperlink{_vendor_process_8h_a64197d1e830bdafa1ea2ca821189e45b}{VendorDataStage} (\hyperlink{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{USB\_\-SETUP\_\-PACKET} $\ast$p)
+\item 
+void \hyperlink{_vendor_process_8h_aa2eaea21b607f166bac9256b1214ae6f}{VendorStatusInStage} (\hyperlink{usb_8h_a09baf2b5283af3e8a60df63264e1c351}{USB\_\-SETUP\_\-PACKET} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_vendor_process_8h_ab38d3a21da45656bc1c229b1686ddae5}{
+\index{VendorProcess.h@{VendorProcess.h}!BULK\_\-EP\_\-IN@{BULK\_\-EP\_\-IN}}
+\index{BULK\_\-EP\_\-IN@{BULK\_\-EP\_\-IN}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{BULK\_\-EP\_\-IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define BULK\_\-EP\_\-IN~0x82}}
+\label{_vendor_process_8h_ab38d3a21da45656bc1c229b1686ddae5}
+
+
+Definition at line 9 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a3d723b63edcb6928cc4ed353a1dfe1f6}{
+\index{VendorProcess.h@{VendorProcess.h}!BULK\_\-EP\_\-OUT@{BULK\_\-EP\_\-OUT}}
+\index{BULK\_\-EP\_\-OUT@{BULK\_\-EP\_\-OUT}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{BULK\_\-EP\_\-OUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define BULK\_\-EP\_\-OUT~0x02}}
+\label{_vendor_process_8h_a3d723b63edcb6928cc4ed353a1dfe1f6}
+
+
+Definition at line 10 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_acc1bf838f5ab3b32d1e6317e739be601}{
+\index{VendorProcess.h@{VendorProcess.h}!MAX\_\-BULK\_\-BUFFER@{MAX\_\-BULK\_\-BUFFER}}
+\index{MAX\_\-BULK\_\-BUFFER@{MAX\_\-BULK\_\-BUFFER}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{MAX\_\-BULK\_\-BUFFER}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-BULK\_\-BUFFER~8 $\ast$ 1024}}
+\label{_vendor_process_8h_acc1bf838f5ab3b32d1e6317e739be601}
+
+
+Definition at line 6 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_ac0622da4c10cb51a289339edcd13fce2}{
+\index{VendorProcess.h@{VendorProcess.h}!MAX\_\-PACKET@{MAX\_\-PACKET}}
+\index{MAX\_\-PACKET@{MAX\_\-PACKET}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{MAX\_\-PACKET}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-PACKET~64}}
+\label{_vendor_process_8h_ac0622da4c10cb51a289339edcd13fce2}
+
+
+Definition at line 5 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a306292d73a3f9061479fa813202e5b41}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-DAC\_\-MUSIC1@{VC\_\-DAC\_\-MUSIC1}}
+\index{VC\_\-DAC\_\-MUSIC1@{VC\_\-DAC\_\-MUSIC1}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-DAC\_\-MUSIC1}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-DAC\_\-MUSIC1~0xD3}}
+\label{_vendor_process_8h_a306292d73a3f9061479fa813202e5b41}
+
+
+Definition at line 15 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a385631a1cdf15793eb3aab6aba05af6a}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-DAC\_\-MUSIC2@{VC\_\-DAC\_\-MUSIC2}}
+\index{VC\_\-DAC\_\-MUSIC2@{VC\_\-DAC\_\-MUSIC2}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-DAC\_\-MUSIC2}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-DAC\_\-MUSIC2~0xD4}}
+\label{_vendor_process_8h_a385631a1cdf15793eb3aab6aba05af6a}
+
+
+Definition at line 16 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_abb6d7234f11ee0272657f22e81758f14}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA@{VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA}}
+\index{VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA@{VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-DAC\_\-MUSIC\_\-BY\_\-DATA~0xD5}}
+\label{_vendor_process_8h_abb6d7234f11ee0272657f22e81758f14}
+
+
+Definition at line 17 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a71164e5b3d95524a36d3cdc118eba8f4}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-DAC\_\-SET\_\-VOLUME@{VC\_\-DAC\_\-SET\_\-VOLUME}}
+\index{VC\_\-DAC\_\-SET\_\-VOLUME@{VC\_\-DAC\_\-SET\_\-VOLUME}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-DAC\_\-SET\_\-VOLUME}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-DAC\_\-SET\_\-VOLUME~0xDA}}
+\label{_vendor_process_8h_a71164e5b3d95524a36d3cdc118eba8f4}
+
+
+Definition at line 25 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a3fea0ea64f7e37ec177df2e87d6ee6f1}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-DAC\_\-STOP\_\-MUSIC@{VC\_\-DAC\_\-STOP\_\-MUSIC}}
+\index{VC\_\-DAC\_\-STOP\_\-MUSIC@{VC\_\-DAC\_\-STOP\_\-MUSIC}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-DAC\_\-STOP\_\-MUSIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-DAC\_\-STOP\_\-MUSIC~0xD9}}
+\label{_vendor_process_8h_a3fea0ea64f7e37ec177df2e87d6ee6f1}
+
+
+Definition at line 24 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a221c6d6161b502c6f2f7a11db3f15529}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-GET\_\-LIGHT\_\-BAR@{VC\_\-GET\_\-LIGHT\_\-BAR}}
+\index{VC\_\-GET\_\-LIGHT\_\-BAR@{VC\_\-GET\_\-LIGHT\_\-BAR}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-GET\_\-LIGHT\_\-BAR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-GET\_\-LIGHT\_\-BAR~0xD7}}
+\label{_vendor_process_8h_a221c6d6161b502c6f2f7a11db3f15529}
+
+
+Definition at line 21 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a29283c0ea9ab711ff8ab3b4112fdfc10}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-LCD\_\-CLEAR@{VC\_\-LCD\_\-CLEAR}}
+\index{VC\_\-LCD\_\-CLEAR@{VC\_\-LCD\_\-CLEAR}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-LCD\_\-CLEAR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-LCD\_\-CLEAR~0xD1}}
+\label{_vendor_process_8h_a29283c0ea9ab711ff8ab3b4112fdfc10}
+
+
+Definition at line 12 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a2300603b28859c55065a83068be98edf}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-LCD\_\-SET\_\-TEXT@{VC\_\-LCD\_\-SET\_\-TEXT}}
+\index{VC\_\-LCD\_\-SET\_\-TEXT@{VC\_\-LCD\_\-SET\_\-TEXT}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-LCD\_\-SET\_\-TEXT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-LCD\_\-SET\_\-TEXT~0xD2}}
+\label{_vendor_process_8h_a2300603b28859c55065a83068be98edf}
+
+
+Definition at line 13 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a69131917e2bf78f9891280a18315b62f}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA@{VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA}}
+\index{VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA@{VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-LCD\_\-SET\_\-TEXT\_\-NO\_\-DATA~0xD6}}
+\label{_vendor_process_8h_a69131917e2bf78f9891280a18315b62f}
+
+
+Definition at line 19 of file VendorProcess.h.
+
+\hypertarget{_vendor_process_8h_a979d9f6415b2f3f057e988aa9a123b3b}{
+\index{VendorProcess.h@{VendorProcess.h}!VC\_\-SET\_\-LIGHT\_\-BAR@{VC\_\-SET\_\-LIGHT\_\-BAR}}
+\index{VC\_\-SET\_\-LIGHT\_\-BAR@{VC\_\-SET\_\-LIGHT\_\-BAR}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VC\_\-SET\_\-LIGHT\_\-BAR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VC\_\-SET\_\-LIGHT\_\-BAR~0xD8}}
+\label{_vendor_process_8h_a979d9f6415b2f3f057e988aa9a123b3b}
+
+
+Definition at line 22 of file VendorProcess.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_vendor_process_8h_ace51331de08ae3277df50967a88a2074}{
+\index{VendorProcess.h@{VendorProcess.h}!Bulk2In@{Bulk2In}}
+\index{Bulk2In@{Bulk2In}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{Bulk2In}]{\setlength{\rightskip}{0pt plus 5cm}void Bulk2In (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_ace51331de08ae3277df50967a88a2074}
+
+
+Definition at line 51 of file VendorProcess.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{_vendor_process_8h_ace51331de08ae3277df50967a88a2074_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{_vendor_process_8h_ace51331de08ae3277df50967a88a2074_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_vendor_process_8h_a5766b84280d44ddbcb14eb100073c787}{
+\index{VendorProcess.h@{VendorProcess.h}!Bulk2Out@{Bulk2Out}}
+\index{Bulk2Out@{Bulk2Out}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{Bulk2Out}]{\setlength{\rightskip}{0pt plus 5cm}void Bulk2Out (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_a5766b84280d44ddbcb14eb100073c787}
+
+
+Definition at line 41 of file VendorProcess.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_vendor_process_8h_a5766b84280d44ddbcb14eb100073c787_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_vendor_process_8h_a5766b84280d44ddbcb14eb100073c787_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_vendor_process_8h_a53ecc21d0b6f1b63b4f944963f76d33f}{
+\index{VendorProcess.h@{VendorProcess.h}!ReplyStatusLed@{ReplyStatusLed}}
+\index{ReplyStatusLed@{ReplyStatusLed}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{ReplyStatusLed}]{\setlength{\rightskip}{0pt plus 5cm}void ReplyStatusLed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_a53ecc21d0b6f1b63b4f944963f76d33f}
+\hypertarget{_vendor_process_8h_a13dbdaf4cf10c069d02afbefa1887b16}{
+\index{VendorProcess.h@{VendorProcess.h}!SetStatusLed@{SetStatusLed}}
+\index{SetStatusLed@{SetStatusLed}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{SetStatusLed}]{\setlength{\rightskip}{0pt plus 5cm}void SetStatusLed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_a13dbdaf4cf10c069d02afbefa1887b16}
+\hypertarget{_vendor_process_8h_a64197d1e830bdafa1ea2ca821189e45b}{
+\index{VendorProcess.h@{VendorProcess.h}!VendorDataStage@{VendorDataStage}}
+\index{VendorDataStage@{VendorDataStage}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VendorDataStage}]{\setlength{\rightskip}{0pt plus 5cm}void VendorDataStage (
+\begin{DoxyParamCaption}
+\item[{{\bf USB\_\-SETUP\_\-PACKET} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_a64197d1e830bdafa1ea2ca821189e45b}
+
+
+Definition at line 143 of file VendorProcess.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_vendor_process_8h_a64197d1e830bdafa1ea2ca821189e45b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_vendor_process_8h_a64197d1e830bdafa1ea2ca821189e45b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_vendor_process_8h_a37fc332c09d1bf492be4af4570ec7c56}{
+\index{VendorProcess.h@{VendorProcess.h}!VendorSetupStage@{VendorSetupStage}}
+\index{VendorSetupStage@{VendorSetupStage}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VendorSetupStage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} VendorSetupStage (
+\begin{DoxyParamCaption}
+\item[{{\bf USB\_\-SETUP\_\-PACKET} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_a37fc332c09d1bf492be4af4570ec7c56}
+
+
+Definition at line 80 of file VendorProcess.c.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_vendor_process_8h_a37fc332c09d1bf492be4af4570ec7c56_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_vendor_process_8h_a37fc332c09d1bf492be4af4570ec7c56_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_vendor_process_8h_aa2eaea21b607f166bac9256b1214ae6f}{
+\index{VendorProcess.h@{VendorProcess.h}!VendorStatusInStage@{VendorStatusInStage}}
+\index{VendorStatusInStage@{VendorStatusInStage}!VendorProcess.h@{VendorProcess.h}}
+\subsubsection[{VendorStatusInStage}]{\setlength{\rightskip}{0pt plus 5cm}void VendorStatusInStage (
+\begin{DoxyParamCaption}
+\item[{{\bf USB\_\-SETUP\_\-PACKET} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)}}
+\label{_vendor_process_8h_aa2eaea21b607f166bac9256b1214ae6f}

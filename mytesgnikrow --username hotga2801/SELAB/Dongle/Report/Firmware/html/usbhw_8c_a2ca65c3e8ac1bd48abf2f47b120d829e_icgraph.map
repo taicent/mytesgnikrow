@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_vendor_process_8h.html#a5766b84280d44ddbcb14eb100073c787" title="Bulk2Out" alt="" coords="195,5,269,35"/>
+<area shape="rect" id="node7" href="$usbcore_8h.html#a147ac40813dde8a168086e312a8aeff7" title="USB_DataOutStage" alt="" coords="163,59,301,88"/>
+<area shape="rect" id="node11" href="$usbcore_8c.html#ac0076a5289eba0843bf484db9a6b44c3" title="USB_SetupStage" alt="" coords="171,112,293,141"/>
+<area shape="rect" id="node14" href="$usbcore_8h.html#a860cd794341aff47dd390c4cadcec3e7" title="USB_StatusOutStage" alt="" coords="157,165,307,195"/>
+<area shape="rect" id="node5" href="$usbuser_8h.html#a4b4aa50a6df5e5d071c5237fe4e36887" title="USB_EndPoint2" alt="" coords="356,5,471,35"/>
+<area shape="rect" id="node9" href="$usbuser_8h.html#a9c3a7f8c05ae502486199cde17caceff" title="USB_EndPoint0" alt="" coords="356,112,471,141"/>
+</map>

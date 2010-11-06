@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_serial_logger_8h.html#aa273603471b41047bed597fa602d84ff" title="PLog" alt="" coords="151,31,201,60"/>
+<area shape="rect" id="node14" href="$_serial_logger_8h.html#a85e13bfe0137723371b75f2b88a1f285" title="PLogN" alt="" coords="145,84,207,113"/>
+<area shape="rect" id="node17" href="$_serial_logger_8h.html#a09f479908cbf75429509b76cbd9c3142" title="PLogNum" alt="" coords="137,137,215,167"/>
+<area shape="rect" id="node5" href="$memory_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="471,5,521,35"/>
+<area shape="rect" id="node7" href="$usbhw_8h.html#a35fe971cbcbfe8813199e869284cb862" title="USB_Init" alt="" coords="291,31,363,60"/>
+<area shape="rect" id="node10" href="$_vendor_process_8h.html#a64197d1e830bdafa1ea2ca821189e45b" title="VendorDataStage" alt="" coords="265,84,388,113"/>
+<area shape="rect" id="node12" href="$usbuser_8h.html#a9c3a7f8c05ae502486199cde17caceff" title="USB_EndPoint0" alt="" coords="439,84,553,113"/>
+</map>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head>
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+
+
+<title>Defining ICA by Mutual Information</title>
+<meta name="description" content="Defining ICA by Mutual Information">
+<meta name="keywords" content="IJCNN99_tutorial3">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="STYLESHEET" href="ICA_files/IJCNN99_tutorial3.css">
+<link rel="previous" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html">
+<link rel="up" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node16.html">
+<link rel="next" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node19.html">
+</head><body>
+<!--Navigation Panel-->
+<a name="tex2html252" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node19.html">
+<img alt="next" src="ICA_files/next_motif.gif" align="BOTTOM" border="0" height="24" width="37"></a> 
+<a name="tex2html250" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node16.html">
+<img alt="up" src="ICA_files/up_motif.gif" align="BOTTOM" border="0" height="24" width="26"></a> 
+<a name="tex2html246" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html">
+<img alt="previous" src="ICA_files/previous_motif.gif" align="BOTTOM" border="0" height="24" width="63"></a>   
+<br>
+<b> Next:</b> <a name="tex2html253" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node19.html">Maximum Likelihood Estimation</a>
+<b> Up:</b> <a name="tex2html251" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node16.html">Minimization of Mutual Information</a>
+<b> Previous:</b> <a name="tex2html247" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html">Mutual Information</a>
+<br>
+<br>
+<!--End of Navigation Panel-->
+
+<h3><a name="SECTION00043200000000000000">&nbsp;</a> <a name="def.subsec">&nbsp;</a>
+<br>
+Defining ICA by Mutual Information
+</h3>
+
+<p>
+Since mutual information is the natural information-theoretic
+measure of the independence of random variables, we could use it
+as the criterion for finding the ICA transform.
+In this approach that is an alternative to the model estimation
+approach,  we define the ICA
+of a random vector <img src="ICA_files/img8.gif" alt="${\bf x}$" align="BOTTOM" border="0" height="13" width="14">
+as an invertible transformation as in (<a href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node3.html#sWx">6</a>),
+where the matrix <img src="ICA_files/img15.gif" alt="${\bf W}$" align="BOTTOM" border="0" height="15" width="23">
+is determined so that the 
+mutual information of the transformed components <i>s</i><sub><i>i</i></sub> is minimized.
+
+</p><p>
+It is now  
+obvious from (<a href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html#mi2">29</a>)  that finding an invertible transformation <img src="ICA_files/img15.gif" alt="${\bf W}$" align="BOTTOM" border="0" height="15" width="23">
+that
+minimizes the mutual information is roughly equivalent to <em>finding
+directions in which the negentropy is maximized</em>. More precisely, it
+is roughly equivalent to finding 1-D subspaces such that the
+projections in those subspaces have maximum negentropy. 
+Rigorously, speaking, (<a href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html#mi2">29</a>) shows that ICA estimation by
+minimization of mutual information is equivalent to maximizing the sum
+of nongaussianities of the estimates, when
+the <em>estimates are constrained to be uncorrelated</em>.
+The constraint of uncorrelatedness is in fact not necessary, but
+simplifies the computations considerably, as one can then use the simpler
+form in (<a href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html#mi2">29</a>) instead of the more complicated form in (<a href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html#mitransf">28</a>).
+
+</p><p>
+Thus, we see that the formulation of ICA as minimization of mutual
+information gives another rigorous justification of our more heuristically
+introduced idea of finding maximally nongaussian directions.
+
+</p><p>
+</p><hr>
+<!--Navigation Panel-->
+<a name="tex2html252" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node19.html">
+<img alt="next" src="ICA_files/next_motif.gif" align="BOTTOM" border="0" height="24" width="37"></a> 
+<a name="tex2html250" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node16.html">
+<img alt="up" src="ICA_files/up_motif.gif" align="BOTTOM" border="0" height="24" width="26"></a> 
+<a name="tex2html246" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html">
+<img alt="previous" src="ICA_files/previous_motif.gif" align="BOTTOM" border="0" height="24" width="63"></a>   
+<br>
+<b> Next:</b> <a name="tex2html253" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node19.html">Maximum Likelihood Estimation</a>
+<b> Up:</b> <a name="tex2html251" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node16.html">Minimization of Mutual Information</a>
+<b> Previous:</b> <a name="tex2html247" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/node17.html">Mutual Information</a>
+<!--End of Navigation Panel-->
+<address>
+<i>Aapo Hyvarinen</i>
+<br><i>2000-04-19</i>
+</address>
+</body></html>

@@ -1,0 +1,186 @@
+#tw_superfooter_936 {
+	clear:both;
+	margin:10px 0 0 0;
+	font-family:arial, helvetica, sans-serif;
+	width: 936px;
+}
+
+#tw_superfooter_936 a,
+#tw_superfooter_936 a:active,
+#tw_superfooter_936 a:visited {
+	font-weight:normal;
+	font-family:arial, helvetica, sans-serif;
+	color:#003bb0;
+	text-decoration:none;
+	font-size: 11px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#tw_superfooter_936 .tw_superfooter_become_member_btn span {
+	display: none;
+}
+
+#tw_superfooter_936 .tw_superfooter_become_member_btn {
+	display: block;
+	width: 126px;
+	height: 20px;
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/become_member_btn.gif) no-repeat 0 0;
+}
+
+#tw_superfooter_936 .tw_superfooter_become_member_btn:hover {
+	background-position: 0 -20px;
+}
+
+#tw_superfooter_936 #tw_superfooter_tagline h1 {
+	color: #6d6e71;
+	padding: 40px 0px 0px 0px;
+	font: 22px "times new roman",arial, helvetica, sans-serif;
+	font-style: italic;
+}
+
+
+#tw_superfooter_936 a:hover {
+	text-decoration:underline;
+}
+
+
+#tw_superfooter_936 img {
+	border-style: none;
+}
+
+#tw_superfooter_936 p {
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_header {
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/footer_top_bg_936.gif) no-repeat;
+	text-decoration:none;
+	height: 119px;
+}
+
+#tw_superfooter_936 #tw_superfooter_header #tw_superfooter_left_header_logo {
+	margin: 10px 0px 0px 20px;
+	float: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_top #tw_superfooter_bottom_bg {
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/footer_bottom_bg_936.gif) no-repeat 0% 100%;
+	padding: 0px 0px 21px 0px;
+}
+
+#tw_superfooter_936 #tw_superfooter_mid {
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/footer_mid2_bg_936.gif) repeat-y;
+	clear: both;
+	width: 936px;
+}
+
+#tw_superfooter_936 #tw_superfooter_mid #tw_superfooter_top_nav {
+	font: 12px arial,helvetica, sans-serif;
+}
+
+#tw_superfooter_936 #tw_superfooter_links {
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/footer_mid_bg_936.gif) no-repeat;
+	padding-left: 15px;
+	margin: 0px 0px 0px 0px;
+	text-align:left;
+	font-family:arial, helvetica, sans-serif;
+	text-decoration:none;
+	width: 936px;
+}
+
+#tw_superfooter_936 p {
+	font-family:arial, helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration:none;
+	color:#003bb0;
+}
+
+#tw_superfooter_936 #tw_superfooter_links .tw_superfooter_links_column {
+	padding: 0px 20px 0px 5px;
+	margin: 0px;
+	float: left;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_links h2, #tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw h2{
+	font: 12px arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #b00f1f;
+	padding: 0px;
+	margin: 10px 0px 5px 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_links h4, #tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw h4{
+	font: 12px arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #b00f1f;
+	padding: 0px;
+	margin: 10px 0px 5px 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_links ul, #tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_links ul li {
+        padding: 0px;
+        margin: 0px;
+}
+
+#tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw h2 {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw h4 {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#tw_superfooter_936 #tw_superfooter_bottom #tw_superfooter_tw ul li {
+	margin: 0px;
+	padding: 5px 10px 5px 5px;
+	float: left;
+}
+#tw_superfooter_936 #tw_superfooter_tw {
+	margin-left: 15px;
+	padding-top: 10px;
+}
+#tw_superfooter_936 #tw_superfooter_bottom li.newline {
+	clear: both;
+}
+
+#tw_superfooter_936 #tw_superfooter_bottom {
+	margin-top: 10px;
+	background: url(http://i.cmpnet.com/infoweek/footernav/0410/subfooter_bg_936.gif) no-repeat;
+	height: 87px;
+}
+#tw_superfooter_936 #tw_superfooter_tos {
+	text-align: center;
+	width: 936px;
+	margin: 25px 0px 0px 0px;
+	padding: 0px 0px 25px 0px;
+}
+#tw_superfooter_936 #tw_superfooter_tos ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+#tw_superfooter_936 #tw_superfooter_tos ul li {
+	display: inline;
+	margin-left: 5px;
+	color: #003bb0;
+	padding: 0px;
+}
