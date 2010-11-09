@@ -1,0 +1,28 @@
+*** Creating Trace Output File '.\Obj\Memory.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\lpc2300.o"'
+### List of Objects: adding '".\obj\usbcore.o"'
+### List of Objects: adding '".\obj\usbdesc.o"'
+### List of Objects: adding '".\obj\usbhw.o"'
+### List of Objects: adding '".\obj\usbuser.o"'
+### List of Objects: adding '".\obj\memory.o"'
+### List of Objects: adding '".\obj\lcd_4bit.o"'
+### List of Objects: adding '".\obj\seriallogger.o"'
+### List of Objects: adding '".\obj\vendorprocess.o"'
+### List of Objects: adding '".\obj\nhac.o"'
+### ADS-LD Command completed:
+".\obj\lpc2300.o" ".\obj\usbcore.o" ".\obj\usbdesc.o" ".\obj\usbhw.o" ".\obj\usbuser.o" ".\obj\memory.o" ".\obj\lcd_4bit.o" ".\obj\seriallogger.o" ".\obj\vendorprocess.o" ".\obj\nhac.o" --library_type=microlib --device DARMP --strict --scatter ".\Obj\Memory.sct" 
+--entry 0x00000000 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Memory.map" -o ".\Obj\Memory.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Memory.axf'
+### ADS-LD Command File: '.\Obj\Memory.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Memory.lnp', Handle=0x000002B0
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Memory.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

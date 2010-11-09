@@ -1,0 +1,123 @@
+; Keil LPC2300 Windows 2000/XP (32 bit) Board INF file
+; Copyright (c) SELab Embedded System, Inc. All rights reserved.
+
+; -------------------------------
+; Version information
+; -------------------------------
+; Note: {BF433C13-0D7D-4ef8-B5A5-D5CCC7F3C416} is a ClassGUID of LPC2300 Leds Controller Drivers
+
+[Version]
+Signature	= "$Windows NT$" 
+Class		= LPCBoard
+ClassGUID	= {BF433C13-0D7D-4ef8-B5A5-D5CCC7F3C416}
+Provider	= %SELab% 
+CatalogFile	= LedsCtrl.cat
+DriverVer	= 05/15/2009, 1.0.0.1505
+
+; -------------------------------
+; Standard INF sections
+; -------------------------------
+
+; Top level section for device installation. contains the list of
+; devices for which this INF file is meant
+[Manufacturer]                          
+%SELab%	= DeviceList
+
+; Identify the source disks of the installation package
+[SourceDisksNames]
+1 = %INST_DISK_NAME%
+
+; Identify the files that are included in the installation package
+[SourceDisksFiles]                               
+LedsCtrl.sys = 1,,
+WdfCoinstaller01009.dll = 1,,
+
+; Specifiy the destination folder for the different CopyFiles sections.
+; all file actions that do not have a key in the DecstinationDirs section
+; will be done in to DefaultDestDir
+; WDM and WDF drivers have to go into %windir%\system32\drivers
+; %windir% has number 10. %windir%\system32 has number 11
+[DestinationDirs]
+DefaultDestDir = 10,System32\drivers         
+ClassInstall32_CopyFiles = 11
+CoInstaller_CopyFiles = 11
+
+; Specify the list of devices that are
+; supported by our driver.
+;
+; LPC2300 Device Description from Firmware:
+; 	- Vendor ID: 0xC251
+;	- Product ID: 0x1703
+
+[DeviceList]
+%LPC2300_BOARD% = LPC2300_Device,USB\VID_C251&PID_1703
+%WDF_BASIC_DRIVER% = LPC2300_Device,Root\WdfBasic
+; -------------------------------
+; Class installation
+; -------------------------------
+[ClassInstall32]
+AddReg = ClassInstall32_AddReg
+CopyFiles = ClassInstall32_CopyFiles
+
+; TODO: Specific a new Icon for Drivers at HKR,,Icon,,101
+[ClassInstall32_AddReg]
+HKR,,,,"LPC2300 Drivers"
+HKR,,Icon,,101
+
+[ClassInstall32_CopyFiles]	
+
+; -------------------------------
+; Device installation
+; -------------------------------
+
+; Specify that this is the installation
+; for nt based systems.
+[LPC2300_Device.ntx86]
+DriverVer = 05/15/2009,1.0.0.0
+CopyFiles = DriverCopyFiles
+
+[DriverCopyFiles]
+LedsCtrl.sys
+
+; Tell the PNP manager which file contains the entry point, and
+; how it has to start.
+[LPC2300_Device.ntx86.Services]
+AddService = LedsCtrl,2,LedsCtrl_Service_Inst
+
+[LedsCtrl_Service_Inst]
+ServiceType = 1                           ; Kernel mode driver
+StartType = 3                             ; Start on demand
+ErrorControl = 1                          ; Normal error handling.
+ServiceBinary = %10%\System32\Drivers\LedsCtrl.sys
+
+[LPC2300_Device.ntx86.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKR,,BoardInfo,,"LPC2300 Registry key"
+
+; -------------------------------
+; WDF Coinstaller installation
+; -------------------------------
+[LPC2300_Device.ntx86.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+WdfCoinstaller01009.dll
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoinstaller01009.dll,WdfCoInstaller"
+
+[LPC2300_Device.ntx86.Wdf]
+KmdfService = LedsCtrl, LedsCtrl_wdfsect
+
+[LedsCtrl_wdfsect]
+KmdfLibraryVersion = 1.9
+
+[Strings]
+SELab = "SELab Embedded System, Inc."
+INSTDISK = "Installation Disc"
+LPC2300_BOARD = "LPC2300 Leds Controller Driver"
+WDF_BASIC_DRIVER = "WDF Basic Driver Framworks"
+INST_DISK_NAME = "LPC2300 Leds Controller driver installation disk"

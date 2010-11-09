@@ -1,0 +1,219 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LedsCtrlApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LedsCtrlApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LEDSCTRLAPP_DIALOG DIALOGEX 0, 0, 367, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LedsCtrl Application"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close Device",IDC_BUTTON2,68,34,50,14,WS_DISABLED
+    GROUPBOX        "Device",IDC_STATIC,7,7,353,46
+    COMBOBOX        IDC_COMBO_DEVICE,15,18,339,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Leds Array",IDC_STATIC,7,57,353,28
+    CONTROL         "Led 1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,69,33,10
+    CONTROL         "Led 2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,69,33,10
+    CONTROL         "Led 3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,69,33,10
+    CONTROL         "Led 4",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,164,69,33,10
+    CONTROL         "Led 5",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,201,69,33,10
+    CONTROL         "Led 6",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,69,33,10
+    CONTROL         "Led 0",IDC_CHECK0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,69,33,10
+    CONTROL         "Led 7",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,274,69,33,10
+    PUSHBUTTON      "Set",IDC_BUTTON_SET,307,66,22,14
+    PUSHBUTTON      "Get",IDC_BUTTON_GET,333,66,22,14
+    GROUPBOX        "Log",IDC_STATIC,7,217,353,78
+    LISTBOX         IDC_LIST_LOG,14,228,341,44,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "View Device Information",IDC_BUTTON_VIEW_USBINFO,257,34,98,14,WS_DISABLED
+    PUSHBUTTON      "Clear Log",IDC_BUTTON5,304,276,50,14
+    GROUPBOX        "LCD",IDC_STATIC,7,90,353,31
+    EDITTEXT        IDC_EDIT_LCD_TEXT,15,101,206,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_CLEAR_LCD,226,101,63,14
+    PUSHBUTTON      "Set Text",IDC_SET_LCD_TEXT,292,101,63,14
+    GROUPBOX        "DAC Music",IDC_STATIC,7,126,353,49
+    PUSHBUTTON      "Play Music 1",IDC_BUTTON_MUSIC1,199,136,53,14
+    PUSHBUTTON      "Play Music 2",IDC_BUTTON_MUSIC2,255,136,54,14
+    PUSHBUTTON      "Play Custom",IDC_BUTTON_MUSIC_BY_DATA,255,154,54,14
+    EDITTEXT        IDC_EDIT_MUSIC_DATA_FILE,16,155,178,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON_BROWSE,199,154,53,14
+    PUSHBUTTON      "Open Device",IDC_BUTTON1,14,34,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP_MUSIC1,312,136,42,32
+    CONTROL         "",IDC_SLIDER_VOLUME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,58,135,119,15
+    LTEXT           "DAC Volume",IDC_STATIC,17,139,40,8
+    CTEXT           "Static",IDC_STATIC_CUR_VOLUME,178,138,15,8,SS_SUNKEN
+    EDITTEXT        IDC_MESSAGE,15,188,204,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "AES",IDC_BTNAES,233,188,50,14
+END
+
+IDD_DIALOG_USBINFO DIALOGEX 0, 0, 298, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "USB Infomation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,124,241,50,14
+    EDITTEXT        IDC_EDIT_INFO,7,7,284,229,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "SELab Embedded System for LPC2300 Development Board"
+            VALUE "CompanyName", "SELab Embedded System, Inc."
+            VALUE "FileDescription", "Leds Controller Application"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LedsCtrlApp.exe"
+            VALUE "LegalCopyright", "(C) SELab Embedded System"
+            VALUE "OriginalFilename", "LedsCtrlApp.exe"
+            VALUE "PrivateBuild", "19.5.2009"
+            VALUE "ProductName", "SELab Embedded System for LPC2300 Development Board"
+            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "SpecialBuild", "19.5.2009"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LEDSCTRLAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_DIALOG_USBINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\LedsCtrlApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

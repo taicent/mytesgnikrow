@@ -1,0 +1,125 @@
+BUILD: Examining c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final directory for files to compile.
+skipping post pass 0 command
+Compiling c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final *************
+'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR=src\kmdf\osrusbfx2\sys\final'
+BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+ rc -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""osrusbfx2.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1   /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /DDBG=1 /D__BUILDMACHINE__=WinDDK /DFPO=0   /D_DLL=1 /DNDEBUG  -DEVENT_TRACING /DDEPRECATE_DDK_FUNCTIONS=1 /DMSC_NOOPT /DNTDDI_VERSION=0x05010200 /DRUN_WPP   /I..\inc /Ic:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386 /IC:\WinDDK\6001.18002\inc\api /IC:\WinDDK\6001.18002\inc\api /IC:\WinDDK\6001.18002\inc\ddk /IC:\WinDDK\6001.18002\inc\ddk /IC:\WinDDK\6001.18002\inc\wdf\kmdf\1.7 /IC:\WinDDK\6001.18002\inc\crt .\osrusbfx2.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+ cl.exe @c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\cl.rsp
+Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 14.00.50727.278 for 80x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+cl /Fo"c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386/"
+ /FC
+ /Ii386
+ /I.
+ /I..\inc
+ /Ic:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386
+ /IC:\WinDDK\6001.18002\inc\api
+ /IC:\WinDDK\6001.18002\inc\api
+ /IC:\WinDDK\6001.18002\inc\ddk
+ /IC:\WinDDK\6001.18002\inc\ddk
+ /IC:\WinDDK\6001.18002\inc\wdf\kmdf\1.7
+ /IC:\WinDDK\6001.18002\inc\crt
+ /D_X86_=1
+ /Di386=1
+ /DSTD_CALL
+ /DCONDITION_HANDLING=1
+ /DNT_INST=0
+ /DWIN32=100
+ /D_NT1X_=100
+ /DWINNT=1
+ /D_WIN32_WINNT=0x0501
+ /DWINVER=0x0501
+ /D_WIN32_IE=0x0603
+ /DWIN32_LEAN_AND_MEAN=1
+ /DDEVL=1
+ /DDBG=1
+ /D__BUILDMACHINE__=WinDDK
+ /DFPO=0
+ /D_DLL=1
+ /DNDEBUG
+ -DEVENT_TRACING
+ /DDEPRECATE_DDK_FUNCTIONS=1
+ /DMSC_NOOPT
+ /DNTDDI_VERSION=0x05010200
+ /DRUN_WPP
+ /c
+ /Zc:wchar_t-
+ /Zl
+ /Zp8
+ /Gy
+ /Gm-
+ -cbstring
+ /W3
+ /Gz
+ /hotpatch
+ /EHs-c-
+ /GR-
+ /GF
+ /GS
+ /Zi
+ /Od
+ /Oi
+ /Oy-
+ /Zi
+ /Fdc:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\
+ /DKMDF_MAJOR_VERSION=01
+ /DKMDF_MINOR_VERSION=007
+ /FIC:\WinDDK\6001.18002\inc\api\warning.h
+ .\driver.c .\device.c .\ioctl.c .\bulkrwr.c .\interrupt.c 
+driver.c
+device.c
+ioctl.c
+bulkrwr.c
+interrupt.c
+Generating Code...
+ copy .\osrusbfx2.inx c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.inf
+ 1 file(s) copied.
+ stampinf -f c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.inf -a x86 -k 1.7
+Using version information from C:\WinDDK\6001.18002\inc\api\ntverp.h
+Stamping c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.inf [Version] section with DriverVer=05/19/2009,6.0.6001.18000
+Linking for c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final *************
+'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR=src\kmdf\osrusbfx2\sys\final'
+BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+ link.exe /out:c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.sys /machine:ix86 @c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\lnk.rsp
+Microsoft (R) Incremental Linker Version 8.00.50727.278
+Copyright (C) Microsoft Corporation.  All rights reserved.
+/MERGE:_PAGE=PAGE 
+/MERGE:_TEXT=.text 
+/SECTION:INIT,d 
+/OPT:REF 
+/OPT:ICF 
+/IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
+/INCREMENTAL:NO 
+/release 
+/NODEFAULTLIB 
+/WX 
+/debug 
+/debugtype:cv,fixup,pdata 
+/version:6.0 
+/osversion:6.0 
+/functionpadmin:5 
+/safeseh 
+/pdbcompress 
+/STACK:0x40000,0x1000 
+/driver 
+/base:0x10000 
+/align:0x80 /stub:c:\winddk\6001.18002\lib\wxp\stub512.com 
+/subsystem:native,5.01 
+/entry:FxDriverEntry@8 
+/out:c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.sys 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\osrusbfx2.res 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\driver.obj 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\device.obj 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\ioctl.obj 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\bulkrwr.obj 
+c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final\objchk_wxp_x86\i386\interrupt.obj 
+c:\winddk\6001.18002\lib\wxp\i386\BufferOverflowK.lib 
+c:\winddk\6001.18002\lib\wxp\i386\ntoskrnl.lib 
+c:\winddk\6001.18002\lib\wxp\i386\hal.lib 
+c:\winddk\6001.18002\lib\wxp\i386\wmilib.lib 
+C:\WinDDK\6001.18002\lib\wdf\kmdf\i386\1.7\WdfLdr.lib 
+C:\WinDDK\6001.18002\lib\wdf\kmdf\i386\1.7\WdfDriverEntry.lib 
+c:\winddk\6001.18002\lib\wxp\i386\ntstrsafe.lib 
+c:\winddk\6001.18002\lib\wxp\i386\sehupd.lib 

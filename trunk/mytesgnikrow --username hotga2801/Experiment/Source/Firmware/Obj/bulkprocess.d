@@ -1,0 +1,13 @@
+.\Obj\bulkprocess.o: bulkProcess.c
+.\Obj\bulkprocess.o: C:\Keil\ARM\INC\Philips\LPC23xx.H
+.\Obj\bulkprocess.o: type.h
+.\Obj\bulkprocess.o: usb.h
+.\Obj\bulkprocess.o: usbcfg.h
+.\Obj\bulkprocess.o: usbhw.h
+.\Obj\bulkprocess.o: usbcore.h
+.\Obj\bulkprocess.o: usbdesc.h
+.\Obj\bulkprocess.o: usbuser.h
+.\Obj\bulkprocess.o: SerialLogger.h
+.\Obj\bulkprocess.o: C:\Keil\ARM\RV31\INC\string.h
+.\Obj\bulkprocess.o: bulkProcess.h
+.\Obj\bulkprocess.o: LCD.h

@@ -1,0 +1,22 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\driver.obj \
+ $(OBJ_PATH)\$O\device.obj \
+ $(OBJ_PATH)\$O\ioctl.obj \
+ $(OBJ_PATH)\$O\bulkrwr.obj \
+ $(OBJ_PATH)\$O\interrupt.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\osrusbfx2.res
+
+
+
+# lowercased
+BASEDIR=c:\winddk\6001.18002
+OBJECT_ROOT=c:\winddk\6001.18002
+MAKEDIR_LOWERCASE=c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final
+MAKEDIR_RELATIVE_TO_BASEDIR=src\kmdf\osrusbfx2\sys\final
+OBJ_PATH=c:\winddk\6001.18002\src\kmdf\osrusbfx2\sys\final
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0
