@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\Memory.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\Memory.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT3.1 [Build 939]: Last Updated: Mon Nov 08 10:53:34 2010
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT3.1 [Build 939]: Last Updated: Tue Nov 09 11:19:25 2010
 <BR><P>
 <H3>Maximum Stack Usage =        104 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -42,10 +42,10 @@ Function Pointers
  <LI><a href="#[b53600]">DAbt_Handler</a>
  <LI><a href="#[b535b8]">IRQ_Handler</a>
  <LI><a href="#[b53570]">FIQ_Handler</a>
- <LI><a href="#[b47670]">__main</a>
- <LI><a href="#[b4bde0]">main</a>
- <LI><a href="#[b51128]">USB_EndPoint0</a>
- <LI><a href="#[b4d488]">USB_EndPoint2</a>
+ <LI><a href="#[b47668]">__main</a>
+ <LI><a href="#[b4bdd8]">main</a>
+ <LI><a href="#[b51120]">USB_EndPoint0</a>
+ <LI><a href="#[b4d480]">USB_EndPoint2</a>
 </UL>
 <P>
 <H3>
@@ -54,786 +54,786 @@ Global Symbols
 <P><STRONG><a name="[b53408]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, lpc2300.o(RESET))
 <BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
 </UL>
-<P><STRONG><a name="[b47670]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, entry.o($$startup$$))
-<BR><BR>[Calls]<UL><LI><a href="#[b463d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init (via Veneer)
+<P><STRONG><a name="[b47668]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, entry.o($$startup$$))
+<BR><BR>[Calls]<UL><LI><a href="#[b463c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b46418]"></a>__call_main</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(.emb_text))
-<BR><BR>[Called By]<UL><LI><a href="#[b463d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
+<P><STRONG><a name="[b46410]"></a>__call_main</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[b463c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
 </UL>
 
-<P><STRONG><a name="[b512d8]"></a>USB_ResetCore</STRONG> (ARM, 56 bytes, Stack size 0 bytes, usbcore.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e5b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset_Event
+<P><STRONG><a name="[b512d0]"></a>USB_ResetCore</STRONG> (ARM, 56 bytes, Stack size 0 bytes, usbcore.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset_Event
 </UL>
 
-<P><STRONG><a name="[b51290]"></a>USB_SetupStage</STRONG> (ARM, 24 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b51288]"></a>USB_SetupStage</STRONG> (ARM, 24 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_SetupStage &rArr; USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<BR>[Calls]<UL><LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51248]"></a>USB_DataInStage</STRONG> (ARM, 104 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b51240]"></a>USB_DataInStage</STRONG> (ARM, 104 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_DataInStage &rArr; USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
+<BR>[Calls]<UL><LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
-<LI><a href="#[b51098]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetStatus
-<LI><a href="#[b510e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetDescriptor
-<LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<LI><a href="#[b51090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetStatus
+<LI><a href="#[b510d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetDescriptor
+<LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51200]"></a>USB_DataOutStage</STRONG> (ARM, 68 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b511f8]"></a>USB_DataOutStage</STRONG> (ARM, 68 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_DataOutStage &rArr; USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<BR>[Calls]<UL><LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b511b8]"></a>USB_StatusInStage</STRONG> (ARM, 28 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b511b0]"></a>USB_StatusInStage</STRONG> (ARM, 28 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_StatusInStage &rArr; USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
+<BR>[Calls]<UL><LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
-<LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
-<LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51170]"></a>USB_StatusOutStage</STRONG> (ARM, 24 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b51168]"></a>USB_StatusOutStage</STRONG> (ARM, 24 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_StatusOutStage &rArr; USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<BR>[Calls]<UL><LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51128]"></a>USB_EndPoint0</STRONG> (ARM, 1104 bytes, Stack size 8 bytes, usbcore.o(.text))
+<P><STRONG><a name="[b51120]"></a>USB_EndPoint0</STRONG> (ARM, 1104 bytes, Stack size 8 bytes, usbcore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = USB_EndPoint0 &rArr; VendorDataStage &rArr; PLogNum &rArr; itoa &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
-<LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
-<LI><a href="#[b50bd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
-<LI><a href="#[b50c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
-<LI><a href="#[b50cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interface_Event
-<LI><a href="#[b50dc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DirCtrlEP
-<LI><a href="#[b50e58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure_Event
-<LI><a href="#[b50f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
-<LI><a href="#[b50fc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
-<LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
-<LI><a href="#[b51050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
-<LI><a href="#[b51098]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetStatus
-<LI><a href="#[b510e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetDescriptor
-<LI><a href="#[b51170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusOutStage
-<LI><a href="#[b511b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
-<LI><a href="#[b51200]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataOutStage
-<LI><a href="#[b51248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
-<LI><a href="#[b51290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetupStage
+<BR>[Calls]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<LI><a href="#[b50bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
+<LI><a href="#[b50c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
+<LI><a href="#[b50ce8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interface_Event
+<LI><a href="#[b50dc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DirCtrlEP
+<LI><a href="#[b50e50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure_Event
+<LI><a href="#[b50f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
+<LI><a href="#[b50fb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
+<LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
+<LI><a href="#[b51048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
+<LI><a href="#[b51090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetStatus
+<LI><a href="#[b510d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetDescriptor
+<LI><a href="#[b51168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusOutStage
+<LI><a href="#[b511b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
+<LI><a href="#[b511f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataOutStage
+<LI><a href="#[b51240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
+<LI><a href="#[b51288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetupStage
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usbuser.o(.constdata)
 </UL>
-<P><STRONG><a name="[b4e9a0]"></a>EPAdr</STRONG> (ARM, 28 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
-<LI><a href="#[b50bd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
-<LI><a href="#[b50c60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
-<LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
-<LI><a href="#[b50d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
-<LI><a href="#[b50d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
-<LI><a href="#[b50ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
-<LI><a href="#[b50f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
+<P><STRONG><a name="[b4e998]"></a>EPAdr</STRONG> (ARM, 28 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
+<LI><a href="#[b50bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
+<LI><a href="#[b50c58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
+<LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<LI><a href="#[b50d30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
+<LI><a href="#[b50d78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
+<LI><a href="#[b50ee0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
+<LI><a href="#[b50f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
 </UL>
 
-<P><STRONG><a name="[b4e958]"></a>WrCmd</STRONG> (ARM, 44 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4e688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetFrame
-<LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
-<LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
-<LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<P><STRONG><a name="[b4e950]"></a>WrCmd</STRONG> (ARM, 44 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4e680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetFrame
+<LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
+<LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
 </UL>
 
-<P><STRONG><a name="[b4e910]"></a>WrCmdDat</STRONG> (ARM, 84 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4e6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WakeUp
-<LI><a href="#[b4e718]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Connect
-<LI><a href="#[b50bd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
-<LI><a href="#[b50c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
-<LI><a href="#[b50c60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
-<LI><a href="#[b50d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
-<LI><a href="#[b50d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
-<LI><a href="#[b50ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure
-<LI><a href="#[b50f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
+<P><STRONG><a name="[b4e908]"></a>WrCmdDat</STRONG> (ARM, 84 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4e6c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WakeUp
+<LI><a href="#[b4e710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Connect
+<LI><a href="#[b50bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
+<LI><a href="#[b50c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
+<LI><a href="#[b50c58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
+<LI><a href="#[b50d30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
+<LI><a href="#[b50d78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
+<LI><a href="#[b50e98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure
+<LI><a href="#[b50f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
 </UL>
 
-<P><STRONG><a name="[b4e8c8]"></a>RdCmdDat</STRONG> (ARM, 56 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetFrame
-<LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<P><STRONG><a name="[b4e8c0]"></a>RdCmdDat</STRONG> (ARM, 56 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_GetFrame
+<LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b50c18]"></a>USB_SetAddress</STRONG> (ARM, 56 bytes, Stack size 8 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50c10]"></a>USB_SetAddress</STRONG> (ARM, 56 bytes, Stack size 8 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_SetAddress
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4e760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
-<LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
-</UL>
-
-<P><STRONG><a name="[b4e880]"></a>USB_Reset</STRONG> (ARM, 88 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4e760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
-<LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<BR>[Called By]<UL><LI><a href="#[b4e758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b4e838]"></a>USB_Resume</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<P><STRONG><a name="[b4e878]"></a>USB_Reset</STRONG> (ARM, 88 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4e758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b4e7f0]"></a>USB_Suspend</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<P><STRONG><a name="[b4e830]"></a>USB_Resume</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b4e7a8]"></a>USB_ISR</STRONG> (ARM, 396 bytes, Stack size 40 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b4e520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Suspend_Event
-<LI><a href="#[b4e568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Resume_Event
-<LI><a href="#[b4e5b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset_Event
-<LI><a href="#[b4e7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Suspend
-<LI><a href="#[b4e838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Resume
-<LI><a href="#[b4e880]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset
-<LI><a href="#[b4e8c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RdCmdDat
-<LI><a href="#[b4e958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
+<P><STRONG><a name="[b4e7e8]"></a>USB_Suspend</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b4e760]"></a>USB_Init</STRONG> (ARM, 268 bytes, Stack size 8 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b4e7a0]"></a>USB_ISR</STRONG> (ARM, 396 bytes, Stack size 40 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b4e518]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Suspend_Event
+<LI><a href="#[b4e560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Resume_Event
+<LI><a href="#[b4e5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset_Event
+<LI><a href="#[b4e7e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Suspend
+<LI><a href="#[b4e830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Resume
+<LI><a href="#[b4e878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset
+<LI><a href="#[b4e8c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RdCmdDat
+<LI><a href="#[b4e950]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
+</UL>
+
+<P><STRONG><a name="[b4e758]"></a>USB_Init</STRONG> (ARM, 268 bytes, Stack size 8 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USB_Init &rArr; PLog &rArr; sendstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
-<LI><a href="#[b4e880]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset
-<LI><a href="#[b50c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
+<BR>[Calls]<UL><LI><a href="#[b4e638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
+<LI><a href="#[b4e878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Reset
+<LI><a href="#[b50c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetAddress
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4e718]"></a>USB_Connect</STRONG> (ARM, 52 bytes, Stack size 8 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b4e710]"></a>USB_Connect</STRONG> (ARM, 52 bytes, Stack size 8 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_Connect
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[b4e6d0]"></a>USB_WakeUp</STRONG> (ARM, 40 bytes, Stack size 4 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b50b40]"></a>USB_WakeUpCfg</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b51050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
+<P><STRONG><a name="[b4e6c8]"></a>USB_WakeUp</STRONG> (ARM, 40 bytes, Stack size 4 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
 </UL>
 
-<P><STRONG><a name="[b50ea0]"></a>USB_Configure</STRONG> (ARM, 168 bytes, Stack size 8 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50b38]"></a>USB_WakeUpCfg</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b51048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
+</UL>
+
+<P><STRONG><a name="[b50e98]"></a>USB_Configure</STRONG> (ARM, 168 bytes, Stack size 8 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_Configure
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
+<BR>[Called By]<UL><LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
 </UL>
 
-<P><STRONG><a name="[b50ee8]"></a>USB_ConfigEP</STRONG> (ARM, 112 bytes, Stack size 8 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50ee0]"></a>USB_ConfigEP</STRONG> (ARM, 112 bytes, Stack size 8 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_ConfigEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50fc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
-<LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
-</UL>
-
-<P><STRONG><a name="[b50dc8]"></a>USB_DirCtrlEP</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b50fb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
+<LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
 </UL>
 
-<P><STRONG><a name="[b50d38]"></a>USB_EnableEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50dc0]"></a>USB_DirCtrlEP</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbhw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+</UL>
+
+<P><STRONG><a name="[b50d30]"></a>USB_EnableEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USB_EnableEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50fc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
-<LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
+<BR>[Called By]<UL><LI><a href="#[b50fb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
+<LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
 </UL>
 
-<P><STRONG><a name="[b50d80]"></a>USB_DisableEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50d78]"></a>USB_DisableEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USB_DisableEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50fc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
-<LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
+<BR>[Called By]<UL><LI><a href="#[b50fb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
+<LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
 </UL>
 
-<P><STRONG><a name="[b50c60]"></a>USB_ResetEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50c58]"></a>USB_ResetEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USB_ResetEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50fc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
-<LI><a href="#[b51008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
+<BR>[Called By]<UL><LI><a href="#[b50fb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetInterface
+<LI><a href="#[b51000]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetConfiguration
 </UL>
 
-<P><STRONG><a name="[b50bd0]"></a>USB_SetStallEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50bc8]"></a>USB_SetStallEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USB_SetStallEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
-<LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
+<LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b50f78]"></a>USB_ClrStallEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50f70]"></a>USB_ClrStallEP</STRONG> (ARM, 44 bytes, Stack size 12 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USB_ClrStallEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4e910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b4e908]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmdDat
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
-<LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetClrFeature
+<LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b50ca8]"></a>USB_ReadEP</STRONG> (ARM, 176 bytes, Stack size 24 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50ca0]"></a>USB_ReadEP</STRONG> (ARM, 176 bytes, Stack size 24 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b466d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uwrite4 (via Veneer)
-<LI><a href="#[b4e958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b466c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uwrite4 (via Veneer)
+<LI><a href="#[b4e950]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4d050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out
-<LI><a href="#[b51170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusOutStage
-<LI><a href="#[b51200]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataOutStage
-<LI><a href="#[b51290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetupStage
+<BR>[Called By]<UL><LI><a href="#[b4d048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out
+<LI><a href="#[b51168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusOutStage
+<LI><a href="#[b511f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataOutStage
+<LI><a href="#[b51288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetupStage
 </UL>
 
-<P><STRONG><a name="[b50af8]"></a>USB_WriteEP</STRONG> (ARM, 144 bytes, Stack size 24 bytes, usbhw.o(.text))
+<P><STRONG><a name="[b50af0]"></a>USB_WriteEP</STRONG> (ARM, 144 bytes, Stack size 24 bytes, usbhw.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b46880]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uread4 (via Veneer)
-<LI><a href="#[b4e958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
-<LI><a href="#[b4e9a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
+<BR>[Calls]<UL><LI><a href="#[b46878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uread4 (via Veneer)
+<LI><a href="#[b4e950]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
+<LI><a href="#[b4e998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EPAdr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4d098]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2In
-<LI><a href="#[b511b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
-<LI><a href="#[b51248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
-</UL>
-
-<P><STRONG><a name="[b4e688]"></a>USB_GetFrame</STRONG> (ARM, 48 bytes, Stack size 4 bytes, usbhw.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b4e8c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RdCmdDat
-<LI><a href="#[b4e958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
+<BR>[Called By]<UL><LI><a href="#[b4d090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2In
+<LI><a href="#[b511b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
+<LI><a href="#[b51240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
 </UL>
 
-<P><STRONG><a name="[b4e5b0]"></a>USB_Reset_Event</STRONG> (ARM, 28 bytes, Stack size 8 bytes, usbuser.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b512d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetCore
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
-</UL>
-
-<P><STRONG><a name="[b4e520]"></a>USB_Suspend_Event</STRONG> (ARM, 16 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<P><STRONG><a name="[b4e680]"></a>USB_GetFrame</STRONG> (ARM, 48 bytes, Stack size 4 bytes, usbhw.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b4e8c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RdCmdDat
+<LI><a href="#[b4e950]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WrCmd
 </UL>
 
-<P><STRONG><a name="[b4e568]"></a>USB_Resume_Event</STRONG> (ARM, 16 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4e7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
+<P><STRONG><a name="[b4e5a8]"></a>USB_Reset_Event</STRONG> (ARM, 28 bytes, Stack size 8 bytes, usbuser.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b512d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetCore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b50e58]"></a>USB_Configure_Event</STRONG> (ARM, 48 bytes, Stack size 0 bytes, usbuser.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<P><STRONG><a name="[b4e518]"></a>USB_Suspend_Event</STRONG> (ARM, 16 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b50cf0]"></a>USB_Interface_Event</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<P><STRONG><a name="[b4e560]"></a>USB_Resume_Event</STRONG> (ARM, 16 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4e7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ISR
 </UL>
 
-<P><STRONG><a name="[b4d4d0]"></a>USB_EndPoint1</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b50e50]"></a>USB_Configure_Event</STRONG> (ARM, 48 bytes, Stack size 0 bytes, usbuser.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+</UL>
 
-<P><STRONG><a name="[b4d488]"></a>USB_EndPoint2</STRONG> (ARM, 68 bytes, Stack size 8 bytes, usbuser.o(.text))
+<P><STRONG><a name="[b50ce8]"></a>USB_Interface_Event</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+</UL>
+
+<P><STRONG><a name="[b4d4c8]"></a>USB_EndPoint1</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+
+<P><STRONG><a name="[b4d480]"></a>USB_EndPoint2</STRONG> (ARM, 68 bytes, Stack size 8 bytes, usbuser.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = USB_EndPoint2 &rArr; Bulk2Out &rArr; USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4d050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out
-<LI><a href="#[b4d098]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2In
+<BR>[Calls]<UL><LI><a href="#[b4d048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out
+<LI><a href="#[b4d090]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2In
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usbuser.o(.constdata)
 </UL>
-<P><STRONG><a name="[b4d440]"></a>USB_EndPoint3</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d438]"></a>USB_EndPoint3</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d3f8]"></a>USB_EndPoint4</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d3f0]"></a>USB_EndPoint4</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d3b0]"></a>USB_EndPoint5</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d3a8]"></a>USB_EndPoint5</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d368]"></a>USB_EndPoint6</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d360]"></a>USB_EndPoint6</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d320]"></a>USB_EndPoint7</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d318]"></a>USB_EndPoint7</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d2d8]"></a>USB_EndPoint8</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d2d0]"></a>USB_EndPoint8</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d290]"></a>USB_EndPoint9</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d288]"></a>USB_EndPoint9</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d248]"></a>USB_EndPoint10</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d240]"></a>USB_EndPoint10</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d200]"></a>USB_EndPoint11</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d1f8]"></a>USB_EndPoint11</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d1b8]"></a>USB_EndPoint12</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d1b0]"></a>USB_EndPoint12</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d170]"></a>USB_EndPoint13</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d168]"></a>USB_EndPoint13</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d128]"></a>USB_EndPoint14</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d120]"></a>USB_EndPoint14</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4d0e0]"></a>USB_EndPoint15</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
+<P><STRONG><a name="[b4d0d8]"></a>USB_EndPoint15</STRONG> (ARM, 4 bytes, Stack size 0 bytes, usbuser.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4bf00]"></a>LED_Init</STRONG> (ARM, 36 bytes, Stack size 0 bytes, memory.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[b4bef8]"></a>LED_Init</STRONG> (ARM, 36 bytes, Stack size 0 bytes, memory.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4beb8]"></a>LED_On</STRONG> (ARM, 20 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
+<P><STRONG><a name="[b4beb0]"></a>LED_On</STRONG> (ARM, 20 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4be70]"></a>LED_Off</STRONG> (ARM, 20 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
+<P><STRONG><a name="[b4be68]"></a>LED_Off</STRONG> (ARM, 20 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4be28]"></a>LED_Out</STRONG> (ARM, 24 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
+<P><STRONG><a name="[b4be20]"></a>LED_Out</STRONG> (ARM, 24 bytes, Stack size 0 bytes, memory.o(.text), UNUSED)
 
-<P><STRONG><a name="[b4bde0]"></a>main</STRONG> (ARM, 100 bytes, Stack size 8 bytes, memory.o(.text))
+<P><STRONG><a name="[b4bdd8]"></a>main</STRONG> (ARM, 100 bytes, Stack size 8 bytes, memory.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = main &rArr; lcd_init &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4bbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
-<LI><a href="#[b4bc30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
-<LI><a href="#[b4bc78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
-<LI><a href="#[b4bcc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
-<LI><a href="#[b4bd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
-<LI><a href="#[b4bd50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_serial
-<LI><a href="#[b4bd98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSong
-<LI><a href="#[b4bf00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
-<LI><a href="#[b4e640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
-<LI><a href="#[b4e718]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Connect
-<LI><a href="#[b4e760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<BR>[Calls]<UL><LI><a href="#[b4bbe0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[b4bc28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
+<LI><a href="#[b4bc70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[b4bcb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[b4bd00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[b4bd48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_serial
+<LI><a href="#[b4bd90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSong
+<LI><a href="#[b4bef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[b4e638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
+<LI><a href="#[b4e710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Connect
+<LI><a href="#[b4e758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> init.o(.text)
 </UL>
-<P><STRONG><a name="[b4b388]"></a>lcd_write_4bit</STRONG> (ARM, 84 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b380]"></a>lcd_write_4bit</STRONG> (ARM, 84 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lcd_write_4bit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<BR>[Calls]<UL><LI><a href="#[b4b650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4b340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
-<LI><a href="#[b4b580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
-<LI><a href="#[b4bcc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<BR>[Called By]<UL><LI><a href="#[b4b338]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[b4b578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+<LI><a href="#[b4bcb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[b4b340]"></a>lcd_write_cmd</STRONG> (ARM, 48 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b338]"></a>lcd_write_cmd</STRONG> (ARM, 48 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b388]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
-<LI><a href="#[b4b5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+<BR>[Calls]<UL><LI><a href="#[b4b380]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[b4b5c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
-<LI><a href="#[b4bcc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
-<LI><a href="#[b4bd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<BR>[Called By]<UL><LI><a href="#[b4bbe0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[b4bcb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[b4bd00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 </UL>
 
-<P><STRONG><a name="[b4b2f8]"></a>lcd_putchar</STRONG> (ARM, 24 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b2f0]"></a>lcd_putchar</STRONG> (ARM, 24 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+<BR>[Calls]<UL><LI><a href="#[b4b578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bc78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
-<LI><a href="#[b4bcc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<BR>[Called By]<UL><LI><a href="#[b4bc70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[b4bcb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[b4bcc0]"></a>lcd_init</STRONG> (ARM, 176 bytes, Stack size 12 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4bcb8]"></a>lcd_init</STRONG> (ARM, 176 bytes, Stack size 12 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_init &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b2f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
-<LI><a href="#[b4b340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
-<LI><a href="#[b4b388]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
-<LI><a href="#[b4b658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<BR>[Calls]<UL><LI><a href="#[b4b2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+<LI><a href="#[b4b338]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[b4b380]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[b4b650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4bbe8]"></a>set_cursor</STRONG> (ARM, 48 bytes, Stack size 16 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4bbe0]"></a>set_cursor</STRONG> (ARM, 48 bytes, Stack size 16 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<BR>[Calls]<UL><LI><a href="#[b4b338]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
-<LI><a href="#[b4bd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
-<LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
+<LI><a href="#[b4bd00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4bd08]"></a>lcd_clear</STRONG> (ARM, 32 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4bd00]"></a>lcd_clear</STRONG> (ARM, 32 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_clear &rArr; set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
-<LI><a href="#[b4bbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<BR>[Calls]<UL><LI><a href="#[b4b338]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[b4bbe0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
 </UL>
 
-<P><STRONG><a name="[b4bc78]"></a>lcd_print</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4bc70]"></a>lcd_print</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = lcd_print &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b2f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+<BR>[Calls]<UL><LI><a href="#[b4b2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
-<LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[b4bd50]"></a>init_serial</STRONG> (ARM, 68 bytes, Stack size 0 bytes, seriallogger.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
+<LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4a838]"></a>sendchar</STRONG> (ARM, 32 bytes, Stack size 0 bytes, seriallogger.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4a688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber
-<LI><a href="#[b4a760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getstring
-<LI><a href="#[b4a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
-<LI><a href="#[b4bc30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
+<P><STRONG><a name="[b4bd48]"></a>init_serial</STRONG> (ARM, 68 bytes, Stack size 0 bytes, seriallogger.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4a7f0]"></a>getkey</STRONG> (ARM, 32 bytes, Stack size 0 bytes, seriallogger.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[b4a688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber
-<LI><a href="#[b4a760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getstring
+<P><STRONG><a name="[b4a830]"></a>sendchar</STRONG> (ARM, 32 bytes, Stack size 0 bytes, seriallogger.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4a680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber
+<LI><a href="#[b4a758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getstring
+<LI><a href="#[b4a7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
+<LI><a href="#[b4bc28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
 </UL>
 
-<P><STRONG><a name="[b4bc30]"></a>newline</STRONG> (ARM, 28 bytes, Stack size 4 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a7e8]"></a>getkey</STRONG> (ARM, 32 bytes, Stack size 0 bytes, seriallogger.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b4a680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber
+<LI><a href="#[b4a758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getstring
+</UL>
+
+<P><STRONG><a name="[b4bc28]"></a>newline</STRONG> (ARM, 28 bytes, Stack size 4 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = newline
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4a838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+<BR>[Calls]<UL><LI><a href="#[b4a830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[b4e640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b4e638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
 </UL>
 
-<P><STRONG><a name="[b4a7a8]"></a>sendstring</STRONG> (ARM, 64 bytes, Stack size 16 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a7a0]"></a>sendstring</STRONG> (ARM, 64 bytes, Stack size 16 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = sendstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b46b50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
-<LI><a href="#[b4a838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+<BR>[Calls]<UL><LI><a href="#[b46b48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
+<LI><a href="#[b4a830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4a5f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
-<LI><a href="#[b4a640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogN
-<LI><a href="#[b4e640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
-</UL>
-
-<P><STRONG><a name="[b4a760]"></a>getstring</STRONG> (ARM, 168 bytes, Stack size 12 bytes, seriallogger.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b4a7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
-<LI><a href="#[b4a838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+<BR>[Called By]<UL><LI><a href="#[b4a5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
+<LI><a href="#[b4a638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogN
+<LI><a href="#[b4e638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
 </UL>
 
-<P><STRONG><a name="[b4a718]"></a>reverse</STRONG> (ARM, 68 bytes, Stack size 24 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a758]"></a>getstring</STRONG> (ARM, 168 bytes, Stack size 12 bytes, seriallogger.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b4a7e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+<LI><a href="#[b4a830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[b4a710]"></a>reverse</STRONG> (ARM, 68 bytes, Stack size 24 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = reverse
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b46b50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
+<BR>[Calls]<UL><LI><a href="#[b46b48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+<BR>[Called By]<UL><LI><a href="#[b4a6c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
 </UL>
 
-<P><STRONG><a name="[b4a6d0]"></a>itoa</STRONG> (ARM, 132 bytes, Stack size 24 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a6c8]"></a>itoa</STRONG> (ARM, 132 bytes, Stack size 24 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = itoa &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b47248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
-<LI><a href="#[b4a718]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reverse
+<BR>[Calls]<UL><LI><a href="#[b47240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+<LI><a href="#[b4a710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reverse
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4a5f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
-</UL>
-
-<P><STRONG><a name="[b4a688]"></a>getnumber</STRONG> (ARM, 296 bytes, Stack size 24 bytes, seriallogger.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b47248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
-<LI><a href="#[b4a7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
-<LI><a href="#[b4a838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+<BR>[Called By]<UL><LI><a href="#[b4a5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
 </UL>
 
-<P><STRONG><a name="[b4e640]"></a>PLog</STRONG> (ARM, 48 bytes, Stack size 8 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a680]"></a>getnumber</STRONG> (ARM, 296 bytes, Stack size 24 bytes, seriallogger.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b47240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+<LI><a href="#[b4a7e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+<LI><a href="#[b4a830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[b4e638]"></a>PLog</STRONG> (ARM, 48 bytes, Stack size 8 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PLog &rArr; sendstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
-<LI><a href="#[b4bc30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
+<BR>[Calls]<UL><LI><a href="#[b4a7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
+<LI><a href="#[b4bc28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;newline
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[b4e760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
-<LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b4e758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
 </UL>
 
-<P><STRONG><a name="[b4a640]"></a>PLogN</STRONG> (ARM, 44 bytes, Stack size 8 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a638]"></a>PLogN</STRONG> (ARM, 44 bytes, Stack size 8 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PLogN &rArr; sendstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
+<BR>[Calls]<UL><LI><a href="#[b4a7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<BR>[Called By]<UL><LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
 </UL>
 
-<P><STRONG><a name="[b4a5f8]"></a>PLogNum</STRONG> (ARM, 64 bytes, Stack size 40 bytes, seriallogger.o(.text))
+<P><STRONG><a name="[b4a5f0]"></a>PLogNum</STRONG> (ARM, 64 bytes, Stack size 40 bytes, seriallogger.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = PLogNum &rArr; itoa &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
-<LI><a href="#[b4a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
+<BR>[Calls]<UL><LI><a href="#[b4a6c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+<LI><a href="#[b4a7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<BR>[Called By]<UL><LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
 </UL>
 
-<P><STRONG><a name="[b4d050]"></a>Bulk2Out</STRONG> (ARM, 92 bytes, Stack size 8 bytes, vendorprocess.o(.text))
+<P><STRONG><a name="[b4d048]"></a>Bulk2Out</STRONG> (ARM, 92 bytes, Stack size 8 bytes, vendorprocess.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Bulk2Out &rArr; USB_ReadEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b47088]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
-<LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
+<BR>[Calls]<UL><LI><a href="#[b47080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
+<LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4d488]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint2
+<BR>[Called By]<UL><LI><a href="#[b4d480]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint2
 </UL>
 
-<P><STRONG><a name="[b4d098]"></a>Bulk2In</STRONG> (ARM, 64 bytes, Stack size 8 bytes, vendorprocess.o(.text))
+<P><STRONG><a name="[b4d090]"></a>Bulk2In</STRONG> (ARM, 64 bytes, Stack size 8 bytes, vendorprocess.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Bulk2In &rArr; USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
+<BR>[Calls]<UL><LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4d488]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint2
+<BR>[Called By]<UL><LI><a href="#[b4d480]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint2
 </UL>
 
-<P><STRONG><a name="[b48d60]"></a>LCD_print</STRONG> (ARM, 116 bytes, Stack size 8 bytes, vendorprocess.o(.text))
+<P><STRONG><a name="[b48d58]"></a>LCD_print</STRONG> (ARM, 116 bytes, Stack size 8 bytes, vendorprocess.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LCD_print &rArr; set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b46e00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr (via Veneer)
-<LI><a href="#[b47088]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
-<LI><a href="#[b4bbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
-<LI><a href="#[b4bc78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<BR>[Calls]<UL><LI><a href="#[b46df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr (via Veneer)
+<LI><a href="#[b47080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
+<LI><a href="#[b4bbe0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[b4bc70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
-<LI><a href="#[b50ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
+<BR>[Called By]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<LI><a href="#[b50aa8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorDataStage
 </UL>
 
-<P><STRONG><a name="[b50a68]"></a>VendorSetupStage</STRONG> (ARM, 372 bytes, Stack size 8 bytes, vendorprocess.o(.text))
+<P><STRONG><a name="[b50a60]"></a>VendorSetupStage</STRONG> (ARM, 384 bytes, Stack size 8 bytes, vendorprocess.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = VendorSetupStage &rArr; LCD_print &rArr; set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b48c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOn
-<LI><a href="#[b48cd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOff
-<LI><a href="#[b48d18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom
-<LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
-<LI><a href="#[b4bd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
-<LI><a href="#[b511b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
-<LI><a href="#[b51248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
+<BR>[Calls]<UL><LI><a href="#[b48c80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOn
+<LI><a href="#[b48cc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOff
+<LI><a href="#[b48d10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom
+<LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
+<LI><a href="#[b4bd00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[b511b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
+<LI><a href="#[b51240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b50ab0]"></a>VendorDataStage</STRONG> (ARM, 208 bytes, Stack size 8 bytes, vendorprocess.o(.text))
+<P><STRONG><a name="[b50aa8]"></a>VendorDataStage</STRONG> (ARM, 208 bytes, Stack size 8 bytes, vendorprocess.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = VendorDataStage &rArr; PLogNum &rArr; itoa &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
-<LI><a href="#[b4a5f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
-<LI><a href="#[b4a640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogN
-<LI><a href="#[b4e640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
-<LI><a href="#[b511b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
+<BR>[Calls]<UL><LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print
+<LI><a href="#[b4a5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogNum
+<LI><a href="#[b4a638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLogN
+<LI><a href="#[b4e638]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLog
+<LI><a href="#[b511b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_StatusInStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
-</UL>
-
-<P><STRONG><a name="[b47e48]"></a>ChayNhac</STRONG> (ARM, 308 bytes, Stack size 12 bytes, nhac.o(.text), UNUSED)
-
-<P><STRONG><a name="[b4bd98]"></a>InitSong</STRONG> (ARM, 124 bytes, Stack size 0 bytes, nhac.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4bde0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b48c88]"></a>NhacOn</STRONG> (ARM, 44 bytes, Stack size 0 bytes, nhac.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b48d18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom
-<LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<P><STRONG><a name="[b47e40]"></a>ChayNhac</STRONG> (ARM, 308 bytes, Stack size 12 bytes, nhac.o(.text), UNUSED)
+
+<P><STRONG><a name="[b4bd90]"></a>InitSong</STRONG> (ARM, 124 bytes, Stack size 0 bytes, nhac.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4bdd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b48cd0]"></a>NhacOff</STRONG> (ARM, 32 bytes, Stack size 0 bytes, nhac.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<P><STRONG><a name="[b48c80]"></a>NhacOn</STRONG> (ARM, 44 bytes, Stack size 0 bytes, nhac.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b48d10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom
+<LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
 </UL>
 
-<P><STRONG><a name="[b48d18]"></a>NhacCustom</STRONG> (ARM, 52 bytes, Stack size 16 bytes, nhac.o(.text))
+<P><STRONG><a name="[b48cc8]"></a>NhacOff</STRONG> (ARM, 32 bytes, Stack size 0 bytes, nhac.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+</UL>
+
+<P><STRONG><a name="[b48d10]"></a>NhacCustom</STRONG> (ARM, 52 bytes, Stack size 16 bytes, nhac.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NhacCustom
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b47088]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
-<LI><a href="#[b48c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOn
+<BR>[Calls]<UL><LI><a href="#[b47080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
+<LI><a href="#[b48c80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacOn
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b50a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
+<BR>[Called By]<UL><LI><a href="#[b50a60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VendorSetupStage
 </UL>
 
-<P><STRONG><a name="[b47290]"></a>__aeabi_idiv</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, idiv.o(.text), UNUSED)
+<P><STRONG><a name="[b47288]"></a>__aeabi_idiv</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, idiv.o(.text), UNUSED)
 
-<P><STRONG><a name="[b47248]"></a>__aeabi_idivmod</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, idiv.o(.text))
+<P><STRONG><a name="[b47240]"></a>__aeabi_idivmod</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, idiv.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b46028]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[b46020]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4a688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber (via Veneer)
-<LI><a href="#[b4a6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa (via Veneer)
-</UL>
-
-<P><STRONG><a name="[b47088]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b48d18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom (via Veneer)
-<LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print (via Veneer)
-<LI><a href="#[b4d050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out (via Veneer)
+<BR>[Called By]<UL><LI><a href="#[b4a680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getnumber (via Veneer)
+<LI><a href="#[b4a6c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b47040]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
-
-<P><STRONG><a name="[b46ff8]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
-
-<P><STRONG><a name="[b46ed8]"></a>__aeabi_memset</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b46d28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset_wrapper
-<LI><a href="#[b46e00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<P><STRONG><a name="[b47080]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b48d10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NhacCustom (via Veneer)
+<LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print (via Veneer)
+<LI><a href="#[b4d048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bulk2Out (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b46e90]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[b47038]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[b46e48]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[b46ff0]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[b46e00]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b46ed8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b48d60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print (via Veneer)
-</UL>
-
-<P><STRONG><a name="[b46db8]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
-
-<P><STRONG><a name="[b46d70]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
-
-<P><STRONG><a name="[b46d28]"></a>_memset_wrapper</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b46ed8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+<P><STRONG><a name="[b46ed0]"></a>__aeabi_memset</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b46d20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset_wrapper
+<LI><a href="#[b46df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[b46b50]"></a>strlen</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, strlen.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4a718]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reverse (via Veneer)
-<LI><a href="#[b4a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring (via Veneer)
+<P><STRONG><a name="[b46e88]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46e40]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46df8]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b46ed0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b48d58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_print (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b46880]"></a>__aeabi_uread4</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, uread4.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b50af8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP (via Veneer)
+<P><STRONG><a name="[b46db0]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46d68]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46d20]"></a>_memset_wrapper</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b46ed0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[b46838]"></a>__rt_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
-
-<P><STRONG><a name="[b467f0]"></a>_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
-
-<P><STRONG><a name="[b466d0]"></a>__aeabi_uwrite4</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, uwrite4.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b50ca8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP (via Veneer)
+<P><STRONG><a name="[b46b48]"></a>strlen</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4a710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reverse (via Veneer)
+<LI><a href="#[b4a7a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendstring (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b46688]"></a>__rt_uwrite4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uwrite4.o(.text), UNUSED)
-
-<P><STRONG><a name="[b46640]"></a>_uwrite4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uwrite4.o(.text), UNUSED)
-
-<P><STRONG><a name="[b463d0]"></a>__init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, init.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b45ce0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_call_via_r3
-<LI><a href="#[b46418]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__call_main
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b47670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main (via Veneer)
+<P><STRONG><a name="[b46878]"></a>__aeabi_uread4</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, uread4.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b50af0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WriteEP (via Veneer)
 </UL>
 
-<P><STRONG><a name="[b46388]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[b46830]"></a>__rt_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
 
-<P><STRONG><a name="[b46070]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[b467e8]"></a>_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
 
-<P><STRONG><a name="[b46028]"></a>__aeabi_uidivmod</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, uidiv.o(.text))
+<P><STRONG><a name="[b466c8]"></a>__aeabi_uwrite4</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, uwrite4.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b50ca0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ReadEP (via Veneer)
+</UL>
+
+<P><STRONG><a name="[b46680]"></a>__rt_uwrite4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uwrite4.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46638]"></a>_uwrite4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uwrite4.o(.text), UNUSED)
+
+<P><STRONG><a name="[b463c8]"></a>__init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b45cd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_call_via_r3
+<LI><a href="#[b46410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__call_main
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b47668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[b46380]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46068]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[b46020]"></a>__aeabi_uidivmod</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, uidiv.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b47248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<BR>[Called By]<UL><LI><a href="#[b47240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
 </UL>
 
-<P><STRONG><a name="[b45e90]"></a>__ARM_call_via_r0</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45e88]"></a>__ARM_call_via_r0</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45e48]"></a>__call_via_r0</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45e40]"></a>__call_via_r0</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45e00]"></a>__ARM_call_via_r1</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45df8]"></a>__ARM_call_via_r1</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45db8]"></a>__call_via_r1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45db0]"></a>__call_via_r1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45d70]"></a>__ARM_call_via_r2</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45d68]"></a>__ARM_call_via_r2</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45d28]"></a>__call_via_r2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45d20]"></a>__call_via_r2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45ce0]"></a>__ARM_call_via_r3</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b463d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
+<P><STRONG><a name="[b45cd8]"></a>__ARM_call_via_r3</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b463c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
 </UL>
 
-<P><STRONG><a name="[b45c98]"></a>__call_via_r3</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45c90]"></a>__call_via_r3</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45c50]"></a>__ARM_call_via_r4</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45c48]"></a>__ARM_call_via_r4</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45c08]"></a>__call_via_r4</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45c00]"></a>__call_via_r4</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45bc0]"></a>__ARM_call_via_r5</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45bb8]"></a>__ARM_call_via_r5</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45b78]"></a>__call_via_r5</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45b70]"></a>__call_via_r5</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45b30]"></a>__ARM_call_via_r6</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45b28]"></a>__ARM_call_via_r6</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45ae8]"></a>__call_via_r6</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45ae0]"></a>__call_via_r6</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45aa0]"></a>__ARM_call_via_r7</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45a98]"></a>__ARM_call_via_r7</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45a58]"></a>__call_via_r7</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
+<P><STRONG><a name="[b45a50]"></a>__call_via_r7</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, callvia.o(.text), UNUSED)
 
-<P><STRONG><a name="[b45320]"></a>__decompress</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[b45318]"></a>__decompress</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[b452d8]"></a>__decompress1</STRONG> (ARM, 116 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[b452d0]"></a>__decompress1</STRONG> (ARM, 116 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[b510e0]"></a>USB_GetDescriptor</STRONG> (ARM, 344 bytes, Stack size 16 bytes, usbcore.o(i.USB_GetDescriptor))
+<P><STRONG><a name="[b510d8]"></a>USB_GetDescriptor</STRONG> (ARM, 344 bytes, Stack size 16 bytes, usbcore.o(i.USB_GetDescriptor))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = USB_GetDescriptor &rArr; USB_DataInStage &rArr; USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b51248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
+<BR>[Calls]<UL><LI><a href="#[b51240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51098]"></a>USB_GetStatus</STRONG> (ARM, 356 bytes, Stack size 16 bytes, usbcore.o(i.USB_GetStatus))
+<P><STRONG><a name="[b51090]"></a>USB_GetStatus</STRONG> (ARM, 356 bytes, Stack size 16 bytes, usbcore.o(i.USB_GetStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = USB_GetStatus &rArr; USB_DataInStage &rArr; USB_WriteEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b51248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
+<BR>[Calls]<UL><LI><a href="#[b51240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DataInStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51050]"></a>USB_SetClrFeature</STRONG> (ARM, 388 bytes, Stack size 16 bytes, usbcore.o(i.USB_SetClrFeature))
+<P><STRONG><a name="[b51048]"></a>USB_SetClrFeature</STRONG> (ARM, 388 bytes, Stack size 16 bytes, usbcore.o(i.USB_SetClrFeature))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = USB_SetClrFeature &rArr; USB_SetStallEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WakeUpCfg
-<LI><a href="#[b50bd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
-<LI><a href="#[b50f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
+<BR>[Calls]<UL><LI><a href="#[b50b38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_WakeUpCfg
+<LI><a href="#[b50bc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetStallEP
+<LI><a href="#[b50f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ClrStallEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b51008]"></a>USB_SetConfiguration</STRONG> (ARM, 644 bytes, Stack size 24 bytes, usbcore.o(i.USB_SetConfiguration))
+<P><STRONG><a name="[b51000]"></a>USB_SetConfiguration</STRONG> (ARM, 644 bytes, Stack size 24 bytes, usbcore.o(i.USB_SetConfiguration))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = USB_SetConfiguration &rArr; USB_ResetEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50c60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
-<LI><a href="#[b50d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
-<LI><a href="#[b50d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
-<LI><a href="#[b50ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure
-<LI><a href="#[b50ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
+<BR>[Calls]<UL><LI><a href="#[b50c58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
+<LI><a href="#[b50d30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
+<LI><a href="#[b50d78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
+<LI><a href="#[b50e98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Configure
+<LI><a href="#[b50ee0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b50fc0]"></a>USB_SetInterface</STRONG> (ARM, 452 bytes, Stack size 40 bytes, usbcore.o(i.USB_SetInterface))
+<P><STRONG><a name="[b50fb8]"></a>USB_SetInterface</STRONG> (ARM, 452 bytes, Stack size 40 bytes, usbcore.o(i.USB_SetInterface))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = USB_SetInterface &rArr; USB_ResetEP
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b50c60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
-<LI><a href="#[b50d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
-<LI><a href="#[b50d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
-<LI><a href="#[b50ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
+<BR>[Calls]<UL><LI><a href="#[b50c58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetEP
+<LI><a href="#[b50d30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EnableEP
+<LI><a href="#[b50d78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DisableEP
+<LI><a href="#[b50ee0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ConfigEP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b51128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
-</UL>
-
-<P><STRONG><a name="[b455a8]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[b455a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b455a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+<BR>[Called By]<UL><LI><a href="#[b51120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_EndPoint0
 </UL>
 
-<P><STRONG><a name="[b45560]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[b455a0]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b455a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b455a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
 
-<P><STRONG><a name="[b45518]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[b45558]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[b45510]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 <P>
 <H3>
 Local Symbols
@@ -880,36 +880,36 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lpc2300.o(RESET)
 </UL>
-<P><STRONG><a name="[b4b658]"></a>delay</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lcd_4bit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4b388]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
-<LI><a href="#[b4b610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
-<LI><a href="#[b4bcc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<P><STRONG><a name="[b4b650]"></a>delay</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lcd_4bit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4b380]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[b4b608]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+<LI><a href="#[b4bcb8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[b4b610]"></a>lcd_read_status</STRONG> (ARM, 188 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b608]"></a>lcd_read_status</STRONG> (ARM, 188 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<BR>[Calls]<UL><LI><a href="#[b4b650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4b5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+<BR>[Called By]<UL><LI><a href="#[b4b5c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
 </UL>
 
-<P><STRONG><a name="[b4b5c8]"></a>wait_while_busy</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b5c0]"></a>wait_while_busy</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+<BR>[Calls]<UL><LI><a href="#[b4b608]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4b340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
-<LI><a href="#[b4b580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+<BR>[Called By]<UL><LI><a href="#[b4b338]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[b4b578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
 </UL>
 
-<P><STRONG><a name="[b4b580]"></a>lcd_write_data</STRONG> (ARM, 48 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<P><STRONG><a name="[b4b578]"></a>lcd_write_data</STRONG> (ARM, 48 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4b388]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
-<LI><a href="#[b4b5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+<BR>[Calls]<UL><LI><a href="#[b4b380]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[b4b5c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4b2f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+<BR>[Called By]<UL><LI><a href="#[b4b2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
 </UL>
 <P>
 <H3>
