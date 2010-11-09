@@ -89,8 +89,10 @@ BOOL VendorSetupStage(USB_SETUP_PACKET *p)
 		case VC_GET_LIGHT_BAR:
 			//EP0Data.pData[0] = BufferMemory[0];
 			//EP0Data.pData[1] = BufferMemory[1];
-			EP0Data.pData[0] = FIO2PIN;
-			EP0Data.Count = 1;
+			/*EP0Data.pData[0] = FIO2PIN;
+			EP0Data.Count = 1;*/
+			EP0Data.pData = BufferMemory;
+			EP0Data.Count = 3;
 			/*memcpy(EP0Data.pData, BufferMemory, 32); 
 			EP0Data.Count = 32;
 			MemoryLen = 0;
@@ -104,7 +106,7 @@ BOOL VendorSetupStage(USB_SETUP_PACKET *p)
 			//EP0Data.pData[3] = BufferMemory[3];
 			EP0Data.Count = 1;	*/
 			USB_DataInStage();
-			//MemoryLen = 0;   
+			MemoryLen = 0;   
 			break;
 
 		case VC_LCD_CLEAR:
