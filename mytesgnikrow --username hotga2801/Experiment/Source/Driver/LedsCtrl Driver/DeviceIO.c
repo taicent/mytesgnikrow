@@ -63,7 +63,8 @@ EvtUsbDeviceInterrupt(
   BYTE *packState = WdfMemoryGetBuffer(Buffer, &size);
 
   UNREFERENCED_PARAMETER(Pipe);
-
+	// region Add
+  UNREFERENCED_PARAMETER(NumBytesTransferred);
   // Check for only 1 byte has sent from Device
   ASSERT(size == sizeof(BYTE));
   ASSERT(NumBytesTransferred == size);
@@ -134,8 +135,8 @@ EvtDeviceIoWrite(
 
   // Get Device context
   devCtx = GetDeviceContext(WdfIoQueueGetDevice(Queue));
-
-  //UNREFERENCED_PARAMETER(Length);
+  // region Add
+  UNREFERENCED_PARAMETER(Length);
   KdPrint((__DRIVER_NAME "Received a write request of %d bytes\n", Length));
 
   // Get Input Memory to requestMem
@@ -214,7 +215,8 @@ EvtDeviceIoRead(
   // Get device context
   devCtx = GetDeviceContext(WdfIoQueueGetDevice(Queue));
 
-  //UNREFERENCED_PARAMETER(Length);
+  // region Add
+  UNREFERENCED_PARAMETER(Length);
   KdPrint((__DRIVER_NAME "Received a read request of %d bytes\n", Length));
 
   // Get output WDF memory object
@@ -555,6 +557,8 @@ IoCtlGetUSBConfigDescriptor(
   USHORT requiredSize = 0;
   size_t bytesReturned = 0;
 
+  // region Add
+  UNREFERENCED_PARAMETER(OutputBufferLength);
   UNREFERENCED_PARAMETER(InputBufferLength);
   KdPrint((__DRIVER_NAME
       "IOCTL_WDF_USB_GET_CONFIG_DESCRIPTOR OutputBufferLength %i bytes\n", OutputBufferLength));
@@ -668,6 +672,7 @@ IoCtlGetLightBar(
   NTSTATUS status = STATUS_SUCCESS;
   PDEVICE_CONTEXT devCtx = NULL;
   WDFMEMORY memHandle = NULL;
+  size_t length = 0;
     
   KdPrint((__DRIVER_NAME "entering IoCtlGetLightBar\n"));
   UNREFERENCED_PARAMETER(InputBufferLength);
@@ -693,8 +698,11 @@ IoCtlGetLightBar(
 
   // low level get light bar
   status = llGetLightBar(devCtx, memHandle);
-
-  WdfRequestCompleteWithInformation(Request, status, sizeof(BYTE));
+	    // Get buffer length
+  WdfMemoryGetBuffer(memHandle, &length);
+  KdPrint((__DRIVER_NAME "Encoded data Length: %i\n", length));
+  
+  WdfRequestCompleteWithInformation(Request, status, length);
 }
 
 // region Add
