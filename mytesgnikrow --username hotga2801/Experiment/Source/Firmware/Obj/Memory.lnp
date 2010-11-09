@@ -1,0 +1,4 @@
+".\obj\lpc2300.o" ".\obj\usbcore.o" ".\obj\usbdesc.o" ".\obj\usbhw.o" ".\obj\usbuser.o" ".\obj\memory.o" ".\obj\lcd_4bit.o" ".\obj\seriallogger.o" ".\obj\vendorprocess.o" ".\obj\nhac.o" --library_type=microlib --device DARMP --strict --scatter ".\Obj\Memory.sct" 
+--entry 0x00000000 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Memory.map" -o ".\Obj\Memory.axf"

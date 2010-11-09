@@ -1,0 +1,11 @@
+.\Obj\usbhw.o: usbhw.c
+.\Obj\usbhw.o: C:\Keil\ARM\INC\Philips\LPC23xx.H
+.\Obj\usbhw.o: type.h
+.\Obj\usbhw.o: usb.h
+.\Obj\usbhw.o: usbcfg.h
+.\Obj\usbhw.o: usbreg.h
+.\Obj\usbhw.o: usbhw.h
+.\Obj\usbhw.o: usbcore.h
+.\Obj\usbhw.o: usbuser.h
+.\Obj\usbhw.o: SerialLogger.h
+.\Obj\usbhw.o: C:\Keil\ARM\RV31\INC\string.h

@@ -1,0 +1,14 @@
+.\Obj\vendorprocess.o: VendorProcess.c
+.\Obj\vendorprocess.o: C:\Keil\ARM\INC\Philips\LPC23xx.H
+.\Obj\vendorprocess.o: type.h
+.\Obj\vendorprocess.o: usb.h
+.\Obj\vendorprocess.o: usbcfg.h
+.\Obj\vendorprocess.o: usbhw.h
+.\Obj\vendorprocess.o: usbcore.h
+.\Obj\vendorprocess.o: usbdesc.h
+.\Obj\vendorprocess.o: usbuser.h
+.\Obj\vendorprocess.o: SerialLogger.h
+.\Obj\vendorprocess.o: C:\Keil\ARM\RV31\INC\string.h
+.\Obj\vendorprocess.o: VendorProcess.h
+.\Obj\vendorprocess.o: LCD.h
+.\Obj\vendorprocess.o: Nhac.h

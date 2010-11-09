@@ -1,0 +1,15 @@
+TARGETNAME=LedsCtrl
+TARGETTYPE=DRIVER
+
+MSC_WARNING_LEVEL=/W4
+
+INCLUDES = $(INCLUDES)
+
+NO_BINPLACE=1
+
+KMDF_VERSION=1
+
+SOURCES=Driver.c \
+		DeviceIO.c \
+		Power.c \
+		Device.c
