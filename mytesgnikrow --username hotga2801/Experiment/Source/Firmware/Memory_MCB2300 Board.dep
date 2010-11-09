@@ -57,7 +57,7 @@ F (.\SerialLogger.c)(0x4A1E211C)(-c --device DARMP -D__MICROLIB -g -O0 --apcs=in
 I (C:\Keil\ARM\INC\Philips\LPC23xx.H)(0x4817CE1E)
 I (SerialLogger.h)(0x4A0D0B74)
 I (C:\Keil\ARM\RV31\INC\string.h)(0x48744774)
-F (.\VendorProcess.c)(0x4CD77439)(-c --device DARMP -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\vendorprocess.o" --omf_browse ".\Obj\vendorprocess.crf" --depend ".\Obj\vendorprocess.d")
+F (.\VendorProcess.c)(0x4CD8C7B2)(-c --device DARMP -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\vendorprocess.o" --omf_browse ".\Obj\vendorprocess.crf" --depend ".\Obj\vendorprocess.d")
 I (C:\Keil\ARM\INC\Philips\LPC23xx.H)(0x4817CE1E)
 I (type.h)(0x46E62458)
 I (usb.h)(0x46E62458)

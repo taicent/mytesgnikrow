@@ -1006,7 +1006,7 @@ void CLedsCtrlAppDlg::OnBnClickedBtnaes()
 
 	PUCHAR pOutBuffer = CreateBuffer(bLength);
 
-	str.Format(_T("  Sending IOCTL Code: IOCTL_WDF_USB_GET_LIGHTBAR, Size: %i bytes"), bLength);
+	str.Format(_T("  Sending IOCTL Code: IOCTL_WDF_USB_GET_ENCODED_DATA, Size: %i bytes"), bLength);
 	this->LogMessage(FALSE, str);
 	bytesReturned = 0;
 	bCmd = DeviceIoControl(	hDevice,						// Device
