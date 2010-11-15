@@ -36,6 +36,10 @@
 
 #pragma alloc_text(PAGE, llSendControlCode)		// Low Level
 
+// region Add
+#pragma alloc_text(PAGE, IoCtlGetEncodedData)
+#pragma alloc_text(PAGE, llGetEncodedData)
+
 /******************************************************************************/
 /* Callback function for handling USB interrupts.                             */
 /* the switch pack state has to be bit order reversed, and bit value inverted */
@@ -1132,7 +1136,7 @@ llGetLightBar(
       "Could not retrieve the lightbar memory pointer\n"));
     return status;
   }
-  
+
   // Check for buffer
   ASSERT(length >= sizeof(BYTE));
   ASSERT(NULL != inChar);

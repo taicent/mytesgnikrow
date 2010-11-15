@@ -1010,7 +1010,7 @@ void CLedsCtrlAppDlg::OnBnClickedBtnaes()
 	this->LogMessage(FALSE, str);
 	bytesReturned = 0;
 	bCmd = DeviceIoControl(	hDevice,						// Device
-							IOCTL_WDF_USB_GET_ENCODED_DATA,		// Command Code
+							IOCTL_WDF_USB_GET_LIGHTBAR,		// Command Code
 							NULL,							// Input Buffer
 							0,								// Input Buffer Length
 							pOutBuffer,						// Output Buffer Length
