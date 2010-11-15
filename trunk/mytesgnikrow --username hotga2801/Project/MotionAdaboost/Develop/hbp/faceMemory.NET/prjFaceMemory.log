@@ -1,0 +1,2735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "prjFaceMemory.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "prjFaceMemory"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "prjFaceMemory.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Develop\hbp\faceMemory.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Develop\hbp\faceMemory\prjFaceMemory.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "0"
+        />
+    </Settings>
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\frmMain.frm"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\frmMain.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_339"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_339.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_338"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_338.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_337"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_337.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_336"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_336.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_335"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_335.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_334"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_334.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_333"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_333.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_332"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_332.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_331"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_331.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_330"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_330.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_329"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_329.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_328"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_328.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_327"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_327.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_326"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_326.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_325"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_325.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_324"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_324.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_323"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_323.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_322"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_322.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_321"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_321.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_320"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_320.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_319"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_319.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_318"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_318.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_317"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_317.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_316"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_316.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_315"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_315.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_314"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_314.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_313"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_313.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_312"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_312.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_311"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_311.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_310"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_310.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_309"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_309.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_308"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_308.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_307"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_307.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_306"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_306.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_305"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_305.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_304"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_304.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_303"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_303.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_302"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_302.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_301"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_301.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_300"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_300.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_299"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_299.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_298"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_298.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_297"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_297.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_296"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_296.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_295"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_295.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_294"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_294.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_293"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_293.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_292"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_292.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_291"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_291.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_290"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_290.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_289"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_289.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_288"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_288.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_287"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_287.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_286"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_286.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_285"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_285.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_284"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_284.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_283"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_283.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_282"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_282.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_281"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_281.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_280"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_280.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_279"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_279.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_278"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_278.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_277"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_277.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_276"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_276.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_275"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_275.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_274"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_274.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_273"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_273.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_272"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_272.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_271"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_271.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_270"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_270.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_269"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_269.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_268"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_268.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_267"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_267.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_266"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_266.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_265"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_265.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_264"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_264.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_263"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_263.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_262"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_262.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_261"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_261.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_260"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_260.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_259"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_259.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_258"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_258.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_257"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_257.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_256"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_256.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_255"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_255.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_254"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_254.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_253"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_253.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_252"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_252.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_251"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_251.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_250"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_250.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_249"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_249.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_248"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_248.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_247"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_247.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_246"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_246.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_245"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_245.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_244"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_244.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_243"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_243.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_242"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_242.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_241"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_241.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_240"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_240.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_239"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_239.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_238"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_238.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_237"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_237.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_236"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_236.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_235"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_235.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_234"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_234.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_233"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_233.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_232"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_232.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_231"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_231.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_230"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_230.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_229"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_229.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_228"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_228.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_227"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_227.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_226"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_226.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_225"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_225.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_224"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_224.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_223"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_223.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_222"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_222.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_221"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_221.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_220"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_220.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_219"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_219.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_218"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_218.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_217"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_217.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_216"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_216.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_215"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_215.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_214"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_214.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_213"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_213.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_212"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_212.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_211"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_211.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_210"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_210.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_209"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_209.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_208"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_208.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_207"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_207.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_206"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_206.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_205"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_205.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_204"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_204.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_203"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_203.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_202"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_202.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_201"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_201.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_200"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_200.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_199"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_199.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_198"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_198.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_197"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_197.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_196"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_196.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_195"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_195.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_194"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_194.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_193"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_193.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_192"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_192.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_191"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_191.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_190"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_190.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_189"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_189.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_188"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_188.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_187"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_187.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_186"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_186.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_185"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_185.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_184"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_184.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_183"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_183.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_182"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_182.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_181"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_181.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_180"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_180.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_179"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_179.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_178"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_178.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_177"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_177.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_176"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_176.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_175"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_175.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_174"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_174.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_173"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_173.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_172"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_172.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_171"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_171.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_170"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_170.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_169"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_169.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_168"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_168.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_167"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_167.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_166"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_166.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_165"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_165.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_164"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_164.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_163"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_163.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_162"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_162.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_161"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_161.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_160"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_160.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_159"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_159.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_158"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_158.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_157"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_157.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_156"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_156.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_155"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_155.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_154"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_154.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_153"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_153.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_152"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_152.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_151"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_151.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_150"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_150.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_149"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_149.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_148"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_148.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_147"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_147.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_146"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_146.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_145"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_145.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_144"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_144.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_143"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_143.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_142"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_142.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_141"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_141.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_140"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_140.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_139"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_139.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_138"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_138.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_137"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_137.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_136"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_136.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_135"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_135.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_134"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_134.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_133"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_133.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_132"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_132.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_131"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_131.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_130"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_130.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_129"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_129.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_128"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_128.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_127"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_127.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_126"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_126.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_125"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_125.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_124"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_124.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_123"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_123.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_122"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_122.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_121"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_121.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_120"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_120.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_119"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_119.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_118"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_118.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_117"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_117.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_116"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_116.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_115"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_115.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_114"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_114.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_113"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_113.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_112"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_112.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_111"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_111.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_110"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_110.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_109"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_109.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_108"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_108.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_107"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_107.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_106"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_106.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_105"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_105.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_104"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_104.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_103"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_103.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_102"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_102.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_101"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_101.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_100"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_100.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_99"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_99.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_98"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_98.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_97"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_97.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_96"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_96.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_95"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_95.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_94"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_94.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_93"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_93.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_92"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_92.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_91"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_91.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_90"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_90.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_89"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_89.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_88"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_88.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_87"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_87.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_86"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_86.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_85"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_85.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_84"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_84.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_83"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_83.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_82"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_82.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_81"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_81.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_80"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_80.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_79"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_79.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_78"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_78.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_77"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_77.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_76"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_76.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_75"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_75.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_74"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_74.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_73"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_73.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_72"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_72.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_71"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_71.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_70"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_70.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_69"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_69.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_68"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_68.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_67"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_67.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_66"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_66.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_65"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_65.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_64"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_64.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_63"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_63.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_62"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_62.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_61"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_61.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_60"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_60.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_59"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_59.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_58"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_58.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_57"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_57.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_56"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_56.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_55"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_55.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_54"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_54.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_53"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_53.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_52"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_52.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_51"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_51.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_50"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_50.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_49"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_49.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_48"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_48.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_47"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_47.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_46"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_46.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_45"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_45.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_44"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_44.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_43"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_43.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_42"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_42.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_41"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_41.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_40"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_40.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_39"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_39.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_38"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_38.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_37"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_37.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_36"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_36.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_35"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_35.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_34"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_34.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_33"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_33.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_32"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_32.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_31"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_31.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_30"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_30.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_29"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_29.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_28"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_28.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_27"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_27.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_26"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_26.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_25"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_25.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_24"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_24.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_23"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_23.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_22"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_22.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_21"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_21.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_20"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_20.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_19"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_19.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_18"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_18.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_17"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_17.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_16"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_16.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_15"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_15.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_14"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_14.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_13"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_13.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_12"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_12.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_11"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_11.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_10"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_10.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_9"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_9.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_8"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_8.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_7"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_7.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_6"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_6.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_5"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_5.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_4"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_4.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_3"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_3.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_2"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_2.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_1"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_1.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "_picFace_0"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property _picFace_0.AutoRedraw was not upgraded.</Issue>
+        </Section>
+        <Section Name = "CopyMemory" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form event frmMain.Unload has a new behavior.</Issue>
+        </Section>
+        <Section Name = "showCategory" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object topmap.getClassification(x, y).</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\basWinAPI.bas"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\basWinAPI.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CopyMemory" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "CopyPTRtoANY" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "CreateBitmap" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "(Declarations)" >
+            <Issue
+                Type = "ToDo"
+                Number = "1026"
+            >&amp;quot;Initialize&amp;quot; must be called to initialize instances of this structure.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\ClassImage.cls"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\ClassImage.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Update" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "canvas"
+                ObjectType = "PictureBox"
+                PME = "Point"
+            >PictureBox method canvas.Point was not upgraded.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object RGBdest.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object RGBsource.</Issue>
+        </Section>
+        <Section Name = "Show" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "canvas"
+                ObjectType = "PictureBox"
+                PME = "FillStyle"
+            >PictureBox property canvas.FillStyle was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "canvas"
+                ObjectType = "PictureBox"
+                PME = "FillColor"
+            >PictureBox property canvas.FillColor was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "canvas"
+                ObjectType = "PictureBox"
+                PME = "Line"
+            >PictureBox method canvas.Line was not upgraded.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\ClassTopMap.cls"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\ClassTopMap.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "setClassificationColour" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object classificationID.</Issue>
+        </Section>
+        <Section Name = "getClassificationColour" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object classificationID.</Issue>
+        </Section>
+        <Section Name = "initWeights" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object minVal.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object maxVal.</Issue>
+        </Section>
+        <Section Name = "Show" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillColor.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.Line.</Issue>
+        </Section>
+        <Section Name = "showClassifications" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object getClassification().</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillColor.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.Line.</Issue>
+        </Section>
+        <Section Name = "showClassificationsMulti" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillStyle.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleWidth.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.ScaleHeight.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.FillColor.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object canvas.Line.</Issue>
+        </Section>
+        <Section Name = "setImage" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.getPoint.</Issue>
+        </Section>
+        <Section Name = "setImageWeights" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.width.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.height.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object img.setPoint.</Issue>
+        </Section>
+        <Section Name = "getNearestClassification" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object getNearestClassification.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\basMaths.bas"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\basMaths.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    />
+    <File
+        OldPath = "C:\Develop\hbp\faceMemory\cDIBsection.cls"
+        NewPath = "C:\Develop\hbp\faceMemory.NET\cDIBsection.vb"
+        FileType = "Class Module"
+        Upgraded = "True"
+    >
+        <Section Name = "CopyMemory" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "CreateDIBSection" >
+            <Issue
+                Type = "Runtime"
+                Number = "1050"
+            >Structure BITMAPINFO may require marshalling attributes to be passed as an argument in this Declare statement.</Issue>
+        </Section>
+        <Section Name = "GetObjectAPI" >
+            <Issue
+                Type = "Compile"
+                Number = "1016"
+            >Declaring a parameter 'As Any' is not supported.</Issue>
+        </Section>
+        <Section Name = "CreateFromPicture" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picThis"
+                ObjectType = "Picture"
+                PME = "handle"
+            >Picture property picThis.handle was not upgraded.</Issue>
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object tBMP.</Issue>
+        </Section>
+        <Section Name = "LoadPictureBlt" >
+            <Issue
+                Type = "Compile"
+                Number = "2068"
+            >RasterOpConstants object was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbSrcCopy"
+            >Constant vbSrcCopy was not upgraded.</Issue>
+        </Section>
+        <Section Name = "PaintPicture" >
+            <Issue
+                Type = "Compile"
+                Number = "2068"
+            >RasterOpConstants object was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2070"
+                PME = "vbSrcCopy"
+            >Constant vbSrcCopy was not upgraded.</Issue>
+        </Section>
+        <Section Name = "RandomiseBits" >
+            <Issue
+                Type = "Compile"
+                Number = "1040"
+                PME = "VarPtr"
+            >VarPtr function is not supported.</Issue>
+        </Section>
+        <Section Name = "ResampleDib" >
+            <Issue
+                Type = "Compile"
+                Number = "1040"
+                PME = "VarPtr"
+            >VarPtr function is not supported.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+

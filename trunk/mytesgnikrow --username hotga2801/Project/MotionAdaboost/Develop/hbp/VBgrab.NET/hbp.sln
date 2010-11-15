@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DShowNET", "DShowNET\DShowNET.csproj", "{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectX.Capture", "DirectX.Capture\DirectX.Capture.csproj", "{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "hbp", "VisionDemo\hbp.vbproj", "{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug.ActiveCfg = Debug|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug.Build.0 = Debug|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release.ActiveCfg = Release|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release.Build.0 = Release|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug.ActiveCfg = Debug|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug.Build.0 = Debug|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release.ActiveCfg = Release|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release.Build.0 = Release|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Debug.ActiveCfg = Debug|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Debug.Build.0 = Debug|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Release.ActiveCfg = Release|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		license.htm = license.htm
+		project_notes.htm = project_notes.htm
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

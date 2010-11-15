@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>faceMemory</name>
+    <version>1.0.1715.13556</version>
+    <fullname>faceMemory, Version=1.0.1715.13556, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="T:faceMemory.ClassTopMap">
+      <summary>
+ This class implements a classical topological map algorithm as described by Tuev Kohonen 
+ </summary>
+    </member>
+    <member name="M:faceMemory.ClassTopMap.init(System.Int16@,System.Int16@,System.Int16@,System.Int16@)">
+      <summary>
+ Initialise the map with the desired dimensions.  It is assumed that the input to the classifier will be a two 
+ dimensional image, but if you wish to have only one dimensional input just set InputsHeight to 1. 
+ </summary>
+ <param name="InputsWidth">Width of the input image to be classified</param>
+ <param name="InputsHeight">Height of the input image to be classified</param>
+ <param name="mapWidth">Width of the topological map</param>
+ <param name="mapHeight">Height of the topological map</param></member>
+    <member name="M:faceMemory.ClassTopMap.setPortrait(System.Int16@,System.String@)">
+      <summary>
+ Stores a filename associated with the given class index.  In this case the class index 
+ is the same as the personID - just a unique number corresponding to a particular classification. 
+ </summary>
+ <param name="index">Index number for the classification</param>
+ <param name="filename">An image filename associated with the classification</param></member>
+    <member name="M:faceMemory.ClassTopMap.getPortrait(System.Int16@)">
+      <summary>
+ Returns a filename associated with the given class index.  In this case the class index 
+ is the same as the personID - just a unique number corresponding to a particular classification. 
+ </summary>
+ <param name="index">Index number for the classification</param>
+ <returns>Filename of the image</returns></member>
+    <member name="M:faceMemory.ClassTopMap.setClassificationColour(System.Object@,System.Int16@,System.Int16@,System.Int16@)">
+      <summary>
+ Sets a colour to be assigned to the given class index.  At present this function is not used within the facememory program 
+ </summary>
+ <param name="classificationID">Index number or personID for the classification</param>
+ <param name="Red">Red component of the desired colour</param>
+ <param name="Green">Green component of the desired colour</param>
+ <param name="Blue">Blue component of the desired colour</param></member>
+    <member name="M:faceMemory.ClassTopMap.getClassificationColour(System.Object@)">
+      <summary>
+ Returns a colour for the given class index.  At present this function is not used within the facememory program 
+ </summary>
+ <param name="classificationID">Index number or personID for the classification</param>
+ <returns>A long integer value corresponding to the colour</returns></member>
+    <member name="M:faceMemory.ClassTopMap.setInput(System.Int16@,System.Int16@,System.Single@)">
+      <summary>
+ Sets the value of an input in the range 0.0 - 1.0 
+ </summary>
+ <param name="x">X coordinate of the input unit</param>
+ <param name="y">Y coordinate of the input unit</param>
+ <param name="Value">Value to be assigned to the input</param></member>
+    <member name="M:faceMemory.ClassTopMap.getOutput(System.Int16@,System.Int16@)">
+      <summary>
+ Returns the value of an output 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <returns>Value of the output at the given topological map coordinates</returns></member>
+    <member name="M:faceMemory.ClassTopMap.similarity(System.Int16@,System.Int16@)">
+      <summary>
+ Returns a value indicating how similar the topological map unit is to the current inputs. 
+ Smaller values indicate greater similarity 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <returns>Similarity value</returns></member>
+    <member name="M:faceMemory.ClassTopMap.Update">
+      <summary>
+ Main update routine for the topological map.  This should be called after 
+ all current inputs have been assigned using the setInput method 
+ </summary>
+    </member>
+    <member name="M:faceMemory.ClassTopMap.dist(System.Int16@,System.Int16@)">
+      <summary>
+ Returns the two dimensional distance between the given topological map coordinate and the winning unit 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <returns>Distance</returns></member>
+    <member name="M:faceMemory.ClassTopMap.randVal(System.Single@)">
+      <summary>
+ Takes a value and adds a little random noise to it 
+ </summary>
+ <param name="Value">The value to be made noisy</param>
+ <returns>A noisy value</returns></member>
+    <member name="M:faceMemory.ClassTopMap.adjustWeights(System.Int16@,System.Int16@,System.Single@)">
+      <summary>
+ Adjusts weights of the unit in accordance with its value 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param></member>
+    <member name="M:faceMemory.ClassTopMap.learn">
+      <summary>
+ Perform learning (weight adjustments) for all units on the topological map 
+ </summary>
+    </member>
+    <member name="M:faceMemory.ClassTopMap.initWeights(System.Object@,System.Object@)">
+      <summary>
+ Create some initial random weights in the given range 
+ </summary>
+ <param name="minVal">Minimum weight value</param>
+ <param name="maxVal">Maximum weight value</param></member>
+    <member name="M:faceMemory.ClassTopMap.Show(System.Windows.Forms.PictureBox)">
+      <summary>
+ Show the outputs of the topolgical map in the given picture box control 
+ </summary>
+ <param name="pic">A picture box control</param></member>
+    <member name="M:faceMemory.ClassTopMap.showClassifications(System.Windows.Forms.PictureBox)">
+      <summary>
+ Show the classifications of the topolgical map in the given picture box control. 
+ This uses the colours defined using the setClassificationColour method. 
+ </summary>
+ <param name="pic">A picture box control</param></member>
+    <member name="M:faceMemory.ClassTopMap.showClassificationsMulti(System.Windows.Forms.PictureBox)">
+      <summary>
+ Show the classifications of the topolgical map in the given picture box control. 
+ This uses the colours defined using the setClassificationColour method. 
+ </summary>
+ <param name="pic">A picture box control</param></member>
+    <member name="M:faceMemory.ClassTopMap.randomInputs">
+      <summary>
+ Greates a random input image, used for testing purposes 
+ </summary>
+    </member>
+    <member name="M:faceMemory.ClassTopMap.setImage(faceMemory.ClassImage@)">
+      <summary>
+ Uses an image object to set the input values.  This can be easier than using the setInput method to set each individual input 
+ </summary>
+    </member>
+    <member name="M:faceMemory.ClassTopMap.setImageWeights(System.Int16@,System.Int16@,System.Object@)">
+      <summary>
+ Updates an image object with the weight values for the topological map unit with the given coordinates. 
+ This is used for testing purposes to see what the weights are doing during learning 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <param name="img">The image object to be updated</param></member>
+    <member name="M:faceMemory.ClassTopMap.setClassification(System.Int16@)">
+      <summary>
+ Sets the classification (personID) for the current winning unit on the topological map 
+ </summary>
+ <param name="classificationID">Classification index or personID</param></member>
+    <member name="M:faceMemory.ClassTopMap.setClassificationName(System.Int16@,System.String@)">
+      <summary>
+ Sets a name for the given classification ID 
+ </summary>
+ <param name="classID">Classification index or personID</param>
+ <param name="className">Name of the class (person name)</param></member>
+    <member name="M:faceMemory.ClassTopMap.getClassificationName(System.Int16@)">
+      <summary>
+ Returns the name for the given classification ID 
+ </summary>
+ <param name="classID">Classification index or personID</param>
+ <returns>Name of the class or person</returns></member>
+    <member name="M:faceMemory.ClassTopMap.setClassificationMulti(System.Int16@,System.Int16@)">
+      <summary>
+ Sets the multi-dimensional classification value of the winning unit 
+ </summary>
+ <param name="classificationIndex">Classification index or personID</param>
+ <param name="Value">Value to be assigned</param></member>
+    <member name="M:faceMemory.ClassTopMap.getClassification(System.Int16@,System.Int16@)">
+      <summary>
+ Returns the classification index (or personID) of the given topological map unit 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <returns>Classification index or personID</returns></member>
+    <member name="M:faceMemory.ClassTopMap.getNearestClassification(System.Int16@,System.Int16@)">
+      <summary>
+ Returns the geographically nearest classification (or personID) for the given topological map coordinates 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <returns>Classification index or personID</returns></member>
+    <member name="M:faceMemory.ClassTopMap.getClassificationMulti(System.Int16@,System.Int16@,System.Int16@)">
+      <summary>
+ Returns the multi-dimensional classification of the given topological map unit 
+ </summary>
+ <param name="x">X coordinate on the topological map</param>
+ <param name="y">Y coordinate on the topological map</param>
+ <param name="classificationIndex">Dimension index for the classification</param>
+ <returns>Classification index or personID</returns></member>
+    <member name="M:faceMemory.ClassTopMap.classifyimg_data(System.Object@,System.Int16@)">
+      <summary>
+ Classify the given image using the given classification index (or personID) 
+ </summary>
+ <param name="img">Image object</param>
+ <param name="classificationID">The classification index or personID to be assigned to the winning unit</param></member>
+    <member name="M:faceMemory.ClassTopMap.Save(System.String@)">
+      <summary>
+ Save the topological map data 
+ </summary>
+ <param name="filename">Filename for the data</param></member>
+    <member name="M:faceMemory.ClassTopMap.Load(System.String@)">
+      <summary>
+ Load the topological map data 
+ </summary>
+ <param name="filename">Filename for the data</param></member>
+    <member name="M:faceMemory.ClassTopMap.rescaleHits">
+      <summary>
+ Re-scale the hit scores if they get too big.  This function is presently not used 
+ </summary>
+    </member>
+    <member name="T:faceMemory.frmMain">
+      <summary>
+ The main form 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.cmdClear_Click(System.Object,System.EventArgs)">
+      <summary>
+ Erase all learned information 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.cmdName_Click(System.Object,System.EventArgs)">
+      <summary>
+ Show the representitive units on the topological map corresponding to the selected person 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.cmdPicture_Click(System.Object,System.EventArgs)">
+      <summary>
+ Add a JPEG image for the selected person 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.LoadPortrait(System.Int16@)">
+      <summary>
+ Displays a JPEG image for the given person 
+ </summary>
+ <param name="personID">A unique number greater than 1 corresponding to the person</param></member>
+    <member name="M:faceMemory.frmMain.frmMain_Load(System.Object,System.EventArgs)">
+      <summary>
+ Load the main form and initialise the topological map 
+ </summary>
+ <param name="personID">A unique number greater than 1 corresponding to the person</param></member>
+    <member name="M:faceMemory.frmMain.loadData(System.String@)">
+      <summary>
+ Load topological map data from file 
+ </summary>
+ <param name="filename">The file name to load (typically "faces.net")</param></member>
+    <member name="M:faceMemory.frmMain.init">
+      <summary>
+ Initialise the topological map and load data from file 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.Update_Map">
+      <summary>
+ Alter the border style of pictures to show the representitive units for the currently selected person 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.saveData(System.String@)">
+      <summary>
+ Saves topological map data to file 
+ </summary>
+ <param name="filename">The file name to save (typically "faces.net")</param></member>
+    <member name="M:faceMemory.frmMain.frmMain_Closed(System.Object,System.EventArgs)">
+      <summary>
+ Close the main form and save anything which needs saving 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.mnuOpen_Click(System.Object,System.EventArgs)">
+      <summary>
+ Open a topological map data file from the menu 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.mnuSaveAs_Click(System.Object,System.EventArgs)">
+      <summary>
+ Save topological map data from the menu bar 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.picFace_Click(System.Object,System.EventArgs)">
+      <summary>
+ Selects a unit on the topological map 
+ </summary>
+    </member>
+    <member name="M:faceMemory.frmMain.showCategory(System.Int16@)">
+      <summary>
+ Show representitive units on the topological map for the currently selected person 
+ </summary>
+ <param name="ID">A unique number corresponding to the person</param></member>
+    <member name="M:faceMemory.frmMain.txtName_Enter(System.Object,System.EventArgs)">
+      <summary>
+ Shows an image of the person when you click on their name 
+ </summary>
+    </member>
+  </members>
+</doc>

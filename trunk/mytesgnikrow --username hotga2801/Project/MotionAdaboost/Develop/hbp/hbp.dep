@@ -1,0 +1,276 @@
+# Microsoft Developer Studio Generated Dependency File, included by hbp.mak
+
+.\classColourClasifier.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\classfilter.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	".\classfilter.h"\
+	".\classimage.h"\
+	
+
+.\classflow.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	".\classflow.h"\
+	".\classimage.h"\
+	".\classmotion.h"\
+	
+
+.\classHumunculus.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\classimage.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	".\classimage.h"\
+	
+
+.\classmotion.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	".\classimage.h"\
+	".\classmotion.h"\
+	
+
+.\classPersonalia.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\classTopmap.cpp : \
+	".\classTopmap.h"\
+	
+
+.\hbp.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\hbp.rc : \
+	".\res\hbp.rc2"\
+	
+
+.\motionsegment.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classfilter.h"\
+	".\classflow.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classmotion.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\ms.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\msImageProcessor.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\RAList.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\rlist.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\dxsdk\include\basetsd.h"\
+	"..\..\program files\opencv\cv\include\cv.h"\
+	"..\..\program files\opencv\cv\include\cvcompat.h"\
+	"..\..\program files\opencv\cv\include\cverror.h"\
+	"..\..\program files\opencv\cv\include\cvtypes.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.h"\
+	"..\..\program files\opencv\cvaux\include\cvaux.hpp"\
+	"..\..\program files\opencv\cvaux\include\cvmat.hpp"\
+	".\classColourClassifier.h"\
+	".\classHumunculus.h"\
+	".\classimage.h"\
+	".\classPersonalia.h"\
+	".\classTopmap.h"\
+	".\hbp.h"\
+	".\motionsegment.h"\
+	".\ms.h"\
+	".\msImageProcessor.h"\
+	".\RAList.h"\
+	".\rlist.h"\
+	".\StdAfx.h"\
+	".\tdef.h"\
+	

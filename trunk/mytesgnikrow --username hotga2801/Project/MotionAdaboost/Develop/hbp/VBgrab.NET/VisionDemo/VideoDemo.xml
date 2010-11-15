@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>VideoDemo</name>
+    <version>1.0.1748.36954</version>
+    <fullname>VideoDemo, Version=1.0.1748.36954, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="T:VisionDemo.cameraSettings">
+      <summary>
+ This class stores, loads and saves useful parameters to a file called settings.txt 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.cameraSettings.Load">
+      <summary>
+ Load settings from settings.txt file 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.cameraSettings.Save">
+      <summary>
+ Save settings to settings.txt file 
+ </summary>
+    </member>
+    <member name="T:VisionDemo.MainApp">
+      <summary>
+ Tha main form 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.drawMouth(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+ Draw the mouth area of Mr Plong 
+ </summary>
+ <param name="x">X coordinate of the centre of the mouth</param>
+ <param name="y">Y coordinate of the centre of the mouth</param>
+ <param name="mouth_width">a parameter indicating the width of the mouth in the range 0-100</param>
+ <param name="mouth_open">a parameter indicating how open the mouth is in the range 0-100 (0=closed, 100=wide open)</param>
+ <param name="smile">a parameter indicating smiling in the range 0-100 (0=neutral, 100=biggest smile)</param></member>
+    <member name="M:VisionDemo.MainApp.drawEyebrow(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+      <summary>
+ Draws an eyebrow of Mr Plong 
+ </summary>
+ <param name="x">X coordinate of the centre of the eyebrow</param>
+ <param name="y">Y coordinate of the centre of the eyebrow</param>
+ <param name="eyebrow_width">width of the eyebrow in pixels</param>
+ <param name="curvature_symetrical">curvature of the eyebrow in the range 0-100</param>
+ <param name="curvature_asymetrical" />
+ <param name="leftSide">true=left eyebrow, false=right eyebrow</param></member>
+    <member name="M:VisionDemo.MainApp.drawEye(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+ Draws an eye of Mr Plong 
+ </summary>
+ <param name="x">X coordinate of the centre of the eye</param>
+ <param name="y">Y coordinate of the centre of the eye</param>
+ <param name="eye_width">width of the eye in pixels</param>
+ <param name="gazeLeft">how far is he looking to the left in the range -100 to 100</param>
+ <param name="gazeDown">how much is he looking down in the range 0-100</param>
+ <param name="eyelid">how far down is the eyelid in the range 0-100</param></member>
+    <member name="M:VisionDemo.MainApp.showAvatar(System.Windows.Forms.PictureBox)">
+      <summary>
+ Draws the Mr Plong avatar 
+ </summary>
+ <param name="pic">picture box control in which to draw the avatar</param></member>
+    <member name="M:VisionDemo.MainApp.updateVision(System.Drawing.Image@)">
+      <summary>
+ Processes the given image 
+ </summary>
+ <param name="input_img">The image to be processed</param></member>
+    <member name="M:VisionDemo.MainApp.showFace(System.Windows.Forms.PictureBox)">
+      <summary>
+ Show an image of the face region detected using the openCV system 
+ </summary>
+ <param name="pic">picture box control in which to draw the face</param></member>
+    <member name="M:VisionDemo.MainApp.showImage(System.Windows.Forms.PictureBox,System.Int32)">
+      <summary>
+ Show an image within the given picture box control 
+ </summary>
+ <param name="pic">picture box control in which to draw the face</param>
+ <param name="imageIndex">An index number corresponding to the type of image to be displayed</param></member>
+    <member name="M:VisionDemo.MainApp.selectDisplaymode(System.Int32)">
+      <summary>
+ Select a display mode from the menu 
+ </summary>
+ <param name="index">An index number corresponding to the type of image to be displayed</param></member>
+    <member name="M:VisionDemo.MainApp.show_Portrait">
+      <summary>
+ Show a portrait (JPEG image) of the currently observed person 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.showBoundingBox">
+      <summary>
+ Show a bounding box.  This function is presently not used 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.RefreshImage(System.Windows.Forms.PictureBox)">
+      <summary>
+ Image refresh routine 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.logFace(System.Int32)">
+      <summary>
+ Log the observed person to a text file 
+ </summary>
+ <param name="personID">An ID number greater than zero corresponding to the person</param></member>
+    <member name="M:VisionDemo.MainApp.identifyPerson">
+      <summary>
+ Get the ID number for the currently observed persona and log the event to a text file if necessary 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.getPersonName">
+      <summary>
+ Gets the name of the currently observed person 
+ </summary>
+ <returns>the name of the person as a string up to 19 characters in length)</returns></member>
+    <member name="M:VisionDemo.MainApp.speakName">
+      <summary>
+ Use SAPI to speak the name of the currently observed person 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.ThumbNailAbort">
+      <summary>
+ Does absolutely nothing 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.timGrab_Tick(System.Object,System.EventArgs)">
+      <summary>
+ Grab an image from the camera periodically, using a timer control 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.mnuExit_Click(System.Object,System.EventArgs)">
+      <summary>
+ Exit the application 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.MainApp_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+      <summary>
+ Save anything which was learned during this session before closing 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.MainApp_Load(System.Object,System.EventArgs)">
+      <summary>
+ Load the face recognition classifier 
+ </summary>
+    </member>
+    <member name="M:VisionDemo.MainApp.CPP_Path(System.String)">
+      <summary>
+ Converts an ordinary path (eg C:\mypath\stuff) to a C++ style path (eg C:\\mypath\\stuff) 
+ </summary>
+ <param name="filename">The path to be converted</param>
+ <returns>A C++ style path</returns></member>
+    <member name="M:VisionDemo.MainApp.autoSave">
+      <summary>
+ Occasionally save the face classifier data.  This ensures that any new faces learned are not forgotten. 
+ </summary>
+    </member>
+    <member name="T:VisionDemo.mainModule">
+      <summary>
+ This module contains DLL declarations and a few other titbits 
+ </summary>
+    </member>
+    <member name="F:VisionDemo.mainModule.Declare">
+      <summary>
+ This is the main update routine 
+ </summary>
+ <param name="cameraIndex">An index number corresponding to the camera.  Typically this is just set to zero.  A camera index was included within this function to cope with a situation where stereo cameras might be used, and you may want to select which of the two cameras that you wish to use</param>
+ <param name="bmp">A bitmap containing the image grabbed from the camera.  Usually this is an image in the default webcam resolution of 320x240 pixels</param>
+ <param name="width">Width of the camera image in pixels</param>
+ <param name="height">Height of the camera image in pixels</param>
+ <param name="NoOfSegments ">A value returned to indicate the number of segments which were detected.  This is really only for debugging purposes</param></member>
+  </members>
+</doc>
