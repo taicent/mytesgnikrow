@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: hbp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Release/hbp.res" /d "NDEBUG" /d "_AFXDLL" "C:\Develop\hbp\hbp.rc"" 
+Creating temporary file "C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP165.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Develop\hbp\classColourClasifier.cpp"
+"C:\Develop\hbp\classfilter.cpp"
+"C:\Develop\hbp\classflow.cpp"
+"C:\Develop\hbp\classHumunculus.cpp"
+"C:\Develop\hbp\classimage.cpp"
+"C:\Develop\hbp\classmotion.cpp"
+"C:\Develop\hbp\classPersonalia.cpp"
+"C:\Develop\hbp\classTopmap.cpp"
+"C:\Develop\hbp\motionsegment.cpp"
+"C:\Develop\hbp\ms.cpp"
+"C:\Develop\hbp\msImageProcessor.cpp"
+"C:\Develop\hbp\RAList.cpp"
+"C:\Develop\hbp\rlist.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP165.tmp" 
+Creating temporary file "C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP166.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/hbp.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Develop\hbp\hbp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP166.tmp" 
+Creating temporary file "C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP167.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/hbp.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Develop\hbp\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP167.tmp" 
+Creating temporary file "C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP168.tmp" with contents
+[
+cxcore.lib cv.lib cvaux.lib fltk.lib highgui.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib vfw32.lib wsock32.lib Comctl32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/hbp.pdb" /machine:I386 /def:".\hbp.def" /out:"Release/hbp.dll" /implib:"Release/hbp.lib" 
+.\Release\classColourClasifier.obj
+.\Release\classfilter.obj
+.\Release\classflow.obj
+.\Release\classHumunculus.obj
+.\Release\classimage.obj
+.\Release\classmotion.obj
+.\Release\classPersonalia.obj
+.\Release\classTopmap.obj
+.\Release\hbp.obj
+.\Release\motionsegment.obj
+.\Release\ms.obj
+.\Release\msImageProcessor.obj
+.\Release\RAList.obj
+.\Release\rlist.obj
+.\Release\StdAfx.obj
+.\Release\hbp.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Bob\LOCALS~1\Temp\RSP168.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+classColourClasifier.cpp
+classfilter.cpp
+classflow.cpp
+classHumunculus.cpp
+classimage.cpp
+classmotion.cpp
+classPersonalia.cpp
+classTopmap.cpp
+motionsegment.cpp
+ms.cpp
+msImageProcessor.cpp
+RAList.cpp
+rlist.cpp
+Generating Code...
+Compiling...
+hbp.cpp
+Linking...
+   Creating library Release/hbp.lib and object Release/hbp.exp
+
+
+
+<h3>Results</h3>
+hbp.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

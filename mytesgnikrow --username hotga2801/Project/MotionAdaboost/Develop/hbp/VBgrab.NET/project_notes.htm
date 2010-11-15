@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	</head>
+	<body>
+		<P><STRONG><FONT size="4"><U>Human Body Project Notes</U></FONT></STRONG></P>
+		<P>This project aims to detect human upper body postures and facial 
+			expressions.&nbsp; It consists of a DLL written using Microsoft Visual C++ 6 
+			and a front end application written using visual studio 2003 (mainly in 
+			vb.net).&nbsp; All code is under the GNU general public licence.</P>
+		<P>To try to make the program a little easier to understand I have included XML 
+			comments compatible with <A href="http://ndoc.sourceforge.net">NDoc</A>.&nbsp; 
+			Program documentation may be produced by installing <A href="http://www.codeproject.com/vb/net/VbCommenter.asp">
+				VBCommenter</A>, building the VB.net project then using <A href="http://ndoc.sourceforge.net">
+				NDoc</A> to create a document in the format of your choice.</P>
+		<P>There are a number of things which need improvement.</P>
+		<P>1.&nbsp; Detection of the eyes and left/right sides of the face is sometimes 
+			unreliable.&nbsp; At a minimum some consistency checking is needed to reject 
+			configurations of features which obviously aren't a face.&nbsp; Poor detection 
+			of the sides of the face leads to errors in the estimation of gaze direction.</P>
+		<P>2.&nbsp; There are some problems which are probably just the result of my 
+			unfamiliarity with .NET.&nbsp; I've found it very difficult to pass a fixed 
+			length&nbsp;array of bytes (typically a bitmap) from the front end VB.net 
+			program to the back end DLL (or vice versa).&nbsp; After struggling to do this 
+			properly I eventually gave up, and the present system <EM>passes one pixel at a 
+				time</EM> to the DLL which is very inefficient.&nbsp; There must be a 
+			better way to do it than this.&nbsp; If anyone knows what it is please contact 
+			me at <A href="mailto:fuzzgun@btinternet.com">fuzzgun@btinternet.com</A></P>
+		<P>3.&nbsp; Detection of arms presently assumes that the colour of your arms is the 
+			same as the colour of your body.&nbsp; So, if you're wearing a T-shirt it 
+			doesn't work, or becomes very unreliable.&nbsp; This needs improvement.&nbsp; 
+			With the system as it presently stands for optimum results wear a long sleeved 
+			shirt which is all one colour, and where the colour of the shirt is 
+			significantly different from the background.</P>
+		<P>4.&nbsp; Detection of facial expressions needs improvement.&nbsp; Presently the 
+			avatar only really displays left/right gaze direction, mouth open/closed and 
+			eyebrows up/down.&nbsp; Detection of smiling has proven difficult, but probably 
+			could be achieved by looking for "laughter lines" either side of the 
+			mouth.&nbsp; Detection of sad expressions is also quite tricky because the 
+			movements of the face can be quite subtle.&nbsp; Any suggestions on these 
+			issues welcome.</P>
+		<P>5.&nbsp; The <EM>Mr Plong</EM> avatar is quite crude, resembling something out 
+			of <EM>Southpark</EM>&nbsp; With greater effort, more aesthetic avatars would 
+			be possible.&nbsp; I havn't concentrated very much on the drawing/animation of 
+			the avatar, since this system was devised mainly for use on robots, with the 
+			avatar just acting as a crude means for me to determine whether the robot is 
+			understanding what it sees properly.
+		</P>
+		<P>&nbsp;</P>
+		<P><STRONG>Webcams</STRONG></P>
+		<P>When the program first runs it asks you to select a webcam from a big list of 
+			DirectShow devices.&nbsp; It then creates a file called <EM>settings.txt</EM> in 
+			whatever is the current directory.&nbsp; If you want to use a different camera 
+			just delete the settings.txt file and run the program again.</P>
+		<P>For best results use a USB2 or firewire webcam - preferably one which is based 
+			on a CCD chip rather than the more common CMOS type.&nbsp; The CCD based 
+			cameras give a better quality image in low lighting conditions.&nbsp; Image 
+			quality is especially important for determining the locations of facial 
+			features, such as eyebrows.</P>
+		<P>The program was designed assuming a default webcam image resolution of 320x240 
+			pixels.&nbsp; I've no idea what it would do if the default resolution were 
+			something other than this.</P>
+		<P>&nbsp;</P>
+		<P><STRONG>Portability</STRONG></P>
+		<P>Although the present system runs only on Windows the DLL code which does all the 
+			calculations is just written in pretty standard C++, so it should be easily 
+			ported to other operating systems such as linux.</P>
+		<P>&nbsp;</P>
+		<P><STRONG>Possible future additions</STRONG></P>
+		<P>1.&nbsp; Detection of different styles of clothing.</P>
+		<P>2.&nbsp; Detection of different hand/finger gestures (fist, open hand, pointing 
+			finger, etc)</P>
+	</body>
+</html>

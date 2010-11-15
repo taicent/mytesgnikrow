@@ -1,0 +1,232 @@
+ffdshow MPEG-4 Video Decoder
+MPEG Video Decoder
+ffdshow Audio Decoder
+MPEG Audio Decoder
+WMplug
+MPEG Layer-3 Decoder
+WMAudio Decoder DMO
+Internal Script Command Renderer
+Video Renderer
+ACELP.net Sipro Lab Audio Decoder
+WMVideo Advanced Decoder DMO
+Mpeg4s Decoder DMO
+WMV Screen decoder DMO
+WMVideo Decoder DMO
+Mpeg43 Decoder DMO
+Mpeg4 Decoder DMO
+Windows Media Audio Decoder
+Default MidiOut Device
+Default DirectSound Device
+DivX for Blizzard Decoder Filter
+Microsoft Screen Video Decompressor
+Windows Media Video Decoder
+Windows Media Video Decoder
+XviD MPEG-4 Video Decoder
+DivX Decoder Filter
+Microsoft MPEG-4 Video Decompressor
+DV Video Decoder
+DivX Decoder Filter
+Indeo® video 5.10 Decompression Filter
+Indeo® video 4.4 Decompression Filter
+CyberLink Audio Decoder
+WMVideo Encoder DMO
+MSScreen encoder DMO
+WMVideo9 Encoder DMO
+WMVideo Advanced Encoder DMO
+MSScreen 9 encoder DMO
+WM Speech Encoder DMO
+WMAudio Encoder DMO
+WMAPro over S/PDIF DMO
+WMSpeech Decoder DMO
+AVI Draw
+Line 21 Decoder 2
+ASX v.2 file Parser
+.RAM file Parser
+Windows Media Pad VU Data Grabber
+BDA MPEG2 Transport Information Filter
+MPEG-2 Sections and Tables
+Decrypt/Tag
+Video Port Manager
+MJPEG Decompressor
+Windows Media Multiplexer
+ASX file Parser
+NSC file Parser
+ACM Wrapper
+Line 21 Decoder
+WST Decoder
+VBI Surface Allocator
+MPEG-2 Demultiplexer
+ASF DIB Handler
+ASF ACM Handler
+ASF ICM Handler
+ASF URL Handler
+ASF JPEG Handler
+ASF DJPEG Handler
+ASF embedded stuff Handler
+AVI Decompressor
+QuickTime Movie Parser
+QT Decompressor
+BDA Slip De-Framer
+AVI Splitter
+AC3 Parser Filter
+IVF source filter
+MPEG-I Stream Splitter
+DV Splitter
+Windows Media source filter
+CyberLink Video/SP Decoder
+MPEG-2 Splitter
+MPEG-2 Sections and Tables
+Indeo® audio software
+Color Space Converter
+Video Renderer
+Windows Media Update Filter
+XML Playlist
+WM ASF Writer
+DV Muxer
+WM ASF Reader
+SAMI (CC) Parser
+Overlay Mixer2
+Wave Parser
+MIDI Parser
+Multi-file Parser
+Lyric Parser
+File stream renderer
+VGA 16 Color Ditherer
+File Source (Netshow URL)
+File Source (Async.)
+File Source (URL)
+AVI/WAV File Source
+VideoSync Filter for OpenCV
+Video Mixing Renderer 9
+File writer
+WMT Virtual Renderer
+Null Renderer
+A/V Dummy Filter
+AVI Mux
+BDA MPEG2 Transport Information Filter
+Microsoft GS Wavetable SW Synth
+MPU-401
+C-Media Wave Device
+Default WaveOut Device
+DirectSound: C-Media Wave Device
+DirectSound: ReplayRadio driver playback (emulated)
+ReplayRadio driver playback
+Full Screen Renderer
+MPEG-2 Video Stream Analyzer
+StreamBufferSource
+Overlay Mixer
+DV Video Encoder
+MJPEG Compressor
+C-Media Wave Device
+ReplayRadio driver record
+ADS PYRO Web Cam(vfw)
+Creative WebCam Mobile (VFW)
+Video Blaster WebCam Go Plus (VFW)
+Encrypt/Tag
+XDS Codec
+WMT MuxDeMux Filter
+StreamBufferSink
+ffdshow VFW decoder helper
+NABTS/FEC VBI Codec
+CC Decoder
+ffdshow raw video filter
+CyberLink Audio Effect
+Bitmap Generate
+WMT VIH2 Fix
+Record Queue
+Frame Eater
+WMT Sample Information Filter
+WMT Log Filter
+CamShift
+WMT DirectX Transform Wrapper
+G.711 Codec
+9x8Resize
+WIA Stream Snapshot Filter
+ProxyTrans
+Allocator Fix
+SampleGrabber
+WMT Interlacer
+RealPlayer Audio Filter
+Uncompressed Domain Shot Detection Filter
+3d Tracker
+WMT DV Extract
+WMT Switch Filter
+WMT Volume
+Stretch Video
+Infinite Pin Tee Filter
+ShotBoundaryDet
+Indeo® video 4.4 Compression Filter
+Tee/Sink-to-Sink Converter
+Microsoft Kernel GS Wavetable Synthesizer
+Microsoft Kernel DLS Synthesizer
+Microsoft Kernel DRM Audio Descrambler
+Winbond 32-bit W9967 Decompressor
+Cinepak Codec by Radius
+DivX 5.0.2 Codec
+ffdshow Video Codec
+Intel 4:2:0 Video V2.50
+Intel Indeo(R) Video R3.2
+Intel Indeo® Video 4.5
+Indeo® video 5.10
+Intel IYUV codec
+Microsoft H.261 Video Codec
+Microsoft H.263 Video Codec
+Microsoft RLE
+Microsoft Video 1
+Microsoft Windows Media Video 9
+XviD MPEG-4 Codec
+Texas Instruments YUV Decompressor
+Texas Instruments YUV Decompressor
+Texas Instruments YUV Decompressor
+Texas Instruments YUV Decompressor
+IAC2
+IMA ADPCM
+PCM
+Mobile Voice
+Microsoft ADPCM
+ACELP.net
+DSP Group TrueSpeech(TM)
+Windows Media Audio V1
+Windows Media Audio V2
+GSM 6.10
+Microsoft G.723.1
+CCITT A-Law
+CCITT u-Law
+MPEG Layer-3
+BDA IP Sink
+Tee/Sink-to-Sink Converter
+WST Codec
+Kalman
+Condens
+WMT AudioAnalyzer
+Indeo® video 5.10 Compression Filter
+WMT Format Conversion
+CalibFilter
+WMT Black Frame Generator
+WMT Screen Capture filter
+WMT Import Filter
+WMT Virtual Source
+1394 Desktop Video Camera
+1394 Desktop Video Camera
+Video Blaster WebCam Go Plus (WDM)
+Creative WebCam Mobile
+Microsoft ATSC Network Provider
+Microsoft DVBC Network Provider
+Microsoft DVBS Network Provider
+Microsoft DVBT Network Provider
+1394 Desktop Video Camera
+1394 Desktop Video Camera
+Video Blaster WebCam Go Plus (WDM)
+Creative WebCam Mobile
+Screen Capture filter
+C-Media Wave Device
+MPU-401
+Microsoft Kernel Acoustic Echo Canceller
+C-Media Wave Device
+C-Media Wave Device
+Microsoft Kernel Wave Audio Mixer
+Smart Tee
+DVD Navigator
+CyberLink DxVA Filter 2
+ffdshow video encoder
+Indeo® video 5.10 Compression Filter

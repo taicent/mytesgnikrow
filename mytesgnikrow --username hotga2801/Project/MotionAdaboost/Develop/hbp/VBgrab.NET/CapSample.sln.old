@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapSample", "CapSample\CapSample.vbproj", "{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DShowNET", "DShowNET\DShowNET.csproj", "{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectX.Capture", "DirectX.Capture\DirectX.Capture.csproj", "{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Debug.ActiveCfg = Debug|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Debug.Build.0 = Debug|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Release.ActiveCfg = Release|.NET
+		{4BC4EC26-16F2-4BEA-9E0E-BAFF7CC0868B}.Release.Build.0 = Release|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug.ActiveCfg = Debug|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug.Build.0 = Debug|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release.ActiveCfg = Release|.NET
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release.Build.0 = Release|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug.ActiveCfg = Debug|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug.Build.0 = Debug|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release.ActiveCfg = Release|.NET
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

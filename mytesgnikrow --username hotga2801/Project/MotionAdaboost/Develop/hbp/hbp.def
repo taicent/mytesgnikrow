@@ -1,0 +1,26 @@
+; segment.def : Declares the module parameters for the DLL.
+
+LIBRARY      "hbp"
+DESCRIPTION  'Human Body Project Windows Dynamic Link Library'
+
+EXPORTS
+    RChbp_update
+    RChbp_getImage
+	RChbp_getImagePixel
+    RChbp_getSegment
+    RChbp_getBodyPosture
+    RChbp_getFaceImage
+    RChbp_getNormalisedFaceImage
+    RChbp_getPersonIdentity
+	RChbp_getPersonID
+    RChbp_setDetectionMode
+    RChbp_enableLearning
+	RChbp_getMotionBox
+	RChbp_updateImage
+	RChbp_update2
+	RChbp_getPersonName
+	RChbp_getFaceImagePixel
+	RChbp_faceDetected
+	RChbp_getPortrait
+	RChbp_save
+	RChbp_load
