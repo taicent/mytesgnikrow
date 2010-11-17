@@ -39,7 +39,7 @@ public class MyJPane extends JPanel{
         //_progressPane = new JPanel();
         _splitPane = new JSplitPane();
         _borderLayout = new BorderLayout();
-        _fileMan = new FileManager(frm);
+        _fileMan = new FileManager(frm, this);
         _myLeftView = new MyView(MyView.LEFT, getFileMan());
         _myRightView = new MyView(MyView.RIGHT, getFileMan());
         // thiet lap layout va add cac thanh phan
