@@ -36,13 +36,27 @@ public class MyFrame extends JFrame{
             this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
             this.setTitle("My Total Commander - 0712263");
 
-            _myJPane = new MyJPane(this);
-            this.setContentPane((JPanel)_myJPane);
+            setMyJPane(new MyJPane(this));
+            this.setContentPane((JPanel)getMyJPane());
             
         }
         catch(Exception e)
         {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * @return the _myJPane
+     */
+    public MyJPane getMyJPane() {
+        return _myJPane;
+    }
+
+    /**
+     * @param myJPane the _myJPane to set
+     */
+    public void setMyJPane(MyJPane myJPane) {
+        this._myJPane = myJPane;
     }
 }

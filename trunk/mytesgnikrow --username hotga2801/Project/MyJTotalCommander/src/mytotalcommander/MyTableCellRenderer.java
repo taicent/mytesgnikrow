@@ -40,30 +40,36 @@ public class MyTableCellRenderer extends DefaultTableCellRenderer{
         }
   	
 
-  	
-        if(column == table.getTableHeader().getColumnModel().getColumnIndex("Size"))
+  	try
         {
-            setHorizontalAlignment(JLabel.CENTER);
-            if(row == 0)
+            if(column == table.getTableHeader().getColumnModel().getColumnIndex("Size"))
             {
-                value = "<UP>";
-            }
-            else
-            {
-                File f = (File)model.getValueAt(row, 0);
-                if (f.isDirectory())
+                setHorizontalAlignment(JLabel.CENTER);
+                if(row == 0)
                 {
-                    value = "<DIR>";
+                    value = "<UP>";
                 }
                 else
                 {
-                    value = Math.round(Double.parseDouble(value.toString())/1000) + " KB";
+                    File f = (File)model.getValueAt(row, 0);
+                    if (f.isDirectory())
+                    {
+                        value = "<DIR>";
+                    }
+                    else
+                    {
+                        value = Math.round(Double.parseDouble(value.toString())/1000) + " KB";
+                    }
                 }
             }
+            else
+            {
+                setHorizontalAlignment(JLabel.LEFT);
+
+            }
         }
-        else
+        catch(Exception ignore)
         {
-            setHorizontalAlignment(JLabel.LEFT);
 
         }
 

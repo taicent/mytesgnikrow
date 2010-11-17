@@ -64,6 +64,7 @@ public class ProgressDialog extends JDialog{
         _mainPane.add(_progressPane, BorderLayout.NORTH);
         _mainPane.add(_btnPane, BorderLayout.SOUTH);
         getContentPane().add(_mainPane);
+        setSize(400, 200);
 
         _progressBar.setStringPainted(true);
         _cancelButton.addActionListener(new ActionListener() {

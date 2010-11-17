@@ -32,6 +32,7 @@ public class FileManager {
     public static short RIGHT = 1;
 
     private Frame _mainFrame;
+    private MyJPane _myPane;
     private File _leftPath;
     private Vector _leftList;
     private Vector _rightList;
@@ -48,9 +49,10 @@ public class FileManager {
     private int _numTotalDeleteFiles;
     private int _numDeletedFiles;
 
-    public FileManager(Frame frm)
+    public FileManager(Frame frm, MyJPane pane)
     {
         _mainFrame = frm;
+        _myPane = pane;
         _fileSys = FileSystemView.getFileSystemView();
         _leftPath = _fileSys.getDefaultDirectory();
         _rightPath = _leftPath;
@@ -155,6 +157,24 @@ public class FileManager {
         return vectorFiles;
     }
 
+    public void RefreshView()
+    {
+        _myPane.getLeftView().Navigate(getLeftPath(), false);
+        _myPane.getRightView().Navigate(getRightPath(), false);
+    }
+
+    public void RefreshNonFocusedView()
+    {
+        if(_myPane.getFileMan().getFocusedPane() == FileManager.RIGHT)
+        {
+            _myPane.getLeftView().Navigate(getLeftPath(), false);
+        }
+        else
+        {
+            _myPane.getRightView().Navigate(getRightPath(), false);
+        }
+    }
+    
     public boolean NewFolder(String newFolder)
     {
         if(_focusedPane == LEFT)
@@ -175,7 +195,7 @@ public class FileManager {
         {
             File newDir = new  File(dest.getPath() + "\\" + tar.getName());
             newDir.mkdir();
-            if(isMove)
+            if(isMove && !isCancel())
             {
                 tar.delete();
             }
@@ -195,7 +215,7 @@ public class FileManager {
                 newFile = newFile.getAbsoluteFile();
                 CopyFile(f[i], newFile);
             }
-            if(isMove)
+            if(isMove && !isCancel())
             {
                 f[i].delete();
             }
@@ -345,6 +365,7 @@ public class FileManager {
                 setCancel(true);
             }
         });
+        
     }
 
     public void CopyFiles(File[] selectedFiles,File destDir, boolean isMove) throws IOException
@@ -389,9 +410,10 @@ public class FileManager {
                         CopyDir(f, newDir, isMove);
                         if(isCancel())
                         {
+                            //JOptionPane.showConfirmDialog(_mainFrame, "Cancel");
                             break;
                         }
-                        if(isMove)
+                        if(isMove && !isCancel())
                         {
                             f.delete();
                         }
@@ -411,28 +433,55 @@ public class FileManager {
                         CopyFile(f, newFile);
                         if(isCancel())
                         {
+                            //JOptionPane.showConfirmDialog(_mainFrame, "Cancel");
                             break;
                         }
-                        if(isMove)
+                        if(isMove && !isCancel())
                         {
+                            //JOptionPane.showConfirmDialog(_mainFrame, "Cancel");
                             f.delete();
                         }
                     }
                 }
-
             }
-                getProgressDialog().setValue(100);
+            RefreshView();
         }
+        getProgressDialog().setValue(100);
         //getProgressBar().setVisible(false);
     }
 
-    public void Delete(File[] tarFiles)
+    public void Delete(final File[] tarFiles)
     {
         _isCancel = false;
         _numTotalDeleteFiles = 0;
         _numDeletedFiles = 0;
         CheckNumDeletedFiles(tarFiles);
-        DeleteFiles(tarFiles);
+        
+        _progressDialog = new ProgressDialog(_mainFrame, "Delete", true);
+        _progressDialog.setLocationRelativeTo(_mainFrame);
+        _progressDialog.startProgress(new MyImplementation() {
+
+            public void start() {
+                try
+                {
+                    DeleteFiles(tarFiles);
+                    _progressDialog.setValue(100);
+                }
+                catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
+                finally
+                {
+                    RefreshView();
+                }
+            }
+
+            public void cancel() {
+                setCancel(true);
+            }
+        });
+        
     }
 
     private void CheckNumDeletedFiles(File[] tarFiles)
@@ -462,7 +511,10 @@ public class FileManager {
                 }
                 tarFiles[i].delete();
                 _numDeletedFiles++;
+                int percentCompleted=(int)((_numDeletedFiles * 100) / _numTotalDeleteFiles);
+                _progressDialog.setValue(percentCompleted);
             }
+            
         }
     }
 

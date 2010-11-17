@@ -241,7 +241,6 @@ public class MyAction implements Action{
                 {
                     try
                     {
-                        //_myJPane.getProgressPane().setVisible(true);
 
                         try
                         {
@@ -264,11 +263,6 @@ public class MyAction implements Action{
                     catch(Exception ex)
                     {
                         ex.printStackTrace();
-                    }
-                    finally
-                    {
-                        //_myJPane.getProgressPane().setVisible(false);
-                        RefreshNonFocusedView();
                     }
 
                 }
@@ -293,7 +287,7 @@ public class MyAction implements Action{
                                 selectedFiles[i] = (File)GetFocusedView().getTableModel().getValueAt(selectedRows[i], 0);
                             }
 
-                            _myJPane.getFileMan().CopyFiles(selectedFiles,
+                            _myJPane.getFileMan().Copy(selectedFiles,
                                     (_myJPane.getFileMan().getFocusedPane() == FileManager.LEFT) ?
                                         _myJPane.getFileMan().getRightPath() : _myJPane.getFileMan().getLeftPath(), true);
                         }
@@ -306,11 +300,6 @@ public class MyAction implements Action{
                     catch(Exception ex)
                     {
                         ex.printStackTrace();
-                    }
-                    finally
-                    {
-                        //_myJPane.getProgressPane().setVisible(false);
-                        RefreshView();
                     }
 
                 }
@@ -348,10 +337,6 @@ public class MyAction implements Action{
                     catch(Exception ex)
                     {
                         ex.printStackTrace();
-                    }
-                    finally
-                    {
-                        RefreshView();
                     }
                 }
                 break;
