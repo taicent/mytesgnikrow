@@ -1,0 +1,52 @@
+INC = -I../include
+
+LIBS=libdetect.lib -lm
+CC=bcc32 -w-par
+CXX=bcc32 -w-par
+
+VPATH = ../example
+
+example: xavier_test.exe xaviercolor_test.exe im_test.exe im2_test.exe \
+  track_test.exe astro_test.exe rot_test.exe \
+  siemens_test.exe siemens2_test.exe imorient_test.exe \
+  imgray_test.exe slow_test.exe
+
+astro_test.exe: astro_test.obj libdetect.lib
+	$(CXX) -eastro_test astro_test.obj $(LIBS)
+
+xavier_test.exe: xavier_test.obj libdetect.lib
+	$(CXX) -exavier_test xavier_test.obj $(LIBS)
+
+xaviercolor_test.exe: xaviercolor_test.obj libdetect.lib
+	$(CXX) -exaviercolor_test xaviercolor_test.obj $(LIBS)
+
+track_test.exe: track_test.obj libdetect.lib
+	$(CXX) -etrack_test track_test.obj $(LIBS)
+
+siemens_test.exe: siemens_test.obj libdetect.lib
+	$(CXX) -esiemens_test siemens_test.obj $(LIBS)
+
+siemens2_test.exe: siemens2_test.obj libdetect.lib
+	$(CXX) -esiemens2_test siemens2_test.obj $(LIBS)
+
+im_test.exe: im_test.obj libdetect.lib
+	$(CXX) -eim_test im_test.obj $(LIBS)
+
+imorient_test.exe: imorient_test.obj libdetect.lib
+	$(CXX) -eimorient_test imorient_test.obj $(LIBS)
+
+im2_test.exe: im2_test.obj libdetect.lib
+	$(CXX) -eim2_test im2_test.obj $(LIBS)
+
+imgray_test.exe: imgray_test.obj libdetect.lib
+	$(CXX) -eimgray_test imgray_test.obj $(LIBS)
+
+slow_test.exe: slow_test.obj libdetect.lib
+	$(CXX) -eslow_test slow_test.obj $(LIBS)
+
+rot_test.exe: rot_test.obj libdetect.lib
+	$(CXX) -erot_test rot_test.obj $(LIBS)
+
+.c.obj:
+	$(CC) $(INC) -c $<
+

@@ -1,0 +1,11 @@
+all: detect demo
+
+detect:
+	cd ..\detect
+	$(MAKE) -f ..\detect\Makefile.msvc
+	cd ..\msvc
+
+demo:
+	cd ..\example
+	$(MAKE) -f Makefile.msvc
+	cd ..\msvc

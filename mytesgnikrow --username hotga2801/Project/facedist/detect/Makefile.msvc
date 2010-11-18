@@ -1,0 +1,26 @@
+INC = -I../include -Iy:\apps\visualc\4.0\include
+#INC = -I../include "-Ic:\program files\devstudio\vc\include"
+
+FLAGS=-DNoTcl -DNoHEBP -DCLOCK_DONE -DNoVista -DNoDebug -DWINNT -DMSVC
+
+CC=cl /O2
+CXX=cl /O2
+CFLAGS=$(FLAGS) $(INC)
+CXXFLAGS=$(FLAGS) $(INC)
+
+.SUFFIXES: .cc
+
+.cc.obj:
+	$(CXX) $(CXXFLAGS) -c /Tp$<
+
+.c.obj:
+	$(CC) $(CFLAGS) -c $<
+
+OBJS = im_face.obj search.obj img.obj mat.obj fast2.obj myhebp.obj \
+       follow.obj gif.obj system.obj nn.obj tclHash.obj eye.obj faces.obj \
+       fft.obj just.obj \
+       ip.obj tool.obj kmain.obj kdoi.obj vote.obj
+
+libdetect: $(OBJS)
+	lib /out:libdetect.lib $(OBJS)
+	copy libdetect.lib ..\msvc

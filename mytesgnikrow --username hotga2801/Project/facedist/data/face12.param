@@ -1,0 +1,10 @@
+Epsilon = 0.01
+Momentum = 0.1
+Weight Update Interval = 100
+Checkpoint Interval = 500
+Tolerance = 0.5
+Decay Rate = 0.00
+Initial Neighbor Smoothing Rate = 0.0
+Use Display = 0
+Display Device = xwin0
+Display Update Interval = 1

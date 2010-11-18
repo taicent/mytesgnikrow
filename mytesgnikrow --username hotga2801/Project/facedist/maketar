@@ -1,0 +1,4 @@
+#!/bin/csh -f
+cd ..
+tar vcf - facedist | compress > facedist.tar.Z
+

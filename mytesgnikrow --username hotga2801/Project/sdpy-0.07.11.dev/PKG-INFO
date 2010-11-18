@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: sdpy
+Version: 0.07.11.dev
+Summary: sdpy - SharkDolphin's Computer Science modules for Python
+Home-page: http://code.google.com/p/sdpy
+Author: Minh-Tri Pham et. al.
+Author-email: mtpham@ntu.edu.sg
+License: GNU Public License version 3
+Description: sdpy is an umbrella package of C++ and Python modules useful for
+        computer science. The package have been mainly being developed by
+        Minh-Tri Pham, as part of his Ph.D. research. Since his research area
+        is about face detection, you will find many useful modules for computer
+        vision and machine learning, especially boosting techniques,
+        Haar-like features, and face detection (i.e. (rotation-invariant) frontal
+        face).
+        
+        (To be updated)
+        
+Platform: Windows
+Platform: Linux
+Platform: MacOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS

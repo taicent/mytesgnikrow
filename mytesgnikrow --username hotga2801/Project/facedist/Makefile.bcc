@@ -1,0 +1,7 @@
+all: detect demo
+
+detect:
+	$(MAKE) -f ../detect/Makefile.bcc
+
+demo:
+	$(MAKE) -f ../example/Makefile.bcc

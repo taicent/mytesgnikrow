@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FaceDetect", "FaceDetect.vcproj", "{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Release2 = Release2
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Debug.ActiveCfg = Debug|Win32
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Debug.Build.0 = Debug|Win32
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Release.ActiveCfg = Release|Win32
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Release.Build.0 = Release|Win32
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Release2.ActiveCfg = Release2|Win32
+		{1EFB3428-EF18-48C4-AB9E-E16F3C052CA1}.Release2.Build.0 = Release2|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

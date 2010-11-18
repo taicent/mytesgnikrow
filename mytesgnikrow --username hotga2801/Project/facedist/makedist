@@ -1,0 +1,5 @@
+#!/bin/csh -fb
+mkdir ../facedetector
+cp -r {test,data,example,include,i386_linux1,n32,sgi_53,alpha_osf32,sun4_413,sun4_55,rs_aix414,README,msvc,bcc} ../facedetector
+cp scripts/* ../facedetector
+

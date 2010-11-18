@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FaceDetect - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/FaceDetect.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\WuJX\FaceDetect\Learn.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP5E.tmp" 
+Creating temporary file "C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+winmm.lib cxcore.lib highgui.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/FaceDetect.pdb" /machine:I386 /out:"Release/FaceDetect.exe" 
+.\Release\AdaBoostClassifier.obj
+.\Release\CascadeClassifier.obj
+.\Release\FaceDetect.obj
+.\Release\FaceDetectDoc.obj
+.\Release\FaceDetectView.obj
+.\Release\FFS.OBJ
+.\Release\Global.obj
+.\Release\IntImage.obj
+.\Release\Learn.obj
+.\Release\MainFrm.obj
+.\Release\SimpleClassifier.obj
+.\Release\StdAfx.obj
+.\Release\FaceDetect.res
+]
+Creating command line "link.exe @C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP5F.tmp"
+<h3>Output Window</h3>
+Compiling...
+Learn.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/o"Release/FaceDetect.bsc" 
+.\Release\StdAfx.sbr
+.\Release\AdaBoostClassifier.sbr
+.\Release\CascadeClassifier.sbr
+.\Release\FaceDetect.sbr
+.\Release\FaceDetectDoc.sbr
+.\Release\FaceDetectView.sbr
+.\Release\FFS.SBR
+.\Release\Global.sbr
+.\Release\IntImage.sbr
+.\Release\Learn.sbr
+.\Release\MainFrm.sbr
+.\Release\SimpleClassifier.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\wujx\LOCALS~1\Temp\RSP61.tmp"
+Creating browse info file...
+Microsoft Browse Information Maintenance Utility Version 6.00.8168
+Copyright (C) Microsoft Corp 1990-1998. All rights reserved.
+
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FaceDetect.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
