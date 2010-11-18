@@ -1,0 +1,16 @@
+#!/bin/csh -fb
+
+set top=/usr/users/har/facedet
+
+cd detect
+foreach name (*.{cc,hpp,c,h})
+  echo $name
+  cp -p $top/src/$name .
+end
+
+cd ../include
+foreach name (*.{cc,hpp,c,h})
+  echo $name
+  cp -p $top/src/$name .
+end
+

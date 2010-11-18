@@ -1,0 +1,4 @@
+#!/bin/csh -f
+cd ..
+tar vcf - facedetector | compress > facedetector.tar.Z
+

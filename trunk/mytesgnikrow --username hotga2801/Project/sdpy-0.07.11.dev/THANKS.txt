@@ -1,0 +1,7 @@
+- Steven Noonan for his 'platform_detect.h' header.
+- Stephen L. Moshier for his Cephes library.
+- John Boyer for his Fibonnaci Heap implementation.
+- C. Bond for his root-finding implementation.
+- Bernd Gaertner for his smallest enclosing ball algorithm.
+- OpenCV's community for their greatly honoured OpenCV library.
+- Michael Otto and Gary Bishop for their CVtypes wrapper for OpenCV

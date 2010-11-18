@@ -1,0 +1,68 @@
+Temporary code:
+
+1. Test speed of a single image:
+
+	IntImage img,resizedimg;
+	DWORD t1,t2;
+	
+	img.Load("C:\\WuJX\\CMUFaces\\newtest\\class57.jpg");
+	WriteRangeFile();
+	t1 = timeGetTime();
+	for(int t=0;t<1;t++) cascade->ApplyOriginalSize(img,"C:\\WuJX\\CMUFaces\\newtest\\class57.jpg");
+	t2 = timeGetTime();
+	CString tt;
+	tt.Format("%d",t2-t1);
+	AfxMessageBox(tt);
+	return;
+	
+2. Get threshold for a single node with specific false positive rate
+
+	for(int ii=0;ii<totalcount;ii++) features[ii] = cascade->ac[0].GetValue(trainset[ii]);
+	nth_element(features+facecount,features+facecount+int((totalcount-facecount)*0.95),features+totalcount);
+	cascade->ac[0].thresh = features[facecount+int((totalcount-facecount)*0.95)];
+	REAL e=0; for(int ii=0;ii<facecount;ii++) if(features[ii]<cascade->ac[0].thresh) e++; e/=facecount;
+	CString s;
+	s.Format("error=%f, thresh=%f",e,cascade->ac[0].thresh);
+	AfxMessageBox(s);
+	return;
+	
+3. Train first node, with only 1 feature, and fixed false positive rate
+
+	REAL minerror;
+	SimpleClassifier minsc;
+	REAL fp; int pos;
+
+	fp = 0.5;
+	minerror = 1;
+	for(int ii=0;ii<totalfeatures;ii++)
+	{
+		SimpleClassifier cc=classifiers[ii];
+		switch(cc.type)
+		{
+			case 0:GetFeatureValues0(features,0,totalcount,cc.x1,cc.x2,cc.x3,cc.y1,cc.y3);break;
+			case 1:GetFeatureValues1(features,0,totalcount,cc.x1,cc.x3,cc.y1,cc.y2,cc.y3);break;
+			case 2:GetFeatureValues2(features,0,totalcount,cc.x1,cc.x2,cc.x3,cc.x4,cc.y1,cc.y3);break;
+			case 3:GetFeatureValues3(features,0,totalcount,cc.x1,cc.x3,cc.y1,cc.y2,cc.y3,cc.y4);break;
+			case 4:GetFeatureValues4(features,0,totalcount,cc.x1,cc.x2,cc.x3,cc.y1,cc.y2,cc.y3);break;
+		}
+		pos = int(facecount+(totalcount-facecount)*fp);
+		nth_element(features+facecount,features+pos,features+totalcount);
+		cc.thresh = features[pos];
+		cc.error=0; for(int i=0;i<facecount;i++) if(features[i]>=cc.thresh) cc.error++; cc.error /= facecount;
+		if(cc.error<minerror) {	minerror = cc.error; minsc = cc; minsc.parity = 1; }
+		pos = int(facecount+(totalcount-facecount)*(1-fp));
+		nth_element(features+facecount,features+pos,features+totalcount);
+		cc.thresh = features[pos];
+		cc.error=0; for(int i=0;i<facecount;i++) if(features[i]<cc.thresh) cc.error++; cc.error /= facecount;
+		if(cc.error<minerror) { minerror = cc.error; minsc = cc; minsc.parity = 1; }
+	}
+	{
+		ofstream of;
+		CString s;
+		s.Format("%f",minsc.error);
+		AfxMessageBox(s);
+		of.open("temp.txt");
+		minsc.WriteToFile(of);
+		of.close();
+	}
+	return;

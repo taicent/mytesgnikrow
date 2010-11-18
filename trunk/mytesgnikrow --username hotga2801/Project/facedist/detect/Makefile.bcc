@@ -1,0 +1,29 @@
+INC = -I../include -I../detect
+
+FLAGS=-DNoTcl -DNoHEBP -DCLOCK_DONE -DNoVista -DNoDebug -DWINNT \
+-w-par -w-aus -w-ccc -w-rch 
+
+CC=bcc32
+CXX=bcc32
+CFLAGS=$(FLAGS) $(INC) -O2
+CXXFLAGS=$(FLAGS) $(INC) -O2 -P -Vd
+
+.SUFFIXES: .cc
+
+VPATH = ../detect
+
+.cc.obj:
+	$(CXX) $(CXXFLAGS) -c $<
+	tlib libdetect.lib -+ $*.obj
+
+.c.obj:
+	$(CC) $(CFLAGS) -c $<
+	tlib libdetect.lib -+ $*.obj
+
+OBJS = im_face.obj search.obj img.obj mat.obj fast2.obj myhebp.obj \
+       follow.obj gif.obj system.obj nn.obj tclHash.obj eye.obj faces.obj \
+       fft.obj just.obj \
+       ip.obj tool.obj kmain.obj kdoi.obj vote.obj
+
+libdetect: $(OBJS)
+   

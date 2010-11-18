@@ -1,0 +1,159 @@
+CMU Face Detector                                                              
+-----------------
+
+By Henry A. Rowley (har@cs.cmu.edu, http://www.cs.cmu.edu/~har/ )
+Developed at Carnegie Mellon University for the face detection
+project.  Library and code may be used for non-commercial research,
+evaluations, or demonstrations, but please provide appropriate
+acknowledgements, and let har@cs.cmu.edu how you are using it.
+Thanks!
+
+The upright face detector contained here is derived from the one
+presented in "http://www.cs.cmu.edu/~har/faces.html#upright".  The
+rotation invariant detector (run by "rot_test") is described in
+"http://www.cs.cmu.edu/~har/faces.html#rotated".
+
+Overview
+--------
+
+The interfaces provided by this library were developed for a number of
+different projects (which may make the names of the interface
+functions seem a little odd).  The most complete interface is the
+Track_FindAllFaces() interface, which not only gives you face
+locations but also eye locations.  If you received a binary
+distribution, you can skip directly to the section "Using the Detector
+Library".
+
+Build Instructions for Library (Unix)
+-------------------------------------
+
+1) Create a directory for the architecture you are building for, under
+the directory containing this README file.  Directories for the SGI,
+the Alpha running OSF/1 3.1, and SunOS should already exist.
+
+2) cd into that directory.
+
+3) Type "gmake -f ../Makefile".  (Normal make probably won't work)
+
+Currently the Makefiles are only set up to recognize SGIs, Alphas, and
+SunOS machines, and this package should build cleanly on either of
+these systems.  If the machine type is not recognized, it uses the
+same parameters as SunOS; this can be changed by modifying the
+Makefiles.
+
+Build Instructions for the Library (Windows)
+--------------------------------------------
+
+This package has been compiled using Windows NT, but it should also
+work with Windows 95.  To build the package, cd to the "bcc" or "msvc"
+directories, and run "make -f ..\Makefile.bcc" (for Borland's C++) or
+"nmake -f ..\Makefile.msvc" (for Microsoft's Visual C++).  The library
+and executables will be placed in the current directory.
+
+Using the Detector Library
+--------------------------
+
+The architecture directory will contain a library (libdetect.a) which
+can be linked with your code to do face detection.  There are several
+example programs in the "example" subdirectory.  They make use of
+"detect.h" file in the "include" directory.  The comments in that
+header file have more information about the interfaces to the
+detector.
+
+The interface to the detector is fairly straightforward--you give it
+an array of unsigned chars, which represent pixel intensities.  It
+returns an array of structures, which contain the coordinates of
+rectangles surrounding all the faces it finds.  A separate interface
+allows you to restrict the search area to a rectangular region, which
+can significantly improve the performance.
+
+Test Cases
+----------
+
+You should see several executables in the directory appropriate to
+your architecture.  These executables each test one of the interfaces
+to the face detector.  For example, "xavier_test" can be run as
+follows:
+
+	xavier_test ../test/henry.pgm
+
+It should give the following output:
+
+	Loading image...
+
+	Finding all faces in image...
+	2 faces found:
+	  (224,109)-(274,159)
+	  (172,179)-(221,229)
+
+	Finding first face in image in a vertical stripe...
+	Found a face at (174,182)-(224,231)
+
+The "im_test", "im2_test", "imorient_test", and "xaviercolor_test"
+programs use the ../test/henry.ppm and ../test/profile.ppm test
+images, while "slow_test", "imgray_test", "xavier_test",
+"siemens_test", "rot_test", and "track_test" use the
+../test/henry.pgm, ../test/henry2.pgm, ../test/profile.pgm,
+../test/albert.pgm, ../test/albert-rot35.pgm, and
+../test/henry-gray.pgm images, and "siemens2_test" and "astro_test"
+use the ../test/henry.gif image.  The only interface that returns eye
+locations is Track_FindAllFaces(), in the test program "track_test".
+Xavier_FindOneFace and Xavier_FindOneFaceColor have extra
+optimizations including using motion and color to speed up the search,
+and stopping the search as soon as one face is found.
+
+im_test, im2_test, imorient_test, xaviercolor_test all take color
+images in .ppm format as input, the names of which are passed on the
+command line.  slow_test, imgray_test, xavier_test, siemens_test, and
+track_test all take grayscale .pgm images via standard input.
+Finally, siemens2_test and astro_test take images in .gif format, and
+convert to grayscale for processing.
+
+Each program is used to test a separate interface to the face
+detector.  The features of the individual interfaces are described
+below:
+
+im_test: converts color image to grayscale, locates all faces.  also 
+	tests the functions for updating the color model over time,
+	based on faces that are detected.  useful if you are processing
+	video sequences.
+im2_test: converts color image to grayscale, finds faces, allows you
+	to adjust various thresholds
+imorient_test: attempts to detect faces from different views, from profile
+	to frontal.  Converts color image to grayscale for processing
+xaviercolor_test: uses color information to narrow search region.  Two 
+	interfaces, one locates all faces, the other locates the largest
+	face, and has many optimization parameters
+imgray_test: same as im_test, but takes a grayscale image
+xavier_test: same as xaviercolor_test, but takes a grayscale image
+siemens_test: like imgray_test, but allows you to specify a mask for 
+	which portions of the image to examine.  Also locates eyes
+track_test: like imgray_test, but also locates eyes
+siemens2_test: like siemens_test, but reads .gif images
+slow_test: slow version of detector, which test out different networks
+	and arbitration modes.  Reads .pgm (grayscale) files.
+astro_test: does nothing (never detects faces, runs very slowly)
+rot_test: in-plane rotation invariant detector.  Reads .pgm files.
+rot_test_ext: in-plane rotation invariant detector.  Reads .pgm, writes
+	.pgm files with the extracted face windows.
+
+More information about how to use each interface is given in
+facedetector/include/detect.h.
+
+The programs rely on several data files in the "data" subdirectory;
+the call to SetDataPath() sets up the directory in which to look for
+these files (which should always be located at ../data related to the
+executable).  These files are as follows:
+
+*.net, *.param, and *.wet: Neural network architectures and weight files
+*.pgm: Mask files defining the input regions for the neural networks
+mlist: Contains a list of .ppm files, used to build the skin color model
+*.ppm: Files containing skin color samples (any dark regions are not 
+       included in the model).
+
+Questions?
+----------
+
+If you have any difficulty with the detector, I'll be happy to help.
+Send me e-mail at har@cs.cmu.edu.
+

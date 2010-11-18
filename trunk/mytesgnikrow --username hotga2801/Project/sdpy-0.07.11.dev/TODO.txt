@@ -1,0 +1,10 @@
+- Fix test_detect in cs.cv.face
+- Delete ObjectDetector
+- Fix cs.cv.face
+- Develop tests for all modules and packages
+- Document in numpy style -- reST
+- Re-arrange subroutines to their proper locations
+- Fix any licensing problems
+- Implement LPBoost with GLPK -- Dung handles this
+- Convert 'weave.inline' to 'weave.ext_tools'
+- Make it cross-platform, even independent of gcc

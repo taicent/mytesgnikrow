@@ -1,0 +1,52 @@
+INC=-I../include -Iy:\apps\visualc\4.0\include
+#INC=-I../include "-Ic:\program files\devstudio\vc\include"
+
+LIBS=..\msvc\libdetect.lib y:\apps\visualc\4.0\lib\libc.lib y:\apps\visualc\4.0\lib\oldnames.lib y:\apps\visualc\4.0\lib\kernel32.lib
+#LIBS=..\msvc\libdetect.lib "c:\program files\devstudio\vc\lib\libc.lib" "c:\program files\devstudio\vc\lib\oldnames.lib" "c:\program files\devstudio\vc\lib\kernel32.lib"
+CC=cl
+CXX=cl
+
+example: xavier_test.exe xaviercolor_test.exe im_test.exe im2_test.exe \
+  track_test.exe astro_test.exe rot_test.exe \
+  siemens_test.exe siemens2_test.exe imorient_test.exe \
+  imgray_test.exe slow_test.exe
+
+astro_test.exe: astro_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\astro_test astro_test.obj $(LIBS)
+
+xavier_test.exe: xavier_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\xavier_test xavier_test.obj $(LIBS)
+
+xaviercolor_test.exe: xaviercolor_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\xaviercolor_test xaviercolor_test.obj $(LIBS)
+
+track_test.exe: track_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\track_test track_test.obj $(LIBS)
+
+siemens_test.exe: siemens_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\siemens_test siemens_test.obj $(LIBS)
+
+siemens2_test.exe: siemens2_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\siemens2_test siemens2_test.obj $(LIBS)
+
+im_test.exe: im_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\im_test im_test.obj $(LIBS)
+
+imorient_test.exe: imorient_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\imorient_test imorient_test.obj $(LIBS)
+
+im2_test.exe: im2_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\im2_test im2_test.obj $(LIBS)
+
+imgray_test.exe: imgray_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\imgray_test imgray_test.obj $(LIBS)
+
+slow_test.exe: slow_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\slow_test slow_test.obj $(LIBS)
+
+rot_test.exe: rot_test.obj ..\msvc\libdetect.lib
+	$(CXX) /o ..\msvc\rot_test rot_test.obj $(LIBS)
+
+.c.obj:
+	$(CC) $(INC) -c $<
+
