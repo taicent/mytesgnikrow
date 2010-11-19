@@ -506,17 +506,17 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       216         56          0          2          0        571   demo.o
-       352         24          0          2          0       1460   hiduser.o
-       764         16         64          0          0       2864   lcd_4bit.o
-       396         60          0          0       1288        456   lpc2300.o
-      4320        188          0         36         64      15566   usbcore.o
-         0          0        199          0          0        741   usbdesc.o
-      1948         72          0          0          0       4632   usbhw.o
-       184          8         64          0          0       2659   usbuser.o
+       216         56          0          2          0        591   demo.o
+       352         24          0          2          0       1492   hiduser.o
+       764         16         64          0          0       2896   lcd_4bit.o
+       396         60          0          0       1288        488   lpc2300.o
+      4320        188          0         36         64      15726   usbcore.o
+         0          0        199          0          0        773   usbdesc.o
+      1948         72          0          0          0       4664   usbhw.o
+       184          8         64          0          0       2691   usbuser.o
 
     ------------------------------------------------------------------------
-      8200        428        360         40       1352      28952   Object Totals
+      8200        428        360         40       1352      29324   Object Totals
         20          4         32          0          0          0   (incl. Generated)
          0          0          1          0          0          3   (incl. Padding)
 
@@ -567,8 +567,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9084        468        360         40       1448      28952   Grand Totals
-      9084        468        360         40       1448      28952   ELF Image Totals
+      9084        468        360         40       1448      29324   Grand Totals
+      9084        468        360         40       1448      29324   ELF Image Totals
       9084        468        360         40          0          0   ROM Totals
 
 ================================================================================
