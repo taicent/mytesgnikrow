@@ -702,6 +702,7 @@ IoCtlGetLightBar(
 
   // low level get light bar
   status = llGetLightBar(devCtx, memHandle);
+  KdPrint((__DRIVER_NAME "Line 705: \n"));
 	    // Get buffer length
   WdfMemoryGetBuffer(memHandle, &length);
   KdPrint((__DRIVER_NAME "Encoded data Length: %i\n", length));
@@ -1124,12 +1125,14 @@ llGetLightBar(
   NTSTATUS status = STATUS_SUCCESS;
   WDF_USB_CONTROL_SETUP_PACKET controlPacket;
   WDF_MEMORY_DESCRIPTOR memDescriptor;
-  BYTE *inChar = NULL;
-  size_t length = 0;
+ // BYTE *inChar = NULL;
+  //size_t length = 0;
 
   KdPrint((__DRIVER_NAME "Entering llGetLightBar\n"));
+  KdPrint((__DRIVER_NAME "Entering llGetLightBar1111\n"));
 
-  inChar = WdfMemoryGetBuffer(State, &length);
+  //inChar = WdfMemoryGetBuffer(State, &length);
+  //KdPrint((__DRIVER_NAME " Length %i\n",length));
   if(!NT_SUCCESS(status))
   {
     KdPrint((__DRIVER_NAME
@@ -1138,12 +1141,12 @@ llGetLightBar(
   }
 
   // Check for buffer
-  ASSERT(length >= sizeof(BYTE));
-  ASSERT(NULL != inChar);
+ // ASSERT(length >= sizeof(BYTE));
+ // ASSERT(NULL != inChar);
 
   /* Initialize the descriptor that will be passed to the USB driver*/
   WDF_MEMORY_DESCRIPTOR_INIT_HANDLE(&memDescriptor, State, NULL);
-
+KdPrint((__DRIVER_NAME "Line 1148\n"));
   WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR(
                             &controlPacket,	
                             BmRequestDeviceToHost,
@@ -1152,6 +1155,7 @@ llGetLightBar(
                             0,
                             0);
 
+  KdPrint((__DRIVER_NAME "Line 1157\n"));
   status = WdfUsbTargetDeviceSendControlTransferSynchronously(
                             Context->UsbDevice,
                             WDF_NO_HANDLE,				// Request (Def: NULL)
@@ -1159,6 +1163,7 @@ llGetLightBar(
                             &controlPacket,
                             &memDescriptor,
                             NULL);
+	KdPrint((__DRIVER_NAME "Line 1165\n"));
   if(!NT_SUCCESS(status))
   {
     KdPrint((__DRIVER_NAME

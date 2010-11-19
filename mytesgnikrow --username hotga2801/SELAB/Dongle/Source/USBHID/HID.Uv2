@@ -50,7 +50,7 @@ Options 1,0,0  // Target 'MCB2300 Board'
  GenLib=0
  GenHex=0
  Debug=1
- Browse=0
+ Browse=1
  LstDir (.\Lst\)
  HexSel=1
  MG32K=0
