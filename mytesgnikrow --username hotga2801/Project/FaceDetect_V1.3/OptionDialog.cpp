@@ -80,6 +80,7 @@ BEGIN_MESSAGE_MAP(OptionDialog, CDialog)
 	ON_BN_CLICKED(IDC_Original, OnBnClickedOriginal)
 	ON_BN_CLICKED(IDC_LAC, OnBnClickedLac)
 	ON_BN_CLICKED(IDC_FDA, OnBnClickedFda)
+	ON_BN_CLICKED(IDOK, &OptionDialog::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -122,4 +123,10 @@ void OptionDialog::OnBnClickedLac()
 void OptionDialog::OnBnClickedFda()
 {
 	m_lc = LC_FDA;
+}
+
+void OptionDialog::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+	OnOK();
 }
