@@ -1,0 +1,12 @@
+
+Copyright (2005), Georgia Institute of Technology.
+
+This software is provided for individual research use only. Redistribution and use 
+in source and binary forms of this software, with or without modification, are permitted 
+for research purposes provided that this file is included in the redistribution.
+
+This software is provided "as is" and in no event shall the copyright owener or the
+contributors be liable for any damages caused by this software.
+
+Any commercial redistribution or use of this software requires a license. Contact the 
+authors for more details.

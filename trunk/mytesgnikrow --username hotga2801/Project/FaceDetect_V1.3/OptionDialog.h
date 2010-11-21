@@ -31,4 +31,5 @@ public:
 	afx_msg void OnBnClickedOriginal();
 	afx_msg void OnBnClickedLac();
 	afx_msg void OnBnClickedFda();
+	afx_msg void OnBnClickedOk();
 };

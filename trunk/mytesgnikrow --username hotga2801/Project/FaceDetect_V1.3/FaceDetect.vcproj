@@ -148,6 +148,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="false"
+				AdditionalIncludeDirectories="D:\Programing\OpenCV2.1\include\opencv;D:\Programing\OpenCV2.1\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -175,7 +176,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib cxcore.lib highgui.lib"
+				AdditionalDependencies="winmm.lib cxcore210.lib highgui210.lib"
 				OutputFile=".\Release/FaceDetect.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"

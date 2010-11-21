@@ -1,0 +1,6 @@
+5
+c:\test\1.jpg
+c:\test\2.jpg
+c:\test\3.jpg
+c:\test\4.jpg
+c:\test\5.jpg

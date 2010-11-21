@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FaceDetect - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/FaceDetect.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\IntImage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4C.tmp" 
+Creating temporary file "C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4D.tmp" with contents
+[
+winmm.lib cxcore.lib highgui.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/FaceDetect.pdb" /machine:I386 /out:"Release/FaceDetect.exe" 
+.\Release\AdaBoostClassifier.obj
+.\Release\CascadeClassifier.obj
+.\Release\FaceDetect.obj
+.\Release\FaceDetectDoc.obj
+.\Release\FaceDetectView.obj
+.\Release\FFS.OBJ
+.\Release\Global.obj
+.\Release\IntImage.obj
+.\Release\Learn.obj
+.\Release\MainFrm.obj
+.\Release\SimpleClassifier.obj
+.\Release\StdAfx.obj
+.\Release\FaceDetect.res
+]
+Creating command line "link.exe @C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4D.tmp"
+<h3>Output Window</h3>
+Compiling...
+IntImage.cpp
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(184) : error C2535: '__thiscall cv::Allocator<U>::cv::Allocator<U>(const class cv::Allocator<U> &)' : member function already defined or declared
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(182) : see declaration of 'Allocator<_Tp>::Allocator<_Tp>'
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(200) : see reference to class template instantiation 'cv::Allocator<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(214) : error C2989: 'DataDepth<class ?? ::_Tp *>' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(214) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(282) : error C2784: '__thiscall cv::Complex<T2>::operator`class cv::Complex<_Tp>'(void) const' : could not deduce template argument for 'class cv::Complex<`template-parameter513'>' from 'class std::complex<_Ty>'
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(285) : see reference to class template instantiation 'cv::Complex<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(282) : error C2785: '__thiscall cv::Complex<T2>::operator`class cv::Complex<_Tp>'(void) const' and '__thiscall cv::Complex<_Tp>::operator`class std::complex<_Tp>'(void) const' have different return types
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(280) : see declaration of 'operator`class cv::Complex<`template-parameter513'>''
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(285) : see reference to class template instantiation 'cv::Complex<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(308) : error C2784: '__thiscall cv::Point_<_Tp2>::operator`class cv::Point_<_Tp>'(void) const' : could not deduce template argument for 'class cv::Point_<`template-parameter513'>' from 'class cv::Vec<_Tp,2>'
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(315) : see reference to class template instantiation 'cv::Point_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(308) : error C2785: '__thiscall cv::Point_<_Tp2>::operator`class cv::Point_<_Tp>'(void) const' and '__thiscall cv::Point_<_Tp>::operator`class cv::Vec<_Tp,2>'(void) const' have different return types
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(305) : see declaration of 'operator`class cv::Point_<`template-parameter513'>''
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(315) : see reference to class template instantiation 'cv::Point_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(331) : error C2784: '__thiscall cv::Point3_<_Tp2>::operator`class cv::Point3_<_Tp>'(void) const' : could not deduce template argument for 'class cv::Point3_<`template-parameter513'>' from 'class cv::Vec<_Tp,3>'
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(337) : see reference to class template instantiation 'cv::Point3_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(331) : error C2785: '__thiscall cv::Point3_<_Tp2>::operator`class cv::Point3_<_Tp>'(void) const' and '__thiscall cv::Point3_<_Tp>::operator`class cv::Vec<_Tp,3>'(void) const' have different return types
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(329) : see declaration of 'operator`class cv::Point3_<`template-parameter513'>''
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(337) : see reference to class template instantiation 'cv::Point3_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(572) : error C2989: 'DataType<class cv::Vec<_Tp,`template-parameter258'> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(572) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(584) : error C2989: 'DataType<class std::complex<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(584) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(596) : error C2989: 'DataType<class cv::Complex<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(596) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(608) : error C2989: 'DataType<class cv::Point_<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(608) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(620) : error C2989: 'DataType<class cv::Point3_<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(620) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(632) : error C2989: 'DataType<class cv::Size_<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(632) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(644) : error C2989: 'DataType<class cv::Rect_<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(644) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(656) : error C2989: 'DataType<class cv::Scalar_<_Tp> >' : template class has already been defined as a non-template class
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(656) : error C2988: unrecognizable template declaration/definition
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(1342) : error C2784: '__thiscall cv::Mat_<T2>::operator`class cv::Mat_<_Tp>'(void) const' : could not deduce template argument for 'class cv::Mat_<`template-parameter513'>' from 'class std::vector<_Ty,class std::allocator<_Ty> >'
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(1343) : see reference to class template instantiation 'cv::Mat_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(1342) : error C2785: '__thiscall cv::Mat_<T2>::operator`class cv::Mat_<_Tp>'(void) const' and '__thiscall cv::Mat_<_Tp>::operator`class std::vector<_Tp,class std::allocator<_Tp> >'(void) const' have different return types
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(1285) : see declaration of 'operator`class cv::Mat_<`template-parameter513'>''
+        F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(1343) : see reference to class template instantiation 'cv::Mat_<_Tp>' being compiled
+F:\MDBlue\GoogleCode\WorkingSet\Project\FaceDetect_V1.3\cxcore.hpp(2307) : fatal error C1083: Cannot open include file: 'cxoperations.hpp': No such file or directory
+Error executing cl.exe.
+Creating temporary file "C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/o"Release/FaceDetect.bsc" 
+.\Release\StdAfx.sbr
+.\Release\AdaBoostClassifier.sbr
+.\Release\CascadeClassifier.sbr
+.\Release\FaceDetect.sbr
+.\Release\FaceDetectDoc.sbr
+.\Release\FaceDetectView.sbr
+.\Release\FFS.SBR
+.\Release\Global.sbr
+.\Release\IntImage.sbr
+.\Release\Learn.sbr
+.\Release\MainFrm.sbr
+.\Release\SimpleClassifier.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\HotGa\LOCALS~1\Temp\RSP4E.tmp"
+Creating browse info file...
+Microsoft Browse Information Maintenance Utility Version 6.00.8168
+Copyright (C) Microsoft Corp 1990-1998. All rights reserved.
+
+BSCMAKE: error BK1506 : cannot open file '.\Release\IntImage.sbr': No such file or directory
+Error executing bscmake.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FaceDetect.exe - 29 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
