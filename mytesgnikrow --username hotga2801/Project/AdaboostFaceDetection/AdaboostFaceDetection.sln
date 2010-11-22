@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdaboostFaceDetection", "AdaboostFaceDetection\AdaboostFaceDetection.vcproj", "{B7C4B4CB-1F79-465C-A916-6C002DDFEF16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C4B4CB-1F79-465C-A916-6C002DDFEF16}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7C4B4CB-1F79-465C-A916-6C002DDFEF16}.Debug|Win32.Build.0 = Debug|Win32
+		{B7C4B4CB-1F79-465C-A916-6C002DDFEF16}.Release|Win32.ActiveCfg = Release|Win32
+		{B7C4B4CB-1F79-465C-A916-6C002DDFEF16}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
