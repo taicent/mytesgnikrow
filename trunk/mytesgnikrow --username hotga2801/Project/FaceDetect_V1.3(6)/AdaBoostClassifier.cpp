@@ -10,7 +10,7 @@ using namespace std;
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
 #include "Global.h"
-#include "FFS.h"
+//#include "FFS.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -143,10 +143,10 @@ void AdaBoostClassifier::TrainLDS(int rounds,const bool update,const int method)
 	ofstream f;
 	int fn,fp;
 
-	if(gTrain_Method==TRAIN_ADA)
+	/*if(gTrain_Method==TRAIN_ADA)*/
         TrainAdaBoost(rounds,false,method);
-	else if(gTrain_Method==TRAIN_FFS)
-		ForwardFeatureSelection(*this,rounds,false,method);
+	//else if(gTrain_Method==TRAIN_FFS)
+	//	ForwardFeatureSelection(*this,rounds,false,method);
 
 	if(linear_classifier==LC_LAC || linear_classifier==LC_FDA)
 	{

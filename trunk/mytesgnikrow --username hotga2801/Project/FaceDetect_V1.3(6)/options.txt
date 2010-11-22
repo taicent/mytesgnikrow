@@ -17,7 +17,7 @@ data\fileused.txt
 // Bootstrap_database_filename	File to list all files in the bootstrapping dataset
 C:\WuJx\SkinColor\non-skin-images\0_FileList.txt
 // Backup_directory_name	Directory to save all the backup information during the training process
-C:\WuJX\CascadeResults\New\Ada\
+data\
 // TestSet_filename 		File to contain all test images c:\wujx\CMUFaces\files.txt
 data\files.txt
 // sx				Width of input training image

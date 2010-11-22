@@ -10,7 +10,7 @@ using namespace std;
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
 #include "Global.h"
-#include "FFS.h"
+//#include "FFS.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
