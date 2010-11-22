@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_std_afx_8h.html" title="stdafx.h" alt="" coords="233,83,300,112"/>
+<area shape="rect" id="node15" href="$_face_detect_8h.html" title="FaceDetect.h" alt="" coords="491,83,589,112"/>
+<area shape="rect" id="node19" href="$_option_dialog_8h.html" title="OptionDialog.h" alt="" coords="360,83,467,112"/>
+<area shape="rect" id="node24" href="$_int_image_8h.html" title="IntImage.h" alt="" coords="693,83,776,112"/>
+<area shape="rect" id="node26" href="$_simple_classifier_8h.html" title="SimpleClassifier.h" alt="" coords="800,83,925,112"/>
+<area shape="rect" id="node28" href="$_ada_boost_classifier_8h.html" title="AdaBoostClassifier.h" alt="" coords="949,83,1091,112"/>
+<area shape="rect" id="node30" href="$_global_8h.html" title="global.h" alt="" coords="1115,83,1181,112"/>
+<area shape="rect" id="node17" href="$resource_8h.html" title="resource.h" alt="" coords="499,160,581,189"/>
+</map>

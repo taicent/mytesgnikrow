@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_std_afx_8h.html" title="stdafx.h" alt="" coords="149,83,216,112"/>
+<area shape="rect" id="node27" href="$resource_8h.html" title="resource.h" alt="" coords="816,83,899,112"/>
+<area shape="rect" id="node29" href="$_int_image_8h.html" title="IntImage.h" alt="" coords="923,83,1005,112"/>
+<area shape="rect" id="node31" href="$_simple_classifier_8h.html" title="SimpleClassifier.h" alt="" coords="1029,83,1155,112"/>
+<area shape="rect" id="node33" href="$_ada_boost_classifier_8h.html" title="AdaBoostClassifier.h" alt="" coords="1179,83,1320,112"/>
+<area shape="rect" id="node35" href="$_cascade_classifier_8h.html" title="CascadeClassifier.h" alt="" coords="1344,83,1480,112"/>
+<area shape="rect" id="node37" href="$_global_8h.html" title="Global.h" alt="" coords="1504,83,1573,112"/>
+<area shape="rect" id="node39" href="$_f_f_s_8_h.html" title="FFS.h" alt="" coords="1597,83,1656,112"/>
+<area shape="rect" id="node41" href="$_learn_8h.html" title="learn.h" alt="" coords="1680,83,1741,112"/>
+<area shape="rect" id="node43" href="$_option_dialog_8h.html" title="OptionDialog.h" alt="" coords="1765,83,1872,112"/>
+</map>

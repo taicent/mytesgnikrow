@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_global_8h.html#a4ec0369e5999d285b618a3b15ae7ed32" title="WithinClassScatter" alt="" coords="164,5,297,35"/>
+<area shape="rect" id="node5" href="$struct_ada_boost_classifier.html#a7eb7818c9cf8ae048ba94d3eb1db8ef4" title="AdaBoostClassifier::TrainLDS" alt="" coords="348,5,540,35"/>
+<area shape="rect" id="node7" href="$struct_cascade_classifier.html#a4deff5a4c4e7fdcfcfd4b53588c91218" title="CascadeClassifier::OneRound" alt="" coords="589,5,784,35"/>
+<area shape="rect" id="node9" href="$_learn_8h.html#a58bcbc09a3772ab0e7948e3a6faf3e49" title="InitTrain" alt="" coords="832,5,899,35"/>
+<area shape="rect" id="node11" href="$class_c_face_detect_doc.html#a93ceab67b7813414a1fb5c1f603dd249" title="CFaceDetectDoc::OnTrain" alt="" coords="948,5,1121,35"/>
+</map>

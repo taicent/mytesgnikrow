@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_int_image.html#a55f4c0ea9ce592eac17b1e0700a8bb7c" title="IntImage::SetSize" alt="" coords="168,176,293,205"/>
+<area shape="rect" id="node44" href="$class_int_image.html#ac42a9b36bd61b13da058e4004c957d40" title="IntImage::~IntImage" alt="" coords="163,229,299,258"/>
+<area shape="rect" id="node5" href="$_learn_8h.html#abcddff103c3bdbca0371d8619c03d9ce" title="BoostingInputFiles" alt="" coords="1044,96,1172,125"/>
+<area shape="rect" id="node14" href="$class_int_image.html#ac6e3ce450af9b1dfe1ef4b7c69ac0ea7" title="IntImage::CalcSquareAndIntegral" alt="" coords="347,176,557,205"/>
+<area shape="rect" id="node23" href="$class_int_image.html#a7beae377c2941fa123eafeb2ea2c52fa" title="IntImage::Copy" alt="" coords="397,229,507,258"/>
+<area shape="rect" id="node26" href="$class_int_image.html#ac273e73b601812297c1989cd5586a707" title="IntImage::Load" alt="" coords="399,69,505,98"/>
+<area shape="rect" id="node29" href="$class_int_image.html#ac392f1be82fd2099b4df48bf2c8372e1" title="IntImage::operator=" alt="" coords="385,282,519,312"/>
+<area shape="rect" id="node31" href="$_global_8h.html#a8c7323c5cb7e6d197003d29b9e0952bf" title="ReadOneTrainingSample" alt="" coords="369,336,535,365"/>
+<area shape="rect" id="node40" href="$class_int_image.html#ae82bfa76f67dae2c56a0d134c4322e96" title="IntImage::Resize" alt="" coords="393,122,511,152"/>
+<area shape="rect" id="node7" href="$_learn_8h.html#a58bcbc09a3772ab0e7948e3a6faf3e49" title="InitTrain" alt="" coords="1517,97,1584,126"/>
+<area shape="rect" id="node11" href="$struct_cascade_classifier.html#a4deff5a4c4e7fdcfcfd4b53588c91218" title="CascadeClassifier::OneRound" alt="" coords="1275,122,1469,152"/>
+<area shape="rect" id="node9" href="$class_c_face_detect_doc.html#a93ceab67b7813414a1fb5c1f603dd249" title="CFaceDetectDoc::OnTrain" alt="" coords="1633,97,1807,126"/>
+<area shape="rect" id="node16" href="$struct_cascade_classifier.html#afaf1f46189841c691e7f0194ff274d11" title="CascadeClassifier::ApplyOriginalSize" alt="" coords="655,176,892,205"/>
+<area shape="rect" id="node20" href="$struct_cascade_classifier.html#ab0d552889417eaf34678c66498919b47" title="CascadeClassifier::ApplyOriginalSizeForInputBoosting" alt="" coords="607,109,940,138"/>
+<area shape="rect" id="node18" href="$class_c_face_detect_doc.html#a9d2040110d30f368491cc6ada2ae8a64" title="CFaceDetectDoc::OnOpenDocument" alt="" coords="991,176,1225,205"/>
+<area shape="rect" id="node33" href="$_global_8h.html#a31dfcdc7de1ea218b6b12d742f2a22f7" title="ReadTrainSet" alt="" coords="724,309,823,338"/>
+<area shape="rect" id="node37" href="$_global_8h.html#a0c2e7dc48775e74b21d5525bf16e599d" title="ReadValidSet" alt="" coords="723,362,824,392"/>
+<area shape="rect" id="node35" href="$_global_8h.html#a557a13deae55e09e9387a8aa60737dbb" title="InitGlobalData" alt="" coords="1057,336,1159,365"/>
+</map>

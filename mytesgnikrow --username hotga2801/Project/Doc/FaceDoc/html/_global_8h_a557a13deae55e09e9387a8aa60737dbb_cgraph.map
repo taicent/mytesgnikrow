@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_global_8cpp.html#aa36287afad12ba59608d0b5c0dea8b5e" title="InitializeAuxiliaryVariables" alt="" coords="197,5,371,35"/>
+<area shape="rect" id="node7" href="$struct_cascade_classifier.html#ae27104fe87ee35c8047af6f3e69d2967" title="CascadeClassifier::LoadDefaultCascade" alt="" coords="157,59,411,88"/>
+<area shape="rect" id="node13" href="$_global_8cpp.html#ada66b50768156717f76c62a1c6376f2a" title="LoadOptions" alt="" coords="237,112,331,141"/>
+<area shape="rect" id="node19" href="$_global_8cpp.html#a7abd6661d12b13f963c6210fa3b64d9c" title="ReadBootstrapFileNames" alt="" coords="199,165,369,195"/>
+<area shape="rect" id="node23" href="$_global_8cpp.html#a3df0f26a1135722942b95a96184759bd" title="ReadClassifiers" alt="" coords="228,219,340,248"/>
+<area shape="rect" id="node25" href="$_global_8cpp.html#a1c46b176f1a4b723b30c5e15e46bbaa5" title="ReadRangeFile" alt="" coords="229,272,339,301"/>
+<area shape="rect" id="node27" href="$_global_8cpp.html#a31dfcdc7de1ea218b6b12d742f2a22f7" title="ReadTrainSet" alt="" coords="235,325,333,355"/>
+<area shape="rect" id="node37" href="$_global_8cpp.html#a0c2e7dc48775e74b21d5525bf16e599d" title="ReadValidSet" alt="" coords="233,379,335,408"/>
+<area shape="rect" id="node5" href="$_global_8cpp.html#a5c33d6aeb558f2b588493aed17e1f88f" title="InitializeWeights" alt="" coords="508,5,625,35"/>
+<area shape="rect" id="node9" href="$struct_cascade_classifier.html#a56b41730b82a2c387707f317ec563e54" title="CascadeClassifier::ReadFromFile" alt="" coords="460,59,673,88"/>
+<area shape="rect" id="node11" href="$struct_cascade_classifier.html#abb499ae338289af3209fa10875d067da" title="CascadeClassifier::Clear" alt="" coords="724,59,887,88"/>
+<area shape="rect" id="node15" href="$_global_8cpp.html#ab808dd06e0b05905b70895cb4ff34b24" title="IgnoreComments" alt="" coords="507,165,627,195"/>
+<area shape="rect" id="node17" href="$_global_8cpp.html#a66b0ee8f170c15f30c9ad81f51ee3a05" title="ReadlnString" alt="" coords="519,112,615,141"/>
+<area shape="rect" id="node29" href="$_global_8cpp.html#a4605e6e5edd3b5189ba16341c5c1b6ad" title="CountTrainFaces" alt="" coords="507,299,627,328"/>
+<area shape="rect" id="node31" href="$_global_8cpp.html#a8c7323c5cb7e6d197003d29b9e0952bf" title="ReadOneTrainingSample" alt="" coords="484,352,649,381"/>
+<area shape="rect" id="node33" href="$class_int_image.html#a55f4c0ea9ce592eac17b1e0700a8bb7c" title="IntImage::SetSize" alt="" coords="743,352,868,381"/>
+<area shape="rect" id="node35" href="$class_int_image.html#ad46996a80fcc6fec14f1f7fdc18c69c2" title="IntImage::Clear" alt="" coords="936,352,1045,381"/>
+<area shape="rect" id="node39" href="$_global_8cpp.html#a08acbc4598fc8848fbb51df3d76412f7" title="CountValidFaces" alt="" coords="507,405,627,435"/>
+</map>

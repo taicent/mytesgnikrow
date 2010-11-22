@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_simple_classifier.html#af87d4197e6d947fe0b1c1a8bffcb126f" title="SimpleClassifier::Apply" alt="" coords="268,5,423,35"/>
+<area shape="rect" id="node5" href="$_ada_boost_classifier_8h.html#aa81bb741bf8791fec3506860dd9b33d8" title="SingleFeatureClassifier" alt="" coords="268,59,423,88"/>
+<area shape="rect" id="node7" href="$struct_ada_boost_classifier.html#a53f384caf162f81077e4e500872d88da" title="AdaBoostClassifier::AddOneSimpleClassifier" alt="" coords="472,32,752,61"/>
+<area shape="rect" id="node19" href="$_f_f_s_8_h.html#a8be05772fb9bbb5a460fa6eb77864bac" title="TrainWeakClassifiers" alt="" coords="540,85,684,115"/>
+<area shape="rect" id="node9" href="$struct_ada_boost_classifier.html#a8e1091985f1029341cafd0a83bd53ac9" title="AdaBoostClassifier::TrainAdaBoost" alt="" coords="801,32,1025,61"/>
+<area shape="rect" id="node11" href="$struct_ada_boost_classifier.html#a7eb7818c9cf8ae048ba94d3eb1db8ef4" title="AdaBoostClassifier::TrainLDS" alt="" coords="1076,59,1268,88"/>
+<area shape="rect" id="node13" href="$struct_cascade_classifier.html#a4deff5a4c4e7fdcfcfd4b53588c91218" title="CascadeClassifier::OneRound" alt="" coords="1317,59,1512,88"/>
+<area shape="rect" id="node15" href="$_learn_8h.html#a58bcbc09a3772ab0e7948e3a6faf3e49" title="InitTrain" alt="" coords="1560,59,1627,88"/>
+<area shape="rect" id="node17" href="$class_c_face_detect_doc.html#a93ceab67b7813414a1fb5c1f603dd249" title="CFaceDetectDoc::OnTrain" alt="" coords="1676,59,1849,88"/>
+<area shape="rect" id="node21" href="$_f_f_s_8_h.html#ab89aa76bf3d812747d1355673f216784" title="ForwardFeatureSelection" alt="" coords="831,85,996,115"/>
+</map>

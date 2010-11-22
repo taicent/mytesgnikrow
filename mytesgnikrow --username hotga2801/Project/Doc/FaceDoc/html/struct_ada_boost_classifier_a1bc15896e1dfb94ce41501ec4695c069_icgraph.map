@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_ada_boost_classifier.html#a0c49aa5d804ff4dc5cf44798480c7ae1" title="AdaBoostClassifier::ApplyImagePatch" alt="" coords="248,63,491,92"/>
+<area shape="rect" id="node5" href="$_f_f_s_8_c_p_p.html#a41013739883525cf1dedf5d36d7be1cd" title="FFS_Histogram" alt="" coords="791,36,903,66"/>
+<area shape="rect" id="node9" href="$struct_ada_boost_classifier.html#a7eb7818c9cf8ae048ba94d3eb1db8ef4" title="AdaBoostClassifier::TrainLDS" alt="" coords="1225,63,1417,92"/>
+<area shape="rect" id="node17" href="$struct_ada_boost_classifier.html#a8e1091985f1029341cafd0a83bd53ac9" title="AdaBoostClassifier::TrainAdaBoost" alt="" coords="735,140,959,170"/>
+<area shape="rect" id="node21" href="$_global_8h.html#a32e7f6d30bba4d31cc297e0f2838a618" title="ValidateTheThreshold" alt="" coords="539,88,685,118"/>
+<area shape="rect" id="node7" href="$_f_f_s_8_h.html#ab89aa76bf3d812747d1355673f216784" title="ForwardFeatureSelection" alt="" coords="1009,36,1175,66"/>
+<area shape="rect" id="node11" href="$struct_cascade_classifier.html#a4deff5a4c4e7fdcfcfd4b53588c91218" title="CascadeClassifier::OneRound" alt="" coords="1467,63,1661,92"/>
+<area shape="rect" id="node13" href="$_learn_8h.html#a58bcbc09a3772ab0e7948e3a6faf3e49" title="InitTrain" alt="" coords="1709,63,1776,92"/>
+<area shape="rect" id="node15" href="$class_c_face_detect_doc.html#a93ceab67b7813414a1fb5c1f603dd249" title="CFaceDetectDoc::OnTrain" alt="" coords="1825,63,1999,92"/>
+</map>
