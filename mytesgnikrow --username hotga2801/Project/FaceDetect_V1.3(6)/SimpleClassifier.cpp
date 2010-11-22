@@ -8,7 +8,7 @@ using namespace std;
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
 #include "Global.h"
-#include "FFS.h"
+//#include "FFS.h"
 #include "learn.h"
 
 #ifdef _DEBUG

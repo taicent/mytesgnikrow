@@ -12,7 +12,7 @@ using namespace std;
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
 #include "Global.h"
-#include "FFS.h"
+//#include "FFS.h"
 #include "learn.h"
 #include "OptionDialog.h"
 
@@ -38,9 +38,9 @@ void InitTrain()
 	}
 	else
 	{
-		gTrain_Method = dlg.m_fs;
-		linear_classifier = dlg.m_lc;
-		asym_ratio = REAL(dlg.m_ratio);
+		gTrain_Method = TRAIN_ADA;
+		linear_classifier = LC_ORIGINAL;
+		asym_ratio = REAL(1);
 	}
 
 	i = gStartingNode;
@@ -202,10 +202,10 @@ const bool CascadeClassifier::OneRound(const int round)
 	pwnd->SetWindowText(str);
 	ada.TrainLDS(gNof[round-1],true,gGoal_Method);
 
-	if(gTrain_Method==TRAIN_ADA)
+	//if(gTrain_Method==TRAIN_ADA)
 		BackupIntermediateFile(gAda_Log_Filename,round);
-	else
-		BackupIntermediateFile(FFS_log_filename,round);
+	//else
+	//	BackupIntermediateFile(FFS_log_filename,round);
 
 	BackupIntermediateFile(gCascade_Filename,round);
 

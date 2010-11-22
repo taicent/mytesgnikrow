@@ -89,7 +89,7 @@ BOOL CFaceDetectApp::InitInstance()
 	m_pMainWnd->ShowWindow(SW_SHOW);
 	m_pMainWnd->UpdateWindow();
 
-	//InitGlobalData();
+	InitGlobalData();
 
 	return TRUE;
 }
