@@ -3,59 +3,59 @@
 
 struct CascadeClassifier;
 
-extern CString 	option_filename;
+extern CString 	gSetup_Filename;
 
-extern int total_fp;
+extern int gTotal_fp;
 
-extern CString trainset_filename;
-extern CString validset_filename;
-extern CString classifier_filename;
-extern CString ada_log_filename;
-extern CString cascade_filename;
+extern CString gTrainset_Filename;
+extern CString gValidationset_Filename;
+extern CString gClassifier_Filename;
+extern CString gAda_Log_Filename;
+extern CString gCascade_Filename;
 extern CString FFS_WeakClassifiers_filename;
 extern CString FFS_log_filename;
 extern CString FileUsage_log_filename;
-extern CString Bootstrap_database_filename;
-extern CString Backup_directory_name;
-extern CString TestSet_filename;
-extern int sx;
-extern int sy;
-extern int train_method;
+extern CString gBootstrap_Database_Filename;
+extern CString gBackup_Directory_Name;
+extern CString gTestSet_Filename;
+extern int gSx;
+extern int gSy;
+extern int gTrain_Method;
 extern int linear_classifier;
 extern int bootstrap_level;
 extern int max_bootstrap_level;
 extern vector<REAL> bootstrap_resizeratio;
 extern vector<int> bootstrap_increment;
-extern int totalfeatures;
-extern int max_files;
-extern int goal_method;
-extern REAL node_det_goal;
-extern REAL node_fp_goal;
-extern int first_feature;
+extern int gTotalFeatures;
+extern int gMaxNumFiles;
+extern int gGoal_Method;
+extern REAL gNode_Det_Goal;
+extern REAL gNode_fp_Goal;
+extern int gFirst_Feature;
 extern REAL asym_ratio;
-extern int max_nodes;
-extern vector<int> nof;
-extern int starting_node;
-extern int facecount, validfacecount;
+extern int gMaxNumNodes;
+extern vector<int> gNof;
+extern int gStartingNode;
+extern int gFaceCount, gValidFaceCount;
 
-extern IntImage* trainset;
-extern IntImage* validset;
-extern int totalcount;
-extern int validcount;	
+extern IntImage* gTrainSet;
+extern IntImage* gValidationSet;
+extern int gTotalCount;
+extern int gValidationCount;	
 
-extern CascadeClassifier* cascade;
-extern REAL* weights;
-extern int** table;
-extern SimpleClassifier* classifiers;
+extern CascadeClassifier* gCascade;
+extern REAL* gWeights;
+extern int** gTable;
+extern SimpleClassifier* gClassifiers;
 
-extern REAL* features;
-extern int* labels;
+extern REAL* gFeatures;
+extern int* gLabels;
 
-extern int* fileused;
-extern int bootstrap_size;
-extern CString* bootstrap_filenames;
+extern int* gFileUsed;
+extern int gBootstrapSize;
+extern CString* gBootstrap_Filenames;
 
-extern REAL mean_min,mean_max,sq_min,sq_max,var_min,var_max;
+extern REAL gMean_Min,gMean_Max,gSq_Min,gSq_Max,gVar_Min,gVar_Max;
 
 void ReadOneTrainingSample(ifstream& is,IntImage& image);
 void GetFeatureValues0(REAL* const features,const int from,const int to,const int x1,const int x2,const int x3,const int y1,const int y3);

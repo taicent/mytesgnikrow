@@ -25,26 +25,26 @@ void TrainWeakClassifiers()
 	int* parity; int* indexes; 
 	ofstream of;
 
-	errors = new REAL[totalfeatures]; ASSERT(errors!=NULL);
-	threshes = new REAL[totalfeatures]; ASSERT(threshes!=NULL);
-	indexes = new int[totalfeatures]; ASSERT(indexes!=NULL);
-	parity = new int[totalfeatures]; ASSERT(parity!=NULL);
+	errors = new REAL[gTotalFeatures]; ASSERT(errors!=NULL);
+	threshes = new REAL[gTotalFeatures]; ASSERT(threshes!=NULL);
+	indexes = new int[gTotalFeatures]; ASSERT(indexes!=NULL);
+	parity = new int[gTotalFeatures]; ASSERT(parity!=NULL);
 
 	InitializeWeights();
-	for(i=0;i<totalfeatures;i++)
+	for(i=0;i<gTotalFeatures;i++)
 	{
-		FillTheTable(table[i],classifiers[i]);
-		for(j=0;j<totalcount;j++) labels[j] = trainset[j].label;
-		SingleFeatureClassifier(labels,classifiers[i],table[i]);
-		errors[i] = classifiers[i].error;
-		parity[i] = classifiers[i].parity;
-		threshes[i] = classifiers[i].thresh;
+		FillTheTable(gTable[i],gClassifiers[i]);
+		for(j=0;j<gTotalCount;j++) gLabels[j] = gTrainSet[j].label;
+		SingleFeatureClassifier(gLabels,gClassifiers[i],gTable[i]);
+		errors[i] = gClassifiers[i].error;
+		parity[i] = gClassifiers[i].parity;
+		threshes[i] = gClassifiers[i].thresh;
 	}
-	for(i=0;i<totalfeatures;i++) indexes[i] = i;
-	QuickSort(errors,indexes,threshes,parity,0,totalfeatures-1);
+	for(i=0;i<gTotalFeatures;i++) indexes[i] = i;
+	QuickSort(errors,indexes,threshes,parity,0,gTotalFeatures-1);
 
 	of.open(FFS_WeakClassifiers_filename);
-	for(i=0;i<totalfeatures;i++)
+	for(i=0;i<gTotalFeatures;i++)
 		of<<indexes[i]<<" "<<threshes[i]<<" "<<errors[i]<<" "<<parity[i]<<endl;
 	of.close();
 
@@ -60,18 +60,18 @@ void LoadWeakClassifiers(int* const indexes)
 	int i,j;
 
 	f.open(FFS_WeakClassifiers_filename);
-	for(i=0;i<totalfeatures;i++)
+	for(i=0;i<gTotalFeatures;i++)
 	{
 		f>>indexes[i];
-		f>>classifiers[indexes[i]].thresh;
-		f>>classifiers[indexes[i]].error;
-		f>>classifiers[indexes[i]].parity;
+		f>>gClassifiers[indexes[i]].thresh;
+		f>>gClassifiers[indexes[i]].error;
+		f>>gClassifiers[indexes[i]].parity;
 	}
 	f.close();
 
-	for(i=0;i<totalfeatures;i++)
-		for(j=0;j<totalcount;j++)
-			table[i][j]=classifiers[i].Apply(trainset[j]);
+	for(i=0;i<gTotalFeatures;i++)
+		for(j=0;j<gTotalCount;j++)
+			gTable[i][j]=gClassifiers[i].Apply(gTrainSet[j]);
 }
 
 void BuildHistogram(const int* const curresult, const int size,int* const hist_pos, int* const hist_neg, const int facecount)
@@ -81,7 +81,7 @@ void BuildHistogram(const int* const curresult, const int size,int* const hist_p
 	memset(hist_pos,0,sizeof(*hist_pos)*size);
 	memset(hist_neg,0,sizeof(*hist_neg)*size);
 	for(i=0;i<facecount;i++) hist_pos[curresult[i]]++;
-	for(i=facecount;i<totalcount;i++) hist_neg[curresult[i]]++;
+	for(i=facecount;i<gTotalCount;i++) hist_neg[curresult[i]]++;
 }
 
 void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,ofstream& f,const int method)
@@ -93,24 +93,24 @@ void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,
 	int thresh,minthresh;
 	bool* used;
 
-	tempresult = new int[totalcount]; ASSERT(tempresult!=NULL);
+	tempresult = new int[gTotalCount]; ASSERT(tempresult!=NULL);
 	hist_pos = new int[round+1]; ASSERT(hist_pos!=NULL);
 	hist_neg = new int[round+1]; ASSERT(hist_neg!=NULL);
-	used = new bool[totalfeatures]; ASSERT(used!=NULL);
-	for(i=0;i<totalfeatures;i++) used[i]=false;
+	used = new bool[gTotalFeatures]; ASSERT(used!=NULL);
+	for(i=0;i<gTotalFeatures;i++) used[i]=false;
 	f<<"Begin Histogram FFS"<<endl;
 	ada.InitToGivenSize(round);
-	for(i=0;i<totalcount;i++) curresult[i] = 0;
+	for(i=0;i<gTotalCount;i++) curresult[i] = 0;
 	for(i=0;i<round;i++)
 	{
 		minerror = INT_MAX; minindex = -1; minthresh = INT_MAX;
-		for(j=0;j<totalfeatures;j++)
+		for(j=0;j<gTotalFeatures;j++)
 		{
 			if(used[j]) continue;
 			int temp;
-			for(k=0;k<totalcount;k++) tempresult[k] = curresult[k] + table[j][k];
-			BuildHistogram(tempresult,i+2,hist_pos,hist_neg,facecount);
-			error = temp = totalcount-facecount;
+			for(k=0;k<gTotalCount;k++) tempresult[k] = curresult[k] + gTable[j][k];
+			BuildHistogram(tempresult,i+2,hist_pos,hist_neg,gFaceCount);
+			error = temp = gTotalCount-gFaceCount;
 			for(k=0;k<=i+1;k++)
 			{
 				temp = temp - hist_neg[k] + hist_pos[k];
@@ -125,15 +125,15 @@ void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,
 		}
 		used[minindex]=true;
 		ada.alphas[ada.count] = 1;
-		ada.scs[ada.count] = classifiers[minindex];
+		ada.scs[ada.count] = gClassifiers[minindex];
 		ada.count++;
 		ada.thresh = REAL(minthresh);
-		for(j=0;j<totalcount;j++) curresult[j] += table[minindex][j];
-		f<<i+1<<"\t"<<minindex<<"\t"<<minerror<<"\t"<<classifiers[minindex].thresh<<endl;
+		for(j=0;j<gTotalCount;j++) curresult[j] += gTable[minindex][j];
+		f<<i+1<<"\t"<<minindex<<"\t"<<minerror<<"\t"<<gClassifiers[minindex].thresh<<endl;
 	}
-	BuildHistogram(curresult,round+1,hist_pos,hist_neg,facecount);
+	BuildHistogram(curresult,round+1,hist_pos,hist_neg,gFaceCount);
 	for(i=1;i<=round;i++) { hist_neg[i] += hist_neg[i-1]; hist_pos[i] += hist_pos[i-1]; }
-	i=0; while(hist_neg[i]<(totalcount-facecount)*(1-node_fp_goal)) i++;
+	i=0; while(hist_neg[i]<(gTotalCount-gFaceCount)*(1-gNode_fp_Goal)) i++;
 	switch(method)
 	{
 		case GOAL_METHOD_MIN_ERROR: 
@@ -145,16 +145,16 @@ void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,
 			ada.thresh = i + REAL(0.5); 
 			break;
 	}
-	f<<ada.thresh<<"\t"<<hist_pos[i-1]<<"\t"<<totalcount-facecount-hist_neg[i-1]<<endl;
+	f<<ada.thresh<<"\t"<<hist_pos[i-1]<<"\t"<<gTotalCount-gFaceCount-hist_neg[i-1]<<endl;
 
 	int fn,fp;
 	f<<"Training Error:"<<endl;
-	fn = 0; for(i=0;i<facecount;i++) if(ada.ApplyImagePatch(trainset[i])==0) fn++;
-	fp = 0; for(i=facecount;i<totalcount;i++) if(ada.ApplyImagePatch(trainset[i])==1) fp++;
+	fn = 0; for(i=0;i<gFaceCount;i++) if(ada.ApplyImagePatch(gTrainSet[i])==0) fn++;
+	fp = 0; for(i=gFaceCount;i<gTotalCount;i++) if(ada.ApplyImagePatch(gTrainSet[i])==1) fp++;
 	f<<fn<<"\t"<<fp<<endl;
 	f<<"Validation Error:"<<endl;
-	fn = 0; for(i=0;i<validfacecount;i++) if(ada.ApplyImagePatch(validset[i])==0) fn++;
-	fp = 0; for(i=validfacecount;i<validcount;i++) if(ada.ApplyImagePatch(validset[i])==1) fp++;
+	fn = 0; for(i=0;i<gValidFaceCount;i++) if(ada.ApplyImagePatch(gValidationSet[i])==0) fn++;
+	fp = 0; for(i=gValidFaceCount;i<gValidationCount;i++) if(ada.ApplyImagePatch(gValidationSet[i])==1) fp++;
 	f<<fn<<"\t"<<fp<<endl;
 	f<<"End of Histogram FFS"<<endl;
 	delete[] hist_pos; hist_pos=NULL;
@@ -170,8 +170,8 @@ void ForwardFeatureSelection(AdaBoostClassifier& ada,const int round,const bool 
 
 	ada.Clear();
 
-	curresult = new int[totalcount]; ASSERT(curresult!=NULL);
-	indexes = new int[totalfeatures]; ASSERT(indexes != NULL);
+	curresult = new int[gTotalCount]; ASSERT(curresult!=NULL);
+	indexes = new int[gTotalFeatures]; ASSERT(indexes != NULL);
 	f.open(FFS_log_filename);
 	TrainWeakClassifiers();
 	LoadWeakClassifiers(indexes);

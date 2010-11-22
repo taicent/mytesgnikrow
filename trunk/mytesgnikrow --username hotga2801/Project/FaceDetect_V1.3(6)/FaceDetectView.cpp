@@ -127,15 +127,15 @@ void CFaceDetectView::OnViewTrainimage()
 	CFaceDetectDoc* pDoc;
 
 	index++;
-	if(index<0 || index>totalcount) index=0;
+	if(index<0 || index>gTotalCount) index=0;
 	s.Format("index=%d",index);
 	pDoc = GetDocument();
 	pDoc->SetTitle(s);
-	pDoc->image=trainset[index];
-	for(i=1;i<sx+1;i++)
-		for(j=1;j<sy+1;j++)
+	pDoc->image=gTrainSet[index];
+	for(i=1;i<gSx+1;i++)
+		for(j=1;j<gSy+1;j++)
 		{
-			pDoc->image.data[i][j]=trainset[index].data[i][j]+trainset[index].data[i-1][j-1]-trainset[index].data[i][j-1]-trainset[index].data[i-1][j];
+			pDoc->image.data[i][j]=gTrainSet[index].data[i][j]+gTrainSet[index].data[i-1][j-1]-gTrainSet[index].data[i][j-1]-gTrainSet[index].data[i-1][j];
 		}
 	pDoc->UpdateAllViews(NULL);
 }
