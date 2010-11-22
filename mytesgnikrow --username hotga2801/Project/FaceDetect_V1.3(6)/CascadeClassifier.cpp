@@ -37,7 +37,7 @@ CascadeClassifier& CascadeClassifier::operator=(const CascadeClassifier& source)
 {
 	Clear();
 	count = source.count;
-	ac = new AdaBoostClassifier[max_nodes]; ASSERT(ac!=NULL);
+	ac = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(ac!=NULL);
 	for(int i=0;i<count;i++) ac[i] = source.ac[i];
 	return *this;
 }
@@ -46,7 +46,7 @@ void CascadeClassifier::ReadFromFile(ifstream& f)
 {
 	Clear();
 	f>>count; f.ignore(256,'\n');
-	ac = new AdaBoostClassifier[max_nodes]; ASSERT(ac!=NULL);
+	ac = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(ac!=NULL);
 	for(int i=0;i<count;i++) ac[i].ReadFromFile(f);
 }
 
@@ -60,7 +60,7 @@ void CascadeClassifier::LoadDefaultCascade()
 {
 	ifstream f;
 
-	f.open(cascade_filename);
+	f.open(gCascade_Filename);
 	ReadFromFile(f);
 	f.close();
 }
@@ -113,24 +113,24 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 	procface.Copy(original);
 	ratio = 1.0;
 	results.clear();
-	REAL paddedsize = REAL(1)/REAL((sx+1)*(sy+1));
-	while((procface.height>sx+1) && (procface.width>sy+1))
+	REAL paddedsize = REAL(1)/REAL((gSx+1)*(gSy+1));
+	while((procface.height>gSx+1) && (procface.width>gSy+1))
 	{
 		procface.CalcSquareAndIntegral(square,image);
-		for(int i=0,size_x=image.height-sx;i<size_x;i+=1)
-			for(int j=0,size_y=image.width-sy;j<size_y;j+=1)
+		for(int i=0,size_x=image.height-gSx;i<size_x;i+=1)
+			for(int j=0,size_y=image.width-gSy;j<size_y;j+=1)
 			{
-				ex = image.data[i+sx][j+sy]+image.data[i][j]-image.data[i+sx][j]-image.data[i][j+sy];
-				if(ex<mean_min || ex>mean_max) continue;
-				sq = square.data[i+sx][j+sy]+square.data[i][j]-square.data[i+sx][j]-square.data[i][j+sy];
-				if(sq<sq_min) continue;
+				ex = image.data[i+gSx][j+gSy]+image.data[i][j]-image.data[i+gSx][j]-image.data[i][j+gSy];
+				if(ex<gMean_Min || ex>gMean_Max) continue;
+				sq = square.data[i+gSx][j+gSy]+square.data[i][j]-square.data[i+gSx][j]-square.data[i][j+gSy];
+				if(sq<gSq_Min) continue;
 				ex *= paddedsize;
 				ex = ex * ex;
 				sq *= paddedsize;
 				sq = sq - ex;
 				ASSERT(sq>=0);
 				if(sq>0) sq = sqrt(sq); else sq = 1.0;
-				if(sq<var_min) continue;
+				if(sq<gVar_Min) continue;
 				result = 1;
 				for(int k=0;k<count;k++)
 				{
@@ -190,7 +190,7 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 				{
 					const REAL r = 1.0/ratio;
 					rect.left = (LONG)(j*r);rect.top = (LONG)(i*r);
-					rect.right = (LONG)((j+sy)*r);rect.bottom = (LONG)((i+sx)*r);
+					rect.right = (LONG)((j+gSy)*r);rect.bottom = (LONG)((i+gSx)*r);
 					results.push_back(rect);
 				}
 			}
@@ -199,7 +199,7 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 		SwapIntImage(procface,image);
 	}
 
-	total_fp += results.size();
+	gTotal_fp += results.size();
 
 	PostProcess(results,2);
 	PostProcess(results,0);
@@ -282,24 +282,24 @@ void CascadeClassifier::ApplyOriginalSizeForInputBoosting(const CString filename
 	procface.Load(filename);
 	if(procface.height <=0 || procface.width<=0) return;
 	ratio = 1.0;
-	REAL paddedsize = REAL(1)/REAL((sx+1)*(sy+1));
-	while((procface.height>sx+1) && (procface.width>sy+1))
+	REAL paddedsize = REAL(1)/REAL((gSx+1)*(gSy+1));
+	while((procface.height>gSx+1) && (procface.width>gSy+1))
 	{
 		procface.CalcSquareAndIntegral(square,image);
-		for(int i=0,size_x=image.height-sx;i<size_x;i+=bootstrap_increment[bootstrap_level])
-			for(int j=0,size_y=image.width-sy;j<size_y;j+=bootstrap_increment[bootstrap_level])
+		for(int i=0,size_x=image.height-gSx;i<size_x;i+=bootstrap_increment[bootstrap_level])
+			for(int j=0,size_y=image.width-gSy;j<size_y;j+=bootstrap_increment[bootstrap_level])
 			{
-				ex = image.data[i+sx][j+sy]+image.data[i][j]-image.data[i+sx][j]-image.data[i][j+sy];
-				if(ex<mean_min || ex>mean_max) continue;
-				sq = square.data[i+sx][j+sy]+square.data[i][j]-square.data[i+sx][j]-square.data[i][j+sy];
-				if(sq<sq_min) continue;
+				ex = image.data[i+gSx][j+gSy]+image.data[i][j]-image.data[i+gSx][j]-image.data[i][j+gSy];
+				if(ex<gMean_Min || ex>gMean_Max) continue;
+				sq = square.data[i+gSx][j+gSy]+square.data[i][j]-square.data[i+gSx][j]-square.data[i][j+gSy];
+				if(sq<gSq_Min) continue;
 				ex *= paddedsize;
 				ex = ex * ex;
 				sq *= paddedsize;
 				sq = sq - ex;
 				ASSERT(sq>=0);
 				if(sq>0) sq = sqrt(sq); else sq = 1.0;
-				if(sq<var_min) continue;
+				if(sq<gVar_Min) continue;
 				result = 1;
 				for(int k=0;k<count;k++)
 				{
@@ -314,11 +314,11 @@ void CascadeClassifier::ApplyOriginalSizeForInputBoosting(const CString filename
 				}
 				if(result==1)
 				{
-					for(int k=1;k<=sx;k++)
-						for(int t=1;t<=sy;t++)
-							trainset[pointer].data[k][t]=image.data[i+k][j+t]-image.data[i+k][j]-image.data[i][j+t]+image.data[i][j];
+					for(int k=1;k<=gSx;k++)
+						for(int t=1;t<=gSy;t++)
+							gTrainSet[pointer].data[k][t]=image.data[i+k][j+t]-image.data[i+k][j]-image.data[i][j+t]+image.data[i][j];
 					pointer++;
-					if(pointer==totalcount) return;
+					if(pointer==gTotalCount) return;
 				}
 			}
 		ratio = ratio * bootstrap_resizeratio[bootstrap_level];
@@ -333,14 +333,14 @@ void AppendAdaBoostClassifier(const AdaBoostClassifier& ada)
 	ifstream f;
 	ofstream of;
 
-	f.open(cascade_filename);
+	f.open(gCascade_Filename);
 	cas.ReadFromFile(f);
 	f.close();
 
 	cas.ac[cas.count] = ada;
 	cas.count++;
 
-	of.open(cascade_filename);
+	of.open(gCascade_Filename);
 	cas.WriteToFile(of);
 	of.close();
 }

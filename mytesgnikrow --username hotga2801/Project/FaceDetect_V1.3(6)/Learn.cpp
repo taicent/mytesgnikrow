@@ -27,24 +27,24 @@ void InitTrain()
 	int i;
 	OptionDialog dlg;
 
-	dlg.m_size = starting_node;
-	dlg.m_fs = train_method;
+	dlg.m_size = gStartingNode;
+	dlg.m_fs = gTrain_Method;
 	dlg.m_lc = linear_classifier;
 	dlg.m_ratio = asym_ratio;
 	if(dlg.DoModal()!=IDOK)
 	{
-		AfxMessageBox("Training cancelled.");
+		AfxMessageBox("Training canceled.");
 		return;
 	}
 	else
 	{
-		train_method = dlg.m_fs;
+		gTrain_Method = dlg.m_fs;
 		linear_classifier = dlg.m_lc;
 		asym_ratio = REAL(dlg.m_ratio);
 	}
 
-	i = starting_node;
-	if(i!=1 && i<=max_nodes)
+	i = gStartingNode;
+	if(i!=1 && i<=gMaxNumNodes)
 	{
 		ofstream f;
 		if(!BoostingInputFiles(true))
@@ -53,16 +53,16 @@ void InitTrain()
 			return;
 		}
 		f.open(FileUsage_log_filename);
-		for(int j=0;j<max_files;j++) f<<fileused[j]<<" ";
+		for(int j=0;j<gMaxNumFiles;j++) f<<gFileUsed[j]<<" ";
 		f.close();
 	}
 	AfxGetApp()->BeginWaitCursor();
 	WriteRangeFile();
-	while(i<=max_nodes)
+	while(i<=gMaxNumNodes)
 	{
 		bool result;
 
-		result = cascade->OneRound(i);
+		result = gCascade->OneRound(i);
 		if(result==false)
 		{
 			AfxGetApp()->EndWaitCursor();
@@ -80,79 +80,79 @@ const bool BoostingInputFiles(const bool discard)
 	IntImage im;
 	ofstream of;
 
-	im.SetSize(CSize(sx+1,sy+1));
-	cascade->LoadDefaultCascade();
+	im.SetSize(CSize(gSx+1,gSy+1));
+	gCascade->LoadDefaultCascade();
 
-	pointer=facecount;
-	for(i=facecount;i<totalcount;i++) 
+	pointer=gFaceCount;
+	for(i=gFaceCount;i<gTotalCount;i++) 
 	{
 		if(discard) break;
-		if(cascade->ApplyImagePatch(trainset[i])!=0)
+		if(gCascade->ApplyImagePatch(gTrainSet[i])!=0)
 		{
-			if(pointer!=i) SwapIntImage(trainset[i],trainset[pointer]);
+			if(pointer!=i) SwapIntImage(gTrainSet[i],gTrainSet[pointer]);
 			pointer++;
-			if(pointer==totalcount) break;
+			if(pointer==gTotalCount) break;
 		}
 	}
-	if(pointer==totalcount) return true;
+	if(pointer==gTotalCount) return true;
 
 	index = 0;
-	while(pointer<totalcount)
+	while(pointer<gTotalCount)
 	{
-		if(index==bootstrap_size) 
+		if(index==gBootstrapSize) 
 		{
 			if(bootstrap_level==max_bootstrap_level-1)
 				return false;
 			else
 			{
 				bootstrap_level++;
-				for(i=0;i<max_files;i++) fileused[i] = 0;
+				for(i=0;i<gMaxNumFiles;i++) gFileUsed[i] = 0;
 				index=0;
-				pointer=facecount;
+				pointer=gFaceCount;
 			}
 		}
-		if(fileused[index]==1)
+		if(gFileUsed[index]==1)
 		{
 			index++;
 			continue;
 		}
-		cascade->ApplyOriginalSizeForInputBoosting(bootstrap_filenames[index],pointer);
-		fileused[index]=1;
+		gCascade->ApplyOriginalSizeForInputBoosting(gBootstrap_Filenames[index],pointer);
+		gFileUsed[index]=1;
 		index++;
 	}
 
-	for(i=0;i<totalcount;i++)
+	for(i=0;i<gTotalCount;i++)
 	{
 		int k,t;
-		memcpy(im.buf,trainset[i].buf,(sx+1)*(sy+1)*sizeof(im.buf[0]));
-		for(k=0;k<=sy;k++) trainset[i].data[0][k] = 0;
-		for(k=0;k<=sx;k++) trainset[i].data[k][0] = 0;
-		for(k=1;k<=sx;k++)
-			for(t=1;t<=sy;t++)
-				trainset[i].data[k][t] = im.data[k][t]-im.data[k-1][t]-im.data[k][t-1]+im.data[k-1][t-1];
+		memcpy(im.buf,gTrainSet[i].buf,(gSx+1)*(gSy+1)*sizeof(im.buf[0]));
+		for(k=0;k<=gSy;k++) gTrainSet[i].data[0][k] = 0;
+		for(k=0;k<=gSx;k++) gTrainSet[i].data[k][0] = 0;
+		for(k=1;k<=gSx;k++)
+			for(t=1;t<=gSy;t++)
+				gTrainSet[i].data[k][t] = im.data[k][t]-im.data[k-1][t]-im.data[k][t-1]+im.data[k-1][t-1];
 	}
 
-	of.open(trainset_filename,ios_base::out | ios_base::binary);
-	of<<totalcount<<endl;
+	of.open(gTrainset_Filename,ios_base::out | ios_base::binary);
+	of<<gTotalCount<<endl;
 	unsigned char* writebuf;
-	writebuf = new unsigned char[sx*sy]; ASSERT(writebuf!=NULL);
-	for(i=0;i<totalcount;i++)
+	writebuf = new unsigned char[gSx*gSy]; ASSERT(writebuf!=NULL);
+	for(i=0;i<gTotalCount;i++)
 	{
-		of<<trainset[i].label<<endl;
-		of<<sx<<" "<<sy<<endl;
-		for(int k=0;k<sx;k++)
-			for(int t=0;t<sy;t++)
-				writebuf[k*sy+t] = (unsigned char)((int)trainset[i].data[k+1][t+1]);
-		of.write((char*)writebuf,sx*sy);
+		of<<gTrainSet[i].label<<endl;
+		of<<gSx<<" "<<gSy<<endl;
+		for(int k=0;k<gSx;k++)
+			for(int t=0;t<gSy;t++)
+				writebuf[k*gSy+t] = (unsigned char)((int)gTrainSet[i].data[k+1][t+1]);
+		of.write((char*)writebuf,gSx*gSy);
 		of<<endl;
 	}
 	delete[] writebuf; writebuf=NULL;
 	of.close();
 
-	for(i=0;i<totalcount;i++) trainset[i].CalculateVarianceAndIntegralImageInPlace();
-	for(i=facecount;i<totalcount;i++) 
+	for(i=0;i<gTotalCount;i++) gTrainSet[i].CalculateVarianceAndIntegralImageInPlace();
+	for(i=gFaceCount;i<gTotalCount;i++) 
 	{
-		if(cascade->ApplyImagePatch(trainset[i])==0)
+		if(gCascade->ApplyImagePatch(gTrainSet[i])==0)
 			; //AfxMessageBox("Something is wrong?");
 	}
 
@@ -181,7 +181,7 @@ void BackupIntermediateFile(const CString filename, const int round)
 
 	savename.Format("%d",round);
 
-	savename = Backup_directory_name + name + savename + ext;
+	savename = gBackup_Directory_Name + name + savename + ext;
 	CopyFile(filename,savename,FALSE);
 }
 
@@ -196,25 +196,25 @@ const bool CascadeClassifier::OneRound(const int round)
 
 	pwnd = AfxGetMainWnd();
 
-	BackupIntermediateFile(trainset_filename,round);
+	BackupIntermediateFile(gTrainset_Filename,round);
 
 	str.Format("Training node: %d",round);
 	pwnd->SetWindowText(str);
-	ada.TrainLDS(nof[round-1],true,goal_method);
+	ada.TrainLDS(gNof[round-1],true,gGoal_Method);
 
-	if(train_method==TRAIN_ADA)
-		BackupIntermediateFile(ada_log_filename,round);
+	if(gTrain_Method==TRAIN_ADA)
+		BackupIntermediateFile(gAda_Log_Filename,round);
 	else
 		BackupIntermediateFile(FFS_log_filename,round);
 
-	BackupIntermediateFile(cascade_filename,round);
+	BackupIntermediateFile(gCascade_Filename,round);
 
 	str.Format("Training node %d finished. Bootstrapping non-face data for next node.",round);
 	pwnd->SetWindowText(str);
 	result = BoostingInputFiles(false);
 
 	f.open(FileUsage_log_filename);
-	for(i=0;i<max_files;i++) f<<fileused[i]<<" ";
+	for(i=0;i<gMaxNumFiles;i++) f<<gFileUsed[i]<<" ";
 	f.close();
 
 	BackupIntermediateFile(FileUsage_log_filename,round);
@@ -234,10 +234,10 @@ void WriteSimpleClassifiers(void)
 	f.open("classifiers.txt");
 	index = 0;
 
-	for(x1=0;x1<sx;x1+=1)
-		for(x3=x1+2;x3<=sx;x3+=2)
-			for(y1=0;y1<sy;y1+=1)
-				for(y3=y1+1;y3<=sy;y3+=1)
+	for(x1=0;x1<gSx;x1+=1)
+		for(x3=x1+2;x3<=gSx;x3+=2)
+			for(y1=0;y1<gSy;y1+=1)
+				for(y3=y1+1;y3<=gSy;y3+=1)
 				{
 					x2 = (x1+x3)/2;
 					y2 = y4 = x4 = -1;
@@ -250,10 +250,10 @@ void WriteSimpleClassifiers(void)
 					index++;
 				}
 
-	for(x1=0;x1<sx;x1+=1)
-		for(x3=x1+1;x3<=sx;x3+=1)
-			for(y1=0;y1<sy;y1+=1)
-				for(y3=y1+2;y3<=sy;y3+=2)
+	for(x1=0;x1<gSx;x1+=1)
+		for(x3=x1+1;x3<=gSx;x3+=1)
+			for(y1=0;y1<gSy;y1+=1)
+				for(y3=y1+2;y3<=gSy;y3+=2)
 				{
 					y2 = (y1+y3)/2;
 					x2 = x4 = y4 = -1;
@@ -266,10 +266,10 @@ void WriteSimpleClassifiers(void)
 					index++;
 				}
 
-	for(x1=0;x1<sx;x1++)
-		for(x4=x1+3;x4<=sx;x4+=3)
-			for(y1=0;y1<sy;y1+=1)
-				for(y3=y1+1;y3<=sy;y3+=1)
+	for(x1=0;x1<gSx;x1++)
+		for(x4=x1+3;x4<=gSx;x4+=3)
+			for(y1=0;y1<gSy;y1+=1)
+				for(y3=y1+1;y3<=gSy;y3+=1)
 				{
 					x2 = x1 + (x4-x1)/3;
 					x3 = x2 + (x4-x1)/3;
@@ -283,10 +283,10 @@ void WriteSimpleClassifiers(void)
 					index++;
 				}
 
-	for(x1=0;x1<sx;x1++)
-		for(x3=x1+1;x3<=sx;x3+=1)
-			for(y1=0;y1<sy;y1++)
-				for(y4=y1+3;y4<=sy;y4+=3)
+	for(x1=0;x1<gSx;x1++)
+		for(x3=x1+1;x3<=gSx;x3+=1)
+			for(y1=0;y1<gSy;y1++)
+				for(y4=y1+3;y4<=gSy;y4+=3)
 				{
 					y2 = y1 + (y4-y1)/3;
 					y3 = y2 + (y4-y1)/3;
@@ -300,10 +300,10 @@ void WriteSimpleClassifiers(void)
 					index++;
 				}
 
-	for(x1=0;x1<sx;x1+=1)
-		for(x3=x1+2;x3<=sx;x3+=2)
-			for(y1=0;y1<sy;y1+=1)
-				for(y3=y1+2;y3<=sy;y3+=2)
+	for(x1=0;x1<gSx;x1+=1)
+		for(x3=x1+2;x3<=gSx;x3+=2)
+			for(y1=0;y1<gSy;y1+=1)
+				for(y3=y1+2;y3<=gSy;y3+=2)
 				{
 					x2 = (x1+x3)/2;
 					y2 = (y1+y3)/2;
@@ -326,9 +326,9 @@ void SubSampleClassifiers()
 	int i;
 
 	f.open("classifiers.txt");
-	for(i=0;i<totalfeatures/10;i++)
+	for(i=0;i<gTotalFeatures/10;i++)
 	{
-		classifiers[i*10].WriteToFile(f);
+		gClassifiers[i*10].WriteToFile(f);
 	}
 	f.close();
 }

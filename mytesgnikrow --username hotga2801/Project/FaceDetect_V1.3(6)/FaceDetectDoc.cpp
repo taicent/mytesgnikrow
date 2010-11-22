@@ -102,12 +102,12 @@ BOOL CFaceDetectDoc::OnOpenDocument(LPCTSTR lpszPathName)
 		return FALSE;
 
 	BeginWaitCursor();
-	if(cascade->count>0)
+	if(gCascade->count>0)
 	{
 		image.Load(lpszPathName);
 //		__int64 t1,t2;
 //		QueryPerformanceCounter((LARGE_INTEGER*)&t1);
-		cascade->ApplyOriginalSize(image,lpszPathName);
+		gCascade->ApplyOriginalSize(image,lpszPathName);
 //		QueryPerformanceCounter((LARGE_INTEGER*)&t2);
 //		CString s;
 //		s.Format("%I64d",t2-t1);
@@ -127,16 +127,16 @@ void CFaceDetectDoc::OnTestAll()
 	DWORD t1,t2;
 	// region add
 	LoadOptions();
-	cascade = new CascadeClassifier;
-	ASSERT(cascade != NULL);
-	cascade->LoadDefaultCascade();
+	gCascade = new CascadeClassifier;
+	ASSERT(gCascade != NULL);
+	gCascade->LoadDefaultCascade();
 	ReadRangeFile();
 
 	BeginWaitCursor();
-	f.open(TestSet_filename);
+	f.open(gTestSet_Filename);
 	f>>count; f.ignore(256,'\n');
 
-	total_fp = 0;
+	gTotal_fp = 0;
 
 	t1=timeGetTime();
 	for(i=0;i<count;i++)
@@ -149,7 +149,7 @@ void CFaceDetectDoc::OnTestAll()
 	EndWaitCursor();
 
 	CString s;
-	s.Format("Total #false positives = %d",total_fp);
+	s.Format("Total #false positives = %d",gTotal_fp);
 	AfxMessageBox(s);
 	s.Format("Total time: %d milliseconds.\n",t2-t1);
 	//AfxMessageBox(s);
