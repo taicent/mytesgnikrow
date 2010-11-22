@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_cascade_classifier.html#afaf1f46189841c691e7f0194ff274d11" title="CascadeClassifier::ApplyOriginalSize" alt="" coords="207,5,444,35"/>
+<area shape="rect" id="node7" href="$struct_cascade_classifier.html#ab0d552889417eaf34678c66498919b47" title="CascadeClassifier::ApplyOriginalSizeForInputBoosting" alt="" coords="159,59,492,88"/>
+<area shape="rect" id="node9" href="$_learn_8h.html#abcddff103c3bdbca0371d8619c03d9ce" title="BoostingInputFiles" alt="" coords="596,84,724,113"/>
+<area shape="rect" id="node5" href="$class_c_face_detect_doc.html#a9d2040110d30f368491cc6ada2ae8a64" title="CFaceDetectDoc::OnOpenDocument" alt="" coords="543,5,777,35"/>
+<area shape="rect" id="node11" href="$_learn_8h.html#a58bcbc09a3772ab0e7948e3a6faf3e49" title="InitTrain" alt="" coords="1069,84,1136,113"/>
+<area shape="rect" id="node15" href="$struct_cascade_classifier.html#a4deff5a4c4e7fdcfcfd4b53588c91218" title="CascadeClassifier::OneRound" alt="" coords="827,109,1021,139"/>
+<area shape="rect" id="node13" href="$class_c_face_detect_doc.html#a93ceab67b7813414a1fb5c1f603dd249" title="CFaceDetectDoc::OnTrain" alt="" coords="1185,84,1359,113"/>
+</map>

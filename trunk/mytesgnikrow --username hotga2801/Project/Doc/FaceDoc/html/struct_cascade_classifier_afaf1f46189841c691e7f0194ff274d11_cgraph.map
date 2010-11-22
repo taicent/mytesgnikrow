@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_int_image.html#ac6e3ce450af9b1dfe1ef4b7c69ac0ea7" title="IntImage::CalcSquareAndIntegral" alt="" coords="291,5,501,35"/>
+<area shape="rect" id="node9" href="$class_int_image.html#a7beae377c2941fa123eafeb2ea2c52fa" title="IntImage::Copy" alt="" coords="341,59,451,88"/>
+<area shape="rect" id="node12" href="$struct_cascade_classifier.html#a20adf765af8433160a9682ce752b88da" title="CascadeClassifier::DrawResults" alt="" coords="293,112,499,141"/>
+<area shape="rect" id="node14" href="$_cascade_classifier_8cpp.html#ab545f44ccc65729b0858cdb3558ee412" title="PostProcess" alt="" coords="348,219,444,248"/>
+<area shape="rect" id="node18" href="$class_int_image.html#ae82bfa76f67dae2c56a0d134c4322e96" title="IntImage::Resize" alt="" coords="337,165,455,195"/>
+<area shape="rect" id="node21" href="$_int_image_8cpp.html#ab466d94337a0de3e954634067c18269f" title="SwapIntImage" alt="" coords="345,272,447,301"/>
+<area shape="rect" id="node5" href="$class_int_image.html#a55f4c0ea9ce592eac17b1e0700a8bb7c" title="IntImage::SetSize" alt="" coords="549,59,675,88"/>
+<area shape="rect" id="node7" href="$class_int_image.html#ad46996a80fcc6fec14f1f7fdc18c69c2" title="IntImage::Clear" alt="" coords="723,59,832,88"/>
+<area shape="rect" id="node16" href="$_cascade_classifier_8cpp.html#a214579847fd52997e748e365d489f5fa" title="SizeOfRect" alt="" coords="568,219,656,248"/>
+</map>

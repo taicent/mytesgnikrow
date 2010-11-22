@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_simple_classifier.html#a9b16351a9f7c930d18bb1de772e2ed93" title="SimpleClassifier::Apply" alt="" coords="335,5,489,35"/>
+<area shape="rect" id="node5" href="$_global_8cpp.html#a2948499335d3cfa2df731ee120bbc934" title="NormalizeWeight" alt="" coords="352,59,472,88"/>
+<area shape="rect" id="node7" href="$_ada_boost_classifier_8cpp.html#aa81bb741bf8791fec3506860dd9b33d8" title="SingleFeatureClassifier" alt="" coords="335,112,489,141"/>
+<area shape="rect" id="node9" href="$struct_simple_classifier.html#a7e55aac295b388d6f454fcccf34054fd" title="SimpleClassifier::GetOneFeature" alt="" coords="540,112,751,141"/>
+</map>

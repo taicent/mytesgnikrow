@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_std_afx_8h.html" title="stdafx.h" alt="" coords="193,83,260,112"/>
+<area shape="rect" id="node25" href="$_int_image_8h.html" title="IntImage.h" alt="" coords="716,83,799,112"/>
+<area shape="rect" id="node27" href="$_simple_classifier_8h.html" title="SimpleClassifier.h" alt="" coords="823,83,948,112"/>
+<area shape="rect" id="node29" href="$_ada_boost_classifier_8h.html" title="AdaBoostClassifier.h" alt="" coords="972,83,1113,112"/>
+<area shape="rect" id="node31" href="$_cascade_classifier_8h.html" title="CascadeClassifier.h" alt="" coords="1137,83,1273,112"/>
+<area shape="rect" id="node33" href="$_global_8h.html" title="Global.h" alt="" coords="1297,83,1367,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_simple_classifier.html#a9b16351a9f7c930d18bb1de772e2ed93" title="SimpleClassifier::Apply" alt="" coords="244,5,399,35"/>
+<area shape="rect" id="node5" href="$struct_ada_boost_classifier.html#a0c49aa5d804ff4dc5cf44798480c7ae1" title="AdaBoostClassifier::ApplyImagePatch" alt="" coords="200,59,443,88"/>
+<area shape="rect" id="node7" href="$struct_ada_boost_classifier.html#a1bc15896e1dfb94ce41501ec4695c069" title="AdaBoostClassifier::GetValue" alt="" coords="491,59,685,88"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$cxtypes_8h.html#a621995052d1748ccac9481ec7ca6136a" title="cvCeil" alt="" coords="153,5,209,35"/>
+<area shape="rect" id="node5" href="$cxcore_8h.html#ad870859764211611926d13a0cead740f" title="cvEllipseBox" alt="" coords="301,111,397,140"/>
+<area shape="rect" id="node7" href="$cxtypes_8h.html#ac256388af71f1c918aeb1a787c1d0371" title="cvFloor" alt="" coords="151,109,212,139"/>
+<area shape="rect" id="node9" href="$cxtypes_8h.html#a94ef665f47823a9d6197282cf89f8d73" title="cvPointFrom32f" alt="" coords="127,163,236,192"/>
+<area shape="rect" id="node12" href="$cxcore_8h.html#a9350ad52c844519dc8042d86b1848883" title="cvReadInt" alt="" coords="143,216,220,245"/>
+<area shape="rect" id="node14" href="$cxcore_8h.html#a6d39a237d6989394b51526e83f75119f" title="cvReadIntByName" alt="" coords="285,216,413,245"/>
+</map>

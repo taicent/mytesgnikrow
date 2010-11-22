@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_cv_string.html" title="CvString" alt="" coords="5,8,75,37"/>
+<area shape="rect" id="node4" href="$struct_cv_seq.html" title="CvSeq" alt="" coords="99,8,157,37"/>
+<area shape="rect" id="node6" href="$struct_cv_type_info.html" title="CvTypeInfo" alt="" coords="181,8,264,37"/>
+</map>

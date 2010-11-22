@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_ada_boost_classifier.html#a0c49aa5d804ff4dc5cf44798480c7ae1" title="AdaBoostClassifier::ApplyImagePatch" alt="" coords="445,10,688,40"/>
+<area shape="rect" id="node7" href="$_f_f_s_8_c_p_p.html#ae3d7857a5a760423a81f8df69103daaf" title="BuildHistogram" alt="" coords="228,36,337,65"/>
+<area shape="rect" id="node9" href="$struct_ada_boost_classifier.html#abaf61e33356d3a7950573d8267df0566" title="AdaBoostClassifier::InitToGivenSize" alt="" coords="168,142,397,172"/>
+<area shape="rect" id="node13" href="$_global_8cpp.html#a32e7f6d30bba4d31cc297e0f2838a618" title="ValidateTheThreshold" alt="" coords="209,89,356,118"/>
+<area shape="rect" id="node5" href="$struct_ada_boost_classifier.html#a1bc15896e1dfb94ce41501ec4695c069" title="AdaBoostClassifier::GetValue" alt="" coords="736,10,931,40"/>
+<area shape="rect" id="node11" href="$struct_ada_boost_classifier.html#acdfbb3cef858df32ae29d0c3d14c9ef5" title="AdaBoostClassifier::Clear" alt="" coords="481,142,652,172"/>
+<area shape="rect" id="node15" href="$struct_simple_classifier.html#a9b16351a9f7c930d18bb1de772e2ed93" title="SimpleClassifier::Apply" alt="" coords="489,89,644,118"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_std_afx_8h.html" title="stdafx.h" alt="" coords="193,83,260,112"/>
+<area shape="rect" id="node19" href="$_int_image_8h.html" title="IntImage.h" alt="" coords="452,83,535,112"/>
+<area shape="rect" id="node21" href="$_simple_classifier_8h.html" title="SimpleClassifier.h" alt="" coords="559,83,684,112"/>
+<area shape="rect" id="node23" href="$_ada_boost_classifier_8h.html" title="AdaBoostClassifier.h" alt="" coords="708,83,849,112"/>
+<area shape="rect" id="node25" href="$_global_8h.html" title="Global.h" alt="" coords="873,83,943,112"/>
+<area shape="rect" id="node27" href="$_cascade_classifier_8h.html" title="CascadeClassifier.h" alt="" coords="967,83,1103,112"/>
+<area shape="rect" id="node29" href="$_learn_8h.html" title="learn.h" alt="" coords="1127,83,1188,112"/>
+<area shape="rect" id="node31" href="$_face_detect_8h.html" title="FaceDetect.h" alt="" coords="1212,83,1311,112"/>
+<area shape="rect" id="node35" href="$_main_frm_8h.html" title="MainFrm.h" alt="" coords="1335,83,1417,112"/>
+<area shape="rect" id="node37" href="$_face_detect_doc_8h.html" title="FaceDetectDoc.h" alt="" coords="1441,83,1564,112"/>
+<area shape="rect" id="node39" href="$_face_detect_view_8h.html" title="FaceDetectView.h" alt="" coords="1588,83,1716,112"/>
+<area shape="rect" id="node33" href="$resource_8h.html" title="resource.h" alt="" coords="1220,160,1303,189"/>
+</map>

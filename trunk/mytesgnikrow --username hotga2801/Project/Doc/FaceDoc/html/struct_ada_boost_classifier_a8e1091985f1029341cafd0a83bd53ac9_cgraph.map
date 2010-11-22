@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_ada_boost_classifier.html#a53f384caf162f81077e4e500872d88da" title="AdaBoostClassifier::AddOneSimpleClassifier" alt="" coords="280,115,560,145"/>
+<area shape="rect" id="node13" href="$_ada_boost_classifier_8h.html#ac22fe1f16627781d2dc7864717acc4de" title="AppendAdaBoostClassifier" alt="" coords="332,222,508,251"/>
+<area shape="rect" id="node21" href="$struct_ada_boost_classifier.html#a0c49aa5d804ff4dc5cf44798480c7ae1" title="AdaBoostClassifier::ApplyImagePatch" alt="" coords="608,9,851,38"/>
+<area shape="rect" id="node25" href="$_global_8cpp.html#a7de2c96762cbe3532d506153a2862faa" title="FillTheTable" alt="" coords="375,409,465,438"/>
+<area shape="rect" id="node40" href="$_global_8cpp.html#a5c33d6aeb558f2b588493aed17e1f88f" title="InitializeWeights" alt="" coords="361,462,479,491"/>
+<area shape="rect" id="node42" href="$struct_ada_boost_classifier.html#abaf61e33356d3a7950573d8267df0566" title="AdaBoostClassifier::InitToGivenSize" alt="" coords="305,607,535,637"/>
+<area shape="rect" id="node46" href="$_global_8cpp.html#a7c1a2da0c1af67ddddad5c55dac7890d" title="SkewWeight" alt="" coords="373,169,467,198"/>
+<area shape="rect" id="node49" href="$_global_8cpp.html#a32e7f6d30bba4d31cc297e0f2838a618" title="ValidateTheThreshold" alt="" coords="347,62,493,91"/>
+<area shape="rect" id="node5" href="$struct_simple_classifier.html#a9b16351a9f7c930d18bb1de772e2ed93" title="SimpleClassifier::Apply" alt="" coords="652,62,807,91"/>
+<area shape="rect" id="node7" href="$_global_8cpp.html#a2948499335d3cfa2df731ee120bbc934" title="NormalizeWeight" alt="" coords="669,169,789,198"/>
+<area shape="rect" id="node9" href="$_ada_boost_classifier_8cpp.html#aa81bb741bf8791fec3506860dd9b33d8" title="SingleFeatureClassifier" alt="" coords="652,115,807,145"/>
+<area shape="rect" id="node11" href="$struct_simple_classifier.html#a7e55aac295b388d6f454fcccf34054fd" title="SimpleClassifier::GetOneFeature" alt="" coords="900,115,1111,145"/>
+<area shape="rect" id="node15" href="$struct_cascade_classifier.html#a56b41730b82a2c387707f317ec563e54" title="CascadeClassifier::ReadFromFile" alt="" coords="623,222,836,251"/>
+<area shape="rect" id="node19" href="$struct_cascade_classifier.html#a99c307c302e1062d174dc5d41347e03e" title="CascadeClassifier::WriteToFile" alt="" coords="629,275,829,305"/>
+<area shape="rect" id="node17" href="$struct_cascade_classifier.html#abb499ae338289af3209fa10875d067da" title="CascadeClassifier::Clear" alt="" coords="924,222,1087,251"/>
+<area shape="rect" id="node23" href="$struct_ada_boost_classifier.html#a1bc15896e1dfb94ce41501ec4695c069" title="AdaBoostClassifier::GetValue" alt="" coords="908,9,1103,38"/>
+<area shape="rect" id="node27" href="$_global_8cpp.html#a5407d81b75aeabbb8903658faa1f71e8" title="GetFeatureValues0" alt="" coords="663,329,796,358"/>
+<area shape="rect" id="node29" href="$_global_8cpp.html#a80ea442c37607d7eff21ce44e412f2be" title="GetFeatureValues1" alt="" coords="663,382,796,411"/>
+<area shape="rect" id="node31" href="$_global_8cpp.html#ac4c8ef2598aacce6e244134ebd368711" title="GetFeatureValues2" alt="" coords="663,435,796,465"/>
+<area shape="rect" id="node33" href="$_global_8cpp.html#aba88ccb6f009fcbc2091cc56d733b57f" title="GetFeatureValues3" alt="" coords="663,489,796,518"/>
+<area shape="rect" id="node35" href="$_global_8cpp.html#a627da7b5264b93b8df30b744c3d159ac" title="GetFeatureValues4" alt="" coords="663,542,796,571"/>
+<area shape="rect" id="node37" href="$_global_8cpp.html#a3ee3d646de03d182e112b4a2059690cb" title="QuickSort" alt="" coords="689,619,769,649"/>
+<area shape="rect" id="node44" href="$struct_ada_boost_classifier.html#acdfbb3cef858df32ae29d0c3d14c9ef5" title="AdaBoostClassifier::Clear" alt="" coords="644,673,815,702"/>
+</map>
