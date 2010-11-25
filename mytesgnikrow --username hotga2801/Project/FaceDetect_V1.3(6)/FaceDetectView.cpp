@@ -68,11 +68,11 @@ void CFaceDetectView::OnDraw(CDC* pDC)
 
 	int i,j;
 	IntImage& im = pDoc->image;
-	if(im.height>0)
+	if(im.m_iHeight>0)
 	{
-		for(i=0;i<im.height;i++)
-			for(j=0;j<im.width;j++)
-				pDC->SetPixel(j,i,RGB(im.data[i][j],im.data[i][j],im.data[i][j]));
+		for(i=0;i<im.m_iHeight;i++)
+			for(j=0;j<im.m_iWidth;j++)
+				pDC->SetPixel(j,i,RGB(im.m_Data[i][j],im.m_Data[i][j],im.m_Data[i][j]));
 	}
 
 }
@@ -135,7 +135,7 @@ void CFaceDetectView::OnViewTrainimage()
 	for(i=1;i<gSx+1;i++)
 		for(j=1;j<gSy+1;j++)
 		{
-			pDoc->image.data[i][j]=gTrainSet[index].data[i][j]+gTrainSet[index].data[i-1][j-1]-gTrainSet[index].data[i][j-1]-gTrainSet[index].data[i-1][j];
+			pDoc->image.m_Data[i][j]=gTrainSet[index].m_Data[i][j]+gTrainSet[index].m_Data[i-1][j-1]-gTrainSet[index].m_Data[i][j-1]-gTrainSet[index].m_Data[i-1][j];
 		}
 	pDoc->UpdateAllViews(NULL);
 }
@@ -145,10 +145,10 @@ void CFaceDetectView::OnLButtonUp(UINT /*nFlags*/, CPoint point)
 	CFaceDetectDoc* pDoc;
 
 	pDoc = GetDocument();
-	if(point.x<pDoc->image.width && point.y<pDoc->image.height)
+	if(point.x<pDoc->image.m_iWidth && point.y<pDoc->image.m_iHeight)
 	{
 		CString s;
-		s.Format("x=%d,y=%d,value=%d",point.x,point.y,int(pDoc->image.data[point.y][point.x]));
+		s.Format("x=%d,y=%d,value=%d",point.x,point.y,int(pDoc->image.m_Data[point.y][point.x]));
 		pDoc->SetTitle(s);
 	}
 }

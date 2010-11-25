@@ -34,11 +34,11 @@ void TrainWeakClassifiers()
 	for(i=0;i<gTotalFeatures;i++)
 	{
 		FillTheTable(gTable[i],gClassifiers[i]);
-		for(j=0;j<gTotalCount;j++) gLabels[j] = gTrainSet[j].label;
+		for(j=0;j<gTotalCount;j++) gLabels[j] = gTrainSet[j].m_iLabel;
 		SingleFeatureClassifier(gLabels,gClassifiers[i],gTable[i]);
-		errors[i] = gClassifiers[i].error;
-		parity[i] = gClassifiers[i].parity;
-		threshes[i] = gClassifiers[i].thresh;
+		errors[i] = gClassifiers[i].m_rError;
+		parity[i] = gClassifiers[i].m_iParity;
+		threshes[i] = gClassifiers[i].m_rThreshold;
 	}
 	for(i=0;i<gTotalFeatures;i++) indexes[i] = i;
 	QuickSort(errors,indexes,threshes,parity,0,gTotalFeatures-1);
@@ -63,9 +63,9 @@ void LoadWeakClassifiers(int* const indexes)
 	for(i=0;i<gTotalFeatures;i++)
 	{
 		f>>indexes[i];
-		f>>gClassifiers[indexes[i]].thresh;
-		f>>gClassifiers[indexes[i]].error;
-		f>>gClassifiers[indexes[i]].parity;
+		f>>gClassifiers[indexes[i]].m_rThreshold;
+		f>>gClassifiers[indexes[i]].m_rError;
+		f>>gClassifiers[indexes[i]].m_iParity;
 	}
 	f.close();
 
@@ -124,12 +124,12 @@ void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,
 			}
 		}
 		used[minindex]=true;
-		ada.alphas[ada.count] = 1;
-		ada.scs[ada.count] = gClassifiers[minindex];
-		ada.count++;
-		ada.thresh = REAL(minthresh);
+		ada.m_rAlphas[ada.m_iCount] = 1;
+		ada.m_WeakClassifiers[ada.m_iCount] = gClassifiers[minindex];
+		ada.m_iCount++;
+		ada.m_rThreshold = REAL(minthresh);
 		for(j=0;j<gTotalCount;j++) curresult[j] += gTable[minindex][j];
-		f<<i+1<<"\t"<<minindex<<"\t"<<minerror<<"\t"<<gClassifiers[minindex].thresh<<endl;
+		f<<i+1<<"\t"<<minindex<<"\t"<<minerror<<"\t"<<gClassifiers[minindex].m_rThreshold<<endl;
 	}
 	BuildHistogram(curresult,round+1,hist_pos,hist_neg,gFaceCount);
 	for(i=1;i<=round;i++) { hist_neg[i] += hist_neg[i-1]; hist_pos[i] += hist_pos[i-1]; }
@@ -142,10 +142,10 @@ void FFS_Histogram(AdaBoostClassifier& ada,const int round,int* const curresult,
 			ValidateTheThreshold(ada,f); 
 			break;
 		case GOAL_METHOD_FIX_FP: 
-			ada.thresh = i + REAL(0.5); 
+			ada.m_rThreshold = i + REAL(0.5); 
 			break;
 	}
-	f<<ada.thresh<<"\t"<<hist_pos[i-1]<<"\t"<<gTotalCount-gFaceCount-hist_neg[i-1]<<endl;
+	f<<ada.m_rThreshold<<"\t"<<hist_pos[i-1]<<"\t"<<gTotalCount-gFaceCount-hist_neg[i-1]<<endl;
 
 	int fn,fp;
 	f<<"Training Error:"<<endl;

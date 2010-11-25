@@ -16,6 +16,7 @@ using namespace std;
 #include "learn.h"
 #include "FaceDetectDoc.h"
 #include ".\facedetectdoc.h"
+#include "Label.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -102,17 +103,17 @@ BOOL CFaceDetectDoc::OnOpenDocument(LPCTSTR lpszPathName)
 		return FALSE;
 
 	BeginWaitCursor();
-	if(gCascade->count>0)
+	if(gCascade->m_iCount>0)
 	{
 		image.Load(lpszPathName);
 //		__int64 t1,t2;
 //		QueryPerformanceCounter((LARGE_INTEGER*)&t1);
 		gCascade->ApplyOriginalSize(image,lpszPathName);
 //		QueryPerformanceCounter((LARGE_INTEGER*)&t2);
-//		CString s;
-//		s.Format("%I64d",t2-t1);
-//		AfxMessageBox(s);
-		UpdateAllViews(NULL);
+		//CString s;
+		//s.Format("%d",gNumDetectedLabel);
+		//AfxMessageBox(s);
+		//UpdateAllViews(NULL);
 	}
 	EndWaitCursor();
 
@@ -121,7 +122,8 @@ BOOL CFaceDetectDoc::OnOpenDocument(LPCTSTR lpszPathName)
 
 void CFaceDetectDoc::OnTestAll() 
 {
-	ifstream f;
+	ifstream inFile, inLabel;
+	
 	int i,count;
 	char buf[256];
 	DWORD t1,t2;
@@ -133,26 +135,142 @@ void CFaceDetectDoc::OnTestAll()
 	ReadRangeFile();
 
 	BeginWaitCursor();
-	f.open(gTestSet_Filename);
-	f>>count; f.ignore(256,'\n');
+	gNumRightLabel = 0;
+	gNumWrongDetectedFace = 0;
+	inFile.open(/*gTestSet_Filename*/"testsetD_filename.txt");
+	inLabel.open(/*gTestSet_Label*/"testsetD_label.txt");
+	inLabel >> gTotalLabel;
+	inFile >> count; 
+	inFile.ignore(256,'\n');
 
 	gTotal_fp = 0;
 
 	t1=timeGetTime();
 	for(i=0;i<count;i++)
 	{
-		f.getline(buf,255,'\n');
+		int nFaces;
+		inFile.getline(buf,255,' ');
+		inFile >> nFaces;
+		inFile.ignore(256,'\n');
+		gFaceLabels.resize(nFaces);
+		for(int j = 0;j < nFaces;j++)
+		{
+			inLabel.ignore(256,'\n');
+			inLabel >> gFaceLabels.at(j).m_LeftEye.x;
+			inLabel >> gFaceLabels.at(j).m_LeftEye.y;
+			inLabel >> gFaceLabels.at(j).m_RightEye.x;
+			inLabel >> gFaceLabels.at(j).m_RightEye.y;
+			inLabel >> gFaceLabels.at(j).m_CenterMouth.x;
+			inLabel >> gFaceLabels.at(j).m_CenterMouth.y;
+
+		}
 		OnOpenDocument(buf);
 	}
-	f.close();
+
+	inLabel.close();
+	inFile.close();
 	t2=timeGetTime();
 	EndWaitCursor();
 
 	CString s;
 	s.Format("Total #false positives = %d",gTotal_fp);
 	AfxMessageBox(s);
-	s.Format("Total time: %d milliseconds.\n",t2-t1);
+	s.Format("Total Label: %d.\n Num Faces detected: %d",gTotalLabel, gNumRightLabel);
+	AfxMessageBox(s);
+	s.Format("Total Label: %d.\n Num wrong Faces detected: %d",gTotalLabel, gNumWrongDetectedFace);
+	AfxMessageBox(s);
+	//s.Format("Total Label: %d milliseconds.\n",t2-t1);
 	//AfxMessageBox(s);
+	/*ifstream fi;
+	fstream fo, fof;
+	char buf[300][256];
+	char comp[256] = " ";
+	float point[300][6][2];
+	int count = 0;
+	int nfile = 0;
+	fo.open("testsetB_label.txt", ios_base::out);
+	fof.open("testsetB_filename.txt", ios_base::out);
+	fi.open("testsetB.txt");
+	while(!fi.eof())
+	{
+		fi.getline(buf[count], 256, ' ');
+		if(strcmp(comp, buf[count]))
+		{
+			strcpy_s(comp, buf[count]);
+			nfile ++;
+		}
+		int len = strlen(buf[count]);
+		for(int i = 0;i < 6;i++)
+			for(int j = 0;j < 2;j++)
+			{
+				fi >> point[count][i][j];
+			}
+			fi.ignore();
+		count ++;
+	}
+	fo << count << endl;
+	fof << nfile;
+	nfile = 0;
+	for(int i = 0; i < count;i++)
+	{
+		nfile ++;
+		if( i == count - 1)
+		{
+			fof << " " << nfile + 1;
+			fof << endl;
+		}
+		if(strcmp(comp, buf[i]))
+		{
+			fof << " " << nfile;
+			fof << endl;
+			strcpy_s(comp, buf[i]);
+			fof << "testB\\";
+			fof.write(comp, strlen(comp));
+			nfile = 0;
+		}
+		//fo << "testD\\";
+		//fo.write(buf[i], strlen(buf[i]));
+		//fo << " ";
+		for(int j = 0;j < 2;j++)
+		{
+			fo << point[i][0][j]<< " ";
+		}
+		for(int j = 0;j < 2;j++)
+		{
+			fo << point[i][1][j]<< " ";
+		}
+		for(int j = 0;j < 2;j++)
+		{
+			fo << point[i][4][j];
+			if(j == 0)
+			{
+				fo << " ";
+
+			}
+			else
+			{
+				fo << endl;
+			}
+		}
+	}
+	fo.close();
+	int stop = 0;*/
+}
+
+CString CFaceDetectDoc::GetPathName()
+{
+	CString strPath;
+	strPath = AfxGetApp()->m_pszHelpFilePath;
+
+	for(int i = 0;i < strPath.GetLength();i++)
+	{
+		if(strPath.Mid(i, 22) == _T("MarioGame_FinalProject"))
+		{
+			strPath = strPath.Mid(0, i + 23);
+			break;
+		}
+	}
+	return strPath;
 }
 
 void CFaceDetectDoc::OnTrain()

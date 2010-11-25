@@ -1,7 +1,8 @@
-struct CascadeClassifier
+class CascadeClassifier
 {
-	int count;
-	AdaBoostClassifier* ac;
+public:
+	int m_iCount;
+	AdaBoostClassifier* m_AdaClassifiers;
 
 	CascadeClassifier();
 	~CascadeClassifier();
@@ -17,6 +18,7 @@ struct CascadeClassifier
 	virtual void ApplyOriginalSizeForInputBoosting(const CString filename,int& pointer) const;
 
 	void DrawResults(IntImage& image, const vector<CRect>& results) const;
+	void CheckResults(const vector<CRect>& results);
 
 	virtual const bool OneRound(const int round);
 };

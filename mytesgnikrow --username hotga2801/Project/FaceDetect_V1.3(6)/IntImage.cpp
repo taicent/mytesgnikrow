@@ -10,7 +10,7 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-IntImage::IntImage():height(0),width(0),data(NULL),buf(NULL),variance(0.0),label(-1)
+IntImage::IntImage():m_iHeight(0),m_iWidth(0),m_Data(NULL),m_Buf(NULL),m_rVariance(0.0),m_iLabel(-1)
 {
 }
 
@@ -21,28 +21,28 @@ IntImage::~IntImage()
 
 void IntImage::Clear(void)
 {
-	if(data == NULL)
-		ASSERT(buf == NULL);
+	if(m_Data == NULL)
+		ASSERT(m_Buf == NULL);
 	else
 	{
-		ASSERT(buf != NULL);
-		for(int i=0;i<height;i++)	data[i] = NULL;
-		delete[] data;	data = NULL;
-		delete[] buf;  	buf = NULL;
-		height = width = 0;
-		variance = 0.0;
-		label = -1;
+		ASSERT(m_Buf != NULL);
+		for(int i=0;i<m_iHeight;i++)	m_Data[i] = NULL;
+		delete[] m_Data;	m_Data = NULL;
+		delete[] m_Buf;  	m_Buf = NULL;
+		m_iHeight = m_iWidth = 0;
+		m_rVariance = 0.0;
+		m_iLabel = -1;
 	}
 }
 
 void IntImage::Copy(const IntImage& source)
 // the ONLY way to make a copy of 'source' to this image
 {
-	ASSERT(source.height > 0);
-	ASSERT(source.width > 0);
+	ASSERT(source.m_iHeight > 0);
+	ASSERT(source.m_iWidth > 0);
 	if(&source == this)	return;
-	SetSize(CSize(source.height,source.width));
-	memcpy(buf,source.buf,sizeof(REAL)*height*width);
+	SetSize(CSize(source.m_iHeight,source.m_iWidth));
+	memcpy(m_Buf,source.m_Buf,sizeof(REAL)*m_iHeight*m_iWidth);
 }
 
 void IntImage::Load(const CString& filename)
@@ -53,7 +53,7 @@ void IntImage::Load(const CString& filename)
 	SetSize(CSize(img->height,img->width));
 	for(int i=0,ih=img->height,iw=img->width;i<ih;i++)
 	{
-		REAL* pdata = data[i];
+		REAL* pdata = m_Data[i];
 		unsigned char* pimg = reinterpret_cast<unsigned char*>(img->imageData+img->widthStep*i);
 		for(int j=0;j<iw;j++) pdata[j] = pimg[j];
 	}
@@ -64,10 +64,10 @@ void IntImage::Save(const CString& filename) const
 {
 	IplImage* img;
 
-	img = cvCreateImage(cvSize(width,height),IPL_DEPTH_8U,1);
+	img = cvCreateImage(cvSize(m_iWidth,m_iHeight),IPL_DEPTH_8U,1);
 	for(int i=0,ih=img->height,iw=img->width;i<ih;i++)
 	{
-		REAL* pdata = data[i];
+		REAL* pdata = m_Data[i];
 		unsigned char* pimg = reinterpret_cast<unsigned char*>(img->imageData+img->widthStep*i);
 		for(int j=0;j<iw;j++) pimg[j] = (unsigned char)pdata[j];
 	}
@@ -79,33 +79,33 @@ void IntImage::SetSize(const CSize size)
 // 'size' is the new size of the image, if necessary, memory is reallocated
 // size.cx is the new height and size.cy is the new width
 {
-	if((size.cx == height) && (size.cy == width) && (buf != NULL) && (data != NULL) ) return; 
+	if((size.cx == m_iHeight) && (size.cy == m_iWidth) && (m_Buf != NULL) && (m_Data != NULL) ) return; 
 	ASSERT(size.cx >= 0); ASSERT(size.cy >= 0);
 	Clear();
 
-	height = size.cx;	
-	width = size.cy;
+	m_iHeight = size.cx;	
+	m_iWidth = size.cy;
 
-	buf = new REAL[height*width]; ASSERT(buf != NULL);
-	data = new REAL*[height];	ASSERT(data != NULL);
-	for(int i=0;i<height;i++)	data[i] = &buf[i*width];
+	m_Buf = new REAL[m_iHeight*m_iWidth]; ASSERT(m_Buf != NULL);
+	m_Data = new REAL*[m_iHeight];	ASSERT(m_Data != NULL);
+	for(int i=0;i<m_iHeight;i++)	m_Data[i] = &m_Buf[i*m_iWidth];
 }
 
 IntImage& IntImage::operator=(const IntImage& source)
 {
-	SetSize(CSize(source.height,source.width));
-	memcpy(buf,source.buf,sizeof(*buf)*height*width);
-	label = source.label;
-	variance = source.variance;
+	SetSize(CSize(source.m_iHeight,source.m_iWidth));
+	memcpy(m_Buf,source.m_Buf,sizeof(*m_Buf)*m_iHeight*m_iWidth);
+	m_iLabel = source.m_iLabel;
+	m_rVariance = source.m_rVariance;
 
 	return *this;
 }
 
 void IntImage::Resize(IntImage &result, REAL ratio) const
 {
-	result.SetSize(CSize(int(height*ratio),int(width*ratio)));
+	result.SetSize(CSize(int(m_iHeight*ratio),int(m_iWidth*ratio)));
 	ratio = 1/ratio;
-	for(int i=0,rh=result.height,rw=result.width;i<rh;i++)
+	for(int i=0,rh=result.m_iHeight,rw=result.m_iWidth;i<rh;i++)
 		for(int j=0;j<rw;j++) {
 			int x0,y0;
 			REAL x,y,fx0,fx1;
@@ -118,15 +118,15 @@ void IntImage::Resize(IntImage &result, REAL ratio) const
 			//2. We only make use of ratio<1 in this applicaiton, and all numbers involved are positive.
 			//Using these, we have 0<=x<=height-1 and 0<=y<=width-1. Thus, boundary conditions check is not necessary.
 			//In languages other than C/C++ or ratio>=1, take care. 
-			if (x0 == width-1) x0--;
-			if (y0 == height-1) y0--;
+			if (x0 == m_iWidth-1) x0--;
+			if (y0 == m_iHeight-1) y0--;
 
 			x = x - x0; y = y - y0;
 
-			fx0 = data[y0][x0] + x*(data[y0][x0+1]-data[y0][x0]);
-			fx1 = data[y0+1][x0] + x*(data[y0+1][x0+1]-data[y0+1][x0]);
+			fx0 = m_Data[y0][x0] + x*(m_Data[y0][x0+1]-m_Data[y0][x0]);
+			fx1 = m_Data[y0+1][x0] + x*(m_Data[y0+1][x0+1]-m_Data[y0+1][x0]);
 
-			result.data[i][j] = fx0 + y*(fx1-fx0);
+			result.m_Data[i][j] = fx0 + y*(fx1-fx0);
 		}
 }
 
@@ -139,31 +139,31 @@ void IntImage::CalculateVarianceAndIntegralImageInPlace(void)
 
 	ex = 0;
 	ex2 = 0;
-	for(int i=0,size=height*width;i<size;i++)
+	for(int i=0,size=m_iHeight*m_iWidth;i<size;i++)
 	{
-		ex += buf[i];
-		ex2 += (buf[i]*buf[i]);
+		ex += m_Buf[i];
+		ex2 += (m_Buf[i]*m_Buf[i]);
 	}
-	size = REAL(height*width);
+	size = REAL(m_iHeight*m_iWidth);
 	var = ex2/size - (ex/size)*(ex/size);
 	ASSERT(var >= 0);
 	if(var>0)
-		variance = sqrt(var);
+		m_rVariance = sqrt(var);
 	else
-		variance = 1.0;
+		m_rVariance = 1.0;
 
 
-	for(int i=1;i<width;i++)
+	for(int i=1;i<m_iWidth;i++)
 	{
-		data[0][i] = data[0][i-1] + data[0][i];
+		m_Data[0][i] = m_Data[0][i-1] + m_Data[0][i];
 	}
-	for(int i=1;i<height;i++)
+	for(int i=1;i<m_iHeight;i++)
 	{
 		partialsum = 0;
-		for(int j=0;j<width;j++)
+		for(int j=0;j<m_iWidth;j++)
 		{
-			partialsum += data[i][j];
-			data[i][j] = data[i-1][j] + partialsum;
+			partialsum += m_Data[i][j];
+			m_Data[i][j] = m_Data[i-1][j] + partialsum;
 		}
 	}
 }
@@ -172,31 +172,31 @@ void IntImage::CalcSquareAndIntegral(IntImage& square, IntImage& image) const
 {
 	REAL partialsum,partialsum2;
 
-	square.SetSize(CSize(height+1,width+1));
-	image.SetSize(CSize(height+1,width+1));
+	square.SetSize(CSize(m_iHeight+1,m_iWidth+1));
+	image.SetSize(CSize(m_iHeight+1,m_iWidth+1));
 
-	for(int i=0;i<=width+1;i++) square.buf[i]=image.buf[i]=0;
-	for(int i=1;i<=height;i++)
+	for(int i=0;i<=m_iWidth+1;i++) square.m_Buf[i]=image.m_Buf[i]=0;
+	for(int i=1;i<=m_iHeight;i++)
 	{
 		partialsum = partialsum2 = 0;
-		square.data[i][0] = 0;
-		image.data[i][0] = 0;
-		for(int j=1;j<=width;j++)
+		square.m_Data[i][0] = 0;
+		image.m_Data[i][0] = 0;
+		for(int j=1;j<=m_iWidth;j++)
 		{
-			partialsum += (data[i-1][j-1]*data[i-1][j-1]);
-			partialsum2 += data[i-1][j-1];
-			square.data[i][j] = square.data[i-1][j] + partialsum;
-			image.data[i][j] = image.data[i-1][j] + partialsum2;
+			partialsum += (m_Data[i-1][j-1]*m_Data[i-1][j-1]);
+			partialsum2 += m_Data[i-1][j-1];
+			square.m_Data[i][j] = square.m_Data[i-1][j] + partialsum;
+			image.m_Data[i][j] = image.m_Data[i-1][j] + partialsum2;
 		}
 	}
 }
 
 void SwapIntImage(IntImage& i1,IntImage& i2)
 {
-	std::swap(i1.height,i2.height);
-	std::swap(i1.width,i2.width);
-	std::swap(i1.buf,i2.buf);
-	std::swap(i1.data,i2.data);
-	std::swap(i1.variance,i2.variance);
-	std::swap(i1.label,i2.label);
+	std::swap(i1.m_iHeight,i2.m_iHeight);
+	std::swap(i1.m_iWidth,i2.m_iWidth);
+	std::swap(i1.m_Buf,i2.m_Buf);
+	std::swap(i1.m_Data,i2.m_Data);
+	std::swap(i1.m_rVariance,i2.m_rVariance);
+	std::swap(i1.m_iLabel,i2.m_iLabel);
 }

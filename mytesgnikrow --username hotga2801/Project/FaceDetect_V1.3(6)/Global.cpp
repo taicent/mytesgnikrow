@@ -9,6 +9,7 @@ using namespace std;
 #include "SimpleClassifier.h"
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
+#include "Label.h"
 #include "Global.h"
 
 #ifdef _DEBUG
@@ -32,6 +33,7 @@ CString FileUsage_log_filename;
 CString gBootstrap_Database_Filename;
 CString gBackup_Directory_Name;
 CString gTestSet_Filename;
+CString gTestSet_Label;
 int gSx; //height
 int gSy; //width
 int gTrain_Method;
@@ -60,16 +62,21 @@ int gValidationCount;
 CascadeClassifier* gCascade = NULL;
 REAL* gWeights= NULL;
 int** gTable= NULL;
-SimpleClassifier* gClassifiers = NULL;
+WeakClassifier* gClassifiers = NULL;
 
 REAL* gFeatures=NULL;
 int* gLabels=NULL;
 
 int* gFileUsed = NULL;
 int gBootstrapSize;
-CString* gBootstrap_Filenames;
+CString* gBootstrap_Filenames = NULL;
 
 REAL gMean_Min, gMean_Max, gSq_Min, gSq_Max, gVar_Min, gVar_Max;
+
+vector<CLabel> gFaceLabels;
+int gTotalLabel;
+int gNumRightLabel;
+int gNumWrongDetectedFace;
 
 void WriteRangeFile(void)
 // images are already integral images.
@@ -86,19 +93,19 @@ void WriteRangeFile(void)
 		REAL ex, sq, v;
 
 		ex = sq = 0;
-		for(int j=1;j<gTrainSet[i].height;j++) 
-			for(int k=1;k<gTrainSet[i].width;k++)
+		for(int j=1;j<gTrainSet[i].m_iHeight;j++) 
+			for(int k=1;k<gTrainSet[i].m_iWidth;k++)
 			{
-				v = gTrainSet[i].data[j][k]+gTrainSet[i].data[j-1][k-1]-gTrainSet[i].data[j-1][k]-gTrainSet[i].data[j][k-1];
+				v = gTrainSet[i].m_Data[j][k]+gTrainSet[i].m_Data[j-1][k-1]-gTrainSet[i].m_Data[j-1][k]-gTrainSet[i].m_Data[j][k-1];
 				sq += (v*v);
 			}
-		ex = gTrainSet[i].data[gSx][gSy];
+		ex = gTrainSet[i].m_Data[gSx][gSy];
 		gMean_Min = min(gMean_Min,ex);
 		gMean_Max = max(gMean_Max,ex);
 		gSq_Min = min(gSq_Min,sq);
 		gSq_Max = max(gSq_Max,sq);
-		gVar_Min = min(gVar_Min,gTrainSet[i].variance);
-		gVar_Max = max(gVar_Max,gTrainSet[i].variance);
+		gVar_Min = min(gVar_Min,gTrainSet[i].m_rVariance);
+		gVar_Max = max(gVar_Max,gTrainSet[i].m_rVariance);
 	}
 	gMean_Min *= REAL(0.90);
 	gMean_Max *= REAL(1.10);
@@ -127,23 +134,23 @@ void ReadOneTrainingSample(ifstream& is,IntImage& image)
 	char buf[256];
 
 	ASSERT(gSx<=256 && gSy<=256);
-	is>>image.label; is.ignore(256,'\n');
-	ASSERT( (image.label == 0) || (image.label == 1) );
+	is>>image.m_iLabel; is.ignore(256,'\n');
+	ASSERT( (image.m_iLabel == 0) || (image.m_iLabel == 1) );
 
-	is>>image.height>>image.width; is.ignore(256,'\n');
-	ASSERT(image.height==gSx); 
-	ASSERT(image.width==gSy);
+	is>>image.m_iHeight>>image.m_iWidth; is.ignore(256,'\n');
+	ASSERT(image.m_iHeight==gSx); 
+	ASSERT(image.m_iWidth==gSy);
 
-	image.SetSize(CSize(image.height+1,image.width+1));
-	for(i=0;i<image.height;i++) image.data[i][0] = 0;
-	for(i=0;i<image.width;i++) image.data[0][i] = 0;
-	for(i=1;i<image.height;i++)
+	image.SetSize(CSize(image.m_iHeight+1,image.m_iWidth+1));
+	for(i=0;i<image.m_iHeight;i++) image.m_Data[i][0] = 0;
+	for(i=0;i<image.m_iWidth;i++) image.m_Data[0][i] = 0;
+	for(i=1;i<image.m_iHeight;i++)
 	{
-		is.read(buf,image.width-1);
-		for(j=1;j<image.width;j++) 
+		is.read(buf,image.m_iWidth-1);
+		for(j=1;j<image.m_iWidth;j++) 
 		{
-			image.data[i][j] = REAL(int(unsigned char(buf[j-1])));
-			ASSERT(image.data[i][j]>=0 && image.data[i][j] <= 255);
+			image.m_Data[i][j] = REAL(int(unsigned char(buf[j-1])));
+			ASSERT(image.m_Data[i][j]>=0 && image.m_Data[i][j] <= 255);
 		}
 	}
 	is.ignore(256,'\n');
@@ -157,10 +164,10 @@ void GetFeatureValues0(REAL* const features,const int from,const int to,const in
 
 	for(i=from;i<to;i++)
 	{
-		data = gTrainSet[i].data;
+		data = gTrainSet[i].m_Data;
 		f1 =   data[x1][y3] - data[x1][y1] + data[x3][y3] - data[x3][y1]
 			 + 2*(data[x2][y1] - data[x2][y3]);
-		features[i] = f1 / gTrainSet[i].variance;
+		features[i] = f1 / gTrainSet[i].m_rVariance;
 	}
 }
 
@@ -172,10 +179,10 @@ void GetFeatureValues1(REAL* const features,const int from,const int to,const in
 
 	for(i=from;i<to;i++)
 	{
-		data = gTrainSet[i].data;
+		data = gTrainSet[i].m_Data;
 		f1 =   data[x3][y1] + data[x3][y3] - data[x1][y1] - data[x1][y3]
 			 + 2*(data[x1][y2] - data[x3][y2]);
-		features[i] = f1 / gTrainSet[i].variance;
+		features[i] = f1 / gTrainSet[i].m_rVariance;
 	}
 }
 
@@ -187,10 +194,10 @@ void GetFeatureValues2(REAL* const features,const int from,const int to,const in
 
 	for(i=from;i<to;i++)
 	{
-		data = gTrainSet[i].data;
+		data = gTrainSet[i].m_Data;
 		f1 =   data[x1][y1] -data[x1][y3] + data[x4][y3] - data[x4][y1]
 			 + 3*(data[x2][y3] - data[x2][y1] + data[x3][y1] - data[x3][y3]);
-		features[i] = f1 / gTrainSet[i].variance;
+		features[i] = f1 / gTrainSet[i].m_rVariance;
 	}
 }
 
@@ -202,10 +209,10 @@ void GetFeatureValues3(REAL* const features,const int from,const int to,const in
 
 	for(i=from;i<to;i++)
 	{
-		data = gTrainSet[i].data;
+		data = gTrainSet[i].m_Data;
 		f1 =   data[x1][y1] - data[x1][y4] + data[x3][y4] - data[x3][y1]
 			 + 3*(data[x3][y2] - data[x3][y3] + data[x1][y3] - data[x1][y2] );
-		features[i] = f1 / gTrainSet[i].variance;
+		features[i] = f1 / gTrainSet[i].m_rVariance;
 	}
 }
 
@@ -217,11 +224,11 @@ void GetFeatureValues4(REAL* const features,const int from,const int to,const in
 
 	for(i=from;i<to;i++)
 	{
-		data = gTrainSet[i].data;
+		data = gTrainSet[i].m_Data;
 		f1 =   data[x1][y1] + data[x1][y3] + data[x3][y1] + data[x3][y3]
 			 - 2*(data[x2][y1] + data[x2][y3] + data[x1][y2] + data[x3][y2])
 			 + 4*data[x2][y2];
-		features[i] = f1 / gTrainSet[i].variance;
+		features[i] = f1 / gTrainSet[i].m_rVariance;
 	}
 }
 
@@ -271,7 +278,7 @@ void QuickSort(REAL* values,int* labels,REAL* weights,int* parity,const int lo,c
     if (i<hi) QuickSort(values,labels,weights,parity, i, hi);
 }
 
-void FillTheTable(int* const row,const SimpleClassifier& sc)
+void FillTheTable(int* const row,const WeakClassifier& sc)
 {
 	int i;
 	int x1,x2,x3,x4,y1,y2,y3,y4;
@@ -280,7 +287,7 @@ void FillTheTable(int* const row,const SimpleClassifier& sc)
 	x2 = sc.x2;	y2 = sc.y2;
 	x3 = sc.x3; y3 = sc.y3;
 	x4 = sc.x4;	y4 = sc.y4;
-	switch(sc.type)
+	switch(sc.m_iType)
 	{
 		case 0:GetFeatureValues0(gFeatures,0,gTotalCount,x1,x2,x3,y1,y3);break;
 		case 1:GetFeatureValues1(gFeatures,0,gTotalCount,x1,x3,y1,y2,y3);break;
@@ -298,7 +305,7 @@ const int CountTrainFaces()
 
 	count = 0;
 	for(i=0;i<gTotalCount;i++)
-		count += gTrainSet[i].label;
+		count += gTrainSet[i].m_iLabel;
 	return count;
 }
 
@@ -308,7 +315,7 @@ const int CountValidFaces()
 
 	count = 0;
 	for(i=0;i<gValidationCount;i++)
-		count += gValidationSet[i].label;
+		count += gValidationSet[i].m_iLabel;
 	return count;
 }
 
@@ -459,11 +466,11 @@ void SaveTrainSet(CString filename)
 	for(i=0;i<gTotalCount;i++)
 	{
 		int k,t;
-		f<<gTrainSet[i].label<<endl;
+		f<<gTrainSet[i].m_iLabel<<endl;
 		f<<gSx<<" "<<gSy<<endl;
 		for(k=0;k<gSx;k++)
 			for(t=0;t<gSy;t++)
-				writebuf[k*gSx+t] = (unsigned char)((int)(gTrainSet[i].data[k+1][t+1]-gTrainSet[i].data[k][t+1]-gTrainSet[i].data[k+1][t]+gTrainSet[i].data[k][t]));
+				writebuf[k*gSx+t] = (unsigned char)((int)(gTrainSet[i].m_Data[k+1][t+1]-gTrainSet[i].m_Data[k][t+1]-gTrainSet[i].m_Data[k+1][t]+gTrainSet[i].m_Data[k][t]));
 		f.write((char*)writebuf,gSx*gSy);
 		f<<endl;
 	}
@@ -481,11 +488,11 @@ void SaveValidSet(CString filename)
 	for(i=0;i<gValidationCount;i++)
 	{
 		int k,t;
-		f<<gValidationSet[i].label<<endl;
+		f<<gValidationSet[i].m_iLabel<<endl;
 		f<<gSx<<" "<<gSy<<endl;
 		for(k=0;k<gSx;k++)
 			for(t=0;t<gSy;t++)
-				writebuf[k*gSx+t] = (unsigned char)((int)(gValidationSet[i].data[k+1][t+1]-gValidationSet[i].data[k][t+1]-gValidationSet[i].data[k+1][t]+gValidationSet[i].data[k][t]));
+				writebuf[k*gSx+t] = (unsigned char)((int)(gValidationSet[i].m_Data[k+1][t+1]-gValidationSet[i].m_Data[k][t+1]-gValidationSet[i].m_Data[k+1][t]+gValidationSet[i].m_Data[k][t]));
 		f.write((char*)writebuf,gSx*gSy);
 		f<<endl;
 	}
@@ -518,9 +525,9 @@ void InitGlobalData()
 	gCascade = new CascadeClassifier;
 	ASSERT(gCascade != NULL);
 	gCascade->LoadDefaultCascade();
-	gStartingNode = gCascade->count+1;
+	gStartingNode = gCascade->m_iCount+1;
 
-	gClassifiers = new SimpleClassifier[gTotalFeatures]; ASSERT(gClassifiers != NULL);
+	gClassifiers = new WeakClassifier[gTotalFeatures]; ASSERT(gClassifiers != NULL);
 	ReadClassifiers();
 
 	gFileUsed = new int[gMaxNumFiles]; ASSERT(gFileUsed != NULL);
@@ -531,8 +538,6 @@ void InitGlobalData()
 
 void ClearUpGlobalData()
 {
-	int i;
-
 	gSetup_Filename.Empty();
 	gTrainset_Filename.Empty();
 	gValidationset_Filename.Empty();
@@ -561,28 +566,68 @@ void ClearUpGlobalData()
 	gMaxNumNodes = 0; 
 	gNof.clear();
 
-	delete[] gTrainSet;	gTrainSet = NULL;
-	delete[] gValidationSet;  gValidationSet = NULL;
+	if(gTrainSet)
+	{
+		delete[] gTrainSet;	
+		gTrainSet = NULL;
+	}
+	if(gValidationSet)
+	{
+		delete[] gValidationSet;  
+		gValidationSet = NULL;
+	}
+
 	gTotalCount = gValidationCount = 0;
 
-	delete gCascade; gCascade = NULL;
-
-	delete[] gWeights; gWeights = NULL;
-	for(i=0;i<gTotalFeatures;i++)
+	if(gCascade)
 	{
-		delete[] gTable[i];	gTable[i] = NULL;
+		delete gCascade; 
+		gCascade = NULL;
 	}
-	gTotalFeatures = 0;
-	delete[] gTable;	gTable = NULL;
-	delete[] gClassifiers; gClassifiers = NULL;
+	if(gWeights)
+	{
+		delete[] gWeights; 
+		gWeights = NULL;
+	}
+	if(gTable)
+	{
+		for(int i=0;i<gTotalFeatures;i++)
+		{
+			delete[] gTable[i];	
+			gTable[i] = NULL;
+		}
+		gTotalFeatures = 0;
+		delete[] gTable;	
+		gTable = NULL;
+	}
+	if(gClassifiers)
+	{
+		delete[] gClassifiers; 
+		gClassifiers = NULL;
+	}
 
-	delete[] gFeatures; gFeatures = NULL;
-	delete[] gLabels; gLabels = NULL;
-
-	delete[] gFileUsed; gFileUsed = NULL;
+	if(gFeatures)
+	{
+		delete[] gFeatures; 
+		gFeatures = NULL;
+	}
+	if(gLabels)
+	{
+		delete[] gLabels; 
+		gLabels = NULL;
+	}
+	if(gFileUsed)
+	{
+		delete[] gFileUsed; 
+		gFileUsed = NULL;
+	}
 
 	gBootstrapSize = 0;
-	delete[] gBootstrap_Filenames; gBootstrap_Filenames = NULL;
+	if(gBootstrap_Filenames)
+	{
+		delete[] gBootstrap_Filenames; 
+		gBootstrap_Filenames = NULL;
+	}
 }
 
 void SkewWeight(const REAL skew_ratio)
@@ -590,7 +635,7 @@ void SkewWeight(const REAL skew_ratio)
 	int i;
 
 	for(i=0;i<gTotalCount;i++)
-		if(gTrainSet[i].label==1)
+		if(gTrainSet[i].m_iLabel==1)
 			gWeights[i] *= skew_ratio;
 
 	NormalizeWeight();
@@ -614,18 +659,18 @@ void ValidateTheThreshold(AdaBoostClassifier& ada,ofstream& f)
 
 	for(i=0;i<gValidFaceCount;i++) gFeatures[i] = 0.0;
 	for(i=0;i<gValidFaceCount;i++)
-		for(j=0;j<ada.count;j++) 
-			if(ada.scs[j].Apply(gValidationSet[i])!=0)
-				gFeatures[i] += ada.alphas[j];
+		for(j=0;j<ada.m_iCount;j++) 
+			if(ada.m_WeakClassifiers[j].Apply(gValidationSet[i])!=0)
+				gFeatures[i] += ada.m_rAlphas[j];
 	nth_element(gFeatures,gFeatures+int(gValidFaceCount*(1-gNode_Det_Goal)),gFeatures+gValidFaceCount);
-	ada.thresh = gFeatures[int(gValidFaceCount*(1-gNode_Det_Goal))];
+	ada.m_rThreshold = gFeatures[int(gValidFaceCount*(1-gNode_Det_Goal))];
 
 	falseneg = gFaceCount;
 	for(i=0;i<gFaceCount;i++) falseneg -= ada.ApplyImagePatch(gTrainSet[i]);
 	falsepos = 0;
 	for(i=gFaceCount;i<gTotalCount;i++) falsepos += ada.ApplyImagePatch(gTrainSet[i]);
 	f<<"-----Use the validation set to determine a threshold ------"<<endl;
-	f<<ada.thresh<<"\t"<<falseneg<<"\t"<<falsepos<<endl;
+	f<<ada.m_rThreshold<<"\t"<<falseneg<<"\t"<<falsepos<<endl;
 }
 
 // Matrix inversion code, revised from Numerical recipe in C, and the graphviz Documentation
@@ -759,66 +804,66 @@ void WithinClassScatter(AdaBoostClassifier& ada)
 	REAL** cov;
 	REAL** table;
 
-	table = new REAL*[ada.count]; ASSERT(table!=NULL);
-	for(i=0;i<ada.count;i++) 
+	table = new REAL*[ada.m_iCount]; ASSERT(table!=NULL);
+	for(i=0;i<ada.m_iCount;i++) 
 	{
 		table[i] = new REAL[gTotalCount]; ASSERT(table[i] != NULL);
 	}
-	for(i=0;i<ada.count;i++)
+	for(i=0;i<ada.m_iCount;i++)
 		for(j=0;j<gTotalCount;j++)
-			table[i][j] = REAL(ada.scs[i].Apply(gTrainSet[j]));
+			table[i][j] = REAL(ada.m_WeakClassifiers[i].Apply(gTrainSet[j]));
 
-	cov = new REAL*[ada.count]; ASSERT(cov!=NULL);
-	for(i=0;i<ada.count;i++)
+	cov = new REAL*[ada.m_iCount]; ASSERT(cov!=NULL);
+	for(i=0;i<ada.m_iCount;i++)
 	{
-		cov[i] = new REAL[ada.count]; ASSERT(cov[i]!=NULL);
+		cov[i] = new REAL[ada.m_iCount]; ASSERT(cov[i]!=NULL);
 	}
-	for(i=0;i<ada.count;i++)
-		for(j=0;j<ada.count;j++)
+	for(i=0;i<ada.m_iCount;i++)
+		for(j=0;j<ada.m_iCount;j++)
 			cov[i][j]=0.0;
 
-	mean1 = new REAL[ada.count]; ASSERT(mean1!=NULL);
-	for(i=0;i<ada.count;i++) mean1[i] = 0;
-	for(i=0;i<ada.count;i++)
+	mean1 = new REAL[ada.m_iCount]; ASSERT(mean1!=NULL);
+	for(i=0;i<ada.m_iCount;i++) mean1[i] = 0;
+	for(i=0;i<ada.m_iCount;i++)
 		for(j=0;j<gFaceCount;j++)
 			mean1[i] += table[i][j];
-	for(i=0;i<ada.count;i++) mean1[i] /= gFaceCount;
+	for(i=0;i<ada.m_iCount;i++) mean1[i] /= gFaceCount;
 	for(i=0;i<gFaceCount;i++)
-		for(j=0;j<ada.count;j++)
-			for(k=0;k<ada.count;k++)
+		for(j=0;j<ada.m_iCount;j++)
+			for(k=0;k<ada.m_iCount;k++)
 				cov[j][k] += (table[j][i]-mean1[j])*(table[k][i]-mean1[k]);
 
-	mean2 = new REAL[ada.count]; ASSERT(mean2!=NULL);
-	for(i=0;i<ada.count;i++) mean2[i] = 0;
-	for(i=0;i<ada.count;i++)
+	mean2 = new REAL[ada.m_iCount]; ASSERT(mean2!=NULL);
+	for(i=0;i<ada.m_iCount;i++) mean2[i] = 0;
+	for(i=0;i<ada.m_iCount;i++)
 		for(j=gFaceCount;j<gTotalCount;j++)
 			mean2[i] += table[i][j];
-	for(i=0;i<ada.count;i++) mean2[i] /= (gTotalCount-gFaceCount);
+	for(i=0;i<ada.m_iCount;i++) mean2[i] /= (gTotalCount-gFaceCount);
 
 	if(linear_classifier==LC_FDA)
 	{
 		for(i=gFaceCount;i<gTotalCount;i++)
-			for(j=0;j<ada.count;j++)
-				for(k=0;k<ada.count;k++)
+			for(j=0;j<ada.m_iCount;j++)
+				for(k=0;k<ada.m_iCount;k++)
 					cov[j][k] += (table[j][i]-mean2[j])*(table[k][i]-mean2[k]);
 	}
-	for(i=0;i<ada.count;i++) cov[i][i] += REAL(0.1);
+	for(i=0;i<ada.m_iCount;i++) cov[i][i] += REAL(0.1);
 
-	MatrixInversion(cov,ada.count);
+	MatrixInversion(cov,ada.m_iCount);
 
-	for(i=0;i<ada.count;i++) ada.alphas[i]=0.0;
-	for(i=0;i<ada.count;i++)
-		for(j=0;j<ada.count;j++)
-			ada.alphas[i] += cov[i][j]*(mean1[j]-mean2[j]);
+	for(i=0;i<ada.m_iCount;i++) ada.m_rAlphas[i]=0.0;
+	for(i=0;i<ada.m_iCount;i++)
+		for(j=0;j<ada.m_iCount;j++)
+			ada.m_rAlphas[i] += cov[i][j]*(mean1[j]-mean2[j]);
 
 	delete[] mean1; mean1=NULL;
 	delete[] mean2; mean2=NULL;
-	for(i=0;i<ada.count;i++)
+	for(i=0;i<ada.m_iCount;i++)
 	{
 		delete[] cov[i]; cov[i]=NULL;
 	}
 	delete[] cov; cov=NULL;
-	for(i=0;i<ada.count;i++)
+	for(i=0;i<ada.m_iCount;i++)
 	{
 		delete[] table[i]; table[i]=NULL;
 	}

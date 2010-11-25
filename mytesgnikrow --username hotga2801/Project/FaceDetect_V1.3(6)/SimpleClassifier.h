@@ -1,9 +1,10 @@
-struct SimpleClassifier
+class WeakClassifier
 {
-	REAL thresh;
-	REAL error;
-	int parity;
-	int type; // which type of feature?
+public:
+	REAL m_rThreshold;
+	REAL m_rError;
+	int m_iParity;
+	int m_iType; // which type of feature?
 	int x1,x2,x3,x4,y1,y2,y3,y4;
 
 	inline const REAL GetOneFeature(const IntImage& im) const;
@@ -14,28 +15,28 @@ struct SimpleClassifier
 	void ReadFromFile(ifstream& f);
 };
 
-const int SimpleClassifier::Apply(const IntImage& im) const
+const int WeakClassifier::Apply(const IntImage& im) const
 {
-	if(parity == 1)
-		return (GetOneFeature(im)<thresh)?1:0;
+	if(m_iParity == 1)
+		return (GetOneFeature(im)<m_rThreshold)?1:0;
 	else
-		return (GetOneFeature(im)>=thresh)?1:0;
+		return (GetOneFeature(im)>=m_rThreshold)?1:0;
 }
 
-const int SimpleClassifier::Apply(const REAL value) const
+const int WeakClassifier::Apply(const REAL value) const
 {
-	if(parity == 1)
-		return (value<thresh)?1:0;
+	if(m_iParity == 1)
+		return (value<m_rThreshold)?1:0;
 	else
-		return (value>=thresh)?1:0;
+		return (value>=m_rThreshold)?1:0;
 }
 
-const REAL SimpleClassifier::GetOneFeature(const IntImage& im) const
+const REAL WeakClassifier::GetOneFeature(const IntImage& im) const
 {
 	REAL f1;
-	REAL** data = im.data;
+	REAL** data = im.m_Data;
 
-	switch(type)
+	switch(m_iType)
 	{
 	case 0:
 		f1 =   data[x1][y3] - data[x1][y1] + data[x3][y3] - data[x3][y1]
@@ -59,14 +60,14 @@ const REAL SimpleClassifier::GetOneFeature(const IntImage& im) const
 			 + 4*data[x2][y2];
 		break;
 	}
-	return f1/im.variance;
+	return f1/im.m_rVariance;
 }
 
-const REAL SimpleClassifier::GetOneFeatureTranslation(REAL** const data,const int y) const
+const REAL WeakClassifier::GetOneFeatureTranslation(REAL** const data,const int y) const
 {
 	REAL f1=0;
 
-	switch(type)
+	switch(m_iType)
 	{
 	case 0:
 		f1 =   data[x1][y+y3] - data[x1][y+y1] + data[x3][y+y3] - data[x3][y+y1]

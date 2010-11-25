@@ -18,7 +18,7 @@ using namespace std;
 static char THIS_FILE[] = __FILE__;
 #endif
 
-AdaBoostClassifier::AdaBoostClassifier():count(0),thresh(0.0),alphas(NULL),scs(NULL)
+AdaBoostClassifier::AdaBoostClassifier():m_iCount(0),m_rThreshold(0.0),m_rAlphas(NULL),m_WeakClassifiers(NULL)
 {
 }
 
@@ -29,52 +29,52 @@ AdaBoostClassifier::~AdaBoostClassifier()
 
 void AdaBoostClassifier::Clear()
 {
-	delete[] scs; scs=NULL;
-	delete[] alphas; alphas=NULL;
-	count = 0;
-	thresh = 0.0;
+	delete[] m_WeakClassifiers; m_WeakClassifiers=NULL;
+	delete[] m_rAlphas; m_rAlphas=NULL;
+	m_iCount = 0;
+	m_rThreshold = 0.0;
 }
 
 AdaBoostClassifier& AdaBoostClassifier::operator=(const AdaBoostClassifier& source)
 {
-	InitToGivenSize(source.count);
-	count = source.count;
-	thresh = source.thresh;
-	memcpy(alphas,source.alphas,sizeof(*alphas)*count);
-	for(int i=0;i<count;i++) scs[i] = source.scs[i];
+	InitToGivenSize(source.m_iCount);
+	m_iCount = source.m_iCount;
+	m_rThreshold = source.m_rThreshold;
+	memcpy(m_rAlphas,source.m_rAlphas,sizeof(*m_rAlphas)*m_iCount);
+	for(int i=0;i<m_iCount;i++) m_WeakClassifiers[i] = source.m_WeakClassifiers[i];
 	return *this;
 }
 
 void AdaBoostClassifier::InitToGivenSize(const int size)
 {
 	Clear();
-	count = 0;
-	thresh = 0.0;
-	alphas = new REAL[size]; ASSERT(alphas!=NULL);
-	scs = new SimpleClassifier[size]; ASSERT(scs!=NULL);
+	m_iCount = 0;
+	m_rThreshold = 0.0;
+	m_rAlphas = new REAL[size]; ASSERT(m_rAlphas!=NULL);
+	m_WeakClassifiers = new WeakClassifier[size]; ASSERT(m_WeakClassifiers!=NULL);
 }
 
 void AdaBoostClassifier::WriteToFile(ofstream& f) const
 {
-	f<<count<<endl;
-	f<<thresh<<endl;
-	for(int i=0;i<count;i++) f<<alphas[i]<<" ";
+	f<<m_iCount<<endl;
+	f<<m_rThreshold<<endl;
+	for(int i=0;i<m_iCount;i++) f<<m_rAlphas[i]<<" ";
 	f<<endl;
-	for(int i=0;i<count;i++) scs[i].WriteToFile(f);
+	for(int i=0;i<m_iCount;i++) m_WeakClassifiers[i].WriteToFile(f);
 	f<<endl;
 }
 
 void AdaBoostClassifier::ReadFromFile(ifstream& f)
 {
 	Clear();
-	f>>count; ASSERT(count>0);
+	f>>m_iCount; ASSERT(m_iCount>0);
 	f.ignore(256,'\n');
-	scs = new SimpleClassifier[count]; ASSERT(scs!=NULL);
-	alphas = new REAL[count]; ASSERT(alphas!=NULL);
+	m_WeakClassifiers = new WeakClassifier[m_iCount]; ASSERT(m_WeakClassifiers!=NULL);
+	m_rAlphas = new REAL[m_iCount]; ASSERT(m_rAlphas!=NULL);
 	
-	f>>thresh; f.ignore(256,'\n');
-	for(int i=0;i<count;i++) f>>alphas[i]; f.ignore(256,'\n');
-	for(int i=0;i<count;i++) scs[i].ReadFromFile(f); f.ignore(256,'\n');
+	f>>m_rThreshold; f.ignore(256,'\n');
+	for(int i=0;i<m_iCount;i++) f>>m_rAlphas[i]; f.ignore(256,'\n');
+	for(int i=0;i<m_iCount;i++) m_WeakClassifiers[i].ReadFromFile(f); f.ignore(256,'\n');
 }
 
 void AdaBoostClassifier::TrainAdaBoost(int rounds,const bool update,const int method)
@@ -101,14 +101,14 @@ void AdaBoostClassifier::TrainAdaBoost(int rounds,const bool update,const int me
 
 		if(asym_ratio>1.0) SkewWeight(asym_ratio);
 		AddOneSimpleClassifier(used);
-		for(j=0;j<gTotalCount;j++) curresult[j] += (alphas[i] * scs[i].Apply(gTrainSet[j]));
+		for(j=0;j<gTotalCount;j++) curresult[j] += (m_rAlphas[i] * m_WeakClassifiers[i].Apply(gTrainSet[j]));
 
 		err = 0;
 		for(j=0;j<gTotalCount;j++)
-			if( (curresult[j]<thresh && gTrainSet[j].label==1) || (curresult[j]>=thresh && gTrainSet[j].label==0) )
+			if( (curresult[j]<m_rThreshold && gTrainSet[j].m_iLabel==1) || (curresult[j]>=m_rThreshold && gTrainSet[j].m_iLabel==0) )
 				err++;
 		f<<i<<"\t"<<err<<endl;
-		f<<i<<"\t"<<alphas[i]<<"\t"<<scs[i].thresh<<" "<<scs[i].parity<<" "<<scs[i].type<<" "<<scs[i].x1<<" "<<scs[i].x2<<" "<<scs[i].x3<<" "<<scs[i].x4<<" "<<scs[i].y1<<" "<<scs[i].y2<<" "<<scs[i].y3<<" "<<scs[i].y4<<endl;
+		f<<i<<"\t"<<m_rAlphas[i]<<"\t"<<m_WeakClassifiers[i].m_rThreshold<<" "<<m_WeakClassifiers[i].m_iParity<<" "<<m_WeakClassifiers[i].m_iType<<" "<<m_WeakClassifiers[i].x1<<" "<<m_WeakClassifiers[i].x2<<" "<<m_WeakClassifiers[i].x3<<" "<<m_WeakClassifiers[i].x4<<" "<<m_WeakClassifiers[i].y1<<" "<<m_WeakClassifiers[i].y2<<" "<<m_WeakClassifiers[i].y3<<" "<<m_WeakClassifiers[i].y4<<endl;
 	}
 	nth_element(curresult+gFaceCount,curresult+gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal)),curresult+gTotalCount);
 	switch(method)
@@ -119,11 +119,11 @@ void AdaBoostClassifier::TrainAdaBoost(int rounds,const bool update,const int me
 			ValidateTheThreshold(*this,f); 
 			break;
 		case GOAL_METHOD_FIX_FP: 
-			thresh = curresult[gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal))]; 
+			m_rThreshold = curresult[gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal))]; 
 			break;
 	}
-	fn = 0; for(i=0;i<gFaceCount;i++) if(curresult[i]<thresh) fn++;
-	fp = 0; for(i=gFaceCount;i<gTotalCount;i++) if(curresult[i]>=thresh) fp++;
+	fn = 0; for(i=0;i<gFaceCount;i++) if(curresult[i]<m_rThreshold) fn++;
+	fp = 0; for(i=gFaceCount;i<gTotalCount;i++) if(curresult[i]>=m_rThreshold) fp++;
 	f<<fn<<"\t"<<fp<<endl;
 	f<<"Validation Error:"<<endl;
 	fn = 0; for(i=0;i<gValidFaceCount;i++) if(ApplyImagePatch(gValidationSet[i])==0) fn++;
@@ -154,8 +154,8 @@ void AdaBoostClassifier::TrainLDS(int rounds,const bool update,const int method)
 		curresult = new REAL[gTotalCount]; ASSERT(curresult!=NULL);
 		for(i=0;i<gTotalCount;i++) curresult[i]=0.0;
 		for(i=0;i<gTotalCount;i++)
-			for(j=0;j<count;j++)
-				curresult[i] += alphas[j]*scs[j].Apply(gTrainSet[i]);
+			for(j=0;j<m_iCount;j++)
+				curresult[i] += m_rAlphas[j]*m_WeakClassifiers[j].Apply(gTrainSet[i]);
 
 		nth_element(curresult+gFaceCount,curresult+gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal)),curresult+gTotalCount);
 		if(gTrain_Method==TRAIN_ADA)
@@ -170,7 +170,7 @@ void AdaBoostClassifier::TrainLDS(int rounds,const bool update,const int method)
 				ValidateTheThreshold(*this,f); 
 				break;
 			case GOAL_METHOD_FIX_FP: 
-				thresh = curresult[gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal))]; 
+				m_rThreshold = curresult[gFaceCount+int((gTotalCount-gFaceCount)*(1-gNode_fp_Goal))]; 
 				break;
 		}
 		fn = 0; for(i=0;i<gFaceCount;i++) if(ApplyImagePatch(gTrainSet[i])==0) fn++;
@@ -186,7 +186,7 @@ void AdaBoostClassifier::TrainLDS(int rounds,const bool update,const int method)
 	if(update) AppendAdaBoostClassifier(*this);
 }
 
-void SingleFeatureClassifier(const int* const labels,SimpleClassifier& sc,const int* const indexes)
+void SingleFeatureClassifier(const int* const labels,WeakClassifier& sc,const int* const indexes)
 {
 	int i;
 	REAL min1; REAL min2;
@@ -211,15 +211,15 @@ void SingleFeatureClassifier(const int* const labels,SimpleClassifier& sc,const 
 	pos2++; if(pos2==gTotalCount) pos2--;
 	if(min1<min2)
 	{
-		sc.parity = 1;
-		sc.error = min1;
-		sc.thresh = sc.GetOneFeature(gTrainSet[indexes[pos1]]);
+		sc.m_iParity = 1;
+		sc.m_rError = min1;
+		sc.m_rThreshold = sc.GetOneFeature(gTrainSet[indexes[pos1]]);
 	}
 	else
 	{
-		sc.parity = 0;
-		sc.error = min2;
-		sc.thresh = sc.GetOneFeature(gTrainSet[indexes[pos2]]);
+		sc.m_iParity = 0;
+		sc.m_rError = min2;
+		sc.m_rThreshold = sc.GetOneFeature(gTrainSet[indexes[pos2]]);
 	}
 }
 
@@ -227,12 +227,12 @@ void AdaBoostClassifier::AddOneSimpleClassifier(bool* used)
 {
 	int i;
 	REAL alpha,beta;
-	SimpleClassifier minsc;
+	WeakClassifier minsc;
 	REAL minerror;
 	int minindex;
 
 	minerror = REAL(1.01); minindex  = -1;
-	for(i=0;i<gTotalCount;i++) gLabels[i] = gTrainSet[i].label;
+	for(i=0;i<gTotalCount;i++) gLabels[i] = gTrainSet[i].m_iLabel;
 	NormalizeWeight();
 	TRACE("%f %f %f %f\n",*min_element(gWeights,gWeights+gFaceCount)*10000,*max_element(gWeights,gWeights+gFaceCount)*10000,
 		     *min_element(gWeights+gFaceCount,gWeights+gTotalCount)*10000,*max_element(gWeights+gFaceCount,gWeights+gTotalCount)*10000);
@@ -240,24 +240,24 @@ void AdaBoostClassifier::AddOneSimpleClassifier(bool* used)
 	{
 		if(used[i]) continue;
 		SingleFeatureClassifier(gLabels,gClassifiers[i],gTable[i]);
-		if(gClassifiers[i].error<minerror)
+		if(gClassifiers[i].m_rError<minerror)
 		{
-			minerror = gClassifiers[i].error;
+			minerror = gClassifiers[i].m_rError;
 			minsc = gClassifiers[i];
 			minindex = i;
 		}
 	}
 
 	used[minindex] = true;
-	beta = minsc.error / (REAL(1.0)-minsc.error);
+	beta = minsc.m_rError / (REAL(1.0)-minsc.m_rError);
 	for(i=0;i<gTotalCount;i++)
-		if(minsc.Apply(gTrainSet[i]) == gTrainSet[i].label)
+		if(minsc.Apply(gTrainSet[i]) == gTrainSet[i].m_iLabel)
 			gWeights[i] *= beta;
 	if(beta<REAL(1e-8)) beta = REAL(1e-8);
 	alpha = -log(beta);
 
-	scs[count] = minsc;
-	alphas[count] = alpha;
-	thresh += (REAL(0.5)*alpha);
-	count++;
+	m_WeakClassifiers[m_iCount] = minsc;
+	m_rAlphas[m_iCount] = alpha;
+	m_rThreshold += (REAL(0.5)*alpha);
+	m_iCount++;
 }

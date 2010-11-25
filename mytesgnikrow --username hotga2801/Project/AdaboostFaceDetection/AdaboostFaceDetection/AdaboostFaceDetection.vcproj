@@ -67,6 +67,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="winmm.lib cxcore210.lib highgui210.lib"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -147,6 +148,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="winmm.lib cxcore210.lib highgui210.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -186,11 +188,35 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\AdaBoostClassifier.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\AdaboostFaceDetection.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\AdaboostFaceDetectionDlg.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\CascadeClassifier.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Global.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IntImage.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Learn.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SimpleClassifier.cpp"
 				>
 			</File>
 			<File
@@ -220,6 +246,10 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\AdaBoostClassifier.h"
+				>
+			</File>
+			<File
 				RelativePath=".\AdaboostFaceDetection.h"
 				>
 			</File>
@@ -228,7 +258,35 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CascadeClassifier.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Global.h"
+				>
+			</File>
+			<File
+				RelativePath=".\IntImage.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Label.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Label.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Learn.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SimpleClassifier.h"
 				>
 			</File>
 			<File
