@@ -16,3 +16,5 @@ The HID program is available for the following targets:
 
 Note: set jumper J5 to 1[2 3] (jumper towards JTAG connector)
       for USB soft connect
+	  // Sua
+	  Bo define USB_CONFIGURE_EVENT

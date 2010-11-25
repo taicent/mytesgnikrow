@@ -1,5 +1,5 @@
 .\Obj\demo.o: demo.c
-.\Obj\demo.o: C:\Keil\ARM\INC\Philips\LPC23xx.H
+.\Obj\demo.o: D:\Application\Keil\ARM\INC\Philips\LPC23xx.H
 .\Obj\demo.o: type.h
 .\Obj\demo.o: usb.h
 .\Obj\demo.o: usbcfg.h

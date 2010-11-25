@@ -1,5 +1,5 @@
 .\Obj\usbuser.o: usbuser.c
-.\Obj\usbuser.o: C:\Keil\ARM\INC\Philips\LPC23xx.H
+.\Obj\usbuser.o: D:\Application\Keil\ARM\INC\Philips\LPC23xx.H
 .\Obj\usbuser.o: type.h
 .\Obj\usbuser.o: usb.h
 .\Obj\usbuser.o: usbcfg.h

@@ -808,8 +808,8 @@ ARM Macro Assembler    Page 13
               00000000 
               00000000 
 Command Line: --debug --xref --device=DARMP --apcs=interwork -o.\Obj\LPC2300.o 
--IC:\Keil\ARM\INC\Philips --predefine="__MICROLIB SETA 1" --list=.\Lst\LPC2300.
-lst LPC2300.s
+-ID:\Application\Keil\ARM\INC\Philips --predefine="__MICROLIB SETA 1" --list=.\
+Lst\LPC2300.lst LPC2300.s
 
 
 
