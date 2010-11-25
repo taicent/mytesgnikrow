@@ -18,8 +18,8 @@ public:
 	CHIDClientDlg(CWnd* pParent = NULL);	// standard constructor
 
   BOOL Running;
-  BYTE OutReport[2];
-  BYTE  InReport[2];
+  BYTE OutReport[256];
+  BYTE  InReport[256];
   BYTE  InValue;
 
   void OnError();
@@ -67,6 +67,8 @@ protected:
 	virtual void OnOK();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedBtnget();
 };
 
 //{{AFX_INSERT_LOCATION}}

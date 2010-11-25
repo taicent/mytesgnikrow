@@ -115,8 +115,13 @@ void USB_Error_Event (DWORD error) {
 void USB_Configure_Event (void) {
 
   if (USB_Configuration) {                  /* Check if USB is configured */
-    GetInReport();
-    USB_WriteEP(0x81, &InReport, sizeof(InReport));
+    //GetInReport();
+	InReport = 'R';
+	gMyBuf[0] = 'B';
+	gMyBuf[1] = 'A';
+	gMyBuf[2] = 'A';
+	gMyBufLen = 3;
+    USB_WriteEP(0x81, gMyBuf, 1);
   }
 }
 #endif
@@ -177,8 +182,9 @@ void USB_EndPoint1 (DWORD event) {
 
   switch (event) {
     case USB_EVT_IN:
-      GetInReport();
-      USB_WriteEP(0x81, &InReport, sizeof(InReport));
+      //GetInReport();
+	  gMyBuf[0]='1';
+      USB_WriteEP(0x84, gMyBuf+1, 1);
       break;
   }
 }

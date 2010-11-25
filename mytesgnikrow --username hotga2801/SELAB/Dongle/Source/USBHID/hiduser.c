@@ -40,8 +40,10 @@ BOOL HID_GetReport (void) {
   /* ReportID = SetupPacket.wValue.WB.L; */
   switch (SetupPacket.wValue.WB.H) {
     case HID_REPORT_INPUT:
-      GetInReport();
-      EP0Buf[0] = InReport;
+      //GetInReport();
+      //EP0Buf[0] = InReport;
+	  //EP0Buf[0] = 'A';
+	  //EP0Buf[1] = 'B';
       break;
     case HID_REPORT_OUTPUT:
       return (FALSE);          /* Not Supported */

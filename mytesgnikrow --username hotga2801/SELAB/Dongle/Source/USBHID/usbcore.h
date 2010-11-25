@@ -43,5 +43,8 @@ extern USB_SETUP_PACKET SetupPacket;
 /* USB Core Functions */
 extern void  USB_ResetCore (void);
 
+extern BYTE  gMyBuf[USB_MAX_PACKET0];
+extern WORD  gMyBufLen;
+
 
 #endif  /* __USBCORE_H__ */

@@ -39,9 +39,9 @@ BYTE OutReport;                             /* HID Out Report      */
 void GetInReport (void) {
 
   if ((FIO2PIN & PBINT) == 0) {             /* Check if PBINT is pressed */
-    InReport = 0x01;
+    InReport = 0x02;
   } else {
-    InReport = 0x00;
+    InReport = 0x01;
   }
 }
 

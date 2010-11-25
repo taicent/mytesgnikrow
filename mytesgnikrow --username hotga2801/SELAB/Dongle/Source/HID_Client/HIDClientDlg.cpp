@@ -113,6 +113,7 @@ BEGIN_MESSAGE_MAP(CHIDClientDlg, CDialog)
 	ON_BN_CLICKED(IDC_OUTPUT7, OnOutput7)
 	ON_WM_CLOSE()
 	//}}AFX_MSG_MAP
+	ON_BN_CLICKED(IDC_BTNGET, &CHIDClientDlg::OnBnClickedBtnget)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -150,7 +151,7 @@ BOOL CHIDClientDlg::OnInitDialog()
 	
   Running = FALSE;
 
-  OutReport[0] = 1;
+  OutReport[0] = 0;
   InReport [0] = 0;
 
   HID_Init();
@@ -277,13 +278,13 @@ void CHIDClientDlg::OnSelchangeDevice()
       InValue = 0;
       m_Out.SetWindowText("0x00");
       m_In.SetWindowText("0x00");
-      SetTimer(1, 20, NULL);
+      //SetTimer(1, 20, NULL);
       OutReport[1] = 2;
-      if (!HID_Write(OutReport, sizeof(OutReport), &cnt)) {
+      if (!HID_Write(OutReport, 2, &cnt)) {
         OnError();
         return;
       }
-      if (!HID_Read(InReport, sizeof(InReport), &cnt)) {
+      if (!HID_Read(InReport, 2, &cnt)) {
         OnError();
         return;
       }
@@ -413,4 +414,19 @@ void CHIDClientDlg::OnClose()
 void CHIDClientDlg::OnOK() 
 {
   // do nothing
+}
+
+void CHIDClientDlg::OnBnClickedBtnget()
+{
+	// TODO: Add your control notification handler code here
+	DWORD cnt;
+	if (!HID_Read(InReport, sizeof(InReport), &cnt)) {
+		OnError();
+		return;
+	}
+	
+	if(cnt)
+	{
+		AfxMessageBox((char*)InReport);
+	}
 }

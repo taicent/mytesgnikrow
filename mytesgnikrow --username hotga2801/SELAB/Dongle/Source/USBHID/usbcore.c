@@ -50,7 +50,8 @@ BYTE  USB_NumInterfaces;
 BYTE  USB_AltSetting[USB_IF_NUM];
 
 BYTE  EP0Buf[USB_MAX_PACKET0];
-
+BYTE  gMyBuf[USB_MAX_PACKET0];
+WORD  gMyBufLen;
 
 USB_EP_DATA EP0Data;
 
@@ -591,6 +592,8 @@ void USB_EndPoint0 (DWORD event) {
                   case HID_REQUEST_GET_REPORT:
                     if (HID_GetReport()) {
                       EP0Data.pData = EP0Buf;
+					  // add region
+					  EP0Data.Count = 1;
                       USB_DataInStage();
                       goto class_ok;
                     }

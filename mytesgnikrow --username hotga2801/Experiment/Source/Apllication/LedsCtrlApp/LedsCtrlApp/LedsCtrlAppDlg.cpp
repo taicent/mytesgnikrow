@@ -1009,7 +1009,7 @@ void CLedsCtrlAppDlg::OnBnClickedBtnaes()
 	str.Format(_T("  Sending IOCTL Code: IOCTL_WDF_USB_GET_ENCODED_DATA, Size: %i bytes"), bLength);
 	this->LogMessage(FALSE, str);
 	bytesReturned = 0;
-	bCmd = DeviceIoControl(	hDevice,						// Device
+	/*bCmd = DeviceIoControl(	hDevice,						// Device
 							IOCTL_WDF_USB_GET_LIGHTBAR,		// Command Code
 							NULL,							// Input Buffer
 							0,								// Input Buffer Length
@@ -1017,7 +1017,12 @@ void CLedsCtrlAppDlg::OnBnClickedBtnaes()
 							bLength,								// Output Buffer Length
 							&bytesReturned,					// Number of byte returned
 							NULL);
-
+*/
+	bCmd = ReadFile(hDevice,
+		pOutBuffer,
+		bLength,
+		&bytesReturned,
+		NULL);
 	CString strResult = _T("");
 	strResult.Format(_T("NumOfBytes has been read: %i"), bytesReturned);
 	this->LogMessage(FALSE, strResult);

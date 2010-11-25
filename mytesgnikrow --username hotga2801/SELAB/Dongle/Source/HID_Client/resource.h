@@ -1,5 +1,5 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
+// Microsoft Visual C++ generated include file.
 // Used by HIDClient.rc
 //
 #define IDM_ABOUTBOX                    0x0010
@@ -26,6 +26,8 @@
 #define IDC_OUTPUT7                     1016
 #define IDC_INPUT                       1017
 #define IDC_OUTPUT                      1018
+#define IDC_BUTTON1                     1019
+#define IDC_BTNGET                      1019
 
 // Next default values for new objects
 // 
@@ -33,7 +35,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        131
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1018
+#define _APS_NEXT_CONTROL_VALUE         1020
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
