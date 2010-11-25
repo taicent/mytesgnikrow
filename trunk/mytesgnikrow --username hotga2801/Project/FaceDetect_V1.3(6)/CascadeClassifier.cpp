@@ -10,7 +10,8 @@ using namespace std;
 #include "AdaBoostClassifier.h"
 #include "CascadeClassifier.h"
 #include "Global.h"
-//#include "FFS.h"
+#include "Learn.h"
+#include "Label.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -18,7 +19,7 @@ using namespace std;
 static char THIS_FILE[] = __FILE__;
 #endif
 
-CascadeClassifier::CascadeClassifier():count(0),ac(NULL)
+CascadeClassifier::CascadeClassifier():m_iCount(0),m_AdaClassifiers(NULL)
 {
 }
 
@@ -29,31 +30,31 @@ CascadeClassifier::~CascadeClassifier()
 
 void CascadeClassifier::Clear()
 {
-	count = 0;
-	delete[] ac; ac=NULL;
+	m_iCount = 0;
+	delete[] m_AdaClassifiers; m_AdaClassifiers=NULL;
 }
 
 CascadeClassifier& CascadeClassifier::operator=(const CascadeClassifier& source)
 {
 	Clear();
-	count = source.count;
-	ac = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(ac!=NULL);
-	for(int i=0;i<count;i++) ac[i] = source.ac[i];
+	m_iCount = source.m_iCount;
+	m_AdaClassifiers = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(m_AdaClassifiers!=NULL);
+	for(int i=0;i<m_iCount;i++) m_AdaClassifiers[i] = source.m_AdaClassifiers[i];
 	return *this;
 }
 
 void CascadeClassifier::ReadFromFile(ifstream& f)
 {
 	Clear();
-	f>>count; f.ignore(256,'\n');
-	ac = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(ac!=NULL);
-	for(int i=0;i<count;i++) ac[i].ReadFromFile(f);
+	f>>m_iCount; f.ignore(256,'\n');
+	m_AdaClassifiers = new AdaBoostClassifier[gMaxNumNodes]; ASSERT(m_AdaClassifiers!=NULL);
+	for(int i=0;i<m_iCount;i++) m_AdaClassifiers[i].ReadFromFile(f);
 }
 
 void CascadeClassifier::WriteToFile(ofstream& f) const
 {
-	f<<count<<endl;
-	for(int i=0;i<count;i++) ac[i].WriteToFile(f);
+	f<<m_iCount<<endl;
+	for(int i=0;i<m_iCount;i++) m_AdaClassifiers[i].WriteToFile(f);
 }
 
 void CascadeClassifier::LoadDefaultCascade()
@@ -74,29 +75,29 @@ void CascadeClassifier::DrawResults(IntImage& image,const vector<CRect>& results
 	for(k=0;k<results.size();k++)
 	{
 		y1 = (results[k].top>=0)?results[k].top:0; 
-		y1 = (results[k].top<image.height)?results[k].top:(image.height-1);
+		y1 = (results[k].top<image.m_iHeight)?results[k].top:(image.m_iHeight-1);
 		y2 = (results[k].bottom>=0)?results[k].bottom:0;
-		y2 = (results[k].bottom<image.height)?results[k].bottom:(image.height-1);
+		y2 = (results[k].bottom<image.m_iHeight)?results[k].bottom:(image.m_iHeight-1);
 		x1 = (results[k].left>=0)?results[k].left:0;
-		x1 = (results[k].left<image.width)?results[k].left:(image.width-1);
+		x1 = (results[k].left<image.m_iWidth)?results[k].left:(image.m_iWidth-1);
 		x2 = (results[k].right>=0)?results[k].right:0;
-		x2 = (results[k].right<image.width)?results[k].right:(image.width-1);	
+		x2 = (results[k].right<image.m_iWidth)?results[k].right:(image.m_iWidth-1);	
 		for(i=y1;i<=y2;i++) 
 		{
-			image.data[i][x1] = 0;
-			image.data[i][x2] = 0;
+			image.m_Data[i][x1] = 0;
+			image.m_Data[i][x2] = 0;
 		}
 		for(i=x1;i<=x2;i++)
 		{
-			image.data[y1][i] = 0;
-			image.data[y2][i] = 0;
+			image.m_Data[y1][i] = 0;
+			image.m_Data[y2][i] = 0;
 		}
 	}
 }
 
 const int CascadeClassifier::ApplyImagePatch(const IntImage& im) const
 {
-	for(int i=0;i<count;i++) if(ac[i].ApplyImagePatch(im)==0) return 0;
+	for(int i=0;i<m_iCount;i++) if(m_AdaClassifiers[i].ApplyImagePatch(im)==0) return 0;
 	return 1;
 }
 
@@ -114,15 +115,15 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 	ratio = 1.0;
 	results.clear();
 	REAL paddedsize = REAL(1)/REAL((gSx+1)*(gSy+1));
-	while((procface.height>gSx+1) && (procface.width>gSy+1))
+	while((procface.m_iHeight>gSx+1) && (procface.m_iWidth>gSy+1))
 	{
 		procface.CalcSquareAndIntegral(square,image);
-		for(int i=0,size_x=image.height-gSx;i<size_x;i+=1)
-			for(int j=0,size_y=image.width-gSy;j<size_y;j+=1)
+		for(int i=0,size_x=image.m_iHeight-gSx;i<size_x;i+=1)
+			for(int j=0,size_y=image.m_iWidth-gSy;j<size_y;j+=1)
 			{
-				ex = image.data[i+gSx][j+gSy]+image.data[i][j]-image.data[i+gSx][j]-image.data[i][j+gSy];
+				ex = image.m_Data[i+gSx][j+gSy]+image.m_Data[i][j]-image.m_Data[i+gSx][j]-image.m_Data[i][j+gSy];
 				if(ex<gMean_Min || ex>gMean_Max) continue;
-				sq = square.data[i+gSx][j+gSy]+square.data[i][j]-square.data[i+gSx][j]-square.data[i][j+gSy];
+				sq = square.m_Data[i+gSx][j+gSy]+square.m_Data[i][j]-square.m_Data[i+gSx][j]-square.m_Data[i][j+gSy];
 				if(sq<gSq_Min) continue;
 				ex *= paddedsize;
 				ex = ex * ex;
@@ -132,16 +133,16 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 				if(sq>0) sq = sqrt(sq); else sq = 1.0;
 				if(sq<gVar_Min) continue;
 				result = 1;
-				for(int k=0;k<count;k++)
+				for(int k=0;k<m_iCount;k++)
 				{
 					value = 0.0;
-					for(int t=0,size=ac[k].count;t<size;t++)
+					for(int t=0,size=m_AdaClassifiers[k].m_iCount;t<size;t++)
 					{
 						REAL f1 = 0;
-						REAL** p = image.data + i;
-						SimpleClassifier& s = ac[k].scs[t];
+						REAL** p = image.m_Data + i;
+						WeakClassifier& s = m_AdaClassifiers[k].m_WeakClassifiers[t];
 
-						switch(s.type)
+						switch(s.m_iType)
 						{
 							case 0:
 								f1 =   p[s.x1][j+s.y3] - p[s.x1][j+s.y1] + p[s.x3][j+s.y3] - p[s.x3][j+s.y1]
@@ -171,16 +172,16 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 								;
 #endif
 						}
-						if(s.parity!=0)
-							if(f1<sq*s.thresh)
-								value += ac[k].alphas[t];
+						if(s.m_iParity!=0)
+							if(f1<sq*s.m_rThreshold)
+								value += m_AdaClassifiers[k].m_rAlphas[t];
 							else ;
 						else
-							if(f1>=sq*s.thresh)
-								value += ac[k].alphas[t];
+							if(f1>=sq*s.m_rThreshold)
+								value += m_AdaClassifiers[k].m_rAlphas[t];
 							else ;
 					}
-					if(value<ac[k].thresh) 
+					if(value<m_AdaClassifiers[k].m_rThreshold) 
 					{
 						result = 0;
 						break;
@@ -203,8 +204,27 @@ void CascadeClassifier::ApplyOriginalSize(IntImage& original,const CString filen
 
 	PostProcess(results,2);
 	PostProcess(results,0);
-	DrawResults(original,results);
+//	DrawResults(original,results);
+	CheckResults(results);
 //	original.Save(filename+"_result.JPG");
+}
+
+void CascadeClassifier::CheckResults(const vector<CRect>& results)
+{
+	int count = 0;
+	for(int i = 0;i < gFaceLabels.size();i++)
+	{
+		for(int j = 0;j < results.size();j++)
+		{
+			if(gFaceLabels[i].IsInsideRect(results[j]))
+			{
+				gNumRightLabel++;
+				count++;
+				break;
+			}
+		}
+	}
+	gNumWrongDetectedFace += ((int)results.size() - count);
 }
 
 inline int SizeOfRect(const CRect& rect)
@@ -280,18 +300,18 @@ void CascadeClassifier::ApplyOriginalSizeForInputBoosting(const CString filename
 	REAL ratio;
 
 	procface.Load(filename);
-	if(procface.height <=0 || procface.width<=0) return;
+	if(procface.m_iHeight <=0 || procface.m_iWidth<=0) return;
 	ratio = 1.0;
 	REAL paddedsize = REAL(1)/REAL((gSx+1)*(gSy+1));
-	while((procface.height>gSx+1) && (procface.width>gSy+1))
+	while((procface.m_iHeight>gSx+1) && (procface.m_iWidth>gSy+1))
 	{
 		procface.CalcSquareAndIntegral(square,image);
-		for(int i=0,size_x=image.height-gSx;i<size_x;i+=bootstrap_increment[bootstrap_level])
-			for(int j=0,size_y=image.width-gSy;j<size_y;j+=bootstrap_increment[bootstrap_level])
+		for(int i=0,size_x=image.m_iHeight-gSx;i<size_x;i+=bootstrap_increment[bootstrap_level])
+			for(int j=0,size_y=image.m_iWidth-gSy;j<size_y;j+=bootstrap_increment[bootstrap_level])
 			{
-				ex = image.data[i+gSx][j+gSy]+image.data[i][j]-image.data[i+gSx][j]-image.data[i][j+gSy];
+				ex = image.m_Data[i+gSx][j+gSy]+image.m_Data[i][j]-image.m_Data[i+gSx][j]-image.m_Data[i][j+gSy];
 				if(ex<gMean_Min || ex>gMean_Max) continue;
-				sq = square.data[i+gSx][j+gSy]+square.data[i][j]-square.data[i+gSx][j]-square.data[i][j+gSy];
+				sq = square.m_Data[i+gSx][j+gSy]+square.m_Data[i][j]-square.m_Data[i+gSx][j]-square.m_Data[i][j+gSy];
 				if(sq<gSq_Min) continue;
 				ex *= paddedsize;
 				ex = ex * ex;
@@ -301,12 +321,12 @@ void CascadeClassifier::ApplyOriginalSizeForInputBoosting(const CString filename
 				if(sq>0) sq = sqrt(sq); else sq = 1.0;
 				if(sq<gVar_Min) continue;
 				result = 1;
-				for(int k=0;k<count;k++)
+				for(int k=0;k<m_iCount;k++)
 				{
 					value = 0.0;
-					for(int t=0,size=ac[k].count;t<size;t++)
-						value += (ac[k].alphas[t]*ac[k].scs[t].Apply(ac[k].scs[t].GetOneFeatureTranslation(image.data+i,j)/sq));
-					if(value<ac[k].thresh) 
+					for(int t=0,size=m_AdaClassifiers[k].m_iCount;t<size;t++)
+						value += (m_AdaClassifiers[k].m_rAlphas[t]*m_AdaClassifiers[k].m_WeakClassifiers[t].Apply(m_AdaClassifiers[k].m_WeakClassifiers[t].GetOneFeatureTranslation(image.m_Data+i,j)/sq));
+					if(value<m_AdaClassifiers[k].m_rThreshold) 
 					{
 						result = 0;
 						break;
@@ -316,7 +336,7 @@ void CascadeClassifier::ApplyOriginalSizeForInputBoosting(const CString filename
 				{
 					for(int k=1;k<=gSx;k++)
 						for(int t=1;t<=gSy;t++)
-							gTrainSet[pointer].data[k][t]=image.data[i+k][j+t]-image.data[i+k][j]-image.data[i][j+t]+image.data[i][j];
+							gTrainSet[pointer].m_Data[k][t]=image.m_Data[i+k][j+t]-image.m_Data[i+k][j]-image.m_Data[i][j+t]+image.m_Data[i][j];
 					pointer++;
 					if(pointer==gTotalCount) return;
 				}
@@ -337,10 +357,47 @@ void AppendAdaBoostClassifier(const AdaBoostClassifier& ada)
 	cas.ReadFromFile(f);
 	f.close();
 
-	cas.ac[cas.count] = ada;
-	cas.count++;
+	cas.m_AdaClassifiers[cas.m_iCount] = ada;
+	cas.m_iCount++;
 
 	of.open(gCascade_Filename);
 	cas.WriteToFile(of);
 	of.close();
+}
+
+const bool CascadeClassifier::OneRound(const int round)
+{
+	ofstream f;
+	bool result;
+	int i;
+	AdaBoostClassifier ada;
+	CWnd* pwnd;
+	CString str;
+
+	pwnd = AfxGetMainWnd();
+
+	BackupIntermediateFile(gTrainset_Filename,round);
+
+	str.Format("Training node: %d",round);
+	pwnd->SetWindowText(str);
+	ada.TrainLDS(gNof[round-1],true,gGoal_Method);
+
+	//if(gTrain_Method==TRAIN_ADA)
+	BackupIntermediateFile(gAda_Log_Filename,round);
+	//else
+	//	BackupIntermediateFile(FFS_log_filename,round);
+
+	BackupIntermediateFile(gCascade_Filename,round);
+
+	str.Format("Training node %d finished. Bootstrapping non-face data for next node.",round);
+	pwnd->SetWindowText(str);
+	result = BoostingInputFiles(false);
+
+	f.open(FileUsage_log_filename);
+	for(i=0;i<gMaxNumFiles;i++) f<<gFileUsed[i]<<" ";
+	f.close();
+
+	BackupIntermediateFile(FileUsage_log_filename,round);
+
+	return result;
 }

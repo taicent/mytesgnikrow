@@ -68,3 +68,4 @@ inline CFaceDetectDoc* CFaceDetectView::GetDocument()
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
 #endif // !defined(AFX_FACEDETECTVIEW_H__43C12073_634A_463C_BDCD_985F6621A9DB__INCLUDED_)
+

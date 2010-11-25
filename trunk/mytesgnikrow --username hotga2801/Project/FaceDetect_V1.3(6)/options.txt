@@ -51,7 +51,7 @@ data\files.txt
 // asym_ratio			Level of asymmetry in Asymetric AdaBoost
 1
 // max_nodes			How many nodes are allowed?
-50
+5
 // nof				How many features in each node?
 007 015 030 030 050 050 050 100 120 140
 160 180 200 200 200 200 200 200 200 200

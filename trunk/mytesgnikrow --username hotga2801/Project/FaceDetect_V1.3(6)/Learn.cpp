@@ -124,12 +124,12 @@ const bool BoostingInputFiles(const bool discard)
 	for(i=0;i<gTotalCount;i++)
 	{
 		int k,t;
-		memcpy(im.buf,gTrainSet[i].buf,(gSx+1)*(gSy+1)*sizeof(im.buf[0]));
-		for(k=0;k<=gSy;k++) gTrainSet[i].data[0][k] = 0;
-		for(k=0;k<=gSx;k++) gTrainSet[i].data[k][0] = 0;
+		memcpy(im.m_Buf,gTrainSet[i].m_Buf,(gSx+1)*(gSy+1)*sizeof(im.m_Buf[0]));
+		for(k=0;k<=gSy;k++) gTrainSet[i].m_Data[0][k] = 0;
+		for(k=0;k<=gSx;k++) gTrainSet[i].m_Data[k][0] = 0;
 		for(k=1;k<=gSx;k++)
 			for(t=1;t<=gSy;t++)
-				gTrainSet[i].data[k][t] = im.data[k][t]-im.data[k-1][t]-im.data[k][t-1]+im.data[k-1][t-1];
+				gTrainSet[i].m_Data[k][t] = im.m_Data[k][t]-im.m_Data[k-1][t]-im.m_Data[k][t-1]+im.m_Data[k-1][t-1];
 	}
 
 	of.open(gTrainset_Filename,ios_base::out | ios_base::binary);
@@ -138,11 +138,11 @@ const bool BoostingInputFiles(const bool discard)
 	writebuf = new unsigned char[gSx*gSy]; ASSERT(writebuf!=NULL);
 	for(i=0;i<gTotalCount;i++)
 	{
-		of<<gTrainSet[i].label<<endl;
+		of<<gTrainSet[i].m_iLabel<<endl;
 		of<<gSx<<" "<<gSy<<endl;
 		for(int k=0;k<gSx;k++)
 			for(int t=0;t<gSy;t++)
-				writebuf[k*gSy+t] = (unsigned char)((int)gTrainSet[i].data[k+1][t+1]);
+				writebuf[k*gSy+t] = (unsigned char)((int)gTrainSet[i].m_Data[k+1][t+1]);
 		of.write((char*)writebuf,gSx*gSy);
 		of<<endl;
 	}
@@ -185,47 +185,10 @@ void BackupIntermediateFile(const CString filename, const int round)
 	CopyFile(filename,savename,FALSE);
 }
 
-const bool CascadeClassifier::OneRound(const int round)
-{
-	ofstream f;
-	bool result;
-	int i;
-	AdaBoostClassifier ada;
-	CWnd* pwnd;
-	CString str;
-
-	pwnd = AfxGetMainWnd();
-
-	BackupIntermediateFile(gTrainset_Filename,round);
-
-	str.Format("Training node: %d",round);
-	pwnd->SetWindowText(str);
-	ada.TrainLDS(gNof[round-1],true,gGoal_Method);
-
-	//if(gTrain_Method==TRAIN_ADA)
-		BackupIntermediateFile(gAda_Log_Filename,round);
-	//else
-	//	BackupIntermediateFile(FFS_log_filename,round);
-
-	BackupIntermediateFile(gCascade_Filename,round);
-
-	str.Format("Training node %d finished. Bootstrapping non-face data for next node.",round);
-	pwnd->SetWindowText(str);
-	result = BoostingInputFiles(false);
-
-	f.open(FileUsage_log_filename);
-	for(i=0;i<gMaxNumFiles;i++) f<<gFileUsed[i]<<" ";
-	f.close();
-
-	BackupIntermediateFile(FileUsage_log_filename,round);
-
-	return result;
-}
-
 void WriteSimpleClassifiers(void)
 {
 	int x1,x2,x3,x4,y1,y2,y3,y4;
-	SimpleClassifier sc;
+	WeakClassifier sc;
 	int index;
 	ofstream f;
 
@@ -241,11 +204,11 @@ void WriteSimpleClassifiers(void)
 				{
 					x2 = (x1+x3)/2;
 					y2 = y4 = x4 = -1;
-					sc.type = 0; sc.error = 0.0;
+					sc.m_iType = 0; sc.m_rError = 0.0;
 					sc.x1 = x1; sc.x2 = x2; sc.x3 = x3; sc.x4 = x4;
 					sc.y1 = y1; sc.y2 = y2; sc.y3 = y3; sc.y4 = y4;
-					sc.parity = 0;
-					sc.thresh = 0.0;
+					sc.m_iParity = 0;
+					sc.m_rThreshold = 0.0;
 					if(index%10==pickup) sc.WriteToFile(f);
 					index++;
 				}
@@ -257,11 +220,11 @@ void WriteSimpleClassifiers(void)
 				{
 					y2 = (y1+y3)/2;
 					x2 = x4 = y4 = -1;
-					sc.type = 1; sc.error = 0.0;
+					sc.m_iType = 1; sc.m_rError = 0.0;
 					sc.x1 = x1; sc.x2 = x2; sc.x3 = x3; sc.x4 = x4;
 					sc.y1 = y1; sc.y2 = y2; sc.y3 = y3; sc.y4 = y4;
-					sc.parity = 0;
-					sc.thresh = 0.0;
+					sc.m_iParity = 0;
+					sc.m_rThreshold = 0.0;
 					if(index%10==pickup) sc.WriteToFile(f);
 					index++;
 				}
@@ -274,11 +237,11 @@ void WriteSimpleClassifiers(void)
 					x2 = x1 + (x4-x1)/3;
 					x3 = x2 + (x4-x1)/3;
 					y2 = y4 = -1;
-					sc.type = 2; sc.error = 0.0;
+					sc.m_iType = 2; sc.m_rError = 0.0;
 					sc.x1 = x1; sc.x2 = x2; sc.x3 = x3; sc.x4 = x4;
 					sc.y1 = y1; sc.y2 = y2; sc.y3 = y3; sc.y4 = y4;
-					sc.parity = 0;
-					sc.thresh = 0.0;
+					sc.m_iParity = 0;
+					sc.m_rThreshold = 0.0;
 					if(index%10==pickup) sc.WriteToFile(f);
 					index++;
 				}
@@ -291,11 +254,11 @@ void WriteSimpleClassifiers(void)
 					y2 = y1 + (y4-y1)/3;
 					y3 = y2 + (y4-y1)/3;
 					x2 = x4 = -1;
-					sc.type = 3; sc.error = 0.0;
+					sc.m_iType = 3; sc.m_rError = 0.0;
 					sc.x1 = x1; sc.x2 = x2; sc.x3 = x3; sc.x4 = x4;
 					sc.y1 = y1; sc.y2 = y2; sc.y3 = y3; sc.y4 = y4;
-					sc.parity = 0;
-					sc.thresh = 0.0;
+					sc.m_iParity = 0;
+					sc.m_rThreshold = 0.0;
 					if(index%10==pickup) sc.WriteToFile(f);
 					index++;
 				}
@@ -308,11 +271,11 @@ void WriteSimpleClassifiers(void)
 					x2 = (x1+x3)/2;
 					y2 = (y1+y3)/2;
 					x4 = y4 = -1;
-					sc.type = 4; sc.error = 0.0;
+					sc.m_iType = 4; sc.m_rError = 0.0;
 					sc.x1 = x1; sc.x2 = x2; sc.x3 = x3; sc.x4 = x4;
 					sc.y1 = y1; sc.y2 = y2; sc.y3 = y3; sc.y4 = y4;
-					sc.parity = 0;
-					sc.thresh = 0.0;
+					sc.m_iParity = 0;
+					sc.m_rThreshold = 0.0;
 					if(index%10==pickup) sc.WriteToFile(f);
 					index++;
 				}

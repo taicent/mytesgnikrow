@@ -2,20 +2,38 @@
 // Microsoft Visual C++ generated include file.
 // Used by AdaboostFaceDetection.rc
 //
-#define IDR_MAINFRAME					128
-#define IDM_ABOUTBOX					0x0010
-#define IDD_ABOUTBOX					100
-#define IDS_ABOUTBOX					101
-#define IDD_ADABOOSTFACEDETECTION_DIALOG				102
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_ADABOOSTFACEDETECTION_DIALOG 102
+#define IDR_MAINFRAME                   128
+#define IDD_DIALOG1                     131
+#define IDC_Experiment                  1006
+#define IDC_TEST                        1007
+#define IDC_TRAINING                    1008
+#define IDC_TBXFILENAME                 1009
+#define IDC_TBXLABEL                    1010
+#define IDC_BTNEXP                      1011
+#define IDC_BTNFILENAME                 1012
+#define IDC_BTNLABEL                    1013
+#define IDC_TBXTESTFILE                 1014
+#define IDC_BTNTESTFILE                 1015
+#define IDC_BTNEXP2                     1016
+#define IDC_BTNTEST                     1016
+#define IDC_BTNHOME                     1017
+#define IDC_BTNTRAIN                    1018
+#define IDC_TBXTOTAL                    1019
+#define IDC_TBXTP                       1020
+#define IDC_EDIT3                       1021
+#define IDC_TBXFP                       1021
 
 // Next default values for new objects
-//
+// 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-
-#define _APS_NEXT_RESOURCE_VALUE	129
-#define _APS_NEXT_CONTROL_VALUE		1000
-#define _APS_NEXT_SYMED_VALUE		101
-#define _APS_NEXT_COMMAND_VALUE		32771
+#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1020
+#define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

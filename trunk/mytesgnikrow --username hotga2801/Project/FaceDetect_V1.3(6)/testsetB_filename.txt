@@ -1,0 +1,25 @@
+24
+testB\Arsenal.jpg 16
+testB\Argentina.jpg 11
+testB\Brazil.jpg 11
+testB\USA.jpg 14
+testB\Colombia.jpg 11
+testB\Ecuador.jpg 12
+testB\me.jpg 1
+testB\England.jpg 11
+testB\tp.jpg 1
+testB\Germany.jpg 11
+testB\albert.jpg 1
+testB\board.jpg 9
+testB\brian.jpg 1
+testB\cards-perp-sml.jpg 8
+testB\frisbee.jpg 5
+testB\kymberly.jpg 1
+testB\oksana1.jpg 4
+testB\soccer.jpg 15
+testB\tommyrw.jpg 1
+testB\torrance.jpg 2
+testB\trek-trio.jpg 3
+testB\trekcolr.jpg 3
+testB\tp-reza-girosi.jpg 3
+testB\cards-perp-sml.jpg 2
