@@ -17,7 +17,7 @@
 ### ADS-LD Output File: '.\Obj\HID.axf'
 ### ADS-LD Command File: '.\Obj\HID.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\HID.lnp', Handle=0x0000022C
+### Creating CmdFile '.\Obj\HID.lnp', Handle=0x00000284
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\HID.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

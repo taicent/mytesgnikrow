@@ -3,8 +3,8 @@
 <pre>
 <h1>µVision3 Build Log</h1>
 <h2>Project:</h2>
-F:\MDBlue\GoogleCode\WorkingSet\SELAB\Dongle\Source\USBHID\HID.uv2
-Project File Date:  11/20/2010
+D:\Long\WorkingSet\SELAB\Dongle\Source\USBHID\HID.uv2
+Project File Date:  11/17/2010
 
 <h2>Output:</h2>
 Build target 'MCB2300 Board'
@@ -19,7 +19,29 @@ compiling LCD_4bit.c...
 linking...
 Program Size: Code=9120 RO-data=360 RW-data=40 ZI-data=1512  
 ".\Obj\HID.axf" - 0 Error(s), 0 Warning(s).
-Load "F:\\MDBlue\\GoogleCode\\WorkingSet\\SELAB\\Dongle\\Source\\USBHID\\Obj\\HID.AXF" 
+Load "D:\\Long\\WorkingSet\\SELAB\\Dongle\\Source\\USBHID\\Obj\\HID.AXF" 
+Starting Firmware Update.
+ULINK Loader Connected.
+Firmware Erased.
+Firmware Programmed.
+ULINK Connected.
+Firmware Updated.
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCB2300 Board'
+assembling LPC2300.s...
+compiling usbcore.c...
+compiling usbdesc.c...
+compiling usbhw.c...
+compiling usbuser.c...
+compiling hiduser.c...
+compiling demo.c...
+compiling LCD_4bit.c...
+linking...
+Program Size: Code=9120 RO-data=360 RW-data=40 ZI-data=1512  
+".\Obj\HID.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\Long\\WorkingSet\\SELAB\\Dongle\\Source\\USBHID\\Obj\\HID.AXF" 
 Erase Done.
 Programming Done.
 Verify OK.

@@ -284,7 +284,7 @@ void CHIDClientDlg::OnSelchangeDevice()
         OnError();
         return;
       }
-      if (!HID_Read(InReport, 2, &cnt)) {
+      if (!HID_Read(InReport, 17, &cnt)) {
         OnError();
         return;
       }
@@ -420,7 +420,7 @@ void CHIDClientDlg::OnBnClickedBtnget()
 {
 	// TODO: Add your control notification handler code here
 	DWORD cnt;
-	if (!HID_Read(InReport, sizeof(InReport), &cnt)) {
+	if (!HID_Read(InReport, 2, &cnt)) {
 		OnError();
 		return;
 	}

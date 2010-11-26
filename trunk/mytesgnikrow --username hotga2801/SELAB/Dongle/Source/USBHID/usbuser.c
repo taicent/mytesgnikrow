@@ -184,7 +184,7 @@ void USB_EndPoint1 (DWORD event) {
     case USB_EVT_IN:
       //GetInReport();
 	  gMyBuf[0]='1';
-      USB_WriteEP(0x84, gMyBuf+1, 1);
+      USB_WriteEP(0x81, gMyBuf+1, 1);
       break;
   }
 }
