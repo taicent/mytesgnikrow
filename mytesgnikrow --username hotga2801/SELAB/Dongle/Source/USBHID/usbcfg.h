@@ -73,7 +73,7 @@
 #define USB_EP_NUM          32
 #define USB_MAX_PACKET0     64
 #define USB_DMA             0
-#define USB_DMA_EP          0x00000000
+#define USB_DMA_EP          0x00000004
 
 
 /*
@@ -113,7 +113,7 @@
 // </h>
 */
 
-#define USB_POWER_EVENT     0
+#define USB_POWER_EVENT     1
 #define USB_RESET_EVENT     1
 #define USB_SUSPEND_EVENT   0
 #define USB_RESUME_EVENT    0
@@ -142,10 +142,10 @@
 // </e>
 */
 
-#define USB_CLASS           1
+#define USB_CLASS           0
 #define USB_HID             1
 #define USB_HID_IF_NUM      0
-#define USB_MSC             0
+#define USB_MSC             1
 #define USB_MSC_IF_NUM      0
 #define USB_AUDIO           0
 #define USB_ADC_CIF_NUM     0

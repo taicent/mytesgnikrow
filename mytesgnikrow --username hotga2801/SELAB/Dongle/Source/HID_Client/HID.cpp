@@ -276,8 +276,26 @@ BOOL HID_Read(BYTE *buf, DWORD sz, DWORD *cnt) {
 BOOL HID_Write(BYTE *buf, DWORD sz, DWORD *cnt) {
   BOOL  ok;
 
+  struct  {              /* new Output Report */
+	  BYTE OutReport[2];   /* LED control       */
+	  BYTE LcdLine1 [16];  /* LCD line #1       */
+	  BYTE LcdLine2 [16];  /* LCD line #2       */
+  } OutRep;
+
+  time_t curTime;
+  tm     locTime;
+
+  /* prepare date and time */
+  time(&curTime);                      /* get time     */
+  locTime = *(localtime(&curTime));    /* convert time */
+
+  /* prepare Output Report */
+  memcpy (OutRep.OutReport, buf, sz);  /* copy original Output Report */
+  sprintf((char *)OutRep.LcdLine1,"date %02d.%02d.%04d", locTime.tm_mday, locTime.tm_mon+1, locTime.tm_year+1900);
+  sprintf((char *)OutRep.LcdLine2,"time %02d:%02d:%02d", locTime.tm_hour, locTime.tm_min,   locTime.tm_sec);
+
   /* Write to Device */
-  ok = WriteFile(DevHandle, buf, sz, cnt, NULL);
+  ok = WriteFile(DevHandle, &OutRep, sizeof(OutRep), cnt, NULL); 
 
   return (ok);
 }
