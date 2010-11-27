@@ -1476,8 +1476,8 @@ e)
               00000000 
               00000400 
               00000000 
-Command Line: --debug --xref --device=DARMP --apcs=interwork -oLPC2300.o -IC:\K
-eil\ARM\INC\Philips --list=LPC2300.lst LPC2300.s
+Command Line: --debug --xref --device=DARMP --apcs=interwork -oLPC2300.o -ID:\A
+pplication\Keil\ARM\INC\Philips --list=LPC2300.lst LPC2300.s
 
 
 

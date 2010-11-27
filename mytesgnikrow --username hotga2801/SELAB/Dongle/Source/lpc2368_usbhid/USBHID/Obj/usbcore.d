@@ -1,5 +1,5 @@
 .\Obj\usbcore.o: usbcore.c
-.\Obj\usbcore.o: C:\Keil\ARM\INC\Philips\LPC23XX.h
+.\Obj\usbcore.o: D:\Application\Keil\ARM\INC\Philips\LPC23XX.h
 .\Obj\usbcore.o: type.h
 .\Obj\usbcore.o: usb.h
 .\Obj\usbcore.o: usbcfg.h

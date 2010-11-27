@@ -295,7 +295,7 @@ BOOL HID_Write(BYTE *buf, DWORD sz, DWORD *cnt) {
   sprintf((char *)OutRep.LcdLine2,"time %02d:%02d:%02d", locTime.tm_hour, locTime.tm_min,   locTime.tm_sec);
 
   /* Write to Device */
-  ok = WriteFile(DevHandle, &OutRep, sizeof(OutRep), cnt, NULL); 
+  ok = WriteFile(DevHandle, &OutRep, /*sizeof(OutRep)*/ 34, cnt, NULL); 
 
   return (ok);
 }

@@ -21,6 +21,9 @@
 extern BYTE InReport[USB_MAX_PACKET0];
 extern BYTE OutReport[USB_MAX_PACKET0];
 
+extern unsigned char Key[32];
+extern int Nr;
+extern int Nk;
 
 /* HID Demo Functions */
 extern void GetInReport  (void);

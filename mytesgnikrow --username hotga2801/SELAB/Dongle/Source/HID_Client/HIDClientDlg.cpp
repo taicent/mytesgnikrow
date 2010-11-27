@@ -152,7 +152,7 @@ BOOL CHIDClientDlg::OnInitDialog()
   Running = FALSE;
 
   OutReport[0] = 0;
-  InReport [0] = 0;
+  //InReport [0] = 0;
 
   HID_Init();
 
@@ -284,7 +284,7 @@ void CHIDClientDlg::OnSelchangeDevice()
         OnError();
         return;
       }
-      if (!HID_Read(InReport, 17, &cnt)) {
+      if (!HID_Read(InReport, 18, &cnt)) {
         OnError();
         return;
       }

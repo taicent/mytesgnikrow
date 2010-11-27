@@ -134,9 +134,9 @@ int main()
 	int Nr = 0;
 	int Nk = 0;
 	unsigned char Key[32]= {0x00  ,0x01  ,0x02  ,0x03  ,0x04  ,0x05  ,0x06  ,0x07  ,0x08  ,0x09  ,0x0a  ,0x0b  ,0x0c  ,0x0d  ,0x0e  ,0x0f};
-	unsigned char in[15]= {/*0x00  ,*/0x11  ,0x22  ,0x33  ,0x44  ,0x55  ,0x66  ,0x77  ,0x88  ,0x99  ,0xaa  ,0xbb  ,0xcc  ,0xdd  ,0xee  ,0xff};
-	unsigned char out1[15];
-	unsigned char out2[15];
+	unsigned char in[1]= {/*0x00  ,0x11  ,0x22  ,0x33  ,0x44  ,0x55  ,0x66  ,0x77  ,0x88  ,0x99  ,0xaa  ,0xbb  ,0xcc  ,0xdd  ,0xee  ,*/0xff};
+	unsigned char out1[1];
+	unsigned char out2[1];
 	InitUART1();
 
 	while(Nr!=128 && Nr!=192 && Nr!=256)
@@ -147,21 +147,22 @@ int main()
 
 	Nk = Nr / 32;
 	Nr = Nk + 6;
-	
-	KeyExpansion(Key, Nk, Nr);
-	Cipher(in, out1, Nr);
-
 	SendEnter();
 	SendString("\nPlain text: ");
-	for(i = 0; i < strlen(in); i++)
+	for(i = 0; i < 1; i++)
 	{
 		SendStringFromNum(in[i]);
 		SendKey(32);		
 	} 
 	SendEnter();
+	
+	KeyExpansion(Key, Nk, Nr);
+	Cipher(in, out1, Nr);
+
+	
 
 	SendString("\nText encrypted: ");
-	for(i = 0; i < strlen(in); i++)
+	for(i = 0; i < 1; i++)
 	{
 		SendStringFromNum(out1[i]);
 		SendKey(32);		
@@ -170,7 +171,7 @@ int main()
 
 	InvCipher(out1, out2, Nr);
 	SendString("\nText decrypted: ");
-	for(i = 0; i < strlen(in); i++)
+	for(i = 0; i < 1; i++)
 	{
 		SendStringFromNum(out2[i]);
 		SendKey(32);		

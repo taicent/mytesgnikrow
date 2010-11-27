@@ -9,15 +9,16 @@
 ### List of Objects: adding '".\obj\hiduser.o"'
 ### List of Objects: adding '".\obj\demo.o"'
 ### List of Objects: adding '".\obj\lcd_4bit.o"'
+### List of Objects: adding '".\obj\aes.o"'
 ### ADS-LD Command completed:
-".\obj\lpc2300.o" ".\obj\usbcore.o" ".\obj\usbdesc.o" ".\obj\usbhw.o" ".\obj\usbuser.o" ".\obj\hiduser.o" ".\obj\demo.o" ".\obj\lcd_4bit.o" --device DARMP --strict --scatter ".\Obj\HID.sct" 
+".\obj\lpc2300.o" ".\obj\usbcore.o" ".\obj\usbdesc.o" ".\obj\usbhw.o" ".\obj\usbuser.o" ".\obj\hiduser.o" ".\obj\demo.o" ".\obj\lcd_4bit.o" ".\obj\aes.o" --device DARMP --strict --scatter ".\Obj\HID.sct" 
 --entry 0x00000000 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\Lst\HID.map" -o ".\Obj\HID.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '.\Obj\HID.axf'
 ### ADS-LD Command File: '.\Obj\HID.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\HID.lnp', Handle=0x0000017C
+### Creating CmdFile '.\Obj\HID.lnp', Handle=0x00000384
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\HID.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
