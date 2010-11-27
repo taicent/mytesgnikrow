@@ -16,6 +16,7 @@ File 2,1,<.\usbuser.c><usbuser.c>
 File 2,1,<.\hiduser.c><hiduser.c>
 File 2,1,<.\demo.c><demo.c>
 File 2,1,<.\LCD_4bit.c><LCD_4bit.c>
+File 2,1,<.\aes.c><aes.c>
 File 3,5,<.\Abstract.txt><Abstract.txt>
 
 
