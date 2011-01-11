@@ -1,0 +1,2608 @@
+First val for err: 0.408856848609681
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.398558187435633
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.441812564366632
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.372811534500515
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.409886714727085
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.37384140061792
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.442842430484037
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.337796086508754
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.361483007209063
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.360453141091658
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.440782698249228
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.341915550978373
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.341915550978373
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.356333676622039
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.387229660144181
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.345005149330587
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.339855818743563
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.339855818743563
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.365602471678682
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.346035015447992
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.345005149330587
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.337796086508754
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.37178166838311
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.353244078269825
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.338825952626159
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.338825952626159
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.388259526261586
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.015625
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.372811534500515
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.403707518022657
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.37384140061792
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.442842430484037
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.363542739443872
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.351184346035015
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.439752832131823
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.340885684860968
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.338825952626159
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.398558187435633
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.35221421215242
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.339855818743563
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.361483007209063
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.350154479917611
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.341915550978373
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.362512873326468
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.338825952626159
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.345005149330587
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.380020597322348
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.35427394438723
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.359423274974253
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.414006179196704
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.0625
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.351184346035015
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.360453141091658
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.336766220391349
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.434603501544799
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.340885684860968
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.343975283213182
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.386199794026777
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.35221421215242
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.338825952626159
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.369721936148301
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.340885684860968
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.348094747682801
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.364572605561277
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.348094747682801
+ C: 0.25
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.340885684860968
+ C: 0.25
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.365602471678682
+ C: 0.25
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.361483007209063
+ C: 0.25
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.370751802265705
+ C: 0.25
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.382080329557158
+ C: 0.25
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.369721936148301
+ C: 0.25
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.357363542739444
+ C: 0.25
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.442842430484037
+ C: 0.25
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 0.25
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.339855818743563
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.337796086508754
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.337796086508754
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.409886714727085
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.33470648815654
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.351184346035015
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.370751802265705
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.347064881565397
+ C: 1
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.350154479917611
+ C: 1
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.366632337796087
+ C: 1
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.349124613800206
+ C: 1
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.346035015447992
+ C: 1
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.358393408856849
+ C: 1
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.362512873326468
+ C: 1
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.359423274974253
+ C: 1
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.388259526261586
+ C: 1
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.358393408856849
+ C: 1
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.381050463439753
+ C: 1
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.406797116374871
+ C: 1
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.35221421215242
+ C: 1
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.355303810504634
+ C: 1
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.407826982492276
+ C: 1
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.402677651905252
+ C: 1
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 1
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.346035015447992
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.342945417095778
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.339855818743563
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.374871266735324
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.347064881565397
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.346035015447992
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.37178166838311
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.345005149330587
+ C: 4
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.350154479917611
+ C: 4
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.356333676622039
+ C: 4
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.35221421215242
+ C: 4
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.351184346035015
+ C: 4
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.370751802265705
+ C: 4
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.359423274974253
+ C: 4
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.367662203913491
+ C: 4
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.385169927909372
+ C: 4
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.4129763130793
+ C: 4
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.37178166838311
+ C: 4
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.348094747682801
+ C: 4
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.401647785787848
+ C: 4
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.421215242018538
+ C: 4
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.366632337796087
+ C: 4
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.363542739443872
+ C: 4
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.417095777548919
+ C: 4
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.439752832131823
+ C: 4
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 4
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.358393408856849
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.369721936148301
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.35221421215242
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.356333676622039
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.370751802265705
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.340885684860968
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.330587023686921
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.360453141091658
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.356333676622039
+ C: 16
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.358393408856849
+ C: 16
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.37178166838311
+ C: 16
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.37178166838311
+ C: 16
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.349124613800206
+ C: 16
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.382080329557158
+ C: 16
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.419155509783728
+ C: 16
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.356333676622039
+ C: 16
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.370751802265705
+ C: 16
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.421215242018538
+ C: 16
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.419155509783728
+ C: 16
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.374871266735324
+ C: 16
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.369721936148301
+ C: 16
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.401647785787848
+ C: 16
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.435633367662204
+ C: 16
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 16
+ Gamma: 32
+ Epsilon: 4
+In loose search, Val for err: 0.341915550978373
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+In loose search, Val for err: 0.340885684860968
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.337796086508754
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.367662203913491
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.0078125
+ Epsilon: 4
+In loose search, Val for err: 0.346035015447992
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.346035015447992
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.365602471678682
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.03125
+ Epsilon: 4
+In loose search, Val for err: 0.356333676622039
+ C: 64
+ Gamma: 0.125
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.350154479917611
+ C: 64
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.357363542739444
+ C: 64
+ Gamma: 0.125
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.125
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.125
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.125
+ Epsilon: 4
+In loose search, Val for err: 0.363542739443872
+ C: 64
+ Gamma: 0.5
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.357363542739444
+ C: 64
+ Gamma: 0.5
+ Epsilon: 0.015625
+In loose search, Val for err: 0.362512873326468
+ C: 64
+ Gamma: 0.5
+ Epsilon: 0.0625
+In loose search, Val for err: 0.416065911431514
+ C: 64
+ Gamma: 0.5
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.5
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 0.5
+ Epsilon: 4
+In loose search, Val for err: 0.370751802265705
+ C: 64
+ Gamma: 2
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.376930998970134
+ C: 64
+ Gamma: 2
+ Epsilon: 0.015625
+In loose search, Val for err: 0.402677651905252
+ C: 64
+ Gamma: 2
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 2
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 2
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 2
+ Epsilon: 4
+In loose search, Val for err: 0.388259526261586
+ C: 64
+ Gamma: 8
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.362512873326468
+ C: 64
+ Gamma: 8
+ Epsilon: 0.015625
+In loose search, Val for err: 0.417095777548919
+ C: 64
+ Gamma: 8
+ Epsilon: 0.0625
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 8
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 8
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 8
+ Epsilon: 4
+In loose search, Val for err: 0.395468589083419
+ C: 64
+ Gamma: 32
+ Epsilon: 0.00390625
+In loose search, Val for err: 0.39340885684861
+ C: 64
+ Gamma: 32
+ Epsilon: 0.015625
+In loose search, Val for err: 0.429454170957775
+ C: 64
+ Gamma: 32
+ Epsilon: 0.0625
+In loose search, Val for err: 0.437693099897013
+ C: 64
+ Gamma: 32
+ Epsilon: 0.25
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 32
+ Epsilon: 1
+In loose search, Val for err: 0.411946446961895
+ C: 64
+ Gamma: 32
+ Epsilon: 4
+After loose search, val for err: 0.330587023686921
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.353244078269825
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.346035015447992
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.348094747682801
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.346035015447992
+ C: 9.51365692002177
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.35221421215242
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.346035015447992
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.35427394438723
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.345005149330587
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.349124613800206
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.347064881565397
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.346035015447992
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.353244078269825
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.339855818743563
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.349124613800206
+ C: 9.51365692002177
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.337796086508754
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.351184346035015
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.342945417095778
+ C: 9.51365692002177
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.339855818743563
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.33470648815654
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.338825952626159
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.342945417095778
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.337796086508754
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.336766220391349
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.339855818743563
+ C: 9.51365692002177
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.347064881565397
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.348094747682801
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.347064881565397
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.349124613800206
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.335736354273944
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.342945417095778
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.336766220391349
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.337796086508754
+ C: 9.51365692002177
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.347064881565397
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.349124613800206
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.343975283213182
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.341915550978373
+ C: 11.3137084989848
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.339855818743563
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.348094747682801
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.341915550978373
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.342945417095778
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.348094747682801
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.353244078269825
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.347064881565397
+ C: 11.3137084989848
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.343975283213182
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.346035015447992
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.342945417095778
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.351184346035015
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.345005149330587
+ C: 11.3137084989848
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.343975283213182
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.347064881565397
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.337796086508754
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.351184346035015
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.338825952626159
+ C: 11.3137084989848
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.349124613800206
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.338825952626159
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.348094747682801
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.340885684860968
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.335736354273944
+ C: 11.3137084989848
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.349124613800206
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.350154479917611
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.335736354273944
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.335736354273944
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.349124613800206
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.337796086508754
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.337796086508754
+ C: 11.3137084989848
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.347064881565397
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.339855818743563
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.339855818743563
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.348094747682801
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.346035015447992
+ C: 13.4543426440594
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.346035015447992
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.338825952626159
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.340885684860968
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.340885684860968
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.362512873326468
+ C: 13.4543426440594
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.339855818743563
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.347064881565397
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.343975283213182
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.339855818743563
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.338825952626159
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.33470648815654
+ C: 13.4543426440594
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.348094747682801
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.338825952626159
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.33470648815654
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.338825952626159
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.339855818743563
+ C: 13.4543426440594
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.337796086508754
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.341915550978373
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.350154479917611
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.35221421215242
+ C: 13.4543426440594
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.347064881565397
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.342945417095778
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.337796086508754
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.33470648815654
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.345005149330587
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.346035015447992
+ C: 13.4543426440594
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.343975283213182
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.336766220391349
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.349124613800206
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.353244078269825
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.340885684860968
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.341915550978373
+ C: 13.4543426440594
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.349124613800206
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.351184346035015
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.35427394438723
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.336766220391349
+ C: 16
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.347064881565397
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.358393408856849
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.35221421215242
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.339855818743563
+ C: 16
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.345005149330587
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.340885684860968
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.347064881565397
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.343975283213182
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.339855818743563
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.341915550978373
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.335736354273944
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.337796086508754
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.337796086508754
+ C: 16
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.343975283213182
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.342945417095778
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.343975283213182
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.33264675592173
+ C: 16
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.33264675592173
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.339855818743563
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.333676622039135
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.338825952626159
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.346035015447992
+ C: 16
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.357363542739444
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.343975283213182
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.348094747682801
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.341915550978373
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.353244078269825
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.345005149330587
+ C: 19.0273138400435
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.337796086508754
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.350154479917611
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.347064881565397
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.337796086508754
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.337796086508754
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.35427394438723
+ C: 19.0273138400435
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.33264675592173
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.33470648815654
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.337796086508754
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.348094747682801
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.336766220391349
+ C: 19.0273138400435
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.33470648815654
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.351184346035015
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.345005149330587
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.336766220391349
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.347064881565397
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.341915550978373
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.342945417095778
+ C: 19.0273138400435
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.345005149330587
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.343975283213182
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.347064881565397
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.346035015447992
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.351184346035015
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.335736354273944
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.342945417095778
+ C: 19.0273138400435
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.350154479917611
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.342945417095778
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.345005149330587
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.340885684860968
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.35221421215242
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.338825952626159
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.330587023686921
+ C: 19.0273138400435
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.348094747682801
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.343975283213182
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.347064881565397
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.347064881565397
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.35221421215242
+ C: 19.0273138400435
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.350154479917611
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.35221421215242
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.349124613800206
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.342945417095778
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.343975283213182
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.335736354273944
+ C: 22.6274169979695
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.339855818743563
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.348094747682801
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.343975283213182
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.338825952626159
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.336766220391349
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.340885684860968
+ C: 22.6274169979695
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.351184346035015
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.349124613800206
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.337796086508754
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.339855818743563
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.341915550978373
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.333676622039135
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.353244078269825
+ C: 22.6274169979695
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.341915550978373
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.347064881565397
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.347064881565397
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.339855818743563
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.345005149330587
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.353244078269825
+ C: 22.6274169979695
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.331616889804325
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.342945417095778
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.342945417095778
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.349124613800206
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.357363542739444
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.340885684860968
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.348094747682801
+ C: 22.6274169979695
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.350154479917611
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.342945417095778
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.337796086508754
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.341915550978373
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.345005149330587
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.349124613800206
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.338825952626159
+ C: 22.6274169979695
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.349124613800206
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.340885684860968
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.346035015447992
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.351184346035015
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.339855818743563
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.339855818743563
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.348094747682801
+ C: 22.6274169979695
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.33470648815654
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.35221421215242
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.337796086508754
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.015625
+In loose search, Val for err: 0.346035015447992
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.349124613800206
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.330587023686921
+ C: 26.9086852881189
+ Gamma: 0.0743254446876701
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.346035015447992
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.341915550978373
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.353244078269825
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.015625
+In loose search, Val for err: 0.346035015447992
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.341915550978373
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.33470648815654
+ C: 26.9086852881189
+ Gamma: 0.0883883476483184
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.340885684860968
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.345005149330587
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.343975283213182
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.336766220391349
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.015625
+In loose search, Val for err: 0.333676622039135
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.345005149330587
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.347064881565397
+ C: 26.9086852881189
+ Gamma: 0.105112051906714
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.348094747682801
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.347064881565397
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.015625
+In loose search, Val for err: 0.350154479917611
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.346035015447992
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.125
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.349124613800206
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.348094747682801
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.33470648815654
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.015625
+In loose search, Val for err: 0.342945417095778
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.342945417095778
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.340885684860968
+ C: 26.9086852881189
+ Gamma: 0.14865088937534
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.336766220391349
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.355303810504634
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.341915550978373
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.343975283213182
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.015625
+In loose search, Val for err: 0.348094747682801
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.348094747682801
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.338825952626159
+ C: 26.9086852881189
+ Gamma: 0.176776695296637
+ Epsilon: 0.0262780129766786
+In loose search, Val for err: 0.345005149330587
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.00929068058595876
+In loose search, Val for err: 0.337796086508754
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.0110485434560398
+In loose search, Val for err: 0.337796086508754
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.0131390064883393
+In loose search, Val for err: 0.356333676622039
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.015625
+In loose search, Val for err: 0.349124613800206
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.0185813611719175
+In loose search, Val for err: 0.346035015447992
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.0220970869120796
+In loose search, Val for err: 0.35221421215242
+ C: 26.9086852881189
+ Gamma: 0.210224103813429
+ Epsilon: 0.0262780129766786
+After fine search, val for err: 0.330587023686921
+ C: 16
+ Gamma: 0.125
+ Epsilon: 0.015625
