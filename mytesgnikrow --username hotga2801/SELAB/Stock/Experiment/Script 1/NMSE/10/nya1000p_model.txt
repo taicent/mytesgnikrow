@@ -1,0 +1,12 @@
+Multiple
+10
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model1.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model2.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model3.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model4.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model5.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model6.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model7.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model8.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model9.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\10\nya1000p_model10.txt

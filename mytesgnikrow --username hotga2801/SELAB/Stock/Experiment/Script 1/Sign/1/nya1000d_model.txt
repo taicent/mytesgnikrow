@@ -1,0 +1,12 @@
+Multiple
+10
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model1.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model2.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model3.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model4.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model5.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model6.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model7.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model8.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model9.txt
+C:\Documents and Settings\HotGa\Desktop\1\nya1000d_model10.txt

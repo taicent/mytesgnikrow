@@ -1,0 +1,12 @@
+Multiple
+10
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model1.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model2.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model3.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model4.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model5.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model6.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model7.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model8.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model9.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\30\ree_model10.txt

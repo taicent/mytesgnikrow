@@ -1,0 +1,12 @@
+Multiple
+10
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model1.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model2.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model3.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model4.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model5.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model6.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model7.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model8.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model9.txt
+C:\Documents and Settings\HotGa\Desktop\NMSE\1\reep_model10.txt

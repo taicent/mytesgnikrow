@@ -1,0 +1,4 @@
+Scale 1(log)
+Convert 1(50-50)
+train 80
+numnode 5

@@ -1,0 +1,4 @@
+Scale 2(-1 1)
+Convert 2(250-50)
+train 80
+numnode 5

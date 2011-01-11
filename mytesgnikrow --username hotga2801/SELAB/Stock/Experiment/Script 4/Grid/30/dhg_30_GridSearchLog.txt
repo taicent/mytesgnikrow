@@ -1,0 +1,12 @@
+First val for err: 1.00049900594497
+ C: 0.015625
+ Gamma: 0.0078125
+ Epsilon: 0.0009765625
+After loose search, val for err: 0.601524660543647
+ C: 4
+ Gamma: 32
+ Epsilon: 0.015625
+After fine search, val for err: 0.570239461212643
+ C: 2.37841423000544
+ Gamma: 53.8173705762377
+ Epsilon: 0.0262780129766786
