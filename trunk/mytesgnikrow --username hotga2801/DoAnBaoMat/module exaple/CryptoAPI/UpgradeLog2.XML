@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EnumAlgs">
+</Property><Property Name="Solution File" Value="D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs.sln">
+</Property><Property Name="User Options File" Value="D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs.suo">
+</Property><Property Name="Date" Value="Tuesday, December 21, 2010">
+</Property><Property Name="Time" Value="23:33 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="EnumAlgs.sln" Description="Error creating backup file: D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs.sln.old">
+</Event><Event ErrorLevel="2" Project="" Source="EnumAlgs.suo" Description="Error creating backup file: D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs.suo.old">
+</Event><Event ErrorLevel="0" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="Converting project file 'D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs\EnumAlgs.vcproj'.">
+</Event><Event ErrorLevel="1" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="Done converting to new project file 'D:\Lap trinh mang\Source code API tham khao\CryptoGraphy\CryptoAPI\EnumAlgs\EnumAlgs.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="EnumAlgs" Source="EnumAlgs\EnumAlgs.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="EnumAlgs.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="EnumAlgs.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GetUserInformation">
+</Property><Property Name="Solution File" Value="D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation.sln">
+</Property><Property Name="User Options File" Value="D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation.suo">
+</Property><Property Name="Date" Value="Sunday, October 18, 2009">
+</Property><Property Name="Time" Value="14:14 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GetUserInformation.sln" Description="File successfully backed up as D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\Backup\GetUserInformation.sln">
+</Event><Event ErrorLevel="0" Project="" Source="GetUserInformation.suo" Description="File successfully backed up as D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\Backup\GetUserInformation.suo">
+</Event><Event ErrorLevel="0" Project="GetUserInformation" Source="GetUserInformation\GetUserInformation.csproj" Description="Project file successfully backed up as D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\Backup\GetUserInformation\GetUserInformation.csproj">
+</Event><Event ErrorLevel="0" Project="GetUserInformation" Source="GetUserInformation\Program.cs" Description="File successfully backed up as D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\Backup\GetUserInformation\Program.cs">
+</Event><Event ErrorLevel="0" Project="GetUserInformation" Source="GetUserInformation\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\Backup\GetUserInformation\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="GetUserInformation" Source="GetUserInformation\GetUserInformation.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GetUserInformation" Source="GetUserInformation\GetUserInformation.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="GetUserInformation.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="GetUserInformation.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GetUserInformation" Source="GetUserInformation\GetUserInformation.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
