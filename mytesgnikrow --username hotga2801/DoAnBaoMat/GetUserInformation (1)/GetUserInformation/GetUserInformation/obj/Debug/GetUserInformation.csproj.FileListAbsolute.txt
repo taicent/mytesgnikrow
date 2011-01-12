@@ -1,0 +1,12 @@
+D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.exe
+D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.pdb
+D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\bin\Debug\GetUserInformation.exe
+D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\bin\Debug\GetUserInformation.pdb
+D:\Tai lieu cong nghe thong tin\Luan van tot nghiep\CD Luan van\Security Pro\SOURCE\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\ResolveAssemblyReference.cache
+D:\Lap trinh mang\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.exe
+D:\Lap trinh mang\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.pdb
+D:\Lap trinh mang\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\bin\Debug\GetUserInformation.exe
+D:\Lap trinh mang\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\bin\Debug\GetUserInformation.pdb
+D:\Lap trinh mang\Source code API tham khao\Authorization\GetUserInformation\GetUserInformation\obj\Debug\ResolveAssemblyReference.cache
+D:\Long\WorkingSet\DoAnBaoMat\GetUserInformation (1)\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.exe
+D:\Long\WorkingSet\DoAnBaoMat\GetUserInformation (1)\GetUserInformation\GetUserInformation\obj\Debug\GetUserInformation.pdb

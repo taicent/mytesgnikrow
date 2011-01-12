@@ -1,0 +1,5 @@
+bin\Debug\GetUserInformation.exe
+bin\Debug\GetUserInformation.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\GetUserInformation.exe
+obj\Debug\GetUserInformation.pdb

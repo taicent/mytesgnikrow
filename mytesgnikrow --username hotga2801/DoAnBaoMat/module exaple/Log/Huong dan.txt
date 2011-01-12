@@ -1,0 +1,20 @@
+========================================================================
+       CONSOLE APPLICATION : ThemEventSource
+========================================================================
+Su dung cac ham lap trinh voi Registry trong windows de Minh hoa them mot 
+event source ten "UngDungLuanVan" vao trong registry de chua nhung thong
+tin cho viec ghi log file. Cung voi viec them event source la them mot so Key can thiet
+de he thong biet cach xu ly voi log file
+
+event source duoc them vao 
+HKEY_LOCAL_MACHINE
+     SYSTEM
+          CurrentControlSet
+               Services
+                    Eventlog
+                         Application
+                         Security
+                         System
+                         UngDungLuanVan
+Chi tiet hon ve cac ham xem them trong code Ung dung
+/////////////////////////////////////////////////////////////////////////////
