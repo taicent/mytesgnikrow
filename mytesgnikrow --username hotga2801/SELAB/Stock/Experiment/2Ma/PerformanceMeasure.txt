@@ -1,0 +1,6 @@
+NMSE 1.60085593225372
+Direction measure for price:
+	+ Right: 49.0683229813665%
+	+ Wrong: 50.9316770186335%
+	+ Cannot measure: 0%
+Sign 20
