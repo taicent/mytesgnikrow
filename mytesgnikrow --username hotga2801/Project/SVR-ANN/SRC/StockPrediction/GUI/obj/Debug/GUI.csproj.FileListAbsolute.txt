@@ -1,0 +1,126 @@
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\GUI.exe
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\GUI.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\BUS.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\DTO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\DAO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\BUS.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\DAO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\bin\Debug\DTO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\GUI.exe
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\GUI.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\GUI\obj\Debug\GUI.MainGUI.resources
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.exe
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\GUI.exe
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\GUI.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\BUS.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DTO.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DAO.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\BUS.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DAO.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DTO.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.MainGUI.resources
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.exe
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\GUI.exe
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\GUI.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\BUS.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DTO.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DAO.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\BUS.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DAO.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Debug\DTO.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\ResolveAssemblyReference.cache
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.MainGUI.resources
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\GUI.exe
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\GUI.exe
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\Source\StockPrediction\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\GUI.exe
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\GUI.exe
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\GUI.exe
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\GUI.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\GUI.exe
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\GUI.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\BUS.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\DTO.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\DAO.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\BUS.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\DAO.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\bin\Debug\DTO.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\GUI.MainGUI.resources
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.exe
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\GUI.exe
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\GUI.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\BUS.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DTO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DAO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\BUS.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DAO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DTO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.MainGUI.resources
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.exe
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\GUI.exe
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\GUI.exe
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\GUI.exe
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\GUI.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache

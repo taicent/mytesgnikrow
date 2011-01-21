@@ -1,0 +1,30 @@
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\DTO\bin\Release\DTO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\DTO\bin\Release\DTO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\DTO\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\DTO\obj\Release\DTO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\DTO\obj\Release\DTO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\DTO\bin\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\DTO\bin\Release\DTO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\DTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\DTO\obj\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\DTO\obj\Release\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DTO\bin\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DTO\bin\Release\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\DTO\obj\Release\DTO.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\DTO\bin\Release\DTO.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\DTO\bin\Release\DTO.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\DTO\obj\Release\ResolveAssemblyReference.cache
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\DTO\obj\Release\DTO.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\DTO\obj\Release\DTO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\DTO\bin\Release\DTO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\DTO\bin\Release\DTO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\DTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\DTO\obj\Release\DTO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\DTO\obj\Release\DTO.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\DTO\bin\Release\DTO.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\DTO\bin\Release\DTO.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\DTO\obj\Release\ResolveAssemblyReference.cache
+D:\Long\stockresearch\Build\Source\StockPrediction\DTO\obj\Release\DTO.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\DTO\obj\Release\DTO.pdb

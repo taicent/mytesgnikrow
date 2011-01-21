@@ -1,0 +1,87 @@
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\GUI.exe
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\GUI.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\BUS.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\DTO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\DAO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\BUS.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\DAO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\bin\Release\DTO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.MainGUI.resources
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.Properties.Resources.resources
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.exe
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.exe
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\GUI.exe
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\GUI.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\BUS.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\DAO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\BUS.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\DAO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\bin\Release\DTO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\GUI.exe
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\GUI.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\GUI.MainGUI.resources
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\GUI.Properties.Resources.resources
+C:\Users\KienTran\Desktop\StockPrediction\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\GUI.exe
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\GUI.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\BUS.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\DAO.dll
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\BUS.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\DAO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\GUI\bin\Release\DTO.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\ResolveAssemblyReference.cache
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\GUI.MainGUI.resources
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\GUI.Properties.Resources.resources
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\GUI.exe
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\GUI.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\BUS.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\DTO.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\DAO.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\BUS.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\DAO.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\DTO.pdb
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\GUI.exe
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\obj\Release\GUI.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\GUI.exe
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\GUI.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\GUI.exe
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\GUI.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\BUS.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\DTO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\DAO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\BUS.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\DAO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\DTO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\GUI.MainGUI.resources
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\GUI.Properties.Resources.resources
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\GUI\bin\Release\ZedGraph.dll
+D:\E_BOOK\giao trinh\KhoaLuan\StockCode\stockresearch --username hotga2801\Build\Source\StockPrediction\GUI\bin\Release\ZedGraph.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\GUI.exe
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\GUI.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\GUI.exe
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\GUI.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\BUS.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\DTO.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\ZedGraph.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\DAO.dll
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\BUS.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\DAO.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\bin\Release\DTO.pdb
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\ResolveAssemblyReference.cache
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\GUI.MainGUI.resources
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\GUI.Properties.Resources.resources
+D:\Long\stockresearch\Build\Source\StockPrediction\GUI\obj\Release\GUI.csproj.GenerateResource.Cache

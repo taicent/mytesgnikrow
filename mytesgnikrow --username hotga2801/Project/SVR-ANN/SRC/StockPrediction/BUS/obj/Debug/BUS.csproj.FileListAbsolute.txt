@@ -1,0 +1,90 @@
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\BUS.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\BUS.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\DAO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\DTO.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\DAO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\bin\Debug\DTO.pdb
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\obj\Debug\BUS.dll
+D:\Studying\Semester7\LearningMachine\Nhom\Ver2k8\StockPrediction\BUS\obj\Debug\BUS.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\BUS.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\BUS.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DAO.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DTO.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DAO.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DTO.pdb
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\BUS.dll
+D:\Studying\StockGroup\Checkout\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\BUS.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\BUS.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\BUS.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DAO.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DTO.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DAO.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\bin\Debug\DTO.pdb
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\BUS.dll
+D:\KhoaLuan\stockresearch --username hotga2801\Build\Source\StockPrediction\BUS\obj\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\BUS.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\DAO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\DTO.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\DAO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\bin\Debug\DTO.pdb
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\obj\Debug\BUS.dll
+C:\Users\NapoleonVN\Desktop\GoogleCode\Stock\Build\Source\StockPrediction\BUS\obj\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\obj\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\Source\StockPrediction\BUS\obj\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\obj\Debug\BUS.dll
+C:\Users\KienTran\Desktop\Source\StockPredictionVer0.1\BUS\obj\Debug\BUS.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\BUS.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\BUS.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\DAO.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\DTO.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\DAO.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\bin\Debug\DTO.pdb
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\obj\Debug\BUS.dll
+D:\Studying\StockGroup\MyCode\StockPrediction\StockPredictionVer0.1\BUS\obj\Debug\BUS.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\obj\Debug\BUS.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\BUS.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\BUS.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DAO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DTO.dll
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DAO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DTO.pdb
+C:\Documents and Settings\HotGa\Desktop\StockPredictionVer0.1\BUS\obj\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\obj\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPredictionVer0.1\BUS\obj\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\BUS.pdb
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\DAO.dll
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\DTO.dll
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\DAO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\BUS\bin\Debug\DTO.pdb
+C:\Users\KienTran\Desktop\StockPrediction\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KienTran\Desktop\StockPrediction\BUS\obj\Debug\BUS.dll
+C:\Users\KienTran\Desktop\StockPrediction\BUS\obj\Debug\BUS.pdb
