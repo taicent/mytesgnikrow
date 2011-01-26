@@ -175,7 +175,9 @@ namespace SVMDemo
             param.C = 2;
             param.Gamma = .5;
             Model model = Training.Train(problem, param);
-            
+
+            Model.Write("model.txt", model);
+
             int rows = ClientSize.Height;
             int columns = ClientSize.Width;
             Bitmap image = new Bitmap(columns, rows);
@@ -197,6 +199,8 @@ namespace SVMDemo
                         Node[] test = new Node[] { new Node(1, x), new Node(2, y) };
                         test = range.Transform(test);
                         int assignment = (int)Prediction.Predict(model, test);
+                        //int assignment = (int)Prediction.Predict(problem, "predict.txt", model, test);
+
                         *scan++ = CLASS_FILL[assignment].B;
                         *scan++ = CLASS_FILL[assignment].G;
                         *scan++ = CLASS_FILL[assignment].R;
