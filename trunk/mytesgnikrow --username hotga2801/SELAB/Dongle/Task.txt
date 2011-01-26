@@ -1,3 +1,4 @@
 SSL
 Change key
 Mo hinh 2
+http://www.ftdichip.com/Support/SoftwareExamples/FTDIChip-ID.htm
