@@ -161,14 +161,17 @@ namespace SVM
                         x = xNodes[xIndex];
                         y = yNodes[yIndex];
                     }
-                    else if(xIndex < xLength){
+                    else if (xIndex < xLength)
+                    {
                         x = xNodes[xIndex];
                         break;
                     }
-                    else if(yIndex < yLength){
+                    else if (yIndex < yLength)
+                    {
                         y = yNodes[yIndex];
                         break;
-                    }else break;
+                    }
+                    else break;
                 }
                 else if (x._index > y._index)
                 {

@@ -26,44 +26,46 @@ namespace SVM
     /// <summary>
     /// Contains all of the types of SVM this library can model.
     /// </summary>
-    public enum SvmType { 
+    public enum SvmType
+    {
         /// <summary>
         /// C-SVC.
         /// </summary>
-        C_SVC, 
+        C_SVC,
         /// <summary>
         /// nu-SVC.
         /// </summary>
-        NU_SVC, 
+        NU_SVC,
         /// <summary>
         /// one-class SVM
         /// </summary>
-        ONE_CLASS, 
+        ONE_CLASS,
         /// <summary>
         /// epsilon-SVR
         /// </summary>
-        EPSILON_SVR, 
+        EPSILON_SVR,
         /// <summary>
         /// nu-SVR
         /// </summary>
-        NU_SVR 
+        NU_SVR
     };
     /// <summary>
     /// Contains the various kernel types this library can use.
     /// </summary>
-    public enum KernelType { 
+    public enum KernelType
+    {
         /// <summary>
         /// Linear: u'*v
         /// </summary>
-        LINEAR, 
+        LINEAR,
         /// <summary>
         /// Polynomial: (gamma*u'*v + coef0)^degree
         /// </summary>
-        POLY, 
+        POLY,
         /// <summary>
         /// Radial basis function: exp(-gamma*|u-v|^2)
         /// </summary>
-        RBF, 
+        RBF,
         /// <summary>
         /// Sigmoid: tanh(gamma*u'*v + coef0)
         /// </summary>
@@ -79,9 +81,9 @@ namespace SVM
     /// is learned.  Unless you know what you are doing, chances are you are best off using
     /// the default values.
     /// </summary>
-	[Serializable]
-	public class Parameter : ICloneable
-	{
+    [Serializable]
+    public class Parameter : ICloneable
+    {
         private SvmType _svmType;
         private KernelType _kernelType;
         private int _degree;
@@ -188,7 +190,7 @@ namespace SVM
                 _coef0 = value;
             }
         }
-		
+
         /// <summary>
         /// Cache memory size in MB (default 100)
         /// </summary>
@@ -235,9 +237,10 @@ namespace SVM
         /// <summary>
         /// Contains custom weights for class labels.  Default weight value is 1.
         /// </summary>
-        public Dictionary<int,double> Weights
+        public Dictionary<int, double> Weights
         {
-            get{
+            get
+            {
                 return _weights;
             }
         }

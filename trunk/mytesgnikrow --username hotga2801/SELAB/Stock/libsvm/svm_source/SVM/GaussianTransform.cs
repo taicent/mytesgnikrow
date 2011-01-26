@@ -47,8 +47,8 @@ namespace SVM
             {
                 for (int i = 0; i < sample.Length; i++)
                 {
-                    means[sample[i].Index-1] += sample[i].Value;
-                    counts[sample[i].Index-1]++;
+                    means[sample[i].Index - 1] += sample[i].Value;
+                    counts[sample[i].Index - 1]++;
                 }
             }
             for (int i = 0; i < prob.MaxIndex; i++)

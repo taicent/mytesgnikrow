@@ -100,7 +100,7 @@ namespace SVM
         public RangeTransform(double[] minValues, double[] maxValues, double lowerBound, double upperBound)
         {
             _length = minValues.Length;
-            if(maxValues.Length != _length)
+            if (maxValues.Length != _length)
                 throw new Exception("Number of max and min values must be equal.");
             _inputStart = new double[_length];
             _inputScale = new double[_length];
@@ -165,7 +165,7 @@ namespace SVM
             StreamWriter output = new StreamWriter(stream);
             output.WriteLine(r._length);
             output.Write(r._inputStart[0]);
-            for(int i=1; i<r._inputStart.Length; i++)
+            for (int i = 1; i < r._inputStart.Length; i++)
                 output.Write(" " + r._inputStart[i]);
             output.WriteLine();
             output.Write(r._inputScale[0]);
