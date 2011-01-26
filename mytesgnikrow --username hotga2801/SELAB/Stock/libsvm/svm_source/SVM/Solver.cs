@@ -884,7 +884,8 @@ namespace SVM
         private Cache cache;
         private float[] QD;
 
-        public SVC_Q(Problem prob, Parameter param, sbyte[] y_) : base(prob.Count, prob.X, param)
+        public SVC_Q(Problem prob, Parameter param, sbyte[] y_)
+            : base(prob.Count, prob.X, param)
         {
             y = (sbyte[])y_.Clone();
             cache = new Cache(prob.Count, (long)(param.CacheSize * (1 << 20)));
@@ -924,7 +925,8 @@ namespace SVM
         private Cache cache;
         private float[] QD;
 
-        public ONE_CLASS_Q(Problem prob, Parameter param) :  base(prob.Count, prob.X, param)
+        public ONE_CLASS_Q(Problem prob, Parameter param)
+            : base(prob.Count, prob.X, param)
         {
             cache = new Cache(prob.Count, (long)(param.CacheSize * (1 << 20)));
             QD = new float[prob.Count];
@@ -967,7 +969,8 @@ namespace SVM
         private float[][] buffer;
         private float[] QD;
 
-        public SVR_Q(Problem prob, Parameter param) : base(prob.Count, prob.X, param)
+        public SVR_Q(Problem prob, Parameter param)
+            : base(prob.Count, prob.X, param)
         {
             l = prob.Count;
             cache = new Cache(l, (long)(param.CacheSize * (1 << 20)));
@@ -1044,7 +1047,7 @@ namespace SVM
 
         public static void info(string s)
         {
-            if(_verbose)
+            if (_verbose)
                 svm_print_string.Write(s);
         }
 
@@ -1412,23 +1415,23 @@ namespace SVM
         {
             int t, j;
             int iter = 0, Max_iter = Math.Max(100, k);
-            double[,] Q = new double[k,k];
+            double[,] Q = new double[k, k];
             double[] Qp = new double[k];
             double pQp, eps = 0.005 / k;
 
             for (t = 0; t < k; t++)
             {
                 p[t] = 1.0 / k;  // Valid if k = 1
-                Q[t,t] = 0;
+                Q[t, t] = 0;
                 for (j = 0; j < t; j++)
                 {
-                    Q[t,t] += r[j,t] * r[j,t];
-                    Q[t,j] = Q[j,t];
+                    Q[t, t] += r[j, t] * r[j, t];
+                    Q[t, j] = Q[j, t];
                 }
                 for (j = t + 1; j < k; j++)
                 {
-                    Q[t,t] += r[j,t] * r[j,t];
-                    Q[t,j] = -r[j,t] * r[t,j];
+                    Q[t, t] += r[j, t] * r[j, t];
+                    Q[t, j] = -r[j, t] * r[t, j];
                 }
             }
             for (iter = 0; iter < Max_iter; iter++)
@@ -1439,7 +1442,7 @@ namespace SVM
                 {
                     Qp[t] = 0;
                     for (j = 0; j < k; j++)
-                        Qp[t] += Q[t,j] * p[j];
+                        Qp[t] += Q[t, j] * p[j];
                     pQp += p[t] * Qp[t];
                 }
                 double Max_error = 0;
@@ -1453,12 +1456,12 @@ namespace SVM
 
                 for (t = 0; t < k; t++)
                 {
-                    double diff = (-Qp[t] + pQp) / Q[t,t];
+                    double diff = (-Qp[t] + pQp) / Q[t, t];
                     p[t] += diff;
-                    pQp = (pQp + diff * (diff * Q[t,t] + 2 * Qp[t])) / (1 + diff) / (1 + diff);
+                    pQp = (pQp + diff * (diff * Q[t, t] + 2 * Qp[t])) / (1 + diff) / (1 + diff);
                     for (j = 0; j < k; j++)
                     {
-                        Qp[j] = (Qp[j] + diff * Q[t,j]) / (1 + diff);
+                        Qp[j] = (Qp[j] + diff * Q[t, j]) / (1 + diff);
                         p[j] /= (1 + diff);
                     }
                 }
@@ -1644,17 +1647,17 @@ namespace SVM
             Model model = new Model();
             model.Parameter = param;
 
-            if (param.SvmType == SvmType.ONE_CLASS || 
+            if (param.SvmType == SvmType.ONE_CLASS ||
                param.SvmType == SvmType.EPSILON_SVR ||
                param.SvmType == SvmType.NU_SVR)
             {
                 // regression or one-class-svm
-                model.NumberOfClasses = 2;                
+                model.NumberOfClasses = 2;
                 model.ClassLabels = null;
                 model.NumberOfSVPerClass = null;
                 model.PairwiseProbabilityA = null; model.PairwiseProbabilityB = null;
                 model.SupportVectorCoefficients = new double[1][];
-                
+
                 if (param.Probability &&
                    (param.SvmType == SvmType.EPSILON_SVR ||
                     param.SvmType == SvmType.NU_SVR))
@@ -1670,7 +1673,7 @@ namespace SVM
                 int nSV = 0;
                 int i;
                 for (i = 0; i < prob.Count; i++)
-                    if (Math.Abs(f.alpha[i]) > 0) ++nSV;                
+                    if (Math.Abs(f.alpha[i]) > 0) ++nSV;
                 model.SupportVectorCount = nSV;
                 model.SupportVectors = new Node[nSV][];
                 model.SupportVectorCoefficients[0] = new double[nSV];

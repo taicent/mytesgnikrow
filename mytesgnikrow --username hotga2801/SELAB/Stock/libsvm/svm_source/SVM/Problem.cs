@@ -28,9 +28,9 @@ namespace SVM
     /// <summary>
     /// Encapsulates a problem, or set of vectors which must be classified.
     /// </summary>
-	[Serializable]
-	public class Problem
-	{
+    [Serializable]
+    public class Problem
+    {
         private int _count;
         private double[] _Y;
         private Node[][] _X;

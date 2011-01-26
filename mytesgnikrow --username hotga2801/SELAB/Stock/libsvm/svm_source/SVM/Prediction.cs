@@ -96,7 +96,7 @@ namespace SVM
                 else
                 {
                     v = Procedures.svm_predict(model, x);
-                    if(output != null)
+                    if (output != null)
                         output.Write(v + "\n");
                 }
 
@@ -110,7 +110,7 @@ namespace SVM
                 sumvy += v * target;
                 ++total;
             }
-            if(output != null)
+            if (output != null)
                 output.Close();
             return (double)correct / total;
         }

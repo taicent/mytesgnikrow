@@ -63,7 +63,7 @@ namespace SVM
                     sumyy += y * y;
                     sumvy += v * y;
                 }
-                return(problem.Count * sumvy - sumv * sumy) / (Math.Sqrt(problem.Count * sumvv - sumv * sumv) * Math.Sqrt(problem.Count * sumyy - sumy * sumy));
+                return (problem.Count * sumvy - sumv * sumy) / (Math.Sqrt(problem.Count * sumvv - sumv * sumv) * Math.Sqrt(problem.Count * sumyy - sumy * sumy));
             }
             else
                 for (i = 0; i < problem.Count; i++)

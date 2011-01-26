@@ -25,9 +25,9 @@ namespace SVM
     /// Encapsulates a node in a Problem vector, with an index and a value (for more efficient representation
     /// of sparse data.
     /// </summary>
-	[Serializable]
-	public class Node : IComparable<Node>
-	{
+    [Serializable]
+    public class Node : IComparable<Node>
+    {
         internal int _index;
         internal double _value;
 

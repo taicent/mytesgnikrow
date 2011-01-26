@@ -28,9 +28,9 @@ namespace SVM
     /// <summary>
     /// Encapsulates an SVM Model.
     /// </summary>
-	[Serializable]
-	public class Model
-	{
+    [Serializable]
+    public class Model
+    {
         private Parameter _parameter;
         private int _numberOfClasses;
         private int _supportVectorCount;
@@ -166,8 +166,8 @@ namespace SVM
                 _pairwiseProbabilityB = value;
             }
         }
-		
-		// for classification only
+
+        // for classification only
 
         /// <summary>
         /// Class labels.
@@ -257,12 +257,13 @@ namespace SVM
                 }
                 arg = arg.ToLower();
 
-                int i,n;
-                switch(cmd){
+                int i, n;
+                switch (cmd)
+                {
                     case "svm_type":
                         param.SvmType = (SvmType)Enum.Parse(typeof(SvmType), arg.ToUpper());
                         break;
-                        
+
                     case "kernel_type":
                         param.KernelType = (KernelType)Enum.Parse(typeof(KernelType), arg.ToUpper());
                         break;
@@ -291,7 +292,7 @@ namespace SVM
                         n = model.NumberOfClasses * (model.NumberOfClasses - 1) / 2;
                         model.Rho = new double[n];
                         string[] rhoParts = arg.Split();
-                        for(i=0; i<n; i++)
+                        for (i = 0; i < n; i++)
                             model.Rho[i] = double.Parse(rhoParts[i]);
                         break;
 
@@ -306,7 +307,7 @@ namespace SVM
                     case "probA":
                         n = model.NumberOfClasses * (model.NumberOfClasses - 1) / 2;
                         model.PairwiseProbabilityA = new double[n];
-                            string[] probAParts = arg.Split();
+                        string[] probAParts = arg.Split();
                         for (i = 0; i < n; i++)
                             model.PairwiseProbabilityA[i] = double.Parse(probAParts[i]);
                         break;
@@ -332,7 +333,7 @@ namespace SVM
                         break;
 
                     default:
-                        throw new Exception("Unknown text in model file");  
+                        throw new Exception("Unknown text in model file");
                 }
             }
 
@@ -353,7 +354,7 @@ namespace SVM
 
                 for (int k = 0; k < m; k++)
                     model.SupportVectorCoefficients[k][i] = double.Parse(parts[k]);
-                int n = parts.Length-m;
+                int n = parts.Length - m;
                 model.SupportVectors[i] = new Node[n];
                 for (int j = 0; j < n; j++)
                 {
@@ -486,5 +487,5 @@ namespace SVM
 
             TemporaryCulture.Stop();
         }
-	}
+    }
 }

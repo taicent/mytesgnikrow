@@ -131,8 +131,8 @@ namespace SVM
         public static void Grid(
             Problem problem,
             Parameter parameters,
-            List<double> CValues, 
-            List<double> GammaValues, 
+            List<double> CValues,
+            List<double> GammaValues,
             string outputFile,
             int nrfold,
             out double C,
@@ -142,16 +142,16 @@ namespace SVM
             Gamma = 0;
             double crossValidation = double.MinValue;
             StreamWriter output = null;
-            if(outputFile != null)
+            if (outputFile != null)
                 output = new StreamWriter(outputFile);
-            for(int i=0; i<CValues.Count; i++)
+            for (int i = 0; i < CValues.Count; i++)
                 for (int j = 0; j < GammaValues.Count; j++)
                 {
                     parameters.C = CValues[i];
                     parameters.Gamma = GammaValues[j];
                     double test = Training.PerformCrossValidation(problem, parameters, nrfold);
                     Console.Write("{0} {1} {2}", parameters.C, parameters.Gamma, test);
-                    if(output != null)
+                    if (output != null)
                         output.WriteLine("{0} {1} {2}", parameters.C, parameters.Gamma, test);
                     if (test > crossValidation)
                     {
@@ -162,7 +162,7 @@ namespace SVM
                     }
                     else Console.WriteLine();
                 }
-            if(output != null)
+            if (output != null)
                 output.Close();
         }
         /// <summary>
@@ -211,7 +211,7 @@ namespace SVM
             Gamma = 0;
             double maxScore = double.MinValue;
             StreamWriter output = null;
-            if(outputFile != null)
+            if (outputFile != null)
                 output = new StreamWriter(outputFile);
             for (int i = 0; i < CValues.Count; i++)
                 for (int j = 0; j < GammaValues.Count; j++)
@@ -221,7 +221,7 @@ namespace SVM
                     Model model = Training.Train(problem, parameters);
                     double test = Prediction.Predict(validation, "tmp.txt", model, false);
                     Console.Write("{0} {1} {2}", parameters.C, parameters.Gamma, test);
-                    if(output != null)
+                    if (output != null)
                         output.WriteLine("{0} {1} {2}", parameters.C, parameters.Gamma, test);
                     if (test > maxScore)
                     {
@@ -232,7 +232,7 @@ namespace SVM
                     }
                     else Console.WriteLine();
                 }
-            if(output != null)
+            if (output != null)
                 output.Close();
         }
     }
