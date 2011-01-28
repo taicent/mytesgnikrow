@@ -1,0 +1,6 @@
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\bin\Release\SVM.dll
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\bin\Release\SVM.pdb
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\bin\Release\svm.xml
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\obj\Release\ResolveAssemblyReference.cache
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\obj\Release\SVM.dll
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVM\obj\Release\SVM.pdb
