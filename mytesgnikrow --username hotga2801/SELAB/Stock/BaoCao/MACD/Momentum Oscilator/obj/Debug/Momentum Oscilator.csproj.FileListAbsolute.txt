@@ -66,3 +66,5 @@ G:\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\ResolveAssemblyReference
 G:\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Form1.resources
 G:\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\Momentum_Oscilator.Properties.Resources.resources
 G:\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\Momentum Oscilator.csproj.GenerateResource.Cache
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\Momentum Oscilator.exe
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\BaoCao\MACD\Momentum Oscilator\obj\Debug\Momentum Oscilator.pdb

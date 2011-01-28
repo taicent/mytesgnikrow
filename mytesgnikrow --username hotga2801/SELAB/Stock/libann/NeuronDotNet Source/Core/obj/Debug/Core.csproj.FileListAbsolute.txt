@@ -1,0 +1,5 @@
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libann\NeuronDotNet Source\Core\bin\Debug\NeuronDotNet.Core.dll
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libann\NeuronDotNet Source\Core\bin\Debug\NeuronDotNet.Core.pdb
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libann\NeuronDotNet Source\Core\obj\Debug\ResolveAssemblyReference.cache
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libann\NeuronDotNet Source\Core\obj\Debug\NeuronDotNet.Core.dll
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libann\NeuronDotNet Source\Core\obj\Debug\NeuronDotNet.Core.pdb

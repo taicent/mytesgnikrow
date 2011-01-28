@@ -1,0 +1,12 @@
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\bin\Release\SVMDemo.exe
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\bin\Release\SVMDemo.pdb
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\bin\Release\SVM.dll
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\bin\Release\SVM.pdb
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\bin\Release\SVM.xml
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\ResolveAssemblyReference.cache
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.Properties.Resources.resources
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.SVMCanvas.resources
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.SVMDemoForm.resources
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.csproj.GenerateResource.Cache
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.exe
+F:\MDBlue\GoogleCode\mytesgnikrow\mytesgnikrow --username hotga2801\SELAB\Stock\libsvm\svm_demo_source\SVMDemo\SVMDemo\obj\Release\SVMDemo.pdb
